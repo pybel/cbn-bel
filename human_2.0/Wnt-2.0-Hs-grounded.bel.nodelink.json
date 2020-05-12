@@ -1,0 +1,3308 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Wnt-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Wnt Signaling network depicts the causal mechanisms that regulate aspects of Wnt signaling primarily in the context of heightened cell proliferation observed following lung injury. The network includes multiple pathways leading to the degradation of beta-catenin as it relates to Wnt signaling."
+    },
+    "namespace_url": {},
+    "namespace_pattern": {
+      "chebi": ".*",
+      "mesh": ".*",
+      "fplx": ".*",
+      "go": ".*",
+      "hgnc": ".*"
+    },
+    "annotation_url": {},
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "nicotine",
+        "identifier": "18723"
+      },
+      "id": "2e9280268d175366fcead02ec81fec34",
+      "bel": "a(chebi:18723 ! nicotine)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "activation of MAPKKK activity",
+        "identifier": "0000185"
+      },
+      "id": "7f1b9704f13993e547cee92f69dac775",
+      "bel": "bp(go:0000185 ! \"activation of MAPKKK activity\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "epithelial to mesenchymal transition",
+        "identifier": "0001837"
+      },
+      "id": "fbae31ed3c9e214504b21e8c0c6df782",
+      "bel": "bp(go:0001837 ! \"epithelial to mesenchymal transition\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "non-canonical Wnt signaling pathway",
+        "identifier": "0035567"
+      },
+      "id": "9861f890159762314fc255e582d857b5",
+      "bel": "bp(go:0035567 ! \"non-canonical Wnt signaling pathway\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "wound healing",
+        "identifier": "0042060"
+      },
+      "id": "3237274cd38708b764727631073b5fd1",
+      "bel": "bp(go:0042060 ! \"wound healing\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "myoblast differentiation",
+        "identifier": "0045445"
+      },
+      "id": "76b19851b3e9222c748ed9fda3e09ab1",
+      "bel": "bp(go:0045445 ! \"myoblast differentiation\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "canonical Wnt signaling pathway",
+        "identifier": "0060070"
+      },
+      "id": "bf7f2ad7f5e93f00a80ce39d29616189",
+      "bel": "bp(go:0060070 ! \"canonical Wnt signaling pathway\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "extracellular matrix constituent secretion",
+        "identifier": "0070278"
+      },
+      "id": "75621477c0d502725e93f2c4310f3384",
+      "bel": "bp(go:0070278 ! \"extracellular matrix constituent secretion\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "reactive oxygen species biosynthetic process",
+        "identifier": "1903409"
+      },
+      "id": "c95cea478a45d296749cb5111861708d",
+      "bel": "bp(go:1903409 ! \"reactive oxygen species biosynthetic process\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "fplx",
+        "name": "AP1",
+        "identifier": "AP1"
+      },
+      "id": "0083d297c265cb2ade870cd66cc5abb0",
+      "bel": "complex(fplx:AP1 ! AP1)"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "FOS",
+            "identifier": "3796"
+          },
+          "id": "51b3dd9db2c79b87b3e8d0248fe2ddd3",
+          "bel": "p(hgnc:3796 ! FOS)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "JUN",
+            "identifier": "6204"
+          },
+          "id": "fbc362581b3fc676170a17f33a024a1a",
+          "bel": "p(hgnc:6204 ! JUN)"
+        }
+      ],
+      "id": "9ea47a820113070307b54f743d8a4426",
+      "bel": "complex(p(hgnc:3796 ! FOS), p(hgnc:6204 ! JUN))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "TCF_LEF",
+        "identifier": "TCF_LEF"
+      },
+      "id": "d7209041d953bdf0d9eae14dc7190de7",
+      "bel": "p(fplx:\"TCF_LEF\" ! \"TCF_LEF\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "DVL",
+        "identifier": "DVL"
+      },
+      "id": "b853d0f4ae3d7fac10c94b974f6924fb",
+      "bel": "p(fplx:DVL ! DVL)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "FZD",
+        "identifier": "FZD"
+      },
+      "id": "1a833815ea0d2c6f562595064036de73",
+      "bel": "p(fplx:FZD ! FZD)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "GSK3",
+        "identifier": "GSK3"
+      },
+      "id": "cf92adcd7cc53c882ae3c839c49879a1",
+      "bel": "p(fplx:GSK3 ! GSK3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "GSK3",
+        "identifier": "GSK3"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          }
+        }
+      ],
+      "id": "66f702962f9681670b93f4bd8b157050",
+      "bel": "p(fplx:GSK3 ! GSK3, pmod(go:0006468 ! \"protein phosphorylation\"))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "GSK3",
+        "identifier": "GSK3"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Ser",
+          "pos": 21
+        }
+      ],
+      "id": "ecfe0f6f7b0cbb0c71c5004fa5695419",
+      "bel": "p(fplx:GSK3 ! GSK3, pmod(go:0006468 ! \"protein phosphorylation\", Ser, 21))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "GSK3",
+        "identifier": "GSK3"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Ser",
+          "pos": 9
+        }
+      ],
+      "id": "c5d0cfe2ae923da54c87117b44f9c58b",
+      "bel": "p(fplx:GSK3 ! GSK3, pmod(go:0006468 ! \"protein phosphorylation\", Ser, 9))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "JNK",
+        "identifier": "JNK"
+      },
+      "id": "2f6658f9c547f93c3f37c98276d1a287",
+      "bel": "p(fplx:JNK ! JNK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "MEK",
+        "identifier": "MEK"
+      },
+      "id": "8812524d09d27ead405ac6981c8205a2",
+      "bel": "p(fplx:MEK ! MEK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "Notch",
+        "identifier": "Notch"
+      },
+      "id": "0aa81e1dd978c7ab474caab6d8455241",
+      "bel": "p(fplx:Notch ! Notch)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "Wnt",
+        "identifier": "Wnt"
+      },
+      "id": "029a67a480adc97652292324421a28bb",
+      "bel": "p(fplx:Wnt ! Wnt)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CCL2",
+        "identifier": "10618"
+      },
+      "id": "dd9ab9eb67b7e4e63dbde1ec97117509",
+      "bel": "p(hgnc:10618 ! CCL2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CCL5",
+        "identifier": "10632"
+      },
+      "id": "9ffa071bf151e5d66fe67d459ae75286",
+      "bel": "p(hgnc:10632 ! CCL5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TCF7L1",
+        "identifier": "11640"
+      },
+      "id": "5924f7710fe38081d5fd140588350c9e",
+      "bel": "p(hgnc:11640 ! TCF7L1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TGFB1",
+        "identifier": "11766"
+      },
+      "id": "576a88bfbb29664cc1307c6239712c90",
+      "bel": "p(hgnc:11766 ! TGFB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "VEGFA",
+        "identifier": "12680"
+      },
+      "id": "710d068636280068962cf864d9ed7526",
+      "bel": "p(hgnc:12680 ! VEGFA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "WNT1",
+        "identifier": "12774"
+      },
+      "id": "c06e7abbc641911cc6eda18b639ce001",
+      "bel": "p(hgnc:12774 ! WNT1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "WNT10B",
+        "identifier": "12775"
+      },
+      "id": "90e13ed4478aa8618f416360279b0151",
+      "bel": "p(hgnc:12775 ! WNT10B)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "WNT4",
+        "identifier": "12783"
+      },
+      "id": "2e72b9e81b589e7b4c9c06909f1b56ab",
+      "bel": "p(hgnc:12783 ! WNT4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "WNT7B",
+        "identifier": "12787"
+      },
+      "id": "f836ebf61b7783bf868b647238e05768",
+      "bel": "p(hgnc:12787 ! WNT7B)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CCND1",
+        "identifier": "1582"
+      },
+      "id": "7948aef17947d3efb076ccc443c7c3a6",
+      "bel": "p(hgnc:1582 ! CCND1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "WNT3A",
+        "identifier": "15983"
+      },
+      "id": "de0879feb4d1e09d3f88772692b5902d",
+      "bel": "p(hgnc:15983 ! WNT3A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "FRAT2",
+        "identifier": "16048"
+      },
+      "id": "658ad374e6c6b1c532ef5ae56e75151d",
+      "bel": "p(hgnc:16048 ! FRAT2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "DKKL1",
+        "identifier": "16528"
+      },
+      "id": "a5e42c398a710491574678e7da25b8e3",
+      "bel": "p(hgnc:16528 ! DKKL1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NKD1",
+        "identifier": "17045"
+      },
+      "id": "29fddaef56c4f2722bc893f0098dcbc8",
+      "bel": "p(hgnc:17045 ! NKD1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NKD2",
+        "identifier": "17046"
+      },
+      "id": "718bc5b0e1a94c2e122e875322f3b1d1",
+      "bel": "p(hgnc:17046 ! NKD2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "WIF1",
+        "identifier": "18081"
+      },
+      "id": "c452264c99012d767d230180d31ce538",
+      "bel": "p(hgnc:18081 ! WIF1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CTNNB1",
+        "identifier": "2514"
+      },
+      "id": "a0979dd18cdcf24ade81446543865014",
+      "bel": "p(hgnc:2514 ! CTNNB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CTNNB1",
+        "identifier": "2514"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          }
+        }
+      ],
+      "id": "e8259f1e14f231a123539d604d5dbbf6",
+      "bel": "p(hgnc:2514 ! CTNNB1, pmod(go:0006468 ! \"protein phosphorylation\"))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CTNNB1",
+        "identifier": "2514"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Ser",
+          "pos": 33
+        }
+      ],
+      "id": "0b895162b8842f12b93f9c9d47c3b745",
+      "bel": "p(hgnc:2514 ! CTNNB1, pmod(go:0006468 ! \"protein phosphorylation\", Ser, 33))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CTNNB1",
+        "identifier": "2514"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Ser",
+          "pos": 37
+        }
+      ],
+      "id": "67f54ee0138a4ec3266d631843db2b2d",
+      "bel": "p(hgnc:2514 ! CTNNB1, pmod(go:0006468 ! \"protein phosphorylation\", Ser, 37))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CTNNB1",
+        "identifier": "2514"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Ser",
+          "pos": 45
+        }
+      ],
+      "id": "7540d6275a58299e33f47c07064094a4",
+      "bel": "p(hgnc:2514 ! CTNNB1, pmod(go:0006468 ! \"protein phosphorylation\", Ser, 45))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CTNNB1",
+        "identifier": "2514"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Thr",
+          "pos": 41
+        }
+      ],
+      "id": "d6946082ec9ea778cad4d1abbbff3e92",
+      "bel": "p(hgnc:2514 ! CTNNB1, pmod(go:0006468 ! \"protein phosphorylation\", Thr, 41))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CTNNB1",
+        "identifier": "2514"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Tyr"
+        }
+      ],
+      "id": "d260ea725ab028780dc802fc64023c9a",
+      "bel": "p(hgnc:2514 ! CTNNB1, pmod(go:0006468 ! \"protein phosphorylation\", Tyr))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "DKK1",
+        "identifier": "2891"
+      },
+      "id": "61064f5ed55b873fed1cc0fae9d26e46",
+      "bel": "p(hgnc:2891 ! DKK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "DKK2",
+        "identifier": "2892"
+      },
+      "id": "942a7cc15e3aa51a9bac9474627ae68f",
+      "bel": "p(hgnc:2892 ! DKK2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "DKK3",
+        "identifier": "2893"
+      },
+      "id": "a3a12da7c40d1b622db3558b339dfece",
+      "bel": "p(hgnc:2893 ! DKK3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "DKK4",
+        "identifier": "2894"
+      },
+      "id": "873f4e8f26aeaf2f6e8876fc9f61661c",
+      "bel": "p(hgnc:2894 ! DKK4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "DLK1",
+        "identifier": "2907"
+      },
+      "id": "742aafb42a3353dd0bd04d7da5f01d2a",
+      "bel": "p(hgnc:2907 ! DLK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "FGF10",
+        "identifier": "3666"
+      },
+      "id": "bb4e82c036b5b14e7b38a8184f97cae8",
+      "bel": "p(hgnc:3666 ! FGF10)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "FOS",
+        "identifier": "3796"
+      },
+      "id": "51b3dd9db2c79b87b3e8d0248fe2ddd3",
+      "bel": "p(hgnc:3796 ! FOS)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "FRAT1",
+        "identifier": "3944"
+      },
+      "id": "5186cd4f366bffa34a5f27af20a60748",
+      "bel": "p(hgnc:3944 ! FRAT1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "FZD2",
+        "identifier": "4040"
+      },
+      "id": "229361c67efb9db32c5e06c55ee3eaca",
+      "bel": "p(hgnc:4040 ! FZD2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "FZD3",
+        "identifier": "4041"
+      },
+      "id": "090edf18f7a77b3edc1bc56612b9a596",
+      "bel": "p(hgnc:4041 ! FZD3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GATA6",
+        "identifier": "4174"
+      },
+      "id": "8e82cffd8c025adeb2d405a6259f413c",
+      "bel": "p(hgnc:4174 ! GATA6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CXCL8",
+        "identifier": "6025"
+      },
+      "id": "ff6d8ebf56ab67532ff6ab8e1ad8745c",
+      "bel": "p(hgnc:6025 ! CXCL8)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "JUN",
+        "identifier": "6204"
+      },
+      "id": "fbc362581b3fc676170a17f33a024a1a",
+      "bel": "p(hgnc:6204 ! JUN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "AQP4",
+        "identifier": "637"
+      },
+      "id": "c18708a94b9cfc4b6b6310467a400232",
+      "bel": "p(hgnc:637 ! AQP4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "LRP5",
+        "identifier": "6697"
+      },
+      "id": "ed01a7e3d67c46a697f2305768614d31",
+      "bel": "p(hgnc:6697 ! LRP5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "LRP6",
+        "identifier": "6698"
+      },
+      "id": "af0af5f287d23d81ef459f0383462b65",
+      "bel": "p(hgnc:6698 ! LRP6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MAP3K7",
+        "identifier": "6859"
+      },
+      "id": "e78712bc62bb428b8e61d97e9c0da6a7",
+      "bel": "p(hgnc:6859 ! MAP3K7)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MYC",
+        "identifier": "7553"
+      },
+      "id": "be0155fc0a36b4974c35171c73809693",
+      "bel": "p(hgnc:7553 ! MYC)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MYCN",
+        "identifier": "7559"
+      },
+      "id": "29d03ac68a71b0cf94c06985d431731b",
+      "bel": "p(hgnc:7559 ! MYCN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTN",
+        "identifier": "9630"
+      },
+      "id": "d1f672cc7bfd4bb01c5ca3c955fe3392",
+      "bel": "p(hgnc:9630 ! PTN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "mesh",
+        "name": "Idiopathic Pulmonary Fibrosis",
+        "identifier": "D054990"
+      },
+      "id": "991f5b14f9dac33b696ef420fd1ab2a8",
+      "bel": "p(mesh:D054990 ! \"Idiopathic Pulmonary Fibrosis\")"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "mesh",
+        "name": "Pulmonary Disease, Chronic Obstructive",
+        "identifier": "D029424"
+      },
+      "id": "98cb883d84a9775f973f1e99c68ba3a2",
+      "bel": "path(mesh:D029424 ! \"Pulmonary Disease, Chronic Obstructive\")"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "WNT1",
+        "identifier": "12774"
+      },
+      "id": "d331ade3d0f99031b9b8368dc12ca38b",
+      "bel": "r(hgnc:12774 ! WNT1)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "WNT10B",
+        "identifier": "12775"
+      },
+      "id": "bbda35c20add09f6d8c58bfd0852c4b1",
+      "bel": "r(hgnc:12775 ! WNT10B)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "WNT4",
+        "identifier": "12783"
+      },
+      "id": "2e47b06df41c706a6387d8ffece1a48c",
+      "bel": "r(hgnc:12783 ! WNT4)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "WNT5A",
+        "identifier": "12784"
+      },
+      "id": "996f1e39f11d891ecae7d8f7f57d854c",
+      "bel": "r(hgnc:12784 ! WNT5A)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "WNT5B",
+        "identifier": "16265"
+      },
+      "id": "18b4b2a0292593eb53d50b1aaefa7bfa",
+      "bel": "r(hgnc:16265 ! WNT5B)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "FZD2",
+        "identifier": "4040"
+      },
+      "id": "a0caa009fcd4d89c9279141145ce695f",
+      "bel": "r(hgnc:4040 ! FZD2)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "FZD3",
+        "identifier": "4041"
+      },
+      "id": "fe27851fe1757f0066d329b318c4436b",
+      "bel": "r(hgnc:4041 ! FZD3)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "LEF1",
+        "identifier": "6551"
+      },
+      "id": "8b0d51260c06ac4411c34d7137e91bda",
+      "bel": "r(hgnc:6551 ! LEF1)"
+    }
+  ],
+  "links": [
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "Nicotine-induced epithelial-mesenchymal transition via Wnt/β-catenin signaling in human airway epithelial cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23204070"
+      },
+      "annotations": {},
+      "source": 0,
+      "target": 6,
+      "key": "187f48675fce3413fe92c189d9f46551"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "Our findings demonstrate that HBECs stimulated by nicotine produce excessive amounts of Wnt3a, accompanied by cytoplasmic accumulation and nuclear translocation of β-catenin and EMT.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23204070"
+      },
+      "annotations": {},
+      "source": 0,
+      "target": 6,
+      "key": "9935497a01f76a65156ab37ffcefc0f2"
+    },
+    {
+      "line": 27,
+      "relation": "increases",
+      "evidence": "We found that the cells exposed to nicotine for 24 h significantly increased Wnt3a secretion as determined by ELISA (Fig. 1A). Real-time PCR revealed a dramatic upregulation of Wnt3a mRNA expression after 24 h of nicotine stimulation (Fig. 1B), which suggested that Wnt3a upregulation occurred at the transcriptional level. Western blotting analysis showed that an increase in the level of Wnt3a protein occurred as early as 30 min, and it was sustained at all of the time points examined (Fig. 1C). A 24-h exposure of cells to nicotine (6× 10−8 mol/l−6 × 10−6 mol/l) led to an increase in Wnt3a production in a concentration-dependent manner (Fig. 1D).",
+      "citation": {
+        "db": "Other",
+        "db_id": "23204070"
+      },
+      "annotations": {},
+      "source": 0,
+      "target": 32,
+      "key": "ccd4544bc0de91a5332496c4d39f82f3"
+    },
+    {
+      "line": 0,
+      "relation": "increases",
+      "evidence": "Nicotine-induced epithelial-mesenchymal transition via Wnt/β-catenin signaling in human airway epithelial cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23204070"
+      },
+      "annotations": {},
+      "source": 6,
+      "target": 2,
+      "key": "3b218546d55fb4e564b55a08ba509ec5"
+    },
+    {
+      "line": 0,
+      "relation": "increases",
+      "evidence": "Our findings demonstrate that HBECs stimulated by nicotine produce excessive amounts of Wnt3a, accompanied by cytoplasmic accumulation and nuclear translocation of β-catenin and EMT.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23204070"
+      },
+      "annotations": {},
+      "source": 6,
+      "target": 2,
+      "key": "79f8149c9e8fdc93188bb7cc2fb388b1"
+    },
+    {
+      "line": 1,
+      "relation": "increases",
+      "evidence": "Increased ECM CCN1 resulted in augmented IL-8 release through the activation of Wnt pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23874538"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "go",
+            "name": "intracellular",
+            "identifier": "0005622"
+          },
+          "toLoc": {
+            "namespace": "go",
+            "name": "extracellular space",
+            "identifier": "0005615"
+          }
+        }
+      },
+      "source": 6,
+      "target": 56,
+      "key": "f81f4753b9edaefd1d2ca7d4cd03e059"
+    },
+    {
+      "line": 2,
+      "relation": "increases",
+      "evidence": "β-catenin signaling ......contributes to myofibroblasts differentiation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21980461"
+      },
+      "annotations": {},
+      "source": 6,
+      "target": 5,
+      "key": "cf808fb2be86d38de0cb7bd99b586196"
+    },
+    {
+      "line": 3,
+      "relation": "increases",
+      "evidence": "β-catenin signaling contributes to ECM production by pulmonary fibroblasts",
+      "citation": {
+        "db": "Other",
+        "db_id": "21980461"
+      },
+      "annotations": {},
+      "source": 6,
+      "target": 7,
+      "key": "7830b306ffa5d44ab433483e025625cc"
+    },
+    {
+      "line": 6,
+      "relation": "association",
+      "evidence": "Our data indicate that conditional deletion of c-Myc from PSMCs inhibits airway epithelial repair..",
+      "citation": {
+        "db": "Other",
+        "db_id": "23967208"
+      },
+      "annotations": {},
+      "source": 4,
+      "target": 62,
+      "key": "30456b6fc9aea183f06db7bf50d86ba0"
+    },
+    {
+      "relation": "partOf",
+      "source": 51,
+      "target": 10,
+      "key": "a4042d385df2213b5ad71d73a61af52c"
+    },
+    {
+      "relation": "partOf",
+      "source": 57,
+      "target": 10,
+      "key": "7f71929c935f36ec2052c9e318ae3b09"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 38,
+      "target": 39,
+      "key": "685518fa11afe56bffdfbffe69bc9562"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 38,
+      "target": 40,
+      "key": "97d8d5b490b4bc7357cae5f109afe7b7"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 38,
+      "target": 41,
+      "key": "50d42367792401f95c70e91d59016866"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 38,
+      "target": 42,
+      "key": "c2ee79b969498f9091eb10bf6d1454f3"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 38,
+      "target": 43,
+      "key": "bc3dfd895578c1f300bd2971c1b1fd7c"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 38,
+      "target": 44,
+      "key": "58d111ea8cc001229469aa23e57c0130"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "In conclusion, we have found that the Arg(96) mutant has a dominant-negative effect on GSK-3beta-dependent phosphorylation of beta-catenin and that targeting of beta-catenin for degradation requires prior priming through phosphorylation of Ser(45).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11967263"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "a8d2625cc844a4800e63a2a62b8352c7"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Inhibition of CK2 reduces the level of ÃƒÅ¸-catenin and blocks proliferation of Wnt-transfected cells, suggesting that ÃƒÅ¸-catenin phosphorylated by CK2 escapes ubiquitination and degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12244125"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "0b9a424bb835430f44a39f665b4fd834"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Signalling initiated by secreted WNT, through Frizzled receptors, leads to phosphorylation of the protein Dishevelled (DSH), which inhibits phosphorylation of ?-Cat by GSK3?.GSK3? activity can also be inhibited by direct interaction with the glycogen-synthase-kinase-3-binding protein (GBP).As a consequence, ?-Cat is not phosphorylated, avoids destruction and enters the nucleus where it heterodimerizes with members of the TCF/LEF transcription factor family to activate downstream target genes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14570040"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "e89fa2a58d3ffa8331dc29b21469fccf"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Cleavage of beta-catenin was found to be caspase-dependent. Five cleavage products of beta-catenin were identified in vivo and after in vitro cleavage by caspase-3 . . . Functional analysis revealed that beta-catenin deletion constructs resembling the observed proteolytic fragments show a strongly reduced transcription activation potential when analyzed in gene reporter assays.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10748026"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "c851c48fbd22be8d557c5ee82624a801"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Axin, a Wnt signal negative regulator, enhances glycogen synthase kinase (GSK)-3beta-dependent phosphorylation of beta-catenin and stimulates the degradation of beta-catenin.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10488109"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "c8fcad25841fcac88e9b1bc5c966d6a8"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "cyclin-CDK2 demonstrate beta-catenin phosphorylation on residues Ser(33), Ser(37), Thr(41), and Ser(45). This phosphorylation promotes rapid degradation of cytosolic beta-catenin",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14985333"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "fd609a68797940aaeacdf30318abed96"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "It also associates specifically with phosphorylated IkappaBalpha and beta-catenin destruction motifs, probably functioning in multiple transcriptional programs by activating the NF-kappaB pathway and inhibiting the beta-catenin pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11850407"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "5b37c9d29364b5feed081f0cff057be5"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "In colon and other cancers, mutations of beta-catenin or the adenomatous polyposis coli (APC) tumor suppressor appear to stabilize beta-catenin and enhance its interaction with T cell factor (TCF) or lymphoid enhancer factor (Lef) transcription factors.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11050151"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "a92507d9b38a9dadb4f22473bcc3a2bd"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Non-sequestered, free beta-catenin and gamma-catenin are rapidly phosphorylated by glycogen synthase kinase 3beta (GSK-3beta) in the adenomatous polyposis coli (APC)-axin-GSK-3beta complex and are subsequently degraded by the ubiquitin-proteasome pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14964308"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "983a4078518384297ab0b3eaf6401c94"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "beta-catenin ubiquitination is preceded by phosphorylation of its N-terminal region by the glycogen synthase kinase-3beta (GSK-3beta)/Axin kinase complex.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10228155"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "e57906e371dd2c8e264caecd26939990"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Serine-33 and -37 of beta-catenin are GSK3 phosphorylation sites that serve as recognition sites for the beta-TRCP-ubiquitin ligase complex, which ultimately triggers beta-catenin degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12417018"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "8fb3b924a88428ccfb8123a842665b2b"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Moreover, we show that the repression of AR activity by LY294002 is mediated through phosphorylation and inactivation of GSK3beta, a downstream substrate of PI3K/Akt, which results in the nuclear accumulation of beta-catenin The activation of Akt results in the phosphorylation of a number of downstream substrates such as glycogen synthase kinase (GSK3) It has been shown that GSK3 plays an important role in the Wnt pathway by regulating the degradation of -catenin Recently, a specific protein-protein interaction between -catenin and AR was identified by us and others (22, 23). Through this interaction, -catenin augments the ligand-dependent activity of AR in prostate cancer cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12063252"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "c4b48b57cce0d53d27b8b33990ac1b65"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "in the colon cancer cell line SW480, which contains wild-type beta-catenin but no APC activity, expression of Wnt-5a did not lead to inhibition of TOPFLAH activity or beta-catenin degradation (Fig. 6 D).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12952940"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "15bc41e0dde96b8d4b18f9c64b0d7055"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "One other possible cause of beta-catenin accumulation is overexpression of insulin-like growth factors (IGFs), as both IGF-I and IGF-II have been shown to stabilize beta-catenin.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12898599"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "341e8b9bc80cfcacbf3830726b1df6f7"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "We identified a human F-box/WD40 repeats protein (HOS), which is homologous to Slimb/h betaTrCP. Being a part of SCF complex with Skp1 and Cullin1, HOS specifically interacted with the phosphorylated IkappaB and beta-catenin, targeting these proteins for proteasome-dependent degradation in vivo.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10321728"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "e619d59a56dd4b68b0dbf32d8d4dd27d"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Furthermore, the expression levels of GSK-3 beta, the kinase that phosphorylates beta-catenin and signals its degradation, were up-regulated in WT1-transfected cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14666652"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "1dd3fa0ca75ef0ead995e5d6172ef51e"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "In human colon carcinoma SW480 cells, activation of the Gq pathway inhibits beta-catenin signaling as determined by transcriptional reporter and cell proliferation assays. Ca(2+) release from internal stores results in nuclear export and calpain-mediated degradation of beta-catenin in the cytoplasm",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12239346"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "ea63247c836646e73cdf9e486e852621"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Fragments of APC that contained a conductin-binding domain also blocked beta-catenin degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9554852"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "f53d543c9b7e3f4b4bda05928a01bbee"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Stabilization of -catenin by PKA. PKA-dependent phosphorylation of -catenin at Ser675 inhibits the ubiquitination of -catenin, although GSK-3 -dependent phosphorylation of -catenin is not affected.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16520547"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "3417467e755812df8c5a1ef2e8f5a8ab"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Enzastaurin also blocked phosphorylation of b-catenin at S33,37 phosphorylation sites essential for PKC-regulated proteasomal degradation (Figure 1C).18,19 Indeed, inhibition of translation using cycloheximide did not abrogate enzastaurin-induced up-regulation of b-catenin. These data support the hypothesis that enzastaurin inhibits degradation of b-catenin via abrogation of ubiquitination",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19018094"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "5e484beb63ccc95293dc09fce275b4c5"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Phosphorylation of the S100A6-binding domain of Sgt1 by casein kinase II was inhibited by S100A6, a result suggesting that the role of S100A6 binding is to regulate the phosphorylation of Sgt1. These findings suggest that protein ubiquitination via Sgt1-dependent pathway can be regulated by S100 proteins. Because S100A6 and some other S100 proteins can interact with CacyBP/SIP and Sgt1, these S100 proteins could regulate both pathways in a similar fashion. The defects in ubiquitination and degradation of -catenin",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12746458"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "7d6ab28169ea5774271f81dbd319c254"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Importantly, mutations of FBW7 were found in three out of ten ovarian cancer cell lines analysed, indicating that mutations of FBW7 might be responsible for elevated levels of Cyclin E in this tumor The mammalian SCFb-Trcp (b-transducin repeat-containing protein) has been implicated in the regulation of at least two different signal transduction pathways, Wnt/Wingless and NF-kB, by mediating the ubiquitinylation and degradation of the transcriptional coactivator bcatenin and the NF-kB inhib itor IkB, respectively",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15021891"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "e5ff01e9a2b3e77fd29a52cb5815cf10"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Inducible overexpression of PS1 led to increased association of beta-catenin with glycogen synthase kinase-3beta (GSK-3beta), a negative regulator of beta-catenin, and accelerated the turnover of endogenous beta-catenin.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10341227"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "6261198fe17e4b5f4980d367ab257cb9"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Here we show that in HCT116 colon carcinoma cells, 10 mM sodium salicylate induces caspase-3 activation and degradation of its substrates, poly(ADP-ribose) polymerase (PARP), beta-catenin, and retinoblastoma (Rb).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12851702"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "e12da7eaf4016ab8e19599c5f6c79b7b"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "A novel pathway for beta-catenin degradation was discovered involving mammalian homologs of Drosophila Sina (Siah), which bind ubiquitin-conjugating enzymes, and Ebi, an F box protein that binds beta-catenin independent of the phosphorylation sites recognized by beta-TrCP. A series of protein interactions were identified in which Siah is physically linked to Ebi by association with a novel Sgt1 homolog SIP that binds Skp1, a central component of Skp1-Cullin-F box complexes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11389839"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "f5c35c08865aee3fa03c3f5dc77f43a2"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "The current model for the regulation of beta-catenin by APC rests on the ability of APC to bind with beta-catenin in the nucleus and export it out into the cytoplasm for targeted ubiquitination and proteasomal degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16543216"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "9201a5774de515a32d0e6cf443b3122d"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "BetaTrCP and HOS are closely related F-box proteins, which play key roles in ubiquitination and degradation of beta-catenin and IkappaB through associating with those phosphorylated substrates and recruiting SCF E3 ubiquitin ligase",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11850814"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "5bac891c8ad0bc62a91265c1c2a8abd9"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Indeed, hamartin and tuberin co-immunoprecipitated with glycogen synthase kinase 3 beta and Axin, components of this complex in a Wnt-1-dependent manner. Our data suggest that hamartin and tuberin negatively regulate beta-catenin stability and activity by participating in the beta-catenin degradation complex.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12511557"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "b86131779e57901900ea12845b017523"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "GSK-3 is constitutively active in unstimulated cells where it phosphorylates beta-catenin, targeting beta-catenin for rapid degradation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12097378"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "fd42448df91547d6d603f0bee885ff3a"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "phosphorylated Ser37 and Ser33 are recognized by the F-box protein beta-TrCP, a component of a ubiquitin ligase complex that mediates beta-catenin degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16618120"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "9756eec51461e328939ede4d90860c1b"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Whereas deregulated beta-catenin can lead to Mdm2 inactivation and p53 accumulation, active p53 can promote the degradation and down-regulation of beta-catenin.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12485897"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "caba8947b74d2217d787257159667e38"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Inactivation of GSK-3 has been shown to reduce the ubiquitination of beta-catenin, resulting in nuclear accumulation and transcriptional activity of beta-catenin.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11254732"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "4fc893030a30e83924905b0bb29cd10b"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "from full text - Figure 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19763051"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "1f33dd906858f20a62749ff9514f395d"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "PKC isoforms have been reported to contribute to the phosphorylation and degradation of b-catenin. Consequently, a marked accumulation of b-catenin has been seen after treatment with bisindoylmaleimide inhibitors of PKC (eg, BIM I).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19018094"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "c4f39866520390144765713477ab3a5d"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Conductin is a major negative regulator of Wnt signal transduction by virtue of its ability to promote degradation of ß-catenin. Our experiments suggest that upregulation of conductin constitutes a novel mechanism of negative feedback regulation in the Wnt pathway. (from full text)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11809809"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "b3fd1a1091f3868c4a5e30a1d53a4f3b"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "beta-catenin degradation is initiated upon amino-terminal serine/threonine phosphorylation, which is believed to be performed by glycogen synthase kinase-3 (GSK-3) in complex with tumor suppressor proteins Axin and adnomatous polyposis coli (APC)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11955436"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "92d74565182e71f0f18a579ad6b8086f"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Although Wnts act to stabilize beta-catenin levels in the cytosol and nucleus, a multiprotein complex containing adenomatous polyposis coli, glycogen synthase kinase 3beta, and Axin1 or its homolog Axin2/Axil/conductin promotes beta-catenin phosphorylation and subsequent proteasomal degradation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11940574"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "b74f08663bc195378e2fb0100bf625aa"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "beta-TRCP is a versatile F-box protein that recognizes several cell-cycle regulators EMI1-2, WEE1A and CDC25A-B in addition to its classical substrates, beta-catenin and IkappaB. In some cancers, beta-TRCP mutation or overexpression is found.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16633365"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "0b1e06089196dab8fe3da7b3351777a8"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "from full text - Figure 2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16438732"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "27b11a129d84440d7945d2696a3c25e9"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Thus, CK2 is a positive regulator of Wnt signaling through phosphorylation of beta-catenin at Thr393, leading to proteasome resistance and increased protein and co-transcriptional activity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12700239"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "e4b8fe8e582c61cbd3d05ed6d7f60639"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Axam induced the degradation of beta-catenin in SW480 cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10944533"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "6e0a71f0ee2ff28555006df5c8f6434e"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "n the absence of Wnt stimulation, the level of beta-catenin is reduced via glycogen synthase kinase (GSK)-3beta-mediated phosphorylation and subsequent proteasome-dependent degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17621269"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "2921e0ab76c007ea448212cb7a36e324"
+    },
+    {
+      "line": 55,
+      "relation": "directlyDecreases",
+      "evidence": "Axin, a negative regulator of Wnt, forms a complex with glycogen synthase kinase 3beta, beta-catenin, and adenomatous polyposis coli and promotes GSK3beta-dependent phosphorylation of beta-catenin, thereby stimulating degradation of the beta-catenin",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15063782"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 38,
+      "target": 38,
+      "key": "0bce068961f57fe496d22470f30eb631"
+    },
+    {
+      "line": 94,
+      "relation": "directlyIncreases",
+      "evidence": "Here we demonstrate that cyclin-dependent kinase 2 (CDK2) in association with cyclin A or cyclin E directly binds to beta-catenin.  In vivo and in vitro kinase assays with cyclin-CDK2 demonstrate beta-catenin phosphorylation on residues Ser(33), Ser(37), Thr(41), and Ser(45). This phosphorylation promotes rapid degradation of cytosolic beta-catenin via the beta-TrCP-mediated proteasome pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14985333"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 39,
+      "target": 38,
+      "key": "4e90090eca555c3804dd98140a17fd75"
+    },
+    {
+      "line": 94,
+      "relation": "directlyIncreases",
+      "evidence": "In conclusion, we have found that the Arg(96) mutant has a dominant-negative effect on GSK-3beta-dependent phosphorylation of beta-catenin and that targeting of beta-catenin for degradation requires prior priming through phosphorylation of Ser(45).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11967263"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 39,
+      "target": 38,
+      "key": "51361e0e667deb8397bc185b912906ce"
+    },
+    {
+      "line": 80,
+      "relation": "directlyIncreases",
+      "evidence": "beta-Catenin phosphorylation at serine 45 (Ser45), threonine 41 (Thr41), Ser37, and Ser33 is critical for beta-catenin degradation, and regulation of beta-catenin phosphorylation is a central part of the canonical Wnt signaling pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16618120"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 40,
+      "target": 38,
+      "key": "6a8eabd3fc0d67044f129bea7368abe2"
+    },
+    {
+      "line": 80,
+      "relation": "directlyIncreases",
+      "evidence": "Serine-33 and -37 of beta-catenin are GSK3 phosphorylation sites that serve as recognition sites for the beta-TRCP-ubiquitin ligase complex, which ultimately triggers beta-catenin degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12417018"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 40,
+      "target": 38,
+      "key": "10f0f7a8bc30fa18f7f9c742f09eb325"
+    },
+    {
+      "line": 80,
+      "relation": "directlyIncreases",
+      "evidence": "cyclin-CDK2 demonstrate beta-catenin phosphorylation on residues Ser(33), Ser(37), Thr(41), and Ser(45). This phosphorylation promotes rapid degradation of cytosolic beta-catenin",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14985333"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 40,
+      "target": 38,
+      "key": "b5825f224a7a8d57697d128b5dc7d009"
+    },
+    {
+      "line": 72,
+      "relation": "directlyIncreases",
+      "evidence": "cyclin-CDK2 demonstrate beta-catenin phosphorylation on residues Ser(33), Ser(37), Thr(41), and Ser(45). This phosphorylation promotes rapid degradation of cytosolic beta-catenin",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14985333"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 38,
+      "key": "5f86245bb59357edfa98512f40ac2b75"
+    },
+    {
+      "line": 72,
+      "relation": "directlyIncreases",
+      "evidence": "beta-Catenin phosphorylation at serine 45 (Ser45), threonine 41 (Thr41), Ser37, and Ser33 is critical for beta-catenin degradation, and regulation of beta-catenin phosphorylation is a central part of the canonical Wnt signaling pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16618120"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 38,
+      "key": "760e39687faa9a02ede8849bcd749979"
+    },
+    {
+      "line": 72,
+      "relation": "directlyIncreases",
+      "evidence": "Serine-33 and -37 of beta-catenin are GSK3 phosphorylation sites that serve as recognition sites for the beta-TRCP-ubiquitin ligase complex, which ultimately triggers beta-catenin degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12417018"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 38,
+      "key": "6c9d2414010e567594d27472a57e3035"
+    },
+    {
+      "line": 88,
+      "relation": "increases",
+      "evidence": "It is established that Ser45 phosphorylation by casein kinase I (CKI) initiates phosphorylation at Thr41, Ser37, and Ser33 by glycogen synthase kinase 3 (GSK3) and that phosphorylated Ser37 and Ser33 are recognized by the F-box protein beta-TrCP, a component of a ubiquitin ligase complex that mediates beta-catenin degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16618120"
+      },
+      "annotations": {},
+      "source": 42,
+      "target": 43,
+      "key": "e7af4a85d07ca71728e37b4a53820c3f"
+    },
+    {
+      "line": 89,
+      "relation": "increases",
+      "evidence": "It is established that Ser45 phosphorylation by casein kinase I (CKI) initiates phosphorylation at Thr41, Ser37, and Ser33 by glycogen synthase kinase 3 (GSK3) and that phosphorylated Ser37 and Ser33 are recognized by the F-box protein beta-TrCP, a component of a ubiquitin ligase complex that mediates beta-catenin degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16618120"
+      },
+      "annotations": {},
+      "source": 42,
+      "target": 41,
+      "key": "576034b91c66f0817419d74139b0a5e8"
+    },
+    {
+      "line": 90,
+      "relation": "directlyIncreases",
+      "evidence": "cyclin-CDK2 demonstrate beta-catenin phosphorylation on residues Ser(33), Ser(37), Thr(41), and Ser(45). This phosphorylation promotes rapid degradation of cytosolic beta-catenin",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14985333"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 42,
+      "target": 38,
+      "key": "9b6ea1807cdd3a1f41553df88f455a87"
+    },
+    {
+      "line": 90,
+      "relation": "directlyIncreases",
+      "evidence": "beta-Catenin phosphorylation at serine 45 (Ser45), threonine 41 (Thr41), Ser37, and Ser33 is critical for beta-catenin degradation, and regulation of beta-catenin phosphorylation is a central part of the canonical Wnt signaling pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16618120"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 42,
+      "target": 38,
+      "key": "4b024c526825e037ea4f07dada16fb3f"
+    },
+    {
+      "line": 91,
+      "relation": "increases",
+      "evidence": "It is established that Ser45 phosphorylation by casein kinase I (CKI) initiates phosphorylation at Thr41, Ser37, and Ser33 by glycogen synthase kinase 3 (GSK3) and that phosphorylated Ser37 and Ser33 are recognized by the F-box protein beta-TrCP, a component of a ubiquitin ligase complex that mediates beta-catenin degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16618120"
+      },
+      "annotations": {},
+      "source": 42,
+      "target": 40,
+      "key": "be25a4dc1b5da256cdfde27462f67af5"
+    },
+    {
+      "line": 92,
+      "relation": "directlyIncreases",
+      "evidence": "cyclin-CDK2 demonstrate beta-catenin phosphorylation on residues Ser(33), Ser(37), Thr(41), and Ser(45). This phosphorylation promotes rapid degradation of cytosolic beta-catenin",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14985333"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 43,
+      "target": 38,
+      "key": "36ce377ef6672da873e4c3bcde7848a7"
+    },
+    {
+      "line": 92,
+      "relation": "directlyIncreases",
+      "evidence": "beta-Catenin phosphorylation at serine 45 (Ser45), threonine 41 (Thr41), Ser37, and Ser33 is critical for beta-catenin degradation, and regulation of beta-catenin phosphorylation is a central part of the canonical Wnt signaling pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16618120"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 43,
+      "target": 38,
+      "key": "33439778833e9eb81b59ec248facf67f"
+    },
+    {
+      "line": 96,
+      "relation": "decreases",
+      "evidence": "Dickkopf (Dkk) genes comprise an evolutionary conserved small gene family of four members (Dkk1-4) and a unique Dkk3-related gene, Dkkl1 (soggy). They encode secreted proteins that typically antagonize Wnt/beta-catenin signaling, by inhibiting the Wnt coreceptors Lrp5 and 6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17143291"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 45,
+      "target": 60,
+      "key": "cc7f48013fd50083db8fc8fbf4a603b0"
+    },
+    {
+      "line": 96,
+      "relation": "decreases",
+      "evidence": "we generated retroviruses that express either Dkk1, a secreted antagonist that prevents Wnt ligands from binding to the LRP5/6 co-receptor (Mao et al., 2001aGo), or a dominant-negative form of Tcf4",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15576404"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 45,
+      "target": 60,
+      "key": "b2a55602d60b9c3db09115577b58ca4e"
+    },
+    {
+      "line": 97,
+      "relation": "decreases",
+      "evidence": "we generated retroviruses that express either Dkk1, a secreted antagonist that prevents Wnt ligands from binding to the LRP5/6 co-receptor (Mao et al., 2001aGo), or a dominant-negative form of Tcf4",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15576404"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 45,
+      "target": 59,
+      "key": "ed07d8e87894a8a75bde9ec8cdfb0290"
+    },
+    {
+      "line": 97,
+      "relation": "decreases",
+      "evidence": "Dickkopf (Dkk) genes comprise an evolutionary conserved small gene family of four members (Dkk1-4) and a unique Dkk3-related gene, Dkkl1 (soggy). They encode secreted proteins that typically antagonize Wnt/beta-catenin signaling, by inhibiting the Wnt coreceptors Lrp5 and 6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17143291"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 45,
+      "target": 59,
+      "key": "936c4a019de2a1a84648eafd5fcb7637"
+    },
+    {
+      "line": 132,
+      "relation": "decreases",
+      "evidence": "Dickkopf (Dkk) genes comprise an evolutionary conserved small gene family of four members (Dkk1-4) and a unique Dkk3-related gene, Dkkl1 (soggy). They encode secreted proteins that typically antagonize Wnt/beta-catenin signaling, by inhibiting the Wnt coreceptors Lrp5 and 6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17143291"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 46,
+      "target": 59,
+      "key": "b5e5fc13da0ebb820bab6b68c03a55ab"
+    },
+    {
+      "line": 133,
+      "relation": "decreases",
+      "evidence": "Dickkopf (Dkk) genes comprise an evolutionary conserved small gene family of four members (Dkk1-4) and a unique Dkk3-related gene, Dkkl1 (soggy). They encode secreted proteins that typically antagonize Wnt/beta-catenin signaling, by inhibiting the Wnt coreceptors Lrp5 and 6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17143291"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 46,
+      "target": 60,
+      "key": "2380f6eae48b777bbea8ac376cc1cb44"
+    },
+    {
+      "line": 101,
+      "relation": "decreases",
+      "evidence": "Dickkopf (Dkk) genes comprise an evolutionary conserved small gene family of four members (Dkk1-4) and a unique Dkk3-related gene, Dkkl1 (soggy). They encode secreted proteins that typically antagonize Wnt/beta-catenin signaling, by inhibiting the Wnt coreceptors Lrp5 and 6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17143291"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 47,
+      "target": 60,
+      "key": "2ef8166eed75b4814b014387cd6f2b54"
+    },
+    {
+      "line": 102,
+      "relation": "decreases",
+      "evidence": "Dickkopf (Dkk) genes comprise an evolutionary conserved small gene family of four members (Dkk1-4) and a unique Dkk3-related gene, Dkkl1 (soggy). They encode secreted proteins that typically antagonize Wnt/beta-catenin signaling, by inhibiting the Wnt coreceptors Lrp5 and 6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17143291"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 47,
+      "target": 59,
+      "key": "af75bfbdeb3408a9761ee30ca24cd633"
+    },
+    {
+      "line": 109,
+      "relation": "decreases",
+      "evidence": "Dickkopf (Dkk) genes comprise an evolutionary conserved small gene family of four members (Dkk1-4) and a unique Dkk3-related gene, Dkkl1 (soggy). They encode secreted proteins that typically antagonize Wnt/beta-catenin signaling, by inhibiting the Wnt coreceptors Lrp5 and 6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17143291"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 48,
+      "target": 60,
+      "key": "fbc2abaee47db55e8834da9868414d28"
+    },
+    {
+      "line": 110,
+      "relation": "decreases",
+      "evidence": "Dickkopf (Dkk) genes comprise an evolutionary conserved small gene family of four members (Dkk1-4) and a unique Dkk3-related gene, Dkkl1 (soggy). They encode secreted proteins that typically antagonize Wnt/beta-catenin signaling, by inhibiting the Wnt coreceptors Lrp5 and 6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17143291"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 48,
+      "target": 59,
+      "key": "f36456d59b2d432f3872ce07c8ad6115"
+    },
+    {
+      "line": 69,
+      "relation": "decreases",
+      "evidence": "Dickkopf (Dkk) genes comprise an evolutionary conserved small gene family of four members (Dkk1-4) and a unique Dkk3-related gene, Dkkl1 (soggy). They encode secreted proteins that typically antagonize Wnt/beta-catenin signaling, by inhibiting the Wnt coreceptors Lrp5 and 6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17143291"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 34,
+      "target": 60,
+      "key": "5dd2bbd39ed4c9c62aa444f4b06933c4"
+    },
+    {
+      "line": 70,
+      "relation": "decreases",
+      "evidence": "Dickkopf (Dkk) genes comprise an evolutionary conserved small gene family of four members (Dkk1-4) and a unique Dkk3-related gene, Dkkl1 (soggy). They encode secreted proteins that typically antagonize Wnt/beta-catenin signaling, by inhibiting the Wnt coreceptors Lrp5 and 6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17143291"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 34,
+      "target": 59,
+      "key": "8d0f56d642a53d8778f4591a5f93e0e7"
+    },
+    {
+      "line": 71,
+      "relation": "increases",
+      "evidence": "Dlk1, a membrane ligand that initiates the Notch signaling pathway, was identified as a downstream target of the pleiotrophin/beta-catenin pathway by endogenous dlk1 expression, promoter assay, and chromatin immunoprecipitation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19661059"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 49,
+      "target": 20,
+      "key": "d041fd7218f652033f7706c2783ccdf6"
+    },
+    {
+      "line": 52,
+      "relation": "increases",
+      "evidence": "Frequently rearranged in advanced T-cell lymphomas 1 (FRAT1) protein is a negative regulator of GSK3alpha/beta kinase activity. Our data demonstrate that cellular expression of FRAT1 peptide in swAPP(751) cells increases both GSK3alpha and beta phosphorylation on Ser21 and Ser9,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14572648"
+      },
+      "annotations": {},
+      "source": 52,
+      "target": 16,
+      "key": "e010dae586e51c067d16bcadff5a44a8"
+    },
+    {
+      "line": 53,
+      "relation": "decreases",
+      "evidence": "Both hFRAT1 and hFRAT2 are implicated in the selective modulation of GSK-3 activity",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12095675"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 52,
+      "target": 14,
+      "key": "6ee3870309bdb4d6db5e81d67eb8181f"
+    },
+    {
+      "line": 54,
+      "relation": "increases",
+      "evidence": "Frequently rearranged in advanced T-cell lymphomas 1 (FRAT1) protein is a negative regulator of GSK3alpha/beta kinase activity. Our data demonstrate that cellular expression of FRAT1 peptide in swAPP(751) cells increases both GSK3alpha and beta phosphorylation on Ser21 and Ser9,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14572648"
+      },
+      "annotations": {},
+      "source": 52,
+      "target": 17,
+      "key": "75cba3c87285c6e95e863c9281440b25"
+    },
+    {
+      "line": 114,
+      "relation": "decreases",
+      "evidence": "Both hFRAT1 and hFRAT2 are implicated in the selective modulation of GSK-3 activity",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12095675"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 33,
+      "target": 14,
+      "key": "c4a655033a5adfd69c19324ba026729d"
+    },
+    {
+      "line": 108,
+      "relation": "decreases",
+      "evidence": "pronounced increase in canonical Wnt signaling in lung epithelium upon loss of Gata6. Expression of the noncanonical Wnt receptor Fzd2 was downregulated in Gata6 mutants",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18536717"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 55,
+      "target": 21,
+      "key": "16d290986c896fb8d309c28d188afb19"
+    },
+    {
+      "line": 44,
+      "relation": "increases",
+      "evidence": "Dickkopf (Dkk) genes comprise an evolutionary conserved small gene family of four members (Dkk1-4) and a unique Dkk3-related gene, Dkkl1 (soggy). They encode secreted proteins that typically antagonize Wnt/beta-catenin signaling, by inhibiting the Wnt coreceptors Lrp5 and 6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17143291"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 59,
+      "target": 12,
+      "key": "c8d03ee3ff4f7d58755c90b8700c713d"
+    },
+    {
+      "line": 73,
+      "relation": "increases",
+      "evidence": "Dickkopf (Dkk) genes comprise an evolutionary conserved small gene family of four members (Dkk1-4) and a unique Dkk3-related gene, Dkkl1 (soggy). They encode secreted proteins that typically antagonize Wnt/beta-catenin signaling, by inhibiting the Wnt coreceptors Lrp5 and 6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17143291"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 60,
+      "target": 12,
+      "key": "a150aecf326f22f8937c2afbbb1d698d"
+    },
+    {
+      "line": 15,
+      "relation": "increases",
+      "evidence": "We show that TGF-β-activated kinase 1 (TAK1) is a critical mediator of WNT-5A expression as its pharmacological inhibition or siRNA-mediated silencing reduced TGF-β induction of WNT-5A.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24728340"
+      },
+      "annotations": {},
+      "source": 61,
+      "target": 25,
+      "key": "fb6dc96033b7a7a5c82234cb8abbccd4"
+    },
+    {
+      "line": 6,
+      "relation": "association",
+      "evidence": "Our data indicate that conditional deletion of c-Myc from PSMCs inhibits airway epithelial repair..",
+      "citation": {
+        "db": "Other",
+        "db_id": "23967208"
+      },
+      "annotations": {},
+      "source": 62,
+      "target": 4,
+      "key": "2cf3dbae4c6dc767be9d447f229daf0e"
+    },
+    {
+      "line": 116,
+      "relation": "increases",
+      "evidence": "after naphthalene-mediated airway epithelial injury c-Myc .....induces.... Fgf10 expression in PSMCs.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23967208"
+      },
+      "annotations": {},
+      "source": 62,
+      "target": 50,
+      "key": "00c6522bb7a95ca8d1e47551e64bda33"
+    },
+    {
+      "line": 119,
+      "relation": "decreases",
+      "evidence": "Nkd is a Dishevelled-binding protein, functioning as a negative regulator of WNT - beta-catenin - TCF signaling pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11604995"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 35,
+      "target": 12,
+      "key": "30364f8280f561079d9011342d9ccd86"
+    },
+    {
+      "line": 127,
+      "relation": "decreases",
+      "evidence": "Nkd is a Dishevelled-binding protein, functioning as a negative regulator of WNT - beta-catenin - TCF signaling pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11604995"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 36,
+      "target": 12,
+      "key": "e1a9df37959cbe718466361c853017e3"
+    },
+    {
+      "line": 103,
+      "relation": "increases",
+      "evidence": "Pleiotrophin increased the tyrosine phosphorylation of beta-catenin, promoted beta-catenin translocation into the nucleus, and activated T cell factor/lymphoid enhancer factor transcription factors",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19661059"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 64,
+      "target": 38,
+      "key": "1223d18c84c330feab7919a099369699"
+    },
+    {
+      "line": 103,
+      "relation": "increases",
+      "evidence": "As shown in Fig. 7A, PTN increased tyrosine phosphorylation of b-catenin in a time-dependent manner with a peak at 10–60 min.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19661059"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 64,
+      "target": 38,
+      "key": "7c66f60f12bcd5cdecae54853054e2bf"
+    },
+    {
+      "line": 104,
+      "relation": "increases",
+      "evidence": "Increasing evidence suggests mutations in human breast cancer cells that induce inappropriate expression of the 18-kDa cytokine pleiotrophin (PTN, Ptn) initiate progression of breast cancers to a more malignant phenotype. Pleiotrophin signals through inactivating its receptor, the receptor protein tyrosine phosphatase (RPTP)beta/zeta, leading to increased tyrosine phosphorylation of different substrate proteins of RPTPbeta/zeta, including beta-catenin, beta-adducin, Fyn, GIT1/Cat-1, and P190RhoGAP.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17706593"
+      },
+      "annotations": {},
+      "source": 64,
+      "target": 44,
+      "key": "01ebf45c15a2672695eb6ac40c6f1693"
+    },
+    {
+      "line": 4,
+      "relation": "increases",
+      "evidence": "We show that TGF-β-activated kinase 1 (TAK1) is a critical mediator of WNT-5A expression as its pharmacological inhibition or siRNA-mediated silencing reduced TGF-β induction of WNT-5A.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24728340"
+      },
+      "annotations": {},
+      "source": 25,
+      "target": 70,
+      "key": "25cdb32e17d397016823cc696c109052"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "Activation of WNT/β-catenin signaling in pulmonary fibroblasts by TGF-β₁ is increased in chronic obstructive pulmonary disease.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21980461"
+      },
+      "annotations": {},
+      "source": 25,
+      "target": 6,
+      "key": "9da157b3a1417349e46be692794fc88d"
+    },
+    {
+      "line": 43,
+      "relation": "decreases",
+      "evidence": "H460 and A549 cell lines. Our results provide the first evidence that procaine and procainamide reactivate WIF-1 in these cancer cells and downregulate the Wnt canonical pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19885602"
+      },
+      "annotations": {},
+      "source": 37,
+      "target": 21,
+      "key": "cc3ff688a72f6e3500b772a69643270b"
+    },
+    {
+      "line": 98,
+      "relation": "isA",
+      "evidence": "Wnt1, 7b and 10b, Fzd2 and 3, beta-catenin, and Lef1 expression was significantly increased in IPF.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18478089"
+      },
+      "annotations": {},
+      "source": 32,
+      "target": 21,
+      "key": "9f576f9c950bda9506b6873ae10e764e"
+    },
+    {
+      "line": 17,
+      "relation": "increases",
+      "evidence": "Exogenously added WNT-4 .....did not affect the canonical WNT target genes.......and induced activation of the non-canonical signalling molecule p38",
+      "citation": {
+        "db": "Other",
+        "db_id": "23370438"
+      },
+      "annotations": {},
+      "source": 29,
+      "target": 3,
+      "key": "70b0a778437e2aee86aaa4760de1a65a"
+    },
+    {
+      "line": 18,
+      "relation": "increases",
+      "evidence": "Exogenously added WNT-4 significantly increased .....vascular endothelial growth factor (VEGF) secretion in 16HBE",
+      "citation": {
+        "db": "Other",
+        "db_id": "23370438"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "go",
+            "name": "intracellular",
+            "identifier": "0005622"
+          },
+          "toLoc": {
+            "namespace": "go",
+            "name": "extracellular space",
+            "identifier": "0005615"
+          }
+        }
+      },
+      "source": 29,
+      "target": 26,
+      "key": "e5245a8faa648ad39b6b3b86475ccda3"
+    },
+    {
+      "line": 19,
+      "relation": "increases",
+      "evidence": "Exogenously added WNT-4 significantly increased ...., CCL2/MCP-1 .....secretion in 16HBE",
+      "citation": {
+        "db": "Other",
+        "db_id": "23370438"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "go",
+            "name": "intracellular",
+            "identifier": "0005622"
+          },
+          "toLoc": {
+            "namespace": "go",
+            "name": "extracellular space",
+            "identifier": "0005615"
+          }
+        }
+      },
+      "source": 29,
+      "target": 22,
+      "key": "c72ae6d7b181e31df20ceecf92df61c2"
+    },
+    {
+      "line": 20,
+      "relation": "increases",
+      "evidence": "Exogenously added WNT-4 significantly increased ...CCL5/RANTES, ...secretion in 16HBE,",
+      "citation": {
+        "db": "Other",
+        "db_id": "23370438"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "go",
+            "name": "intracellular",
+            "identifier": "0005622"
+          },
+          "toLoc": {
+            "namespace": "go",
+            "name": "extracellular space",
+            "identifier": "0005615"
+          }
+        }
+      },
+      "source": 29,
+      "target": 23,
+      "key": "470e80eba454ef6ef06165b7fa360ee2"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "Exogenously added WNT-4 significantly increased CXCL8/IL-8,.....secretion in 16HBE",
+      "citation": {
+        "db": "Other",
+        "db_id": "23370438"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "go",
+            "name": "intracellular",
+            "identifier": "0005622"
+          },
+          "toLoc": {
+            "namespace": "go",
+            "name": "extracellular space",
+            "identifier": "0005615"
+          }
+        }
+      },
+      "source": 29,
+      "target": 56,
+      "key": "c3140c4471da37f5f7b3649daaba0bfe"
+    },
+    {
+      "line": 24,
+      "relation": "increases",
+      "evidence": "In result, read the section \"Wnt4 induces IL8 gene expression and CXCL8 release from epithelial cells\" and see figure 3.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23463699"
+      },
+      "annotations": {},
+      "source": 29,
+      "target": 56,
+      "key": "a34a0a00cce644ac9deae5b650f7e3e6"
+    },
+    {
+      "line": 30,
+      "relation": "increases",
+      "evidence": "Wnt1, 7b and 10b, Fzd2 and 3, beta-catenin, and Lef1 expression was significantly increased in IPF.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18478089"
+      },
+      "annotations": {},
+      "source": 65,
+      "target": 53,
+      "key": "b2e36c2863dc35feebde38968e1b0236"
+    },
+    {
+      "line": 31,
+      "relation": "increases",
+      "evidence": "Wnt1, 7b and 10b, Fzd2 and 3, beta-catenin, and Lef1 expression was significantly increased in IPF.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18478089"
+      },
+      "annotations": {},
+      "source": 65,
+      "target": 27,
+      "key": "8bbcff2fd8bdbdfd81782f54f47a00da"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "Wnt1, 7b and 10b, Fzd2 and 3, beta-catenin, and Lef1 expression was significantly increased in IPF.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18478089"
+      },
+      "annotations": {},
+      "source": 65,
+      "target": 74,
+      "key": "0c6c2645777bfe12ab8f7eaaec239fef"
+    },
+    {
+      "line": 33,
+      "relation": "increases",
+      "evidence": "Wnt1, 7b and 10b, Fzd2 and 3, beta-catenin, and Lef1 expression was significantly increased in IPF.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18478089"
+      },
+      "annotations": {},
+      "source": 65,
+      "target": 32,
+      "key": "ab42df70abcb2eebdd4d73a4eaa66e63"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "Wnt1, 7b and 10b, Fzd2 and 3, beta-catenin, and Lef1 expression was significantly increased in IPF.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18478089"
+      },
+      "annotations": {},
+      "source": 65,
+      "target": 67,
+      "key": "7b31776ef175830cb5a9ee870efd4c8c"
+    },
+    {
+      "line": 35,
+      "relation": "increases",
+      "evidence": "This was confirmed by qRT-PCR of primary alveolar epithelial type II (ATII) cells, demonstrating a significant increase of Wnt signaling in ATII cells derived from IPF patients.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18478089"
+      },
+      "annotations": {},
+      "source": 65,
+      "target": 21,
+      "key": "ab656c1a35492273d6750442a9f96731"
+    },
+    {
+      "line": 36,
+      "relation": "increases",
+      "evidence": "Wnt1, 7b and 10b, Fzd2 and 3, beta-catenin, and Lef1 expression was significantly increased in IPF",
+      "citation": {
+        "db": "Other",
+        "db_id": "18478089"
+      },
+      "annotations": {},
+      "source": 65,
+      "target": 30,
+      "key": "fe01b03bf70f3bb8590789f06c8fbe44"
+    },
+    {
+      "line": 38,
+      "relation": "increases",
+      "evidence": "Wnt1, 7b and 10b, Fzd2 and 3, beta-catenin, and Lef1 expression was significantly increased in IPF.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18478089"
+      },
+      "annotations": {},
+      "source": 65,
+      "target": 73,
+      "key": "da6c73e6c5396f6ed1224bc17e70bf48"
+    },
+    {
+      "line": 39,
+      "relation": "increases",
+      "evidence": "Wnt1, 7b and 10b, Fzd2 and 3, beta-catenin, and Lef1 expression was significantly increased in IPF.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18478089"
+      },
+      "annotations": {},
+      "source": 65,
+      "target": 54,
+      "key": "0721329792b144b9fccba7c4aa4e26f3"
+    },
+    {
+      "line": 40,
+      "relation": "increases",
+      "evidence": "Wnt1, 7b and 10b, Fzd2 and 3, beta-catenin, and Lef1 expression was significantly increased in IPF.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18478089"
+      },
+      "annotations": {},
+      "source": 65,
+      "target": 72,
+      "key": "8538d675c7a8083751c2efe0713351a9"
+    },
+    {
+      "line": 75,
+      "relation": "increases",
+      "evidence": "from full text - Figure 2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16438732"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 12,
+      "target": 15,
+      "key": "5b9c41cc434024d1ee8fa61bed569942"
+    },
+    {
+      "line": 48,
+      "relation": "directlyIncreases",
+      "evidence": "Beta-catenin is a transcriptional activator that is regulated by glycogen synthase kinase-3 (GSK-3). GSK-3 is constitutively active in unstimulated cells where it phosphorylates beta-catenin, targeting beta-catenin for rapid degradation. Receptor-induced inhibition of GSK-3 allows beta-catenin to accumulate in the cytoplasm and then translocate to the nucleus where it promotes the transcription of genes such as c-myc and cyclin D1. Wnt hormones, the best known regulators of beta-catenin, inhibit GSK-3 via the Disheveled protein. However, GSK-3 is also inhibited when it is phosphorylated by Akt, a downstream target of phosphatidylinositol 3-kinase (PI3K). We have previously shown that B cell Ag receptor (BCR) signaling leads to activation of PI3K and Akt as well as inhibition of GSK-3. Therefore, we hypothesized that BCR engagement would induce the accumulation of beta-catenin via a PI3K/Akt/GSK-3 pathway. We now show that BCR ligation causes an increase in the level of beta-catenin in the nuclear fraction of B cells as well as an increase in beta-catenin-dependent transcription. Direct inhibition of GSK-3 by LiCl also increased beta-catenin levels in B cells. This suggests that GSK-3 keeps beta-catenin levels low in unstimulated B cells and that BCR-induced inhibition of GSK-3 allows the accumulation of beta-catenin. Surprisingly, we found that the BCR-induced phosphorylation of GSK-3 on its negative regulatory sites, as well as the subsequent up-regulation of beta-catenin, was not mediated by Akt but by the phospholipase C-dependent activation of protein kinase C. Thus, the BCR regulates beta-catenin levels via a phospholipase C/protein kinase C/GSK-3 pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12097378"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 13,
+      "target": 12,
+      "key": "c262ef587c9c3ef709225ff92c08f78f"
+    },
+    {
+      "line": 48,
+      "relation": "directlyIncreases",
+      "evidence": "Our results suggest a model that upon Wnt-induced Fz-Lrp6 complex formation, Fz recruitment of Dvl in turn recruits the axin-Gsk3 complex, thereby promoting Lrp6 phosphorylation to initiate beta-catenin signaling.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18077588"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 13,
+      "target": 12,
+      "key": "29eceee6547d3bd7d7d9af388e36afb3"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 14,
+      "target": 15,
+      "key": "72999f25dc631fcfe0a0bf19f8791ade"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 14,
+      "target": 16,
+      "key": "cd44b9cbd0563ef4f8fefc314786ad4e"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 14,
+      "target": 17,
+      "key": "846101591cb5383990f5c9598b91ef41"
+    },
+    {
+      "line": 128,
+      "relation": "increases",
+      "evidence": "from full text - Figure 2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16438732"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 14,
+      "target": 39,
+      "key": "e0e35564aaa4ce851e17aeb2f801fa06"
+    },
+    {
+      "line": 129,
+      "relation": "directlyIncreases",
+      "evidence": "PhosphoElm data from PMID 15212693",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12051714"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 14,
+      "target": 40,
+      "key": "f0578bd0841535d147d013dfdc9771c1"
+    },
+    {
+      "line": 130,
+      "relation": "directlyIncreases",
+      "evidence": "PhosphoElm data from PMID 15212693",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12051714"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 14,
+      "target": 43,
+      "key": "88eeb3437b7fde76878465f5c903271c"
+    },
+    {
+      "line": 131,
+      "relation": "directlyIncreases",
+      "evidence": "PhosphoElm data from PMID 15212693",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12051714"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 14,
+      "target": 41,
+      "key": "57709fd5f9546cf34fdc0544d31fba67"
+    },
+    {
+      "line": 124,
+      "relation": "decreases",
+      "evidence": "from full text - Figure 2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16438732"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 15,
+      "target": 14,
+      "key": "866874fcb1499d243b8107a29a299b1e"
+    },
+    {
+      "line": 125,
+      "relation": "directlyDecreases",
+      "evidence": "AKT activation resulted in the phosphorylation-dependent inactivation of glycogen synthase kinase (GSK-3) (serine 21/9).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11254732"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 16,
+      "target": 14,
+      "key": "74a45d265955f15442a0e977d671b2d9"
+    },
+    {
+      "line": 100,
+      "relation": "directlyDecreases",
+      "evidence": "AKT activation resulted in the phosphorylation-dependent inactivation of glycogen synthase kinase (GSK-3) (serine 21/9).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11254732"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 17,
+      "target": 14,
+      "key": "e16b42b83d599c2f24181108caab5198"
+    },
+    {
+      "line": 100,
+      "relation": "directlyDecreases",
+      "evidence": "In mammals GSK3 is present in two isoforms, alpha and beta regulated by phosphorylation: phosphorylation of Ser9 in GSK3beta or Ser21 in GSK3alpha leads to inactivation while phosphorylation of Tyr216 in GSK3beta or Tyr279 in GSK3alpha leads to activation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15265592"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 17,
+      "target": 14,
+      "key": "a046ffb9a336793087448cb3d42bb5f0"
+    },
+    {
+      "line": 42,
+      "relation": "directlyIncreases",
+      "evidence": "JunB binds directly to the P1 site and synergizes with c-Maf to activate an IL-4 luciferase reporter gene. JunB-control of IL-4 expression is mediated by the phosphorylation of JunB at Thr102 and -104 by JNK MAP kinase",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9889198"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 18,
+      "target": 9,
+      "key": "f865694b027a9181eed7bc3e8c05a2ce"
+    },
+    {
+      "line": 42,
+      "relation": "directlyIncreases",
+      "evidence": "the transcriptional activity of the AP1 subunit c-Jun is enhanced through phosphorylation on Ser63/73 by members of the JNK subfamily in response to inflammatory cytokines",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12682725"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 18,
+      "target": 9,
+      "key": "346024d079d2138003a753e6a9896dbe"
+    },
+    {
+      "line": 123,
+      "relation": "increases",
+      "evidence": "Signalling initiated by secreted WNT, through Frizzled receptors, leads to phosphorylation of the protein Dishevelled (DSH), which inhibits phosphorylation of ?-Cat by GSK3?.GSK3? activity can also be inhibited by direct interaction with the glycogen-synthase-kinase-3-binding protein (GBP).As a consequence, ?-Cat is not phosphorylated, avoids destruction and enters the nucleus where it heterodimerizes with members of the TCF/LEF transcription factor family to activate downstream target genes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14570040"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 21,
+      "target": 13,
+      "key": "4540d4b4f55f60be2f59d669a609d01c"
+    },
+    {
+      "line": 123,
+      "relation": "increases",
+      "evidence": "from full text - Figure 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16484682"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 21,
+      "target": 13,
+      "key": "ba040f603324b9638e8b3b9d498ae8eb"
+    },
+    {
+      "line": 123,
+      "relation": "increases",
+      "evidence": "ANKRD6, NKD1 and NKD2 induce class switch from the WNT/GSK3beta signaling pathway to the WNT/PCP signaling pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16273260"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 21,
+      "target": 13,
+      "key": "a76599f01e8a9704121b4eaceae95a77"
+    },
+    {
+      "line": 123,
+      "relation": "increases",
+      "evidence": "from full text - Figure 2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16438732"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 21,
+      "target": 13,
+      "key": "0b325cb6ba6782651306b4fa53f15c92"
+    },
+    {
+      "line": 16,
+      "relation": "increases",
+      "evidence": "PBEC from COPD patients displayed higher WNT-4 protein expression than both smokers and non-smokers",
+      "citation": {
+        "db": "Other",
+        "db_id": "23370438"
+      },
+      "annotations": {},
+      "source": 66,
+      "target": 29,
+      "key": "d7c8f226dab5f1df1bd02b96fc79607f"
+    },
+    {
+      "line": 16,
+      "relation": "increases",
+      "evidence": "In results, read the section \"Immunohistochemistry\" and see figure 2.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23463699"
+      },
+      "annotations": {},
+      "source": 66,
+      "target": 29,
+      "key": "b236297fbce67e6394f0a613825533e3"
+    }
+  ]
+}

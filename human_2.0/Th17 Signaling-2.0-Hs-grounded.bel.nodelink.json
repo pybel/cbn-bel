@@ -1,0 +1,2624 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Th17 Signaling-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Th17 Signaling network depicts the causal mechanisms that are activated in IL-17-producing T helper (Th17) cells following T-cell receptor (TCR) ligation. Expanding on these processes, the network highlights the chemokines secreted by macrophages and dendritic cells, as well as the cognate T-cell receptors, involved in mediating T-cell recruitment to compromised lung tissue during COPD development."
+    },
+    "namespace_url": {},
+    "namespace_pattern": {
+      "go": ".*",
+      "mgi": ".*",
+      "hgnc": ".*",
+      "fplx": ".*"
+    },
+    "annotation_url": {},
+    "annotation_pattern": {
+      "doid": ".*",
+      "cl": ".*"
+    },
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "inflammatory response",
+        "identifier": "0006954"
+      },
+      "id": "f657d507de55962e6bbc9e079c01cfa4",
+      "bel": "bp(go:0006954 ! \"inflammatory response\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "T cell activation",
+        "identifier": "0042110"
+      },
+      "id": "3c6264cd3c943077246031658bae1ac0",
+      "bel": "bp(go:0042110 ! \"T cell activation\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "lymphocyte chemotaxis",
+        "identifier": "0048247"
+      },
+      "id": "41e6cefbe7e5aabdc99e90cebe94a308",
+      "bel": "bp(go:0048247 ! \"lymphocyte chemotaxis\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "T-helper 17 cell differentiation",
+        "identifier": "0072539"
+      },
+      "id": "ce39aea54f6edf350c3487c5a068829b",
+      "bel": "bp(go:0072539 ! \"T-helper 17 cell differentiation\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "go",
+        "name": "gamma-secretase complex",
+        "identifier": "0070765"
+      },
+      "id": "6ab8271263b9e8cf482d617c7757ad1a",
+      "bel": "complex(go:0070765 ! \"gamma-secretase complex\")"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "IL23A",
+            "identifier": "15488"
+          },
+          "id": "6731d0d677f4bf02176d6faa1345d613",
+          "bel": "p(hgnc:15488 ! IL23A)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "IL12B",
+            "identifier": "5970"
+          },
+          "id": "ccb0be98e961d2a673a4b5f9bc55b587",
+          "bel": "p(hgnc:5970 ! IL12B)"
+        }
+      ],
+      "id": "1224e73838c5d385d451175edcd383fa",
+      "bel": "complex(p(hgnc:15488 ! IL23A), p(hgnc:5970 ! IL12B))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "IL12A",
+            "identifier": "5969"
+          },
+          "id": "6051b00924e029743acb4fb37328917c",
+          "bel": "p(hgnc:5969 ! IL12A)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "IL12B",
+            "identifier": "5970"
+          },
+          "id": "ccb0be98e961d2a673a4b5f9bc55b587",
+          "bel": "p(hgnc:5970 ! IL12B)"
+        }
+      ],
+      "id": "48741cb4e3d769f71a801b7ff04ab4e2",
+      "bel": "complex(p(hgnc:5969 ! IL12A), p(hgnc:5970 ! IL12B))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "Chemokine_receptor",
+        "identifier": "Chemokine_receptor"
+      },
+      "id": "4515b7a6175e28b864bd074c1abf4330",
+      "bel": "p(fplx:\"Chemokine_receptor\" ! \"Chemokine_receptor\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "Notch",
+        "identifier": "Notch"
+      },
+      "id": "0aa81e1dd978c7ab474caab6d8455241",
+      "bel": "p(fplx:Notch ! Notch)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "ROR",
+        "identifier": "ROR"
+      },
+      "id": "c5815aa37702f12aaf058940237d1e52",
+      "bel": "p(fplx:ROR ! ROR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RORC",
+        "identifier": "10260"
+      },
+      "id": "034a831742679bf23a8eb077dbafbca1",
+      "bel": "p(hgnc:10260 ! RORC)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RUNX1",
+        "identifier": "10471"
+      },
+      "id": "b5dfd0b4c590ed8507bde1998090b50c",
+      "bel": "p(hgnc:10471 ! RUNX1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SAA1",
+        "identifier": "10513"
+      },
+      "id": "0da97c22835edc744ce1ef9e38d3b6c5",
+      "bel": "p(hgnc:10513 ! SAA1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CCL20",
+        "identifier": "10619"
+      },
+      "id": "7a80094bfa73a2d48c2522a4cc4936c1",
+      "bel": "p(hgnc:10619 ! CCL20)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CCL3",
+        "identifier": "10627"
+      },
+      "id": "b679d54febd9f7900d3fe8a8993b5826",
+      "bel": "p(hgnc:10627 ! CCL3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "STAT1",
+        "identifier": "11362"
+      },
+      "id": "f7d1b847944e3df57e7f145af8cfee1e",
+      "bel": "p(hgnc:11362 ! STAT1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "STAT3",
+        "identifier": "11364"
+      },
+      "id": "16cbb4ba8a8e57b2fe2119d9545dd71a",
+      "bel": "p(hgnc:11364 ! STAT3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "STAT5A",
+        "identifier": "11366"
+      },
+      "id": "d0180d4b56af84d10a2b96e53a29527b",
+      "bel": "p(hgnc:11366 ! STAT5A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TBX21",
+        "identifier": "11599"
+      },
+      "id": "b2bb28c95e4ed3856cd790efb9a71cb7",
+      "bel": "p(hgnc:11599 ! TBX21)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TGFB1",
+        "identifier": "11766"
+      },
+      "id": "576a88bfbb29664cc1307c6239712c90",
+      "bel": "p(hgnc:11766 ! TGFB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TGFBR1",
+        "identifier": "11772"
+      },
+      "id": "6cbcf911f2657f94fd0d724a01f99d50",
+      "bel": "p(hgnc:11772 ! TGFBR1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TGFBR2",
+        "identifier": "11773"
+      },
+      "id": "8b36b060e7a955c3b509c18bee64a5e6",
+      "bel": "p(hgnc:11773 ! TGFBR2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TYK2",
+        "identifier": "12440"
+      },
+      "id": "a138ad33982b828748c3f79967884990",
+      "bel": "p(hgnc:12440 ! TYK2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "C3",
+        "identifier": "1318"
+      },
+      "id": "6d8e8d2f843fb3570958cc04bf44d0d3",
+      "bel": "p(hgnc:1318 ! C3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL22",
+        "identifier": "14900"
+      },
+      "id": "738828d957b67411b1bff56b34d01a1e",
+      "bel": "p(hgnc:14900 ! IL22)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL23A",
+        "identifier": "15488"
+      },
+      "id": "6731d0d677f4bf02176d6faa1345d613",
+      "bel": "p(hgnc:15488 ! IL23A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CCR3",
+        "identifier": "1604"
+      },
+      "id": "d7e8723890bbe6bb5c4ddcc979600822",
+      "bel": "p(hgnc:1604 ! CCR3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CCR5",
+        "identifier": "1606"
+      },
+      "id": "3bd403e2cde82f89f351e09ec8c92573",
+      "bel": "p(hgnc:1606 ! CCR5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CCR6",
+        "identifier": "1607"
+      },
+      "id": "25d46bd93f0b100101cb807cb70fa0cc",
+      "bel": "p(hgnc:1607 ! CCR6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL17F",
+        "identifier": "16404"
+      },
+      "id": "7b564818b8734add3f27b9a33355109d",
+      "bel": "p(hgnc:16404 ! IL17F)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CD28",
+        "identifier": "1653"
+      },
+      "id": "0a86bc66ae91b0020ed3b4fc1248e129",
+      "bel": "p(hgnc:1653 ! CD28)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CXCL16",
+        "identifier": "16642"
+      },
+      "id": "b4cd3dfdf3c1995bb870bf2e86ab51da",
+      "bel": "p(hgnc:16642 ! CXCL16)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CXCR6",
+        "identifier": "16647"
+      },
+      "id": "30165c4ed1f5c9ead1ff8b36a512a3a9",
+      "bel": "p(hgnc:16647 ! CXCR6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL26",
+        "identifier": "17119"
+      },
+      "id": "8a96498ff30cdbfb2524b25d41da5563",
+      "bel": "p(hgnc:17119 ! IL26)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL23R",
+        "identifier": "19100"
+      },
+      "id": "82b7ef0dbdb7f71d722066621faac0f0",
+      "bel": "p(hgnc:19100 ! IL23R)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL27",
+        "identifier": "19157"
+      },
+      "id": "596f5b71735df50ec5b27f8277d4722b",
+      "bel": "p(hgnc:19157 ! IL27)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SOCS3",
+        "identifier": "19391"
+      },
+      "id": "735fdfba2945662cdbf7680ba8d40a73",
+      "bel": "p(hgnc:19391 ! SOCS3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "DLL4",
+        "identifier": "2910"
+      },
+      "id": "24d3afc74dc59d210e302926bf38f0dc",
+      "bel": "p(hgnc:2910 ! DLL4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ETS1",
+        "identifier": "3488"
+      },
+      "id": "0ed5e96e23b252b6f5f7b86d651962fb",
+      "bel": "p(hgnc:3488 ! ETS1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CXCR3",
+        "identifier": "4540"
+      },
+      "id": "77011f5500949aef21d289c3f86a20b8",
+      "bel": "p(hgnc:4540 ! CXCR3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HIF1A",
+        "identifier": "4910"
+      },
+      "id": "2562b840e72dd3d56dace7723920dd1d",
+      "bel": "p(hgnc:4910 ! HIF1A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IFNG",
+        "identifier": "5438"
+      },
+      "id": "8d5ef5447b27e0c7ddc305f191ba0bed",
+      "bel": "p(hgnc:5438 ! IFNG)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL12A",
+        "identifier": "5969"
+      },
+      "id": "6051b00924e029743acb4fb37328917c",
+      "bel": "p(hgnc:5969 ! IL12A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL12B",
+        "identifier": "5970"
+      },
+      "id": "ccb0be98e961d2a673a4b5f9bc55b587",
+      "bel": "p(hgnc:5970 ! IL12B)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL12RB1",
+        "identifier": "5971"
+      },
+      "id": "f1c107dbd73f0612802cdc4e92a7ce24",
+      "bel": "p(hgnc:5971 ! IL12RB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL15",
+        "identifier": "5977"
+      },
+      "id": "716e2b97037ca2f5fb8aeeaaf64e78dc",
+      "bel": "p(hgnc:5977 ! IL15)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL15RA",
+        "identifier": "5978"
+      },
+      "id": "a4f612c28eca5d947b5db7a54138900f",
+      "bel": "p(hgnc:5978 ! IL15RA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL17A",
+        "identifier": "5981"
+      },
+      "id": "596bd250c0d1995313db8fd4bd50b9ab",
+      "bel": "p(hgnc:5981 ! IL17A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL2",
+        "identifier": "6001"
+      },
+      "id": "03965642c6a230d83212d22d0e2e4533",
+      "bel": "p(hgnc:6001 ! IL2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL21",
+        "identifier": "6005"
+      },
+      "id": "ab776b759c4cb0f1468c892ebda7dc36",
+      "bel": "p(hgnc:6005 ! IL21)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL2RB",
+        "identifier": "6009"
+      },
+      "id": "d51c0b670432c790eeef590bdeebd2d6",
+      "bel": "p(hgnc:6009 ! IL2RB)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL4",
+        "identifier": "6014"
+      },
+      "id": "b2dc2b588b6dc1976273a46353ae2435",
+      "bel": "p(hgnc:6014 ! IL4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL6",
+        "identifier": "6018"
+      },
+      "id": "aa9c1c139b580c6add7164eef64ebb80",
+      "bel": "p(hgnc:6018 ! IL6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL6R",
+        "identifier": "6019"
+      },
+      "id": "2a323668a0f9d1f7590fb573811ed65d",
+      "bel": "p(hgnc:6019 ! IL6R)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "JAK2",
+        "identifier": "6192"
+      },
+      "id": "b5b3a121a985286d7064022b07a0a559",
+      "bel": "p(hgnc:6192 ! JAK2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SMAD2",
+        "identifier": "6768"
+      },
+      "id": "7377ea2f4514b6fba895dac30dd1b44b",
+      "bel": "p(hgnc:6768 ! SMAD2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CXCL9",
+        "identifier": "7098"
+      },
+      "id": "381972d193eb1b738dac49f3af41d1b5",
+      "bel": "p(hgnc:7098 ! CXCL9)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NR4A2",
+        "identifier": "7981"
+      },
+      "id": "451b6e64b10b264f5e76795426e84cb3",
+      "bel": "p(hgnc:7981 ! NR4A2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "mgi",
+        "name": "Il2rg",
+        "identifier": "96551"
+      },
+      "id": "afe6378d9984657664c56637856c850e",
+      "bel": "p(mgi:96551 ! Il2rg)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL17A",
+        "identifier": "5981"
+      },
+      "id": "ee6fb339d045b1d6bb58ccaff0e5ca47",
+      "bel": "r(hgnc:5981 ! IL17A)"
+    }
+  ],
+  "links": [
+    {
+      "line": 2,
+      "relation": "positiveCorrelation",
+      "evidence": "When NR4A2 expression was blocked with siRNA, full Th17 differentiation was prevented in vitro:",
+      "citation": {
+        "db": "Other",
+        "db_id": "23437182"
+      },
+      "annotations": {},
+      "source": 3,
+      "target": 57,
+      "key": "814c23630796b4eb251e63e73d17a4d3"
+    },
+    {
+      "line": 4,
+      "relation": "association",
+      "evidence": "Thus, RORγt is a tractable drug target for the treatment of cutaneous inflammatory disorders, which may afford additional therapeutic benefit over existing modalities that target only IL-17A.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 0,
+      "target": 47,
+      "key": "b2d7ff1f71cf99d3ef2e0b9628a749f7"
+    },
+    {
+      "line": 9,
+      "relation": "increases",
+      "evidence": "In vivo administration of the γ-secretase inhibitor N-[N-(3,5-difluorophenacetyl-l-alanyl)]-S-phenylglycine t-butyl ester (DAPT) substantially reduced the severity of arthritic symptoms and joint damage in collagen-induced arthritis mice. Notably, DAPT treatment significantly suppressed Th1- and Th17-cell responses in spleen and lymph nodes and reduced IFN-γ and IL-17 levels in plasma.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24492199"
+      },
+      "annotations": {},
+      "source": 4,
+      "target": 47,
+      "key": "941dcb95ac501018c840621d6c1337d2"
+    },
+    {
+      "line": 13,
+      "relation": "increases",
+      "evidence": "IL-12-stimulated Th17 cells upregulated Runx1, which bound to the Ifng locus in a T-bet-dependent manner.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24530058"
+      },
+      "annotations": {},
+      "source": 6,
+      "target": 11,
+      "key": "8e43c69dad62d96b6e4a133472b62fe7"
+    },
+    {
+      "relation": "partOf",
+      "source": 42,
+      "target": 6,
+      "key": "2ab6f7aa8f053a0329c3d0f1dbc66d3d"
+    },
+    {
+      "relation": "partOf",
+      "source": 43,
+      "target": 6,
+      "key": "258cefef78c78bf2a6729c6f24297a1f"
+    },
+    {
+      "relation": "partOf",
+      "source": 43,
+      "target": 5,
+      "key": "56643dacbb36053b3ba65533b866f49f"
+    },
+    {
+      "line": 78,
+      "relation": "directlyIncreases",
+      "evidence": "Like IL-12, IL-23 binds to the IL-12R subunit IL-12Rbeta1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12023369"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 5,
+      "target": 44,
+      "key": "6555cea553ab4c96d321ce4ed518e1d8"
+    },
+    {
+      "line": 79,
+      "relation": "directlyIncreases",
+      "evidence": "Connection of the IL23a:IL12b complex to its associated receptor",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14614851"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 5,
+      "target": 34,
+      "key": "c24101c027127416f2b121a3c163651d"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 5,
+      "target": 25,
+      "key": "79086018baef0b196d6e46f1a88a3382"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 5,
+      "target": 43,
+      "key": "9fc00ef2451475fe6971f6c15cecd347"
+    },
+    {
+      "relation": "partOf",
+      "source": 25,
+      "target": 5,
+      "key": "423e8e5e99745278f81aef8f374ce378"
+    },
+    {
+      "line": 84,
+      "relation": "increases",
+      "evidence": "In summary, to our knowledge, we are the first to demonstrate that RORγt inverse agonists: 1) inhibit Tc17 cell differentiation, as well as IL-17 production by γδ T cells and CD8+ Tc17 cells; 2) block imiquimod-induced cutaneous inflammation; 3) inhibit Th17 signature gene expression by cells isolated from psoriatic patient samples; and 4) block IL-23-induced IL-17A expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 25,
+      "target": 59,
+      "key": "13c3bde39b77961d44a525a9041b008a"
+    },
+    {
+      "line": 85,
+      "relation": "association",
+      "evidence": "TMP778, but not TMP776, blocked human Th17 and Tc17 cell differentiation and also acutely modulated IL-17A production and inflammatory Th17-signature gene expression (Il17a, Il17f, Il22, Il26, Ccr6, and Il23) in mature human Th17 effector/memory T cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 25,
+      "target": 59,
+      "key": "4a73759bacb0da9702505a7fa533bb54"
+    },
+    {
+      "line": 88,
+      "relation": "increases",
+      "evidence": "To assess T cell activation in C3-/- mice, IL-4 and IFN-g production in the lung was quantitated by ELISPOT and evaluated as a marker of Th2 vs Th1 responses after allergen challenge ...However, cells expressing IL-4 were reduced 69% in C3-/- mice compared with the C3+/+ controls (Fig. 3)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11591733"
+      },
+      "annotations": {},
+      "source": 23,
+      "target": 51,
+      "key": "6c939c8f9570e82cce08c50526bf73ad"
+    },
+    {
+      "line": 72,
+      "relation": "directlyIncreases",
+      "evidence": "Numerous studies have shown that immature human and mouse blood- and bone marrow-derived DC subsets express a panel of inflammatory chemokine receptors (CCR1-6,8,9, CXCR3,4, CX3CR1) [Table 1 and reviewed in (1-5)]. [Table 1 Chemokine receptors expressed by DC and the functional outcome of receptor ligation}]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19028258"
+      },
+      "annotations": {
+        "cl": {
+          "0000451": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 14,
+      "target": 27,
+      "key": "43efb3f5cda4e14c62aa0fdf43cac442"
+    },
+    {
+      "line": 5,
+      "relation": "association",
+      "evidence": "TMP778, but not TMP776, blocked human Th17 and Tc17 cell differentiation and also acutely modulated IL-17A production and inflammatory Th17-signature gene expression (Il17a, Il17f, Il22, Il26, Ccr6, and Il23) in mature human Th17 effector/memory T cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 28,
+      "target": 59,
+      "key": "e9bb901f2943974ae853bcdc35daf816"
+    },
+    {
+      "line": 68,
+      "relation": "directlyIncreases",
+      "evidence": "CXCR6, the receptor for CXCL16",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14625285"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 31,
+      "target": 32,
+      "key": "0fff66deaedc2520543540a1d9738cc0"
+    },
+    {
+      "line": 30,
+      "relation": "directlyIncreases",
+      "evidence": "Numerous studies have shown that immature human and mouse blood- and bone marrow-derived DC subsets express a panel of inflammatory chemokine receptors (CCR1-6,8,9, CXCR3,4, CX3CR1) [Table 1 and reviewed in (1-5)]. [Table 1 Chemokine receptors expressed by DC and the functional outcome of receptor ligation}]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19028258"
+      },
+      "annotations": {
+        "cl": {
+          "0000451": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 56,
+      "target": 39,
+      "key": "bde6973514c11183d2c7d99d00a5b76d"
+    },
+    {
+      "line": 30,
+      "relation": "directlyIncreases",
+      "evidence": "T cells in peripheral airways of COPD patients show increased expression of CXCR3, a receptor activated by interferon-{gamma} inducible protein of 10 kDa (IP-10; CXCL10), monokine induced by interferon-{gamma} (Mig; CXCL9), and interferon-inducible T cell-{alpha} chemoattractant (I-TAC; CXCL11). All three cytokines activate CXCR3, although CXCL11 has the highest affinity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15602009"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 56,
+      "target": 39,
+      "key": "22056894bf676cd4227a0947d9bfe902"
+    },
+    {
+      "line": 30,
+      "relation": "directlyIncreases",
+      "evidence": "By using a CXCR3 ligand reporter mouse, we found that stromal cells predominately expressed the chemokine ligand CXCL9 whereas hematopoietic cells expressed CXCL10 in lymph nodes (LNs). Dendritic cell (DC)-derived CXCL10 facilitated T cell-DC interactions in LNs during T cell priming while both chemokines guided intranodal positioning of CD4(+) T cells to interfollicular and medullary zones. Thus, different chemokines acting on the same receptor can function locally to facilitate DC-T cell interactions and globally to influence intranodal positioning, and both functions contribute to Th1 cell differentiation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23123063"
+      },
+      "annotations": {
+        "cl": {
+          "0000451": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 56,
+      "target": 39,
+      "key": "456879330f71aace3965c2eeb927dedf"
+    },
+    {
+      "line": 15,
+      "relation": "isA",
+      "evidence": "IFN-γ-induced protein 10 (IP-10) and its receptor, CXCR3 chemokine (C-X-C motif) receptor 3 (CXCR3), appear to contribute to the pathogenesis of HCV related mixed cryoglobulinemia (HCV+MC).",
+      "citation": {
+        "db": "Other",
+        "db_id": "25203349"
+      },
+      "annotations": {
+        "doid": {
+          "2917": true
+        }
+      },
+      "source": 39,
+      "target": 7,
+      "key": "c8437364711b1dae41de25ee16060210"
+    },
+    {
+      "line": 15,
+      "relation": "isA",
+      "evidence": "CXCR3, a chemokine receptor in the CXC family that binds to CXCL9, CXCL10 and CXCL11, is strongly overexpressed in the intestinal mucosa of IBD patients",
+      "citation": {
+        "db": "Other",
+        "db_id": "24992040"
+      },
+      "annotations": {},
+      "source": 39,
+      "target": 7,
+      "key": "10b50d9f1ce6a8757c4a8b23fa7ade0e"
+    },
+    {
+      "line": 15,
+      "relation": "isA",
+      "evidence": "Here we provide an in-depth analysis of the chemokines involved in leukocyte recruitment to the virally infected brain and demonstrate that simultaneous blockade of two of these receptors, namely, CXCR3 and CCR2, does not alter viral titers within the brain but markedly reduces inflammatory leukocyte recruitment and enhances survival in a murine model of lethal viral encephalitis",
+      "citation": {
+        "db": "Other",
+        "db_id": "24899190"
+      },
+      "annotations": {},
+      "source": 39,
+      "target": 7,
+      "key": "05df3192dbdd1cb9dc539139f517d278"
+    },
+    {
+      "line": 15,
+      "relation": "isA",
+      "evidence": "Chemokines are low-molecular-weight, secreted proteins that act as leukocyte-specific chemoattractants. The chemokine family has more than 40 members. [...] Several constitutively active CXC chemokine receptors include the V6.40A and V6.40N mutants of CXCR1; the D3.49V variant of CXCR2; the N3.35A, N3.35S, and T2.56P mutants of CXCR3; the N3.35 mutation of CXCR4; and the naturally occurring KSHV-GPCR.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24891401"
+      },
+      "annotations": {},
+      "source": 39,
+      "target": 7,
+      "key": "ecb7edf74520f2858a014e063db490f3"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "neutralization of CXCR3 reduced MIG/CXCL9-induced T lymphocyte proliferation and the number of IFN-gamma-positive spots",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15187119"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 39,
+      "target": 2,
+      "key": "040bce372269de18bc454f30ae5ca79f"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "supernatants harvested from stimulated PMN induced migration and rapid integrin-dependent adhesion of CXCR3-expressing lymphocytes; these activities were significantly reduced by neutralizing anti-MIG and anti-IP-10 Abs,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10202039"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 39,
+      "target": 2,
+      "key": "f3565c5c635ba9d74565066bd8ca2917"
+    },
+    {
+      "line": 69,
+      "relation": "increases",
+      "evidence": "The activation and differentiation of T cells are dependent upon numerous initiating events that are influenced by the immune environment, nature of the Ag, as well as the activation state of APCs. In the present studies we have investigated the role of a specific notch ligand, delta-like 4 (Dll4). In particular, our data have indicated that Dll4 is inducible by pathogen-associated signals through TLR activation on dendritic cells but not early response inflammatory cytokines, IL-1 and IL-18 that also activate cells via MyD88 adapter pathway.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19494260"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 37,
+      "target": 8,
+      "key": "ecd6ea57b87e23ca5cd5ee229de8565c"
+    },
+    {
+      "line": 69,
+      "relation": "increases",
+      "evidence": "Regulation of T cell activation by Notch ligand, DLL4",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19494260"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 37,
+      "target": 8,
+      "key": "29b16fcb1dcfa64a0ca36a9243993b2e"
+    },
+    {
+      "line": 69,
+      "relation": "increases",
+      "evidence": "In the present study, we show that VEGF-induced DLL4 expression depends on NOTCH activation. VEGF-induced DLL4 expression was prevented by the blockage of NOTCH signaling with ??-secretase or ADAM inhibitors in human cardiac microvascular ECs. Similar to VEGF-A, recombinant DLL4 itself stimulated NOTCH signaling and resulted in up-regulation of DLL4, suggesting a positive feed-forward mechanism.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20959466"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 37,
+      "target": 8,
+      "key": "3b92b50cd4e29992f3fc9ceb0abd5d04"
+    },
+    {
+      "line": 19,
+      "relation": "increases",
+      "evidence": "STAT5, which is downstream of IL-2 signalling, and STAT1, which is downstream of IL-27 signalling, as well as ETS1, are negative regulators of TH17-cell differentiation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18408735"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 38,
+      "target": 15,
+      "key": "1bc863f088ce16c1828869344ac8d68b"
+    },
+    {
+      "line": 36,
+      "relation": "decreases",
+      "evidence": "STAT5, which is downstream of IL-2 signalling, and STAT1, which is downstream of IL-27 signalling, as well as ETS1, are negative regulators of TH17-cell differentiation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18408735"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 38,
+      "target": 3,
+      "key": "b89373a0beaa877ec89385b6d77af385"
+    },
+    {
+      "line": 11,
+      "relation": "increases",
+      "evidence": "HIF-1 enhances TH17 development through direct transcriptional activation of RORt and via tertiary complex formation with RORt and p300 recruitment to the IL-17 promoter, thereby regulating TH17 signature genes. These HIF-1-deficient T cells displayed a marked reduction in IL-17A+cells",
+      "citation": {
+        "db": "Other",
+        "db_id": "21871655"
+      },
+      "annotations": {},
+      "source": 40,
+      "target": 47,
+      "key": "7c4739376779b31ddd0c7b1fc837db6e"
+    },
+    {
+      "line": 40,
+      "relation": "decreases",
+      "evidence": "The development of Th17 cells is also down-regulated by IL-4 produced by Th2 cells and by IFN-gamma produced by Th1 cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17083345"
+      },
+      "annotations": {},
+      "source": 41,
+      "target": 3,
+      "key": "8646b0d8dae915e39de3ddd3a0584610"
+    },
+    {
+      "line": 39,
+      "relation": "directlyIncreases",
+      "evidence": "Binding of IL-12 to the IL-12R leads to activation of members of the Janus kinase (JAK)3  family of tyrosine kinases, TYK2 and JAK2, which are associated with the cytoplasmic regions (cyt) of IL-12R{beta}1 and -{beta}2, respectively (4, 5).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12874225"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 44,
+      "target": 22,
+      "key": "e6682a4adbabbf7e96d8472333987242"
+    },
+    {
+      "line": 57,
+      "relation": "directlyIncreases",
+      "evidence": "IL-15 is a common gamma chain cytokine sharing overlapping signaling and biological properties with IL-2 as a result of their mutual usage of the IL-2/15b and common gamma chain (gc) receptor subunits (7,8).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21098221"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 45,
+      "target": 46,
+      "key": "d777ac828f6e61a0d0996650eced5eef"
+    },
+    {
+      "line": 59,
+      "relation": "directlyIncreases",
+      "evidence": "Interleukin 15 (IL-15) is a 14-15 kDa polypeptide that belongs to the 4 alpha-helix-bundle family of cytokines and was originally discovered due to its T cell proliferative activity. It utilizes the signal-transducing beta/gamma polypeptides of the IL-2 receptor complex, thus sharing many biological activities with IL-2,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11197599"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 45,
+      "target": 50,
+      "key": "2314ef86ace5452f390e6aa3c0b363c6"
+    },
+    {
+      "line": 59,
+      "relation": "directlyIncreases",
+      "evidence": "Considering these points in the context of IL-2- and IL-15-dependent signaling under physiological conditions, the lack of a cytoplasmic domain for IL-2R alpha and trans-presentation of IL-15 by IL-15Ralpha  to CD122 and gamma C results in a qualitative identical utilization of signaling pathways associated with CD122 and gamma C. High levels of IL-2Ralpha provide a mean for continual capture of IL-2 to sustain signaling whereas limiting IL-15Ralpha tempers engagement of CD122 and gamma C, limiting signal transduction. Thus, varied levels of IL-2Ralpha and IL-15Ralpha provide a simple, yet powerful, mechanism to quantify and tune signaling through common intermediates leading to distinctive biological responses.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22447977"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 45,
+      "target": 50,
+      "key": "7e74d9ada4a10f9764077ae1b4f74749"
+    },
+    {
+      "line": 4,
+      "relation": "association",
+      "evidence": "Thus, RORγt is a tractable drug target for the treatment of cutaneous inflammatory disorders, which may afford additional therapeutic benefit over existing modalities that target only IL-17A.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 47,
+      "target": 0,
+      "key": "d1be4dcf2cb179e96bf2ceb14805f2d9"
+    },
+    {
+      "line": 7,
+      "relation": "association",
+      "evidence": "Thus, RORγt is a tractable drug target for the treatment of cutaneous inflammatory disorders, which may afford additional therapeutic benefit over existing modalities that target only IL-17A.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 47,
+      "target": 9,
+      "key": "f7b154c001cef96dce0f9d35b22572df"
+    },
+    {
+      "line": 66,
+      "relation": "association",
+      "evidence": "IL-17-producing CD4+Th17 cells, CD8+Tc17 cells, and γδ T cells play critical roles in the pathogenesis of autoimmune psoriasis. RORγt is required for the differentiation of Th17 cells and expression of IL-17.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 47,
+      "target": 59,
+      "key": "4e8eb58433186b54c29569e67e4450e6"
+    },
+    {
+      "line": 94,
+      "relation": "association",
+      "evidence": "TMP778, but not TMP776, blocked human Th17 and Tc17 cell differentiation and also acutely modulated IL-17A production and inflammatory Th17-signature gene expression (Il17a, Il17f, Il22, Il26, Ccr6, and Il23) in mature human Th17 effector/memory T cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 29,
+      "target": 59,
+      "key": "61f3d9cb768ae7a4a1d69940118e5294"
+    },
+    {
+      "line": 61,
+      "relation": "increases",
+      "evidence": "that IL-2 induces STAT5 phosphorylation",
+      "citation": {
+        "db": "Other",
+        "db_id": "24829413"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 48,
+      "target": 17,
+      "key": "2769962014e7202e1511b8441cb7e56c"
+    },
+    {
+      "line": 61,
+      "relation": "increases",
+      "evidence": "IL-2-mediated phosphorylation of Jak3 and Stat5a",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10825200"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 48,
+      "target": 17,
+      "key": "df4d95d187413471654035865f41ff39"
+    },
+    {
+      "line": 61,
+      "relation": "increases",
+      "evidence": "STAT5, which is downstream of IL-2 signalling, and STAT1, which is downstream of IL-27 signalling, as well as ETS1, are negative regulators of TH17-cell differentiation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18408735"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 48,
+      "target": 17,
+      "key": "35061c7151f72ce717e5efa7a717e4b3"
+    },
+    {
+      "line": 62,
+      "relation": "decreases",
+      "evidence": "Genetic deletion or antibody blockade of IL-2 promoted differentiation of the Th17 cell subset.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17363300"
+      },
+      "annotations": {},
+      "source": 48,
+      "target": 3,
+      "key": "fabac3279c8732553b81bb243ecca520"
+    },
+    {
+      "line": 43,
+      "relation": "increases",
+      "evidence": "IL-21 is known to activate Stat3",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17884812"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 49,
+      "target": 16,
+      "key": "63026d3723fcfd527130d58d224fff17"
+    },
+    {
+      "line": 43,
+      "relation": "increases",
+      "evidence": "Interleukin (IL)-21 has been reported to both stimulate cell growth and promote survival in benign lymphoid cells and several types of hematopoietic neoplasms. It induces JAK3/STAT3 signaling,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19608866"
+      },
+      "annotations": {
+        "cl": {
+          "0000542": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 49,
+      "target": 16,
+      "key": "e941a27c9351309122b91ddb2e3c6285"
+    },
+    {
+      "line": 91,
+      "relation": "association",
+      "evidence": "TMP778, but not TMP776, blocked human Th17 and Tc17 cell differentiation and also acutely modulated IL-17A production and inflammatory Th17-signature gene expression (Il17a, Il17f, Il22, Il26, Ccr6, and Il23) in mature human Th17 effector/memory T cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 24,
+      "target": 59,
+      "key": "2f4cfaad27910f428bb7fff4f23e1616"
+    },
+    {
+      "line": 70,
+      "relation": "directlyIncreases",
+      "evidence": "IL-23 through its receptor induces tyrosine phosphorylation of the Janus family kinase (Jak2) and tyrosine kinase 2 (Tyk2), which in turn, phosphorylates STAT1, STAT3, STAT4 and STAT5 as well as induces formation of STAT3-STAT4 heterodimers [25, 37–40]. However, IL-23 is much weaker inducer of STAT4 but stronger inducer of STAT3 homodimer and STAT3–STAT4 heterodimers compared to IL-12 [41].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20415779"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 34,
+      "target": 54,
+      "key": "4486c5af99f63b223913aeea300ddaa3"
+    },
+    {
+      "line": 70,
+      "relation": "directlyIncreases",
+      "evidence": "IL-23 activates the same Jak-stat signaling molecules as IL-12: Jak2, Tyk2, and stat1, -3, -4, and -5, but stat4 activation is substantially weaker and different DNA-binding stat complexes form in response to IL-23 compared with IL-12. IL-23R associates constitutively with Jak2 and in a ligand-dependent manner with stat3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12023369"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 34,
+      "target": 54,
+      "key": "f56cdc76053788ec86d3e0201d14e1ce"
+    },
+    {
+      "line": 38,
+      "relation": "association",
+      "evidence": "TMP778, but not TMP776, blocked human Th17 and Tc17 cell differentiation and also acutely modulated IL-17A production and inflammatory Th17-signature gene expression (Il17a, Il17f, Il22, Il26, Ccr6, and Il23) in mature human Th17 effector/memory T cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 33,
+      "target": 59,
+      "key": "634e55912fcbc796094a542f561ce6a4"
+    },
+    {
+      "line": 71,
+      "relation": "increases",
+      "evidence": "from full text - IFN-a initiates the activation of STAT-1 followed by the induction of IFIG [35–37]. Although it is reported that IL-27 activates not only STAT-1, but also STAT-2, STAT-3, STAT-4 and STAT-5 in T cells [2,4,14,38], and activates STAT-3 in macrophages [39], it has not been clear whether the cytokine activates STAT-1 in macrophages. To determine whether IL-27 activates STAT-1 in CD4 T cells and MDM in our culture system, Western blot analysis was performed. The assay demonstrated that both cytokines induced the phosphorylation of STAT-1 in CD4 T cells and MDM (Fig. 2d).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18090390"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 35,
+      "target": 15,
+      "key": "f98651e12f8a4d72be30f5ed40f88582"
+    },
+    {
+      "line": 71,
+      "relation": "increases",
+      "evidence": "STAT5, which is downstream of IL-2 signalling, and STAT1, which is downstream of IL-27 signalling, as well as ETS1, are negative regulators of TH17-cell differentiation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18408735"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 35,
+      "target": 15,
+      "key": "47d68d8f1e6fcab10a8577c2b290d339"
+    },
+    {
+      "line": 52,
+      "relation": "decreases",
+      "evidence": "The development of Th17 cells is also down-regulated by IL-4 produced by Th2 cells and by IFN-gamma produced by Th1 cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17083345"
+      },
+      "annotations": {},
+      "source": 51,
+      "target": 3,
+      "key": "f2f355b70d0bfff76ad2cb06196bdb8a"
+    },
+    {
+      "line": 74,
+      "relation": "increases",
+      "evidence": "IL-6 contributes to the development of Th17 cells, but inhibits Treg cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "17083345"
+      },
+      "annotations": {},
+      "source": 52,
+      "target": 3,
+      "key": "b26f95f1ae5f41f0a9a884c1651ad60c"
+    },
+    {
+      "line": 75,
+      "relation": "directlyIncreases",
+      "evidence": "Treatment of cells with both neutralizing anti-IL-6 monoclonal antibody (0.5 nM and 5.0 nM) and Sant7 (IL-6 receptor superantagonist-0.2 nM and 2.0 nM) inhibited PC-3 tumor cell growth. Sant7 is active at a molar ratio of Sant7:IL-6 of 1:10. This indicates that IL-6 induced PC-3 tumor growth is mediated by IL-6 receptor.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8467812"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 52,
+      "target": 53,
+      "key": "9ff61158ea7d62ffd163aacbfcf890ef"
+    },
+    {
+      "line": 75,
+      "relation": "directlyIncreases",
+      "evidence": "The effect of sIL-6R or sIL-6R/IL-6 proved to be dependent on gp130 availability",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12372336"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 52,
+      "target": 53,
+      "key": "fecd97b724254d39625f657dd35ab3a1"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "Signaling by the IL-6 receptor is mediated through the signal transducing subunit gp130 and involves the activation of Janus-associated kinases (JAKs), signal transducer and activator of transcription 3 (STAT3), and mitogen-activated protein (MAP) kinase.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10409724"
+      },
+      "annotations": {
+        "doid": {
+          "684": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 53,
+      "target": 16,
+      "key": "b3ef51346cad91941339141eca8cd692"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11673558"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 53,
+      "target": 16,
+      "key": "fb90b173581ca1856a107bdb8acceb5f"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "Rac V12 expression results in the induction of the IL-6 and IL-6 receptor genes and neutralizing antibodies directed against the IL-6 receptor block Rac1-induced STAT3 activation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11470914"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 53,
+      "target": 16,
+      "key": "c8a5389752cdbc43f26ccf7fc0e4689c"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "IL-6/sIL-6R rapidly phosphorylated JAK1, JAK2, TYK2, STAT1 and STAT3, which were inhibited by statins. Transfection of STAT3 small interfering RNA (siRNA), but not STAT1 siRNA, attenuated the ability of IL-6/sIL-6R to enhance THP-1 monocyte migration. In addition, statins blocked IL-6/sIL-6R-induced translocation of STAT3 to the nucleus.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20136831"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 53,
+      "target": 16,
+      "key": "f6a9c7f4ccacd9c37c649caa03ecd59d"
+    },
+    {
+      "line": 87,
+      "relation": "directlyIncreases",
+      "evidence": "ligand-receptor binding activated STAT3, STAT5 and STAT6",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12020765"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 54,
+      "target": 16,
+      "key": "f57f8b29e47fa6a72dd928fb90ec22b6"
+    },
+    {
+      "line": 87,
+      "relation": "directlyIncreases",
+      "evidence": "Here we report a novel signaling pathway whereby RhoA can efficiently modulate Stat3 transcriptional activity by inducing its simultaneous tyrosine and serine phosphorylation. Tyrosine phosphorylation is exerted via a member of the Src family of kinases (SrcFK) and JAK2, whereas the JNK pathway mediates serine phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11598209"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 54,
+      "target": 16,
+      "key": "b352ba6611408bc2f0ce63c572130ca6"
+    },
+    {
+      "line": 2,
+      "relation": "positiveCorrelation",
+      "evidence": "When NR4A2 expression was blocked with siRNA, full Th17 differentiation was prevented in vitro:",
+      "citation": {
+        "db": "Other",
+        "db_id": "23437182"
+      },
+      "annotations": {},
+      "source": 57,
+      "target": 3,
+      "key": "e7366a25fba2531fb458c652d21def8f"
+    },
+    {
+      "line": 53,
+      "relation": "increases",
+      "evidence": "The transcription factor, forkhead transcription factor (Foxp3), is essential for T-cell regulatory function, and the orphan nuclear receptor, RORgammaT, is important in Th17 cell differentiation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20472307"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 10,
+      "target": 3,
+      "key": "4a39b7b3a18874341fce5c695ec96eff"
+    },
+    {
+      "line": 53,
+      "relation": "increases",
+      "evidence": "ROR-γ knockout mice have shown reduction of Th17 cells",
+      "citation": {
+        "db": "Other",
+        "db_id": "23237239"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 10,
+      "target": 3,
+      "key": "f5a14f2d52dd456d86bbef071b3dcbb5"
+    },
+    {
+      "line": 0,
+      "relation": "increases",
+      "evidence": "SAA promotes expression of IL-17A in γδ T cells and this innate cell proportionally expressed higher levels of IL-17A transcript than CD4(+) T cells or epithelial cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23627303"
+      },
+      "annotations": {},
+      "source": 12,
+      "target": 47,
+      "key": "9b96c59ea90e6b18c876512fbb7724a7"
+    },
+    {
+      "line": 81,
+      "relation": "decreases",
+      "evidence": "(from text) Here we show that phosphorylation of STAT3 is prolonged in mouse Socs3-deficient macrophages  after stimulation with interleukin-6 (IL-6) but not IL-10, indicating that SOCS3 specifically affects signaling mediated by IL-6 and gp130.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12754506"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 36,
+      "target": 16,
+      "key": "044bbbe09606c26620df7776e513bd75"
+    },
+    {
+      "line": 81,
+      "relation": "decreases",
+      "evidence": "Here we show that overexpression of suppressors of cytokine signaling (SOCS)-1 and SOCS-3 in liver causes insulin resistance and an increase in the key regulator of fatty acid synthesis in liver, sterol regulatory element-binding protein (SREBP)-1c.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15240880"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 36,
+      "target": 16,
+      "key": "4ef3ec35429bcacaa85b5ae83269037b"
+    },
+    {
+      "line": 81,
+      "relation": "decreases",
+      "evidence": "By contrast, Socs3 was found to be a major regulator of IL-23-mediated Stat3 phosphorylation and Th17 generation, and Stat3 directly binds to the IL-17A and IL-17F promoters. We conclude that Socs3 is an essential negative regulator of IL-23 signaling, inhibition of which constrains the generation of Th17 differentiation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16698929"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 36,
+      "target": 16,
+      "key": "75caacd976cd005bab08a869a1e637d7"
+    },
+    {
+      "line": 81,
+      "relation": "decreases",
+      "evidence": "Restoration of SOCS-3 in lung cancer cells where SOCS-3 was methylation-silenced resulted in the down-regulation of active STAT3, induction of apoptosis, and growth suppression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14617776"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 36,
+      "target": 16,
+      "key": "4bf4978ccdf7c997c08575f4823a61cc"
+    },
+    {
+      "line": 81,
+      "relation": "decreases",
+      "evidence": "We demonstrated that SOCS3 deletion in the liver resulted in hyperactivation of STAT3 and promoted ConA- and chemical-induced liver fibrosis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16474852"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 36,
+      "target": 16,
+      "key": "72460dc88a8b9222880b55b1111c88bb"
+    },
+    {
+      "line": 81,
+      "relation": "decreases",
+      "evidence": "We further show that activation of STAT3 was inhibited by SOCS3 overexpression as well as by anti-IL-6 treatment during IgG IC-induced lung injury, as determined by EMSA.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16785559"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 36,
+      "target": 16,
+      "key": "ce50e0b661c2b1429209b2892eba174f"
+    },
+    {
+      "line": 82,
+      "relation": "decreases",
+      "evidence": "We show that loss of suppressor of cytokine signaling (SOCS) 3 in T cells increases both interleukin (IL)-17 and IL-10 production, induces an antiinflammatory macrophage phenotype, and leads to unexpected IL-17-dependent reduction in lesion development and vascular inflammation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19737863"
+      },
+      "annotations": {},
+      "source": 36,
+      "target": 47,
+      "key": "74b6351e138bebb7067d51d2c79dbc3d"
+    },
+    {
+      "line": 41,
+      "relation": "decreases",
+      "evidence": "STAT5, which is downstream of IL-2 signalling, and STAT1, which is downstream of IL-27 signalling, as well as ETS1, are negative regulators of TH17-cell differentiation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18408735"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 15,
+      "target": 3,
+      "key": "208993616e7fac2bc3835918c141b8d6"
+    },
+    {
+      "line": 41,
+      "relation": "decreases",
+      "evidence": "ggg",
+      "citation": {
+        "db": "Other",
+        "db_id": "23437182"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 15,
+      "target": 3,
+      "key": "cf276d5cf0f532915e8536dde3360d86"
+    },
+    {
+      "line": 48,
+      "relation": "increases",
+      "evidence": "Stat5a/b are indispensable in T regulatory (Treg) cell development and maintenance, and negatively regulate T helper 17 (Th17) cell differentiation. Conversely, Stat3 is essential for Th17 differentiation and inhibits Treg cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18708155"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 16,
+      "target": 3,
+      "key": "6eb7f0f2b08ba1b69e0ff4067d0ab9a4"
+    },
+    {
+      "line": 67,
+      "relation": "decreases",
+      "evidence": "ARID-5A is a lineage-specific attenuator of Th17 cell differentiation and may be involved in the pathogenesis of RA.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24782182"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 17,
+      "target": 3,
+      "key": "8a77dab86480d8d242bd434c3fe5fa90"
+    },
+    {
+      "line": 67,
+      "relation": "decreases",
+      "evidence": "STAT5, which is downstream of IL-2 signalling, and STAT1, which is downstream of IL-27 signalling, as well as ETS1, are negative regulators of TH17-cell differentiation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18408735"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 17,
+      "target": 3,
+      "key": "7541ca1b1c24d8daebf30d45a0f97ad4"
+    },
+    {
+      "line": 67,
+      "relation": "decreases",
+      "evidence": "STAT5, which is downstream of IL-2 signalling, and STAT1, which is downstream of IL-27 signalling, as well as ETS1, are negative regulators of TH17-cell differentiation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18408735"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 17,
+      "target": 3,
+      "key": "a17c2893ba345d43c1f96ab7f16ddfe9"
+    },
+    {
+      "line": 24,
+      "relation": "increases",
+      "evidence": "TGF-beta1 can promote the development of both Th17 effector and adaptive Treg cells, while the contemporaneous production of IL-6 contributes to the development of Th17 cells, but inhibits Treg cells",
+      "citation": {
+        "db": "Other",
+        "db_id": "17083345"
+      },
+      "annotations": {},
+      "source": 19,
+      "target": 3,
+      "key": "0c9ea60365a4b6d66050e9088bfa2f3d"
+    },
+    {
+      "line": 25,
+      "relation": "directlyIncreases",
+      "evidence": "In analogous fashion, TGFB1 binds TGFBR2, which recruits and phosphorylates TGFBR1 (also known as ALK5).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16384533"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 19,
+      "target": 21,
+      "key": "c72022cde3972777630725d93043373f"
+    },
+    {
+      "line": 25,
+      "relation": "directlyIncreases",
+      "evidence": "Our results demonstrate that TGF-beta1 activates ERK in a time-dependent manner with a maximum effect at 60 min; overexpression of Smad7 increased this TGF-beta1-mediated phosphorylation of the ERK; and siRNA-mediated silencing of TbetaRII, Smad3, Smad4, and Smad7 abrogated this effect. Moreover, we observed that overexpression of Smad7 restored TGF-beta1-mediated ERK phosphorylation in Smad4 knockdown cells but not in TbetaRII knockdown cells. In BEP2D cells, TGF-beta1 treatment effectively inhibited cells' proliferation and induced their apoptosis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17096210"
+      },
+      "annotations": {
+        "cl": {
+          "0002328": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 19,
+      "target": 21,
+      "key": "b6443e9b7a865343ab51f16eaaf54844"
+    },
+    {
+      "line": 25,
+      "relation": "directlyIncreases",
+      "evidence": "To determine whether this activation by NE was mediated by the TGF-beta1 receptor, we used a dominant negative vector of the TGF-beta1 type II receptor, and the synergistic effects were inhibited. Furthermore, this synergistic effect was attenuated by a specific inhibitor of p38, SB203680. These data indicate that NE enhances cardiac fibrosis through TGF-beta1 post-receptor signaling, predominantly via the p38 MAP kinase pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12154105"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 19,
+      "target": 21,
+      "key": "06c81a80fcb83e563de74aac9b58b8b9"
+    },
+    {
+      "line": 25,
+      "relation": "directlyIncreases",
+      "evidence": "These proteins signal by stimulating formation of specific heteromeric complexes of type I and type II serine/threonine kinase receptors. The type II receptors are encoded by five known mammalian genes, bind to ligands, and phosphorylate and activate the type I receptors, of which there are seven mammalian members (Fig. 1).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11792802"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 19,
+      "target": 21,
+      "key": "d4e8ab857dc322e411032e56642e442b"
+    },
+    {
+      "line": 25,
+      "relation": "directlyIncreases",
+      "evidence": "TGF? binds to TGF? receptor II on T cells, which leads to the recruitment of TGF? receptor I to the complex and activation of cytoplasmic transcription factors SMAD2 and SMAD3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20656683"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 19,
+      "target": 21,
+      "key": "f7657971c0a1c5d28bfe540f79b5562c"
+    },
+    {
+      "line": 86,
+      "relation": "directlyIncreases",
+      "evidence": "P/CAF potentiated the transcriptional activity of heterologous Gal4-Smad2 and Gal4-Smad3 fusion proteins. In addition, P/CAF potentiated the TGF-beta/Smad3-induced transcriptional responses, which could be further enhanced by co-activators p300 and Smad4.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11058129"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 20,
+      "target": 55,
+      "key": "0a614c0835dcc544225d2e9eb2d1358c"
+    },
+    {
+      "line": 28,
+      "relation": "increases",
+      "evidence": "TGFbeta markedly and specifically decreases both mRNA and protein levels of a HIF-1alpha-associated prolyl hydroxylase (PHD), PHD2, through the Smad signaling pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16815840"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 21,
+      "target": 55,
+      "key": "1d8c603333917e404799bf646b947287"
+    },
+    {
+      "line": 28,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12421823"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 21,
+      "target": 55,
+      "key": "abff03f58551b286622d0381613874ed"
+    },
+    {
+      "line": 28,
+      "relation": "increases",
+      "evidence": "TGF? binds to TGF? receptor II on T cells, which leads to the recruitment of TGF? receptor I to the complex and activation of cytoplasmic transcription factors SMAD2 and SMAD3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20656683"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 21,
+      "target": 55,
+      "key": "1103c3f3d9b1c8a945984133738532a8"
+    },
+    {
+      "line": 29,
+      "relation": "directlyIncreases",
+      "evidence": "These proteins signal by stimulating formation of specific heteromeric complexes of type I and type II serine/threonine kinase receptors. The type II receptors are encoded by five known mammalian genes, bind to ligands, and phosphorylate and activate the type I receptors, of which there are seven mammalian members (Fig. 1).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11792802"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 21,
+      "target": 20,
+      "key": "d84bb462ef24d7f1c015a3413d4dfb9f"
+    },
+    {
+      "line": 17,
+      "relation": "directlyIncreases",
+      "evidence": "In cellular assays, SAR-20347 dose dependently (1 nM-10 μM) inhibited JAK1- and/or TYK2-dependent signaling from the IL-12/IL-23, IL-22, and IFN-α receptors. In vivo, TYK2 mutant mice or treatment of wild-type mice with SAR-20347 significantly reduced IL-12-induced IFN-γ production and IL-22-dependent serum amyloid A to similar extents, indicating that, in these models, SAR-20347 is probably acting through inhibition of TYK2",
+      "citation": {
+        "db": "Other",
+        "db_id": "25156366"
+      },
+      "annotations": {},
+      "source": 22,
+      "target": 24,
+      "key": "c83892121ff831dbc2c8abb909af050f"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "Study on signal transduction through Mp1 revealed that Tpo induces activation of JAK2 and Tyk2, which in turn activate STAT1, STAT3 and STAT5. Further, Tpo stimulates transcription factors GATA-1 and NF-E2, which induce differentiation markers, GPIIb/IIIa and Pm-1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9209416"
+      },
+      "annotations": {
+        "cl": {
+          "0000556": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 22,
+      "target": 16,
+      "key": "f50d767c7cf184da6289e95d0f4a86e5"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "the IFN-a receptor lacks intrinsic kinase activity and instead uses Jak1 and Tyk2 to initiate signal transduction. Ligandinduced dimerization of IFNAR-1 and IFNAR-2 allows juxtaposition and activation of the associated Jaks, leading to activation of downstream signaling pathways (e.g., STAT1, -2, and -3)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12646637"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 22,
+      "target": 16,
+      "key": "04e4d8bd939ca577a5b3e1f7bd394cb7"
+    },
+    {
+      "line": 6,
+      "relation": "decreases",
+      "evidence": "In summary, to our knowledge, we are the first to demonstrate that RORγt inverse agonists: 1) inhibit Tc17 cell differentiation, as well as IL-17 production by γδ T cells and CD8+ Tc17 cells; 2) block imiquimod-induced cutaneous inflammation; 3) inhibit Th17 signature gene expression by cells isolated from psoriatic patient samples; and 4) block IL-23-induced IL-17A expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 9,
+      "target": 25,
+      "key": "d8977b25fee0bc30ca5f210119e33db7"
+    },
+    {
+      "line": 7,
+      "relation": "association",
+      "evidence": "Thus, RORγt is a tractable drug target for the treatment of cutaneous inflammatory disorders, which may afford additional therapeutic benefit over existing modalities that target only IL-17A.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 9,
+      "target": 47,
+      "key": "4fb6592c378df185e4d2fc2d7f51c9d0"
+    },
+    {
+      "line": 8,
+      "relation": "increases",
+      "evidence": "RORγt is required for the differentiation of Th17 cells and expression of IL-17.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 9,
+      "target": 59,
+      "key": "7dae00299dc3fd2660ef575c70323683"
+    },
+    {
+      "line": 5,
+      "relation": "association",
+      "evidence": "TMP778, but not TMP776, blocked human Th17 and Tc17 cell differentiation and also acutely modulated IL-17A production and inflammatory Th17-signature gene expression (Il17a, Il17f, Il22, Il26, Ccr6, and Il23) in mature human Th17 effector/memory T cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 59,
+      "target": 28,
+      "key": "ae7fd3e0bba5b7a1776fe67031dd4025"
+    },
+    {
+      "line": 38,
+      "relation": "association",
+      "evidence": "TMP778, but not TMP776, blocked human Th17 and Tc17 cell differentiation and also acutely modulated IL-17A production and inflammatory Th17-signature gene expression (Il17a, Il17f, Il22, Il26, Ccr6, and Il23) in mature human Th17 effector/memory T cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 59,
+      "target": 33,
+      "key": "784665e7465a935dea72a2bc1284ff44"
+    },
+    {
+      "line": 66,
+      "relation": "association",
+      "evidence": "IL-17-producing CD4+Th17 cells, CD8+Tc17 cells, and γδ T cells play critical roles in the pathogenesis of autoimmune psoriasis. RORγt is required for the differentiation of Th17 cells and expression of IL-17.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 59,
+      "target": 47,
+      "key": "74898368e5069a34bfadabee2debc59f"
+    },
+    {
+      "line": 85,
+      "relation": "association",
+      "evidence": "TMP778, but not TMP776, blocked human Th17 and Tc17 cell differentiation and also acutely modulated IL-17A production and inflammatory Th17-signature gene expression (Il17a, Il17f, Il22, Il26, Ccr6, and Il23) in mature human Th17 effector/memory T cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 59,
+      "target": 25,
+      "key": "b0488362093989b0d5f83ffcb8fffc27"
+    },
+    {
+      "line": 91,
+      "relation": "association",
+      "evidence": "TMP778, but not TMP776, blocked human Th17 and Tc17 cell differentiation and also acutely modulated IL-17A production and inflammatory Th17-signature gene expression (Il17a, Il17f, Il22, Il26, Ccr6, and Il23) in mature human Th17 effector/memory T cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 59,
+      "target": 24,
+      "key": "ee05410d4b137d5c0d5aa20bad7bc581"
+    },
+    {
+      "line": 94,
+      "relation": "association",
+      "evidence": "TMP778, but not TMP776, blocked human Th17 and Tc17 cell differentiation and also acutely modulated IL-17A production and inflammatory Th17-signature gene expression (Il17a, Il17f, Il22, Il26, Ccr6, and Il23) in mature human Th17 effector/memory T cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24516202"
+      },
+      "annotations": {},
+      "source": 59,
+      "target": 29,
+      "key": "08f2a5d7be3f693644b6c58e51db36ac"
+    }
+  ]
+}

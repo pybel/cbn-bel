@@ -1,0 +1,5520 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Necroptosis-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Necroptosis network describes the causal mechanisms involved in the activation of the Fas receptor and TNFR1 receptor, leading to RIPK/ROS (reactive oxygen species) signaling and the subsequent induction of necroptosis as a result of exposure to environmental insults. The network includes the array of proinflammatory mediators released from necrotic cells that may contribute to COPD development. \\Reviewed during Jamboree2015"
+    },
+    "namespace_url": {
+      "HGNC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-human-genes/hgnc-human-genes-20150601.belns",
+      "GOBP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20150601.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20150601.belns",
+      "GOCC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170511.belns",
+      "MESHPP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20150601.belns",
+      "MGI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20150601.belns",
+      "RGD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20150601.belns",
+      "CHEBI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20150601.belns",
+      "SCHEM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-chemicals/selventa-legacy-chemicals-20150601.belns",
+      "EGID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/entrez-gene-ids/entrez-gene-ids-20150601.belns",
+      "MESHD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20150601.belns",
+      "SDIS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-diseases/selventa-legacy-diseases-20150601.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20150601.belns",
+      "MESHC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170511.belns",
+      "GOBPID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process-ids/go-biological-process-ids-20150601.belns",
+      "GOCCID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component-ids/go-cellular-component-ids-20150601.belns",
+      "MESHCS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20150601.belns"
+    },
+    "namespace_pattern": {},
+    "annotation_url": {
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20150601.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20150601.belanno",
+      "Species": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+      "Tissue": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20150601.belanno"
+    },
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "N-formyl-L-methionyl-L-leucyl-L-phenylalanine"
+      },
+      "id": "8a3cd02191a8b44e37674f5a0be380a0",
+      "bel": "a(CHEBI:\"N-formyl-L-methionyl-L-leucyl-L-phenylalanine\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "arachidonic acid"
+      },
+      "id": "082e87b42d9c314316b9dc289d2a1f6d",
+      "bel": "a(CHEBI:\"arachidonic acid\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "hydrogen peroxide"
+      },
+      "id": "2a33dd72d09a3b66f80326bcf6e3bfd6",
+      "bel": "a(CHEBI:\"hydrogen peroxide\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "reactive oxygen species"
+      },
+      "id": "39a67bec2ea8cb7a2bec39cf66e565ba",
+      "bel": "a(CHEBI:\"reactive oxygen species\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "ATP"
+      },
+      "id": "08c2bd47cf55782389bbaba34887a39c",
+      "bel": "a(CHEBI:ATP)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "acetylcysteine"
+      },
+      "id": "29fcc762deff60bd6b81859f93cc9056",
+      "bel": "a(CHEBI:acetylcysteine)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "ceramide"
+      },
+      "id": "9873246944c5894ac7dd61c8a47f5774",
+      "bel": "a(CHEBI:ceramide)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "glutathione"
+      },
+      "id": "61c5446d1e6637cc42f9ac2109f37eeb",
+      "bel": "a(CHEBI:glutathione)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "necrotic cell death"
+      },
+      "id": "820b292b4d11adb408eae1d1bc15d2b0",
+      "bel": "bp(GOBP:\"necrotic cell death\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "regulation of mitochondrial membrane potential"
+      },
+      "id": "f56ef6a22e0c6799b186efc2303e5b48",
+      "bel": "bp(GOBP:\"regulation of mitochondrial membrane potential\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "MESHPP",
+        "name": "Apoptosis"
+      },
+      "id": "baaedb0856f338f39e21733a8239632d",
+      "bel": "bp(MESHPP:Apoptosis)"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "RIPK1"
+          },
+          "id": "fa93ee4269315f7d2fde702ebb2811ca",
+          "bel": "p(HGNC:RIPK1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "RIPK3"
+          },
+          "id": "ee1fc2532fa99ddb3d88f74f020b9281",
+          "bel": "p(HGNC:RIPK3)"
+        }
+      ],
+      "id": "bea43e886781abe740404d60f13f3635",
+      "bel": "complex(p(HGNC:RIPK1), p(HGNC:RIPK3))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "BIRC2"
+      },
+      "id": "4c18248bdc9e6950a188e1dba8b923c2",
+      "bel": "p(HGNC:BIRC2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "BIRC3"
+      },
+      "id": "5e0029b904434e65b44972358385afcc",
+      "bel": "p(HGNC:BIRC3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "BNIP3"
+      },
+      "id": "5c20d03f2301a7d4bddfeee44309509c",
+      "bel": "p(HGNC:BNIP3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CASP8"
+      },
+      "id": "b16754ce02634beefcd22efc4b64bae4",
+      "bel": "p(HGNC:CASP8)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CFLAR"
+      },
+      "id": "2ef890acd26010a53dec38ea3413e26c",
+      "bel": "p(HGNC:CFLAR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CYLD"
+      },
+      "id": "655a6b7554737f76cbb6f5747ae8a726",
+      "bel": "p(HGNC:CYLD)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "DNM1L"
+      },
+      "id": "000fa66835a50916da27dc7814d74ae7",
+      "bel": "p(HGNC:DNM1L)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "FADD"
+      },
+      "id": "4d735796f5b1b316b83746075e5354fc",
+      "bel": "p(HGNC:FADD)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "FAS"
+      },
+      "id": "b30b42f3905fc1cafbb9ec967ef6579a",
+      "bel": "p(HGNC:FAS)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "FASLG"
+      },
+      "id": "ec3bf523b9fdcef692bb9ac99f3eb376",
+      "bel": "p(HGNC:FASLG)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GLUD1"
+      },
+      "id": "664933b9efa1c6d3d915269c4b14f4f6",
+      "bel": "p(HGNC:GLUD1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GLUL"
+      },
+      "id": "b3810f7a3a61fe5d80f72effc6d237c1",
+      "bel": "p(HGNC:GLUL)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HMGB1"
+      },
+      "id": "49cae6a35157605b512bcf8e54c1a60d",
+      "bel": "p(HGNC:HMGB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HSP90B1"
+      },
+      "id": "ebebf53d78a2b8f1d92acb52d21dd913",
+      "bel": "p(HGNC:HSP90B1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MAP3K14"
+      },
+      "id": "b65063323a8d175618e57c94e9425c62",
+      "bel": "p(HGNC:MAP3K14)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MAP3K7"
+      },
+      "id": "810f14f548ee28f5c2207bc68c761ff1",
+      "bel": "p(HGNC:MAP3K7)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MAP3K7"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ub"
+          },
+          "code": "Lys",
+          "pos": 158
+        }
+      ],
+      "id": "14367b2355fc7d8f761314c8cb99adcb",
+      "bel": "p(HGNC:MAP3K7, pmod(Ub, Lys, 158))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MLKL"
+      },
+      "id": "8fa658cb77617d71bd045f9c32379aa0",
+      "bel": "p(HGNC:MLKL)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NOX1"
+      },
+      "id": "f6e4e7fb61fb793369821321c939a408",
+      "bel": "p(HGNC:NOX1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PARP1"
+      },
+      "id": "6dbeddf17b4518c6b18d74ecfb0f546c",
+      "bel": "p(HGNC:PARP1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PGAM5"
+      },
+      "id": "3b08a07aefebafaf38141a59461ee75b",
+      "bel": "p(HGNC:PGAM5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PINK1"
+      },
+      "id": "a74e677efc43ef64884cef6acbea0c5c",
+      "bel": "p(HGNC:PINK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PLA2G4A"
+      },
+      "id": "182e04f67822c25745baa6ba80b4ad51",
+      "bel": "p(HGNC:PLA2G4A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PYGL"
+      },
+      "id": "7449b42e621901cecfdf6ea7c9e79c8a",
+      "bel": "p(HGNC:PYGL)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RIPK1"
+      },
+      "id": "fa93ee4269315f7d2fde702ebb2811ca",
+      "bel": "p(HGNC:RIPK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RIPK1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ub"
+          },
+          "code": "Lys"
+        }
+      ],
+      "id": "26564a3a51dae2a33713ce27254c98a3",
+      "bel": "p(HGNC:RIPK1, pmod(Ub, Lys))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RIPK3"
+      },
+      "id": "ee1fc2532fa99ddb3d88f74f020b9281",
+      "bel": "p(HGNC:RIPK3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "S100A12"
+      },
+      "id": "8d88793834aaad2df17102aa8fbe6682",
+      "bel": "p(HGNC:S100A12)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "S100A8"
+      },
+      "id": "2139d00984e7a6c9ed27f687991d06e8",
+      "bel": "p(HGNC:S100A8)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "S100A9"
+      },
+      "id": "12eb46dba7fcf1c897b2e96110f9e5ee",
+      "bel": "p(HGNC:S100A9)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SAP130"
+      },
+      "id": "52d34b2f22c08cba0cb4d40cc7c20fbd",
+      "bel": "p(HGNC:SAP130)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SIRT1"
+      },
+      "id": "8170e177ec2e1cce964602b364cab766",
+      "bel": "p(HGNC:SIRT1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SMPD1"
+      },
+      "id": "e055403c18214d6a6a61f94203e14225",
+      "bel": "p(HGNC:SMPD1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SMPD2"
+      },
+      "id": "f5c501824b2d6157bc2b1bb92410e6ea",
+      "bel": "p(HGNC:SMPD2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SMPD3"
+      },
+      "id": "3d4c7cc147531db6b7320eaf4e38c4f0",
+      "bel": "p(HGNC:SMPD3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TNF"
+      },
+      "id": "fdc1c1f5a73c3c992b6eb71ce9b6908e",
+      "bel": "p(HGNC:TNF)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TNFAIP3"
+      },
+      "id": "bc1b293cfdd5cdaad43377a82e8844ae",
+      "bel": "p(HGNC:TNFAIP3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TNFRSF1A"
+      },
+      "id": "eba6462fb630d4db520fd03c20e60de0",
+      "bel": "p(HGNC:TNFRSF1A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TRADD"
+      },
+      "id": "4fe0aa16241055627ac6648cd7929b9d",
+      "bel": "p(HGNC:TRADD)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TRAF2"
+      },
+      "id": "62ef3d994ce10a801e15ff0e7668396f",
+      "bel": "p(HGNC:TRAF2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "HSP90 Family"
+      },
+      "id": "281ad7a8bc8e57b424f7ebb776c29d89",
+      "bel": "p(SFAM:\"HSP90 Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "HSPA Family"
+      },
+      "id": "198c741b16ca85e7191f9bfe5e120ed4",
+      "bel": "p(SFAM:\"HSPA Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "PLA2 Family"
+      },
+      "id": "ac7d6d6101c0e3f45ceefea9e55a2ae7",
+      "bel": "p(SFAM:\"PLA2 Family\")"
+    }
+  ],
+  "links": [
+    {
+      "line": 0,
+      "relation": "increases",
+      "evidence": "we demonstrate that nSMase2 is the specific target in airway epithelial cells that is modulated by oxidative stress to generate ceramide",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16631623"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "epithelial cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 46,
+      "target": 6,
+      "key": "cf8ad2b55988b88b16a8785e0d422d17"
+    },
+    {
+      "line": 1,
+      "relation": "decreases",
+      "evidence": "\"we isolated pulmonary epithelial cells from Pink1–/– mice and their corresponding Pink1+/+ wild-type littermates and subjected them to CSE. Surprisingly, Pink1–/– cells were resistant to CSE-induced mitochondrial depolarization, as indicated by TMRE (Figure 5A). These results suggest that the mitophagy protein PINK1 contributes to mitochondrial depolarization during CSE exposure\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25083992"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "primary alveolar epithelial cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 33,
+      "target": 9,
+      "key": "38d02c2b2e1b5a9e1eb0944d15edd61f"
+    },
+    {
+      "line": 1,
+      "relation": "decreases",
+      "evidence": "\"we isolated pulmonary epithelial cells from Pink1–/– mice and their corresponding Pink1+/+\nwild-type littermates and subjected them to CSE. Surprisingly, Pink1–/– cells were resistant to CSE-induced mitochondrial depolarization, as indicated by TMRE (Figure 5A). These results suggest\nthat the mitophagy protein PINK1 contributes to mitochondrial depolarization during CSE exposure\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": ""
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "Lung": true
+        },
+        "Cell": {
+          "primary alveolar epithelial cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 33,
+      "target": 9,
+      "key": "28ded3172780fdd6a9dd70df56ae1a9d"
+    },
+    {
+      "line": 2,
+      "relation": "increases",
+      "evidence": "\"Genetic deficiency of PINK1 and the mitochondrial division/mitophagy inhibitor Mdivi-1 protected against CS-induced cell death and mitochondrial dysfunction in vitro and reduced the phosphorylation of MLKL, a substrate\nfor RIP3 in the necroptosis pathway\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25083992"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "Beas-2B cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity"
+      },
+      "source": 33,
+      "target": 29,
+      "key": "ae5aa7f2ba638757ad3b143074a9fc4b"
+    },
+    {
+      "line": 2,
+      "relation": "increases",
+      "evidence": "he pathogenesis of chronic obstructive pulmonary disease (COPD) remains unclear, but involves loss of alveolar surface area (emphysema) and airway inflammation (bronchitis) as the consequence of cigarette smoke (CS) exposure. Previously, we demonstrated that autophagy proteins promote lung epithelial cell death, airway dysfunction, and emphysema in response to CS; however, the underlying mechanisms have yet to be elucidated. Here, using cultured pulmonary epithelial cells and murine models, we demonstrated that CS causes mitochondrial dysfunction that is associated with a reduction of mitochondrial membrane potential. CS induced mitophagy, the autophagy-dependent elimination of mitochondria, through stabilization of the mitophagy regulator PINK1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25083992"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "beas-2b cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity"
+      },
+      "source": 33,
+      "target": 29,
+      "key": "2cbe448b7a466c5d6db8834fea39cace"
+    },
+    {
+      "line": 3,
+      "relation": "increases",
+      "evidence": "Structurally, MLKL comprises a four-helical bundle tethered to the pseudokinase domain, which contains an unusual pseudoactive site. Although the pseudokinase domain binds ATP, it is catalytically inactive and its essential nonenzymatic role in necroptotic signaling is induced by receptor-interacting serine-threonine kinase 3 (RIPK3)-mediated phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24012422"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "mef": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity"
+      },
+      "source": 29,
+      "target": 8,
+      "key": "fc0341841c0e7d1ee85f73b452b23660"
+    },
+    {
+      "line": 3,
+      "relation": "increases",
+      "evidence": "MLKL interacts with RIP3 through its kinase-like\ndomain. In the absence of MLKL (or when its function is blocked\nby necrosulfonamide), RIP3 and RIP1 still bind to each other\nupon necrosis induction, resulting in a stable complex and higher\nlevels of autophosphorylation. At this stage, RIP1 and RIP3 form\ndiscrete cytosolic punctae, but these punctae cannot expand\nwithout functional MLKL.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22265413"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "HeLa": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity"
+      },
+      "source": 29,
+      "target": 8,
+      "key": "345e15f0e1e98e21fbe5e0bae71bfe99"
+    },
+    {
+      "line": 3,
+      "relation": "increases",
+      "evidence": "Necroptosis is a newly discovered pathway of regulated necrosis that requires the proteins RIPK3 and MLKL and is induced by death receptors, interferons, toll-like receptors, intracellular RNA and DNA sensors, and probably other mediators.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25592536"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity"
+      },
+      "source": 29,
+      "target": 8,
+      "key": "081313133666abcec3a9f79b4424a02a"
+    },
+    {
+      "relation": "partOf",
+      "source": 38,
+      "target": 11,
+      "key": "dd899b4ec0fbf0b8bbb3ff34348498b9"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 38,
+      "target": 11,
+      "key": "3e2db4d68ca1eb55da3a361ef15426c5"
+    },
+    {
+      "line": 4,
+      "relation": "increases",
+      "evidence": "Our results indicate that MLKL is a functional substrate for RIP3\nkinase that serves as an adaptor protein for necrosis signal\ntransduction.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22265413"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "HeLa": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity"
+      },
+      "source": 38,
+      "target": 29,
+      "key": "2f48c079392c6404f6d70ad1b1bbecf0"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "Necroptosis is a newly discovered pathway of regulated necrosis that requires the proteins RIPK3 and MLKL and is induced by death receptors, interferons, toll-like receptors, intracellular RNA and DNA sensors, and probably other mediators.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25592536"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 38,
+      "target": 8,
+      "key": "4bb8e7f1d9bc27705df63bce0074cbc2"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "Here, through a genetic analysis, we show that necroptosis in caspase 8-deficient T cells is related neither to the programmed necrosis as defined by the requirement for mitochondrial cyclophilin D nor to autophagy as defined by the requirement for autophagy-related protein 7. Rather, survival of caspase 8-defective T cells can be completely rescued by loss of receptor-interacting serine-threonine kinase (Ripk) 3. Additionally, complementation of a T cell-specific caspase 8 deficiency with a loss of Ripk3 gives rise to lymphoproliferative disease reminiscent of lpr or gld mice. In conjunction with previous work, we conclude that necroptosis in antigen-stimulated caspase 8-deficient T cells is the result of a novel Ripk1- and Ripk3-mediated pathway of cell death.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21402742"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 38,
+      "target": 8,
+      "key": "fa361a42ff46e0c3e26ff4128ca0e6bb"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "The initiation of programmed necrosis, 'necroptosis', by death receptors (such as tumour necrosis factor receptor 1) requires the kinase activity of receptor-interacting protein 1 (RIP1; also known as RIPK1) and RIP3 (also known as RIPK3)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20823910"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 38,
+      "target": 8,
+      "key": "586e9a04925c2510b29d9c1fc025ec9a"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "Moreover, overexpression of catalytically active RIP3 can trigger necroptosis irrespective of the presence of RIP1 (Ref. 12)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20823910"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 38,
+      "target": 8,
+      "key": "f6930824323b3ece5fd746063a86f5a1"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "We identified the protein kinase receptor-interacting protein 3 (RIP3) as a molecular switch between TNF-induced apoptosis and necrosis in NIH 3T3 cells and found that RIP3 was required for necrosis in other cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19498109"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 38,
+      "target": 8,
+      "key": "5e86a6c04a5a18800c9571ae14342806"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "The kinase activity of RIP3 is essential for necrosis execution.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19524512"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 38,
+      "target": 8,
+      "key": "9d400aff943db5d1e888b0c6b4fbb035"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "Using a RNA interference screen, we identified the kinase RIP3 as a crucial activator for programmed necrosis induced by TNF and during virus infection. RIP3 regulates necrosis-specific RIP1 phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19524513"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 38,
+      "target": 8,
+      "key": "3b9eae2416dc409ee65b004b05f3e8dd"
+    },
+    {
+      "line": 6,
+      "relation": "increases",
+      "evidence": "coexpression of RIP3 with GLUD1 in 293T cells enhanced activity of GLUD1 (fig. S8C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19498109"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "293t": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 38,
+      "target": 22,
+      "key": "04b1f08e15aed3322ffacbf940aa0201"
+    },
+    {
+      "line": 6,
+      "relation": "increases",
+      "evidence": "RIP3 increases the activities of glycogen phosphorylase, glutamate ammonia ligase, and glutamate dehydrogenase 1. This stimulates the production of reactive oxygen species (ROS) due to increased oxidative phosphorylation. In some cells, ROS production as a consequence of RIP3 signaling is required for necroptosis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19632174"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 38,
+      "target": 22,
+      "key": "cb82e2927d9b252da44d21e2a27f20e6"
+    },
+    {
+      "line": 7,
+      "relation": "increases",
+      "evidence": "\"We detected increased interaction of endogenous RIP3 with GLUL and GLUD1 after N cells were treated with TNF or TNF+zVAD (figs. S7, A and B, and S8, A and B). Recombinant RIP3, but not RIP3-K51A, can directly increase GLUL activity (fig. S7C).\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19498109"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "3t3": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 38,
+      "target": 23,
+      "key": "d04e35e9320ae69763daf02395c5362c"
+    },
+    {
+      "line": 7,
+      "relation": "increases",
+      "evidence": "Wild-type, but not kinase-dead, RIP3 enhances the activity of PYGL, GLUL, and GLUD1 in vitro and in cells (55), which suggests that these metabolic enzymes could be direct substrates of RIP3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20354226"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 38,
+      "target": 23,
+      "key": "fd45f1dc55eb5e7eda7f35f4122dea4f"
+    },
+    {
+      "line": 7,
+      "relation": "increases",
+      "evidence": "RIP3 increases the activities of glycogen phosphorylase, glutamate ammonia ligase, and glutamate dehydrogenase 1. This stimulates the production of reactive oxygen species (ROS) due to increased oxidative phosphorylation. In some cells, ROS production as a consequence of RIP3 signaling is required for necroptosis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19632174"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 38,
+      "target": 23,
+      "key": "9823e8be54a5ffb767887207c010b641"
+    },
+    {
+      "line": 8,
+      "relation": "directlyIncreases",
+      "evidence": "\"As shown in Figure 2F, the recombinant PGAM5 was phosphorylated by the RIP3 complex under\nnecrotic conditions. Interestingly, the phosphatase activity of recombinant PGAM5 showed significant increase after incubation with the RIP3 complex isolated under the necrotic conditions (Figure 2G).\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22265414"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "phos"
+        }
+      },
+      "source": 38,
+      "target": 32,
+      "key": "29149d1a9ccb3ca51ab27ab935da5d6b"
+    },
+    {
+      "line": 8,
+      "relation": "directlyIncreases",
+      "evidence": "As shown in Figure 2F, the recombinant PGAM5 was phosphorylated by the RIP3 complex under\nnecrotic conditions. Interestingly, the phosphatase activity of recombinant PGAM5 showed significant increase after incubation with the RIP3 complex isolated under the necrotic conditions\n(Figure 2G).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": ""
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "phos"
+        }
+      },
+      "source": 38,
+      "target": 32,
+      "key": "a3579a25b2997d6a95e1fb26f4a61c40"
+    },
+    {
+      "line": 9,
+      "relation": "increases",
+      "evidence": "RIP3 increases the activities of glycogen phosphorylase, glutamate ammonia ligase, and glutamate dehydrogenase 1. This stimulates the production of reactive oxygen species (ROS) due to increased oxidative phosphorylation. In some cells, ROS production as a consequence of RIP3 signaling is required for necroptosis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19632174"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 38,
+      "target": 35,
+      "key": "46b6c2256f15ffe4f46472cd191afa4e"
+    },
+    {
+      "line": 9,
+      "relation": "increases",
+      "evidence": "Wild-type, but not kinase-dead, RIP3 enhances the activity of PYGL, GLUL, and GLUD1 in vitro and in cells (55), which suggests that these metabolic enzymes could be direct substrates of RIP3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20354226"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 38,
+      "target": 35,
+      "key": "c95b2e732ffec317b53d28ee078cff9b"
+    },
+    {
+      "line": 11,
+      "relation": "increases",
+      "evidence": "we hypothesized that CS promotes neutrophil necrosis with subsequent release of damage-associated molecular patterns (DAMPs), including HMGB1, alarming the innate immune system...  In vitro, CS induced necrotic neutrophil cell death, as indicated by mitochondrial dysfunction, inhibition of apoptosis and DAMP release.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25192219"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "neutrophil": true
+        }
+      },
+      "source": 8,
+      "target": 24,
+      "key": "a9b2e8f37cdacf4a3dcc2e16688b5fb5"
+    },
+    {
+      "line": 11,
+      "relation": "increases",
+      "evidence": "Here we report that Hmgb1(-/-) necrotic cells have a greatly reduced ability to promote inflammation, which proves that the release of HMGB1 can signal the demise of a cell to its neighbours",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12110890"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 8,
+      "target": 24,
+      "key": "f4253e3a37a0166c6350cc9966e61247"
+    },
+    {
+      "line": 11,
+      "relation": "increases",
+      "evidence": "In spite of these caveats, it must be noted that necrotic cells can release multiple pro-inflammatory factors, including the alarmin SAP130, heat-shock proteins (such as HSP70, HSP90 and GP96), histones, high mobility group protein B1 (HMGB1) and several non-proteinaceous factors (such as RNA, DNA and monosodium urate microcrystals), all of which act on different PRRs on immune effector cells to activate inflammatory reactions (reviewed in Ref. 126).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20823910"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 8,
+      "target": 24,
+      "key": "bdb8de946e24129972b15d07f37f13df"
+    },
+    {
+      "line": 11,
+      "relation": "increases",
+      "evidence": "HMGB1 protein is not released by apoptotic cells but is passively released by necrotic or damaged somatic and immune cells and it functions as a major stimulus of necrosis-induced inflammation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15387080"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 8,
+      "target": 24,
+      "key": "99631aa88f7b6d250798365221400245"
+    },
+    {
+      "line": 12,
+      "relation": "increases",
+      "evidence": "We have asked which of these two forms of death can result in release of the major HSP: hsp70, hsp90, calreticulin (CRT) and gp96...It was observed that necrotic but not apoptotic death led to release of all four HSP (Fig.1). No HSP were detected in the supernatants of apoptotic cells even 24 h after death.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11058573"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "e.g7": true
+        }
+      },
+      "source": 8,
+      "target": 25,
+      "key": "9111c68b3999d599d110500dd80ac94b"
+    },
+    {
+      "line": 12,
+      "relation": "increases",
+      "evidence": "In spite of these caveats, it must be noted that necrotic cells can release multiple pro-inflammatory factors, including the alarmin SAP130, heat-shock proteins (such as HSP70, HSP90 and GP96), histones, high mobility group protein B1 (HMGB1) and several non-proteinaceous factors (such as RNA, DNA and monosodium urate microcrystals), all of which act on different PRRs on immune effector cells to activate inflammatory reactions (reviewed in Ref. 126).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20823910"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 8,
+      "target": 25,
+      "key": "d1c47e20423216088c6b439cc7668196"
+    },
+    {
+      "line": 13,
+      "relation": "increases",
+      "evidence": "We have asked which of these two forms of death can result in release of the major HSP: hsp70, hsp90, calreticulin (CRT) and gp96...It was observed that necrotic but not apoptotic death led to release of all four HSP (Fig.1). No HSP were detected in the supernatants of apoptotic cells even 24 h after death.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11058573"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "e.g7": true
+        }
+      },
+      "source": 8,
+      "target": 52,
+      "key": "485bdc0bf73c6fc3fab299eef676b3e9"
+    },
+    {
+      "line": 13,
+      "relation": "increases",
+      "evidence": "In spite of these caveats, it must be noted that necrotic cells can release multiple pro-inflammatory factors, including the alarmin SAP130, heat-shock proteins (such as HSP70, HSP90 and GP96), histones, high mobility group protein B1 (HMGB1) and several non-proteinaceous factors (such as RNA, DNA and monosodium urate microcrystals), all of which act on different PRRs on immune effector cells to activate inflammatory reactions (reviewed in Ref. 126).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20823910"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 8,
+      "target": 52,
+      "key": "b4bb4eb24ed471b2567b9f8c1c5b8195"
+    },
+    {
+      "line": 14,
+      "relation": "increases",
+      "evidence": "We have asked which of these two forms of death can result in release of the major HSP: hsp70, hsp90, calreticulin (CRT) and gp96...It was observed that necrotic but not apoptotic death led to release of all four HSP (Fig.1). No HSP were detected in the supernatants of apoptotic cells even 24 h after death.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11058573"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "e.g7": true
+        }
+      },
+      "source": 8,
+      "target": 53,
+      "key": "b068c539e11d88b6f3a924e7ab9af488"
+    },
+    {
+      "line": 14,
+      "relation": "increases",
+      "evidence": "In spite of these caveats, it must be noted that necrotic cells can release multiple pro-inflammatory factors, including the alarmin SAP130, heat-shock proteins (such as HSP70, HSP90 and GP96), histones, high mobility group protein B1 (HMGB1) and several non-proteinaceous factors (such as RNA, DNA and monosodium urate microcrystals), all of which act on different PRRs on immune effector cells to activate inflammatory reactions (reviewed in Ref. 126).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20823910"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 8,
+      "target": 53,
+      "key": "f02c09db0c7714eb3c517d976118f705"
+    },
+    {
+      "line": 15,
+      "relation": "increases",
+      "evidence": "Mincle-expressing cells were activated in the presence of dead cells, and we identified SAP130, a component of small nuclear ribonucloprotein, as a Mincle ligand that is released from dead cells... Our results suggest that Mincle is a receptor that senses nonhomeostatic cell death and thereby induces the production of inflammatory cytokines to drive the infiltration of neutrophils into damaged tissue.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18776906"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 8,
+      "target": 42,
+      "key": "862d0c71f22858dbe64a5995d5fb2be6"
+    },
+    {
+      "line": 15,
+      "relation": "increases",
+      "evidence": "In spite of these caveats, it must be noted that necrotic cells can release multiple pro-inflammatory factors, including the alarmin SAP130, heat-shock proteins (such as HSP70, HSP90 and GP96), histones, high mobility group protein B1 (HMGB1) and several non-proteinaceous factors (such as RNA, DNA and monosodium urate microcrystals), all of which act on different PRRs on immune effector cells to activate inflammatory reactions (reviewed in Ref. 126).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20823910"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 8,
+      "target": 42,
+      "key": "1bac5c61510d2fe3921b0a2b84949cae"
+    },
+    {
+      "line": 16,
+      "relation": "increases",
+      "evidence": "Calgranulins comprise three proteins, S100A8 (calgranulin A), S100A9 (calgranulin B), and S100A12 (calgranulin C), that are predominantly released by necrotic neutrophils, monocytes, and activated macrophages, respectively, and stimulate TLR4 or RAGE (receptor for advanced glycation end-products)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20823910"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Monocytes": true
+        }
+      },
+      "source": 8,
+      "target": 41,
+      "key": "3e765bb352f489a3f99e06f0886e2ee1"
+    },
+    {
+      "line": 17,
+      "relation": "increases",
+      "evidence": "Calgranulins comprise three proteins, S100A8 (calgranulin A), S100A9 (calgranulin B), and S100A12 (calgranulin C), that are predominantly released by necrotic neutrophils, monocytes, and activated macrophages, respectively, and stimulate TLR4 or RAGE (receptor for advanced glycation end-products)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20823910"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Neutrophils": true
+        }
+      },
+      "source": 8,
+      "target": 40,
+      "key": "dc1821100b1fa8fd8c61a88f197c6f55"
+    },
+    {
+      "line": 18,
+      "relation": "increases",
+      "evidence": "Calgranulins comprise three proteins, S100A8 (calgranulin A), S100A9 (calgranulin B), and S100A12 (calgranulin C), that are predominantly released by necrotic neutrophils, monocytes, and activated macrophages, respectively, and stimulate TLR4 or RAGE (receptor for advanced glycation end-products)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20823910"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "source": 8,
+      "target": 39,
+      "key": "77dd6859bba356d0e35e3e8133c64bd5"
+    },
+    {
+      "line": 19,
+      "relation": "association",
+      "evidence": "\"Our findings could suggest the presence of a physical interaction between PARP-1 and SIRT1.\" (p. 875)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16628003"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Mouse embryonic fibroblasts": true
+        }
+      },
+      "source": 43,
+      "target": 31,
+      "key": "564ba29bd9d4cc520a6c6ad5fc598527"
+    },
+    {
+      "line": 20,
+      "relation": "increases",
+      "evidence": "\"We report herein that micromolar concentrations of H2O2 can induce apoptosis in normal human airway epithelial (HAE) cells. The effect is mediated by the ceramide second messenger, which is potently and rapidly generated from SM hydrolysis by nSMase. We show that exposure of the lung airway epithelium to H2O2 activates nSMase but not aSMase.\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10745027"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Lung": true
+        },
+        "Cell": {
+          "airway epithelial cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 45,
+      "target": 6,
+      "key": "a8970835989e9efcdfc1360402b23658"
+    },
+    {
+      "line": 21,
+      "relation": "decreases",
+      "evidence": "Here, we show that this nSMase2 is up-regulated by an oxidant (H(2)O(2)) and is inhibited by an antioxidant (glutathione (GSH)).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16631623"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "epithelial cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 7,
+      "target": 46,
+      "key": "617ae412b42ccf38cf5f024c462feb37"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "\"we treated HT-29 cells and the RIP3-expressing HeLa cells with a Drp1 inhibitor mdivi-1 (Cassidy-Stone et al., 2008). Necrosis was attenuated in both cell lines with increasing concentrations of mdivi-1 (Figure 6F). Additionally, knockdown Drp1 in both cell lines blocked necrosis (Figure 6G).\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22265414"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 18,
+      "target": 8,
+      "key": "0b45b1509c1361f25f68be10053f5927"
+    },
+    {
+      "line": 23,
+      "relation": "directlyIncreases",
+      "evidence": "As shown in Figures 5G and 5H, respectively, the wild-type PGAM5L dephosphorylated Drp1 at serine 637 and dramatically increased its GTPase activity, whereas the phosphatase-dead form of PGAM5L did not cause these changes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22265414"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "phos"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 32,
+      "target": 18,
+      "key": "385132ba4fdfd12fdf08efa563a037df"
+    },
+    {
+      "line": 24,
+      "relation": "decreases",
+      "evidence": "In contrast, in the absence of ubiquitination, RIP1 serves as a pro-apoptotic signaling molecule by engaging CASPASE-8. Therefore, RIP1 is a dual-function molecule that can be either pro-survival or pro-death depending on its ubiquitination state and this serves as an NF-κB-independent cell death switch early in TNF signaling",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17306544"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "jurkat t cell line": true
+        }
+      },
+      "source": 37,
+      "target": 10,
+      "key": "126e261e3e545c16c359a10ba402f130"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 36,
+      "target": 37,
+      "key": "74202ebc5b2af337f71edc5c584d1c7e"
+    },
+    {
+      "relation": "partOf",
+      "source": 36,
+      "target": 11,
+      "key": "01f5d52e258cb24d239440d4f90b4923"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 36,
+      "target": 11,
+      "key": "79666c1689d75f7168ed3e0b8aa4e7cf"
+    },
+    {
+      "line": 88,
+      "relation": "increases",
+      "evidence": "RIP, FADD, and TRAF2 are components critical to transducing the signal to induce ROS accumulation in MEF cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14701813"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "mouse embryonic fibroblasts": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 36,
+      "target": 3,
+      "key": "b3b02429a3894963ddc2151a0b7099b2"
+    },
+    {
+      "line": 88,
+      "relation": "increases",
+      "evidence": "We show that this sensitization to death is accompanied by enhanced RIP1 kinase activity, increased recruitment of RIP1 to Fas-associated via death domain and RIP3 (which allows necrosome formation), and elevated RIP1 kinase-dependent accumulation of reactive oxygen species (ROS).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21052097"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 36,
+      "target": 3,
+      "key": "4063382cb17ba352c6ec4fa426315af8"
+    },
+    {
+      "line": 88,
+      "relation": "increases",
+      "evidence": "RIP3 regulates necrosis-specific RIP1 phosphorylation. The phosphorylation of RIP1 and RIP3 stabilizes their association within the pronecrotic complex, activates the pronecrotic kinase activity, and triggers downstream reactive oxygen species production.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19524513"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 36,
+      "target": 3,
+      "key": "969c6f09405fb21bc18396cf65db4274"
+    },
+    {
+      "line": 88,
+      "relation": "increases",
+      "evidence": "In addition, RIP1, which plays a pivotal role in receptor-induced necroptosis, exerts its effects by generation of ROS [31]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20963496"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 36,
+      "target": 3,
+      "key": "4fa5413662d914cc50afb137a614bf5f"
+    },
+    {
+      "line": 89,
+      "relation": "increases",
+      "evidence": "Here we report that necrostatin-1, a previously identified small-molecule inhibitor of necroptosis, is a selective allosteric inhibitor of the death domain receptor–associated adaptor kinase RIP1 in vitro. We show that RIP1 is the primary cellular target responsible for the antinecroptosis activity of necrostatin-1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18408713"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 36,
+      "target": 8,
+      "key": "09e63d961917f2f09ff8a638dcfc74fa"
+    },
+    {
+      "line": 89,
+      "relation": "increases",
+      "evidence": "Our data also show that TRADD and RIP1 compete for recruitment to the TNFR1 signaling complex and the distinct programs of cell death. Thus, TNFR1-initiated intracellular signals diverge at a very proximal level by the independent association of two death domain-containing proteins, RIP1 and TRADD. These single transducers determine cell fate by triggering NF-kappaB activation, apoptosis, and nonapoptotic death signals through separate and competing signaling pathways.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16611992"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 36,
+      "target": 8,
+      "key": "e17c8a34b1f7c4179de6269db850cdbe"
+    },
+    {
+      "line": 89,
+      "relation": "increases",
+      "evidence": "The initiation of programmed necrosis, 'necroptosis', by death receptors (such as tumour necrosis factor receptor 1) requires the kinase activity of receptor-interacting protein 1 (RIP1; also known as RIPK1) and RIP3 (also known as RIPK3)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20823910"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 36,
+      "target": 8,
+      "key": "8f5426d9ab31eb66ec21952f9eb68903"
+    },
+    {
+      "line": 89,
+      "relation": "increases",
+      "evidence": "Moreover, it has been reported that H2O2-induced necrosis is also reduced in RIP1-deficient mouse embryonic fibroblasts (MEF).21",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20010783"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 36,
+      "target": 8,
+      "key": "239d4a3736e07fbb68e8dfee3ae8bfd5"
+    },
+    {
+      "line": 107,
+      "relation": "increases",
+      "evidence": "Although TRAF2 levels remained constant in TNF-treated wild-type cells, TNF stimulation of RIPK1(-/-) cells caused TRAF2 and cIAP1 to be rapidly degraded by the proteasome, which led to an increase in NIK levels.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21339290"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 36,
+      "target": 51,
+      "key": "5fdf11955078cf5bd8acec41dfbe272f"
+    },
+    {
+      "line": 107,
+      "relation": "increases",
+      "evidence": "In TNF-stimulated cells, RIPK1 promotes cell survival by stabilizing TRAF2 and cIAP1, which limits induction of non-canonical NF-kappaB and activation of caspase-8.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21339290"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 36,
+      "target": 51,
+      "key": "0f3ebf3dd14dbea70d84400d14f5dec1"
+    },
+    {
+      "line": 25,
+      "relation": "directlyIncreases",
+      "evidence": "Our data suggest that receptor [APO-1/Fas] oligomerization results in the instant recruitment of the death domain protein MORT1/FADD (CAP1/2) to the APO-1 receptor.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8521815"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 20,
+      "target": 19,
+      "key": "d87b985903020d4614f7968dc251bc5f"
+    },
+    {
+      "line": 25,
+      "relation": "directlyIncreases",
+      "evidence": "At such low concentration, ethanol-induced apoptosis in human hepatocellular carcinoma (HepG2) cells is triggered by activation of the Fas receptor, a member of the tumor necrosis family, with subsequent activation of the intracellular adapter protein FADD (Fas Associated Death Domain) and caspase-8.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17088943"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 20,
+      "target": 19,
+      "key": "a1330cfcb9ef35feb36acff29ff3c440"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "Depletion of PYGL, GLUL, and GLUD1 by means of siRNA reduced TNF+zVAD–induced accumulation of ROS (Fig. 4C and fig. S11), which correlated with cell death (Fig. 3F and figs. S7D and S8D).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19498109"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 35,
+      "target": 3,
+      "key": "028097f0e39383b65d49069c58604b44"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "RIP3 increases the activities of glycogen phosphorylase, glutamate ammonia ligase, and glutamate dehydrogenase 1. This stimulates the production of reactive oxygen species (ROS) due to increased oxidative phosphorylation. In some cells, ROS production as a consequence of RIP3 signaling is required for necroptosis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19632174"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 35,
+      "target": 3,
+      "key": "124f5c8926cbf0e166d06ee5c8d0a91d"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "Importantly, knockdown of PYGL, GLUL, or GLUD1  partially inhibits TNF/zVAD-induced ROS levels and necroptosis in N-type NIH 3T3 cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19632174"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 35,
+      "target": 3,
+      "key": "716d163424637094a2cd22fd450ba4e4"
+    },
+    {
+      "line": 27,
+      "relation": "increases",
+      "evidence": "Based on these findings, Nox1 is likely the major NADPH oxidase responsible for TNF-induced O2- generation in L929 cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17560373"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "l929": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 3,
+      "key": "ce8712cd305a166d72da70151c5defd0"
+    },
+    {
+      "line": 27,
+      "relation": "increases",
+      "evidence": "ANG II activates membrane NAD(P)H oxidases in VSMCs to produce ROS such as superoxide and hydrogen peroxide (H2O2), which are involved in the pleiotrophic effects of ANG II (63, 153, 204, 221). The mechanism by which ANG II activates NAD(P)H oxidases remains under intense investigation. In aortic smooth muscle cells, the NAD(P)H oxidase subunits Nox1 and Nox4 are mainly responsible for ROS generation (103)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16870827"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "vascular smooth muscle": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 3,
+      "key": "4289385d50099840966fd346e6b89047"
+    },
+    {
+      "line": 27,
+      "relation": "increases",
+      "evidence": "NOXO1...is an organizer protein that activates NADPH oxidase (NOX1)...NADPH oxidase is a major source of reactive oxygen species, and oxidative stress is considered to play an important role in the pathogenesis of COPD",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16717027"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 3,
+      "key": "2bfe3ccad3d4f2d0dd0d342dd0698724"
+    },
+    {
+      "line": 27,
+      "relation": "increases",
+      "evidence": "Over the last years, six homologs of the cytochrome subunit of the phagocyte NADPH oxidase were found: NOX1, NOX3, NOX4, NOX5, DUOX1, and DUOX2. Together with the phagocyte NADPH oxidase itself (NOX2/gp91(phox)), the homologs are now referred to as the NOX family of NADPH oxidases. These enzymes share the capacity to transport electrons across the plasma membrane and to generate superoxide and other downstream reactive oxygen species (ROS)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17237347"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 3,
+      "key": "0b965677e7c3c72a6e6f6c052348475f"
+    },
+    {
+      "line": 27,
+      "relation": "increases",
+      "evidence": "As shown in Fig. 7A, the silencing of Nox1 in Caco-2 cells resulted in a significant decrease in ROS generation in response to EGF stimulation. Moreover, the overexpression of beta-Pix had no effect on ROS generation in Caco-2 cells depleted of Nox1 protein (Fig. 7). # beta-PIX = ARHGEF7",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15121857"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 3,
+      "key": "0e4239f04becc52994d956a6d168a292"
+    },
+    {
+      "line": 27,
+      "relation": "increases",
+      "evidence": "However, siRNA against Nox1 and Nox4, both knocked down by 75% as measured by qPCR analyses (Supplemental Fig. 3), reduced resveratrol-induced ROS levels down to 20 (Fig. 4B) and 40%, respectively (Fig. 4C), indicating that Nox1 and Nox4, but not Nox2, are required for resveratrol-induced ROS production.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19328228"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "umbilical vein endothelial cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 3,
+      "key": "519b16f2a3fb9e75103a72a0e1d04d62"
+    },
+    {
+      "line": 27,
+      "relation": "increases",
+      "evidence": "Moreover, in vascular SMCs, uPA increases ROS production (Menshikov et al. 2006b). Using small interfering RNA (siRNA), we proved that the NAD(P)H oxidases Nox1 and Nox4 are the primary source of ROS generation stimulated by uPA in vascular SMCs",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19064999"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "vascular tissue": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 3,
+      "key": "fe2d1678fadb76cc3c14d2b71fab8099"
+    },
+    {
+      "line": 27,
+      "relation": "increases",
+      "evidence": "In cycling cells, the effects of Nox1 were dose dependent: levels of Nox1 that induced 3- to 10-fold increases in ROS promoted phosphorylation of ERK1/2 and expression of cyclin D1,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16987002"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 3,
+      "key": "b2e6b1c8516d107832ab6f3ff83f621a"
+    },
+    {
+      "line": 27,
+      "relation": "increases",
+      "evidence": "Rac1 GTPase is essential for the activation of the NAD(P)H oxidase complex",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12493759"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 3,
+      "key": "b5ccbf3878310638f62d17ff20304d3c"
+    },
+    {
+      "line": 27,
+      "relation": "increases",
+      "evidence": "Hyperoxia-dependent ROS production was strongly reduced in lung sections, in isolated epithelial type II cells, and lung endothelial cells from NOX1-deficient mice.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19661248"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Alveolar type II cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 3,
+      "key": "b732b54236602f27e31251063032de41"
+    },
+    {
+      "line": 27,
+      "relation": "increases",
+      "evidence": "Downregulation of Nrf2 by si-NOX1 could be prevented by the addition of the proteasome inhibitor MG132, suggesting that NOX1-derived ROS interfere with the redox dependent proteasomal degradation of Nrf2 (Fig. 3C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20347035"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 3,
+      "key": "4877043db300cdbee370d8344315fa8c"
+    },
+    {
+      "line": 40,
+      "relation": "directlyDecreases",
+      "evidence": "Therefore, removal of CYLD-WT by CASPASE 8 prolongs the ubiquitination state of RIPK1 and maintains RIPK1 in a pro-survival complex with NEMO. In contrast, the resistance of CYLD-D215A to proteolytic cleavage by CASPASE 8 resulted in less ubiquitination of RIPK1 (Figure 5), which enhanced RIPK1 interaction with the necrosome to initiate death (Figure 4). These observations demonstrate that CASPASE 8 cleavage of CYLD functions as a pro-survival event by preventing CYLD from deubiquitinating RIPK1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": ""
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Jurkat cell line": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 15,
+      "target": 17,
+      "key": "c2dd8b6c5e27a6e7d45b9fba169b56f7"
+    },
+    {
+      "line": 40,
+      "relation": "directlyDecreases",
+      "evidence": "Therefore, removal of CYLD-WT by CASPASE 8 prolongs the ubiquitination state of RIPK1 and maintains RIPK1 in a pro-survival complex with NEMO. In contrast, the resistance of CYLD-D215A to proteolytic cleavage by CASPASE 8 resulted in less ubiquitination of RIPK1 (Figure 5), which enhanced RIPK1 interaction with the necrosome to initiate death (Figure 4). These observations demonstrate that CASPASE 8 cleavage of CYLD functions as a pro-survival event by preventing CYLD from deubiquitinating RIPK1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22037414"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "jurkat cell line": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 15,
+      "target": 17,
+      "key": "dccdc857a88b3fd9776a52a6629d1f04"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "Proforms and activation fragments of caspase-8 and caspase-3 were observed in detached (A549) cells (the cells undergoing apoptosis) 24h after the treatment of CH-11 with IFN-γ pretreatment (fig.6). These proforms or fragments were undetectable in attached cells and cells administered control IgG with IFN-γ pretreatment.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11334117"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "a549": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 15,
+      "target": 10,
+      "key": "8978784e7e1b0c725145d808cec6ea63"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "Several studies have further suggested that the upregulation of STAT3 directly confers a drug-resistance phenotype. For example, overexpression of this transcription factor protects epidermal keratinocytes or cervical carcinoma cells from ultraviolet radiation (UV)-induced apoptosis [74,75]. In addition, STAT3 deficiency sensitizes keratinocytes to UV-induced apoptosis. Interestingly, a simple application of a naked STAT3 plasmid on the skin is sufficient to prevent the effect of irradiation. This protective effect was also confirmed in colorectal cancer cell lines where STAT3 inactivation also enhances UV-induced cell death [57]. In multiple myeloma, the aberrant activation of STAT3 has also been shown to confer resistance to FASmediated apoptosis [28]. The inhibition of STAT3 signaling downregulates the expression of survival proteins and restores the sensitivity to cell-death receptors. Furthermore, a constitutively activated form of STAT3 has been shown in vivo to protect liver cells from FAS-mediated apoptosis and necrosis [76]. This has been related to an enhanced expression of anti-apoptotic proteins such as FLICE-inhibitory protein (FLIP), BCL2, or BCL-XL and a downregulation of FADD-like interleukin-1 b-converting enzyme (FLICE) and caspase 3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17118707"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 15,
+      "target": 10,
+      "key": "a7926f73b797c925bf2902fbb328f8a4"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "Caspase 3 and 8 activation was also detected in the neo control cells after treatment with TRAIL, demonstrating the rapid activation of the caspase cascade similar to that seen with other death receptors. Bcl-2 overexpression in these cells blocked activation of these caspases, suggesting that bcl-2 expression of human cancer cells may be a critical factor in the therapeutic efficacy of TRAIL.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11439339"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 15,
+      "target": 10,
+      "key": "b43f4026e7b58d7c8ee6f3963b97245f"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "Caspase-8, caspase-7, and caspase-3 were involved in the induction of apoptosis (Fig. 5AGo), and this activity was observed within 1 h of TRAIL activation. In contrast, no activation of any caspase was detected in TECs not exposed to cytokines,. This supports that TRAIL signal transduction in TEC cells is blocked before caspase-8 activation. A gradual decrease in the concentration of full-length Bid in response to TRAIL is due to the cleavage of Bid by caspase-8 (Fig. 5AGo).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14715858"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "thymic epithelium": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 15,
+      "target": 10,
+      "key": "d59b5162ecfa23585f1562e8ee5fb538"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "Fas agonistic antibody, CH-11, induced apoptosis in sensitive glioma cells through caspase-8 recruitment to the Fas-mediated death-inducing signaling complex (DISC) where caspase-8 was cleaved to initiate apoptosis through a systematic cleavage of downstream substrates.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12496285"
+      },
+      "annotations": {
+        "Disease": {
+          "Neoplasms": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "neuron": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 15,
+      "target": 10,
+      "key": "b498fc7a4ff093eb3c4348bdae85e467"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "casp8 can initiate robust proteolysis in many cell types, i.e. lymphocytes, by directly processing casp3",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14561771"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "lymphocyte": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 15,
+      "target": 10,
+      "key": "4427d98ac639ffd3aae679326846e800"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "These results suggest that PKC eta protects MCF-7 cells against TNF-induced cell death by preventing the activation of caspases.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11112424"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 15,
+      "target": 10,
+      "key": "f4b15f283b29967bf0e7faae0dc67dd6"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "Our results revealed that pan-caspase inhibition and specific inhibition of caspase-8 greatly blocked cotreatment-induced apoptosis, as shown by significant decreases in DNA fragmentation (Fig. 5A) and PARP cleavage (Fig. 5B).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19561399"
+      },
+      "annotations": {
+        "Disease": {
+          "Lung Neoplasms": true
+        },
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 15,
+      "target": 10,
+      "key": "f221d6d68218d70c0ddb905ecf6e4070"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "Oxaliplatin-induced apoptosis, potentiated by kinase-defective c-Src mutants, was dependent on activation of caspase 8 and associated with Bid cleavage.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15326164"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 15,
+      "target": 10,
+      "key": "81d7e0cf81b135141bb8e74644dfa4a8"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "c-Flip inhibits apoptosis by blocking the activation of caspase-8.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17707332"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 15,
+      "target": 10,
+      "key": "4e1c1ef6d629c70dd3103a3ebc6f8da4"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "initiator caspases - casp8,10,9,1,5a,4a,12a,2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14561771"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 15,
+      "target": 10,
+      "key": "2d32469f3eb37c9a3f85411f45125e1f"
+    },
+    {
+      "line": 29,
+      "relation": "directlyIncreases",
+      "evidence": "\"our results suggest that cIAP1 protects L929\ncells from TNF-induced necrosis through Lys63-ubiquitination of RIP1\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21052097"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "l929": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 12,
+      "target": 37,
+      "key": "06d1d2e805d6542c1fb20e0d06f0f688"
+    },
+    {
+      "line": 31,
+      "relation": "directlyIncreases",
+      "evidence": "in MEFs treated with siRNA targeting either cIAP1 or 2, Rip1 recruited to TNF-R1 was largely polyubiquitinated, albeit slightly less so when cIAP2 was knocked down. In contrast, when MEFs were treated with siRNA targeting both cIAP1 and 2, the majority of TNF-R1 bound Rip1 was nonubiquitinated, with only a small percentage being ubiquitinated (Fig. 4A). These data indicate that proper Rip1 polyubiquitination upon TNFα treatment requires either cIAP1 or 2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18697935"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "mef": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 13,
+      "target": 37,
+      "key": "edbe0997d9d80bc1a0ed3e6c778a6b4a"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "A more relevant mechanism in vivo for any protective effect NAC may exert against toxic species may be due to NAC acting as a precursor of GSH and facilitating its biosynthesis. GSH will then serve as the protective agent and detoxify reactive species both enzymatically and nonenzymatically.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "3809741"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 5,
+      "target": 7,
+      "key": "2cfb8ca0cd922423c000737afb69d5da"
+    },
+    {
+      "line": 33,
+      "relation": "decreases",
+      "evidence": "NAC-treatment of the smokers resulted in a reduced degree of both PMA- and STZ-induced O(2)-generation in five individuals. In two other subjects, PMA-induced (but not STZ-induced) O(2)-generation was reduced. Two individuals showed increased O(2)-generation to PMA- and to STZ-stimulation after NAC-treatment. Mean values of O(2)-generation induced by A23187 or by FMLP were significantly reduced for cells harvested after NAC-treatment. Mean values for PMA-induced O(2)-generation also tended to be reduced by the treatment.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "3029208"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 5,
+      "target": 3,
+      "key": "815b4ef3841fa4328cab7ef16bcbc929"
+    },
+    {
+      "line": 34,
+      "relation": "directlyDecreases",
+      "evidence": "The effects of oxidative stress caused by OA and potential protective effects of N-acetyl-L-cysteine (NAC), a scavenger of reactive oxygen species (ROS), on global gene expression and beta-cell function were investigated.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14693707"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 5,
+      "target": 3,
+      "key": "a736741179a97a18c4c4c9330bd57d15"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "Depletion of PYGL, GLUL, and GLUD1 by means of siRNA reduced TNF+zVAD–induced accumulation of ROS (Fig. 4C and fig. S11), which correlated with cell death (Fig. 3F and figs. S7D and S8D).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19498109"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 22,
+      "target": 3,
+      "key": "2509c84e2552b139716387cc8992c693"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "RIP3 increases the activities of glycogen phosphorylase, glutamate ammonia ligase, and glutamate dehydrogenase 1. This stimulates the production of reactive oxygen species (ROS) due to increased oxidative phosphorylation. In some cells, ROS production as a consequence of RIP3 signaling is required for necroptosis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19632174"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 22,
+      "target": 3,
+      "key": "86537f0239fa16e6ad6398285e6ed822"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "Importantly, knockdown of PYGL, GLUL, or GLUD1  partially inhibits TNF/zVAD-induced ROS levels and necroptosis in N-type NIH 3T3 cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19632174"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 22,
+      "target": 3,
+      "key": "4985b50a03c02d07e94c69496124a329"
+    },
+    {
+      "line": 36,
+      "relation": "increases",
+      "evidence": "Fas binding to Fas-associated death domain (FADD) activates FADD-caspase-8 binding to form death-inducing signaling complex (DISC) that triggers apoptosis. The Fas-Fas association exists primarily as dimer in the Fas-FADD complex, and the Fas-FADD tetramer complexes have the tendency to form higher order oligomer. The importance of the oligomerized Fas-FADD complex in DISC formation has been confirmed.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23042204"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 19,
+      "target": 15,
+      "key": "a4c1acc9532e1104ee81d4bcea5a84f0"
+    },
+    {
+      "line": 36,
+      "relation": "increases",
+      "evidence": "Fas binding to Fas-associated death domain (FADD) activates FADD-caspase-8 binding to form death-inducing signaling complex (DISC) that triggers apoptosis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23042204"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 19,
+      "target": 15,
+      "key": "921860b008d48620c1b2f4cee6c89be1"
+    },
+    {
+      "line": 36,
+      "relation": "increases",
+      "evidence": "It also associates with death domain-containing adaptor proteins, such as TNF-receptor-associated death domain  (TRADD) and Fas-associated death domain (FADD), that are required for caspase-8  activation and apoptosis ([Schutze et al., 2008] and [Wilson et al., 2009])",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19632174"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 19,
+      "target": 15,
+      "key": "3e14217e3d68249b5783372548152758"
+    },
+    {
+      "line": 36,
+      "relation": "increases",
+      "evidence": "Every cell in a multicellular organism has the potential to die by apoptosis, but tumour cells often have faulty apoptotic pathways. These defects not only increase tumour mass, but also render the tumour resistant to therapy. So, what are the molecular mechanisms of tumour resistance to apoptosis and how can we use this knowledge to resensitize tumour cells to cancer therapy?",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12001989"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 19,
+      "target": 15,
+      "key": "fb0434a2f31fa10985d9177278f0f109"
+    },
+    {
+      "line": 36,
+      "relation": "increases",
+      "evidence": "The death effector domain (DED) of FADD then binds to the DED of procaspase 8, which triggers the formation of activated caspase 8, the activation of caspase 3, and the apoptotic response.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16239906"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 19,
+      "target": 15,
+      "key": "238ddc02252a894d308135b244e077bf"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "Fas-associating protein with death domain (FADD) interacts with Fas and initiates apoptosis through activating caspase-8...Fas-ligation induced upregulation of caspase-1 and -3 expression in the nucleus and cytoplasm in A549 cells. Procaspase-1, -3, and -8 were activated in apoptotic cells, but not in viable cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11334117"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "a549": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 19,
+      "target": 15,
+      "key": "2b7f4a4dbcccb04bd63f62cfac2b898d"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "At such low concentration, ethanol-induced apoptosis in human hepatocellular carcinoma (HepG2) cells is triggered by activation of the Fas receptor, a member of the tumor necrosis family, with subsequent activation of the intracellular adapter protein FADD (Fas Associated Death Domain) and caspase-8.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17088943"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 19,
+      "target": 15,
+      "key": "8c4ce0edba3f41adf3a279b9cc27f58c"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "Blocking the death receptor complex by expression of FADD-DN additionally inhibited SM-induced internucleosomal DNA cleavage and caspase-6-mediated nuclear lamin cleavage.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12482751"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 19,
+      "target": 15,
+      "key": "e6a4b1799e35eb88399ac23b90f7b288"
+    },
+    {
+      "line": 38,
+      "relation": "increases",
+      "evidence": "cIAP ablation prevents RIP1 ubiquitination and favors the formation of an alternative complex II, containing RIP1, FADD, and caspase- 8, which leads to RIP1 kinase–dependent activation of caspase-8 and subsequent apoptosis (37, 46).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20354226"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 19,
+      "target": 36,
+      "key": "f384873cb0d1bd6d03714b294a39c5e6"
+    },
+    {
+      "line": 101,
+      "relation": "increases",
+      "evidence": "we found that ROS production as measured by flow cytometry or by confocal microscopy was reduced in CYLD-/- MEFs (Figure 9A-B). Therefore, despite relatively normal assembly of the necrosome, CYLD-/- cells were defective for downstream signaling such as ROS production.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24098568"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "MEF": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 17,
+      "target": 3,
+      "key": "0bfe761a385b9e5ef01b5ba3a63c7c7d"
+    },
+    {
+      "line": 102,
+      "relation": "increases",
+      "evidence": "To confirm the role of CYLD in necroptosis, we compared the efficiency of cyld knockdown with necroptosis inhibition. As shown in Figure 3A, we found an excellent correlation between the efficiency of cyld knockdown by individual siRNAs and protection against zVAD.fmk induced necroptosis in L929 cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19109899"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "L929": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 17,
+      "target": 8,
+      "key": "afcfb837f5e351de5716a41bff89d297"
+    },
+    {
+      "line": 103,
+      "relation": "directlyDecreases",
+      "evidence": "We reveal that CYLD deubiquitinates RIP1 to facilitate TNF-induced necrosis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24098568"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "l929": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 17,
+      "target": 37,
+      "key": "0934894c898b075cf0f4b59a146184da"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 27,
+      "target": 28,
+      "key": "68c2f6c3125059b64391b780d8c38756"
+    },
+    {
+      "line": 42,
+      "relation": "directlyIncreases",
+      "evidence": "Activated TAK1 phosphorylates NIK, which stimulates IKK-alpha activity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10094049"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 27,
+      "target": 26,
+      "key": "dfe5a821f8f9c7ff2dfbff1ceceab50a"
+    },
+    {
+      "line": 44,
+      "relation": "increases",
+      "evidence": "We found that TRADD is required for TNFR1 to induce NF-kappaB activation and caspase-8-dependent apoptosis but is dispensable for TNFR1-initiated, RIP1-dependent necrosis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16611992"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 49,
+      "target": 50,
+      "key": "cc308c33e31bd86eab44091290e517ee"
+    },
+    {
+      "line": 44,
+      "relation": "increases",
+      "evidence": "The physiological function of the adaptor protein TRADD remains unclear because of the unavailability of a TRADD-deficient animal model. By generating TRADD-deficient mice, we found here that TRADD serves an important function in tumor necrosis factor receptor 1 (TNFR1) signaling by orchestrating the formation of TNFR1 signaling complexes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18641653"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 49,
+      "target": 50,
+      "key": "5ba99b45ef667d7dd353020574e28320"
+    },
+    {
+      "line": 44,
+      "relation": "increases",
+      "evidence": "TNFR1 stimulation leads not only to the recruitment and assembly of TRADD, RIP1, and TRAF2, but also of components of the downstream NF-kB machinery, such as I-kB, the protein kinases IKKa,b and the scaffold protein IKKg (NEMO) (Poyet et al., 2000; Zhang et al., 2000).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12887920"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "hela": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 49,
+      "target": 50,
+      "key": "4a9c576a1dd838572c7ad490c6977ef8"
+    },
+    {
+      "line": 44,
+      "relation": "increases",
+      "evidence": "TRADD was essential for TNFR1 signaling in mouse embryonic fibroblasts (MEFs) but partially dispensable in macrophages; abundant expression of the adaptor RIP in macrophages  may allow some transmission of TNFR1 signals in the absence of TRADD.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18641653"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 49,
+      "target": 50,
+      "key": "cf7cd06556b3b87e462348adc1d5412c"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "TNFR1 stimulation leads not only to the recruitment and assembly of TRADD, RIP1, and TRAF2, but also of components of the downstream NF-kB machinery, such as I-kB, the protein kinases IKKa,b and the scaffold protein IKKg (NEMO) (Poyet et al., 2000; Zhang et al., 2000).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12887920"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "hela": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 49,
+      "target": 36,
+      "key": "d15ef56abbd6041cb86d3aa16dfa3c7e"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "The initiation of programmed necrosis, 'necroptosis', by death receptors (such as tumour necrosis factor receptor 1) requires the kinase activity of receptor-interacting protein 1 (RIP1; also known as RIPK1) and RIP3 (also known as RIPK3)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20823910"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 49,
+      "target": 36,
+      "key": "20bd193e75f7b78333d3a4f688ef82a0"
+    },
+    {
+      "line": 46,
+      "relation": "increases",
+      "evidence": "TNFR1 stimulation leads not only to the recruitment and assembly of TRADD, RIP1, and TRAF2, but also of components of the downstream NF-kB machinery, such as I-kB, the protein kinases IKKa,b and the scaffold protein IKKg (NEMO) (Poyet et al., 2000; Zhang et al., 2000).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12887920"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "hela": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 49,
+      "target": 51,
+      "key": "3b89bf1696b1b456da9bca0ffcd966b8"
+    },
+    {
+      "line": 46,
+      "relation": "increases",
+      "evidence": "Although both DR3 and TNFRI activated TRAF2 and NF-kappaB to induce IL-8 gene transcription, the kinase cascades that transduce signals for DR3- and TNFRI-induced IL-8 gene transcription are different.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16324699"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 49,
+      "target": 51,
+      "key": "8926b497915035d0c04cf97223b72f6e"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "IAP, inhibitor of apoptosis; SMAC, second mitochondria-derived activator of caspase. In the death receptor pathway, ligands such as tumour-necrosis factor (TNF), FAS ligand (also known as CD95L), or TNF-related apoptosis-inducing ligand (TRAIL, also known as APO2 ligand (APO2L) or TNF ligand superfamily member 10 (TNFSF10)) interact with their respective death receptors (TNF receptor 1 (TNFR1), FAS (also known as CD95) and death receptor 4 (DR4, also known as TRAIL receptor 1 (TRAILR1)) or DR5 (also known as TRAILR2), respectively). These interactions ultimately lead to the recruitment of the FAS-associated death domain (FADD) and the activation of the protease caspase 8. Caspase 8 cleaves and activates caspase 3 and other downstream caspases, which results in a proteolytic cascade that gives rise to the cell death phenotype characterized by DNA fragmentation, chromatin condensation, cell shrinkage and membrane blebbing.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16239906"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 49,
+      "target": 19,
+      "key": "b2494e97b68c283d99dd12dc4ba4f9be"
+    },
+    {
+      "line": 48,
+      "relation": "increases",
+      "evidence": "The initiation of programmed necrosis, 'necroptosis', by death receptors (such as tumour necrosis factor receptor 1) requires the kinase activity of receptor-interacting protein 1 (RIP1; also known as RIPK1) and RIP3 (also known as RIPK3)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20823910"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 49,
+      "target": 38,
+      "key": "875b7e1c0a04d110b4dfaed8f156ad10"
+    },
+    {
+      "line": 49,
+      "relation": "increases",
+      "evidence": "\"Here, we show that ceramide is a key mediator of a distinct route to programmed cell death (PCD), i.e., caspase-independent PCD. Under conditions where apoptosis is either not initiated or actively inhibited, TNF induces caspase-independent PCD in L929 fibrosarcoma cells, NIH3T3 fibroblasts, human leukemic Jurkat T cells, and lung fibroblasts by increasing intracellular ceramide levels prior to the onset of cell death.\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16319138"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 6,
+      "target": 8,
+      "key": "e2cf22a64b0eed17087ca97dc7c46200"
+    },
+    {
+      "line": 49,
+      "relation": "increases",
+      "evidence": "Other mediators of TNF-induced necroptosis are calcium, ceramide, cytosolic phospholipase A2 (cPLA2) and lysosomal membrane permeabilization (LMP).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20010783"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 6,
+      "target": 8,
+      "key": "978186edace556c856dd0990313efb44"
+    },
+    {
+      "line": 50,
+      "relation": "increases",
+      "evidence": "\"cPLA2 has been reported to be activated in a number of cell types in response to TNF-a (19, 33, 41). We confirmed this activity in H441 cells with C2 ceramide. cPLA2 was rapidly activated, and activity remained elevated at ~150% of control value for at least 60 min (Fig. 5).\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11404253"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Lung": true
+        },
+        "Cell": {
+          "H441": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 6,
+      "target": 34,
+      "key": "2e152634745e04998fd607f7c2808dba"
+    },
+    {
+      "line": 51,
+      "relation": "increases",
+      "evidence": "Ceramide triggers the generation of ROS and increases oxidative stress in many mammalian cells and animal models.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20502003"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 6,
+      "target": 3,
+      "key": "69a040b16c895b7d10627e946649eaa1"
+    },
+    {
+      "line": 53,
+      "relation": "increases",
+      "evidence": "These results suggest that TRAF2 and TRAF6 act as the Ub E3 ligases to mediate Lys63-linked TAK1 polyubiquitination at the Lys158 residue.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20038579"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "hek": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 51,
+      "target": 28,
+      "key": "eb135eba2f1969ee2059fc276c3d5197"
+    },
+    {
+      "line": 54,
+      "relation": "directlyIncreases",
+      "evidence": "Tumor necrosis factor receptor-associated factors 2 and 6 (TRAF2 and -6) act as the ubiquitin E3 ligases to mediate Lys(63)-linked TAK1 polyubiquitination at the Lys(158) residue in vivo and in vitro. Lys(63)-linked TAK1 polyubiquitination at the Lys(158) residue is required for TAK1-mediated IKK complex recruitment.....Our findings demonstrate that Lys(63)-linked polyubiquitination of TAK1 at Lys(158) is essential for its own kinase activation and its ability to mediate its downstream signal transduction pathways in response to TNFalpha and IL-1beta stimulation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20038579"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 51,
+      "target": 27,
+      "key": "5a2fb8f80f7c2fdd048a3dbee841f605"
+    },
+    {
+      "line": 84,
+      "relation": "increases",
+      "evidence": "Depletion of PYGL, GLUL, and GLUD1 by means of siRNA reduced TNF+zVAD–induced accumulation of ROS (Fig. 4C and fig. S11), which correlated with cell death (Fig. 3F and figs. S7D and S8D).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19498109"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 23,
+      "target": 3,
+      "key": "64cd97e0353a32c20f54288bbc7d8072"
+    },
+    {
+      "line": 84,
+      "relation": "increases",
+      "evidence": "Importantly, knockdown of PYGL, GLUL, or GLUD1  partially inhibits TNF/zVAD-induced ROS levels and necroptosis in N-type NIH 3T3 cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19632174"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 23,
+      "target": 3,
+      "key": "2da13cd7949621ce7f4f7abc0adc2adc"
+    },
+    {
+      "line": 84,
+      "relation": "increases",
+      "evidence": "RIP3 increases the activities of glycogen phosphorylase, glutamate ammonia ligase, and glutamate dehydrogenase 1. This stimulates the production of reactive oxygen species (ROS) due to increased oxidative phosphorylation. In some cells, ROS production as a consequence of RIP3 signaling is required for necroptosis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19632174"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 23,
+      "target": 3,
+      "key": "72f30fddab62c9236a30a6e6e1ce6d45"
+    },
+    {
+      "line": 58,
+      "relation": "increases",
+      "evidence": "We developed siRNA for nSMase2, which allowed us to study the role of the endogenous nSMase2 in HAE cells. These cells were transiently transfected with siRNA that specifically and efficiently knocked down nSMase2 (more than 90% silencing as determined by RT-PCR). Subsequently, the cells were treated with H2O2. The knocked down cells showed a complete elimination of the H2O2-inducible activity of nSMase compared to mock- or scrambled siRNA-transfected cells undergoing the same treatment (Fig. 2A).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16631623"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "epithelia; cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 3,
+      "target": 46,
+      "key": "e0ffe3ce25d2ddba253a370521d632c7"
+    },
+    {
+      "line": 59,
+      "relation": "increases",
+      "evidence": "We show that exposure of the lung airway epithelium to H2O2 activates nSMase but not aSMase.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10745027"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Lung": true
+        },
+        "Cell": {
+          "airway epithelial cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 3,
+      "target": 45,
+      "key": "cd31e2a385d7d7ebb1f3c40ace78476f"
+    },
+    {
+      "line": 60,
+      "relation": "increases",
+      "evidence": "Treatment with MitoQ significantly inhibited the stabilization of PINK1 induced by CSE treatment relative to that observed in vehicle control (Figure 2F). Furthermore, treatment with MitoQ significantly inhibited the phosphorylation of Drp1 induced by CSE treatment relative to that in vehicle control (Figure 2G). Taken together, these experiments suggest that both PINK1 stabilization and phosphorylation of Drp1 are events that can be inhibited by scavengers of mtROS",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25083992"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Lung": true
+        },
+        "Cell": {
+          "Beas-2B": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 3,
+      "target": 33,
+      "key": "d1479695cfb86ee2c3362a830a85c8cc"
+    },
+    {
+      "line": 61,
+      "relation": "decreases",
+      "evidence": "\"A549 cells were exposed to 250uM H2O2 . As demonstrated\nin Figure 2A, cellular GSH levels dropped to 70% within the first 15 min of exposure to H2O2 and reached maximal decrease (up to 50% of baseline levels) during the first hour.\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11726392"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Lung": true
+        },
+        "Cell": {
+          "A549": true
+        }
+      },
+      "source": 3,
+      "target": 7,
+      "key": "0df8b4bff58fbeced49afbfcd33f04a3"
+    },
+    {
+      "line": 62,
+      "relation": "decreases",
+      "evidence": "Once ROS levels are induced, they appear to accelerate mitochondrial depolarization ​(Fig.55 and ​and7B).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10891504"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "2b4.11": true
+        }
+      },
+      "source": 3,
+      "target": 9,
+      "key": "f8d5c38f79486bc6e1641f307f0b8d61"
+    },
+    {
+      "line": 62,
+      "relation": "decreases",
+      "evidence": "Silica was shown to induce elevated levels of intracellular ROS, resulting in a marked decrease in intracellular glutathione (GSH) and cysteine and a sustained presence of apoptotic AM in silica-exposed rats up to two weeks post-exposure. The apoptotic AM were characterized by decreased mitochondrial trans-membrane  potential, increased mitochondrial release of cytochrome c, activated caspase 9 (but not caspase 8) and caspase 3 activities,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16754540"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "source": 3,
+      "target": 9,
+      "key": "54ea633e6e4089e6cafe9dae07901f22"
+    },
+    {
+      "line": 62,
+      "relation": "decreases",
+      "evidence": "The increased production of ROS was associated with a decrease of mitochondrial membrane potential measured by JC-1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19782699"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 3,
+      "target": 9,
+      "key": "aea95a27244d07f0bdc2ec332233b092"
+    },
+    {
+      "line": 62,
+      "relation": "decreases",
+      "evidence": "Furthermore, ACL induced a concentration- and time-dependent increase in ROS production and decrease in mitochondrial membrane potential.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18692031"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 3,
+      "target": 9,
+      "key": "aad4f643309d118ca4306b41f7a6803c"
+    },
+    {
+      "line": 63,
+      "relation": "increases",
+      "evidence": "Treatment with MitoQ significantly inhibited the stabilization of PINK1 induced by CSE treatment relative to that observed in vehicle control (Figure 2F). Furthermore, treatment with MitoQ significantly inhibited the phosphorylation of Drp1 induced by CSE treatment relative to that in vehicle control (Figure 2G). Taken together, these experiments suggest that both PINK1 stabilization and phosphorylation of Drp1 are events that can be inhibited by scavengers of mtROS",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25083992"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Lung": true
+        },
+        "Cell": {
+          "Beas-2B": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 3,
+      "target": 18,
+      "key": "51c758431cb463660cadd3408f659c08"
+    },
+    {
+      "line": 64,
+      "relation": "increases",
+      "evidence": "Interestingly, HO-1 has been shown to interact with cellular and synthetic proteins, which may modulate the activity of the enzyme. Interactions with amyloid precursor proteins, which are implicated in the pathogenesis of Alzheimer disease, have been demonstrated to inhibit HO-1 activity, resulting in a compromised stress defense (Takahashi et al., 2000; Takahashi and Snyder, 2000; Wagener et al., 2003b). On the other hand, Buelow and colleagues have demonstrated that the synthetic peptide RDP1258 can bind HO-1 and cause increased HO-1 expression and activity in vivo (Cuturi et al., 1999; Magee et al., 1999). This protein has further shown to be highly effective in ameliorating a range of inflammatory conditions (Cuturi et al., 1999; Oberyszyn et al., 2001).  Thus, HO seems to be cytoprotective by limiting the influx of activated inflammatory cells and by ameliorating the extent of cellular necrosis and apoptosis in injured tissues. On the other hand, too high HO-1 expression may also cause tissue injury by the generation of high levels of iron or result in bilirubinemia (Suttner and Dennery, 1999).   V. The Heme-Heme Oxygenase System Top Previous Next   The heme-heme oxygenase system is tightly involved in both physiological as well as pathophysiological processes, such as cytoprotection, apoptosis, and inflammation. A better understanding of the complex heme-heme oxygenase system may provide us with novel tools to combat diverse conditions, such as inflammation, wound healing, transplant rejection, sickle cell disease, and cancer (Lane, 1998; Maines, 2000; Wagener et al., 2003a).  A. The Heme-Heme Oxygenase-1 System and Apoptosis  Under oxidative and inflammatory conditions necrosis and apoptosis may occur, which result in the release of large amounts of heme and subsequently exacerbation of the inflammatory process and cellular injury. However, under these conditions the stress-responsive protein HO-1 will be immediately induced as well.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12869663"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 3,
+      "target": 8,
+      "key": "5c74fdd3c45fd85a3a05a7573fc50cb8"
+    },
+    {
+      "line": 64,
+      "relation": "increases",
+      "evidence": "and kinase activities. The fourth stage is the progression to the morphological and biochemical end stages of cell death. Of these four stages, the last two are the least well understood. Quite little is known of how the perpetrators affect the structures and functions and whether and how each of these changes contribute to cell death. According to this description, the key step in ischemic cell death is adequate activation of the perpetrators, and thus a major unifying thread of the review is a consideration of how the changes occurring during and after ischemia, including gene activation and synthesis of new proteins, conspire to produce damaging levels of free radicals and peroxynitrite, to activate calpain and other Ca(2+)-driven processes that are damaging, and to initiate the apoptotic process. Although it is not fully established for all cases, the major driving force for the necrotic cell death process, and very possibly the other processes, appears to be the generation of free radicals and peroxynitrite.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10508238"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        }
+      },
+      "source": 3,
+      "target": 8,
+      "key": "72d1de8c42b223609d04352a87e3a199"
+    },
+    {
+      "line": 64,
+      "relation": "increases",
+      "evidence": "We demonstrate that JNK can act to suppress TNF-stimulated apoptosis. However, we find that JNK can also potentiate TNF-stimulated necrosis by increasing the production of reactive oxygen species (ROS).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15545623"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 3,
+      "target": 8,
+      "key": "4052eb4ad0ae60a6dbbc31bca193e8eb"
+    },
+    {
+      "line": 64,
+      "relation": "increases",
+      "evidence": "Reactive oxygen species (ROS) derived from mitochondria are required for TNF- and double-strand RNA-induced necroptosis in L929 cells N-type NIH 3T3 cells, macrophages, and mouse embryonic fibroblasts.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19632174"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 3,
+      "target": 8,
+      "key": "aa003757362784dcb89cc8e246afa41b"
+    },
+    {
+      "line": 64,
+      "relation": "increases",
+      "evidence": "Higher concentrations of ROS can induce necrosis, whereas lower concentrations can induce apoptosis in the same cell type",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9840939"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 3,
+      "target": 8,
+      "key": "77f558ddac11552f61210e84769ddcf8"
+    },
+    {
+      "line": 65,
+      "relation": "increases",
+      "evidence": "\"We found that in H441 cells, as reported in other cell types, cytosolic phospholipase A2 (cPLA2) is activated by TNF-a\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11404253"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "h441": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 47,
+      "target": 34,
+      "key": "13b0e280e427701195b577030a5140d5"
+    },
+    {
+      "line": 65,
+      "relation": "increases",
+      "evidence": "To examine the role of 85-kDa cytosolic PLA2 (cPLA2) in cytokine-induced AA release, a system was developed to inhibit the expression of cPLA2 in a human bronchial epithelial cell line (BEAS-2B cells) by antisense RNA... IFN-gamma (300 U/ml), TNF-alpha (20 ng/ml), and IL-1 alpha (20 ng/ml) all induced a significantly increased release of prelabeled [3H]arachidonic acid after 15 min to 2 h of treatment in control cells, and their effects were significantly reduced in cells transfected with cPLA2 antisense vector",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9277444"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Lung": true
+        },
+        "Cell": {
+          "Beas-2B": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 47,
+      "target": 34,
+      "key": "7d2ccf185bf690999e89483d021ef676"
+    },
+    {
+      "line": 66,
+      "relation": "increases",
+      "evidence": "Based on these findings, Nox1 is likely the major NADPH oxidase responsible for TNF-induced O2- generation in L929 cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17560373"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "l929": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 47,
+      "target": 30,
+      "key": "6f0cdbbd846f44e0ee55c3405eee9fcb"
+    },
+    {
+      "line": 66,
+      "relation": "increases",
+      "evidence": "NOX1 is activated within minutes of the administration of TNF, and it is possible that NOX1?generated ROS trigger or sustain the subsequent production of ROS by the mitochondrial respiratory chain92",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20823910"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 47,
+      "target": 30,
+      "key": "e4193c3dd9e7639cec8c23445522161a"
+    },
+    {
+      "line": 67,
+      "relation": "directlyIncreases",
+      "evidence": "Because RIP1 and TRAF2 are downstream effectors of the TNF receptor, it is possible that MNNG induces TNF through RIP1 and TRAF2 to trigger cell death. To investigate this possibility, we examined the sensitivity of TNFR1-/- MEF cells to MNNG treatment and found that it is comparable with that of WT MEF cells (Fig. 6c). As expected, TNFR1-/- MEF cells are resistant to TNF-induced cell death (Fig. 6c). These results exclude the possibility that RIP1 and TRAF2 function in the TNF signaling pathway in MNNG-treated cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16446354"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 47,
+      "target": 49,
+      "key": "0b6efb2f92f5734a5811817ca5dc0291"
+    },
+    {
+      "line": 67,
+      "relation": "directlyIncreases",
+      "evidence": "To confirm that TNFalpha protein synthesized in the brain of the transgenic animal is biologically active, we quantified expression of TRADD protein. Homogenates of brain sampled from TNFalpha-Tg and non-Tg rats were incubated with a primary antibody that recognizes rat TRADD only after it has been activated through binding of TNFalpha to p55/TNFR1, thereby implying biological activity of the cytokine. Regional expression of TRADD protein was uniformly higher in TNFalpha-Tg rat brain than in non-Tg controls by statistically significant margins.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18947406"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 47,
+      "target": 49,
+      "key": "143c435c5fd249efd3e10cfe11dcbf49"
+    },
+    {
+      "line": 67,
+      "relation": "directlyIncreases",
+      "evidence": "To determine the cytotoxic effects and the type of cell death facilitated by TNF in A549 cells, we treated cells with TNF and analyzed cell death based on morphological and biochemical assays. The death rate of A549 cells increased with increasing concentration of TNF (Fig. 1b), and cell death was characterized by cytoplasmic condensation and pyknotic nuclei without apoptotic body formation (Fig. 1c). Dose-dependent release of LDH into the culture medium was also noted (Fig. 1d); this is frequently encountered after necrotic cell death due to rupture of the cell membrane....Thus, TNF triggers necrotic rather than apoptotic cell death in A549 cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20963496"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 47,
+      "target": 49,
+      "key": "4e999a504b6387ff4b15ffb1010d3161"
+    },
+    {
+      "line": 67,
+      "relation": "directlyIncreases",
+      "evidence": "Consistent with the in vivo findings, p75 blockade resulted in significant reduction of TNF-induced VCAM-1 and E-selectin expression by 28 and 23%, respectively (P < 0.05), but had no significant effect on ICAM-1 (Fig. 4A). On the other hand, as with in vivo experiments, p55 blockade significantly decreased the expression of all adhesion molecules",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21378027"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 47,
+      "target": 49,
+      "key": "fc1ba37b51995448ae080f221a96b519"
+    },
+    {
+      "line": 67,
+      "relation": "directlyIncreases",
+      "evidence": "The results support the following pathway, whereby TNF-alpha enhances expression of ICAM-1 in NHBE cells: TNF-alpha --> TNF-RI --> PC-PLC --> DAG --> PKC --> (NF-kappaB?) --> ICAM-1 mRNA --> ICAM-1 surface expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10837365"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "bronchial epithelial cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 47,
+      "target": 49,
+      "key": "50578a1993c38045e488a61e9a852b78"
+    },
+    {
+      "line": 67,
+      "relation": "directlyIncreases",
+      "evidence": "he binding of TNF to the cell surface receptor TNF-R1 causes the recruitment of the adapter protein TRADD to the cytoplasmic domain of the receptor. TRADD then serves to recruit additional signaling molecules, including FADD, TRAF2, and RIP1 (Chen and Goeddel 2002).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15545623"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 47,
+      "target": 49,
+      "key": "3ccb0c35c33c61bce8a79aa6456590e6"
+    },
+    {
+      "line": 67,
+      "relation": "directlyIncreases",
+      "evidence": "After being processed by such metalloproteinases as TNF-a-converting enzyme (TACE) between residues alanine76 and valine77, the soluble form of TNF-a of 157 amino acid residues (17 kDa) is released and mediates its biological activities through Type 1 and 2 TNF receptors (TNF-R1 also known as TNFRSF1A, CD120a and TNF-R2 also known as",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20194223"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 47,
+      "target": 49,
+      "key": "45b6593c095612ee15d3a70f5f64fd00"
+    },
+    {
+      "line": 67,
+      "relation": "directlyIncreases",
+      "evidence": "Fig. 4. Both cIAP1 and 2 are recruited to TNF-R1 upon TNFa treatment and are required for Rip1 polyubiquitination.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18697935"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 47,
+      "target": 49,
+      "key": "65e54512b7807973cfa023e173e8d103"
+    },
+    {
+      "line": 67,
+      "relation": "directlyIncreases",
+      "evidence": "TABLE 1. Cytokine/chemokines, their receptors, and functions.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17615396"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 47,
+      "target": 49,
+      "key": "67ef2ff0029824ccbdc89311b6e7c688"
+    },
+    {
+      "line": 68,
+      "relation": "increases",
+      "evidence": "Treatment of L929 cells with TNF leads to the activation of PLA2, and overexpression of cytosolic PLA2 (cPLA2) sensitizes TNF-resistant L929 variants to TNF-induced necrosis (85).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20354226"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 47,
+      "target": 54,
+      "key": "7744f88080e7ab0bb48083b8ccfce6d4"
+    },
+    {
+      "line": 69,
+      "relation": "increases",
+      "evidence": "Consistent with the RT-PCR data, protein levels increased approximately 4.5-fold (dimer) and 2.7-fold (monomer) compared with levels observed in control cells after 48 h of TNF treatment (Fig. 2b, left panel). Representative blots are shown in the right panel. However, neither mRNA nor protein levels of HIF-1?, a key transcriptional regulator of BNip3 in response to hypoxia, were significantly altered (Fig. 2c).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20963496"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 47,
+      "target": 14,
+      "key": "fca23260b65d308341196fc539276e8b"
+    },
+    {
+      "line": 70,
+      "relation": "directlyDecreases",
+      "evidence": "The amino-terminal domain of A20, which is a de-ubiquitinating (DUB) enzyme of the OTU (ovarian tumour) family, removes lysine-63 (K63)-linked ubiquitin chains from receptor interacting protein (RIP), an essential mediator of the proximal TNF receptor 1 (TNFR1)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15258597"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "kidney embryonic": true
+        },
+        "Cell": {
+          "hek293": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 48,
+      "target": 37,
+      "key": "6121a7e3b74395fd7e4396f0b7546c7e"
+    },
+    {
+      "line": 70,
+      "relation": "directlyDecreases",
+      "evidence": "\"Our serial TNFR and RIP1 IP experiments with Tnfaip3OTU/OTU cells revealed that RIP1 proteins bear increased amounts of both K48- and K63-linked ubiquitin chains in Tnfaip3OTU/OTU cells, suggesting that A20’s DUB activity removes both types of chains from RIP1 in cells\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23602765"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "mef": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 48,
+      "target": 37,
+      "key": "27c6c5760f50acbd2b42acef39ca067a"
+    },
+    {
+      "line": 71,
+      "relation": "increases",
+      "evidence": "Arachidonic acid (AA) promoted BSO-induced cell death by accumulating reactive oxygen species (ROS) or hydroperoxides. AA inhibited caspase-3 activation and internucleosomal DNA fragmentation during the BSO-induced GSH depletion. Furthermore, AA reduced intracellular ATP content, induced dysfunction of mitochondrial membrane and enhanced 8-hydroxy-2'-deoxyguanosine (8-OH-dG) production. There was significant increase of 12-lipoxygenase activity in the presence of AA under the BSO-induced GSH depletion in C6 cells. These results suggest that AA promotes cell death by changing to necrosis from apoptosis through lipid peroxidation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11913980"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        }
+      },
+      "source": 1,
+      "target": 8,
+      "key": "a6a373a9b585a58a027579289d67604e"
+    },
+    {
+      "line": 72,
+      "relation": "increases",
+      "evidence": "Arachidonic acid (AA) promoted BSO-induced cell death by accumulating reactive oxygen species (ROS) or hydroperoxides. AA inhibited caspase-3 activation and internucleosomal DNA fragmentation during the BSO-induced GSH depletion. Furthermore, AA reduced intracellular ATP content, induced dysfunction of mitochondrial membrane and enhanced 8-hydroxy-2'-deoxyguanosine (8-OH-dG) production. There was significant increase of 12-lipoxygenase activity in the presence of AA under the BSO-induced GSH depletion in C6 cells. These results suggest that AA promotes cell death by changing to necrosis from apoptosis through lipid peroxidation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11913980"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        }
+      },
+      "source": 1,
+      "target": 3,
+      "key": "fc2647f0e08df1c92a71b41f05eb3fe5"
+    },
+    {
+      "line": 73,
+      "relation": "decreases",
+      "evidence": "Arachidonic acid (AA) promoted BSO-induced cell death by accumulating reactive oxygen species (ROS) or hydroperoxides. AA inhibited caspase-3 activation and internucleosomal DNA fragmentation during the BSO-induced GSH depletion. Furthermore, AA reduced intracellular ATP content, induced dysfunction of mitochondrial membrane and enhanced 8-hydroxy-2'-deoxyguanosine (8-OH-dG) production. There was significant increase of 12-lipoxygenase activity in the presence of AA under the BSO-induced GSH depletion in C6 cells. These results suggest that AA promotes cell death by changing to necrosis from apoptosis through lipid peroxidation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11913980"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        }
+      },
+      "source": 1,
+      "target": 4,
+      "key": "f7ed91d5ca6fb60a4d857464e95f246c"
+    },
+    {
+      "line": 75,
+      "relation": "increases",
+      "evidence": "To examine the role of 85-kDa cytosolic PLA2 (cPLA2) in cytokine-induced AA release, a system was developed to inhibit the expression of cPLA2 in a human bronchial epithelial cell line (BEAS-2B cells) by antisense RNA... IFN-gamma (300 U/ml), TNF-alpha (20 ng/ml), and IL-1 alpha (20 ng/ml) all induced a significantly increased release of prelabeled [3H]arachidonic acid after 15 min to 2 h of treatment in control cells, and their effects were significantly reduced in cells transfected with cPLA2 antisense vector",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9277444"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "beas-2b": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 34,
+      "target": 1,
+      "key": "7cafb424939f156f3f86cc604f9dc062"
+    },
+    {
+      "line": 75,
+      "relation": "increases",
+      "evidence": "mobilize arachidonic acid, AA, and synthesize prostaglandins in response to receptor-directed and soluble stimuli by a mechanism that involves the activation of Group IV cytosolic phospholipase A2alpha these cells also mobilize AA in response to an oxidative stress induced by H2O2 through a mechanism that appears not to be mediated by cytosolic phospholipase A2alpha but by the calcium-independent Group VI phospholipase A2 also other fatty acids were found to be liberated in an Pla2g6-dependent manner in the H2O2-treated cells importance of the Pla2g6 in modulating homeostatic fatty acid deacylation reactions",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12181317"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 34,
+      "target": 1,
+      "key": "5ecfeeab419ddeee82921076de6723b9"
+    },
+    {
+      "line": 75,
+      "relation": "increases",
+      "evidence": "Phospholipase A2 (PLA2) is an esterase that produces AA from arachidonate-containing phospholipids (84).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20354226"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 34,
+      "target": 1,
+      "key": "82580ad388f8f59e1e56901661a5850c"
+    },
+    {
+      "line": 19,
+      "relation": "association",
+      "evidence": "\"Our findings could suggest the presence of a physical interaction between PARP-1 and SIRT1.\" (p. 875)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16628003"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Mouse embryonic fibroblasts": true
+        }
+      },
+      "source": 31,
+      "target": 43,
+      "key": "3afedda27c4f47dcc9527b65ee09f9f9"
+    },
+    {
+      "line": 91,
+      "relation": "decreases",
+      "evidence": "cadmium generated reactive oxygen species (ROS) at relatively low levels, and caused poly(ADP-ribose) polymerase-1 (PARP) activation and ATP depletion.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21767558"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 31,
+      "target": 4,
+      "key": "0990139bb77b6440177425b98d4d5325"
+    },
+    {
+      "line": 91,
+      "relation": "decreases",
+      "evidence": "The activation of PARP-1 also leads to ATP depletion, a condition that is permissive for necrosis (81, 82).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20354226"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 31,
+      "target": 4,
+      "key": "f8d6a143482de43ec61a3d49b6cb158b"
+    },
+    {
+      "line": 91,
+      "relation": "decreases",
+      "evidence": "Activation of poly(ADP-ribose) polymerase (PARP) by DNA breaks catalyzes poly(ADP-ribosyl)ation and results in depletion of NAD+ and ATP, which is thought to induce necrosis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10373561"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 31,
+      "target": 4,
+      "key": "688e7921ccf2313f8f9acfd0e3bdbb83"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "These results indicate that H2O2 induces both necrosis and apoptosis of human lung fibroblasts at least in part through the action of ROS and that modulation of the ROS production inside and outside of cells may influence the cell survival during oxidative insults",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10082315"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "hfl-1": true
+        }
+      },
+      "source": 2,
+      "target": 8,
+      "key": "3b99115abfb78d397724ce8b26addd40"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "Therefore, this study analyzed, by high-resolution live-cell imaging, the occurrence of ROS generation, changes in mitochondrial transmembrane potential (MTP), LMP and plasma membrane permeabilization (PMP) during TNF-mediated necroptosis, H2O2-induced necrosis and anti-Fas-mediated secondary necrosis in the same cellular context, that is, in L929sAhFas cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20010783"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 2,
+      "target": 8,
+      "key": "277892d1d26ac1e32c6466ba8c25060b"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "Treatment of the human hepatoma cell line HuH-7 with H2O2 caused dose-dependent necrosis as determined by light microscopy, fluorescent staining, and an absence of DNA fragmentation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9357820"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 2,
+      "target": 8,
+      "key": "c87b7e99d23ef8504a7f3162ac6f873a"
+    },
+    {
+      "line": 80,
+      "relation": "increases",
+      "evidence": "To determine whether these findings extend to other forms of PARP-1-dependent cell death, fibrobast cultures were exposed to H2O2, which induces oxidative stress leading to DNA damage and PARP-1 activation (17-19). H2O2 also induces AIF translocation and cell death in a PARP-1-dependent, but caspase-independent manner (fig. S2, A to D).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12114629"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 2,
+      "target": 31,
+      "key": "a03451249447db0201fadd3378baeb9f"
+    },
+    {
+      "line": 82,
+      "relation": "decreases",
+      "evidence": "Overexpression of the caspase-8 inhibitor, FLIP (but not Bcl-XL), significantly protected the cells from death during hyperoxia, relative to the LacZ control (p < 0.05) (Fig. 4B).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15899875"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Lung": true
+        },
+        "Cell": {
+          "A549": true
+        }
+      },
+      "source": 16,
+      "target": 15,
+      "key": "005bbd13b8fe4e33b34d7c5ba5fc8a54"
+    },
+    {
+      "line": 83,
+      "relation": "decreases",
+      "evidence": "NF?B family transcription factors can induce expression of antiapoptotic proteins that oppose the intrinsic (Bcl-XL, Bfl-1), extrinsic (FLIP), and convergence (cIAP2) pathways (Figure 2A), as well as suppressing expression of the death inducer Bax (intrinsic pathway) in some types of tumor cells (Karin and Lin, 2002). Further, hyperactivity of NF?B is now well documented in certain cancers (Karin et al., 2002).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12559172"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 16,
+      "target": 19,
+      "key": "a6d85d282cab2d4036f29f35271b4109"
+    },
+    {
+      "line": 83,
+      "relation": "decreases",
+      "evidence": "We further show that, upon Fas stimulation, fibrotic lung myofibroblasts resist Fas-induced apoptosis and become sensitive to Fas-induced proliferation. Concomitantly, after Fas stimulation, these fibroblasts form DISC-FADD complexes and show a significant increase in the recruitment of the TNF receptor–associated factor (TRAF) signaling molecule to the DISC-FADD complex. Despite overexpression of other antiapoptotic genes, the selective down-regulation of c-FLIP by small interfering RNA (siRNA) was sufficient to sensitize fibrotic lung myofibroblasts to Fas-induced apoptosis and to annul Fas-induced proliferation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22582174"
+      },
+      "annotations": {
+        "Disease": {
+          "pulmonary fibrosis": true
+        },
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "myofibroblast": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 16,
+      "target": 19,
+      "key": "270127d82ec718e187ebb46a25ec4d94"
+    },
+    {
+      "line": 85,
+      "relation": "increases",
+      "evidence": "As a result of sphingomyelin catabolism, aSMase produces ceramide (a lipid second messenger) (91).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20354226"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 44,
+      "target": 6,
+      "key": "c2314aa40e59373804996871357b56ca"
+    },
+    {
+      "line": 85,
+      "relation": "increases",
+      "evidence": "Survival is significantly enhanced when ceramide accumulation is prevented, as demonstrated in fibroblasts genetically deficient for acid sphingomyelinase, in L929 cells overexpressing acid ceramidase, by pharmacological intervention, or by RNA interference.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16319138"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 44,
+      "target": 6,
+      "key": "292799251dcc36ea7fa22a8eed9b7c16"
+    },
+    {
+      "line": 85,
+      "relation": "increases",
+      "evidence": "Moreover, inhibition of ROS generating enzymes or treatment of antioxidants impairs sphingomyelinase activation and ceramide production",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20502003"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 44,
+      "target": 6,
+      "key": "3aec67da8d2d76cf484122714084c0e3"
+    },
+    {
+      "line": 86,
+      "relation": "directlyIncreases",
+      "evidence": "We report here that human DLEC (human distal lung epithelial cells) express Fas and that sFasL can induce apoptosis of these target cells by a Fas-dependent mechanism",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10438964"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "epithelial cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 21,
+      "target": 20,
+      "key": "bf7a069974f252bd0ed224dcc3889f8b"
+    },
+    {
+      "line": 86,
+      "relation": "directlyIncreases",
+      "evidence": "Activation of the Fas and TNFR family of death receptors induces a “prototypic” apoptotic pathway through the recruitment of adaptor proteins such as FADD and upstream caspases such as caspase-8.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19109899"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 21,
+      "target": 20,
+      "key": "d8f6f16cc6cb9493d1099e9510a2cebf"
+    },
+    {
+      "line": 86,
+      "relation": "directlyIncreases",
+      "evidence": "Necroptosis can be induced by the ligation of death receptors, including CD95 (also known as FAS; which binds the ligand CD95L (also known as FASL))29, TNF receptor 1 (TNFR1), TNFR2 (Refs 6, 13, 30), TNF-related apoptosis-inducing ligand receptor 1 (TRAILR1) and TRAILR2 (Ref. 9.)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20823910"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 21,
+      "target": 20,
+      "key": "ca4e6fa3ab9a84462ee3ab6610a3dc2a"
+    },
+    {
+      "line": 86,
+      "relation": "directlyIncreases",
+      "evidence": "Fas activation by ligand (FasL)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10024361"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 21,
+      "target": 20,
+      "key": "2298e140b6cd6869fb529426d412c68c"
+    },
+    {
+      "line": 86,
+      "relation": "directlyIncreases",
+      "evidence": "The protein Daxx promotes Fas-mediated cell death through activation of apoptosis signal-regulating kinase 1, leading to the activation of the MAPKs JNK and p38.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17082815"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 21,
+      "target": 20,
+      "key": "8fa059e78ba87e0ca3342de48745eb12"
+    },
+    {
+      "line": 92,
+      "relation": "increases",
+      "evidence": "Upon induction of necrosis, RIP3 is recruited to RIPK1 to form a necrosis-inducing complex",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19524512"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 11,
+      "target": 8,
+      "key": "384212f0631c8e35178437510fcd4c10"
+    },
+    {
+      "line": 92,
+      "relation": "increases",
+      "evidence": "Upon induction of necrosis, RIP3 is recruited to RIPK1 to form a necrosis-inducing complex",
+      "citation": {
+        "db": "PubMed",
+        "db_id": ""
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 11,
+      "target": 8,
+      "key": "cf8b715b9abba509362d0fc11145b5be"
+    },
+    {
+      "line": 97,
+      "relation": "increases",
+      "evidence": "MLKL phosphorylation increased in the mitochondrial fraction of CSE-treated cells relative to that in untreated cells. Interestingly, treatment with CsA reduced MLKL phosphorylation, while it had no effect on CSE-induced PINK1 or ubiquitin accumulation (Figure 6E). These results suggest that mitochondrial depolarization occurs upstream of necrosome activation in pulmonary epithelial cells treated with CSE.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": ""
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "Beas-2B cells": true
+        }
+      },
+      "source": 9,
+      "target": 8,
+      "key": "41e191b1b3a8dbdb30caf260b991b5dd"
+    },
+    {
+      "line": 114,
+      "relation": "increases",
+      "evidence": "\"Here we show that under normal conditions the association of TRADD with TNFR1 is TNF dependent. We also show that TRADD directly interacts with TRAF2 through its N-terminal half and with FADD through its C-terminal two-hybrid death domain.Furthermore, dominant-negative mutants of TRAF2 and FADD can block TNF-mediated NF-kB activation and cell death, respectively.\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": ""
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "HeLa": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 50,
+      "target": 51,
+      "key": "4b671ae604af51f8434f23a415938012"
+    },
+    {
+      "line": 115,
+      "relation": "increases",
+      "evidence": "The strong dominant-negative effect of FADD(80–205) on cell death induced by TNF, TNFR1, and TRADD suggests that FADD participates in the apoptotic pathway activated by TNF through TNFR1 and TRADD.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8565075"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "HeLa": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 50,
+      "target": 19,
+      "key": "edc6ac2c4621d9c1dce39f9be6a3c50f"
+    },
+    {
+      "line": 116,
+      "relation": "increases",
+      "evidence": "Cytoplasmic TRADD activates apoptosis through Fas-associated death domain protein (FADD) and caspase-8 activation that was blocked by caspase inhibitors or dominant-negative FADD.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15761471"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 50,
+      "target": 15,
+      "key": "a722ea02acaa53aff952497fbcf2123c"
+    },
+    {
+      "line": 116,
+      "relation": "increases",
+      "evidence": "We also showed that overexpressed NH2 termini of K18 and K8/18 were associated with endogenous TRADD in SW13 cells, resulting in the inhibition of caspase-8 activation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11684708"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 50,
+      "target": 15,
+      "key": "e3ea01619094f7b31ef91ffd10b3ba41"
+    },
+    {
+      "line": 116,
+      "relation": "increases",
+      "evidence": "It also associates with death domain-containing adaptor proteins, such as TNF-receptor-associated death domain  (TRADD) and Fas-associated death domain (FADD), that are required for caspase-8  activation and apoptosis ([Schutze et al., 2008] and [Wilson et al., 2009])",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19632174"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 50,
+      "target": 15,
+      "key": "7a44f398fa71e0d8aee344053f036efe"
+    },
+    {
+      "line": 106,
+      "relation": "decreases",
+      "evidence": "\"In L929sA cells, imipramine impaired PARP-1 activation/disappearance, AIF translocation, cell death and the accompanying loss of ATP as late events in TNF-induced necroptosis but not in response to MNNG (Fig. 4a).\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23760205"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 4,
+      "target": 8,
+      "key": "2bda73c97fae6815da618cea2385bf4a"
+    },
+    {
+      "line": 106,
+      "relation": "decreases",
+      "evidence": "Activation of poly(ADP-ribose) polymerase (PARP) by DNA breaks catalyzes poly(ADP-ribosyl)ation and results in depletion of NAD+ and ATP, which is thought to induce necrosis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10373561"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 4,
+      "target": 8,
+      "key": "44498dbcfa42b62d8e2d84b4da6947d8"
+    },
+    {
+      "line": 112,
+      "relation": "increases",
+      "evidence": "Cells that overexpressed BNip3 began to die 24 h after transfection, and approximately 60% of cells overexpressing BNip3 were dead after 72 h (Fig. 3a). Dying cells were shrunken, and their nuclei were small and condensed without typical apoptotic body formation (Fig. 3b). Release of LDH into the culture medium implying rupture of cell membrane was detected (Fig. 3c). However, we did not detect caspase cleavage activity (data not shown). In line with these findings, necrostatin-1 effectively suppressed BNip3-induced cell death and LDH release while the pan-caspase inhibitor zVAD-FMK did not (Fig. 3a). At this concentration of caspase inhibitor, cell death induced by Bax overexpression was suppressed (Fig. 3a). These results suggest that BNip3 induces caspase-independent necrosis-like cell death similar to that encountered after treating cells with TNF.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20963496"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 14,
+      "target": 8,
+      "key": "f51a62ce33a3d03950286090c096cf14"
+    },
+    {
+      "line": 112,
+      "relation": "increases",
+      "evidence": "HIF1A activates expression of 2 pro-apoptotic proteins, NIX and NIP3 the mechanism by which NIP3 causes cell death seems to be a combination of both necrosis and apoptosis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11902584"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 14,
+      "target": 8,
+      "key": "1f81efc0e158cf7190870b10819cbfca"
+    },
+    {
+      "line": 113,
+      "relation": "increases",
+      "evidence": "These changes were accompanied by rapid and profound mitochondrial dysfunction characterized by opening of the mitochondrial PT pore, proton electrochemical gradient (Deltapsim) suppression, and increased reactive oxygen species production.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10891486"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 14,
+      "target": 3,
+      "key": "d2356a85197647ce874033fcc0409015"
+    }
+  ]
+}

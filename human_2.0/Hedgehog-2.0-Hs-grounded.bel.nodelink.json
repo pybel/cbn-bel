@@ -1,0 +1,1325 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Hedgehog-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Hedgehog network depicts causal mechanisms that are involved in Hedgehog signaling, which regulates cell proliferation and branching morphogenesis in the developing mammalian lung. These processes may contribute to heightened proliferative activity following exposure to environmental insults."
+    },
+    "namespace_url": {},
+    "namespace_pattern": {
+      "go": ".*",
+      "fplx": ".*",
+      "hgnc": ".*",
+      "mesh": ".*"
+    },
+    "annotation_url": {},
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "positive regulation of T cell proliferation",
+        "identifier": "0042102"
+      },
+      "id": "7b688e04a75a24b9e540c795b76684e7",
+      "bel": "bp(go:0042102 ! \"positive regulation of T cell proliferation\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "fplx",
+        "name": "PI3K",
+        "identifier": "PI3K"
+      },
+      "id": "2de818cb7bd5f3eacdbb22c78861bdd8",
+      "bel": "complex(fplx:PI3K ! PI3K)"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "CCNB1",
+            "identifier": "1579"
+          },
+          "id": "3cfc750e2c1a18e8ea3f60fa0a1ca36d",
+          "bel": "p(hgnc:1579 ! CCNB1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "PTCH1",
+            "identifier": "9585"
+          },
+          "id": "6a44dd08ff805018ba9bc3ff8db78e5b",
+          "bel": "p(hgnc:9585 ! PTCH1)"
+        }
+      ],
+      "id": "af5ba7b760db936d70c7e39986451246",
+      "bel": "complex(p(hgnc:1579 ! CCNB1), p(hgnc:9585 ! PTCH1))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "PI3K_p110",
+        "identifier": "PI3K_p110"
+      },
+      "id": "8b79e969188c2874eba3fa100a633e65",
+      "bel": "p(fplx:\"PI3K_p110\" ! \"PI3K_p110\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "AKT",
+        "identifier": "AKT"
+      },
+      "id": "c89a87549439c8dc34a13d9082b33a57",
+      "bel": "p(fplx:AKT ! AKT)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "GSK3",
+        "identifier": "GSK3"
+      },
+      "id": "cf92adcd7cc53c882ae3c839c49879a1",
+      "bel": "p(fplx:GSK3 ! GSK3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "Hedgehog",
+        "identifier": "Hedgehog"
+      },
+      "id": "1a20ff69e2b32ec814c3547e296b496f",
+      "bel": "p(fplx:Hedgehog ! Hedgehog)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "PRKAC",
+        "identifier": "PRKAC"
+      },
+      "id": "d7b0a3f9dd7c83574fe44f6e40746cfb",
+      "bel": "p(fplx:PRKAC ! PRKAC)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "RAS",
+        "identifier": "RAS"
+      },
+      "id": "9274f5e848a1e5f0ecc9620413e7c24b",
+      "bel": "p(fplx:RAS ! RAS)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SHH",
+        "identifier": "10848"
+      },
+      "id": "96482b11bb4f6df08aecc52dd6b4b43a",
+      "bel": "p(hgnc:10848 ! SHH)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "STIL",
+        "identifier": "10879"
+      },
+      "id": "fc7de748b51af1a1369d942e5ae89adc",
+      "bel": "p(hgnc:10879 ! STIL)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SMO",
+        "identifier": "11119"
+      },
+      "id": "14f27ac762cde07b96638aedfd79fdd8",
+      "bel": "p(hgnc:11119 ! SMO)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HHIP",
+        "identifier": "14866"
+      },
+      "id": "3ae01e20c716da50d8d712574b6cb5dd",
+      "bel": "p(hgnc:14866 ! HHIP)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CCNB1",
+        "identifier": "1579"
+      },
+      "id": "3cfc750e2c1a18e8ea3f60fa0a1ca36d",
+      "bel": "p(hgnc:1579 ! CCNB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CCND1",
+        "identifier": "1582"
+      },
+      "id": "7948aef17947d3efb076ccc443c7c3a6",
+      "bel": "p(hgnc:1582 ! CCND1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CCND2",
+        "identifier": "1583"
+      },
+      "id": "0353cac911b4652ae86c8466264c8c82",
+      "bel": "p(hgnc:1583 ! CCND2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CCNE1",
+        "identifier": "1589"
+      },
+      "id": "b43c0eebe9ebc4d2235d8b213a3cff23",
+      "bel": "p(hgnc:1589 ! CCNE1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SUFU",
+        "identifier": "16466"
+      },
+      "id": "8f893315d413463e02ab4f0dd64e4a56",
+      "bel": "p(hgnc:16466 ! SUFU)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CDK6",
+        "identifier": "1777"
+      },
+      "id": "165cd338a4da97eb0475f4122ae505a1",
+      "bel": "p(hgnc:1777 ! CDK6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "DISP1",
+        "identifier": "19711"
+      },
+      "id": "b06e73665555e870005f234fa0847d03",
+      "bel": "p(hgnc:19711 ! DISP1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "FOXM1",
+        "identifier": "3818"
+      },
+      "id": "2f81823690eb7b233e11abd6be70cbc8",
+      "bel": "p(hgnc:3818 ! FOXM1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GAS1",
+        "identifier": "4165"
+      },
+      "id": "f616cba4d9e29d8c0088bd5aa14cba33",
+      "bel": "p(hgnc:4165 ! GAS1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GLI1",
+        "identifier": "4317"
+      },
+      "id": "fef258309c5775df01e4483b5bba33a8",
+      "bel": "p(hgnc:4317 ! GLI1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GLI2",
+        "identifier": "4318"
+      },
+      "id": "816ce9633c22451711f05e57a8dba238",
+      "bel": "p(hgnc:4318 ! GLI2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GLI3",
+        "identifier": "4319"
+      },
+      "id": "c774e8ecdff1b415a5afc1007151ce99",
+      "bel": "p(hgnc:4319 ! GLI3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GNAS",
+        "identifier": "4392"
+      },
+      "id": "22274093f318dcd363305a4a1da80ac0",
+      "bel": "p(hgnc:4392 ! GNAS)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IHH",
+        "identifier": "5956"
+      },
+      "id": "9062a53bdb3d1ae712fb3db881cbe9d3",
+      "bel": "p(hgnc:5956 ! IHH)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "JAG1",
+        "identifier": "6188"
+      },
+      "id": "befe0f08829bf42a246eab89db8e0fc8",
+      "bel": "p(hgnc:6188 ! JAG1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "JAG2",
+        "identifier": "6189"
+      },
+      "id": "8922b0824b1dfb810db237cb75ab58a1",
+      "bel": "p(hgnc:6189 ! JAG2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MYCN",
+        "identifier": "7559"
+      },
+      "id": "29d03ac68a71b0cf94c06985d431731b",
+      "bel": "p(hgnc:7559 ! MYCN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTCH1",
+        "identifier": "9585"
+      },
+      "id": "6a44dd08ff805018ba9bc3ff8db78e5b",
+      "bel": "p(hgnc:9585 ! PTCH1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTCH2",
+        "identifier": "9586"
+      },
+      "id": "05ec0629f3ec6ae2abfc862275bfa568",
+      "bel": "p(hgnc:9586 ! PTCH2)"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "mesh",
+        "name": "Pulmonary Disease, Chronic Obstructive",
+        "identifier": "D029424"
+      },
+      "id": "98cb883d84a9775f973f1e99c68ba3a2",
+      "bel": "path(mesh:D029424 ! \"Pulmonary Disease, Chronic Obstructive\")"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GLI1",
+        "identifier": "4317"
+      },
+      "id": "a72586c39746e60a9c525a0dd0e0b3db",
+      "bel": "r(hgnc:4317 ! GLI1)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "BCL2",
+        "identifier": "990"
+      },
+      "id": "261abb3a816a9de3a9ed4df26f968854",
+      "bel": "r(hgnc:990 ! BCL2)"
+    }
+  ],
+  "links": [
+    {
+      "relation": "partOf",
+      "source": 13,
+      "target": 2,
+      "key": "45815043b9d3dc137bec75f5eed826f0"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 13,
+      "target": 2,
+      "key": "84f23789a7af80594b1010435903d92c"
+    },
+    {
+      "relation": "partOf",
+      "source": 30,
+      "target": 2,
+      "key": "0002477bbb08649ab926eeb1b18aeb79"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 30,
+      "target": 2,
+      "key": "3b741f198f40b4f25bf5fff826816924"
+    },
+    {
+      "line": 61,
+      "relation": "directlyDecreases",
+      "evidence": "Current models suggest that binding of Shh to PTCH prevents the normal inhibition of the seven-transmembrane-protein Smoothened (SMO) by PTCH.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9811851"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 30,
+      "target": 11,
+      "key": "a230d1d720854c9a3e3449f24db9d7df"
+    },
+    {
+      "line": 38,
+      "relation": "increases",
+      "evidence": "\"Previous studies have demonstrated that Disp1 function is essential for Shh and Ihh signaling in the mouse, and Disp1 gene dose regulates the level of Shh signaling activity in vivo.\"",
+      "citation": {
+        "db": "Other",
+        "db_id": "15576405"
+      },
+      "annotations": {},
+      "source": 19,
+      "target": 9,
+      "key": "f0c68e33e8973940360834d4b8a3ab34"
+    },
+    {
+      "line": 38,
+      "relation": "increases",
+      "evidence": "Co-cultures with Shh-expressing cells revealed a significant reduction in the range of the contact-dependent Shh response in Disp1(-/-) neuralized EBs",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20023168"
+      },
+      "annotations": {},
+      "source": 19,
+      "target": 9,
+      "key": "6f40585e8bf2b04729014aee0d0839f8"
+    },
+    {
+      "line": 41,
+      "relation": "decreases",
+      "evidence": "Furthermore, ectopic expression of Gas1 in presomitic cells attenuates the response of these cells to SHH in vitro. Taken together, these data suggest that GAS1 functions to reduce the availability of active SHH within the dorsal somite.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11572986"
+      },
+      "annotations": {},
+      "source": 21,
+      "target": 9,
+      "key": "8176b716dcc7207a2e0c3f1f5e52ed56"
+    },
+    {
+      "line": 41,
+      "relation": "decreases",
+      "evidence": "Gas1, a Shh protein antagonist",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19211681"
+      },
+      "annotations": {},
+      "source": 21,
+      "target": 9,
+      "key": "f02636fd4cd6a90dd0f0a4c438957590"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "In this study, we found that increased levels of gli2 in the E18.5 lung will stimulate expression of cyclin D1 (Figure 5A), cyclin D2 (Figure 6A), and cyclin E1 (Figure 6C).",
+      "citation": {
+        "db": "Other",
+        "db_id": "19574535"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 23,
+      "target": 14,
+      "key": "828acd99c60b889b652536b86b1a1b8f"
+    },
+    {
+      "line": 33,
+      "relation": "increases",
+      "evidence": "In this study, we found that increased levels of gli2 in the E18.5 lung will stimulate expression of cyclin D1 (Figure 5A), cyclin D2 (Figure 6A), and cyclin E1 (Figure 6C).",
+      "citation": {
+        "db": "Other",
+        "db_id": "19574535"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 23,
+      "target": 15,
+      "key": "9bd177b6050e8c19976b358cc68475d6"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "The ectopic overexpression of gli2 resulted in increased Shh pathway activation as evident by increased expression of shh, ptc1, ptc2, smo, hhip, and gli1. Interestingly, we also observed increased expression of gli3 transcripts.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19574535"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 23,
+      "target": 24,
+      "key": "38d05433e40ac77f80489b3904604154"
+    },
+    {
+      "line": 35,
+      "relation": "increases",
+      "evidence": "The ectopic overexpression of gli2 resulted in increased Shh pathway activation as evident by increased expression of shh, ptc1, ptc2, smo, hhip, and gli1",
+      "citation": {
+        "db": "Other",
+        "db_id": "19574535"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 23,
+      "target": 11,
+      "key": "eb177318cb963a0740044ca22de09263"
+    },
+    {
+      "line": 36,
+      "relation": "increases",
+      "evidence": "The ectopic overexpression of gli2 resulted in increased Shh pathway activation as evident by increased expression of shh, ptc1, ptc2, smo, hhip, and gli1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19574535"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 23,
+      "target": 9,
+      "key": "8381922a498c74bad8868c01ff10d9a5"
+    },
+    {
+      "line": 37,
+      "relation": "increases",
+      "evidence": "The ectopic overexpression of gli2 resulted in increased Shh pathway activation as evident by increased expression of shh, ptc1, ptc2, smo, hhip, and gli1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19574535"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 23,
+      "target": 31,
+      "key": "3bf908c489754bb259370f2dae086bd2"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "In this study, we found that increased levels of gli2 in the E18.5 lung will stimulate expression of cyclin D1 (Figure 5A), cyclin D2 (Figure 6A), and cyclin E1 (Figure 6C).",
+      "citation": {
+        "db": "Other",
+        "db_id": "19574535"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 23,
+      "target": 16,
+      "key": "ab0b97fb22528ccba4d8f039835f9f90"
+    },
+    {
+      "line": 57,
+      "relation": "directlyIncreases",
+      "evidence": "GLI3 directly binds to the Gli1 promoter and induces Gli1 transcription in response to Shh.",
+      "citation": {
+        "db": "Other",
+        "db_id": "10075717"
+      },
+      "annotations": {},
+      "source": 24,
+      "target": 33,
+      "key": "2db3ced86592e0d5c84eebb1d01b9eac"
+    },
+    {
+      "line": 39,
+      "relation": "decreases",
+      "evidence": "Loss of Hip1 function results in specific defects in two Hh target issues, the lung, a target of Sonic hedgehog (Shh) signaling ... Hh signaling was up-regulated in Hip1 mutants, substantiating Hip1's general role in negatively regulating Hh signaling",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12569124"
+      },
+      "annotations": {},
+      "source": 12,
+      "target": 9,
+      "key": "e3e679eb9ea06aa1300f7916dd1b5c75"
+    },
+    {
+      "line": 39,
+      "relation": "decreases",
+      "evidence": "Conditioned media from 293 cells co-transfected with Shh and full-length (membrane-anchored) HIP contained a reduced amount of Shh and had a reduced ability to induce differentiation in C3H10T1/2 cells compared to cells transfected with Shh alone, demonstrating that HIP can sequester Shh [5].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15294024"
+      },
+      "annotations": {},
+      "source": 12,
+      "target": 9,
+      "key": "56dfecff1d6762b9616419a951ae9065"
+    },
+    {
+      "line": 49,
+      "relation": "increases",
+      "evidence": "Hip[(HGNC:HHIP] is expressed in all Hh target tissues and acts by internalising and degrading the Hh protein.........The results of the present study and the two previous GWA reports demonstrate that variants near the Hip gene influence the risk of COPD.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19996190"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 12,
+      "target": 6,
+      "key": "b280349f8a5410b894dec4bba9a5afa9"
+    },
+    {
+      "line": 50,
+      "relation": "negativeCorrelation",
+      "evidence": "HHIP silencing led to differential expression of 296 genes; enrichment for variants nominally associated with COPD was found.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23459001"
+      },
+      "annotations": {},
+      "source": 12,
+      "target": 32,
+      "key": "9ccf2d5a4b984ad97f37797e83e82f57"
+    },
+    {
+      "line": 50,
+      "relation": "negativeCorrelation",
+      "evidence": "We found significant reduction of hedgehog interacting protein (HHIP) in COPD compared with non-COPD fibroblasts...HHIP expression at both mRNA and protein levels is reduced in COPD lung tissues.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24487392"
+      },
+      "annotations": {},
+      "source": 12,
+      "target": 32,
+      "key": "753729423f97037f5587dbceaa037dc7"
+    },
+    {
+      "line": 51,
+      "relation": "increases",
+      "evidence": "Two cell-cycle related genes, CCND1, encoding Cyclin D1, and G0S2 (G0/G1 switch regulatory protein 2) demonstrated more than 50% reduced expression by HHIP shRNAs in Beas-2B cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23459001"
+      },
+      "annotations": {},
+      "source": 12,
+      "target": 14,
+      "key": "d0d31c2910f603ee5d69ce1bdbd83b52"
+    },
+    {
+      "line": 46,
+      "relation": "increases",
+      "evidence": "Neutralizing anti-Shh Ab inhibits TCR-mediated CD4+ T cell proliferation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "12165511"
+      },
+      "annotations": {},
+      "source": 9,
+      "target": 0,
+      "key": "1e8a625049d894b27053d5a788a79e7c"
+    },
+    {
+      "line": 66,
+      "relation": "increases",
+      "evidence": "Transcription of bcl-2 was significantly increased at 72 h in activated CD4+ T cells with exogenous Shh peptide added compared with medium-only activated CD4+ T cells",
+      "citation": {
+        "db": "Other",
+        "db_id": "12165511"
+      },
+      "annotations": {},
+      "source": 9,
+      "target": 34,
+      "key": "41be7b6543d572eb4ff9123597e372d5"
+    },
+    {
+      "line": 7,
+      "relation": "increases",
+      "evidence": "Smo is targeted to cilia and activates Gli proteins in a cilia-dependent manner.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16339192"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 11,
+      "target": 23,
+      "key": "5a7ea95a942a9b9d464ebfb5e950997f"
+    },
+    {
+      "line": 8,
+      "relation": "increases",
+      "evidence": "Smo is targeted to cilia and activates Gli proteins in a cilia-dependent manner.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16339192"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 11,
+      "target": 24,
+      "key": "90aef5d7a694c84dd264c9f49ab96078"
+    },
+    {
+      "line": 9,
+      "relation": "increases",
+      "evidence": "from full text - Figure 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16484682"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 11,
+      "target": 22,
+      "key": "356085c7ebe380cfaa86b20959f10d2b"
+    },
+    {
+      "line": 9,
+      "relation": "increases",
+      "evidence": "Smo is targeted to cilia and activates Gli proteins in a cilia-dependent manner.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16339192"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 11,
+      "target": 22,
+      "key": "e78be7e676f8c2d9b16e63364d8dc287"
+    },
+    {
+      "line": 58,
+      "relation": "decreases",
+      "evidence": "RTK signaling potentiates GLI activity through PI3K-AKT-mediated GSK3 inactivation or RAS-STIL1-mediated SUFU inactivation, while GPCR signaling to Gs represses GLI activity through adenylate cyclase-mediated PKA activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19860666"
+      },
+      "annotations": {},
+      "source": 10,
+      "target": 17,
+      "key": "f4e40ec35982b6b2f6754faa649a5427"
+    },
+    {
+      "line": 42,
+      "relation": "decreases",
+      "evidence": "RTK signaling potentiates GLI activity through PI3K-AKT-mediated GSK3 inactivation or RAS-STIL1-mediated SUFU inactivation, while GPCR signaling to Gs represses GLI activity through adenylate cyclase-mediated PKA activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19860666"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 17,
+      "target": 23,
+      "key": "0c5c77924832b5036f358301da54379e"
+    },
+    {
+      "line": 44,
+      "relation": "decreases",
+      "evidence": "RTK signaling potentiates GLI activity through PI3K-AKT-mediated GSK3 inactivation or RAS-STIL1-mediated SUFU inactivation, while GPCR signaling to Gs represses GLI activity through adenylate cyclase-mediated PKA activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19860666"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 17,
+      "target": 24,
+      "key": "e42ebc6375ff76d40cec11fd94ec2195"
+    },
+    {
+      "line": 60,
+      "relation": "decreases",
+      "evidence": "RTK signaling potentiates GLI activity through PI3K-AKT-mediated GSK3 inactivation or RAS-STIL1-mediated SUFU inactivation, while GPCR signaling to Gs represses GLI activity through adenylate cyclase-mediated PKA activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19860666"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 17,
+      "target": 22,
+      "key": "e7cf318331cf11f72d9f99360300de3f"
+    },
+    {
+      "line": 10,
+      "relation": "decreases",
+      "evidence": "AKT activation resulted in the phosphorylation-dependent inactivation of glycogen synthase kinase (GSK-3) (serine 21/9).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11254732"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 4,
+      "target": 5,
+      "key": "f1c0ea02e59a8665199828ef16c100c8"
+    },
+    {
+      "line": 10,
+      "relation": "decreases",
+      "evidence": "RTK signaling potentiates GLI activity through PI3K-AKT-mediated GSK3 inactivation or RAS-STIL1-mediated SUFU inactivation, while GPCR signaling to Gs represses GLI activity through adenylate cyclase-mediated PKA activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19860666"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 4,
+      "target": 5,
+      "key": "32fe6dd484ac171eb05f5d2525fb6d36"
+    },
+    {
+      "line": 29,
+      "relation": "decreases",
+      "evidence": "RTK signaling potentiates GLI activity through PI3K-AKT-mediated GSK3 inactivation or RAS-STIL1-mediated SUFU inactivation, while GPCR signaling to Gs represses GLI activity through adenylate cyclase-mediated PKA activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19860666"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 5,
+      "target": 24,
+      "key": "114c49ee64e03a681a84594bc8d065ea"
+    },
+    {
+      "line": 30,
+      "relation": "decreases",
+      "evidence": "RTK signaling potentiates GLI activity through PI3K-AKT-mediated GSK3 inactivation or RAS-STIL1-mediated SUFU inactivation, while GPCR signaling to Gs represses GLI activity through adenylate cyclase-mediated PKA activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19860666"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 5,
+      "target": 23,
+      "key": "e1a8484b5a6b9f2846d767c5c81214b3"
+    },
+    {
+      "line": 31,
+      "relation": "decreases",
+      "evidence": "RTK signaling potentiates GLI activity through PI3K-AKT-mediated GSK3 inactivation or RAS-STIL1-mediated SUFU inactivation, while GPCR signaling to Gs represses GLI activity through adenylate cyclase-mediated PKA activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19860666"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 5,
+      "target": 22,
+      "key": "35361ba23edd0573d2405c4e3c490280"
+    },
+    {
+      "line": 13,
+      "relation": "directlyDecreases",
+      "evidence": "Unlike most receptors, Ptc activity turns off the downstream signaling pathway in the absence of ligand, and binding of Hh relieves that repression. Smoothened (Smo), another transmembrane protein, acts downstream of Ptc and is an essential positive mediator of the Hh signal.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16339192"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 6,
+      "target": 30,
+      "key": "2f1b745e65f2502704045a3d136882b0"
+    },
+    {
+      "line": 26,
+      "relation": "decreases",
+      "evidence": "RTK signaling potentiates GLI activity through PI3K-AKT-mediated GSK3 inactivation or RAS-STIL1-mediated SUFU inactivation, while GPCR signaling to Gs represses GLI activity through adenylate cyclase-mediated PKA activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19860666"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 7,
+      "target": 23,
+      "key": "3acb13e1fde28b475c67df64d6d0e3ce"
+    },
+    {
+      "line": 27,
+      "relation": "decreases",
+      "evidence": "RTK signaling potentiates GLI activity through PI3K-AKT-mediated GSK3 inactivation or RAS-STIL1-mediated SUFU inactivation, while GPCR signaling to Gs represses GLI activity through adenylate cyclase-mediated PKA activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19860666"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 7,
+      "target": 24,
+      "key": "301cbfd9d1bf1f3744922485869b5621"
+    },
+    {
+      "line": 28,
+      "relation": "decreases",
+      "evidence": "RTK signaling potentiates GLI activity through PI3K-AKT-mediated GSK3 inactivation or RAS-STIL1-mediated SUFU inactivation, while GPCR signaling to Gs represses GLI activity through adenylate cyclase-mediated PKA activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19860666"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 7,
+      "target": 22,
+      "key": "86511ae47991fb9907054a109a158af7"
+    },
+    {
+      "line": 11,
+      "relation": "increases",
+      "evidence": "RTK signaling potentiates GLI activity through PI3K-AKT-mediated GSK3 inactivation or RAS-STIL1-mediated SUFU inactivation, while GPCR signaling to Gs represses GLI activity through adenylate cyclase-mediated PKA activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19860666"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 8,
+      "target": 10,
+      "key": "8c7f37f5152bc6575374f621db7d2a36"
+    },
+    {
+      "line": 50,
+      "relation": "negativeCorrelation",
+      "evidence": "HHIP silencing led to differential expression of 296 genes; enrichment for variants nominally associated with COPD was found.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23459001"
+      },
+      "annotations": {},
+      "source": 32,
+      "target": 12,
+      "key": "0b9427da902cdf58db6b08209b19ea4b"
+    },
+    {
+      "line": 50,
+      "relation": "negativeCorrelation",
+      "evidence": "We found significant reduction of hedgehog interacting protein (HHIP) in COPD compared with non-COPD fibroblasts...HHIP expression at both mRNA and protein levels is reduced in COPD lung tissues.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24487392"
+      },
+      "annotations": {},
+      "source": 32,
+      "target": 12,
+      "key": "5a84d42f021ece67c0f13ed53b695025"
+    },
+    {
+      "line": 52,
+      "relation": "decreases",
+      "evidence": "Compared to samples from control smokers, we detected significantly decreased expression of SHH, PTCH1, GLI1, GLI2, and GLI3 (Supplemental Figure 3) in lung tissue samples from COPD subjects.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23459001"
+      },
+      "annotations": {},
+      "source": 32,
+      "target": 22,
+      "key": "0c5882e2538f8f86554705ed0dbb61fa"
+    },
+    {
+      "line": 53,
+      "relation": "decreases",
+      "evidence": "Compared to samples from control smokers, we detected significantly decreased expression of SHH, PTCH1, GLI1, GLI2, and GLI3 (Supplemental Figure 3) in lung tissue samples from COPD subjects.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23459001"
+      },
+      "annotations": {},
+      "source": 32,
+      "target": 23,
+      "key": "4a7bf9662255905146695d1b3a091b5a"
+    },
+    {
+      "line": 54,
+      "relation": "decreases",
+      "evidence": "Compared to samples from control smokers, we detected significantly decreased expression of SHH, PTCH1, GLI1, GLI2, and GLI3 (Supplemental Figure 3) in lung tissue samples from COPD subjects.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23459001"
+      },
+      "annotations": {},
+      "source": 32,
+      "target": 24,
+      "key": "82ad70c69c5c88ba5721dc3b7281faab"
+    },
+    {
+      "line": 55,
+      "relation": "decreases",
+      "evidence": "Compared to samples from control smokers, we detected significantly decreased expression of SHH, PTCH1, GLI1, GLI2, and GLI3 (Supplemental Figure 3) in lung tissue samples from COPD subjects.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23459001"
+      },
+      "annotations": {},
+      "source": 32,
+      "target": 9,
+      "key": "cc66c1e139b00dafe067da4371d6356b"
+    },
+    {
+      "line": 56,
+      "relation": "decreases",
+      "evidence": "Compared to samples from control smokers, we detected significantly decreased expression of SHH, PTCH1, GLI1, GLI2, and GLI3 (Supplemental Figure 3) in lung tissue samples from COPD subjects.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23459001"
+      },
+      "annotations": {},
+      "source": 32,
+      "target": 30,
+      "key": "fa0ddd2b1e4fce07d3979d93bf76c827"
+    }
+  ]
+}

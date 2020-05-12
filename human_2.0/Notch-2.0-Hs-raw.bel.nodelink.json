@@ -1,0 +1,2684 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Notch-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Notch network depicts the causal mechanisms that regulate Notch signaling, which controls lung cell proliferation and differentiation through DLK1 (an upstream initiator of the Notch signaling pathway) and JAG1/2 (ligands for the Notch receptors)."
+    },
+    "namespace_url": {
+      "HGNC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-human-genes/hgnc-human-genes-20150601.belns",
+      "GOBP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20150601.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20150601.belns",
+      "GOCC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170511.belns",
+      "MESHPP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20150601.belns",
+      "MGI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20150601.belns",
+      "RGD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20150601.belns",
+      "CHEBI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20150601.belns",
+      "SCHEM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-chemicals/selventa-legacy-chemicals-20150601.belns",
+      "EGID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/entrez-gene-ids/entrez-gene-ids-20150601.belns",
+      "MESHD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20150601.belns",
+      "SDIS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-diseases/selventa-legacy-diseases-20150601.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20150601.belns",
+      "MESHC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170511.belns",
+      "GOBPID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process-ids/go-biological-process-ids-20150601.belns",
+      "GOCCID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component-ids/go-cellular-component-ids-20150601.belns",
+      "MESHCS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20150601.belns"
+    },
+    "namespace_pattern": {},
+    "annotation_url": {
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20150601.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20150601.belanno",
+      "Species": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+      "Tissue": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20150601.belanno"
+    },
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "Notch signaling pathway"
+      },
+      "id": "42dfbc927ee9e491aca8701481c67d4b",
+      "bel": "bp(GOBP:\"Notch signaling pathway\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "canonical Wnt signaling pathway"
+      },
+      "id": "374079f9e03edf4089f8762ae235b8b1",
+      "bel": "bp(GOBP:\"canonical Wnt signaling pathway\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "cell proliferation"
+      },
+      "id": "14a7545c48b4be2b5e986ded11b09652",
+      "bel": "bp(GOBP:\"cell proliferation\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "GOCC",
+        "name": "gamma-secretase complex"
+      },
+      "id": "1716524fce1dfce68b51b1081e049d6e",
+      "bel": "complex(GOCC:\"gamma-secretase complex\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "SCOMP",
+        "name": "Nfkb Complex"
+      },
+      "id": "c8f3260aaedabca7831d823ec3e87186",
+      "bel": "complex(SCOMP:\"Nfkb Complex\")"
+    },
+    {
+      "function": "Composite",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "GATA3"
+          },
+          "id": "9c1bf4561a6594ba84c7536c52a3aef0",
+          "bel": "p(HGNC:GATA3)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "NOTCH1"
+          },
+          "id": "27f2f587c4ffaeb8ec45fb9b21c7b8c5",
+          "bel": "p(HGNC:NOTCH1)"
+        }
+      ],
+      "id": "f4603cd5ca16b89071ce8735bbaee075",
+      "bel": "composite(p(HGNC:GATA3), p(HGNC:NOTCH1))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "EGID",
+        "name": "2475"
+      },
+      "id": "f19217621a7cfed01831e86b4fadecef",
+      "bel": "p(EGID:2475)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ADAM10"
+      },
+      "id": "2fd455c0d7ff57f87dfcff052a39ad50",
+      "bel": "p(HGNC:ADAM10)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ADAM17"
+      },
+      "id": "8351a14adf985bc7b6e72b7fea9a3f1d",
+      "bel": "p(HGNC:ADAM17)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "AKT1"
+      },
+      "id": "2fe8184c6afa461574b1e1fba8b00dab",
+      "bel": "p(HGNC:AKT1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "BACE1"
+      },
+      "id": "334dd03e9a5f223f13995e497b1c156e",
+      "bel": "p(HGNC:BACE1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CD163"
+      },
+      "id": "7a4ce4552870e57e513aea99fdc5e600",
+      "bel": "p(HGNC:CD163)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CTNNB1"
+      },
+      "id": "4bd0b8cd92c762d4a8c78aec03f7c0b4",
+      "bel": "p(HGNC:CTNNB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "DLK1"
+      },
+      "id": "daedb2c580dad1266b2dac9b79fbd969",
+      "bel": "p(HGNC:DLK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "E2F1"
+      },
+      "id": "5314a5235c40b2ce06fd3841a46b5f12",
+      "bel": "p(HGNC:E2F1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "FOXP3"
+      },
+      "id": "c7d84ece4399b8a2d71b1963911d1875",
+      "bel": "p(HGNC:FOXP3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GATA3"
+      },
+      "id": "9c1bf4561a6594ba84c7536c52a3aef0",
+      "bel": "p(HGNC:GATA3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GSK3B"
+      },
+      "id": "8eaf29c9e491ff4e49619e77de92467c",
+      "bel": "p(HGNC:GSK3B)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HES1"
+      },
+      "id": "4d90fd15325d49b46d0f425a4f3516f4",
+      "bel": "p(HGNC:HES1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HES5"
+      },
+      "id": "c71b30b6b2cc20d727a8e5ffa3c56530",
+      "bel": "p(HGNC:HES5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL4"
+      },
+      "id": "4bf986cc68574441e53aac56e3621b28",
+      "bel": "p(HGNC:IL4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "JAG1"
+      },
+      "id": "d05e52ff4552706dde9ec17ab0e60d02",
+      "bel": "p(HGNC:JAG1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "JAG2"
+      },
+      "id": "148ebd204df9479a0878904a61e8967a",
+      "bel": "p(HGNC:JAG2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MTOR"
+      },
+      "id": "a2450afd51fecb876f80e78722f0ba96",
+      "bel": "p(HGNC:MTOR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MYC"
+      },
+      "id": "8c05a82e1b8591c8a3d254aa5d1dd3ee",
+      "bel": "p(HGNC:MYC)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NOTCH1"
+      },
+      "id": "27f2f587c4ffaeb8ec45fb9b21c7b8c5",
+      "bel": "p(HGNC:NOTCH1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NOTCH2"
+      },
+      "id": "f9b2752198d1977a2e146893df30ba1e",
+      "bel": "p(HGNC:NOTCH2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NOTCH3"
+      },
+      "id": "01e20f928b4f1f5181b1a7d2c769c114",
+      "bel": "p(HGNC:NOTCH3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NOTCH4"
+      },
+      "id": "ef08f0f6ae82dbd2c517125648a7f6ff",
+      "bel": "p(HGNC:NOTCH4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NR2F2"
+      },
+      "id": "798eeafda05167417cf02aef674bc97a",
+      "bel": "p(HGNC:NR2F2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SMAD3"
+      },
+      "id": "2f743161af902b8f862629700c7c12c3",
+      "bel": "p(HGNC:SMAD3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SMAD3"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          }
+        }
+      ],
+      "id": "6fb7b00528e061f14e9f868d532d2da4",
+      "bel": "p(HGNC:SMAD3, pmod(Ph))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT3"
+      },
+      "id": "9523cd88bdb7daf4a0aaf38eb43fbe28",
+      "bel": "p(HGNC:STAT3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT3"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Tyr",
+          "pos": 705
+        }
+      ],
+      "id": "e0dbff8a42c08f64584e5316ee69c317",
+      "bel": "p(HGNC:STAT3, pmod(Ph, Tyr, 705))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TGFB1"
+      },
+      "id": "f1f493c4771241860fc73aaa3bfdad66",
+      "bel": "p(HGNC:TGFB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TP63"
+      },
+      "id": "9d9ee1aa7306e7ab68299fb8d85bc467",
+      "bel": "p(HGNC:TP63)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "MGI",
+        "name": "Cdkn1b"
+      },
+      "id": "847d5916aa83527579df68f06c0b671b",
+      "bel": "p(MGI:Cdkn1b)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "MGI",
+        "name": "Cdkn1c"
+      },
+      "id": "b6fd52d24a932affc68e824ff807fe11",
+      "bel": "p(MGI:Cdkn1c)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "chemokine"
+      },
+      "id": "a4d4cd49f1ca87c1c0ff51e66e75fb79",
+      "bel": "p(SCHEM:chemokine)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "MAPK Erk1/2 Family"
+      },
+      "id": "a47b4828e1ed77dffa46258b02c5d36a",
+      "bel": "p(SFAM:\"MAPK Erk1/2 Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "NOTCH Family"
+      },
+      "id": "9c205c7513af6337c2e1ef4e608d0a94",
+      "bel": "p(SFAM:\"NOTCH Family\")"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "MESHD",
+        "name": "Pulmonary Disease, Chronic Obstructive"
+      },
+      "id": "7c231d4db4388a89f9bcabb26d912509",
+      "bel": "path(MESHD:\"Pulmonary Disease, Chronic Obstructive\")"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HEY2"
+      },
+      "id": "37e49086d9d484925995b800aeeb84ff",
+      "bel": "r(HGNC:HEY2)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NOTCH1"
+      },
+      "id": "06745731a762464f2405f3263d771a3c",
+      "bel": "r(HGNC:NOTCH1)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NOTCH3"
+      },
+      "id": "24443bef69dcf8ecb07f0639946dabed",
+      "bel": "r(HGNC:NOTCH3)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TBX21"
+      },
+      "id": "7931a23cfe95ccaf6dbb49a28fb64158",
+      "bel": "r(HGNC:TBX21)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "MGI",
+        "name": "Cdkn1c"
+      },
+      "id": "830dc285ccf986d78454a4a9ddcde52c",
+      "bel": "r(MGI:Cdkn1c)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "NOTCH Family"
+      },
+      "id": "460244db07c73fb930f06013a3d741fc",
+      "bel": "r(SFAM:\"NOTCH Family\")"
+    }
+  ],
+  "links": [
+    {
+      "line": 0,
+      "relation": "increases",
+      "evidence": "Microarray data indicates that MICAL2 and NOTCH2 are upregulated in the resected lung tissue of COPD patients [5]; the expression of these genes was higher in the COPD group than in the control group in the present study[RNA-seq].",
+      "citation": {
+        "db": "Other",
+        "db_id": "25834810"
+      },
+      "annotations": {
+        "Disease": {
+          "COPD": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 26,
+      "key": "04681e4c0f1340507cd2e6eb38e026a7"
+    },
+    {
+      "line": 11,
+      "relation": "positiveCorrelation",
+      "evidence": "Consistent with these findings, expression levels of activated NOTCH1 and the effector gene HEY2 are enhanced in patients with chronic obstructive pulmonary disease.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23213461"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung mesenchyme": true
+        },
+        "Cell": {
+          "Clara cells": true
+        }
+      },
+      "source": 41,
+      "target": 42,
+      "key": "57c5858be7514c467961f5977f5e8585"
+    },
+    {
+      "line": 12,
+      "relation": "negativeCorrelation",
+      "evidence": "Down-regulation of the canonical Wnt β-catenin pathway in the airway epithelium of healthy smokers and smokers with COPD.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21490961"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "airway epithelium": true
+        }
+      },
+      "source": 41,
+      "target": 1,
+      "key": "7f8cb037725640c831886f577787866f"
+    },
+    {
+      "line": 13,
+      "relation": "negativeCorrelation",
+      "evidence": "Down-regulation of the notch pathway in human airway epithelium in association with smoking and chronic obstructive pulmonary disease.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19106307"
+      },
+      "annotations": {
+        "Disease": {
+          "COPD": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "airway epithelium": true
+        }
+      },
+      "source": 41,
+      "target": 0,
+      "key": "864e0f107a2a42c6e21ac93798ba6da3"
+    },
+    {
+      "line": 28,
+      "relation": "positiveCorrelation",
+      "evidence": "Consistent with these findings, expression levels of activated NOTCH1 and the effector gene HEY2 are enhanced in patients with chronic obstructive pulmonary disease.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23213461"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung mesenchyme": true
+        },
+        "Cell": {
+          "Clara cells": true
+        }
+      },
+      "source": 41,
+      "target": 43,
+      "key": "c8c475a4652cc87756c64837a69de14f"
+    },
+    {
+      "line": 1,
+      "relation": "positiveCorrelation",
+      "evidence": "Knockdown of p63 led to down-regulation of MYC via the Wnt/β-catenin and Notch signaling pathways and in turn reduced keratinocyte proliferation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "22184109"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 35,
+      "target": 24,
+      "key": "160dc41f0cea4eb1320468d197b6f0ba"
+    },
+    {
+      "line": 2,
+      "relation": "directlyIncreases",
+      "evidence": "The expression of E2F transcription factor 1 (E2F1), a key transcription factor that regulates the expression of cell cycle regulators, is reduced in the absence of COUP-TFII. Using chromatin immunoprecipitation experiments, we showed that COUP-TFII directly regulates the expression of E2F1 through tethering to the Sp1 binding sites in the promoter of E2F1 to modulate cell proliferation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "22734039"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 29,
+      "target": 14,
+      "key": "8ea56afacf549e19d74041d50e71d869"
+    },
+    {
+      "line": 1,
+      "relation": "positiveCorrelation",
+      "evidence": "Knockdown of p63 led to down-regulation of MYC via the Wnt/β-catenin and Notch signaling pathways and in turn reduced keratinocyte proliferation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "22184109"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 24,
+      "target": 35,
+      "key": "25c6b5151e70c89b2d834361cf7da30a"
+    },
+    {
+      "line": 3,
+      "relation": "association",
+      "evidence": "This characterization provides biochemical evidence that the Jag1-Notch pathway is under the control of BACE1 activity",
+      "citation": {
+        "db": "Other",
+        "db_id": "24907271"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "pep"
+        }
+      },
+      "source": 10,
+      "target": 21,
+      "key": "3a8263b058b91aa671cb9a1d38f04ba5"
+    },
+    {
+      "line": 4,
+      "relation": "increases",
+      "evidence": "We show that NOTCH2 and NOTCH3 signaling can be triggered by both Delta-Jagged-type ligands and requires ADAM10 and presenilin-1 or -2.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24842903"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 7,
+      "target": 27,
+      "key": "4d7e915c1aab7dd9bf87ca60df66d094"
+    },
+    {
+      "line": 5,
+      "relation": "directlyIncreases",
+      "evidence": "Here, we dissect the proteolytic activation mechanism of the NOTCH2 and NOTCH3 receptors. We show that NOTCH2 and NOTCH3 signaling can be triggered by both Delta-Jagged-type ligands and requires ADAM10 and presenilin-1 or -2",
+      "citation": {
+        "db": "Other",
+        "db_id": "24842903"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 7,
+      "target": 26,
+      "key": "2ce126abb93a5a26a32076e83b38c916"
+    },
+    {
+      "line": 6,
+      "relation": "association",
+      "evidence": "Here, we describe the identification of four distinct AKT phosphorylation sites in human Notch4-ICD and demonstrate that AKT binds Notch4-ICD and phosphorylates all four sites in vitro and in vivo.",
+      "citation": {
+        "db": "Other",
+        "db_id": "25740432"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 28,
+      "key": "0555281ff63269495340cda892b9cc93"
+    },
+    {
+      "line": 7,
+      "relation": "increases",
+      "evidence": "The Notch1 receptor is presented at the cell membrane as a heterodimer after constitutive processing by a furin-like convertase. Ligand binding induces the proteolytic release of Notch intracellular domain by a gamma-secretase-like activity. This domain translocates to the nucleus and interacts with the DNA-binding protein CSL, resulting in transcriptional activation of target genes. Here we show that an additional processing event occurs in the extracellular part of the receptor, preceding cleavage by the gamma-secretase-like activity. Purification of the activity accounting for this cleavage in vitro shows that it is due to TACE (TNFalpha-converting enzyme),",
+      "citation": {
+        "db": "Other",
+        "db_id": "10882063"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "monocytic precursor cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 8,
+      "target": 25,
+      "key": "4fb4ba6782c0dde36e70a79d03091b72"
+    },
+    {
+      "line": 8,
+      "relation": "increases",
+      "evidence": "Becauses ADAM17 is the enzyme responsible for shedding membrane-bound CD163, its inhibition may be a potential therapeutic strategy after SAH.",
+      "citation": {
+        "db": "Other",
+        "db_id": "25366599"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 8,
+      "target": 11,
+      "key": "1796770c8dbd93409bff30b8608ecc60"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 30,
+      "target": 31,
+      "key": "fb41f04bb2d509e66f7babca40692643"
+    },
+    {
+      "line": 9,
+      "relation": "increases",
+      "evidence": "Notch1 associated with the −10 kb exon 1a CSL-binding site of Gata3....Therefore, the ability of Notch to induce IL-4 depends on GATA-3 activity...The dependence of Notch on GATA-3 was consistent\nwith a synergistic effect observed between Notch and GATA-3 in promoting IL-4 expression.",
+      "citation": {
+        "db": "Other",
+        "db_id": "20065998"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "T cells": true
+        }
+      },
+      "source": 5,
+      "target": 20,
+      "key": "669f88c304101ceef4caa328c476a026"
+    },
+    {
+      "relation": "partOf",
+      "source": 16,
+      "target": 5,
+      "key": "e6ade27b08515bb7a60eba9f44046c43"
+    },
+    {
+      "relation": "partOf",
+      "source": 25,
+      "target": 5,
+      "key": "e240417aa1a808f07fc371a603723094"
+    },
+    {
+      "line": 30,
+      "relation": "increases",
+      "evidence": "In this issue of Cell Stem Cell, Wang et al. (2014) describe a signaling axis present in bone marrow stromal cells that suppresses inflammation and myeloid expansions. Loss of endothelial Notch signaling leads to deregulation of miR-155 expression, activation of NF-kB, and increased proinflammatory cytokine production, which promotes a myeloproliferative phenotype.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24996160"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "bone marrow stromal cells": true
+        }
+      },
+      "source": 25,
+      "target": 4,
+      "key": "388e1d44afbf997bcdf86e6d8ba29d12"
+    },
+    {
+      "line": 30,
+      "relation": "increases",
+      "evidence": "Norisoboldine suppresses VEGF-induced endothelial cell migration via the cAMP-PKA-NF-κB/Notch1 pathway.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24349042"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "endothelial cells": true
+        }
+      },
+      "source": 25,
+      "target": 4,
+      "key": "447f51f0b86b0025b76f9c7abeefef1f"
+    },
+    {
+      "line": 30,
+      "relation": "increases",
+      "evidence": "We showed that epithelial NOTCH1 controls the immune function of the epithelium through crosstalk with the nuclear factor kB ....",
+      "citation": {
+        "db": "Other",
+        "db_id": "24424521"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 25,
+      "target": 4,
+      "key": "1c1356133049cce15d950c4c3c0cefbf"
+    },
+    {
+      "line": 31,
+      "relation": "association",
+      "evidence": "Signaling through Notch receptors has been implicated in the control of cellular differentiation in animals ranging from nematodes to humans. Starting from a human expressed sequence tag-containing sequence resembling that of Serrate, the gene for a ligand of Drosophila melanogaster Notch, we assembled a full-length cDNA, now called human Jagged2, from overlapping cDNA clones. The full-length cDNA encodes a polypeptide having extensive sequence homology to Serrate (40.6% identity and 58.7% similarity) and even greater homology to several putative mammalian Notch ligands that have subsequently been described. When in situ hybridization was performed, expression of the murine Jagged2 homolog was found to be highest in fetal thymus, epidermis, foregut, dorsal root ganglia, and inner ear. In Northern blot analysis of RNA from tissues of 2-week-old mice, the 5.0-kb Jagged2 transcript was most abundant in heart, lung, thymus, skeletal muscle, brain, and testis. Immunohistochemistry revealed coexpression of Jagged2 and Notch1 within thymus and other fetal murine tissues, consistent with interaction of the two proteins in vivo. Coculture of fibroblasts expressing human Jagged2 with murine C2C12 myoblasts inhibited myogenic differentiation, accompanied by increased Notch1 and the appearance of a novel 115-kDa Notch1 fragment. Exposure of C2C12 cells to Jagged2 led to increased amounts of Notch mRNA as well as mRNAs for a second Notch receptor, Notch3, and a second Notch ligand, Jagged1. Constitutively active forms of Notchl in C2C12 cells also induced increased levels of the same set of mRNAs, suggesting positive feedback control of these genes initiated by binding of Jagged2 to Notch1. This feedback control may function in vivo to coordinate differentiation across certain groups of progenitor cells adopting identical cell fates.",
+      "citation": {
+        "db": "Other",
+        "db_id": "9315665"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 25,
+      "target": 22,
+      "key": "eb91924c36dc2203bc93915522979b22"
+    },
+    {
+      "line": 31,
+      "relation": "association",
+      "evidence": "Delta1, Jagged1, and Jagged2, commonly designated Delta/Serrate/LAG-2 (DSL) proteins, are known to be ligands for Notch1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "10958687"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 25,
+      "target": 22,
+      "key": "d304fe9d92ae6ce73e0ecb061546aa41"
+    },
+    {
+      "line": 33,
+      "relation": "increases",
+      "evidence": "retroviral expression of an activated allele of Notch1 (ICN1) potently induced (>50-fold) IL-4\nwhen introduced into CD4+ T cells",
+      "citation": {
+        "db": "Other",
+        "db_id": "17658278"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "CD4(+) T": true
+        }
+      },
+      "source": 25,
+      "target": 20,
+      "key": "7c049bd13f9093a3ddc3fdaa5f0d6aa4"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "expression of activated Notch1 restored Tbx21 transcription",
+      "citation": {
+        "db": "Other",
+        "db_id": "15991363"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 25,
+      "target": 45,
+      "key": "c65cbf9ade0276ba4cb53c2324608088"
+    },
+    {
+      "line": 35,
+      "relation": "directlyIncreases",
+      "evidence": "Moreover, specific genes involved in cell growth control have been identified as Notch1 transcriptional targets, i.e. Cyclin D1 and c-Myc.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18991739"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "142cb60b0d387de7a3e701ceebe670bf"
+    },
+    {
+      "line": 35,
+      "relation": "directlyIncreases",
+      "evidence": "As for the mechanism of c-myc induction by Notch1, we found that activated forms of Notch1 (NotchIC) and its downstream effector recombination signal-binding protein-J kappa (RBP-VP16) can activate the c-myc promoter through the element between -195 bp and -161 bp by inducing the DNA-binding complex. Together, these results suggest that c-Myc can support self-renewal of HSCs as a downstream mediator of Notch and HOXB4.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15067010"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "8559bf5d99ceb5049eb57cf3c1759776"
+    },
+    {
+      "line": 36,
+      "relation": "association",
+      "evidence": "The 4 Notch receptors play distinct and antagonistic roles in the proliferation and hepatocytic differentiation of liver progenitors.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24145721"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 25,
+      "target": 40,
+      "key": "5cc311a4ae7eebe1b7f9b5604affbf90"
+    },
+    {
+      "line": 38,
+      "relation": "increases",
+      "evidence": "Western blot analysis showed that Notch induced the phosphorylation of Smad3",
+      "citation": {
+        "db": "Other",
+        "db_id": "21749980"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Cell": {
+          "alveolar epithelial cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 31,
+      "key": "4643c6a5043bcf719eb8c61be6e021c8"
+    },
+    {
+      "line": 56,
+      "relation": "association",
+      "evidence": "Delta1, Jagged1, and Jagged2, commonly designated Delta/Serrate/LAG-2 (DSL) proteins, are known to be ligands for Notch1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "10958687"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 25,
+      "target": 13,
+      "key": "076a941e35fbf4ab8df43169650d5572"
+    },
+    {
+      "line": 59,
+      "relation": "association",
+      "evidence": "n addition, the Notch-1 ligands Jagged-1 and Delta-like-4 and the downstream Notch-1 target Hes-1 were increased in abundance and activated in human brain arteriovenous malformations. Finally, increased angiogenesis was found in adult rats treated with a Notch-1 activator.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19812212"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 25,
+      "target": 21,
+      "key": "4ec116665182a681da1f7801b93a818c"
+    },
+    {
+      "line": 59,
+      "relation": "association",
+      "evidence": "Delta1, Jagged1, and Jagged2, commonly designated Delta/Serrate/LAG-2 (DSL) proteins, are known to be ligands for Notch1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "10958687"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 25,
+      "target": 21,
+      "key": "0e66e8da66993b756f390bb015dc4153"
+    },
+    {
+      "line": 59,
+      "relation": "association",
+      "evidence": "Radiosurgery suppressed the interaction events between Notch1 receptor and Jagged1 (p < 0.001) as well as Notch4 receptor and Jagged1 (p < 0.001) in the endothelial cells of nidus vessels in the AVF rats over a period of 42 days postradiosurgery.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24410155"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "nidus vessels": true
+        },
+        "Cell": {
+          "endothelial cells": true
+        }
+      },
+      "source": 25,
+      "target": 21,
+      "key": "26af8150e830da4d5b9f6508442855eb"
+    },
+    {
+      "line": 59,
+      "relation": "association",
+      "evidence": "To generate tools for pursuing the role of the Notch pathway in human disease and development, we have cloned and analyzed the expression of three human homologues of the Notch ligands Delta and Serrate, human Jagged1 (HJ1), human Jagged2 (HJ2), and human Delta1 (H-Delta-1), and determined their chromosomal localizations.",
+      "citation": {
+        "db": "Other",
+        "db_id": "10079256"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 25,
+      "target": 21,
+      "key": "9119e6d04b727bd4c561fd2280f71d4b"
+    },
+    {
+      "line": 10,
+      "relation": "increases",
+      "evidence": "ligand-activated signaling through the endogenous Notch1 receptor was reduced in GSK3beta null fibroblasts, implying a positive role for GSK3beta in mammalian Notch signaling.\nmouse",
+      "citation": {
+        "db": "Other",
+        "db_id": "12123574"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "fibroblast": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 17,
+      "target": 25,
+      "key": "0434a9a1e7bae8a9b98afc322d7e0239"
+    },
+    {
+      "line": 11,
+      "relation": "positiveCorrelation",
+      "evidence": "Consistent with these findings, expression levels of activated NOTCH1 and the effector gene HEY2 are enhanced in patients with chronic obstructive pulmonary disease.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23213461"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung mesenchyme": true
+        },
+        "Cell": {
+          "Clara cells": true
+        }
+      },
+      "source": 42,
+      "target": 41,
+      "key": "ebd21a11d1a0289f723b52ea8babd05b"
+    },
+    {
+      "line": 12,
+      "relation": "negativeCorrelation",
+      "evidence": "Down-regulation of the canonical Wnt β-catenin pathway in the airway epithelium of healthy smokers and smokers with COPD.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21490961"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "airway epithelium": true
+        }
+      },
+      "source": 1,
+      "target": 41,
+      "key": "208cd11eb2ffd13575be895a9b85ecc9"
+    },
+    {
+      "line": 13,
+      "relation": "negativeCorrelation",
+      "evidence": "Down-regulation of the notch pathway in human airway epithelium in association with smoking and chronic obstructive pulmonary disease.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19106307"
+      },
+      "annotations": {
+        "Disease": {
+          "COPD": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "airway epithelium": true
+        }
+      },
+      "source": 0,
+      "target": 41,
+      "key": "acb8ab7d8b5feccc3ede25221d2d16a1"
+    },
+    {
+      "line": 14,
+      "relation": "increases",
+      "evidence": "Notch receptors are processed by gamma-secretase acting in synergy with T cell receptor signaling to sustain peripheral T cell activation. Activated CD4+ T cells differentiate into T helper type 1 (TH1) or TH2 subsets. Molecular cues directing TH1 differentiation include expression of the TH1-specific transcription factor T-bet, encoded by Tbx21. However, the regulation of Tbx21 remains incompletely defined. Here we report that Notch1 can directly regulate Tbx21 through complexes formed on the Tbx21 promoter. In vitro, gamma-secretase inhibitors extinguished expression of Notch, interferon-gamma and Tbx21 in TH1-polarized CD4+ cells, whereas ectopic expression of activated Notch1 restored Tbx21 transcription.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15991363"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 3,
+      "target": 25,
+      "key": "b88ccb95353210aa2741499e4f66c01b"
+    },
+    {
+      "line": 15,
+      "relation": "increases",
+      "evidence": "In vitro, gamma-secretase inhibitors extinguished expression of Notch, interferon-gamma and Tbx21 in TH1-polarized CD4+ cells, whereas ectopic expression of activated Notch1 restored Tbx21 transcription.",
+      "citation": {
+        "db": "Other",
+        "db_id": ""
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 3,
+      "target": 47,
+      "key": "943d0648276d6618aa2453a7754fe103"
+    },
+    {
+      "line": 15,
+      "relation": "increases",
+      "evidence": "Thus, using gamma-secretase inhibitors to modulate Notch signaling may prove beneficial in treating TH1-mediated autoimmunity.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15991363"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 3,
+      "target": 47,
+      "key": "2871721742a4fc14973342a834643e9a"
+    },
+    {
+      "line": 16,
+      "relation": "increases",
+      "evidence": "Conversely, Notch3-expressing cells proliferate less and express 3-fold higher levels of p57(Kip2).",
+      "citation": {
+        "db": "Other",
+        "db_id": "24145721"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 44,
+      "target": 46,
+      "key": "55b530d108316c865b8670636b28c0da"
+    },
+    {
+      "line": 46,
+      "relation": "association",
+      "evidence": "Conversely, Notch3-expressing cells proliferate less and express 3-fold higher levels of p57(Kip2). The Notch3 cells present a hepatocyte-like morphology, enhanced multinucleation, and a ploidy shift. Moreover, Notch3 activity is conducive to hepatocytic differentiation in vitro, while its paralogs impede this fate.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24145721"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 44,
+      "target": 40,
+      "key": "437628bbc80bca8eb4ebb2880dcd9c4f"
+    },
+    {
+      "line": 6,
+      "relation": "association",
+      "evidence": "Here, we describe the identification of four distinct AKT phosphorylation sites in human Notch4-ICD and demonstrate that AKT binds Notch4-ICD and phosphorylates all four sites in vitro and in vivo.",
+      "citation": {
+        "db": "Other",
+        "db_id": "25740432"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 28,
+      "target": 9,
+      "key": "58db5b107d2063989150ad94c2d86c89"
+    },
+    {
+      "line": 17,
+      "relation": "association",
+      "evidence": "Here, we investigate the role of the 4 mammalian Notch paralogs in the regulation of hepatoblast proliferation and hepatocytic differentiation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24145721"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 28,
+      "target": 40,
+      "key": "22254cc1811a1454af65a0a10b246406"
+    },
+    {
+      "line": 18,
+      "relation": "decreases",
+      "evidence": "This assay demonstrates that proliferation of BMEL cells requires Notch2 and Notch4 activity, resulting in significant down-regulation of p27(Kip1) and p57(Kip2) cyclin-dependent kinase inhibitors.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24145721"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 28,
+      "target": 36,
+      "key": "0906d7ba9c33439c07134d6b74536ec7"
+    },
+    {
+      "line": 19,
+      "relation": "decreases",
+      "evidence": "This assay demonstrates that proliferation of BMEL cells requires Notch2 and Notch4 activity, resulting in significant down-regulation of p27(Kip1) and p57(Kip2) cyclin-dependent kinase inhibitors.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24145721"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 28,
+      "target": 37,
+      "key": "d40b03e7c8bf556fd0b2d104924b20bc"
+    },
+    {
+      "line": 20,
+      "relation": "directlyDecreases",
+      "evidence": "Depletion of Notch4 in shear-stimulated PTECs eventually increases the levels of active TGF-β1 protein by approximately fivefold",
+      "citation": {
+        "db": "Other",
+        "db_id": "23576639"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 28,
+      "target": 34,
+      "key": "80a9197097eaa43007c7485be3911fe1"
+    },
+    {
+      "line": 60,
+      "relation": "association",
+      "evidence": "Radiosurgery suppressed the interaction events between Notch1 receptor and Jagged1 (p < 0.001) as well as Notch4 receptor and Jagged1 (p < 0.001) in the endothelial cells of nidus vessels in the AVF rats over a period of 42 days postradiosurgery.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24410155"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "nidus vessels": true
+        },
+        "Cell": {
+          "endothelial cells": true
+        }
+      },
+      "source": 28,
+      "target": 21,
+      "key": "59d80ccb253e7d76892da2acaf679e8a"
+    },
+    {
+      "line": 21,
+      "relation": "decreases",
+      "evidence": "This assay demonstrates that proliferation of BMEL cells requires Notch2 and Notch4 activity, resulting in significant down-regulation of p27(Kip1) and p57(Kip2) cyclin-dependent kinase inhibitors.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24145721"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 26,
+      "target": 37,
+      "key": "4d79a4169208aafa2656674199019457"
+    },
+    {
+      "line": 22,
+      "relation": "association",
+      "evidence": "The 4 Notch receptors play distinct and antagonistic roles in the proliferation and hepatocytic differentiation of liver progenitors.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24145721"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 26,
+      "target": 40,
+      "key": "9ff401758083239a1bfda030f1a2ed81"
+    },
+    {
+      "line": 23,
+      "relation": "decreases",
+      "evidence": "This assay demonstrates that proliferation of BMEL cells requires Notch2 and Notch4 activity, resulting in significant down-regulation of p27(Kip1) and p57(Kip2) cyclin-dependent kinase inhibitors.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24145721"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 26,
+      "target": 36,
+      "key": "8986193837a2e23672f66d35bcbd81c0"
+    },
+    {
+      "line": 55,
+      "relation": "association",
+      "evidence": "Delta1, Jagged1, and Jagged2....Together, these data indicate that all of these DSL proteins function as ligands for Notch2. Moreover, the findings of rapid cleavage, nuclear translocation, and phosphorylation of Notch2 after ligand binding facilitate the understanding of the Notch signaling.",
+      "citation": {
+        "db": "Other",
+        "db_id": "10958687"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 26,
+      "target": 13,
+      "key": "ad7c261683124d7d7be09d15d3815ad0"
+    },
+    {
+      "line": 61,
+      "relation": "association",
+      "evidence": "In this report, we investigated these issues for Notch2. All of the three DSL proteins bound to endogenous Notch2 on the surface of BaF3 cells, although characteristics of Jagged2 for binding to Notch2 apparently differed from that of Delta1 and Jagged1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "10958687"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Ba/F3, a murine interleukin-3 dependent pro-B cell line": true
+        }
+      },
+      "source": 26,
+      "target": 21,
+      "key": "8ff38f17edc051617e2bd90cc8637627"
+    },
+    {
+      "line": 70,
+      "relation": "association",
+      "evidence": "In this report, we investigated these issues for Notch2. All of the three DSL proteins bound to endogenous Notch2 on the surface of BaF3 cells, although characteristics of Jagged2 for binding to Notch2 apparently differed from that of Delta1 and Jagged1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "10958687"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Ba/F3, a murine interleukin-3 dependent pro-B cell line": true
+        }
+      },
+      "source": 26,
+      "target": 22,
+      "key": "5af1494496a135a93feb3563c83153a2"
+    },
+    {
+      "line": 44,
+      "relation": "association",
+      "evidence": "Furthermore, emerging evidence provides new insight into the control of mTOR by other pathways such as Hippo, WNT and Notch signalling. Together, this progress has expanded the list of downstream effectors and upstream regulators of mTOR signalling.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24556838"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 23,
+      "target": 40,
+      "key": "84650e76ba78c800fdf25ab87f1c61aa"
+    },
+    {
+      "line": 24,
+      "relation": "association",
+      "evidence": "Notch-1 expression modulates mucosal chemokine and cytokine secretion, and FoxP3 and effector T-cell responses.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24424521"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "intestinal epithelial cells": true
+        }
+      },
+      "source": 38,
+      "target": 43,
+      "key": "97ea83d8942c941e13d54353fad7ec26"
+    },
+    {
+      "line": 25,
+      "relation": "association",
+      "evidence": "Notch-1 expression modulates mucosal chemokine and cytokine secretion, and FoxP3 and effector T-cell responses.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24424521"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "intestinal epithelial cells": true
+        }
+      },
+      "source": 15,
+      "target": 43,
+      "key": "5f209411de8ab519e806cb56ff0ecef5"
+    },
+    {
+      "line": 24,
+      "relation": "association",
+      "evidence": "Notch-1 expression modulates mucosal chemokine and cytokine secretion, and FoxP3 and effector T-cell responses.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24424521"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "intestinal epithelial cells": true
+        }
+      },
+      "source": 43,
+      "target": 38,
+      "key": "63dd17549678988383e6d58ff639097a"
+    },
+    {
+      "line": 25,
+      "relation": "association",
+      "evidence": "Notch-1 expression modulates mucosal chemokine and cytokine secretion, and FoxP3 and effector T-cell responses.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24424521"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "intestinal epithelial cells": true
+        }
+      },
+      "source": 43,
+      "target": 15,
+      "key": "91eb71864c24ea6f0a1aee910b94c80e"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "We showed that epithelial Notch-1 controls the immune function of the epithelium through crosstalk with the nuclear factor-κB (NF-κB)/mitogen-activated protein kinase (MAPK) pathways that, in turn, elicits T-cell responses",
+      "citation": {
+        "db": "Other",
+        "db_id": "24424521"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "epithelial": true
+        }
+      },
+      "source": 43,
+      "target": 39,
+      "key": "5db946d8c2d20118366735066d8ce10a"
+    },
+    {
+      "line": 27,
+      "relation": "increases",
+      "evidence": "We showed that epithelial Notch-1 controls the immune function of the epithelium through crosstalk with the nuclear factor-κB (NF-κB)/mitogen-activated protein kinase (MAPK) pathways that, in turn, elicits T-cell responses.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24424521"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 43,
+      "target": 4,
+      "key": "4f8d1d812d35975614cd9bec1e1ded83"
+    },
+    {
+      "line": 28,
+      "relation": "positiveCorrelation",
+      "evidence": "Consistent with these findings, expression levels of activated NOTCH1 and the effector gene HEY2 are enhanced in patients with chronic obstructive pulmonary disease.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23213461"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung mesenchyme": true
+        },
+        "Cell": {
+          "Clara cells": true
+        }
+      },
+      "source": 43,
+      "target": 41,
+      "key": "c463889323e82412fa45768214d8251c"
+    },
+    {
+      "line": 29,
+      "relation": "increases",
+      "evidence": "In vitro, gamma-secretase inhibitors extinguished expression of Notch, interferon-gamma and Tbx21 in TH1-polarized CD4+ cells, whereas ectopic expression of activated Notch1 restored Tbx21 transcription.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15991363"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 43,
+      "target": 45,
+      "key": "f19c1d3af0c1aca452a31ec9bdc1ccd6"
+    },
+    {
+      "line": 43,
+      "relation": "association",
+      "evidence": "We utilized in vivo and in vitro knockdown to target the expression of Notch-1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24424521"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "intestinal epithelial cells": true
+        }
+      },
+      "source": 43,
+      "target": 40,
+      "key": "e7bafddbf9945071ae80102a1c2aa55e"
+    },
+    {
+      "line": 43,
+      "relation": "association",
+      "evidence": "We identified that epithelial Notch-1 is required for appropriate activation of intestinal epithelial cells at steady state and upon inflammatory stimulus.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24424521"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 43,
+      "target": 40,
+      "key": "e902434765c23a52c61c579f318cd034"
+    },
+    {
+      "line": 40,
+      "relation": "decreases",
+      "evidence": "\u0001β-Catenin decreased Dlk1 promoter activity in a dose-dependent manner, and the addition of PTN further reduced the Dlk1 promoter activity.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19661059"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "fetal lung": true
+        }
+      },
+      "source": 12,
+      "target": 13,
+      "key": "553d398ad3663be92344d3ce06a824e3"
+    },
+    {
+      "line": 17,
+      "relation": "association",
+      "evidence": "Here, we investigate the role of the 4 mammalian Notch paralogs in the regulation of hepatoblast proliferation and hepatocytic differentiation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24145721"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 40,
+      "target": 28,
+      "key": "e60162db34d25e7b24384969a1bdf428"
+    },
+    {
+      "line": 22,
+      "relation": "association",
+      "evidence": "The 4 Notch receptors play distinct and antagonistic roles in the proliferation and hepatocytic differentiation of liver progenitors.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24145721"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 40,
+      "target": 26,
+      "key": "c26e910b1bad7e847bf94206675cdee1"
+    },
+    {
+      "line": 36,
+      "relation": "association",
+      "evidence": "The 4 Notch receptors play distinct and antagonistic roles in the proliferation and hepatocytic differentiation of liver progenitors.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24145721"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 40,
+      "target": 25,
+      "key": "23fbd97342b4ac088d3f8b7cdbbde915"
+    },
+    {
+      "line": 43,
+      "relation": "association",
+      "evidence": "We utilized in vivo and in vitro knockdown to target the expression of Notch-1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24424521"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "intestinal epithelial cells": true
+        }
+      },
+      "source": 40,
+      "target": 43,
+      "key": "837f53a5cb946f55155b6cdd9a7797c1"
+    },
+    {
+      "line": 43,
+      "relation": "association",
+      "evidence": "We identified that epithelial Notch-1 is required for appropriate activation of intestinal epithelial cells at steady state and upon inflammatory stimulus.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24424521"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 40,
+      "target": 43,
+      "key": "4ad3ba19e8df1b541a637179fc4625f2"
+    },
+    {
+      "line": 44,
+      "relation": "association",
+      "evidence": "Furthermore, emerging evidence provides new insight into the control of mTOR by other pathways such as Hippo, WNT and Notch signalling. Together, this progress has expanded the list of downstream effectors and upstream regulators of mTOR signalling.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24556838"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 40,
+      "target": 23,
+      "key": "65303719c3e18b98ad6f15bc0c89c494"
+    },
+    {
+      "line": 46,
+      "relation": "association",
+      "evidence": "Conversely, Notch3-expressing cells proliferate less and express 3-fold higher levels of p57(Kip2). The Notch3 cells present a hepatocyte-like morphology, enhanced multinucleation, and a ploidy shift. Moreover, Notch3 activity is conducive to hepatocytic differentiation in vitro, while its paralogs impede this fate.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24145721"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 40,
+      "target": 44,
+      "key": "af7cc77c1347b8cee3a898183dd489ca"
+    },
+    {
+      "line": 71,
+      "relation": "association",
+      "evidence": "Here, we investigate the role of the 4 mammalian Notch paralogs in the regulation of hepatoblast proliferation and hepatocytic differentiation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24145721"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 40,
+      "target": 27,
+      "key": "d948b4c5b6312cd71d2b8095baa87a30"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 32,
+      "target": 33,
+      "key": "b2fffea67c0fc940b0f97df9f7d7ab88"
+    },
+    {
+      "line": 49,
+      "relation": "directlyIncreases",
+      "evidence": "Stat3 is activated by phosphorylation on Tyr-705, which leads to dimer formation, nuclear translocation, and regulation of gene expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10446219"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 32,
+      "key": "53995bc9da0a4410da7af7e0be746c28"
+    },
+    {
+      "line": 49,
+      "relation": "directlyIncreases",
+      "evidence": ". Furthermore, the bFGF-induced activation of ERK1/2 seems to enhance the transcriptional activity of STAT3. Co-stimulation of KMS-11 with bFGF and IL-6 leads to marked expression of STAT3 target genes, such as c-myc and bcl-2, further suggesting the relevance of STAT3 phosphorylated at both Tyr705 and Ser727 for the full activation as a transcription factor (Fig. 5). In addition, the",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17142955"
+      },
+      "annotations": {
+        "Disease": {
+          "Multiple Myeloma": true
+        },
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 32,
+      "key": "a8d28e6c6fc8f0144fdab24994558bc6"
+    },
+    {
+      "line": 49,
+      "relation": "directlyIncreases",
+      "evidence": "activated form of STAT3, Tyr-705 phospho-stat3, was found in the nucleus of cancer cells in 11 of 40 (27.5%) human gastric cancer specimens.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15077160"
+      },
+      "annotations": {
+        "Disease": {
+          "Neoplasms": true
+        },
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 32,
+      "key": "fe6ade742583bee35556149169f34832"
+    },
+    {
+      "line": 49,
+      "relation": "directlyIncreases",
+      "evidence": "LIGHT, a member of tumor necrosis factor superfamily, activates Stat3 in cancer cells. LIGHT induces dose-dependent activation of Stat3 by phosphorylation at both the tyrosine 705 and serine 727 residues.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17543278"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 32,
+      "key": "eab4f399ce8ad29b4851fa0084cd4484"
+    },
+    {
+      "line": 49,
+      "relation": "directlyIncreases",
+      "evidence": "A dramatic reduction of the phosphorylation of the Stat3 protein at Tyr residue 705 was observed in cells infected with adenovirus Wild type p53. Co-transfection of cells with wild type p53 along with Stat3 luciferase reporter, inhibited Stat3 dependent luciferase activity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11809683"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 32,
+      "key": "73b0daa2d07e089c0416c3ca58331e65"
+    },
+    {
+      "line": 49,
+      "relation": "directlyIncreases",
+      "evidence": "Signal transducer and activator of transcription 3 (STAT3) is activated by the IL-6 family of cytokines and growth factors. STAT3 requires phosphorylation on Ser-727, in addition to tyrosine phosphorylation on Tyr-705, to be transcriptionally active.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15764709"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 32,
+      "key": "047bf6c13c9f0b05cb4aa8cf3ca422f6"
+    },
+    {
+      "line": 49,
+      "relation": "directlyIncreases",
+      "evidence": "leads to phosphorylation of MITF at S73 and of STAT3 at both tyrosine 705 and S727. This phosphorylation increases the transcriptional activity of MITF and STAT3 as indicated by mRNA accumulation of their target genes such as Bcl-2, granzyme B, and c-Myc",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16034081"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "mast cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 32,
+      "key": "84a4c2c75a9ae10f9eabc1d27d5bcbb1"
+    },
+    {
+      "line": 49,
+      "relation": "directlyIncreases",
+      "evidence": "We found that the Tyr701 phosphorylation kinetics of Stat1 mediated by IFN stimulation was higher when cells were incubated with IFN-alpha5 than when using IFN-alpha2. Similarly, Tyr(1054/1055) phosphorylation kinetics of Tyk2 were more intense after exposure to IFN-alpha5 than when using IFN-alpha2. Concomitantly, Tyr705 phosphorylation of Stat3 was higher after stimulation with IFN-alpha5 than with IFN-alpha2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15320963"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 32,
+      "key": "c4aa72fcf61f09f07cfa127994a21274"
+    },
+    {
+      "line": 49,
+      "relation": "directlyIncreases",
+      "evidence": "Here, we report identification of signal transducer and activator of transcription 3 (STAT3) as a substrate of PTPRT. Phosphorylation of a tyrosine at amino acid Y705 is essential for the function of STAT3, and PTPRT specifically dephosphorylated STAT3 at this position. Accordingly, overexpression of normal PTPRT in colorectal cancer cells reduced the expression of STAT3 target genes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17360477"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 32,
+      "key": "819d61692dddb71a6e5bb26c8a476f28"
+    },
+    {
+      "line": 52,
+      "relation": "decreases",
+      "evidence": "proliferation caused by heregulin-beta1 treatment of T47D cells was inhibited by all-trans retinoic acid and this effect was mediated by HES-1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15467735"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 18,
+      "target": 2,
+      "key": "e1ee8f5b9c51ad4cea0b65c5bd42e52f"
+    },
+    {
+      "line": 52,
+      "relation": "decreases",
+      "evidence": "Hairy and Enhancer of Split homolog-1 (HES-1) is a key regulator not only in differentiation, but also in the cell cycle, and we show here that HES-1 is a new target gene for AhR regulation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14722248"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 18,
+      "target": 2,
+      "key": "a93aa17a4d376606ce526423a95954d0"
+    },
+    {
+      "line": 55,
+      "relation": "association",
+      "evidence": "Delta1, Jagged1, and Jagged2....Together, these data indicate that all of these DSL proteins function as ligands for Notch2. Moreover, the findings of rapid cleavage, nuclear translocation, and phosphorylation of Notch2 after ligand binding facilitate the understanding of the Notch signaling.",
+      "citation": {
+        "db": "Other",
+        "db_id": "10958687"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 13,
+      "target": 26,
+      "key": "58b632f3e8aa8d54a5c084ac9328c0ec"
+    },
+    {
+      "line": 56,
+      "relation": "association",
+      "evidence": "Delta1, Jagged1, and Jagged2, commonly designated Delta/Serrate/LAG-2 (DSL) proteins, are known to be ligands for Notch1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "10958687"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 13,
+      "target": 25,
+      "key": "c8580dfb94f6de3c8674e458c6c5662e"
+    },
+    {
+      "line": 57,
+      "relation": "increases",
+      "evidence": "Dlk1, a membrane ligand that initiates the Notch signaling pathway, was identified as a downstream target of the pleiotrophin/beta-catenin pathway by endogenous dlk1 expression, promoter assay, and chromatin immunoprecipitation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19661059"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Cell": {
+          "fetal lung type II cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 13,
+      "target": 40,
+      "key": "09132581915af4229855a00a38f79676"
+    },
+    {
+      "line": 3,
+      "relation": "association",
+      "evidence": "This characterization provides biochemical evidence that the Jag1-Notch pathway is under the control of BACE1 activity",
+      "citation": {
+        "db": "Other",
+        "db_id": "24907271"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "pep"
+        }
+      },
+      "source": 21,
+      "target": 10,
+      "key": "8dc50b8778fcae219b96e7eba307fd3b"
+    },
+    {
+      "line": 59,
+      "relation": "association",
+      "evidence": "n addition, the Notch-1 ligands Jagged-1 and Delta-like-4 and the downstream Notch-1 target Hes-1 were increased in abundance and activated in human brain arteriovenous malformations. Finally, increased angiogenesis was found in adult rats treated with a Notch-1 activator.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19812212"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 21,
+      "target": 25,
+      "key": "590a058fe930c57bd7214ae0e332c76e"
+    },
+    {
+      "line": 59,
+      "relation": "association",
+      "evidence": "Delta1, Jagged1, and Jagged2, commonly designated Delta/Serrate/LAG-2 (DSL) proteins, are known to be ligands for Notch1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "10958687"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 21,
+      "target": 25,
+      "key": "cd97a60de6e9d5e3fd342832a97e46aa"
+    },
+    {
+      "line": 59,
+      "relation": "association",
+      "evidence": "Radiosurgery suppressed the interaction events between Notch1 receptor and Jagged1 (p < 0.001) as well as Notch4 receptor and Jagged1 (p < 0.001) in the endothelial cells of nidus vessels in the AVF rats over a period of 42 days postradiosurgery.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24410155"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "nidus vessels": true
+        },
+        "Cell": {
+          "endothelial cells": true
+        }
+      },
+      "source": 21,
+      "target": 25,
+      "key": "54e132eeca1e887a777b5679c8d1ac47"
+    },
+    {
+      "line": 59,
+      "relation": "association",
+      "evidence": "To generate tools for pursuing the role of the Notch pathway in human disease and development, we have cloned and analyzed the expression of three human homologues of the Notch ligands Delta and Serrate, human Jagged1 (HJ1), human Jagged2 (HJ2), and human Delta1 (H-Delta-1), and determined their chromosomal localizations.",
+      "citation": {
+        "db": "Other",
+        "db_id": "10079256"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 21,
+      "target": 25,
+      "key": "aa4f5f4bef13a2782d748e54252c29d6"
+    },
+    {
+      "line": 60,
+      "relation": "association",
+      "evidence": "Radiosurgery suppressed the interaction events between Notch1 receptor and Jagged1 (p < 0.001) as well as Notch4 receptor and Jagged1 (p < 0.001) in the endothelial cells of nidus vessels in the AVF rats over a period of 42 days postradiosurgery.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24410155"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "nidus vessels": true
+        },
+        "Cell": {
+          "endothelial cells": true
+        }
+      },
+      "source": 21,
+      "target": 28,
+      "key": "38c6194aa5e2469febd7726c7b57b2fd"
+    },
+    {
+      "line": 61,
+      "relation": "association",
+      "evidence": "In this report, we investigated these issues for Notch2. All of the three DSL proteins bound to endogenous Notch2 on the surface of BaF3 cells, although characteristics of Jagged2 for binding to Notch2 apparently differed from that of Delta1 and Jagged1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "10958687"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Ba/F3, a murine interleukin-3 dependent pro-B cell line": true
+        }
+      },
+      "source": 21,
+      "target": 26,
+      "key": "085920bda80afa497843a77c3d29bc41"
+    },
+    {
+      "line": 62,
+      "relation": "directlyIncreases",
+      "evidence": "To generate tools for pursuing the role of the Notch pathway in human disease and development, we have cloned and analyzed the expression of three human homologues of the Notch ligands Delta and Serrate, human Jagged1 (HJ1), human Jagged2 (HJ2), and human Delta1 (H-Delta-1), and determined their chromosomal localizations.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10079256"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 21,
+      "target": 40,
+      "key": "1a097751ba3e512e04e56c896f556e80"
+    },
+    {
+      "line": 62,
+      "relation": "directlyIncreases",
+      "evidence": "we show that activation of the Notch pathway by the ligand Jagged1 reduces the proliferation of endothelial cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15456857"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 21,
+      "target": 40,
+      "key": "5792b63fe8c2d2dec6022bcb2011b881"
+    },
+    {
+      "line": 62,
+      "relation": "directlyIncreases",
+      "evidence": "Notch signaling is important for Th2 differentiation.44, 45  It has been shown that Jag1/Notch interaction induces Th2 differentiation.whereas Dll1/Notch interaction results in Th1 polarization.44",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20065998"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Th2 cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 21,
+      "target": 40,
+      "key": "295cb42d068ed9b813413f5f3bfe93f7"
+    },
+    {
+      "line": 62,
+      "relation": "directlyIncreases",
+      "evidence": "mTOR positively regulates the mRNA expression of Notch ligand Jagged1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20038814"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 21,
+      "target": 40,
+      "key": "c6d2bbdb13d1225ac0a24b0aea973f6b"
+    },
+    {
+      "line": 64,
+      "relation": "increases",
+      "evidence": "We show a mechanistic link from NOTCH3 receptor signaling through the Hairy and enhancer of Split-5 (HES-5) protein to smooth muscle cell proliferation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19855400"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "source": 19,
+      "target": 2,
+      "key": "94259f1e4f32bdfa0390ac50dad59cf7"
+    },
+    {
+      "line": 65,
+      "relation": "increases",
+      "evidence": "We show a mechanistic link from NOTCH3 receptor signaling through the Hairy and enhancer of Split-5 (HES-5) protein to smooth muscle cell proliferation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19855400"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 19,
+      "key": "dcec3dd317e2d860b8df8855d6720ade"
+    },
+    {
+      "line": 71,
+      "relation": "association",
+      "evidence": "Here, we investigate the role of the 4 mammalian Notch paralogs in the regulation of hepatoblast proliferation and hepatocytic differentiation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24145721"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 27,
+      "target": 40,
+      "key": "b1746efd0e33b5a552ec6c382246fd8e"
+    },
+    {
+      "line": 31,
+      "relation": "association",
+      "evidence": "Signaling through Notch receptors has been implicated in the control of cellular differentiation in animals ranging from nematodes to humans. Starting from a human expressed sequence tag-containing sequence resembling that of Serrate, the gene for a ligand of Drosophila melanogaster Notch, we assembled a full-length cDNA, now called human Jagged2, from overlapping cDNA clones. The full-length cDNA encodes a polypeptide having extensive sequence homology to Serrate (40.6% identity and 58.7% similarity) and even greater homology to several putative mammalian Notch ligands that have subsequently been described. When in situ hybridization was performed, expression of the murine Jagged2 homolog was found to be highest in fetal thymus, epidermis, foregut, dorsal root ganglia, and inner ear. In Northern blot analysis of RNA from tissues of 2-week-old mice, the 5.0-kb Jagged2 transcript was most abundant in heart, lung, thymus, skeletal muscle, brain, and testis. Immunohistochemistry revealed coexpression of Jagged2 and Notch1 within thymus and other fetal murine tissues, consistent with interaction of the two proteins in vivo. Coculture of fibroblasts expressing human Jagged2 with murine C2C12 myoblasts inhibited myogenic differentiation, accompanied by increased Notch1 and the appearance of a novel 115-kDa Notch1 fragment. Exposure of C2C12 cells to Jagged2 led to increased amounts of Notch mRNA as well as mRNAs for a second Notch receptor, Notch3, and a second Notch ligand, Jagged1. Constitutively active forms of Notchl in C2C12 cells also induced increased levels of the same set of mRNAs, suggesting positive feedback control of these genes initiated by binding of Jagged2 to Notch1. This feedback control may function in vivo to coordinate differentiation across certain groups of progenitor cells adopting identical cell fates.",
+      "citation": {
+        "db": "Other",
+        "db_id": "9315665"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 22,
+      "target": 25,
+      "key": "64b1821a4a7310b4a05031932f137664"
+    },
+    {
+      "line": 31,
+      "relation": "association",
+      "evidence": "Delta1, Jagged1, and Jagged2, commonly designated Delta/Serrate/LAG-2 (DSL) proteins, are known to be ligands for Notch1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "10958687"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 22,
+      "target": 25,
+      "key": "ef8bfc3f62d904d8130f2fb3bd7ac4cc"
+    },
+    {
+      "line": 69,
+      "relation": "directlyIncreases",
+      "evidence": "To explore the mechanism by which mTOR activation leads to the upregulation of Jagged1/Notch/Hes1 signaling, we examined the expression of p63, a TP53 family member, since p63 is a positive regulator of Jagged1 or Jagged2 expression and Notch activity (40–42) and PI3K is an inducer of p63 expression (43). The p63 gene has 2 promoter regions generating TA-p63 and ?N-p63 isoforms, each of which has 3 splicing variants on its C terminus as ?/?/? of TA-p63 and ?N-p63 isoforms (41). The TA-p63 isoform has been observed to activate the expression of ?N-p63 isoform (44). Both TA-p63 and ?N-p63 were overexpressed in cells with mTOR activation because of",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20038814"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 22,
+      "target": 40,
+      "key": "160401a11f7390b1bffcd70a723c62ac"
+    },
+    {
+      "line": 69,
+      "relation": "directlyIncreases",
+      "evidence": "To generate tools for pursuing the role of the Notch pathway in human disease and development, we have cloned and analyzed the expression of three human homologues of the Notch ligands Delta and Serrate, human Jagged1 (HJ1), human Jagged2 (HJ2), and human Delta1 (H-Delta-1), and determined their chromosomal localizations.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10079256"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 22,
+      "target": 40,
+      "key": "6785d443ea3e627747abf80197971141"
+    },
+    {
+      "line": 70,
+      "relation": "association",
+      "evidence": "In this report, we investigated these issues for Notch2. All of the three DSL proteins bound to endogenous Notch2 on the surface of BaF3 cells, although characteristics of Jagged2 for binding to Notch2 apparently differed from that of Delta1 and Jagged1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "10958687"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Ba/F3, a murine interleukin-3 dependent pro-B cell line": true
+        }
+      },
+      "source": 22,
+      "target": 26,
+      "key": "f2e3ec7299d80b60347f43edf55b66d7"
+    }
+  ]
+}

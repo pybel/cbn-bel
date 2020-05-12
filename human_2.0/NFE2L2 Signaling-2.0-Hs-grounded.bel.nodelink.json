@@ -1,0 +1,3365 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "NFE2L2 Signaling-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The NFE2L2 Signaling network depicts the causal mechanisms that are involved in transcriptional activation of NFE2L2 (central mediator of the cellular oxidative stress response), its interaction with MAF proteins, and its downstream target genes such as ATF4, GCLC, NQO1, and PRDX1.\\u003c/p\\u003e\\n\\u003ch2\\u003eJamboree Review Focus\\u003c/h2\\u003e\\n\\u003cp\\u003eInteraction of NFE2L2 with MAF proteins. Reviewed during Jamboree2014"
+    },
+    "namespace_url": {},
+    "namespace_pattern": {
+      "chebi": ".*",
+      "mgi": ".*",
+      "fplx": ".*",
+      "go": ".*",
+      "hgnc": ".*"
+    },
+    "annotation_url": {},
+    "annotation_pattern": {
+      "cl": ".*"
+    },
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "quercetin",
+        "identifier": "16243"
+      },
+      "id": "17f74337403e19d39dbe86821b471b4e",
+      "bel": "a(chebi:16243 ! quercetin)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "heme",
+        "identifier": "30413"
+      },
+      "id": "226772cff055c50efb3129910cb77dae",
+      "bel": "a(chebi:30413 ! heme)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "curcumin",
+        "identifier": "3962"
+      },
+      "id": "c5d2bb9a56ba98b6e26e305216df3160",
+      "bel": "a(chebi:3962 ! curcumin)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "response to oxidative stress",
+        "identifier": "0006979"
+      },
+      "id": "93e9cda1ce236d46f9d08ff12a40d02a",
+      "bel": "bp(go:0006979 ! \"response to oxidative stress\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "fplx",
+        "name": "AP1",
+        "identifier": "AP1"
+      },
+      "id": "0083d297c265cb2ade870cd66cc5abb0",
+      "bel": "complex(fplx:AP1 ! AP1)"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "fplx",
+        "name": "PI3K",
+        "identifier": "PI3K"
+      },
+      "id": "2de818cb7bd5f3eacdbb22c78861bdd8",
+      "bel": "complex(fplx:PI3K ! PI3K)"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "SQSTM1",
+            "identifier": "11280"
+          },
+          "id": "415e5eab7297286d7784bed306c1e857",
+          "bel": "p(hgnc:11280 ! SQSTM1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "KEAP1",
+            "identifier": "23177"
+          },
+          "id": "a6e2524d161f05b29bef1b6b1be9bacd",
+          "bel": "p(hgnc:23177 ! KEAP1)"
+        }
+      ],
+      "id": "e41a1b0bebe56be477fee6dcfb7b6a1a",
+      "bel": "complex(p(hgnc:11280 ! SQSTM1), p(hgnc:23177 ! KEAP1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "KEAP1",
+            "identifier": "23177"
+          },
+          "id": "a6e2524d161f05b29bef1b6b1be9bacd",
+          "bel": "p(hgnc:23177 ! KEAP1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "CUL3",
+            "identifier": "2553"
+          },
+          "id": "ba91403e21b9093c305099c64853679f",
+          "bel": "p(hgnc:2553 ! CUL3)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "NFE2L2",
+            "identifier": "7782"
+          },
+          "id": "0e5a135eddf63c61ede864acab3a682f",
+          "bel": "p(hgnc:7782 ! NFE2L2)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "RBX1",
+            "identifier": "9928"
+          },
+          "id": "74b9b173fea98ef4a587eec7ae31d443",
+          "bel": "p(hgnc:9928 ! RBX1)"
+        }
+      ],
+      "id": "a7917d02ba7d74ae111d65b296d42c0b",
+      "bel": "complex(p(hgnc:23177 ! KEAP1), p(hgnc:2553 ! CUL3), p(hgnc:7782 ! NFE2L2), p(hgnc:9928 ! RBX1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "KEAP1",
+            "identifier": "23177"
+          },
+          "id": "a6e2524d161f05b29bef1b6b1be9bacd",
+          "bel": "p(hgnc:23177 ! KEAP1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "IKBKB",
+            "identifier": "5960"
+          },
+          "id": "7a4749b50b3cb8b62deb0877730ffbce",
+          "bel": "p(hgnc:5960 ! IKBKB)"
+        }
+      ],
+      "id": "e78d483df8b0fd3ecc098500b05d2ec1",
+      "bel": "complex(p(hgnc:23177 ! KEAP1), p(hgnc:5960 ! IKBKB))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "KEAP1",
+            "identifier": "23177"
+          },
+          "id": "a6e2524d161f05b29bef1b6b1be9bacd",
+          "bel": "p(hgnc:23177 ! KEAP1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "NFE2L2",
+            "identifier": "7782"
+          },
+          "id": "0e5a135eddf63c61ede864acab3a682f",
+          "bel": "p(hgnc:7782 ! NFE2L2)"
+        }
+      ],
+      "id": "4e84e078ce9db8a7fb005b90161f1f9a",
+      "bel": "complex(p(hgnc:23177 ! KEAP1), p(hgnc:7782 ! NFE2L2))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "EIF2AK3",
+            "identifier": "3255"
+          },
+          "id": "4836a01b149955d79286f26cdae9b494",
+          "bel": "p(hgnc:3255 ! EIF2AK3)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "NFE2L2",
+            "identifier": "7782"
+          },
+          "id": "0e5a135eddf63c61ede864acab3a682f",
+          "bel": "p(hgnc:7782 ! NFE2L2)"
+        }
+      ],
+      "id": "be50a60724ed97fb73169df6f2383e90",
+      "bel": "complex(p(hgnc:3255 ! EIF2AK3), p(hgnc:7782 ! NFE2L2))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "MAFF",
+            "identifier": "6780"
+          },
+          "id": "5943cc3683baf1d7639fa2a731b08f23",
+          "bel": "p(hgnc:6780 ! MAFF)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "NFE2L1",
+            "identifier": "7781"
+          },
+          "id": "3677fd858174083a636c9b9ab2e4d7e1",
+          "bel": "p(hgnc:7781 ! NFE2L1)"
+        }
+      ],
+      "id": "6414105f399e13aad3ce324ac9471c88",
+      "bel": "complex(p(hgnc:6780 ! MAFF), p(hgnc:7781 ! NFE2L1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "MAFF",
+            "identifier": "6780"
+          },
+          "id": "5943cc3683baf1d7639fa2a731b08f23",
+          "bel": "p(hgnc:6780 ! MAFF)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "NFE2L2",
+            "identifier": "7782"
+          },
+          "id": "0e5a135eddf63c61ede864acab3a682f",
+          "bel": "p(hgnc:7782 ! NFE2L2)"
+        }
+      ],
+      "id": "1f33de04702a883c27a024b2e2fcd9fb",
+      "bel": "complex(p(hgnc:6780 ! MAFF), p(hgnc:7782 ! NFE2L2))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "MAFG",
+            "identifier": "6781"
+          },
+          "id": "9fd33a52630aff4f98ba806ba1615c5c",
+          "bel": "p(hgnc:6781 ! MAFG)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "NFE2L1",
+            "identifier": "7781"
+          },
+          "id": "3677fd858174083a636c9b9ab2e4d7e1",
+          "bel": "p(hgnc:7781 ! NFE2L1)"
+        }
+      ],
+      "id": "3ebb8fd6a3c085303e6ae96866274ace",
+      "bel": "complex(p(hgnc:6781 ! MAFG), p(hgnc:7781 ! NFE2L1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "MAFG",
+            "identifier": "6781"
+          },
+          "id": "9fd33a52630aff4f98ba806ba1615c5c",
+          "bel": "p(hgnc:6781 ! MAFG)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "NFE2L2",
+            "identifier": "7782"
+          },
+          "id": "0e5a135eddf63c61ede864acab3a682f",
+          "bel": "p(hgnc:7782 ! NFE2L2)"
+        }
+      ],
+      "id": "86f1b2f05f4ba42d6eb2e39a86243b24",
+      "bel": "complex(p(hgnc:6781 ! MAFG), p(hgnc:7782 ! NFE2L2))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "MAFG",
+            "identifier": "6781"
+          },
+          "id": "9fd33a52630aff4f98ba806ba1615c5c",
+          "bel": "p(hgnc:6781 ! MAFG)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "BACH1",
+            "identifier": "935"
+          },
+          "id": "ff5e25e2d6ca5ea06539c0cced93867a",
+          "bel": "p(hgnc:935 ! BACH1)"
+        }
+      ],
+      "id": "046a6dd30ea3f9317d9dd994bc53a1e3",
+      "bel": "complex(p(hgnc:6781 ! MAFG), p(hgnc:935 ! BACH1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "MAFK",
+            "identifier": "6782"
+          },
+          "id": "c279f954defc17efb8f31508a189e8ed",
+          "bel": "p(hgnc:6782 ! MAFK)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "NFE2L2",
+            "identifier": "7782"
+          },
+          "id": "0e5a135eddf63c61ede864acab3a682f",
+          "bel": "p(hgnc:7782 ! NFE2L2)"
+        }
+      ],
+      "id": "e7a3c2b5a700fb41a31d77878c0d01a7",
+      "bel": "complex(p(hgnc:6782 ! MAFK), p(hgnc:7782 ! NFE2L2))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "MAFK",
+            "identifier": "6782"
+          },
+          "id": "c279f954defc17efb8f31508a189e8ed",
+          "bel": "p(hgnc:6782 ! MAFK)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "BACH1",
+            "identifier": "935"
+          },
+          "id": "ff5e25e2d6ca5ea06539c0cced93867a",
+          "bel": "p(hgnc:935 ! BACH1)"
+        }
+      ],
+      "id": "397829feb2ad635b9a6a20d6bf6db116",
+      "bel": "complex(p(hgnc:6782 ! MAFK), p(hgnc:935 ! BACH1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "NFE2L2",
+            "identifier": "7782"
+          },
+          "id": "0e5a135eddf63c61ede864acab3a682f",
+          "bel": "p(hgnc:7782 ! NFE2L2)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "ATF4",
+            "identifier": "786"
+          },
+          "id": "3f6bad91bb9860c1d9e46f1723a3de54",
+          "bel": "p(hgnc:786 ! ATF4)"
+        }
+      ],
+      "id": "1b04c7a3960b0ab1f4412b4e14977a27",
+      "bel": "complex(p(hgnc:7782 ! NFE2L2), p(hgnc:786 ! ATF4))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "mgi",
+            "name": "Bach1",
+            "identifier": "894680"
+          },
+          "id": "bb59198d76ab346d943831ffdf40e409",
+          "bel": "p(mgi:894680 ! Bach1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "mgi",
+            "name": "Maff",
+            "identifier": "96910"
+          },
+          "id": "c20add26352d99e1cf446fbee3d6ceb8",
+          "bel": "p(mgi:96910 ! Maff)"
+        }
+      ],
+      "id": "7fdbb5528c649bccd8be483e580a18b3",
+      "bel": "complex(p(mgi:894680 ! Bach1), p(mgi:96910 ! Maff))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "PI3K_p110",
+        "identifier": "PI3K_p110"
+      },
+      "id": "8b79e969188c2874eba3fa100a633e65",
+      "bel": "p(fplx:\"PI3K_p110\" ! \"PI3K_p110\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "PKC",
+        "identifier": "PKC"
+      },
+      "id": "5bd82f8dca4f5ec860178491eafd427c",
+      "bel": "p(fplx:PKC ! PKC)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "p38",
+        "identifier": "p38"
+      },
+      "id": "16819634e2bac5ec6d922818bf87ef22",
+      "bel": "p(fplx:p38 ! p38)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SOD1",
+        "identifier": "11179"
+      },
+      "id": "1c1be187594b15c71a7fb028847de382",
+      "bel": "p(hgnc:11179 ! SOD1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SQSTM1",
+        "identifier": "11280"
+      },
+      "id": "415e5eab7297286d7784bed306c1e857",
+      "bel": "p(hgnc:11280 ! SQSTM1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TXNRD1",
+        "identifier": "12437"
+      },
+      "id": "aca722acc7431b81af04eb187d2e3f7c",
+      "bel": "p(hgnc:12437 ! TXNRD1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SRXN1",
+        "identifier": "16132"
+      },
+      "id": "b5141b5e2e5a3e170c68638632a93f17",
+      "bel": "p(hgnc:16132 ! SRXN1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PARK7",
+        "identifier": "16369"
+      },
+      "id": "2d67d9083ac2281e278530b354d4f6e2",
+      "bel": "p(hgnc:16369 ! PARK7)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GSTA5",
+        "identifier": "19662"
+      },
+      "id": "e5d4f7687fd26ea173f6c4e2d3905baa",
+      "bel": "p(hgnc:19662 ! GSTA5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "KEAP1",
+        "identifier": "23177"
+      },
+      "id": "a6e2524d161f05b29bef1b6b1be9bacd",
+      "bel": "p(hgnc:23177 ! KEAP1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CSNK2A1",
+        "identifier": "2457"
+      },
+      "id": "d6251c5496c2a707aced266521a16968",
+      "bel": "p(hgnc:2457 ! CSNK2A1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CUL3",
+        "identifier": "2553"
+      },
+      "id": "ba91403e21b9093c305099c64853679f",
+      "bel": "p(hgnc:2553 ! CUL3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NQO1",
+        "identifier": "2874"
+      },
+      "id": "a1460b9395aa4b07bfaa585a3770f3e2",
+      "bel": "p(hgnc:2874 ! NQO1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GADD45GIP1",
+        "identifier": "29996"
+      },
+      "id": "95b894671b6fc211235f6457653d82a3",
+      "bel": "p(hgnc:29996 ! GADD45GIP1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CAND1",
+        "identifier": "30688"
+      },
+      "id": "8fdca1a8af65d376034b6999ebc55aa7",
+      "bel": "p(hgnc:30688 ! CAND1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EIF2AK3",
+        "identifier": "3255"
+      },
+      "id": "4836a01b149955d79286f26cdae9b494",
+      "bel": "p(hgnc:3255 ! EIF2AK3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EIF2AK3",
+        "identifier": "3255"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          }
+        }
+      ],
+      "id": "417e94f590dc85aab42b0ff68ed68301",
+      "bel": "p(hgnc:3255 ! EIF2AK3, pmod(go:0006468 ! \"protein phosphorylation\"))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "AHR",
+        "identifier": "348"
+      },
+      "id": "bce76a95e5d25262f24b3446b4d6113a",
+      "bel": "p(hgnc:348 ! AHR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "AKT1",
+        "identifier": "391"
+      },
+      "id": "3adaa3ad564b6e0ae1b7c41879193857",
+      "bel": "p(hgnc:391 ! AKT1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "FYN",
+        "identifier": "4037"
+      },
+      "id": "b95e4b7514b90eb5066a70e9c5ab34d6",
+      "bel": "p(hgnc:4037 ! FYN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "FYN",
+        "identifier": "4037"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Thr"
+        }
+      ],
+      "id": "42ba7f98865d4c50326461df90e1c4bd",
+      "bel": "p(hgnc:4037 ! FYN, pmod(go:0006468 ! \"protein phosphorylation\", Thr))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GCLC",
+        "identifier": "4311"
+      },
+      "id": "c395d962ea7736ff3c67b5fbaa4b51cf",
+      "bel": "p(hgnc:4311 ! GCLC)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GCLM",
+        "identifier": "4312"
+      },
+      "id": "38fef88bfc6406ce2140ed2f291fd235",
+      "bel": "p(hgnc:4312 ! GCLM)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GPX2",
+        "identifier": "4554"
+      },
+      "id": "40f7ed3f5f5f709a6f5ff409006b4b24",
+      "bel": "p(hgnc:4554 ! GPX2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GSK3B",
+        "identifier": "4617"
+      },
+      "id": "34b77518b9ca90a60f93774ac3d8a761",
+      "bel": "p(hgnc:4617 ! GSK3B)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GSK3B",
+        "identifier": "4617"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Tyr",
+          "pos": 216
+        }
+      ],
+      "id": "14542279102698f28680aeaada50eca3",
+      "bel": "p(hgnc:4617 ! GSK3B, pmod(go:0006468 ! \"protein phosphorylation\", Tyr, 216))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GSS",
+        "identifier": "4624"
+      },
+      "id": "94f0285ea668b6c469f889bdf49f244e",
+      "bel": "p(hgnc:4624 ! GSS)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GSTP1",
+        "identifier": "4638"
+      },
+      "id": "ea80feac22caae82f094478326dba18e",
+      "bel": "p(hgnc:4638 ! GSTP1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HMMR",
+        "identifier": "5012"
+      },
+      "id": "ac60d6a43b54bf9ce50453e3e0bd3b05",
+      "bel": "p(hgnc:5012 ! HMMR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HMOX1",
+        "identifier": "5013"
+      },
+      "id": "f93286b1cc3898c14eede070382a4bea",
+      "bel": "p(hgnc:5013 ! HMOX1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HSPA1B",
+        "identifier": "5233"
+      },
+      "id": "1524007af5b4c055ac0a14e9848a2c46",
+      "bel": "p(hgnc:5233 ! HSPA1B)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IKBKB",
+        "identifier": "5960"
+      },
+      "id": "7a4749b50b3cb8b62deb0877730ffbce",
+      "bel": "p(hgnc:5960 ! IKBKB)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "JUN",
+        "identifier": "6204"
+      },
+      "id": "fbc362581b3fc676170a17f33a024a1a",
+      "bel": "p(hgnc:6204 ! JUN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "KRAS",
+        "identifier": "6407"
+      },
+      "id": "977d7dc963d34a39d826ebecd9c79193",
+      "bel": "p(hgnc:6407 ! KRAS)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MAFF",
+        "identifier": "6780"
+      },
+      "id": "5943cc3683baf1d7639fa2a731b08f23",
+      "bel": "p(hgnc:6780 ! MAFF)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MAFG",
+        "identifier": "6781"
+      },
+      "id": "9fd33a52630aff4f98ba806ba1615c5c",
+      "bel": "p(hgnc:6781 ! MAFG)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MAFK",
+        "identifier": "6782"
+      },
+      "id": "c279f954defc17efb8f31508a189e8ed",
+      "bel": "p(hgnc:6782 ! MAFK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MAPK1",
+        "identifier": "6871"
+      },
+      "id": "e0c0225b558aed46aa00177aa93224b5",
+      "bel": "p(hgnc:6871 ! MAPK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MAPK11",
+        "identifier": "6873"
+      },
+      "id": "fcd46ddadc9a22ab148c5fc55a94e879",
+      "bel": "p(hgnc:6873 ! MAPK11)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MAPK12",
+        "identifier": "6874"
+      },
+      "id": "1026b3d0c27c19c818e58ff58d49b540",
+      "bel": "p(hgnc:6874 ! MAPK12)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MAPK13",
+        "identifier": "6875"
+      },
+      "id": "d4ea45c755440432c9c45745b1b4a747",
+      "bel": "p(hgnc:6875 ! MAPK13)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MAPK14",
+        "identifier": "6876"
+      },
+      "id": "ede62bd739b408995d198e5b24565065",
+      "bel": "p(hgnc:6876 ! MAPK14)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MAPK3",
+        "identifier": "6877"
+      },
+      "id": "6dd741794d73ab1e916725d3d79849b7",
+      "bel": "p(hgnc:6877 ! MAPK3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NFE2L1",
+        "identifier": "7781"
+      },
+      "id": "3677fd858174083a636c9b9ab2e4d7e1",
+      "bel": "p(hgnc:7781 ! NFE2L1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NFE2L2",
+        "identifier": "7782"
+      },
+      "id": "0e5a135eddf63c61ede864acab3a682f",
+      "bel": "p(hgnc:7782 ! NFE2L2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NFE2L2",
+        "identifier": "7782"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          }
+        }
+      ],
+      "id": "cf521a3ffb7bbec421c3ff06846ed8ea",
+      "bel": "p(hgnc:7782 ! NFE2L2, pmod(go:0006468 ! \"protein phosphorylation\"))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NFE2L2",
+        "identifier": "7782"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Ser"
+        }
+      ],
+      "id": "f0dac46de231e237cdb923fa236ad0fe",
+      "bel": "p(hgnc:7782 ! NFE2L2, pmod(go:0006468 ! \"protein phosphorylation\", Ser))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NFE2L2",
+        "identifier": "7782"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Ser",
+          "pos": 40
+        }
+      ],
+      "id": "4dde1e09e0f7041c1bb557503d9b507e",
+      "bel": "p(hgnc:7782 ! NFE2L2, pmod(go:0006468 ! \"protein phosphorylation\", Ser, 40))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NFE2L2",
+        "identifier": "7782"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Tyr",
+          "pos": 576
+        }
+      ],
+      "id": "2e9106796fe0f631dcdbcdaf9d9d1544",
+      "bel": "p(hgnc:7782 ! NFE2L2, pmod(go:0006468 ! \"protein phosphorylation\", Tyr, 576))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NFE2L2",
+        "identifier": "7782"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein ubiquitination",
+            "identifier": "0016567"
+          },
+          "code": "Lys"
+        }
+      ],
+      "id": "eed3c29fed0869242f0af21f51dee8f7",
+      "bel": "p(hgnc:7782 ! NFE2L2, pmod(go:0016567 ! \"protein ubiquitination\", Lys))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ATF4",
+        "identifier": "786"
+      },
+      "id": "3f6bad91bb9860c1d9e46f1723a3de54",
+      "bel": "p(hgnc:786 ! ATF4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "BACH1",
+        "identifier": "935"
+      },
+      "id": "ff5e25e2d6ca5ea06539c0cced93867a",
+      "bel": "p(hgnc:935 ! BACH1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PRDX1",
+        "identifier": "9352"
+      },
+      "id": "773aa344f605685d86195e5943a944a5",
+      "bel": "p(hgnc:9352 ! PRDX1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PRKCI",
+        "identifier": "9404"
+      },
+      "id": "3005bb63996d2501f36a69ca5efce1dd",
+      "bel": "p(hgnc:9404 ! PRKCI)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTGS2",
+        "identifier": "9605"
+      },
+      "id": "a599840205cea50660db6b94062760db",
+      "bel": "p(hgnc:9605 ! PTGS2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RBX1",
+        "identifier": "9928"
+      },
+      "id": "74b9b173fea98ef4a587eec7ae31d443",
+      "bel": "p(hgnc:9928 ! RBX1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "mgi",
+        "name": "Keap1",
+        "identifier": "1858732"
+      },
+      "id": "c51660545de2c383440f753b6795c5de",
+      "bel": "p(mgi:1858732 ! Keap1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "mgi",
+        "name": "Bach1",
+        "identifier": "894680"
+      },
+      "id": "bb59198d76ab346d943831ffdf40e409",
+      "bel": "p(mgi:894680 ! Bach1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "mgi",
+        "name": "Maff",
+        "identifier": "96910"
+      },
+      "id": "c20add26352d99e1cf446fbee3d6ceb8",
+      "bel": "p(mgi:96910 ! Maff)"
+    }
+  ],
+  "links": [
+    {
+      "line": 119,
+      "relation": "increases",
+      "evidence": "Dietary curcumin led to increase in NF-E2-related factor-2 (Nrf2) protein levels and enhanced its nuclear translocation in liver and lungs of mice as compared with controls.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18321868"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "go",
+            "name": "cytoplasm",
+            "identifier": "0005737"
+          },
+          "toLoc": {
+            "namespace": "go",
+            "name": "nucleus",
+            "identifier": "0005634"
+          }
+        }
+      },
+      "source": 2,
+      "target": 64,
+      "key": "dc0f71aca720b82163cb4eff0e212071"
+    },
+    {
+      "line": 120,
+      "relation": "increases",
+      "evidence": "Dietary curcumin led to increase in NF-E2-related factor-2 (Nrf2) protein levels and enhanced its nuclear translocation in liver and lungs of mice as compared with controls.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18321868"
+      },
+      "annotations": {},
+      "source": 2,
+      "target": 64,
+      "key": "70d7c05fcc7d6c779abdfd93e8b90055"
+    },
+    {
+      "line": 120,
+      "relation": "increases",
+      "evidence": "Also, studies in renal epithelial and MDA-MB468 breast cells showed the parallel increase in Nrf2 nuclear protein and hemoxygenase-1 in response to curcumin (18,19).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18321868"
+      },
+      "annotations": {},
+      "source": 2,
+      "target": 64,
+      "key": "ac9fcc2b4c673f291a05ac236dd27894"
+    },
+    {
+      "line": 114,
+      "relation": "directlyDecreases",
+      "evidence": "Using chromatin immunoprecipitation assays in NIH 3T3 cells, we show that heme, an inducer of ho-1, promotes displacement of Bach1 from the MafK-occupied ho-1 enhancers, which is followed by Nrf2 binding to these elements.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14747657"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 1,
+      "target": 71,
+      "key": "d5ebfa4b285cbe584c05db8d13d2d52c"
+    },
+    {
+      "line": 114,
+      "relation": "directlyDecreases",
+      "evidence": "The DNA-binding activity of Bach1 as a MafK hetero-oligomer was markedly inhibited by heme in gel mobility shift assays. The repressor activity of Bach1 was lost upon addition of hemin in transfected cells. These results suggest that increased levels of heme inactivate the repressor Bach1, resulting in induction of a host of genes with MARES:",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11387216"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 1,
+      "target": 71,
+      "key": "d338d3574580836096c73eadb45708e5"
+    },
+    {
+      "line": 84,
+      "relation": "increases",
+      "evidence": "Quercetin pretreatment strongly suppressed UVA-induced apoptosis in human keratinocyte HaCaT cells, markedly increased protein levels of the transcription factor Nrf2, induced the expression of antioxidative genes, and dramatically reduced the production of reactive oxygen species following UVA irradiation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19576171"
+      },
+      "annotations": {},
+      "source": 0,
+      "target": 64,
+      "key": "fd7caf72584c5181960e58cc3c970223"
+    },
+    {
+      "line": 62,
+      "relation": "increases",
+      "evidence": "However, after oxidative stress induced by a variety of agents, Keap1 redistributed and accumulated in the nucleus (Fig. 1A and D). This redistribution was not unique to NIH 3T3 fibroblasts. In the human hepatoblastoma cell line HepG2 (Fig. 1B), as well as in Cos7 fibroblasts (Fig. 1C), endogenous Keap1 also accumulated in the nucleus after DEM treatment.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15899855"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "go",
+            "name": "cytoplasm",
+            "identifier": "0005737"
+          },
+          "toLoc": {
+            "namespace": "go",
+            "name": "nucleus",
+            "identifier": "0005634"
+          }
+        }
+      },
+      "source": 3,
+      "target": 76,
+      "key": "8031bb7429837bf530d7bffa26b2f8ca"
+    },
+    {
+      "line": 63,
+      "relation": "decreases",
+      "evidence": "We propose that exposure of cells to sulforaphane or oxidative stress, by altering the redox state of Cys 151, reduces the ability of Nrf2-bound Keap1 proteins to associate with the Cul3-Rbx1 core complex. As a result, fewer Nrf2 molecules will be targeted for ubiquitination and subsequent degradation, leading to increased accumulation of Nrf2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15572695"
+      },
+      "annotations": {},
+      "source": 3,
+      "target": 7,
+      "key": "1099518bd30ac7288ef1b39a7cfef505"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 4,
+      "target": 52,
+      "key": "4b7eb9e40418a6dc10ee3da22aaa1f82"
+    },
+    {
+      "relation": "partOf",
+      "source": 64,
+      "target": 18,
+      "key": "527e2e242fcac5cb3850f84b001a7bbc"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 64,
+      "target": 18,
+      "key": "5f1676aa492132fb088c162f1d239ed7"
+    },
+    {
+      "relation": "partOf",
+      "source": 64,
+      "target": 7,
+      "key": "668ce45c0dcf75feb918b0bbf710c55e"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 64,
+      "target": 7,
+      "key": "ce2780f7220ecfaee7471e47e7d14c55"
+    },
+    {
+      "relation": "partOf",
+      "source": 64,
+      "target": 10,
+      "key": "c2617351ad887f8afcd30c5eae9a6f3d"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 64,
+      "target": 10,
+      "key": "936d038b07f5ae702e2e3bd14476daa0"
+    },
+    {
+      "relation": "partOf",
+      "source": 64,
+      "target": 9,
+      "key": "4a95a7a464ca083c93ad87b6498e5e1c"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 64,
+      "target": 9,
+      "key": "c0dbe2f704fc79ce6a2b8bf9a9328b97"
+    },
+    {
+      "relation": "partOf",
+      "source": 64,
+      "target": 12,
+      "key": "a005655c3f914bf68c621738c4b40006"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 64,
+      "target": 12,
+      "key": "59fb3a82e28998e1ed97532bd4f29b28"
+    },
+    {
+      "relation": "partOf",
+      "source": 64,
+      "target": 14,
+      "key": "ce88b9b1676e4008e9ac0ef5e393cb0c"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 64,
+      "target": 14,
+      "key": "b224774c199c863b8bec220265a845c4"
+    },
+    {
+      "relation": "partOf",
+      "source": 64,
+      "target": 16,
+      "key": "e07198f3d0c80066d845ceaa8784f59c"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 64,
+      "target": 16,
+      "key": "8f4d93c67182d31af2f56b96a148e400"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 64,
+      "target": 65,
+      "key": "33f1dfd5aa466fc8ffbae4c2d90ef40e"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 64,
+      "target": 66,
+      "key": "4179299152f682af5a72e937502f0ce6"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 64,
+      "target": 67,
+      "key": "a8d83c1cf6b8ad2cb15a093d86b7e57d"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 64,
+      "target": 68,
+      "key": "02e9551051d71e582c913b312c843306"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 64,
+      "target": 69,
+      "key": "1fdd076c179d68c027a6a38b52047a42"
+    },
+    {
+      "line": 80,
+      "relation": "decreases",
+      "evidence": "Phosphorylated Fyn accumulates in the nucleus and phosphorylates Nrf2 at tyrosine 568. This leads to nuclear export, ubiquitination, and degradation of Nrf2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17403689"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "go",
+            "name": "cytoplasm",
+            "identifier": "0005737"
+          },
+          "toLoc": {
+            "namespace": "go",
+            "name": "nucleus",
+            "identifier": "0005634"
+          }
+        }
+      },
+      "source": 64,
+      "target": 69,
+      "key": "291bddfecc9f2f312fecab4cd76f12ee"
+    },
+    {
+      "line": 43,
+      "relation": "directlyDecreases",
+      "evidence": "CRIF1, unlike KEAP1 (which only interacts with N-terminal region of NRF2), physically interacts with both N- and C-terminal regions of NRF2 and promotes NRF2 ubiquitination and subsequent proteasome-mediated NRF2 protein degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20427290"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 64,
+      "target": 64,
+      "key": "ad7fa0191c5c27a03bbc5989090ca9fb"
+    },
+    {
+      "line": 43,
+      "relation": "directlyDecreases",
+      "evidence": "Nrf2 disappeared in cells with siDJ-1 (Fig. 4B), indicating that DJ-1 stabilizes Nrf-2 protein.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17015834"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 64,
+      "target": 64,
+      "key": "875b72aef33c47c214f11e9694494245"
+    },
+    {
+      "line": 43,
+      "relation": "directlyDecreases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12441344"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 64,
+      "target": 64,
+      "key": "4e55eb9474b20aa26a88c4d5b9491224"
+    },
+    {
+      "line": 43,
+      "relation": "directlyDecreases",
+      "evidence": "Downregulation of Nrf2 by si-NOX1 could be prevented by the addition of the proteasome inhibitor MG132, suggesting that NOX1-derived ROS interfere with the redox dependent proteasomal degradation of Nrf2 (Fig. 3C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20347035"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 64,
+      "target": 64,
+      "key": "937cadbebcf1e117840743519a346002"
+    },
+    {
+      "line": 43,
+      "relation": "directlyDecreases",
+      "evidence": "Whereas the Nrf2 level was very low in the cells cotransfected with WT Keap1, treatment of cells with the proteasome inhibitor MG132 stabilized the Nrf2 protein (Fig. 3A, lanes 1 and 2). The Nrf2 level in cells cotransfected with the R272C mutant was very high and was not induced effectively by MG132 (Fig. 3A, lanes 3 and 4). These results indicate that the R272C mutant impaired Nrf2 degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18316592"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 64,
+      "target": 64,
+      "key": "e6b14dc2837cdad98ed8b318d5816f25"
+    },
+    {
+      "line": 43,
+      "relation": "directlyDecreases",
+      "evidence": "These results demonstrated that tBHQ and PKC-delta are both required for releasing Nrf2 from INrf2 and for Nrf2 stabilization.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19920073"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 64,
+      "target": 64,
+      "key": "03547315ab4d044dc378e071c7261149"
+    },
+    {
+      "line": 43,
+      "relation": "directlyDecreases",
+      "evidence": "Keap1 targets its substrate, the Nrf2 transcription factor, for ubiquitination and subsequent degradation by the 26 S proteasome.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15983046"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 64,
+      "target": 64,
+      "key": "4e1abc12301b19ba98be10e151413f80"
+    },
+    {
+      "line": 43,
+      "relation": "directlyDecreases",
+      "evidence": "These results suggest that, under oxidative stress conditions, DJ-1 stabilizes NRF2 protein by interfering with proteasomal degradation and enhances cellular NRF2-dependent antioxidants.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18556627"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 64,
+      "target": 64,
+      "key": "c490a720ef9409717449bf8acc92ebfb"
+    },
+    {
+      "line": 43,
+      "relation": "directlyDecreases",
+      "evidence": "# Ariadne: Under normal conditions, Nrf2 is targeted  for proteasomal degradation by INrf2. [MolTransport]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12947090"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 64,
+      "target": 64,
+      "key": "dca146e9d82e8ef065d69a05b5d14827"
+    },
+    {
+      "line": 43,
+      "relation": "directlyDecreases",
+      "evidence": "We propose that exposure of cells to sulforaphane or oxidative stress, by altering the redox state of Cys 151, reduces the ability of Nrf2-bound Keap1 proteins to associate with the Cul3-Rbx1 core complex. As a result, fewer Nrf2 molecules will be targeted for ubiquitination and subsequent degradation, leading to increased accumulation of Nrf2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15572695"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 64,
+      "target": 64,
+      "key": "e0fea47b7109f9a066374b167b8dcfeb"
+    },
+    {
+      "line": 43,
+      "relation": "directlyDecreases",
+      "evidence": "Investigators have also proposed Nrf2 stabilization by Keap1; Keap1 may bind to culin-3 (Cul3)-ring box 1 (Rbx1) to form core E3 ubiquitin ligase complex, which renders Nrf2 ubiquitination for targeting of proteasomal degradation (McMahon et al., 2003; Furukawa and Xiong, 2005).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19646463"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 64,
+      "target": 64,
+      "key": "40714eeb1e83ccf13a8c9ea1cd489882"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "Collectively, these data support the conclusion that Keap1 dimerization is required for Nrf2 sequestration and transcriptional repression. Furthermore, exposure to inducing agents disrupts the Keap1 dimerization function and results in Nrf2 release.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12145307"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "go",
+            "name": "cytoplasm",
+            "identifier": "0005737"
+          },
+          "toLoc": {
+            "namespace": "go",
+            "name": "nucleus",
+            "identifier": "0005634"
+          }
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 64,
+      "target": 64,
+      "key": "983e042826ee8068abf872afd12ae61d"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "Transfection of Nrf2-siRNA diminished, albeit not completely, the L-flow-induced nuclear accumulation of Nrf2 (Fig. 2A) and the gene expressions of both NQO1 and HO-1  (Fig. 2B). These results demonstrate that Nrf2 activity is indispensable for the inducible expression of ARE-regulated genes in response to L-flow in HAECs.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15917255"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "go",
+            "name": "cytoplasm",
+            "identifier": "0005737"
+          },
+          "toLoc": {
+            "namespace": "go",
+            "name": "nucleus",
+            "identifier": "0005634"
+          }
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 64,
+      "target": 64,
+      "key": "f13cc5cbf211629f5ce03d2499abf043"
+    },
+    {
+      "line": 99,
+      "relation": "increases",
+      "evidence": "Western blot analysis of lung proteins showed that Srx1 proteinwas present constitutively, and its level increased significantly on exposure to CS in Nrf2+/+ mice. By contrast, expression of Srx1 protein was low in Nrf2?/? mice and did not change significantly with CS exposure (Figs. 1B and C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19027064"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 64,
+      "target": 26,
+      "key": "a976171966613eb9c8c6e7227d44396e"
+    },
+    {
+      "line": 104,
+      "relation": "increases",
+      "evidence": "Subsequently, to understand the mechanism of nanoparticles-induced oxidative stress, the involvement of oxidative stress-responding transcription factors, such as, nuclear factor-kappaB (NF-kappaB) and nuclear factor-E2-related factor-2 (Nrf-2), as well as the mitogen-activated protein (MAP) kinase signal transduction pathway were investigated. From the overall results, silica nanoparticles exerted toxicity via oxidative stress, which lead to the induction of HO-1 via the Nrf-2-ERK MAP kinase signaling pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19602432"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 64,
+      "target": 57,
+      "key": "716521f9a9864653840701c8f9d1f434"
+    },
+    {
+      "line": 145,
+      "relation": "increases",
+      "evidence": "nfr2 also enhanced the activity of SOD and HO-1",
+      "citation": {
+        "db": "Other",
+        "db_id": "22362068"
+      },
+      "annotations": {},
+      "source": 64,
+      "target": 23,
+      "key": "20b6ab48852886a74764c3add688edd0"
+    },
+    {
+      "relation": "partOf",
+      "source": 70,
+      "target": 18,
+      "key": "652633055e8065d159899ebc41e185c5"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 70,
+      "target": 18,
+      "key": "7d4f075d108f5176d1698334554b1bf1"
+    },
+    {
+      "relation": "partOf",
+      "source": 55,
+      "target": 15,
+      "key": "aa1076d76b53baf9dbd3c786514d10aa"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 55,
+      "target": 15,
+      "key": "2e715d88d29cd0c892e7fe60553e74e7"
+    },
+    {
+      "relation": "partOf",
+      "source": 55,
+      "target": 13,
+      "key": "dfd11098866b5681dad19101028e222a"
+    },
+    {
+      "relation": "partOf",
+      "source": 55,
+      "target": 14,
+      "key": "e0bb24c850ffbd8735c2c79d3433d182"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 55,
+      "target": 14,
+      "key": "64d5b71e5ac7313692f7becb7b01f86d"
+    },
+    {
+      "relation": "partOf",
+      "source": 71,
+      "target": 15,
+      "key": "f81f3b8edeb7cfdd616ec032bf8efcb9"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 71,
+      "target": 15,
+      "key": "27f38d64e70edfc9352e4489b2a1c740"
+    },
+    {
+      "relation": "partOf",
+      "source": 71,
+      "target": 17,
+      "key": "9aac10e6d37e5fdec5ebcce7b6ce4f9c"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 71,
+      "target": 17,
+      "key": "6a4e7e1c66a09fcd50089a29ee567c65"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 71,
+      "target": 19,
+      "key": "9bf49483f57b1c56c6a77f08bacdb5c7"
+    },
+    {
+      "line": 58,
+      "relation": "directlyDecreases",
+      "evidence": "Overexpression of Bach1, together with MafK, represses basal and UVA-mediated HO-1 protein expression, whereas silencing of the Bach1 gene by Bach1-specific siRNAs causes robust enhancement of constitutive HO-1 levels.",
+      "citation": {
+        "db": "Other",
+        "db_id": "22107958"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 71,
+      "target": 49,
+      "key": "10e5e8a94e08d6f97e75d014c8f91ee8"
+    },
+    {
+      "line": 58,
+      "relation": "directlyDecreases",
+      "evidence": "Overexpression of Bach1, together with MafK, represses basal and UVA-mediated HO-1 protein expression, whereas silencing of the Bach1 gene by Bach1-specific siRNAs causes robust enhancement of constitutive HO-1 levels.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15233805"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 71,
+      "target": 49,
+      "key": "523652925e189095780beb6bf7ae345f"
+    },
+    {
+      "line": 58,
+      "relation": "directlyDecreases",
+      "evidence": "BACH1 repression is dominant over NRF2-mediated HMOX1 transcription and inactivation of BACH1 is a prerequisite for HMOX1 induction.",
+      "citation": {
+        "db": "Other",
+        "db_id": "17942419"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 71,
+      "target": 49,
+      "key": "050ef0402c6fbc9761615f93baef3e68"
+    },
+    {
+      "line": 58,
+      "relation": "directlyDecreases",
+      "evidence": "in alveolar macrophages from patients with SE, increased Bach1 and Keap1 expression was associated with decreased HO-1 expression",
+      "citation": {
+        "db": "Other",
+        "db_id": "18559366"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 71,
+      "target": 49,
+      "key": "6efa883ddc477003c1ae4496a31a328d"
+    },
+    {
+      "relation": "partOf",
+      "source": 56,
+      "target": 17,
+      "key": "5161b3ffa59a713d931ef930b00ba2b2"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 56,
+      "target": 17,
+      "key": "c25cef50c656803629523ae38656c347"
+    },
+    {
+      "relation": "partOf",
+      "source": 56,
+      "target": 16,
+      "key": "454b30244808610a98fb248d80c0e321"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 56,
+      "target": 16,
+      "key": "1ae7c3f16b5e87ec4eb68edb2417bc34"
+    },
+    {
+      "line": 131,
+      "relation": "increases",
+      "evidence": "We propose that exposure of cells to sulforaphane or oxidative stress, by altering the redox state of Cys 151, reduces the ability of Nrf2-bound Keap1 proteins to associate with the Cul3-Rbx1 core complex. As a result, fewer Nrf2 molecules will be targeted for ubiquitination and subsequent degradation, leading to increased accumulation of Nrf2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15572695"
+      },
+      "annotations": {},
+      "source": 7,
+      "target": 69,
+      "key": "c59ba429cf065a7be047d69f3d849d9a"
+    },
+    {
+      "relation": "partOf",
+      "source": 29,
+      "target": 7,
+      "key": "7506093f7b4070128ab3e25307b88b7e"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 29,
+      "target": 7,
+      "key": "8b2c87cb5ab0cf087eca9b87f82095a5"
+    },
+    {
+      "relation": "partOf",
+      "source": 29,
+      "target": 8,
+      "key": "e68286626dc036a4ed79e4897b4c4c03"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 29,
+      "target": 8,
+      "key": "52d961c02c1a46ed46aa33a1f5fef2d1"
+    },
+    {
+      "relation": "partOf",
+      "source": 29,
+      "target": 9,
+      "key": "0ee0f17b408781a306bf0be7c916bdfc"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 29,
+      "target": 9,
+      "key": "6d1345046362483a8b174bb3519caed4"
+    },
+    {
+      "relation": "partOf",
+      "source": 29,
+      "target": 6,
+      "key": "b13a8c668a7e3dfca8c6aa20fe9d7c30"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 29,
+      "target": 6,
+      "key": "867c519e64ec508706cbb3f33f735de0"
+    },
+    {
+      "line": 30,
+      "relation": "directlyDecreases",
+      "evidence": "Antioxidant response element (ARE) and nuclear transcription factor Nrf2 are known to regulate expression and coordinated induction of NQO1 and other detoxifying enzyme genes in response to antioxidants and xenobiotics.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11439354"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 29,
+      "target": 64,
+      "key": "461e2d77c442a60c523a534d9109ac56"
+    },
+    {
+      "line": 30,
+      "relation": "directlyDecreases",
+      "evidence": "INrf2 tethering of the transcription factor Nrf2 in the cytosol prevents Nrf2 activation of antioxidant response element (ARE) mediated gene expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12360409"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 29,
+      "target": 64,
+      "key": "dc7f10df1260459a3541ecb13eb8c3d5"
+    },
+    {
+      "line": 30,
+      "relation": "directlyDecreases",
+      "evidence": "# Pubmed:gene: Redox-sensitive interaction between KIAA0132 and Nrf2 mediates indomethacin-induced expression of gamma-glutamylcysteine synthetase. # Ariadne: These results also support the hypothesis that indomethacin-induced transcriptional activation of GCLC involves the redox-dependent release of KIAA0132 from Nrf2 followed by the nuclear translocation of Nrf2. [MolTransport]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11909699"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 29,
+      "target": 64,
+      "key": "d2c168bfd4b27a75df7236ac1644514e"
+    },
+    {
+      "line": 31,
+      "relation": "decreases",
+      "evidence": "Coexpression of Keap1 resulted in localization of the wild-type Nrf2-GFP fusion protein in the cytoplasm of the majority of transfected cells, and nuclear distribution was seen in a very small number of cells (Fig. 4, B and C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12700136"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "go",
+            "name": "cytoplasm",
+            "identifier": "0005737"
+          },
+          "toLoc": {
+            "namespace": "go",
+            "name": "nucleus",
+            "identifier": "0005634"
+          }
+        }
+      },
+      "source": 29,
+      "target": 64,
+      "key": "85fa04ee2f0c392ab2eb4c0c9a4f08d3"
+    },
+    {
+      "line": 32,
+      "relation": "decreases",
+      "evidence": "Depletion of KEAP1 led to the accumulation and stabilization of IKKbeta and to upregulation of NF-kappaB-derived tumor angiogenic factors.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19818716"
+      },
+      "annotations": {},
+      "source": 29,
+      "target": 51,
+      "key": "3df084303ea1e58af9369f027e22fb67"
+    },
+    {
+      "line": 32,
+      "relation": "decreases",
+      "evidence": "Ectopic expression of KEAP1 decreased the expression of IKKbeta, which was restored by an autophagy inhibitor.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20600852"
+      },
+      "annotations": {},
+      "source": 29,
+      "target": 51,
+      "key": "853a8b0686b8e687f54d3299f7ed525a"
+    },
+    {
+      "relation": "partOf",
+      "source": 31,
+      "target": 7,
+      "key": "5bcc30dd7be863655af21c430b8fc07b"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 31,
+      "target": 7,
+      "key": "42c147e0e0d0a068b8fc1858d2a399cf"
+    },
+    {
+      "relation": "partOf",
+      "source": 75,
+      "target": 7,
+      "key": "ea9eacf749356aaf18da67a801a4772b"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 75,
+      "target": 7,
+      "key": "c0f88dec4a2a5c87f01a57f2fb3586b5"
+    },
+    {
+      "relation": "partOf",
+      "source": 35,
+      "target": 10,
+      "key": "231396059fd8a9691eeb1bbe5e727a5d"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 35,
+      "target": 10,
+      "key": "1661f17ff7d5475527909a1573d5368a"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 35,
+      "target": 36,
+      "key": "38ad73953b3261512bc852e53d3b40dc"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "PERK also directly phosphorylates Nrf2, thereby releasing it from its cytoplasmic inhibitor, Kelch-like ECH–associated protein 1 (Keap1) and allowing translocation to the nucleus (32, 33).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18079489"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 35,
+      "target": 65,
+      "key": "59ec96487641a67bd391420c4568be43"
+    },
+    {
+      "relation": "partOf",
+      "source": 51,
+      "target": 8,
+      "key": "c3b304135b210e477a3bdf317660efb3"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 51,
+      "target": 8,
+      "key": "a68a92802aada1145a5e5f7313cf42d4"
+    },
+    {
+      "line": 18,
+      "relation": "decreases",
+      "evidence": "A downstream product of COX-2, 15-deoxy-Delta(12,14)-prostaglandin J2 (15d-PGJ2), activated the Nrf2 regulatory pathway in HAECs through binding to the cysteines of Keap1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15917255"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "go",
+            "name": "cytoplasm",
+            "identifier": "0005737"
+          },
+          "toLoc": {
+            "namespace": "go",
+            "name": "nucleus",
+            "identifier": "0005634"
+          }
+        }
+      },
+      "source": 9,
+      "target": 64,
+      "key": "0773218555693e4122d24de480244fe9"
+    },
+    {
+      "line": 39,
+      "relation": "directlyDecreases",
+      "evidence": "RNA interference (RNAi) depletion of SQSTM1 resulted in an increase in the protein level of Keap1 and a concomitant decrease in the protein level of Nrf2 in the absence of changes in Keap1 or Nrf2 mRNA levels. The increased protein level of Keap1 in cells depleted of SQSTM1 by RNAi was linked to a decrease in its rate of degradation; the half-life of Keap1 was almost doubled by RNAi depletion of SQSTM1. The decreased level of Nrf2 in cells depleted of SQSTM1 by RNAi was associated with decreases in the mRNA levels, protein levels, and function of several Nrf2-regulated cell defense genes.",
+      "citation": {
+        "db": "Other",
+        "db_id": "20378532"
+      },
+      "annotations": {},
+      "source": 6,
+      "target": 9,
+      "key": "8c829ac283ae47c633b783c2fc0ad339"
+    },
+    {
+      "line": 39,
+      "relation": "directlyDecreases",
+      "evidence": "Also, p62 docks directly onto the Kelch-repeat domain of Kelch-like ECH-associated protein 1 (KEAP1), via a motif designated the KEAP1 interacting region (KIR), thereby blocking binding between KEAP1 and NRF2 that leads to ubiquitylation and degradation of the transcription factor.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20452972"
+      },
+      "annotations": {},
+      "source": 6,
+      "target": 9,
+      "key": "8d443ae56a52229eb43fa543d529bb16"
+    },
+    {
+      "line": 39,
+      "relation": "directlyDecreases",
+      "evidence": "an interaction between p62/SQSTM1 and Keap1. This interaction allows nuclear accumulation of the nuclear factor erythroid 2-like 2 (NFE2L2, also known as nuclear factor related factor 2 or NRF2),",
+      "citation": {
+        "db": "Other",
+        "db_id": "23795962"
+      },
+      "annotations": {},
+      "source": 6,
+      "target": 9,
+      "key": "2e392a9ed1c2805c4909782842af03fe"
+    },
+    {
+      "relation": "partOf",
+      "source": 24,
+      "target": 6,
+      "key": "a71d31f408ef84f0c81fb1374e74a2a0"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 24,
+      "target": 6,
+      "key": "6ff324aa789486fa75f2e2f3a94fd66c"
+    },
+    {
+      "relation": "partOf",
+      "source": 54,
+      "target": 11,
+      "key": "8dc21bfca9522b585a7b5bc3c53f92b4"
+    },
+    {
+      "relation": "partOf",
+      "source": 54,
+      "target": 12,
+      "key": "f49fe3304070c7134cc95e30d5423de9"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 54,
+      "target": 12,
+      "key": "8c1fd1402fa5fb8cd5ea6b0b4bc44a81"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 54,
+      "target": 19,
+      "key": "54f22408808ab4425b9f2f061204bdc9"
+    },
+    {
+      "relation": "partOf",
+      "source": 63,
+      "target": 11,
+      "key": "090162c5f70db2e944dc4418c52f3428"
+    },
+    {
+      "relation": "partOf",
+      "source": 63,
+      "target": 13,
+      "key": "5a7a38b378089afba1d41d02ccacbf19"
+    },
+    {
+      "line": 69,
+      "relation": "increases",
+      "evidence": "Nrf1 and Nrf2 Regulate a Similar Subset of Antioxidant Genes: Expression of Gclm was reduced to the same extent in both Nrf1 and Nrf2 mutant cells. NQO1 was down-regulated to a similar extent in both single mutant cells, whereas mRNA levels of heme-oxygenase-1 (HO-1), ferritin-H (FtH), and metallothionein-1 (MT-1) was lower in nrf2?/? cells compared with nrf1?/? cells (Fig. 6a). In all cases, however, expression in double knockout cells was abolished compared with single knockout cells, indicating a dependence on both Nrf1 and Nrf2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12968018"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 63,
+      "target": 49,
+      "key": "9e59dfa9466ea7fc9b989b0aea6df5c5"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "Nrf1 and Nrf2 Regulate a Similar Subset of Antioxidant Genes: Expression of Gclm was reduced to the same extent in both Nrf1 and Nrf2 mutant cells. NQO1 was down-regulated to a similar extent in both single mutant cells, whereas mRNA levels of heme-oxygenase-1 (HO-1), ferritin-H (FtH), and metallothionein-1 (MT-1) was lower in nrf2?/? cells compared with nrf1?/? cells (Fig. 6a). In all cases, however, expression in double knockout cells was abolished compared with single knockout cells, indicating a dependence on both Nrf1 and Nrf2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12968018"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 63,
+      "target": 42,
+      "key": "b44cec59d80c8ebfce3867fff3c9fab4"
+    },
+    {
+      "line": 71,
+      "relation": "increases",
+      "evidence": "In this study, we exploited the availability of cells from Nrf1 knockout mice to study the role of Nrf1 transcription factor in the regulation of antioxidant gene expression and in cellular antioxidant response. Fibroblast cells derived from Nrf1 null embryos showed lower levels of glutathione and enhanced sensitivity to the toxic effects of oxidant compounds.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10601325"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 63,
+      "target": 32,
+      "key": "8be515bc34026812cbe4d768a5a85167"
+    },
+    {
+      "line": 87,
+      "relation": "increases",
+      "evidence": "These results indicate that heme promotes stabilization of Nrf2, leading to accumulation of Nrf2. MafG dimers that bind to StREs to activate the ho-1 gene.",
+      "citation": {
+        "db": "Other",
+        "db_id": "12453873"
+      },
+      "annotations": {},
+      "source": 14,
+      "target": 49,
+      "key": "9009a283d8e457c30cfd6d47093c0aee"
+    },
+    {
+      "line": 23,
+      "relation": "decreases",
+      "evidence": "Overexpression of Bach1, together with MafK, represses basal and UVA-mediated HO-1 protein expression, whereas silencing of the Bach1 gene by Bach1-specific siRNAs causes robust enhancement of constitutive HO-1 levels.",
+      "citation": {
+        "db": "Other",
+        "db_id": "22107958"
+      },
+      "annotations": {},
+      "source": 19,
+      "target": 49,
+      "key": "a991395819b86616abcb7b5c782e63cc"
+    },
+    {
+      "line": 23,
+      "relation": "decreases",
+      "evidence": "Enhanced expression of either MafK or Bach1 was enough to suppress the electrophile-inducible expression of HO-1 ....Knockdown of MafK and Bach1 by siRNA abolished TGF-β-dependent suppression of HO-1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23737527"
+      },
+      "annotations": {},
+      "source": 19,
+      "target": 49,
+      "key": "40054a440dc94a97cde6a3420eece3e0"
+    },
+    {
+      "line": 23,
+      "relation": "decreases",
+      "evidence": "heme-binding factor, Bach1, is a critical physiological repressor of ho-1. Bach1 bound to the multiple Maf recognition elements (MAREs) of ho-1 enhancers with MafK in vitro and repressed their activity in vivo,",
+      "citation": {
+        "db": "Other",
+        "db_id": "12356737"
+      },
+      "annotations": {},
+      "source": 19,
+      "target": 49,
+      "key": "a54af7c0125e8f558a5439affb96fea6"
+    },
+    {
+      "relation": "partOf",
+      "source": 77,
+      "target": 19,
+      "key": "ca36068c4b0a538cd84c7b8d1f86eee8"
+    },
+    {
+      "relation": "partOf",
+      "source": 78,
+      "target": 19,
+      "key": "070cbaafe741861b15dd9c88aff6fa76"
+    },
+    {
+      "line": 144,
+      "relation": "increases",
+      "evidence": "There may be bidirectional regulation; recent studies suggest that Nrf2 is an AhR target gene, and the Nrf2 expression is directly modulated by AhR activation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19185948"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 37,
+      "target": 64,
+      "key": "15e360b0d32b6ea20d6e64652426874c"
+    },
+    {
+      "line": 54,
+      "relation": "increases",
+      "evidence": "Here we show that upregulation of NRF2 by OxPLs depends on the activity of protein kinase CK2. Inactivation of CK2 by chemical inhibitors or gene silencing resulted in diminished accumulation of NRF2 and its downstream genes GCLM, HO-1 and NQO1 in response to OxPLs. Furthermore, inhibition of CK2 suppressed NRF2-dependent induction of ATF4 and its downstream gene VEGF.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20934988"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 30,
+      "target": 64,
+      "key": "1d176654afe9b02bf1f8d04b27a03125"
+    },
+    {
+      "line": 55,
+      "relation": "increases",
+      "evidence": "Here we show that upregulation of NRF2 by OxPLs depends on the activity of protein kinase CK2. Inactivation of CK2 by chemical inhibitors or gene silencing resulted in diminished accumulation of NRF2 and its downstream genes GCLM, HO-1 and NQO1 in response to OxPLs. Furthermore, inhibition of CK2 suppressed NRF2-dependent induction of ATF4 and its downstream gene VEGF.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20934988"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 30,
+      "target": 64,
+      "key": "8b9c1b215eb1134c035be82b28abf6d9"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 39,
+      "target": 40,
+      "key": "5ab715c479144ff8340436811a6a45d2"
+    },
+    {
+      "line": 13,
+      "relation": "directlyIncreases",
+      "evidence": "Phosphorylated Fyn accumulates in the nucleus and phosphorylates Nrf2 at tyrosine 568. This leads to nuclear export, ubiquitination, and degradation of Nrf2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17403689"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 68,
+      "key": "93b73aaabbaa43ddb830b11627fec457"
+    },
+    {
+      "line": 29,
+      "relation": "increases",
+      "evidence": "The activated GSK-3beta phosphorylates Fyn at threonine residue(s). Phosphorylated Fyn accumulates in the nucleus and phosphorylates Nrf2 at tyrosine 568.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17403689"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 40,
+      "target": 39,
+      "key": "5d16109eb6da42abdd3a8e638b4737e2"
+    },
+    {
+      "line": 42,
+      "relation": "directlyIncreases",
+      "evidence": "CRIF1, unlike KEAP1 (which only interacts with N-terminal region of NRF2), physically interacts with both N- and C-terminal regions of NRF2 and promotes NRF2 ubiquitination and subsequent proteasome-mediated NRF2 protein degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20427290"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 33,
+      "target": 64,
+      "key": "27a3483c09606e50a811e040b1f2060c"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 44,
+      "target": 45,
+      "key": "39d4e7e0be4ba22fb51161aec0ad0285"
+    },
+    {
+      "line": 121,
+      "relation": "increases",
+      "evidence": "The activated GSK-3beta phosphorylates Fyn at threonine residue(s). Phosphorylated Fyn accumulates in the nucleus and phosphorylates Nrf2 at tyrosine 568.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17403689"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 44,
+      "target": 40,
+      "key": "0f311d82b418a3d24d77ed4bb5a2ad2c"
+    },
+    {
+      "line": 20,
+      "relation": "directlyIncreases",
+      "evidence": "We further demonstrate that hydrogen peroxide phosphorylates tyrosine 216 of GSK-3beta. This leads to activation of GSK-3beta.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17403689"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 45,
+      "target": 44,
+      "key": "ac0c03825b93e8a157a13d5ac3affe55"
+    },
+    {
+      "line": 20,
+      "relation": "directlyIncreases",
+      "evidence": "GSK3 requires tyrosine phosphorylation on Y279 (a isoform) or Y216 (b isoform), a residue in the activation loop of the catalytic domain, for kinase activity",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11520785"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 45,
+      "target": 44,
+      "key": "3252527e047a833d7e2b192e5c53440e"
+    },
+    {
+      "line": 20,
+      "relation": "directlyIncreases",
+      "evidence": "Glycogen synthase kinase 3 (GSK3), a key component of the insulin and wnt signaling pathways, is unusual, as it is constitutively active and is inhibited in response to upstream signals. Kinase activity is thought to be increased by intramolecular phosphorylation of a tyrosine in the activation loop (Y216 in GSK3beta), whose timing and mechanism is undefined.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17188038"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 45,
+      "target": 44,
+      "key": "43a96967957b6359513a0eeae14a0ab2"
+    },
+    {
+      "line": 20,
+      "relation": "directlyIncreases",
+      "evidence": "In mammals GSK3 is present in two isoforms, alpha and beta regulated by phosphorylation: phosphorylation of Ser9 in GSK3beta or Ser21 in GSK3alpha leads to inactivation while phosphorylation of Tyr216 in GSK3beta or Tyr279 in GSK3alpha leads to activation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15265592"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 45,
+      "target": 44,
+      "key": "13647b74d032436c5918ff8daee6e51c"
+    },
+    {
+      "line": 6,
+      "relation": "directlyDecreases",
+      "evidence": "The repression of HO-1 reporter activity by Bach1 was attenuated by co-transfecting IHABP in a dose-dependent manner.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15809329"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 48,
+      "target": 71,
+      "key": "b7ede828f32deae034c7ba23fecef5fd"
+    },
+    {
+      "line": 148,
+      "relation": "increases",
+      "evidence": "COX-2 protein and activity measured as prostaglandin E(2) level were up-regulated in cells expressing mutant K-ras(V12);",
+      "citation": {
+        "db": "Other",
+        "db_id": "15284181"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 53,
+      "target": 74,
+      "key": "3d328a2314ccc54497d9ea01ad6026d8"
+    },
+    {
+      "line": 118,
+      "relation": "directlyIncreases",
+      "evidence": "As shown in Fig. 6A , stimulation of all p38 MAPK isoforms by anisomycin strongly phosphorylated Nrf2 protein (lanes 2-5), whereas no phosphorylation was detected in the control immunoprecipitates (lane 1)...HeLa cells were stimulated with anisomycin (10 _g/mL) for 30 minutes and FLAG-p38 MAPK isoforms were immunoprecipitated using agarose-conjugated anti-FLAG M2 monoclonal antibody. Purified GST-Nrf2 protein was immunoprecipitated with FLAG-p38 MAPK isoforms and was incubated with 32P-labeled ATP in the presence of the precipitated p38 MAPK isoforms. Phosphorylation of Nrf2 protein by activated p38 MAPK isoforms was visualized by autoradiography.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16951197"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 58,
+      "target": 66,
+      "key": "1cca2a3729afe6e2b24a2a9888cdafea"
+    },
+    {
+      "line": 118,
+      "relation": "directlyIncreases",
+      "evidence": "As shown in Fig. 6A  , stimulation of all p38 MAPK isoforms by anisomycin strongly phosphorylated Nrf2 protein (lanes 2-5), whereas no phosphorylation was detected in the control immunoprecipitates (lane 1).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16951197"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 58,
+      "target": 66,
+      "key": "418292c072a1a1a0ed2279d3c185defb"
+    },
+    {
+      "line": 118,
+      "relation": "directlyIncreases",
+      "evidence": "As shown in Fig. 6A , stimulation of all p38 MAPK isoforms by anisomycin strongly phosphorylated Nrf2 protein (lanes 2-5), whereas no phosphorylation was detected in the control immunoprecipitates (lane 1)...HeLa cells were stimulated with anisomycin (10",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16951197"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 58,
+      "target": 66,
+      "key": "64d681d307dd1775dd1c3c2d160f58b8"
+    },
+    {
+      "line": 35,
+      "relation": "directlyIncreases",
+      "evidence": "As shown in Fig. 6A , stimulation of all p38 MAPK isoforms by anisomycin strongly phosphorylated Nrf2 protein (lanes 2-5), whereas no phosphorylation was detected in the control immunoprecipitates (lane 1)...HeLa cells were stimulated with anisomycin (10 _g/mL) for 30 minutes and FLAG-p38 MAPK isoforms were immunoprecipitated using agarose-conjugated anti-FLAG M2 monoclonal antibody. Purified GST-Nrf2 protein was immunoprecipitated with FLAG-p38 MAPK isoforms and was incubated with 32P-labeled ATP in the presence of the precipitated p38 MAPK isoforms. Phosphorylation of Nrf2 protein by activated p38 MAPK isoforms was visualized by autoradiography.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16951197"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 59,
+      "target": 66,
+      "key": "bad2ef14801d4fbb138a83d6ce18c7ee"
+    },
+    {
+      "line": 35,
+      "relation": "directlyIncreases",
+      "evidence": "As shown in Fig. 6A  , stimulation of all p38 MAPK isoforms by anisomycin strongly phosphorylated Nrf2 protein (lanes 2-5), whereas no phosphorylation was detected in the control immunoprecipitates (lane 1).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16951197"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 59,
+      "target": 66,
+      "key": "ea8882fa80df2a4a9206627e24a996de"
+    },
+    {
+      "line": 35,
+      "relation": "directlyIncreases",
+      "evidence": "As shown in Fig. 6A , stimulation of all p38 MAPK isoforms by anisomycin strongly phosphorylated Nrf2 protein (lanes 2-5), whereas no phosphorylation was detected in the control immunoprecipitates (lane 1)...HeLa cells were stimulated with anisomycin (10",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16951197"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 59,
+      "target": 66,
+      "key": "4e60101e13cc324ae6904d5e0e6ae578"
+    },
+    {
+      "line": 112,
+      "relation": "directlyIncreases",
+      "evidence": "As shown in Fig. 6A , stimulation of all p38 MAPK isoforms by anisomycin strongly phosphorylated Nrf2 protein (lanes 2-5), whereas no phosphorylation was detected in the control immunoprecipitates (lane 1)...HeLa cells were stimulated with anisomycin (10 _g/mL) for 30 minutes and FLAG-p38 MAPK isoforms were immunoprecipitated using agarose-conjugated anti-FLAG M2 monoclonal antibody. Purified GST-Nrf2 protein was immunoprecipitated with FLAG-p38 MAPK isoforms and was incubated with 32P-labeled ATP in the presence of the precipitated p38 MAPK isoforms. Phosphorylation of Nrf2 protein by activated p38 MAPK isoforms was visualized by autoradiography.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16951197"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 60,
+      "target": 66,
+      "key": "2fc0e612e0072a2cbbf12d6b0b019277"
+    },
+    {
+      "line": 112,
+      "relation": "directlyIncreases",
+      "evidence": "As shown in Fig. 6A , stimulation of all p38 MAPK isoforms by anisomycin strongly phosphorylated Nrf2 protein (lanes 2-5), whereas no phosphorylation was detected in the control immunoprecipitates (lane 1)...HeLa cells were stimulated with anisomycin (10",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16951197"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 60,
+      "target": 66,
+      "key": "0eca0198ff6fb43b79dc7f03e2379999"
+    },
+    {
+      "line": 112,
+      "relation": "directlyIncreases",
+      "evidence": "As shown in Fig. 6A  , stimulation of all p38 MAPK isoforms by anisomycin strongly phosphorylated Nrf2 protein (lanes 2-5), whereas no phosphorylation was detected in the control immunoprecipitates (lane 1).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16951197"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 60,
+      "target": 66,
+      "key": "9cef80c294dc7d6f5453cebed54f827a"
+    },
+    {
+      "line": 115,
+      "relation": "directlyIncreases",
+      "evidence": "As shown in Fig. 6A , stimulation of all p38 MAPK isoforms by anisomycin strongly phosphorylated Nrf2 protein (lanes 2-5), whereas no phosphorylation was detected in the control immunoprecipitates (lane 1)...HeLa cells were stimulated with anisomycin (10 _g/mL) for 30 minutes and FLAG-p38 MAPK isoforms were immunoprecipitated using agarose-conjugated anti-FLAG M2 monoclonal antibody. Purified GST-Nrf2 protein was immunoprecipitated with FLAG-p38 MAPK isoforms and was incubated with 32P-labeled ATP in the presence of the precipitated p38 MAPK isoforms. Phosphorylation of Nrf2 protein by activated p38 MAPK isoforms was visualized by autoradiography.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16951197"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 61,
+      "target": 66,
+      "key": "538e34d98f073706608c46c3197ef8e0"
+    },
+    {
+      "line": 115,
+      "relation": "directlyIncreases",
+      "evidence": "As shown in Fig. 6A , stimulation of all p38 MAPK isoforms by anisomycin strongly phosphorylated Nrf2 protein (lanes 2-5), whereas no phosphorylation was detected in the control immunoprecipitates (lane 1)...HeLa cells were stimulated with anisomycin (10",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16951197"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 61,
+      "target": 66,
+      "key": "9027e9bcd40cfe7c739782a8b7d45348"
+    },
+    {
+      "line": 115,
+      "relation": "directlyIncreases",
+      "evidence": "As shown in Fig. 6A  , stimulation of all p38 MAPK isoforms by anisomycin strongly phosphorylated Nrf2 protein (lanes 2-5), whereas no phosphorylation was detected in the control immunoprecipitates (lane 1).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16951197"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 61,
+      "target": 66,
+      "key": "499bda465ff7a336455e7cfd8b7788fe"
+    },
+    {
+      "line": 19,
+      "relation": "increases",
+      "evidence": "Overexpression of the ERK-1 mutant, but not the ERK-2 mutant, significantly inhibited hyperoxia-induced ARE transcription, suggesting that ERK-1 at least in part mediates Nrf2 translocation and its downstream target expression (Fig. 7B).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15292179"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 62,
+      "target": 64,
+      "key": "27f7a2b4ad0f13d7785cbb5e766bd391"
+    },
+    {
+      "line": 82,
+      "relation": "directlyDecreases",
+      "evidence": "Here, we demonstrate that antioxidant-induced PKC-delta-mediated phosphorylation of Nrf2S40 leads to release of Nrf2 from INrf2. This was evident from specific chemical inhibitors of PKC isoenzymes in reporter assays, in vitro kinase assays with purified Nrf2 and PKC isoenzymes, in vivo analysis with dominant-negative mutants and siRNA against PKC isoforms, use of PKC-delta(+/+) and PKC-delta(-/-) cells, and use of Nrf2S40 phospho-specific antibody.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19920073"
+      },
+      "annotations": {},
+      "source": 67,
+      "target": 9,
+      "key": "747c13af88706b7501926be131a3cde5"
+    },
+    {
+      "line": 82,
+      "relation": "directlyDecreases",
+      "evidence": "Moreover, Keap1 was unable to sequester the Nrf2(S40E) mutant, which mimics constitutive phosphorylation, suggesting that phosphorylation of the Ser40 residue affected the stability of the Nrf2-Keap1 complex.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12700136"
+      },
+      "annotations": {},
+      "source": 67,
+      "target": 9,
+      "key": "ab1eafb48211dbdf7262464662f8beab"
+    },
+    {
+      "line": 82,
+      "relation": "directlyDecreases",
+      "evidence": "The Keap1-mediated control of Nrf2 protein levels was not affected by Nrf2 phosphorylation in vivo under both basal and induced conditions, nor was the interaction between Nrf2 and Keap1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19668370"
+      },
+      "annotations": {},
+      "source": 67,
+      "target": 9,
+      "key": "b655c244812cca789c9b04e6704479cf"
+    },
+    {
+      "line": 82,
+      "relation": "directlyDecreases",
+      "evidence": "The Keap1-mediated control of Nrf2 protein levels was not affected by Nrf2 phosphorylation in vivo under both basal and induced conditions, nor was the interaction between Nrf2 and Keap1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19668370"
+      },
+      "annotations": {},
+      "source": 67,
+      "target": 9,
+      "key": "2477631e5f61d450f8c9a4b717201d92"
+    },
+    {
+      "line": 83,
+      "relation": "directlyIncreases",
+      "evidence": "In related experiments, the majority of the Nrf2S40-phosphorylated protein was found localized in the nucleus (Fig. 5D, lower panel).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19920073"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "go",
+            "name": "cytoplasm",
+            "identifier": "0005737"
+          },
+          "toLoc": {
+            "namespace": "go",
+            "name": "nucleus",
+            "identifier": "0005634"
+          }
+        }
+      },
+      "source": 67,
+      "target": 64,
+      "key": "be2dde1c37079d3778263c96f8b05e20"
+    },
+    {
+      "line": 83,
+      "relation": "directlyIncreases",
+      "evidence": "## from full text ## coexpression of the GFP fusion protein with Keap1 and the Nrf2(S40E) mutant, in which Ser40 was replaced with Glu to mimic constitutive phosphorylation, showed nuclear  accumulation in the absence of stimulus (Fig. 4, B and C),",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12700136"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "go",
+            "name": "cytoplasm",
+            "identifier": "0005737"
+          },
+          "toLoc": {
+            "namespace": "go",
+            "name": "nucleus",
+            "identifier": "0005634"
+          }
+        }
+      },
+      "source": 67,
+      "target": 64,
+      "key": "69a476dee80d43b64d5746b487b0222d"
+    },
+    {
+      "line": 56,
+      "relation": "directlyIncreases",
+      "evidence": "Phosphorylated Fyn accumulates in the nucleus and phosphorylates Nrf2 at tyrosine 568. This leads to nuclear export, ubiquitination, and degradation of Nrf2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17403689"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "go",
+            "name": "nucleus",
+            "identifier": "0005634"
+          },
+          "toLoc": {
+            "namespace": "go",
+            "name": "cytoplasm",
+            "identifier": "0005737"
+          }
+        }
+      },
+      "source": 68,
+      "target": 64,
+      "key": "81544d3111ce0eda6fcf9f4fb33c860f"
+    },
+    {
+      "line": 73,
+      "relation": "increases",
+      "evidence": "We propose that exposure of cells to sulforaphane or oxidative stress, by altering the redox state of Cys 151, reduces the ability of Nrf2-bound Keap1 proteins to associate with the Cul3-Rbx1 core complex. As a result, fewer Nrf2 molecules will be targeted for ubiquitination and subsequent degradation, leading to increased accumulation of Nrf2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15572695"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 69,
+      "target": 64,
+      "key": "0c41dfc853d78c5c51ae3994d663e3c6"
+    },
+    {
+      "line": 65,
+      "relation": "decreases",
+      "evidence": "Huh7 cells were transfected with V5-tagged Keap1 (the tagged epitope is required because of the lack of a sufficient and commercially available Keap1 antibody). The anti-V5 antibody recognized V5-Keap1 and coimmunoprecipitated Nrf2 (Fig. 4 D, lane 1); the inclusion of Flag-DJ-1 eliminated this coimmunoprecipitation (Fig. 4 D, lane 2). Reverse immunoprecipitation shows that antibody to endogenous Nrf2 coprecipitated V5-Keap1 (Fig. 4 D, lane 4), which was also decreased by Flag-DJ-1 (lane 5). These data suggest that DJ-1 stabilizes Nrf2 by preventing its association with Keap1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17015834"
+      },
+      "annotations": {},
+      "source": 27,
+      "target": 9,
+      "key": "19c11efe462da7c489c0d682d756f22b"
+    },
+    {
+      "line": 66,
+      "relation": "decreases",
+      "evidence": "Nrf2 disappeared in cells with siDJ-1 (Fig. 4B), indicating that DJ-1 stabilizes Nrf-2 protein.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17015834"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 27,
+      "target": 64,
+      "key": "72da95fd68e8895531f3cda29e7001bf"
+    },
+    {
+      "line": 66,
+      "relation": "decreases",
+      "evidence": "These results suggest that, under oxidative stress conditions, DJ-1 stabilizes NRF2 protein by interfering with proteasomal degradation and enhances cellular NRF2-dependent antioxidants.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18556627"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 27,
+      "target": 64,
+      "key": "4324fbaf8bdfae92a8a4ad4d3707ee79"
+    },
+    {
+      "relation": "hasMember",
+      "source": 73,
+      "target": 21,
+      "key": "511ad40a0724e3e12d344b7c0df6d28a"
+    },
+    {
+      "line": 95,
+      "relation": "increases",
+      "evidence": "Coexpression of aPKC{iota} with Nrf2-GFP and Keap1 induced the nuclear  accumulation of the fusion protein; however, the kinase inactive mutant aPKC{iota}(K274W) did not affect the cytoplasmic localization of Nrf2-GFP (Fig. 5A).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12700136"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "go",
+            "name": "cytoplasm",
+            "identifier": "0005737"
+          },
+          "toLoc": {
+            "namespace": "go",
+            "name": "nucleus",
+            "identifier": "0005634"
+          }
+        }
+      },
+      "source": 73,
+      "target": 64,
+      "key": "c990a290123e3711ebe11c428caaf85f"
+    },
+    {
+      "line": 135,
+      "relation": "decreases",
+      "evidence": "We demonstrate that shear-induced cyclooxygenase (COX)-2 suppresses phosphatidylinositol 3-kinase (PI3-K) activity, which represses antioxidant response element (ARE)/NF-E2 related factor 2 (Nrf2)-mediated transcriptional response in human chondrocytes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16172382"
+      },
+      "annotations": {
+        "cl": {
+          "0000138": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 74,
+      "target": 20,
+      "key": "20ca45fd8d96a0a3f63d12c9409bc1c3"
+    },
+    {
+      "line": 146,
+      "relation": "increases",
+      "evidence": "Mammalian thioredoxin reductase is one selenoprotein that shows increased activity with Se supplementation",
+      "citation": {
+        "db": "Other",
+        "db_id": "10469608"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 25,
+      "target": 25,
+      "key": "b1b102e14b66cca9b000d82dc9155b20"
+    },
+    {
+      "line": 143,
+      "relation": "directlyIncreases",
+      "evidence": "stimulation of p38 MAPK isoforms phosphorylated purified Nrf2 protein and caused an increase in the interaction between Nrf2 and Keap1 in vitro and the suppression of Nrf2 translocation into the nucleus.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16951197"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 22,
+      "target": 9,
+      "key": "8997b010dbfe3481d3114c5a435ef6dc"
+    },
+    {
+      "line": 15,
+      "relation": "directlyIncreases",
+      "evidence": "Taken together, these results indicate that the phosphorylation of Nrf2 at Ser40 by PKC is required for Nrf2 to evade INrf2-mediated degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12947090"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 21,
+      "target": 67,
+      "key": "e066acf9605c316940a8b7dba5c4da5d"
+    }
+  ]
+}

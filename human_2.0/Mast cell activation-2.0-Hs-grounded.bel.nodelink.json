@@ -1,0 +1,2201 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Mast cell activation-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Mast Cell Activation network depicts the causal mechanisms that occur in mast cells following exposure to antigen and IgE/Fc receptor ligation and stimulation with IL4 and KITLG. The network also includes elements involved in the resulting downstream signal transduction (e.g. Lyn, MEK and MAPK1, and LTC4) that lead to mast cell activation and subsequent release of several cytokines and other factors such as histamine and prostaglandin D2."
+    },
+    "namespace_url": {},
+    "namespace_pattern": {
+      "go": ".*",
+      "chebi": ".*",
+      "fplx": ".*",
+      "hgnc": ".*"
+    },
+    "annotation_url": {},
+    "annotation_pattern": {
+      "cl": ".*"
+    },
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "prostaglandin D2",
+        "identifier": "15555"
+      },
+      "id": "f512d27cb668edf2447309f96be0df4b",
+      "bel": "a(chebi:15555 ! \"prostaglandin D2\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "leukotriene B4",
+        "identifier": "15647"
+      },
+      "id": "e58243d52d8ec8fffcf448f53194016f",
+      "bel": "a(chebi:15647 ! \"leukotriene B4\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "leukotriene E4",
+        "identifier": "15650"
+      },
+      "id": "bd13b1f6b31e56252593ee0f34bf627d",
+      "bel": "a(chebi:15650 ! \"leukotriene E4\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "arachidonic acid",
+        "identifier": "15843"
+      },
+      "id": "47a5343e7acc09ba2293aa56e173cfd9",
+      "bel": "a(chebi:15843 ! \"arachidonic acid\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "leukotriene C4",
+        "identifier": "16978"
+      },
+      "id": "30b0ed124e6320c3aa015b37780f2528",
+      "bel": "a(chebi:16978 ! \"leukotriene C4\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "histamine",
+        "identifier": "18295"
+      },
+      "id": "60f056ea7c9e447afd76a7d718090418",
+      "bel": "a(chebi:18295 ! histamine)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "leukotriene",
+        "identifier": "25029"
+      },
+      "id": "362264c22c424f01ad762becd62dedbb",
+      "bel": "a(chebi:25029 ! leukotriene)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "heparin",
+        "identifier": "28304"
+      },
+      "id": "1d5ec0d861f32465800444dc0205b9a6",
+      "bel": "a(chebi:28304 ! heparin)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "leukotriene D4",
+        "identifier": "28666"
+      },
+      "id": "40dd79ad5708c7a4aab42dedf293e707",
+      "bel": "a(chebi:28666 ! \"leukotriene D4\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "mast cell activation",
+        "identifier": "0045576"
+      },
+      "id": "c958c47551899adc47f56ee3d49bb4ff",
+      "bel": "bp(go:0045576 ! \"mast cell activation\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "fplx",
+        "name": "NFkappaB",
+        "identifier": "NFkappaB"
+      },
+      "id": "a7edecc930194d4eff939b226f91107f",
+      "bel": "complex(fplx:NFkappaB ! NFkappaB)"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "go",
+        "name": "Fc-epsilon receptor I complex",
+        "identifier": "0032998"
+      },
+      "id": "893bf626420bfdb91ac97ca2df6541c5",
+      "bel": "complex(go:0032998 ! \"Fc-epsilon receptor I complex\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "go",
+        "name": "IgE immunoglobulin complex",
+        "identifier": "0071742"
+      },
+      "id": "eb04d043a6da7096c346d40d521c9cff",
+      "bel": "complex(go:0071742 ! \"IgE immunoglobulin complex\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "PKC",
+        "identifier": "PKC"
+      },
+      "id": "5bd82f8dca4f5ec860178491eafd427c",
+      "bel": "p(fplx:PKC ! PKC)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "PLA2",
+        "identifier": "PLA2"
+      },
+      "id": "5aa417177a34fc181dd39ca379a0c206",
+      "bel": "p(fplx:PLA2 ! PLA2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "BTK",
+        "identifier": "1133"
+      },
+      "id": "12f3f45adbf26a84b072c05b99af20d6",
+      "bel": "p(hgnc:1133 ! BTK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "STAT6",
+        "identifier": "11368"
+      },
+      "id": "19f68da5ad50aee8aee6f6f6768e66dd",
+      "bel": "p(hgnc:11368 ! STAT6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SYK",
+        "identifier": "11491"
+      },
+      "id": "a7a309a167101414c133086692b8a943",
+      "bel": "p(hgnc:11491 ! SYK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TGFB1",
+        "identifier": "11766"
+      },
+      "id": "576a88bfbb29664cc1307c6239712c90",
+      "bel": "p(hgnc:11766 ! TGFB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TLR2",
+        "identifier": "11848"
+      },
+      "id": "232d82289f579d65f6295b7015f8cea0",
+      "bel": "p(hgnc:11848 ! TLR2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "FCER1A",
+        "identifier": "3609"
+      },
+      "id": "e26d2f90b017f3cb6d5741e9f50464ae",
+      "bel": "p(hgnc:3609 ! FCER1A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL10",
+        "identifier": "5962"
+      },
+      "id": "d8c40c6a1f13eedcc2609d52f062607c",
+      "bel": "p(hgnc:5962 ! IL10)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL13",
+        "identifier": "5973"
+      },
+      "id": "fc003c941afd16c7b2bfb0b65fb707a6",
+      "bel": "p(hgnc:5973 ! IL13)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL4",
+        "identifier": "6014"
+      },
+      "id": "b2dc2b588b6dc1976273a46353ae2435",
+      "bel": "p(hgnc:6014 ! IL4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL4R",
+        "identifier": "6015"
+      },
+      "id": "41e9e3284e8dce2e494b7e03361d835a",
+      "bel": "p(hgnc:6015 ! IL4R)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL5",
+        "identifier": "6016"
+      },
+      "id": "d2ec666da7c8246fe13126798b07ee95",
+      "bel": "p(hgnc:6016 ! IL5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CXCL8",
+        "identifier": "6025"
+      },
+      "id": "ff6d8ebf56ab67532ff6ab8e1ad8745c",
+      "bel": "p(hgnc:6025 ! CXCL8)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL9",
+        "identifier": "6029"
+      },
+      "id": "8237f1fc1e8c01866eb3acafb2639276",
+      "bel": "p(hgnc:6029 ! IL9)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "INPP5D",
+        "identifier": "6079"
+      },
+      "id": "ef7accedf709ed96a08d5a8c005695f3",
+      "bel": "p(hgnc:6079 ! INPP5D)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "INPP5D",
+        "identifier": "6079"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          }
+        }
+      ],
+      "id": "22ee1199533fcca448870409f24a5fb5",
+      "bel": "p(hgnc:6079 ! INPP5D, pmod(go:0006468 ! \"protein phosphorylation\"))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "KIT",
+        "identifier": "6342"
+      },
+      "id": "26d1ce3147b3f688c08659d11d34eca1",
+      "bel": "p(hgnc:6342 ! KIT)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "KITLG",
+        "identifier": "6343"
+      },
+      "id": "2291c46159096e517ef9152434bb135d",
+      "bel": "p(hgnc:6343 ! KITLG)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "LYN",
+        "identifier": "6735"
+      },
+      "id": "4b484c04b74b2639a645b6387341533f",
+      "bel": "p(hgnc:6735 ! LYN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MAPK1",
+        "identifier": "6871"
+      },
+      "id": "e0c0225b558aed46aa00177aa93224b5",
+      "bel": "p(hgnc:6871 ! MAPK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PIK3CD",
+        "identifier": "8977"
+      },
+      "id": "3a7d510f7581384c4961e4c3cf15ebf4",
+      "bel": "p(hgnc:8977 ! PIK3CD)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PLA2G4A",
+        "identifier": "9035"
+      },
+      "id": "e93ce155c2598de3f8bca89734a715ff",
+      "bel": "p(hgnc:9035 ! PLA2G4A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PLA2G5",
+        "identifier": "9038"
+      },
+      "id": "da8aedbc31c88fdca47a218834db9de0",
+      "bel": "p(hgnc:9038 ! PLA2G5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PLCD1",
+        "identifier": "9060"
+      },
+      "id": "60c669f86d61477f3cfd30b2257c885f",
+      "bel": "p(hgnc:9060 ! PLCD1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PLCG1",
+        "identifier": "9065"
+      },
+      "id": "3298beb16b7138b5ecf07eff669c9c27",
+      "bel": "p(hgnc:9065 ! PLCG1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PRKCD",
+        "identifier": "9399"
+      },
+      "id": "e5cf559398d8d373e5a9b147f23a0cca",
+      "bel": "p(hgnc:9399 ! PRKCD)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTPN6",
+        "identifier": "9658"
+      },
+      "id": "d812500c087d5cea2c3e1676c1a5f516",
+      "bel": "p(hgnc:9658 ! PTPN6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RAC1",
+        "identifier": "9801"
+      },
+      "id": "1833ca3c80fe75acb1c59c3ffc45f2ec",
+      "bel": "p(hgnc:9801 ! RAC1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "BCL2L1",
+        "identifier": "992"
+      },
+      "id": "8916e45ae7bd90c6326bf69ead30825c",
+      "bel": "p(hgnc:992 ! BCL2L1)"
+    }
+  ],
+  "links": [
+    {
+      "line": 49,
+      "relation": "increases",
+      "evidence": "It (ltb4) causes chemotaxis, generation of reactive oxygen species, and degranulation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12244116"
+      },
+      "annotations": {},
+      "source": 1,
+      "target": 9,
+      "key": "7536048506fe68d42a5accbe0d510e61"
+    },
+    {
+      "line": 49,
+      "relation": "increases",
+      "evidence": "Both HMC-1 cells and mBMMCs migrated to LTB4 in a dose-dependent manner in chemotaxis assays... This study demonstrates expression of functional LTB4 receptors, both BLT1 and BLT2, in murine and human MCs and a regulatory role for stem cell factor in their expression. These receptors may mediate recruitment and accumulation of MCs in response to LTB4 production in areas of inflammation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "16920986"
+      },
+      "annotations": {},
+      "source": 1,
+      "target": 9,
+      "key": "c1d20e9187c7675555016fc3c3ab5c64"
+    },
+    {
+      "line": 61,
+      "relation": "increases",
+      "evidence": "These findings imply that activation of vascular mast cells with ensuing secretion of HEP-PGs may locally attenuate the thrombogenicity of matrix collagen by inhibiting its platelet-activating capacity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9437208"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "source": 9,
+      "target": 7,
+      "key": "f951444e7e34e69edbf3fb1684af026b"
+    },
+    {
+      "line": 62,
+      "relation": "increases",
+      "evidence": "The cytokines released by MCs, e.g., interleukin 5 (IL5), IL8, are chemoattractants for eosinophils and neutrophils, respectively. The two types of mediators released by MC-those preformed, such as histamine, tryptase, serotonin, and the newly-synthetized ones, such as prostaglandin D2 (PGD2), leukotrienes C4 (LTD4), D4 (LTD4), E4 (LTE4), induce vasodilatation, bronchoconstriction, cellular chemotaxis, increase vascular permeability.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9167216"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "source": 9,
+      "target": 5,
+      "key": "49b19b0288c5858447862feab4bab544"
+    },
+    {
+      "line": 62,
+      "relation": "increases",
+      "evidence": "We then examined the major mast cell mediators (histamine, PGD2, platelet-activating factor (PAF), eosinophil chemotactic factor of anaphylaxis (ECF-A), leukotriene (LT)C4 and LTB4) for their ability to increase cytosolic calcium in eosinophils.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "1588043"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "source": 9,
+      "target": 5,
+      "key": "36af5789382a4a9f64febef15248bc16"
+    },
+    {
+      "line": 62,
+      "relation": "increases",
+      "evidence": "Histamine is synthesized and released by human basophils, mast cells, and neurons. Its pleiotropic effects are mediated by the activation of 4 receptors: H(1), H(2), H(3), and H(4).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14530793"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "source": 9,
+      "target": 5,
+      "key": "714dd404627acbf185c522ac4020ad57"
+    },
+    {
+      "line": 63,
+      "relation": "increases",
+      "evidence": "Human mast cells (huMC) increase surface expression of FcgammaRI (CD64) in response to IFNgamma. Subsequent receptor aggregation of FcgammaR1 using CD64-specific F(ab')(2) or antibody directed against FcgammaR1-bound IgG results in cell activation...Activation using aggregated IgG(1) led to PGD(2) and LTC(4) generation as well as enhanced IL-3, IL-13, GM-CSF, and TNFalpha production.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15003814"
+      },
+      "annotations": {},
+      "source": 9,
+      "target": 4,
+      "key": "246e66d755c52631bd42e9a37f31e6f3"
+    },
+    {
+      "line": 63,
+      "relation": "increases",
+      "evidence": "Ag stimulation of Lyn unique domain transfectants was accompanied by enhanced phosphorylation of MEK and ERK-2, which are required for leukotriene C4 (LTC4) release, and production of LTC4 was increased 3- to 5-fold, compared with cells transfected with vector alone.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16177098"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "source": 9,
+      "target": 4,
+      "key": "75a101a40482a6f24469c7f90e4b665e"
+    },
+    {
+      "line": 63,
+      "relation": "increases",
+      "evidence": "We then examined the major mast cell mediators (histamine, PGD2, platelet-activating factor (PAF), eosinophil chemotactic factor of anaphylaxis (ECF-A), leukotriene (LT)C4 and LTB4) for their ability to increase cytosolic calcium in eosinophils.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "1588043"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "source": 9,
+      "target": 4,
+      "key": "77833fd58e455ac999170f04b21386cd"
+    },
+    {
+      "line": 63,
+      "relation": "increases",
+      "evidence": "Extracellular ATP stimulated histamine release and generation of leukotrience C4 (LTC4) accompanied with the formation of inositol phosphates and a rapid increase in intracellular Ca2+ ([Ca2+]i) in mouse bone marrow-derived cultured mast cells (BMMC).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "1718246"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "source": 9,
+      "target": 4,
+      "key": "44f871209677a0e098c8ed49c9037aef"
+    },
+    {
+      "line": 64,
+      "relation": "increases",
+      "evidence": "In addition, human lung mast cells purified to near homogeneity expressed IL-5 mRNA after activation, as shown by both RT-PCR and in situ hybridization.",
+      "citation": {
+        "db": "Other",
+        "db_id": "7576704"
+      },
+      "annotations": {},
+      "source": 9,
+      "target": 25,
+      "key": "0b8235dcdf4760414a3c8cf4977a4667"
+    },
+    {
+      "line": 64,
+      "relation": "increases",
+      "evidence": "Using immunocytochemistry, Bradding et al. [1±4] reported that interleukin (IL)-4, IL-5, IL-6, and tumour necrosis factor (TNF)-a were present within mast cells in nasal and bronchial mucosa taken from both normal subjects and patients with allergic perennial rhinitis,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10971465"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "source": 9,
+      "target": 25,
+      "key": "6449ccc9e39447a5fad82c5af9b0a675"
+    },
+    {
+      "line": 65,
+      "relation": "increases",
+      "evidence": "Human mast cells (huMC) increase surface expression of FcgammaRI (CD64) in response to IFNgamma. Subsequent receptor aggregation of FcgammaR1 using CD64-specific F(ab')(2) or antibody directed against FcgammaR1-bound IgG results in cell activation...Activation using aggregated IgG(1) led to PGD(2) and LTC(4) generation as well as enhanced IL-3, IL-13, GM-CSF, and TNFalpha production.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15003814"
+      },
+      "annotations": {},
+      "source": 9,
+      "target": 0,
+      "key": "374596fe3b0146fdbbc67a249d4fb8d5"
+    },
+    {
+      "line": 65,
+      "relation": "increases",
+      "evidence": "The cytokines released by MCs, e.g., interleukin 5 (IL5), IL8, are chemoattractants for eosinophils and neutrophils, respectively. The two types of mediators released by MC-those preformed, such as histamine, tryptase, serotonin, and the newly-synthetized ones, such as prostaglandin D2 (PGD2), leukotrienes C4 (LTD4), D4 (LTD4), E4 (LTE4), induce vasodilatation, bronchoconstriction, cellular chemotaxis, increase vascular permeability.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9167216"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "source": 9,
+      "target": 0,
+      "key": "48edef4094fff58dc6ac90af3f734450"
+    },
+    {
+      "line": 65,
+      "relation": "increases",
+      "evidence": "We then examined the major mast cell mediators (histamine, PGD2, platelet-activating factor (PAF), eosinophil chemotactic factor of anaphylaxis (ECF-A), leukotriene (LT)C4 and LTB4) for their ability to increase cytosolic calcium in eosinophils.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "1588043"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "source": 9,
+      "target": 0,
+      "key": "c1ea3b4e6fe506bb33cf02e2a74cf3e2"
+    },
+    {
+      "line": 65,
+      "relation": "increases",
+      "evidence": "In addition, prostaglandin D2 (PGD2), a mast cell-specific mediator, was measured in the bronchoalveolar lavage (BAL) from +/+ and W/Wv mice to determine if lung mast cell activation was a consequence of PAF challenge",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8624251"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "source": 9,
+      "target": 0,
+      "key": "97da84e77dc39389953ca6f7424c602d"
+    },
+    {
+      "line": 66,
+      "relation": "increases",
+      "evidence": "In the light of recent reports that strongly support critical roles for IL-9 and IL-13 in allergic lung inflammation, our results emphasize the potential clinical importance of LPS as an enhancer of mast cell-derived IL-9 and IL-13 production in the course of inflammatory reactions and allergic diseases.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11254693"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "source": 9,
+      "target": 22,
+      "key": "efd7b05b32a5997285381d2fa6e56d18"
+    },
+    {
+      "line": 66,
+      "relation": "increases",
+      "evidence": "Jaffe et al. [22,23] reported IL-5 and IL-13 production from human lung mast cells following IgE-mediated activation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10971465"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "source": 9,
+      "target": 22,
+      "key": "e313512264dd5ad5d200b6a05ae7681d"
+    },
+    {
+      "line": 67,
+      "relation": "increases",
+      "evidence": "In the light of recent reports that strongly support critical roles for IL-9 and IL-13 in allergic lung inflammation, our results emphasize the potential clinical importance of LPS as an enhancer of mast cell-derived IL-9 and IL-13 production in the course of inflammatory reactions and allergic diseases.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11254693"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "source": 9,
+      "target": 27,
+      "key": "4bdcb76634ebfbbeb706bfef65cf55d7"
+    },
+    {
+      "line": 68,
+      "relation": "increases",
+      "evidence": "On the other hand, majority of IL-5, IL-6 and IL-7 expressing mast cells were distributed in the epithelial compartment and in the super®cial lamina propria (mainly MC(T)), but not in the deep lamina propria. IL-8 and IL-10 expressing mast cells were relatively more in the deep lamina propria than in the epithelial and super®cial lamina propria compartments [13]. These observations suggest heterogenity of human mast cells with regard to cytokine expression in addition to protease production.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10971465"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "source": 9,
+      "target": 26,
+      "key": "f40db0187c118f5ab2663ca1edc2b591"
+    },
+    {
+      "line": 19,
+      "relation": "increases",
+      "evidence": "Accordingly, ADO significantly attenuated FcεRI-induced phosphorylation of Syk at the critical activating tyrosine (Y525).",
+      "citation": {
+        "db": "Other",
+        "db_id": "24122028"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity"
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 11,
+      "target": 17,
+      "key": "4e1a8b51c3b7d2dd7490247b9fd12dd9"
+    },
+    {
+      "line": 20,
+      "relation": "increases",
+      "evidence": "Stimulation of HCMCs by cross-linking of the high-affinity IgE receptor (Fc(epsilon)RI) induced the expression of IL-13 mRNA and protein, but not IL4.",
+      "citation": {
+        "db": "Other",
+        "db_id": "9768593"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity"
+      },
+      "source": 11,
+      "target": 22,
+      "key": "491aeb3e20178224631a580d539f035c"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "FcϵRI-induced activation of Lyn and Syk was comparable between cells expressing wild-type (wt) and phosphatase-inactive SHP-1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "17675340"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity"
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 11,
+      "target": 32,
+      "key": "dda2902e6c7a1197e7f0c7e09f4f1adb"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "Mast cells are the major effector cell type in IgE-mediated immediate hypersensitivity. Traditionally, it is thought that mast cells bound to Ag-specific Fc?RI, so-called sensitized mast cells, encounter multivalent Ag, and then IgE-bound receptors are aggregated or cross-linked, leading to cell activation (1). Activated mast cells secrete preformed and newly synthesized proinflammatory mediators involved in inflammatory processes of allergy, such as histamine, proteases, lipids, cytokines, and chemokines. The mouse Fc?RI consists of an IgE-binding ? subunit, a signal-amplifying {beta} subunit, and disulfide-bonded two molecules of signal-generating ? subunit (2). Fc?RI aggregation leads to the activation of {beta} subunit-bound Lyn, a prominent Src family protein-tyrosine kinase (PTK)3 in mast cells (3). Lyn phosphorylates the tyrosine residues in the ITAMs of the {beta} and ? subunits (4). Phosphorylated ITAMs of {beta} and ? subunits, respectively, recruit Lyn and Syk, a member of another PTK family with two tandemly arranged Src homology 2 domains, leading to the activation of these PTKs. Active Lyn and Syk phosphorylate numerous cellular target proteins, leading to the activation of multiple signaling pathways, including PI3K and phospholipase C (PLC)-?. An alternative pathway involving Fyn (another Src family PTK) was shown to activate PI3K (5). PLC hydrolyzes phosphatidylinositol 4,5-bisphosphate into two second messengers, i.e., diacylglycerol (DAG) and inositol 1,4,5-trisphosphate (IP3). IP3 triggers Ca2+ release from intracellular stores and then Ca2+ influx. Increased DAG and Ca2+ lead to the activation of protein kinase C (PKC) (reviewed in Ref. 6). Both PKC and Ca2+ are required for optimal degranulation (7).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15814670"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity"
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 11,
+      "target": 32,
+      "key": "d55b3880eee9581f037119b93710a0a1"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "We found that IgE-induced cysLT synthesis is completely abolished in RBL-2H3(Rac-N17) cells, a stable cell line expressing Rac(N17), a dominant negative Rac1 mutant; conversely, synthesis was enhanced in cells expressing Rac(V12), a constitutively active Rac1 mutant, suggesting that Rac1 is a key mediator of IgE signaling to cysLT synthesis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15210825"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity"
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 11,
+      "target": 41,
+      "key": "3f61b0dd312e9d5dc2018b36b83041fe"
+    },
+    {
+      "line": 23,
+      "relation": "increases",
+      "evidence": "In this study we demonstrate that acute addition of monomeric IgE elicits a wide spectrum of responses in the rat basophilic leukemia-2H3 mast cell line, including activation of phospholipases Cgamma and D, a rise in cytosol Ca(2+), NFAT translocation, degranulation, and membrane ruffling within minutes. Calcium transients persist for hours as long as IgE is present resulting in the maintained translocation of the transcription factor NFAT to the nucleus",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15034016"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity"
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 11,
+      "target": 38,
+      "key": "5c3b975a60759bfa033029b5eb9d32d8"
+    },
+    {
+      "line": 23,
+      "relation": "increases",
+      "evidence": "Reconstitution of deficient mast cells with Vav1 restored normal tyrosine phosphorylation of PLCgamma1 and PLCgamma2 and calcium responses. Thus, Vav1 is essential to FcepsilonRI-mediated activation of PLCgamma and calcium mobilization in mast cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11340169"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity"
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 11,
+      "target": 38,
+      "key": "43752628fdb4cbec0808d3eb258db5db"
+    },
+    {
+      "line": 40,
+      "relation": "increases",
+      "evidence": "In primary cultures of human mast cells, FcϵRI aggregation induced a rapid translocation and phosphorylation of PLCγ1, and subsequent inositol trisphosphate (IP3) production, which preceded PI 3-kinase-related signals.",
+      "citation": {
+        "db": "Other",
+        "db_id": "13129935"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 11,
+      "target": 38,
+      "key": "b077455ae40425f489a3c265102d6827"
+    },
+    {
+      "line": 24,
+      "relation": "increases",
+      "evidence": "In this study we demonstrate that acute addition of monomeric IgE elicits a wide spectrum of responses in the rat basophilic leukemia-2H3 mast cell line, including activation of phospholipases Cgamma and D, a rise in cytosol Ca(2+), NFAT translocation, degranulation, and membrane ruffling within minutes. Calcium transients persist for hours as long as IgE is present resulting in the maintained translocation of the transcription factor NFAT to the nucleus",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15034016"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity"
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 11,
+      "target": 37,
+      "key": "bfed5e3b9cd56daeb4b8dce8471ebfcf"
+    },
+    {
+      "line": 3,
+      "relation": "increases",
+      "evidence": "This suggests that IgE-dependent HLMC survival is mediated, in part, through the autocrine production of IL-6.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18215266"
+      },
+      "annotations": {},
+      "source": 12,
+      "target": 9,
+      "key": "c89174ce76df88825e4d8d687f0b8356"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "Thus, the extracellular appearance of PGD2 during IgE-dependent mast cell activation represents a response additional to the secretion of granule-associated mediators.",
+      "citation": {
+        "db": "Other",
+        "db_id": "6809826"
+      },
+      "annotations": {},
+      "source": 12,
+      "target": 9,
+      "key": "cc44bfc43c3f85f107fb2495722a5b10"
+    },
+    {
+      "line": 4,
+      "relation": "increases",
+      "evidence": "We examined Fc epsilon RI from unstimulated cells and from cells exposed to a polyvalent hapten conjugate that aggregates the Fc epsilon RI via the receptor-bound anti-hapten IgE... We propose that upon aggregation of Fc epsilon RI, a constitutively associated kinase phosphorylates endogenous substrates by transphosphorylation. As a result, additional kinase activity becomes manifest and this promotes further transphosphorylation",
+      "citation": {
+        "db": "Other",
+        "db_id": "7526393"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity"
+      },
+      "source": 12,
+      "target": 11,
+      "key": "bfaf6e08fe70bc408fa6b7a8aa59a9cb"
+    },
+    {
+      "line": 72,
+      "relation": "increases",
+      "evidence": "Thus, SCF functions as a survival factor by repressing apoptosis of human mast cells through Bcl-2 and Bcl-XL.",
+      "citation": {
+        "db": "Other",
+        "db_id": "11403223"
+      },
+      "annotations": {},
+      "source": 42,
+      "target": 9,
+      "key": "bd1851fd0e9779b07396a658c0240aa1"
+    },
+    {
+      "line": 1,
+      "relation": "decreases",
+      "evidence": "As shown in Fig. 2⇓, the addition of IL-10 to human mast cell cultures derived from either lung (Fig. 2⇓A) or skin (Fig. 2⇓B) suppressed FcεRI expression. These results indicated that IL-10 can inhibit FcεRI expression in both mouse and human mast cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18292506"
+      },
+      "annotations": {},
+      "source": 21,
+      "target": 11,
+      "key": "3f2baaca7641da037f72527ccc1283dd"
+    },
+    {
+      "line": 32,
+      "relation": "directlyIncreases",
+      "evidence": "we demonstrate for the first time that Syk is constitutively associated with IL-4R(alpha)in human polymorphonuclear neutrophils (PMNs) and that IL-4 stimulation increases the amount of Syk associated with IL-4R(alpha). Moreover, upon IL-4 treatment, a pool of Syk associated with IL-4R(alpha) is phosphorylated.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19783684"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 23,
+      "target": 24,
+      "key": "cefaa974e4c48bbccc4cfea25e5ec74f"
+    },
+    {
+      "line": 32,
+      "relation": "directlyIncreases",
+      "evidence": "The intracellular signaling induced by IL-4/IL-4R interactions on CD4  T cells has been characterized in great detail. The binding of IL-4 to the Type I receptor in CD4  T cells induces the activation of the nonreceptor tyrosine kinase Jak1, which promotes the phosphorylation of STAT6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17200144"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 23,
+      "target": 24,
+      "key": "01ccf076405bf78b3b80e778db340810"
+    },
+    {
+      "line": 32,
+      "relation": "directlyIncreases",
+      "evidence": "Figure 1. Pathways to MUC5AC expression in COPD",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17615396"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 23,
+      "target": 24,
+      "key": "fc120b529af14e02cd3f39adbcaa464e"
+    },
+    {
+      "line": 28,
+      "relation": "increases",
+      "evidence": "As expected, IL-4 triggered the phosphorylation of STAT6 in BMMC, an effect that was enhanced in Il4rαF709 cells at all doses of IL-4 tested",
+      "citation": {
+        "db": "Other",
+        "db_id": "23149659"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 24,
+      "target": 16,
+      "key": "9b12bde609a9e8ea80ab49fed2534ddb"
+    },
+    {
+      "line": 28,
+      "relation": "increases",
+      "evidence": "Figure 1. Pathways to MUC5AC expression in COPD",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17615396"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 24,
+      "target": 16,
+      "key": "7d35e006505f1ec6a24d3c1f2fe46d78"
+    },
+    {
+      "line": 28,
+      "relation": "increases",
+      "evidence": "Activated interleukin (IL)-4Ralpha stimulates production of IgE through signal transducer and activator of transcription-6 (Stat6) activation in lymphocytes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17362266"
+      },
+      "annotations": {
+        "cl": {
+          "0000542": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 24,
+      "target": 16,
+      "key": "5c68cd5f0e3837e7ff4e6d644a424813"
+    },
+    {
+      "line": 28,
+      "relation": "increases",
+      "evidence": "IL4 and IL13 receptors share the gamma c chain and activate STAT6, STAT3 and STAT5 proteins in normal human B cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8804422"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 24,
+      "target": 16,
+      "key": "cf348cbbd37c0e3f65d7a9f171fdbfb0"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 28,
+      "target": 29,
+      "key": "b76d58e48ca5563f836a404a8a7bb82d"
+    },
+    {
+      "line": 43,
+      "relation": "increases",
+      "evidence": "\"Kit Induces Lyn-dependent Phosphorylation of Btk in BMMCs\n\nThe activation of Btk by Kit, however, appears to be crucial for the subsequent potentiation of PLCγ1-mediated calcium mobilization leading to degranulation and activation of NFAT and NFκB leading to enhanced cytokine production.\"",
+      "citation": {
+        "db": "Other",
+        "db_id": "16176929"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 30,
+      "target": 15,
+      "key": "8de45430a3861221e21f36efa3a4d7ce"
+    },
+    {
+      "line": 44,
+      "relation": "increases",
+      "evidence": "KIT stimulation by SCF induces the activation of Lyn and knockdown and pharmacologic inhibitor studies have revealed that Lyn positively regulates KIT signaling ... Based on our findings, we believe that under normal circumstances, SCF-KIT interactions result in the activation of Lyn and p85α",
+      "citation": {
+        "db": "Other",
+        "db_id": "21791602"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 30,
+      "target": 32,
+      "key": "42b6c4d36ec6a21ea4b1ec67b7d2d467"
+    },
+    {
+      "line": 44,
+      "relation": "increases",
+      "evidence": "Stimulation of cell lines as well as normal progenitor cells with SCF rapidly increased tyrosine phosphorylation of the Src family member Lyn. SCF also induced increases in Lyn kinase activity in vitro.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9341198"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 30,
+      "target": 32,
+      "key": "a6433d516846eb4c9710701c956a0184"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "Taken together, the above data support the conclusion that FcεRI- and Kit-mediated activation of the mTORC1 pathway is regulated by the activation of PI3K, particularly the p110δ isoform.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18354181"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 30,
+      "target": 34,
+      "key": "7365da7561d763fb69dc71789401f637"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "FIGURE 6 | Integration of the signalling pathways induced by the G-protein-coupled receptors FcepsilonRI and KIT.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16470226"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 30,
+      "target": 34,
+      "key": "ae60a30377691b177d6e0d6540924268"
+    },
+    {
+      "line": 55,
+      "relation": "directlyIncreases",
+      "evidence": "Stem cell factor (SCF) or c-Kit ligand is a cytokine associated with the differentiation, survival, and activation of mast cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11159541"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 31,
+      "target": 30,
+      "key": "1d1a1c557cbd150b799e02c1b877dc20"
+    },
+    {
+      "line": 55,
+      "relation": "directlyIncreases",
+      "evidence": "FIGURE 6 | Integration of the signalling pathways induced by the G-protein-coupled receptors FcepsilonRI and KIT.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16470226"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 31,
+      "target": 30,
+      "key": "9753450fae59103b838d7cd7d6794697"
+    },
+    {
+      "line": 55,
+      "relation": "directlyIncreases",
+      "evidence": "Y721-c-Kit is autophosphorylated in response to stem cell factor (SCF).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20200353"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 31,
+      "target": 30,
+      "key": "ce355aed7b8e019d7db01153f270f5b9"
+    },
+    {
+      "line": 56,
+      "relation": "directlyIncreases",
+      "evidence": "Specifically, we show that the unique domain (i.e., SH4) of Lyn is involved in SHIP binding and phosphorylation in response to cytokine stimulation. We show that Lyn-deficient cells expressing a mutant version of Lyn that is unable to bind and phosphorylate SHIP behaves in a manner similar to that of SHIP- or Lyn-deficient BMMCs.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21791602"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "phosphatase activity",
+          "identifier": "0016791"
+        }
+      },
+      "source": 32,
+      "target": 28,
+      "key": "a858f22a38dd0fd287ee7760b3476101"
+    },
+    {
+      "line": 57,
+      "relation": "directlyIncreases",
+      "evidence": "Specifically, we show that the unique domain (i.e., SH4) of Lyn is involved in SHIP binding and phosphorylation in response to cytokine stimulation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21791602"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 32,
+      "target": 29,
+      "key": "913e54b238e5945f951c3389eecad1da"
+    },
+    {
+      "line": 58,
+      "relation": "increases",
+      "evidence": "Aggregation of the high affinity receptor for IgE (FcepsilonRI) induces activation of mast cells. In this study we show that upon low intensity stimulation of FcepsilonRI with monomeric IgE, IgE plus anti-IgE, or IgE plus low Ag, Lyn (a Src family kinase) positively regulates degranulation, cytokine production, and survival",
+      "citation": {
+        "db": "Other",
+        "db_id": "16272347"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 32,
+      "target": 9,
+      "key": "e8e846b2fca951f6731d423860a2d7c8"
+    },
+    {
+      "line": 59,
+      "relation": "increases",
+      "evidence": "To test for direct involvement of Lyn PTK activity inAMPA-receptor-mediated MAPK activation, we generated recombinant adenoviruses carrying wild-type Lyn (AdexLyn) or the kinase-negative form of Lyn (AdexLynKN). MAPK activation in response to AMPA-receptor stimulation was enhanced by infection with Adex- Lyn. Moreover, MAPK activation was almost completely inhibited when cerebellar primary culture cells were infected with Adex- LynKN (Fig. 3b).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9892356"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 32,
+      "target": 33,
+      "key": "efb83b7c23586946c875499b7aeb0bd5"
+    },
+    {
+      "line": 59,
+      "relation": "increases",
+      "evidence": "Ag stimulation of Lyn unique domain transfectants was accompanied by enhanced phosphorylation of MEK and ERK-2, which are required for leukotriene C4 (LTC4) release, and production of LTC4 was increased 3- to 5-fold, compared with cells transfected with vector alone.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16177098"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 32,
+      "target": 33,
+      "key": "55a5df2e5ed832c422456f2cd51ff994"
+    },
+    {
+      "line": 73,
+      "relation": "increases",
+      "evidence": "As shown in Fig. 6A, microparticles derived from resting T cells induced a low level of ERK phosphorylation. In contrast, incubation of LAD2 cells with microparticles derived from activated T cells or their purified membranes induced high levels of ERK phosphorylation. These results demonstrate that mast cell activation by T cell microparticles may involve the MAPK signaling pathway.",
+      "citation": {
+        "db": "Other",
+        "db_id": "20810987"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 33,
+      "target": 9,
+      "key": "07e7b0cc99089db860f83442e4f5dece"
+    },
+    {
+      "line": 73,
+      "relation": "increases",
+      "evidence": "Ag stimulation of Lyn unique domain transfectants was accompanied by enhanced phosphorylation of MEK and ERK-2, which are required for leukotriene C4 (LTC4) release, and production of LTC4 was increased 3- to 5-fold, compared with cells transfected with vector alone.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16177098"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 33,
+      "target": 9,
+      "key": "acbf940e0cdd4504ddcd2d5820d95854"
+    },
+    {
+      "line": 17,
+      "relation": "increases",
+      "evidence": "FIGURE 6 | Integration of the signalling pathways induced by the G-protein-coupled receptors FcepsilonRI and KIT.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16470226"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 34,
+      "target": 15,
+      "key": "0b1b8da7574c908870df98094f21d4ee"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "Furthermore, in mast cells lacking group V secretory PLA(2), the time course of phosphorylation of ERK1/2 and of cPLA(2)alpha was markedly truncated, leading to attenuation of eicosanoid generation in response to stimulation through TLR2, but not through c-kit or FcepsilonRI. These findings provide the first dissection of the mechanisms of TLR-dependent rapid eicosanoid generation, which is MyD88-dependent, requires cPLA(2)alpha, and is amplified by group V sPLA(2) through its regulation of the sequential phosphorylation and activation of ERK1/2 and cPLA(2)alpha.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17369491"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 36,
+      "target": 35,
+      "key": "0bc3495441027c422167a26fdb1c9909"
+    },
+    {
+      "line": 27,
+      "relation": "increases",
+      "evidence": "Furthermore, in mast cells lacking group V secretory PLA(2), the time course of phosphorylation of ERK1/2 and of cPLA(2)alpha was markedly truncated, leading to attenuation of eicosanoid generation in response to stimulation through TLR2, but not through c-kit or FcepsilonRI. These findings provide the first dissection of the mechanisms of TLR-dependent rapid eicosanoid generation, which is MyD88-dependent, requires cPLA(2)alpha, and is amplified by group V sPLA(2) through its regulation of the sequential phosphorylation and activation of ERK1/2 and cPLA(2)alpha.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17369491"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 36,
+      "target": 33,
+      "key": "265a0a6aad2d96652e57a10902c0f4bc"
+    },
+    {
+      "line": 70,
+      "relation": "decreases",
+      "evidence": "Altogether, our data suggest that PKC-delta is a negative regulator of antigen-induced mast cell degranulation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12024011"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 9,
+      "key": "295a37d4801163b6e94e595b6aa93966"
+    },
+    {
+      "line": 12,
+      "relation": "decreases",
+      "evidence": "Studies have shown that SCF–c-Kit signaling cooperates with Fc?RI activation in stimulating mast cell degranulation (43), and SHP-1 regulates c-Kit function (34).,...SCF and c-Kit signaling are essential for the development of murine mast cells (38, 39), and SHP-1 negatively regulates c-Kit (34).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20042576"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "phosphatase activity",
+          "identifier": "0016791"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 40,
+      "target": 30,
+      "key": "756d5223e07d303b1dc42844932c6b03"
+    },
+    {
+      "line": 12,
+      "relation": "decreases",
+      "evidence": "The protein tyrosine phosphatase SHP-1 interacts with Y570 of c-Kit and negatively regulates c-Kit signaling",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15526160"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "phosphatase activity",
+          "identifier": "0016791"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 40,
+      "target": 30,
+      "key": "aeb18b0fb32047c9091f939021a9ba9d"
+    },
+    {
+      "line": 13,
+      "relation": "decreases",
+      "evidence": "In the absence of functional Src homology-containing phosphatase-1 (SHP-1), the early loss of tyrosine-phosphorylated Stat6 was substantially reduced. Furthermore, the rate of loss of tyrosine-phosphorylated Stat6 in cells expressing a mutation of the human IL-4 receptor alpha in the immunoreceptor tyrosine-based inhibitory motif sequence (Y5F) was dramatically decreased compared with wild-type cells. The early rate of decay was similar in the presence or absence of MG132, an inhibitor of the proteasome, but the later rate of decay was decreased 5-fold. These results suggest that the loss of tyrosine phosphorylation of Stat6 is regulated by the action of SHP-1 and the proteasome but is not dependent on new protein synthesis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12459556"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "phosphatase activity",
+          "identifier": "0016791"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 40,
+      "target": 16,
+      "key": "71eae2137539cd829932e567c58396cf"
+    },
+    {
+      "line": 13,
+      "relation": "decreases",
+      "evidence": "Loss of SHP-1 activity also abolished IL-4-mediated inhibition of c-kit expression in bone marrow-derived mast cell (BMMC). Thus, our data suggest that SHP-1 may regulate IL-4-induced STAT6 phosphorylation and IL-4-mediated functions in a cell type-specific manner.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15613279"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "phosphatase activity",
+          "identifier": "0016791"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 40,
+      "target": 16,
+      "key": "952eb18bd98f0f52e087cf70ff0390e9"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "We found that IgE-induced cysLT synthesis is completely abolished in RBL-2H3(Rac-N17) cells, a stable cell line expressing Rac(N17), a dominant negative Rac1 mutant; conversely, synthesis was enhanced in cells expressing Rac(V12), a constitutively active Rac1 mutant, suggesting that Rac1 is a key mediator of IgE signaling to cysLT synthesis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15210825"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 41,
+      "target": 2,
+      "key": "898cf7cc6bf17c9100fcdc87061270dc"
+    },
+    {
+      "line": 35,
+      "relation": "increases",
+      "evidence": "These data further suggest that Rac1 but not Rac2 is responsible for NF-κB activation in mast cells after SCF stimulation... NF-κB activation is increased in response to the increased Rac1 activity.",
+      "citation": {
+        "db": "Other",
+        "db_id": "12370311"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 41,
+      "target": 10,
+      "key": "4886a2c93aa0e9b40874a5fe4f412e36"
+    },
+    {
+      "line": 36,
+      "relation": "increases",
+      "evidence": "We found that IgE-induced cysLT synthesis is completely abolished in RBL-2H3(Rac-N17) cells, a stable cell line expressing Rac(N17), a dominant negative Rac1 mutant; conversely, synthesis was enhanced in cells expressing Rac(V12), a constitutively active Rac1 mutant, suggesting that Rac1 is a key mediator of IgE signaling to cysLT synthesis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15210825"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 41,
+      "target": 8,
+      "key": "2626561595c08b2c71339af80b2fbddb"
+    },
+    {
+      "line": 37,
+      "relation": "increases",
+      "evidence": "We found that IgE-induced cysLT synthesis is completely abolished in RBL-2H3(Rac-N17) cells, a stable cell line expressing Rac(N17), a dominant negative Rac1 mutant; conversely, synthesis was enhanced in cells expressing Rac(V12), a constitutively active Rac1 mutant, suggesting that Rac1 is a key mediator of IgE signaling to cysLT synthesis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15210825"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 41,
+      "target": 4,
+      "key": "25a9d662f997e85e1c1213328c24d71a"
+    },
+    {
+      "line": 47,
+      "relation": "decreases",
+      "evidence": "IL-4-mediated inhibition was dependent upon expression of the STAT6 transcription factor, as STAT6-deficient bone marrow-derived mast cells did not decrease FcεRI levels in response to IL-4",
+      "citation": {
+        "db": "Other",
+        "db_id": "9862725"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 16,
+      "target": 20,
+      "key": "a97745a3b6c48b6f9cb3b654b6423ccb"
+    },
+    {
+      "line": 48,
+      "relation": "directlyIncreases",
+      "evidence": "We also found that STAT6 activated by IL-15 bound to the STAT-binding site in the bcl-x gene promoter and activated bcl-x L transcription.",
+      "citation": {
+        "db": "Other",
+        "db_id": "11369758"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 16,
+      "target": 42,
+      "key": "e588a5ab6d908b8426e9ddb8be322a58"
+    },
+    {
+      "line": 2,
+      "relation": "decreases",
+      "evidence": "Human mast cells also decreased FcRI expression\nin response to TGF-b\u00011.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15879091"
+      },
+      "annotations": {},
+      "source": 18,
+      "target": 11,
+      "key": "7658c466427260c9f1543b561a386b97"
+    },
+    {
+      "line": 51,
+      "relation": "increases",
+      "evidence": "Furthermore, in mast cells lacking group V secretory PLA(2), the time course of phosphorylation of ERK1/2 and of cPLA(2)alpha was markedly truncated, leading to attenuation of eicosanoid generation in response to stimulation through TLR2, but not through c-kit or FcepsilonRI. These findings provide the first dissection of the mechanisms of TLR-dependent rapid eicosanoid generation, which is MyD88-dependent, requires cPLA(2)alpha, and is amplified by group V sPLA(2) through its regulation of the sequential phosphorylation and activation of ERK1/2 and cPLA(2)alpha.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17369491"
+      },
+      "annotations": {
+        "cl": {
+          "0000097": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 19,
+      "target": 35,
+      "key": "2b3771f2986425617873cc80653d2602"
+    },
+    {
+      "line": 60,
+      "relation": "increases",
+      "evidence": "As shown in Table I⇓, endogenous sPLA2 induced an increase in cPLA2 activity in BMMC. Furthermore, endogenous sPLA2 released AA from BMMC (Table I⇓). In contrast, levels of other unsaturated fatty acids (LA and OA) were not influenced when BMMC were incubated with partially purified endogenous sPLA2 (Table I⇓).",
+      "citation": {
+        "db": "Other",
+        "db_id": "10946309"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 14,
+      "target": 3,
+      "key": "56abdccc9c50a1df57845389bf8d559b"
+    },
+    {
+      "line": 60,
+      "relation": "increases",
+      "evidence": "ANG II has been shown to phosphorylate and activate PLA2, which leads to production of arachidonic acid (AA) and its metabolites. The derivatives of AA function in maintaining vascular tone and in VSMC NAD(P)H oxidation (63). The cyclooxygenase-derived prostaglandins, such as PGI2 and PGE2 are vasodilatory, and are counteracted by PGH2  and thromboxane A2, which promote vasoconstriction.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16870827"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 14,
+      "target": 3,
+      "key": "5eb947fe36b7dd5ecbb350a7c7054640"
+    },
+    {
+      "line": 60,
+      "relation": "increases",
+      "evidence": "Moreover, coupling of heterotrimeric G proteins containing G alpha i3 C  S to the m2 mAChR resulted in pertussis toxin-resistant inhibition of adenylyl cyclase, stimulation of phospholipase C-induced intracellular Ca2+ release, and phospholipase A2-mediated arachidonic acid release. Therefore, these studies provide conclusive evidence that heterotrimeric G proteins containing just G alpha i3 can regulate multiple effector enzymes within the same cell type.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "7961942"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 14,
+      "target": 3,
+      "key": "43f8ee715a9b7c0aea88dc6ceeed3010"
+    },
+    {
+      "line": 60,
+      "relation": "increases",
+      "evidence": "The release of arachidonic acid and the formation of 12-HETE was completely blocked by the cPLA2-alpha inhibitors AACOCF3 or pyrrolidine-1. PCB-treatment of platelets demonstrated that the cPLA2-alpha protein as well as PLA2 activity translocated to the membrane fraction, independent of a rise in intracellular Ca2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16290172"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 14,
+      "target": 3,
+      "key": "4a7c6cc7f6745ca9f1b29abd082f8154"
+    },
+    {
+      "line": 60,
+      "relation": "increases",
+      "evidence": "Although there are now four known adenosine receptors, and the nomenclature has been changed and refined, the early classification scheme still mirrors the generally accepted profile of adenosine receptor G protein coupling (Table 1)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12834807"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 14,
+      "target": 3,
+      "key": "4e7ea03d27dc7ab3fcf7349fdd5f83e5"
+    }
+  ]
+}

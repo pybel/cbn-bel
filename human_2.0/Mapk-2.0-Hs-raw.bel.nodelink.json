@@ -1,0 +1,2008 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Mapk-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Mapk network depicts the causal mechanisms that regulate different families of MAPK signaling (p38, JNK, ERK, MAP2K) in the context of cell proliferation."
+    },
+    "namespace_url": {
+      "HGNC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-human-genes/hgnc-human-genes-20150601.belns",
+      "GOBP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20150601.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20150601.belns",
+      "GOCC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170511.belns",
+      "MESHPP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20150601.belns",
+      "MGI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20150601.belns",
+      "RGD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20150601.belns",
+      "CHEBI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20150601.belns",
+      "SCHEM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-chemicals/selventa-legacy-chemicals-20150601.belns",
+      "EGID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/entrez-gene-ids/entrez-gene-ids-20150601.belns",
+      "MESHD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20150601.belns",
+      "SDIS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-diseases/selventa-legacy-diseases-20150601.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20150601.belns",
+      "MESHC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170511.belns",
+      "GOBPID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process-ids/go-biological-process-ids-20150601.belns",
+      "GOCCID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component-ids/go-cellular-component-ids-20150601.belns",
+      "MESHCS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20150601.belns"
+    },
+    "namespace_pattern": {},
+    "annotation_url": {
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20150601.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20150601.belanno",
+      "Species": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+      "Tissue": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20150601.belanno"
+    },
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Smoke, cigarette"
+      },
+      "id": "2ef524381f7680ce6cfba5fa9781b085",
+      "bel": "a(SCHEM:\"Smoke, cigarette\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "PD0325901"
+      },
+      "id": "76debc302a5c698a1465357097b87435",
+      "bel": "a(SCHEM:PD0325901)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "U0126"
+      },
+      "id": "987b45cad2e14ad5c00734d6318401e0",
+      "bel": "a(SCHEM:U0126)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "G1/S transition of mitotic cell cycle"
+      },
+      "id": "606a3e7b2b334293984d34ee522d4751",
+      "bel": "bp(GOBP:\"G1/S transition of mitotic cell cycle\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "cell differentiation"
+      },
+      "id": "9f30bb43cf5e4bffe34fb77001cec0f0",
+      "bel": "bp(GOBP:\"cell differentiation\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "cell proliferation"
+      },
+      "id": "14a7545c48b4be2b5e986ded11b09652",
+      "bel": "bp(GOBP:\"cell proliferation\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "lung development"
+      },
+      "id": "79574453249de0c704e16c9cc9ee2d80",
+      "bel": "bp(GOBP:\"lung development\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "EGID",
+        "name": "51776"
+      },
+      "id": "ba8760f01cf5b1229eab4799bd55fade",
+      "bel": "p(EGID:51776)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCND1"
+      },
+      "id": "af65521e8dc8a9417952f6aebb7725c6",
+      "bel": "p(HGNC:CCND1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "EGFR"
+      },
+      "id": "2d0e5630f4a3b7a0fee65dbf00da20a5",
+      "bel": "p(HGNC:EGFR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "EGR1"
+      },
+      "id": "70f5373b08926534f5816e500b4c5271",
+      "bel": "p(HGNC:EGR1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GGPS1"
+      },
+      "id": "e482e537069d535a1fb3290e9a48b52e",
+      "bel": "p(HGNC:GGPS1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HRAS"
+      },
+      "id": "3b38b9e6d1635e238a9d231ff621f3f7",
+      "bel": "p(HGNC:HRAS)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HRAS"
+      },
+      "variants": [
+        {
+          "kind": "hgvs",
+          "hgvs": "p.Gly12Val"
+        }
+      ],
+      "id": "0f8f01d19ba0f8afeb8401641fde15f4",
+      "bel": "p(HGNC:HRAS, var(\"p.Gly12Val\"))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "JUN"
+      },
+      "id": "0f80512a01fa9da3da3e442cd3289fc7",
+      "bel": "p(HGNC:JUN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "JUN"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          }
+        }
+      ],
+      "id": "89c3455f8db6401c39e6062b0faae39a",
+      "bel": "p(HGNC:JUN, pmod(Ph))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MAPK14"
+      },
+      "id": "0c0476ae2f3918834fb6ae31829c9b8d",
+      "bel": "p(HGNC:MAPK14)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NF1"
+      },
+      "id": "955c523818a77fe17b4502a739bfa495",
+      "bel": "p(HGNC:NF1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RAF1"
+      },
+      "id": "a2b4fef594e89ed0a8b631778bd103aa",
+      "bel": "p(HGNC:RAF1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RAF1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser",
+          "pos": 259
+        }
+      ],
+      "id": "bcd5b97c86202dcdc58cf2ddfc5b99cd",
+      "bel": "p(HGNC:RAF1, pmod(Ph, Ser, 259))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RAF1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser",
+          "pos": 338
+        }
+      ],
+      "id": "b610b39930bc8820863c4e64e35f5f08",
+      "bel": "p(HGNC:RAF1, pmod(Ph, Ser, 338))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RAF1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser",
+          "pos": 43
+        }
+      ],
+      "id": "5bb7f15ee38a7ec4fe400e6c04d148ef",
+      "bel": "p(HGNC:RAF1, pmod(Ph, Ser, 43))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RASSF1"
+      },
+      "id": "9b0a14c6ec3b2450217f77c68d711d64",
+      "bel": "p(HGNC:RASSF1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "CEBP Family"
+      },
+      "id": "5444d6af050cf343b53df430258578d1",
+      "bel": "p(SFAM:\"CEBP Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "MAPK Erk1/2 Family"
+      },
+      "id": "a47b4828e1ed77dffa46258b02c5d36a",
+      "bel": "p(SFAM:\"MAPK Erk1/2 Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "MAPK Erk1/2 Family"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          }
+        }
+      ],
+      "id": "0c15e8199243a122631ad15ac181e9cd",
+      "bel": "p(SFAM:\"MAPK Erk1/2 Family\", pmod(Ph))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "MAPK JNK Family"
+      },
+      "id": "2c12ea9eb341ac97eaa46efce68f20d7",
+      "bel": "p(SFAM:\"MAPK JNK Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "MAPK JNK Family"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          }
+        }
+      ],
+      "id": "cf86d9c7a8a081af46408dce283665db",
+      "bel": "p(SFAM:\"MAPK JNK Family\", pmod(Ph))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "MAPK p38 Family"
+      },
+      "id": "f808149b6c7bdafd00cef9802f8d3d34",
+      "bel": "p(SFAM:\"MAPK p38 Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "MAPK p38 Family"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Thr",
+          "pos": 180
+        }
+      ],
+      "id": "d403cd5c07debaf495cdca3ca826b0a7",
+      "bel": "p(SFAM:\"MAPK p38 Family\", pmod(Ph, Thr, 180))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "MAPK p38 Family"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Tyr",
+          "pos": 182
+        }
+      ],
+      "id": "8cecd603eebc20ccca1447cfe989a775",
+      "bel": "p(SFAM:\"MAPK p38 Family\", pmod(Ph, Tyr, 182))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "MEK1/2 Family"
+      },
+      "id": "d000696fa4da39360cd2ef5b22fee5eb",
+      "bel": "p(SFAM:\"MEK1/2 Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "RAF Family"
+      },
+      "id": "d58fea5f2da846ca9155affcc72086f9",
+      "bel": "p(SFAM:\"RAF Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "RAS Family"
+      },
+      "id": "2bd7a3d03377a9c4cb65451e6f41e910",
+      "bel": "p(SFAM:\"RAS Family\")"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "SDIS",
+        "name": "cell senescence"
+      },
+      "id": "95bbcaad3d34c4a4bd0249dd0d32fb43",
+      "bel": "path(SDIS:\"cell senescence\")"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GGPS1"
+      },
+      "id": "ade768d36193fcb2c8d0ad0430e57a0e",
+      "bel": "r(HGNC:GGPS1)"
+    }
+  ],
+  "links": [
+    {
+      "line": 33,
+      "relation": "directlyIncreases",
+      "evidence": "From mutations file",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15494224"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 13,
+      "target": 12,
+      "key": "07eed61892d1c05c59de7790d62e21b9"
+    },
+    {
+      "line": 33,
+      "relation": "directlyIncreases",
+      "evidence": "From mutations file",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11522622"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 13,
+      "target": 12,
+      "key": "183e3a663221342761f97c0f07170c79"
+    },
+    {
+      "line": 33,
+      "relation": "directlyIncreases",
+      "evidence": "From mutations file",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8453633"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 13,
+      "target": 12,
+      "key": "1de88d261b9344d0edfaee5687aab12c"
+    },
+    {
+      "line": 33,
+      "relation": "directlyIncreases",
+      "evidence": "From mutations file",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "2197591"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 13,
+      "target": 12,
+      "key": "00fa428d593b906517b05eb9463fa6b6"
+    },
+    {
+      "line": 33,
+      "relation": "directlyIncreases",
+      "evidence": "From mutations file",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12068308"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 13,
+      "target": 12,
+      "key": "0f77a8a93aa603a2d610c73367133a19"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 12,
+      "target": 13,
+      "key": "0b210fe2a82d00b25b65a7553a947b7c"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "Activated Ras has the ability to interact with the serine/threonine kinase Raf-1, leading to its activation. The targets for Raf- 1 kinase activity are the dual-specificity kinases Mek1 and Mek2 [63], which are activated by phosphorylation. The serine/threonine kinases Erk1 and Erk2 are activated through phosphorylation by Mek1/2 [64]. Activated Erks dimerize and are translocated to the nucleus [65], where transcription factors are phosphorylated whereby their activities are regulated, influencing gene transcription",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15526160"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 12,
+      "target": 18,
+      "key": "253240b17af76a6fb6a90c2dd6b88091"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "IGF1 binding activates the IGF1 receptor (IGFR), a receptor tyrosine kinase. The IGFR subsequently recruits the insulin receptor substrate (IRS1), which results in the activation of two signaling pathways: the RasRaf MEK ERK pathway  and the PI3K Akt pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12928036"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 12,
+      "target": 18,
+      "key": "d87e6fc63ffa122c2e3fd4c24a9869ee"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "HER2/Neu overexpression stimulates the ability of p300 to acetylate ER81, likely by inducing phosphorylation of p300 through the Ras--Raf--mitogen-activated protein kinase pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12917345"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 12,
+      "target": 18,
+      "key": "d6e2beef3eb780689e46a6f2ec19d114"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "In this paper, we present a comprehensive pathway map of EGFR signaling and other related pathways. The map reveals that the overall architecture of the pathway is a bow-tie (or hourglass) structure with several feedback loops.  See figure 2: The bow-tie architecture of the EGFR signaling pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16729045"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 12,
+      "target": 18,
+      "key": "b8528f34d5b4a52e731a3a1191cf1d76"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12832399"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 12,
+      "target": 18,
+      "key": "ef2be28daa5c93519678c7680a05a02b"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10850453"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 12,
+      "target": 18,
+      "key": "59c1a7daf3829f7985461217ccdfa3bb"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8175686"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 12,
+      "target": 18,
+      "key": "ccc8e39d675060d878e2162f83f85a3c"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "14-3-3 beta isoform has been shown to bind to the product of the protooncogene cRaf-1 and to facilitate its activation by Ras.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10463061"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 12,
+      "target": 18,
+      "key": "2d81d5d8728ed6be1c31727f99f0e836"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "Kit and other RTKs will activate the MAP kinase signaling pathway and has been reported both to increase the transcriptional activity of Mitf as well as down-regulate Mitf protein levels.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10898786"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 12,
+      "target": 18,
+      "key": "80d2f0aef2d288e01e6150efdcbd5293"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 28,
+      "target": 29,
+      "key": "24f7b707f28308aa7c64e8f4a3b73b4d"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 28,
+      "target": 30,
+      "key": "9d26c3865140150c47d420dcacd19a63"
+    },
+    {
+      "line": 46,
+      "relation": "increases",
+      "evidence": "Exposure to high doses of IR can cause long-term hematopoietic\ninjury in part via induction of HSC senescence...In a preliminary study, we found that IR and G-CSF can\nactivate p38 in BM Lin- cells enriched with HSCs and HPCs and\nthe activation can be abrogated by incubation of the cells with SB,\na specific p38 inhibitor (Fig.S1)",
+      "citation": {
+        "db": "Other",
+        "db_id": "23646161"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "hematopoietic stem cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 34,
+      "target": 28,
+      "key": "4fde6f8bc8cb6380b6690a7c14d0ef78"
+    },
+    {
+      "line": 46,
+      "relation": "increases",
+      "evidence": "High Intensity ras Signaling Induces Premature Senescence by Activating p38 Pathway in Primary Human Fibroblasts",
+      "citation": {
+        "db": "Other",
+        "db_id": "14593117"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 34,
+      "target": 28,
+      "key": "044e95e0cb6b014a880a0ed84728be81"
+    },
+    {
+      "line": 46,
+      "relation": "increases",
+      "evidence": "p38(MAPK) activation and increased DNA binding activities of ATF-2 and p53 are shown to mediate cyclooxygenase-2 overexpression in premature senescence",
+      "citation": {
+        "db": "Other",
+        "db_id": "19082758"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 34,
+      "target": 28,
+      "key": "9b704bef6574580d9f9f66a18be67eaf"
+    },
+    {
+      "line": 46,
+      "relation": "increases",
+      "evidence": "Activation of p38MAPK in DNA-damage-induced senescence contributes to suppression of HSR",
+      "citation": {
+        "db": "Other",
+        "db_id": "22510478"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "fibroblast": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 34,
+      "target": 28,
+      "key": "d8626c4e395a997ca1fa910635e781fe"
+    },
+    {
+      "line": 15,
+      "relation": "directlyDecreases",
+      "evidence": "Phosphorylation. Raf is principally activated by phosphorylation of specific amino acid residues as shown for each isoform in Figure 4. From an evolutionary standpoint, the Raf activation sites are highly conserved from yeast to humans. Several amino acids in Raf, particularly serine (S) 259 and S621, which bind 14-3-3 and maintain C-Raf in a closed auto-inhibited conformation, are phosphorylated in the basal state.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16170185"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 19,
+      "target": 18,
+      "key": "1feba9cd9f365cd3652c0cdeee7196fc"
+    },
+    {
+      "line": 15,
+      "relation": "directlyDecreases",
+      "evidence": "the phosphorylation of Raf-1 on Ser-259 induced by paclitaxel he region surrounding Ser-259 in Raf-1 conforms to a consensus sequence for phosphorylation by Akt",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12087097"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 19,
+      "target": 18,
+      "key": "15a764fd974d06000b2bb707ab2d11c2"
+    },
+    {
+      "line": 15,
+      "relation": "directlyDecreases",
+      "evidence": "The cyclic AMP (cAMP)-dependent protein kinase (PKA) can inhibit Raf-1 by direct phosphorylation.  We have mapped all cAMP-induced phosphorylation sites in Raf-1, showing that serines 43, 259, and 621 are phosphorylated by PKA in vitro and induced by cAMP in vivo.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11971957"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 19,
+      "target": 18,
+      "key": "5250c12f6ac1b8dc74cc320ce5af708b"
+    },
+    {
+      "line": 15,
+      "relation": "directlyDecreases",
+      "evidence": "This zinc-induced protein kinase A activation inhibited Raf-1 activity by phosphorylation at serine 259, preventing activation of Raf-1 by phosphorylation of serine 338.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17785857"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Monocytes": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 19,
+      "target": 18,
+      "key": "3793854d980a0d2825d8cf4596a47c79"
+    },
+    {
+      "line": 15,
+      "relation": "directlyDecreases",
+      "evidence": "Raf itself is negatively regulated by phosphorylation at Ser259 through Akt, an important effector of phosphoinositide 3-kinase (PI3K) signaling (30, 44).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19223555"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 19,
+      "target": 18,
+      "key": "09cbbc53ce672561a51b2ec8670c8bed"
+    },
+    {
+      "line": 15,
+      "relation": "directlyDecreases",
+      "evidence": "This inhibitory phosphorylation on Raf reduces the activity of MAPK pathway (Zimmermann and Moelling, 1999).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18794886"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Neoplasm": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 19,
+      "target": 18,
+      "key": "e50c78a8638f84c092580599ba71c523"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 18,
+      "target": 19,
+      "key": "a13d99a02c9f7d29f3333350528cd4bc"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 18,
+      "target": 21,
+      "key": "df8452be34661986e6ae6b4fc0291b4f"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 18,
+      "target": 20,
+      "key": "12793322103bdc1a4416c1145a4905f8"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 26,
+      "target": 27,
+      "key": "7f7252f70efa78d78a03d0b956afa985"
+    },
+    {
+      "line": 29,
+      "relation": "directlyIncreases",
+      "evidence": "Figure 1 | The ErbB signalling network.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11252954"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 33,
+      "target": 32,
+      "key": "ba5f1991e508578239cf25a5fd84e636"
+    },
+    {
+      "line": 29,
+      "relation": "directlyIncreases",
+      "evidence": "Fig.1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15567848"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 33,
+      "target": 32,
+      "key": "4e3d6d030ecadb00b8c19ed9b27cdd19"
+    },
+    {
+      "line": 29,
+      "relation": "directlyIncreases",
+      "evidence": "Moreover, Erbin inhibits the Erk activation by active Ras, while it fails to do so in the presence of active Raf-1. Erbin associates with active Ras, but not inactive Ras nor Raf. Consistently, Erbin interferes with the interaction between Ras and Raf both in vivo and in vitro. Erbin associates with active Ras, but not inactive Ras nor Raf.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12379659"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 33,
+      "target": 32,
+      "key": "97c1d23167cab339661adb4447638bbf"
+    },
+    {
+      "line": 29,
+      "relation": "directlyIncreases",
+      "evidence": "Because Raf binds tightly to the GTP-bound form of Ras but not to the GDP-bound form, such differential affinity can be used to determine the GTP-bound status of Ras.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10542228"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 33,
+      "target": 32,
+      "key": "31b85e8c1c2f0505c42a6db6ae258282"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 24,
+      "target": 25,
+      "key": "2d7e964c215e30117c98f74a9ed97c2d"
+    },
+    {
+      "line": 5,
+      "relation": "decreases",
+      "evidence": "The exogenous expression of RASSF1A suppressed JNK phosphorylation, and cells stably transfected with RASSF1A showed reduced JNK and c-Jun phosphorylation and Cyclin D1 down-regulation. An in vitro kinase assay showed that the exogenous expression of RASSF1A inhibited JNK activity and that JNK activity suppression due to ectopically expressed RASSF1A was revived by RASSF1A siRNA treatment.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15867363"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Lung Neoplasms": true
+        }
+      },
+      "source": 22,
+      "target": 27,
+      "key": "76ecdb6ae4d312b77afa7d5be7445670"
+    },
+    {
+      "line": 48,
+      "relation": "decreases",
+      "evidence": "RNA interference-mediated downregulation of endogenous RASSF1A expression in human epithelial cells results in abnormal accumulation of cyclin D1 protein",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12024041"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Epithelium": true
+        }
+      },
+      "source": 22,
+      "target": 8,
+      "key": "5d75088ca100b9b7a2173df9d88992ea"
+    },
+    {
+      "line": 48,
+      "relation": "decreases",
+      "evidence": "The exogenous expression of RASSF1A suppressed JNK phosphorylation, and cells stably transfected with RASSF1A showed reduced JNK and c-Jun phosphorylation and Cyclin D1 down-regulation. An in vitro kinase assay showed that the exogenous expression of RASSF1A inhibited JNK activity and that JNK activity suppression due to ectopically expressed RASSF1A was revived by RASSF1A siRNA treatment.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15867363"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Lung Neoplasms": true
+        }
+      },
+      "source": 22,
+      "target": 8,
+      "key": "13c2bb82802d990ec33617699d5f190f"
+    },
+    {
+      "line": 48,
+      "relation": "decreases",
+      "evidence": "As shown in Fig. 1B, the exogenous expression of RASSF1A inhibited the phosphorylation of c-Jun and reduced the expression of Cyclin D1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15867363"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 22,
+      "target": 8,
+      "key": "220a07829e7572ca53efdd9dc118ac3c"
+    },
+    {
+      "line": 49,
+      "relation": "decreases",
+      "evidence": "The exogenous expression of RASSF1A suppressed JNK phosphorylation, and cells stably transfected with RASSF1A showed reduced JNK and c-Jun phosphorylation and Cyclin D1 down-regulation. An in vitro kinase assay showed that the exogenous expression of RASSF1A inhibited JNK activity and that JNK activity suppression due to ectopically expressed RASSF1A was revived by RASSF1A siRNA treatment. Based on our data, we suggest that RASSF1A exerts a tumor-suppressing effect by blocking oncogene-mediated JNK activation in lung cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15867363"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "lung neoplasms": true
+        }
+      },
+      "source": 22,
+      "target": 15,
+      "key": "8dd4b4d87cedc4caefe5995ed91a4569"
+    },
+    {
+      "line": 49,
+      "relation": "decreases",
+      "evidence": "The exogenous expression of RASSF1A suppressed JNK phosphorylation, and cells stably transfected with RASSF1A showed reduced JNK and c-Jun phosphorylation and Cyclin D1 down-regulation. An in vitro kinase assay showed that the exogenous expression of RASSF1A inhibited JNK activity and that JNK activity suppression due to ectopically expressed RASSF1A was revived by RASSF1A siRNA treatment.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15867363"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Lung Neoplasms": true
+        }
+      },
+      "source": 22,
+      "target": 15,
+      "key": "fec88af8295cd396115748a212428bd6"
+    },
+    {
+      "line": 49,
+      "relation": "decreases",
+      "evidence": "JNK phosphorylation was inhibited in cells stably expressing RASSF1A, and the phosphorylation inhibition of JNK substrates, such as c-Jun and ATF-2, was then accompanied (H1299 cells transiently transfected with RASSF1A)",
+      "citation": {
+        "db": "Other",
+        "db_id": "15867363"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "h1299": true
+        }
+      },
+      "source": 22,
+      "target": 15,
+      "key": "9b713fa8b4f88100915d0b8484be0c56"
+    },
+    {
+      "line": 52,
+      "relation": "decreases",
+      "evidence": "The exogenous expression of RASSF1A suppressed JNK phosphorylation, and cells stably transfected with RASSF1A showed reduced JNK and c-Jun phosphorylation and Cyclin D1 down-regulation. An in vitro kinase assay showed that the exogenous expression of RASSF1A inhibited JNK activity and that JNK activity suppression due to ectopically expressed RASSF1A was revived by RASSF1A siRNA treatment.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15867363"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Lung Neoplasms": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 22,
+      "target": 26,
+      "key": "a647e8203d8c8a633e074a15ebc41ee3"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 14,
+      "target": 15,
+      "key": "ab15b447e1a18ed2e0a44e04b6dcba5a"
+    },
+    {
+      "line": 30,
+      "relation": "directlyDecreases",
+      "evidence": "The cyclic AMP (cAMP)-dependent protein kinase (PKA) can inhibit Raf-1 by direct phosphorylation.  We have mapped all cAMP-induced phosphorylation sites in Raf-1, showing that serines 43, 259, and 621 are phosphorylated by PKA in vitro and induced by cAMP in vivo.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11971957"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 21,
+      "target": 18,
+      "key": "add3eefa28bb9aaf8ef28e672769e0a2"
+    },
+    {
+      "line": 53,
+      "relation": "decreases",
+      "evidence": "In this translational investigation, we found that Nf1 activity regulates excessive drinking and basal and ethanol-stimulated GABA release in the mouse central amygdala",
+      "citation": {
+        "db": "Other",
+        "db_id": ""
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 17,
+      "target": 33,
+      "key": "5bd78288dc2b440c2aa324575ab78862"
+    },
+    {
+      "line": 53,
+      "relation": "decreases",
+      "evidence": "Neurofibromin expression was significantly decreased within 2 days after infection (Figure 3A). Concomitant with this decrease was an increase in ERK and AKT activity as assessed by their phosphorylation status....Ras-GTP levels were elevated 2 days after infection",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17157787"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 17,
+      "target": 33,
+      "key": "ee587faf53f24ae0e68b45f1280e73f0"
+    },
+    {
+      "line": 53,
+      "relation": "decreases",
+      "evidence": "NF1, a tumor suppressor and negative regulator of Ras",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20587590"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 17,
+      "target": 33,
+      "key": "942575a934624da4f050704eead56b6c"
+    },
+    {
+      "line": 3,
+      "relation": "directlyIncreases",
+      "evidence": "These data indicate that in BMMC, Lyn contributes to SCF-induced phosphorylation of Kit, as well as phosphorylation of Jnks and Stat3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15451030"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 27,
+      "target": 26,
+      "key": "d5decd46c8ee81af6753b51d8b2a4438"
+    },
+    {
+      "line": 50,
+      "relation": "directlyIncreases",
+      "evidence": "In pilot experiments we found that both TGF1-induced Smad3 and p38 MAPK phosphorylation was still detectable after 18 h and correlated with the increased levels of3 and5 integrins (supplemental Fig. 4S and Fig. 1C).....Smad3 phosphorylation was determined using rabbit mAb against phospho-Src (Tyr-416)...p38MAPKphosphorylation was determined using mousemAb against human phosphorylated p38MAPK(Thr180/Tyr182)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18353785"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 29,
+      "target": 28,
+      "key": "a8d076b1c9d29118041343c9373731b1"
+    },
+    {
+      "line": 17,
+      "relation": "directlyIncreases",
+      "evidence": "In pilot experiments we found that both TGF1-induced Smad3 and p38 MAPK phosphorylation was still detectable after 18 h and correlated with the increased levels of3 and5 integrins (supplemental Fig. 4S and Fig. 1C).....Smad3 phosphorylation was determined using rabbit mAb against phospho-Src (Tyr-416)...p38MAPKphosphorylation was determined using mousemAb against human phosphorylated p38MAPK(Thr180/Tyr182)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18353785"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 30,
+      "target": 28,
+      "key": "4b52d49fba2ed0b43fd5b18bdf97ab27"
+    },
+    {
+      "line": 31,
+      "relation": "directlyIncreases",
+      "evidence": "bFGF activated Raf-1 via p21-activated protein kinase-1 (PAK-1) phosphorylation of serines 338 and 339, resulting in Raf-1 mitochondrial translocation and endothelial cell protection from the intrinsic pathway of apoptosis, independent of the mitogen-activated protein kinase kinase-1 (MEK1)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12843393"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 20,
+      "target": 18,
+      "key": "157b8707ced413f309eaf3dc3bf0551a"
+    },
+    {
+      "line": 31,
+      "relation": "directlyIncreases",
+      "evidence": "Pak3 phosphorylates Raf-1 on serine 338 in vitro and in vivo. The p21-activated protein kinases are regulated by the Rho-family GTPases Rac and Cdc42.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9823899"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 20,
+      "target": 18,
+      "key": "b6cfb42e145e0dbe0287b3c018ac8306"
+    },
+    {
+      "line": 31,
+      "relation": "directlyIncreases",
+      "evidence": "This zinc-induced protein kinase A activation inhibited Raf-1 activity by phosphorylation at serine 259, preventing activation of Raf-1 by phosphorylation of serine 338.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17785857"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Monocytes": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 20,
+      "target": 18,
+      "key": "31490f035706990b8507e0f4b0ff97cc"
+    },
+    {
+      "line": 31,
+      "relation": "directlyIncreases",
+      "evidence": "The recent suggestion that Pak3 could stimulate Raf-1 activity by directly phosphorylating S338 through a Ras/phosphatidylinositol 3-kinase (Pl3-K)/-Cdc42-dependent pathway has attracted much attention.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11259591"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 20,
+      "target": 18,
+      "key": "6ad0610f2377d53bdf500b4a49ac34c7"
+    },
+    {
+      "line": 31,
+      "relation": "directlyIncreases",
+      "evidence": "PKA also decreased Raf-1 serine 338 phosphorylation of Raf-1, previously shown to be required for Raf-1 activation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11971957"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 20,
+      "target": 18,
+      "key": "bffac0f5d57e81136ad90665359b6d20"
+    },
+    {
+      "line": 31,
+      "relation": "directlyIncreases",
+      "evidence": "Maximal binding of the Raf kinase domain to MEK1 and its kinase activity are achieved upon phosphorylation of the region (338)SSYY(341)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12244094"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 20,
+      "target": 18,
+      "key": "7cd5a0865eb3b0dd5d37ba6a947c1b2f"
+    },
+    {
+      "line": 2,
+      "relation": "increases",
+      "evidence": "We found that p38alpha positively regulates factors such as CCAAT/enhancer-binding protein that are required for lung cell differentiation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17468755"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 16,
+      "target": 6,
+      "key": "42880d5277e287f30cf260c27033f8cf"
+    },
+    {
+      "line": 24,
+      "relation": "decreases",
+      "evidence": "In addition, p38alpha controls self-renewal of the lung stem and progenitor cell population by inhibiting proliferation-inducing signals, most notably epidermal growth factor receptor",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17468755"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 16,
+      "target": 9,
+      "key": "37728482afc37a8ad16c984c1b9f435b"
+    },
+    {
+      "line": 25,
+      "relation": "increases",
+      "evidence": "We found that p38alpha positively regulates factors such as CCAAT/enhancer-binding protein that are required for lung cell differentiation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17468755"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 23,
+      "key": "fa14a5505354ac4107082f550147cf41"
+    },
+    {
+      "line": 36,
+      "relation": "increases",
+      "evidence": "We found that p38alpha positively regulates factors such as CCAAT/enhancer-binding protein that are required for lung cell differentiation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17468755"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 16,
+      "target": 4,
+      "key": "f7d016dbddac1cc9908b69baea386608"
+    },
+    {
+      "line": 45,
+      "relation": "decreases",
+      "evidence": "deletion of p38αmitogen-activated protein (MAP) kinase in adult mice results in increased proliferation and defective differentiation of lung stem and progenitor cells both in vivo and in vitro",
+      "citation": {
+        "db": "Other",
+        "db_id": "17468755"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "stem cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 16,
+      "target": 5,
+      "key": "bbe108f404307bee546b6ce639d08274"
+    },
+    {
+      "line": 45,
+      "relation": "decreases",
+      "evidence": "deletion of p38alpha mitogen-activated protein (MAP) kinase in adult mice results in increased proliferation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17468755"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 16,
+      "target": 5,
+      "key": "773477a6b346eb0a063bfe90129ceca6"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "\"When we overexpressed EGR1 with an adenovirus to mimic elevated EGR under CSE [cigarette smoke extract] stress, we found that GGPPS [GGPS1] mRNA and protein were also significantly increased.\" (p. 2744)",
+      "citation": {
+        "db": "Other",
+        "db_id": "21983072"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Beas-2B cells": true
+        }
+      },
+      "source": 10,
+      "target": 35,
+      "key": "32aab87aeb6cb24ab1de90eb4b13b249"
+    },
+    {
+      "line": 44,
+      "relation": "increases",
+      "evidence": "\"Taken together, our data suggest that MAPK Erk 1/2 might be positively regulated by EGR-1 through increasing Ras prenylation by promoting GGPPS [GGPS1] transcription.\" (p. 2747)",
+      "citation": {
+        "db": "Other",
+        "db_id": "21983072"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Beas-2B cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 11,
+      "target": 24,
+      "key": "29a85564a527b4ad5d3180571694829b"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "Both in vivo\nand in vitro experiments, the expression of ERK\nwas significantly increased in smokers",
+      "citation": {
+        "db": "Other",
+        "db_id": "25807439"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 0,
+      "target": 24,
+      "key": "68a1391ecd4f3b8d8fef0a880879913a"
+    }
+  ]
+}

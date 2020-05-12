@@ -1,0 +1,2120 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Osmotic Stress-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Osmotic Stress network depicts the causal mechanisms that regulate osmotic stress including NFAT5, aquaporins, and CFTR pathways downstream of the hyperosmotic response."
+    },
+    "namespace_url": {},
+    "namespace_pattern": {
+      "chebi": ".*",
+      "mesh": ".*",
+      "fplx": ".*",
+      "go": ".*",
+      "hgnc": ".*"
+    },
+    "annotation_url": {},
+    "annotation_pattern": {
+      "cl": ".*"
+    },
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "hydrogen peroxide",
+        "identifier": "16240"
+      },
+      "id": "e64bbd9cc428b931f810fb5aade6f08b",
+      "bel": "a(chebi:16240 ! \"hydrogen peroxide\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "reactive oxygen species",
+        "identifier": "26523"
+      },
+      "id": "daea6f4eb51dba973002f435187fa6d2",
+      "bel": "a(chebi:26523 ! \"reactive oxygen species\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "aldosterone",
+        "identifier": "27584"
+      },
+      "id": "915324c17abc8f63b2d6d117bcccce02",
+      "bel": "a(chebi:27584 ! aldosterone)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "nucleotide-excision repair, DNA damage recognition",
+        "identifier": "0000715"
+      },
+      "id": "748511d5a10d4c3e06bc294656335d2a",
+      "bel": "bp(go:0000715 ! \"nucleotide-excision repair, DNA damage recognition\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "response to osmotic stress",
+        "identifier": "0006970"
+      },
+      "id": "97e99ec4acd65bbe33fa729ac25dc6a7",
+      "bel": "bp(go:0006970 ! \"response to osmotic stress\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "hyperosmotic response",
+        "identifier": "0006972"
+      },
+      "id": "6329b0484d14c8930325fe5d117e3c0a",
+      "bel": "bp(go:0006972 ! \"hyperosmotic response\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "response to fluid shear stress",
+        "identifier": "0034405"
+      },
+      "id": "867adc14fa1644baa5a4e455a25bef27",
+      "bel": "bp(go:0034405 ! \"response to fluid shear stress\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "fplx",
+        "name": "NADPH_oxidase",
+        "identifier": "NADPH_oxidase"
+      },
+      "id": "e9e1721e0b1c9510e72f534f365ffdd1",
+      "bel": "complex(fplx:\"NADPH_oxidase\" ! \"NADPH_oxidase\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "fplx",
+        "name": "AMPK",
+        "identifier": "AMPK"
+      },
+      "id": "eaa432facad9be5ed82b07c936e3cd6f",
+      "bel": "complex(fplx:AMPK ! AMPK)"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "fplx",
+        "name": "AP1",
+        "identifier": "AP1"
+      },
+      "id": "0083d297c265cb2ade870cd66cc5abb0",
+      "bel": "complex(fplx:AP1 ! AP1)"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "fplx",
+        "name": "NFkappaB",
+        "identifier": "NFkappaB"
+      },
+      "id": "a7edecc930194d4eff939b226f91107f",
+      "bel": "complex(fplx:NFkappaB ! NFkappaB)"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "go",
+        "name": "sodium:potassium-exchanging ATPase complex",
+        "identifier": "0005890"
+      },
+      "id": "c5602818147e413938e39f239ceae84a",
+      "bel": "complex(go:0005890 ! \"sodium:potassium-exchanging ATPase complex\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "ERK",
+        "identifier": "ERK"
+      },
+      "id": "44a9148a4c46d6790c5018593934ee6c",
+      "bel": "p(fplx:ERK ! ERK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "PRKAC",
+        "identifier": "PRKAC"
+      },
+      "id": "d7b0a3f9dd7c83574fe44f6e40746cfb",
+      "bel": "p(fplx:PRKAC ! PRKAC)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SLC5A3",
+        "identifier": "11038"
+      },
+      "id": "bdae2242ffb2b808bdba15e2debc04e4",
+      "bel": "p(hgnc:11038 ! SLC5A3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SLC6A12",
+        "identifier": "11045"
+      },
+      "id": "66595dfa8a506b1fcfaafeee1ffd73f9",
+      "bel": "p(hgnc:11045 ! SLC6A12)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTGES2",
+        "identifier": "17822"
+      },
+      "id": "21bb3d495bf4b84cf0ac2702b184faea",
+      "bel": "p(hgnc:17822 ! PTGES2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CFTR",
+        "identifier": "1884"
+      },
+      "id": "c0d3f030c77edc35861c072a555c3aeb",
+      "bel": "p(hgnc:1884 ! CFTR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CFTR",
+        "identifier": "1884"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Ser",
+          "pos": 768
+        }
+      ],
+      "id": "40cfb4191823546daf9d48fbbd72064a",
+      "bel": "p(hgnc:1884 ! CFTR, pmod(go:0006468 ! \"protein phosphorylation\", Ser, 768))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PARP1",
+        "identifier": "270"
+      },
+      "id": "d5344146a265050e52e8de233270a3b2",
+      "bel": "p(hgnc:270 ! PARP1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EGF",
+        "identifier": "3229"
+      },
+      "id": "c83a574a8cddb23893e345c67f4548a0",
+      "bel": "p(hgnc:3229 ! EGF)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EGFR",
+        "identifier": "3236"
+      },
+      "id": "492cb9f801f6a3e2281a782c674cec7e",
+      "bel": "p(hgnc:3236 ! EGFR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EGFR",
+        "identifier": "3236"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Tyr"
+        }
+      ],
+      "id": "732f7a89e9add816a4194c05c7a092a4",
+      "bel": "p(hgnc:3236 ! EGFR, pmod(go:0006468 ! \"protein phosphorylation\", Tyr))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EPAS1",
+        "identifier": "3374"
+      },
+      "id": "1e724bd8af074b6e905d8cdb850d2afe",
+      "bel": "p(hgnc:3374 ! EPAS1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ERBB3",
+        "identifier": "3431"
+      },
+      "id": "11b9cc11fa61ae3b47dc96f9233e04ba",
+      "bel": "p(hgnc:3431 ! ERBB3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "AKR1B1",
+        "identifier": "381"
+      },
+      "id": "ebd6815b6a23157af0889d597d8410f5",
+      "bel": "p(hgnc:381 ! AKR1B1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HIF1A",
+        "identifier": "4910"
+      },
+      "id": "2562b840e72dd3d56dace7723920dd1d",
+      "bel": "p(hgnc:4910 ! HIF1A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HSPA1A",
+        "identifier": "5232"
+      },
+      "id": "af11c37c4ff9ba2aedf43dcbe51e0d3d",
+      "bel": "p(hgnc:5232 ! HSPA1A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HSPA1B",
+        "identifier": "5233"
+      },
+      "id": "1524007af5b4c055ac0a14e9848a2c46",
+      "bel": "p(hgnc:5233 ! HSPA1B)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "AQP1",
+        "identifier": "633"
+      },
+      "id": "1937a41a22adeee7681cbb6b65571a78",
+      "bel": "p(hgnc:633 ! AQP1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "AQP3",
+        "identifier": "636"
+      },
+      "id": "92de08a404af06a9debfdc0c876d7e04",
+      "bel": "p(hgnc:636 ! AQP3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "AQP5",
+        "identifier": "638"
+      },
+      "id": "ec26a0b4f52ab4140bb09c3f119cc29f",
+      "bel": "p(hgnc:638 ! AQP5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "AQP5",
+        "identifier": "638"
+      },
+      "variants": [
+        {
+          "kind": "hgvs",
+          "hgvs": "p.Asn228Lys"
+        }
+      ],
+      "id": "9c1e14fcd21ab4cc483fb3edaa4a5649",
+      "bel": "p(hgnc:638 ! AQP5, var(\"p.Asn228Lys\"))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "AQP8",
+        "identifier": "642"
+      },
+      "id": "4e33fadde677c70c6f4ecc0ff0757ce4",
+      "bel": "p(hgnc:642 ! AQP8)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MAPK14",
+        "identifier": "6876"
+      },
+      "id": "ede62bd739b408995d198e5b24565065",
+      "bel": "p(hgnc:6876 ! MAPK14)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NFAT5",
+        "identifier": "7774"
+      },
+      "id": "069d6b824c5327610ca7b6c0e83ef4de",
+      "bel": "p(hgnc:7774 ! NFAT5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NFE2L2",
+        "identifier": "7782"
+      },
+      "id": "0e5a135eddf63c61ede864acab3a682f",
+      "bel": "p(hgnc:7782 ! NFE2L2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NFKB1",
+        "identifier": "7794"
+      },
+      "id": "fb631cdd688dc0faeec8f219cae55fb8",
+      "bel": "p(hgnc:7794 ! NFKB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NFKB2",
+        "identifier": "7795"
+      },
+      "id": "74edda87fa21f94aa6594b9bca0dc600",
+      "bel": "p(hgnc:7795 ! NFKB2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NFKBIA",
+        "identifier": "7797"
+      },
+      "id": "00d5e69a95ae1215066cce653d9249d5",
+      "bel": "p(hgnc:7797 ! NFKBIA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ATM",
+        "identifier": "795"
+      },
+      "id": "3a3f324b456b3b3aae81ea8e10608591",
+      "bel": "p(hgnc:795 ! ATM)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NR3C2",
+        "identifier": "7979"
+      },
+      "id": "70c221ca25e263ef57fd470f7399cbf3",
+      "bel": "p(hgnc:7979 ! NR3C2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ATP1A1",
+        "identifier": "799"
+      },
+      "id": "934e0b07ea1766dbb0c5690e65e714ce",
+      "bel": "p(hgnc:799 ! ATP1A1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NRG1",
+        "identifier": "7997"
+      },
+      "id": "d284ad7cfac28673362f1b48a08fb61d",
+      "bel": "p(hgnc:7997 ! NRG1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ATP1B1",
+        "identifier": "804"
+      },
+      "id": "89ed53fa3908b8a9645a746b79075559",
+      "bel": "p(hgnc:804 ! ATP1B1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PLCG1",
+        "identifier": "9065"
+      },
+      "id": "3298beb16b7138b5ecf07eff669c9c27",
+      "bel": "p(hgnc:9065 ! PLCG1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PLCG1",
+        "identifier": "9065"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Tyr"
+        }
+      ],
+      "id": "d937548395b7fdc629022cbc77266be6",
+      "bel": "p(hgnc:9065 ! PLCG1, pmod(go:0006468 ! \"protein phosphorylation\", Tyr))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTGS2",
+        "identifier": "9605"
+      },
+      "id": "a599840205cea50660db6b94062760db",
+      "bel": "p(hgnc:9605 ! PTGS2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "REL",
+        "identifier": "9954"
+      },
+      "id": "26d182db0899e6bcdbf4bcc98c9908a3",
+      "bel": "p(hgnc:9954 ! REL)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RELA",
+        "identifier": "9955"
+      },
+      "id": "b21bc29a07e8a2299916f8a95bdd0528",
+      "bel": "p(hgnc:9955 ! RELA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RELB",
+        "identifier": "9956"
+      },
+      "id": "5d57a39d82836535cb07ef932751096d",
+      "bel": "p(hgnc:9956 ! RELB)"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "mesh",
+        "name": "Hyperoxia",
+        "identifier": "D018496"
+      },
+      "id": "dfc238ea9bf6aa30d89c0cf53de0f85f",
+      "bel": "path(mesh:D018496 ! Hyperoxia)"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "mesh",
+        "name": "Pulmonary Disease, Chronic Obstructive",
+        "identifier": "D029424"
+      },
+      "id": "98cb883d84a9775f973f1e99c68ba3a2",
+      "bel": "path(mesh:D029424 ! \"Pulmonary Disease, Chronic Obstructive\")"
+    }
+  ],
+  "links": [
+    {
+      "line": 51,
+      "relation": "increases",
+      "evidence": "Simultaneous overexpression of selenophosphate synthetase and phospholipid-hydroperoxide GSH peroxidase (PHGPx) [250] blocks activation of NF-kB by IL-1. Overexpression of SOD [84] or GSH peroxidase [81, 211] abolished NF-kB activation by preventing degradation of IkB after stimulation with TNF-a. The precise mechanism(s) through which oxidants and reductants influence activation of NF-kB is presently unknown; however, there is evidence that antioxidant enzyme (AOE372), a redox-sensitive thioredoxin peroxidase, regulates IkB phosphorylation [246]. Phosphatases The phosphatases are an important component of most signal transduction pathways, because failure to reverse kinase actions can disrupt normal cellular functions. For example, transfection of human fibroblasts with constitutively active ras (hRasV12) inhibits cell growth and ultimately results in a senescentlike phenotype [441]. Similarly, constitutive ERK activation has an inhibitory effect on cell cycle progression [442,443]. Both the serine/threonine phosphatases and the PTPs are known to be redox-sensitive [82,144,153,156,271,281, 444-449]. The mechanism of redox effects on activity is probably best understood for the PTPs. Without exception, the PTPs contain a highly conserved region of 11 amino acid residues in their catalytic domain; specifi- cally, (Ile/Val)-His-Cys-X-Ala-Gly-X-X-Arg-(Ser/Thr)- Gly, where X is a nonconserved amino acid [17]. Either oxidation or mutation of the cysteine renders these molecules inactive [17,281]. H2O2 is a potent inhibitor of PTPs. As in the case of other oxidants, H2O2 probably oxidizes the thiolate anion at the catalytic site [280]. Because formation of a phosphorylcysteine intermediate seems to be critical to PTP activity [450-452], blocking it through oxidation of the cysteine inactivates the molecules. In many cases, treatment of cells with H2O2 stimulates increases in protein phosphorylation by inhibiting phosphatase-catalyzed removal of phosphate groups. Furthermore, mitogens that increase cellular ox- idant production may stimulate phosphorylation indirectly by decreasing phosphatase activity. Additional mechanisms are involved in stimulation of pathways activated by growth factors that increase oxidant production, however, because there are known instances in which the oxidants they produce have no effect on protein phosphorylation. For example, TGF-b1 stimulates phosphorylation of numerous proteins and has been shown to cause a large increase in H2O2 production; however, its effects on protein phosphorylation are not blocked by catalase [453]. Furthermore, H2O2 is effective in promoting phosphorylation of phospholipase D, the PDGF receptor, and PKC-a even after pretreatment of Swiss 3T3 fibroblasts with orthovanadate to inhibit phosphatases [454]. Thus, although diminished phosphatase activity may partially account for increased phosphorylation in some cases, it cannot totally account for oxidation effects on phosphorylation in every case. SPECIFICITY In general, there is good agreement between studies on redox effects on any given gene; albeit, not all oxidizing or reducing treatments exert equivalent effects. This is clearly demonstrated in studies of pag , which encodes a protein associated with cellular proliferation. Pag protein inhibits the tyrosine kinase activity of the Abelson (abl ) protein by binding to its SH3-binding domain [455]. BSO, menadione, sodium arsenate, and diethyl maleate all stimulate pag expression, but H2O2 does not [269]. Conversely, H2O2 stimulates c-fos expression (Table 1), although 4-hydroynonenal (a product of v-6-polyunsaturated fatty acid peroxidation) not only fails to induce c-fos expression but is actually inhibitory to c-fos induction by EGF and PDGF [185]. Similarly, some oxidants such as diamide decrease hypoxia-induced signals [201], although others such as H2O2 increase them [124]. As might be expected, the effects of any stimu...",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10699758"
+      },
+      "annotations": {},
+      "source": 0,
+      "target": 22,
+      "key": "df4287afef3b4e0ce867ac1cc2fc1221"
+    },
+    {
+      "line": 51,
+      "relation": "increases",
+      "evidence": "we show that exposure to cigarette smoke over the indicated time points or doses results in an increase in total EGFR phosphorylation in a timeand dose-dependent manner (Fig. 1). As with EGF and H2O2, cigarette smoke is able to induce EGFR phosphorylation significantly compared to nontreated cells. Note: human airway epithelial (HAE; A549 or HBE1) were used in the paper",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17971399"
+      },
+      "annotations": {},
+      "source": 0,
+      "target": 22,
+      "key": "3fdfa829056f56b1a390b430dbaa432a"
+    },
+    {
+      "line": 53,
+      "relation": "increases",
+      "evidence": "These data suggest that H2O2 stimulates CFTR Cl(-) channel-mediated Cl(-) secretion through cyclooxygenase- and mPGES-1-dependent release of PGE2 and subsequent activation of PKA.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17699556"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 0,
+      "target": 47,
+      "key": "c46894c2a6d62aeb026675b2f1cb347f"
+    },
+    {
+      "line": 55,
+      "relation": "increases",
+      "evidence": "These data suggest that H2O2 stimulates CFTR Cl(-) channel-mediated Cl(-) secretion through cyclooxygenase- and mPGES-1-dependent release of PGE2 and subsequent activation of PKA.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17699556"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 0,
+      "target": 16,
+      "key": "45472b2df674968f11bd3a71747d6e9d"
+    },
+    {
+      "line": 68,
+      "relation": "increases",
+      "evidence": "Addition of aldosterone to neonatal rat cardiac myocytes caused the activation of NADPH oxidase and intracellular ROS production in a dose-dependent manner (10-(9)-10(-7) mol/L). NADPH oxidase activation was evident as soon as 5 min after aldosterone treatment.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18360057"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 2,
+      "target": 7,
+      "key": "15a6cf674473b02b3179e0b26a031c6c"
+    },
+    {
+      "line": 68,
+      "relation": "increases",
+      "evidence": "We found that aldosterone can induce the expression of Nox1, which is upregulated by the activation of the Src and activating transcription factor 1 (ATF1",
+      "citation": {
+        "db": "Other",
+        "db_id": "21505267"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 2,
+      "target": 7,
+      "key": "855090ac2aff383340684d58a8a4b231"
+    },
+    {
+      "line": 69,
+      "relation": "directlyIncreases",
+      "evidence": "The AT2 cells treated with aldosterone had increased Na,K-ATPase beta1-subunit mRNA and protein, which was associated with a 4-fold increase in the Na,K-ATPase hydrolytic activity and the ouabain-sensitive (86)Rb(+) uptake.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10673201"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 2,
+      "target": 41,
+      "key": "48923652ab546e838430aa41ad5c46f7"
+    },
+    {
+      "line": 27,
+      "relation": "increases",
+      "evidence": "Reconstitution of the AT cells with wild-type ATM increases TonEBP/OREBP transactivating activity both at 300 and 500 mosmol/kg, but the inactive mutant, ATM S1981A, does not (Fig. 3E). We conclude that ATM regulates transactivating activity of TonEBP/OREBP.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15173573"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 5,
+      "target": 40,
+      "key": "0dee0355872a95d0f490fb937ae3d575"
+    },
+    {
+      "line": 27,
+      "relation": "increases",
+      "evidence": "ATM Is activated by high NaCl, contributing to activation of TonEBP\u0001/OREBP.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15173573"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 5,
+      "target": 40,
+      "key": "e616abac4d1da533b9bb8b7e07e133e1"
+    },
+    {
+      "line": 28,
+      "relation": "increases",
+      "evidence": "Cotransfections of AQP5-luciferase with HIF-1alpha and HIF-1beta expression plasmids in MLE-15 cells led to dose-dependent transcriptional enhancement, which was partially abrogated by mutagenesis of putative HIF-1alpha binding sites in the proximal AQP5 promoter.Importantly, hypertonic induction of AQP5 was significantly inhibited by preventing HIF-1alpha induction with small interfering RNA.",
+      "citation": {
+        "db": "Other",
+        "db_id": "17108010"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 5,
+      "target": 26,
+      "key": "e15387bce135575be3e73fb329c1499b"
+    },
+    {
+      "line": 28,
+      "relation": "increases",
+      "evidence": "Cotransfections of AQP5-luciferase with HIF-1alpha and HIF-1beta expression plasmids in MLE-15 cells led to dose-dependent transcriptional enhancement, which was partially abrogated by mutagenesis of putative HIF-1alpha binding sites in the proximal AQP5 promoter.Importantly, hypertonic induction of AQP5 was significantly inhibited by preventing HIF-1alpha induction with small interfering RNA.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17108010"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 5,
+      "target": 26,
+      "key": "8e3815ea0110b456d1915d84df83e386"
+    },
+    {
+      "line": 29,
+      "relation": "increases",
+      "evidence": "The treatment of HeLa cells with 100 mm NaCl provoked a rapid increase of phosphorylated p38 SAPK with a peak between 45? and 60? which steadily decreased over time (Fig. 1A). p38 SAPK phosphorylation correlated with its accumulation into the nucleus (supplemental Fig. S1). Importantly, osmostress specifically induced p38 phosphorylation and activation, as assessed by monitoring the p38 SAPK downstream target HSP27, with neither affecting the phosphorylation of JNK nor ERK under the experimental conditions tested (Fig. 1B).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20682780"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 5,
+      "target": 34,
+      "key": "d7ce329ae9153d980f5975741cd06f3e"
+    },
+    {
+      "line": 29,
+      "relation": "increases",
+      "evidence": "NMuMg mammary epithelial cells exposed to hyperosmotic stress induced by the organic osmolyte sorbitol, heat shock, ultraviolet irradiation, oxidative stress induced by hydrogen peroxide... The environmental stresses, but not dexamethasone, stimulatedSgk expression through a p38/MAPK-dependent pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12488318"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 5,
+      "target": 34,
+      "key": "4fc0b25a805ab1f5d681b00125fb25b9"
+    },
+    {
+      "line": 29,
+      "relation": "increases",
+      "evidence": "RNA interference (RNAi) demonstrates that MEKK3 and the scaffold protein are required for p38 activation in response to sorbitol-induced hyperosmolarity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14634666"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 5,
+      "target": 34,
+      "key": "e1c5403ee0a7a77cfb2c6d26140b8959"
+    },
+    {
+      "line": 31,
+      "relation": "increases",
+      "evidence": ") PKAc activity increases with tonicity but cAMP does not.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12482947"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 5,
+      "target": 13,
+      "key": "8e3d90a6f0a83e4a63fd9c2c2be1ea98"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "We investigated upstream components of the response to hypertonicity in lung epithelial cells and found that before extracellular signal-regulated kinase activation and aquaporin synthesis, the membrane-bound prohormone neuregulin 1-beta is cleaved and binds to human epidermal growth factor receptor 3 (HER3).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15498868"
+      },
+      "annotations": {},
+      "source": 5,
+      "target": 43,
+      "key": "5e2c9b01d32d6cb3a0a446d0df62d267"
+    },
+    {
+      "line": 0,
+      "relation": "association",
+      "evidence": "Acute elevation of NaCl causes DNA double-strand breaks in cell culture, and the DNA breaks persist even after the cells are adapted to high NaCl.",
+      "citation": {
+        "db": "Other",
+        "db_id": "14983007"
+      },
+      "annotations": {},
+      "source": 3,
+      "target": 4,
+      "key": "2e734b9263ba42ce4737dcb5c5ebe097"
+    },
+    {
+      "line": 2,
+      "relation": "causesNoChange",
+      "evidence": "In HBE16 cells, shear stress and CSE led to a decrease in AQP5 abundance in the wild-type, but not in the N228K AQP5 plasmid.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21151978"
+      },
+      "annotations": {},
+      "source": 6,
+      "target": 32,
+      "key": "6a598bff843a595b3392f59364f75380"
+    },
+    {
+      "line": 0,
+      "relation": "association",
+      "evidence": "Acute elevation of NaCl causes DNA double-strand breaks in cell culture, and the DNA breaks persist even after the cells are adapted to high NaCl.",
+      "citation": {
+        "db": "Other",
+        "db_id": "14983007"
+      },
+      "annotations": {},
+      "source": 4,
+      "target": 3,
+      "key": "ac56580716610212222bd1e419f632a8"
+    },
+    {
+      "line": 56,
+      "relation": "directlyIncreases",
+      "evidence": "AMPK-dependent CFTR phosphorylation renders the channel resistant to activation by PKA and PKC without preventing phosphorylation by these kinases. We found that Ser768, a CFTR R domain residue considered to be an inhibitory PKA site, is the dominant site of AMPK phosphorylation in vitro. Ser-to-Ala mutation at this site enhanced baseline CFTR activity and rendered CFTR resistant to inhibition by AMPK",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19419994"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 8,
+      "target": 18,
+      "key": "9a03d953bf627772284ad1e4fb87694f"
+    },
+    {
+      "line": 56,
+      "relation": "directlyIncreases",
+      "evidence": "AMPK phosphorylates CFTR in vitro at two essential serines (Ser(737) and Ser(768)) in the R domain,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19095655"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 8,
+      "target": 18,
+      "key": "b9507bba172ad2b28d00efb7406900df"
+    },
+    {
+      "line": 70,
+      "relation": "directlyIncreases",
+      "evidence": "We now find, using an ORE.AP-1 reporter from the target aldose reductase gene or the same reporter with a mutated AP-1 site, that upon stimulation by high extracellular NaCl, 1) the presence of a wild type, but not a mutated, AP-1 site contributes to TonEBP/OREBP-dependent transcription and 2) AP-1 dominant negative constructs inhibit TonEBP/OREBP-dependent transcription provided the AP-1 site is not mutated. Using supershifts and an ORE.AP-1 probe, we find c-Fos and c-Jun present in combination with TonEBP/OREBP.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18056707"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 9,
+      "target": 35,
+      "key": "1170f9f6cd9d5d8461a0d968f05fa287"
+    },
+    {
+      "line": 78,
+      "relation": "directlyIncreases",
+      "evidence": "The NADPH oxidase subunits p67 and p47 undergo phosphorylation by ERK1/2 and stimulate the production of reactive oxygen species.95 ##phosphorylation of p67 and p47 is scripted as increased activity of NADPH oxidase##",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19420368"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 7,
+      "target": 1,
+      "key": "9b80032e30f2eae70e1ef9919d0ba6a7"
+    },
+    {
+      "line": 78,
+      "relation": "directlyIncreases",
+      "evidence": "Taken together, our data suggest that hyperoxia, by virtue of activating NADPH oxidase, generates reactive oxygen species (ROS), which mediates cell death of lung epithelium via ERK1/2 MAPK activation, and functions upstream of caspase activation in lung epithelial cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12594056"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 7,
+      "target": 1,
+      "key": "bad6d47edc2f91212c98ab1778f6500c"
+    },
+    {
+      "line": 78,
+      "relation": "directlyIncreases",
+      "evidence": "CD95 ligand (CD95L) triggers a rapid formation of reactive oxygen species (ROS) as an upstream event of CD95 activation and apoptosis induction in rat hepatocytes. This ROS response was sensitive to inhibition by diphenyleneiodonium, apocynin, and neopterin, suggestive of an involvement of NADPH oxidases. In line with this, hepatocytes expressed mRNAs not only of the phagocyte gp91phox (Nox 2), but also of the homologs Nox 1 and 4 and Duox 1 and 2, as well as the regulatory subunit p47phox. gp91phox (Nox 2) and p47phox were also identified at the protein level in rat hepatocytes. CD95L induced within 1 min ceramide formation and serine phosphorylation of p47phox, which was sensitive to inhibitors of sphingomyelinase and protein kinase Czeta (PKCzeta). These inhibitors and p47phox protein knockdown inhibited the early CD95L-induced ROS response, suggesting that ceramide and PKCzeta are upstream events of the CD95L-induced Nox/Duox activation. CD95L also induced rapid activation of the Src family kinase Yes",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15917250"
+      },
+      "annotations": {
+        "cl": {
+          "0000182": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 7,
+      "target": 1,
+      "key": "8f15ae50fa0d02244b6c552e937333ab"
+    },
+    {
+      "line": 78,
+      "relation": "directlyIncreases",
+      "evidence": "The investigators demonstrated that cultured SSc fibroblasts produce elevated levels of ROS through the activity of NADPH oxidase [28].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17917537"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 7,
+      "target": 1,
+      "key": "c700cd8117a564b82b1236d078238566"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 10,
+      "target": 49,
+      "key": "d7946658060d248bd232e82ba1dce8c5"
+    },
+    {
+      "line": 33,
+      "relation": "positiveCorrelation",
+      "evidence": "AQP1 gene expression was 2.41-fold higher in the parenchyma of smokers with COPD compared to controls",
+      "citation": {
+        "db": "Other",
+        "db_id": "24917931"
+      },
+      "annotations": {},
+      "source": 29,
+      "target": 52,
+      "key": "7ad6cbfa391dd55b86ec7aeebf9b4b38"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 31,
+      "target": 32,
+      "key": "caafeb71cc0ccbe32bbdb8e83bd5eb7f"
+    },
+    {
+      "line": 26,
+      "relation": "positiveCorrelation",
+      "evidence": "AQP5 gene showed ....7.75-fold higher expression in the bronchus of smokers with COPD compared with controls",
+      "citation": {
+        "db": "Other",
+        "db_id": "24917931"
+      },
+      "annotations": {},
+      "source": 31,
+      "target": 52,
+      "key": "8a70bc5eaf5eff891f1dfaaf702b1b74"
+    },
+    {
+      "line": 86,
+      "relation": "directlyIncreases",
+      "evidence": "Reconstitution of the AT cells with wild-type ATM increases TonEBP/OREBP transactivating activity both at 300 and 500 mosmol/kg, but the inactive mutant, ATM S1981A, does not (Fig. 3E). We conclude that ATM regulates transactivating activity of TonEBP/OREBP.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15173573"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 40,
+      "target": 35,
+      "key": "cdd4e6c0cd2f0db6f6f82cc460c63385"
+    },
+    {
+      "line": 86,
+      "relation": "directlyIncreases",
+      "evidence": "Wild-typeATMincreases TonEBP/OREBP transcriptional activity both at 300 and 500 mosmol/kg, whereas ATMS1981A does not (Fig. 3D).....anti-ATM antibody coimmunoprecipitates TonEBP/OREBP and ATM both at 300 and 500 mosmol/kg (Fig. 4A Lower).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15173573"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 40,
+      "target": 35,
+      "key": "9435c9036ee2707419e11ccca7fed3c4"
+    },
+    {
+      "line": 87,
+      "relation": "increases",
+      "evidence": "High NaCl activates the transcription factor tonicity-responsive enhancer/osmotic response element-binding protein (TonEBP/OREBP), resulting in increased transcription of several protective genes, including the glycine betaine/gamma-aminobutyric acid transporter (BGT1).",
+      "citation": {
+        "db": "Other",
+        "db_id": "15173573"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 40,
+      "target": 15,
+      "key": "7217ed52838cceafa2c2d9ce571d350a"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 17,
+      "target": 18,
+      "key": "336e9796d1667b885f9651de79fdf2c9"
+    },
+    {
+      "line": 24,
+      "relation": "decreases",
+      "evidence": "This was accompanied by reduced lung caspase-3 activity and defective degradation of NF-kappaB inhibitor IkappaB-alpha.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18372427"
+      },
+      "annotations": {},
+      "source": 17,
+      "target": 39,
+      "key": "b7b432f51d0aa3f8a3ff1a5528f4892e"
+    },
+    {
+      "line": 67,
+      "relation": "directlyDecreases",
+      "evidence": "AMPK-dependent CFTR phosphorylation renders the channel resistant to activation by PKA and PKC without preventing phosphorylation by these kinases. We found that Ser768, a CFTR R domain residue considered to be an inhibitory PKA site, is the dominant site of AMPK phosphorylation in vitro. Ser-to-Ala mutation at this site enhanced baseline CFTR activity and rendered CFTR resistant to inhibition by AMPK",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19419994"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "transporter activity",
+          "identifier": "0005215"
+        }
+      },
+      "source": 18,
+      "target": 17,
+      "key": "2f9c66fd8a7706f71f7fdc61279b3235"
+    },
+    {
+      "line": 3,
+      "relation": "directlyIncreases",
+      "evidence": "H322 cells express wild-type EGFR and have no EGFR gene amplification. EGF led to the expected EGFR activation and later to increased levels of EphA2 protein (Fig. 5); both were significantly decreased by the use of the EGFR inhibitor erlotinib.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19531623"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 20,
+      "target": 21,
+      "key": "1a29923a0f313752c08fb504809d09e6"
+    },
+    {
+      "line": 3,
+      "relation": "directlyIncreases",
+      "evidence": "EGF stabilizes the short-lived Smad transcriptional corepressor TG-interacting factor (TGIF) via EGFR",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18441095"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 20,
+      "target": 21,
+      "key": "21390c3f0655e2a6f51a3cca4780c899"
+    },
+    {
+      "line": 3,
+      "relation": "directlyIncreases",
+      "evidence": "The ErbB family of four receptor tyrosine kinases occupies a central role in a wide variety of biological processes from neuronal development to breast cancer. New information continues to expand their biologic significance and to unravel the molecular mechanisms that underlie the signaling capacity of these receptors. Here, we review several aspects of ErbB receptor physiology for which new and significant information is available.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17085050"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 20,
+      "target": 21,
+      "key": "0517cdcb9a6e5b4bf9186ff5470daa59"
+    },
+    {
+      "line": 3,
+      "relation": "directlyIncreases",
+      "evidence": "Studies using inhibitors of the EGF receptor tyrosine kinase, phosphatidylinositol 3-kinase (PI3-kinase) and protein kinase C (PKC) revealed that all of the cell surface agonists could activate PAK1 through pathways independent of PKC, that EGF stimulated a PI3-kinase dependent pathway to stimulate PAK1, and that muscarinic receptor stimulation of PAK1 was predominantly mediated through this EGF-R-dependent mechanism",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14575865"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 20,
+      "target": 21,
+      "key": "c854fc5e694ecbd8f00e01299a5a21c9"
+    },
+    {
+      "line": 3,
+      "relation": "directlyIncreases",
+      "evidence": "Finally, we showed that the interaction between PLC-gamma1 and Akt enhanced EGF-stimulated cell motility.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16525023"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 20,
+      "target": 21,
+      "key": "30834772fcbc9c94c13b78c009ececaf"
+    },
+    {
+      "line": 3,
+      "relation": "directlyIncreases",
+      "evidence": "Finally, ErbB-1 activated by all EGF-related peptides (EGF, HB-EGF, BTC and NDF) couples to SHC, whereas only ErbB-1 activated by its own ligands associates with and phosphorylates Cbl.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9130710"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 20,
+      "target": 21,
+      "key": "726c16763e6ba19f15cc9a780a6795e0"
+    },
+    {
+      "line": 3,
+      "relation": "directlyIncreases",
+      "evidence": "activation of EGF-R by EGF triggers signaling through the MAP kinase pathway during in vitro maturation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15858794"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 20,
+      "target": 21,
+      "key": "ee0be4b308b905e140f9c0ab7f3a61f5"
+    },
+    {
+      "line": 3,
+      "relation": "directlyIncreases",
+      "evidence": "The tyrosine kinase JAK1 and the transcription factors STAT1 and STAT3 are phosphorylated in response to epidermal growth factor (EGF) and other growth factors",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8524316"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 20,
+      "target": 21,
+      "key": "9d3d708db47a9cb9b46e49269884c9be"
+    },
+    {
+      "line": 3,
+      "relation": "directlyIncreases",
+      "evidence": "Ligation of this receptor by EGF activates Erk1 and Erk2, members of the mitogen-activated protein (MAP) kinase family, through a Ras-dependent signal transduction pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9790194"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 20,
+      "target": 21,
+      "key": "5dcc78fecd894650be512673ddb47862"
+    },
+    {
+      "line": 4,
+      "relation": "increases",
+      "evidence": "This crosstalk was physiologically relevant since EGF-induced H2O2 production was inhibited by K252a and by the presence of anti-NGF antibodies added in the culture medium (Fig. 3G).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20566383"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 0,
+      "key": "e8c2020cc193c021d72f2ee3c236e868"
+    },
+    {
+      "line": 4,
+      "relation": "increases",
+      "evidence": "ligand (PDGF and EGF) binding to RTKs stimulates the production of H2O2 which reinforces RTK autophosphorylation and subsequent signaling, that may be independent or dependent on autocrine secretion of ligands (Bae et al., 1997)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12893003"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 0,
+      "key": "ca2f146659ff9c80c1c416f64c96389a"
+    },
+    {
+      "line": 4,
+      "relation": "increases",
+      "evidence": "n this context, previous work has shown that EGF stimulation causes the activation of membrane-bound Nox proteins to produce H2O2, which in turn regulates intracellular signaling (51).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20724658"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 0,
+      "key": "0befd041a10bb17f8be0d862209510da"
+    },
+    {
+      "line": 4,
+      "relation": "increases",
+      "evidence": "These results suggest that EGF-induced H2O2 formation requires the kinase activity but probably not the autophosphorylation sites of the EGF receptor",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8995250"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 0,
+      "key": "c6bcbbc3fcba069fa212f89fb762b4b7"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "we show that exposure to cigarette smoke over the indicated time points or doses results in an increase in total EGFR phosphorylation in a timeand dose-dependent manner (Fig. 1). As with EGF and H2O2, cigarette smoke is able to induce EGFR phosphorylation significantly compared to nontreated cells. Note: human airway epithelial (HAE; A549 or HBE1) were used in the paper",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17971399"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 22,
+      "key": "4e85ec66905b29cce7f8e07f27437f27"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "We used mass spectrometry-based proteomics to comprehensively compare proteins that were tyrosine phosphorylated in response to EGF and PDGF and their associated partners. More than 90% of these signaling proteins were used by both ligands, whereas the phosphatidylinositol 3-kinase (PI3K) pathway was exclusively activated by PDGF,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15933201"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 22,
+      "key": "10193b75a0cc9274ee66c5a45e6ce2a6"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "Immunoprecipitation studies demonstrated a reduction of EGF-induced tyrosine phosphorylation of EGFR in PC3-AR cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15288768"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 22,
+      "key": "030daa356c2195f297fb56b490cccb5c"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "FLAG-EGFR became tyrosine phosphorylated in response to direct activation with EGF, as well as in response to activation of the â2 adrenergic or LPA receptors",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12627954"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 22,
+      "key": "1d58f0f5def3810645c4688fb187dda9"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "We show that EGF-induced EGFR autotransphosphorylation is reduced in PC3-AR cells compared to PC3 cells transfected only with the vector (PC3-Neo).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15305378"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 22,
+      "key": "0d0a9b4f7b96405d00f3896fe3d49a15"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "Stimulation of T47D cells with epidermal growth factor (EGF) results in the activation of the intrinsic tyrosine kinases of the receptor and the phosphorylation of multiple cellular proteins including the receptor, scaffold molecules such as c-Cbl, adapter molecules such as Shc, and the serine/threonine protein kinase Akt.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11994282"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 22,
+      "key": "56696c7a0bc28c7b513befed3e3608d3"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "We showed that [D-Lys6]GnRH-II reduces EGF-induced auto-tyrosine-phosphorylation of EGF-receptors via activation of a PTP and that EGF-induced activation of mitogen-activated protein kinase was blocked in cells treated with [D-Lys6]GnRH-II.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17016655"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 22,
+      "key": "2fa2efb0f276e0707cf5bfd416838d01"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "EGF increased the tyrosine phosphorylation of several proteins (the EGF receptor,insulin receptor substrate (IRS)-1, IRS-2, and Grb2-associated binder 1)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12138086"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 22,
+      "key": "2542feb42f14e5384da2fdf48b19638d"
+    },
+    {
+      "line": 6,
+      "relation": "increases",
+      "evidence": "We used mass spectrometry-based proteomics to comprehensively compare proteins that were tyrosine phosphorylated in response to EGF and PDGF and their associated partners. More than 90% of these signaling proteins were used by both ligands, whereas the phosphatidylinositol 3-kinase (PI3K) pathway was exclusively activated by PDGF,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15933201"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 46,
+      "key": "88aa71ae5a244cd2bc19185c68cb50ce"
+    },
+    {
+      "line": 6,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "2472218"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 46,
+      "key": "271373e93820bde39a4cc3bedf7e19d0"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 21,
+      "target": 22,
+      "key": "bc1cc2f9b673a814710ce03c1c2d17ec"
+    },
+    {
+      "line": 16,
+      "relation": "increases",
+      "evidence": "These results suggest that EGF-induced H2O2 formation requires the kinase activity but probably not the autophosphorylation sites of the EGF receptor",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8995250"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 21,
+      "target": 0,
+      "key": "aeed6b7a18c9e8150c8a813993c5af51"
+    },
+    {
+      "line": 12,
+      "relation": "increases",
+      "evidence": "both AQP5 and VEGF is transcriptionally regulated and mediated, at least in part, by HIF-1alpha, suggesting a novel role for HIF-1alpha in modulating cellular adaptive responses to osmotic stress",
+      "citation": {
+        "db": "Other",
+        "db_id": "17108010"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 26,
+      "target": 31,
+      "key": "a9e5d8526b89fdbf3adb00e98e504675"
+    },
+    {
+      "line": 10,
+      "relation": "increases",
+      "evidence": "As shown in Fig. 3A, in the control experiment where NIH 3T3 cells were co-transfected with ORE-SVLuc and pCMV-Script, hypertonicity resulted in a 19-fold increase in ORE reporter activity. Co-transfection with ORE-SVLuc and the p38DN (FLAG-p38alphaAF) resulted in a reduction in hypertonic induction of ORE reporter activity to 3.5-fold, confirming the results obtained by SB203580 to inhibit p38.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12359721"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 34,
+      "target": 35,
+      "key": "883292759b70fd441ed4be1995bf318d"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 37,
+      "target": 10,
+      "key": "18daf0568be38eabc155940e935136eb"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 38,
+      "target": 10,
+      "key": "931cba4379cc41ee585acf65e96e0de0"
+    },
+    {
+      "line": 75,
+      "relation": "directlyDecreases",
+      "evidence": "In most cell types, the NFkB p50-p65 dimer is bound to one of the closely related endogneous  inhibitory proteins, collectively referred to as IkB, and is held inactive in the cyotplasm. A variety of extracellular signaling, including LPS, cytokines, stress factors have been reported to activate NFkb through phosphorylation of IkB at serine-32 and serine-36, dissociation of IkB from the complex, and translocation of the p50-p65 dimer fromt he cytolplasm to the nucleus.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12882972"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 39,
+      "target": 10,
+      "key": "23274ec089bd1001ec630bdff2f5543a"
+    },
+    {
+      "line": 75,
+      "relation": "directlyDecreases",
+      "evidence": "The key event in the NF-?B activation is the IL-1-induced phosphorylation and degradation of the inhibitory cytoplasmic protein I?B, which leads to the release of NF-?B, its translocation to the nucleus and binding and transcriptional regulation of its target genes",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21776333"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 39,
+      "target": 10,
+      "key": "03876cca4b9d8e376dff709689007904"
+    },
+    {
+      "line": 75,
+      "relation": "directlyDecreases",
+      "evidence": "Exercise resulted in up to 2-fold increases in IKKalpha/beta phosphorylation in the soleus and red gastrocnemius muscles throughout the time course studied. In red gastrocnemius muscles, NF-kappaB activity increased 50% 1-3 h following 60 min of treadmill exercise, and returned to basal by 5 h. Contraction of isolated extensor digitorum longus (EDL) muscles in vitro increased IKKalpha/beta phosphorylation 10-fold and this was accompanied by a parallel increase in IkappaBalpha phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15888549"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 39,
+      "target": 10,
+      "key": "13801ec58c326b2b56a69656ec66975d"
+    },
+    {
+      "line": 75,
+      "relation": "directlyDecreases",
+      "evidence": "This was accompanied by reduced lung caspase-3 activity and defective degradation of NF-kappaB inhibitor IkappaB-alpha.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18372427"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 39,
+      "target": 10,
+      "key": "94d661c22a62a80a0a21126523cf3561"
+    },
+    {
+      "line": 75,
+      "relation": "directlyDecreases",
+      "evidence": "from the paper:",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11909978"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 39,
+      "target": 10,
+      "key": "0af7ec4898af89e5de9d52062dfed06c"
+    },
+    {
+      "line": 75,
+      "relation": "directlyDecreases",
+      "evidence": "Since activation of NF-B in A549 cells is dependent on IKK2, which phosphorylates serines 32 and 36 of IB as a prelude to IB degradation and activation of NF-B (Catley et al., 2005",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17322026"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 39,
+      "target": 10,
+      "key": "59dd2cb6b8a090a1dacfc505a74b1c03"
+    },
+    {
+      "line": 75,
+      "relation": "directlyDecreases",
+      "evidence": "Here, we demonstrate that in astrocyte cultures IGF-I regulates NFkappaB, a transcription factor known to play a key role in the inflammatory reaction. IGF-I induces a site-specific dephosphorylation of IkappaBalpha (phospho-Ser(32)) in astrocytes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10973957"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 39,
+      "target": 10,
+      "key": "d94792e70aadcdff2e1ab2f6a53cbc4e"
+    },
+    {
+      "line": 75,
+      "relation": "directlyDecreases",
+      "evidence": "TAK1 activates the IkB kinase (IKK) complex (composed of IKKa, IKKb, and NEMO/IKKa) that in turn phosphorylates the NF-bB inhibitor IkB to induce its K48 polyubiquitination and proteasomal degradation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19632174"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 39,
+      "target": 10,
+      "key": "1cb41e24c83adbcff583c0d4a4e5962d"
+    },
+    {
+      "line": 73,
+      "relation": "increases",
+      "evidence": "ER expression alters the transcriptional regulation of PPARG - targeted gene expression and reduces both basal and stimulated PPARG-mediated reporter activity, suggesting a cross-talk between PPARG andERsignaling in breast cancer cells (89). Activation of PPARG by PGJ2 results in a significant inhibition of ErbB-2 and ErbB-3 tyrosine phosphorylation caused by neuregulin 1 (NRG1) and neuregulin 2 (NRG2) in MCF-7 cells (90)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14587863"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 43,
+      "target": 24,
+      "key": "eabe17a0aaf29ab3bef084d58e54ceeb"
+    },
+    {
+      "line": 73,
+      "relation": "increases",
+      "evidence": "We investigated upstream components of the response to hypertonicity in lung epithelial cells and found that before extracellular signal-regulated kinase activation and aquaporin synthesis, the membrane-bound prohormone neuregulin 1-beta is cleaved and binds to human epidermal growth factor receptor 3 (HER3).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15498868"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 43,
+      "target": 24,
+      "key": "563e3986f76354d8f43de9079613de1c"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 45,
+      "target": 46,
+      "key": "9e40cad929c966c64dcc7965c319fc00"
+    },
+    {
+      "line": 7,
+      "relation": "increases",
+      "evidence": "Results: (i) An inhibitor of PKA (H89) reduces tonicity-dependent increases in transactivation, ORE/TonE reporter activity, and induction of aldose reductase and betaine transporter mRNAs.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12482947"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 13,
+      "target": 35,
+      "key": "93451a5b7374ad160d0517cfa0e0e025"
+    },
+    {
+      "line": 8,
+      "relation": "increases",
+      "evidence": "These data suggest that H2O2 stimulates CFTR Cl(-) channel-mediated Cl(-) secretion through cyclooxygenase- and mPGES-1-dependent release of PGE2 and subsequent activation of PKA.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17699556"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "transporter activity",
+          "identifier": "0005215"
+        }
+      },
+      "source": 13,
+      "target": 17,
+      "key": "fce1fcf7ef3de199270ac415cafabe3d"
+    },
+    {
+      "line": 26,
+      "relation": "positiveCorrelation",
+      "evidence": "AQP5 gene showed ....7.75-fold higher expression in the bronchus of smokers with COPD compared with controls",
+      "citation": {
+        "db": "Other",
+        "db_id": "24917931"
+      },
+      "annotations": {},
+      "source": 52,
+      "target": 31,
+      "key": "c56f7c0b8ff6713a9bc6d02fbfa405a8"
+    },
+    {
+      "line": 33,
+      "relation": "positiveCorrelation",
+      "evidence": "AQP1 gene expression was 2.41-fold higher in the parenchyma of smokers with COPD compared to controls",
+      "citation": {
+        "db": "Other",
+        "db_id": "24917931"
+      },
+      "annotations": {},
+      "source": 52,
+      "target": 29,
+      "key": "2cf5f91494b078b36a50ba42706759d7"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "These results suggest that hyperoxia  increases the generation of ROS, resulting in enhanced AP-1 activation and elevated IL-8 production.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18692129"
+      },
+      "annotations": {},
+      "source": 51,
+      "target": 1,
+      "key": "5fa3ee17c5ef94345240a55d6e788727"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "Hyperoxia-dependent ROS production was strongly reduced in lung sections, in isolated epithelial type II cells, and lung endothelial cells from NOX1-deficient mice.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19661248"
+      },
+      "annotations": {},
+      "source": 51,
+      "target": 1,
+      "key": "765d4e7ee5fc60271ef43b3f050fa880"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "In vascular endothelium, the major research focus has been on reactive oxygen species (ROS) derived from Nox2. The role of Nox4 in endothelial signal transduction, ROS production, and cytoskeletal reorganization is not well defined. In this study, we show that human pulmonary artery endothelial cells (HPAECs) and human lung microvascular endothelial cells (HLMVECs) express higher levels of Nox4 and p22(phox) compared to Nox1, Nox2, Nox3, or Nox5. Immunofluorescence microscopy and Western blot analysis revealed that Nox4 and p22(phox), but not Nox2 or p47(phox), are localized in nuclei of HPAECs. Further, knockdown of Nox4 with siRNA decreased Nox4 nuclear expression significantly. Exposure of HPAECs to hyperoxia (3-24 h) enhanced mRNA and protein expression of Nox4, and Nox4 siRNA decreased hyperoxia-induced ROS production. Interestingly,",
+      "citation": {
+        "db": "Other",
+        "db_id": "18783311"
+      },
+      "annotations": {},
+      "source": 51,
+      "target": 1,
+      "key": "a11b8a599647480979e21be53d52b8b3"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "Nox2 siRNA partly blocked hyperoxia-induced ROS generation in HPAECs (37).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18783311"
+      },
+      "annotations": {},
+      "source": 51,
+      "target": 1,
+      "key": "5cec7cf2013627a50a53c917fe333cd4"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "Progressive lung pathology caused by inhaled hyperoxia has been described in detail in adult animals (Crapo et al., 1984; Crapo, 1986; Fracica et al., 1988). Hyperoxia induces a pattern of toxicity that includes excess ROS production in the lung and diffuse pulmonary damage developed slowly in alveolar epithelium and pulmonary capillary endothelium.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19646463"
+      },
+      "annotations": {},
+      "source": 51,
+      "target": 1,
+      "key": "d2f812c48016a1b8927c603c11cf4332"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "Hyperoxia-induced ROS in epithelial type II and endothelial cells were markedly decreased in NOX1-deficient mice, but were not modified in NOX2-deficient mice compared with WT mice (respectively: Figure 3B, panels c and d, and Figure 3C, panels c and d). Similar results were found for isolated type II AECs (Figures 4A and 4C) and primary MLECs (Figures 4B and 4D) derived from WT and NOX1-deficient mice exposed to hyperoxia.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19661248"
+      },
+      "annotations": {},
+      "source": 51,
+      "target": 1,
+      "key": "62dc48abc73704aebed73e48122cf675"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "ROS were markedly increased in the lungs of hyperoxia-exposed WT mice compared with air-exposed WT mice. This hyperoxiainduced increase in ROS was significantly attenuated in NOX1- deficient mice but not in NOX2-deficient mice (Figure 3A).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19661248"
+      },
+      "annotations": {},
+      "source": 51,
+      "target": 1,
+      "key": "5e48c131e2287c1b1d2d74eebf5c208f"
+    }
+  ]
+}

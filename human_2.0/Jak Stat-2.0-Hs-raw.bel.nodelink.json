@@ -1,0 +1,4390 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Jak Stat-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Jak Stat network depicts the causal mechanisms involved in canonical Jak Stat signaling leading to cell proliferation and components of cell cycle machinery (e.g. cyclins, CDKN1B)."
+    },
+    "namespace_url": {
+      "HGNC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-human-genes/hgnc-human-genes-20150601.belns",
+      "GOBP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20150601.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20150601.belns",
+      "GOCC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170511.belns",
+      "MESHPP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20150601.belns",
+      "MGI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20150601.belns",
+      "RGD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20150601.belns",
+      "CHEBI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20150601.belns",
+      "SCHEM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-chemicals/selventa-legacy-chemicals-20150601.belns",
+      "EGID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/entrez-gene-ids/entrez-gene-ids-20150601.belns",
+      "MESHD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20150601.belns",
+      "SDIS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-diseases/selventa-legacy-diseases-20150601.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20150601.belns",
+      "MESHC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170511.belns",
+      "GOBPID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process-ids/go-biological-process-ids-20150601.belns",
+      "GOCCID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component-ids/go-cellular-component-ids-20150601.belns",
+      "MESHCS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20150601.belns"
+    },
+    "namespace_pattern": {},
+    "annotation_url": {
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20150601.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20150601.belanno",
+      "Species": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+      "Tissue": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20150601.belanno"
+    },
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "cell cycle"
+      },
+      "id": "1aab0c4b46e129766c1d301bf05c47c8",
+      "bel": "bp(GOBP:\"cell cycle\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "cell proliferation"
+      },
+      "id": "14a7545c48b4be2b5e986ded11b09652",
+      "bel": "bp(GOBP:\"cell proliferation\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCND1"
+      },
+      "id": "af65521e8dc8a9417952f6aebb7725c6",
+      "bel": "p(HGNC:CCND1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCND3"
+      },
+      "id": "5959436c4f68eb4fa5de34eabfa77c77",
+      "bel": "p(HGNC:CCND3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CDC42"
+      },
+      "id": "5b8a1ac98e947f52e75077216a037b6b",
+      "bel": "p(HGNC:CDC42)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CDKN1B"
+      },
+      "id": "6f4266e862549985ed5e681ce2e95639",
+      "bel": "p(HGNC:CDKN1B)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ERBB2"
+      },
+      "id": "c5005a7bea6e8529684cdb8190000be3",
+      "bel": "p(HGNC:ERBB2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "JAK1"
+      },
+      "id": "64dd6e1ff084a77c55f9451fdc07d814",
+      "bel": "p(HGNC:JAK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "JAK1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Tyr",
+          "pos": 1022
+        }
+      ],
+      "id": "cca5e94e0601b198a255bd3df56b456e",
+      "bel": "p(HGNC:JAK1, pmod(Ph, Tyr, 1022))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "JAK2"
+      },
+      "id": "04bc05bd36eb3b0344a645c8be4174db",
+      "bel": "p(HGNC:JAK2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "JAK3"
+      },
+      "id": "e1cffa20f6b5acc8bfc7e62560c6d517",
+      "bel": "p(HGNC:JAK3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MAP2K1"
+      },
+      "id": "b0021b97043b55927d4ad492a5b70bf2",
+      "bel": "p(HGNC:MAP2K1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MAPK3"
+      },
+      "id": "3e8019d5b20d209d67726881082657b3",
+      "bel": "p(HGNC:MAPK3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MUC4"
+      },
+      "id": "7786b178582bf815c9510a2697fb6079",
+      "bel": "p(HGNC:MUC4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MYC"
+      },
+      "id": "8c05a82e1b8591c8a3d254aa5d1dd3ee",
+      "bel": "p(HGNC:MYC)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NRG1"
+      },
+      "id": "340c84bad870d4aa1faafb6db24cf9ee",
+      "bel": "p(HGNC:NRG1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PIAS1"
+      },
+      "id": "c7771e8ef95011e2f40680147f0e0147",
+      "bel": "p(HGNC:PIAS1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RAC1"
+      },
+      "id": "130f71781150307370486c5cced7a456",
+      "bel": "p(HGNC:RAC1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RAF1"
+      },
+      "id": "a2b4fef594e89ed0a8b631778bd103aa",
+      "bel": "p(HGNC:RAF1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RHOA"
+      },
+      "id": "78f773521bea240c2020913a73caa051",
+      "bel": "p(HGNC:RHOA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ROCK1"
+      },
+      "id": "77ef07949847212edbfffbe977665733",
+      "bel": "p(HGNC:ROCK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT1"
+      },
+      "id": "4406636e0faeaf0a1fb400403144d48b",
+      "bel": "p(HGNC:STAT1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser",
+          "pos": 727
+        }
+      ],
+      "id": "a199e699617074c9b2fb223cfc0e7fe7",
+      "bel": "p(HGNC:STAT1, pmod(Ph, Ser, 727))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Tyr",
+          "pos": 701
+        }
+      ],
+      "id": "70a528365e303fd4fd13aafa4143ffe0",
+      "bel": "p(HGNC:STAT1, pmod(Ph, Tyr, 701))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT2"
+      },
+      "id": "01039887a7f25092eeb8fd5c81dfc626",
+      "bel": "p(HGNC:STAT2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT3"
+      },
+      "id": "9523cd88bdb7daf4a0aaf38eb43fbe28",
+      "bel": "p(HGNC:STAT3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT3"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser",
+          "pos": 727
+        }
+      ],
+      "id": "a22a4cb26b2bc5af44cd67ad456a8e6d",
+      "bel": "p(HGNC:STAT3, pmod(Ph, Ser, 727))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT3"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Tyr",
+          "pos": 705
+        }
+      ],
+      "id": "e0dbff8a42c08f64584e5316ee69c317",
+      "bel": "p(HGNC:STAT3, pmod(Ph, Tyr, 705))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT5A"
+      },
+      "id": "e8f75d225985c338be0ce1709cb38f74",
+      "bel": "p(HGNC:STAT5A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT5A"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Tyr",
+          "pos": 694
+        }
+      ],
+      "id": "05dc3ef272afb776aaf6b0cfbe994481",
+      "bel": "p(HGNC:STAT5A, pmod(Ph, Tyr, 694))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT5B"
+      },
+      "id": "3a63a646b034d86a3e2fc516c086371c",
+      "bel": "p(HGNC:STAT5B)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT6"
+      },
+      "id": "5bd870f793169273343832758b24f19d",
+      "bel": "p(HGNC:STAT6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT6"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Tyr",
+          "pos": 641
+        }
+      ],
+      "id": "0bccf88c7a312061bd40ffc3795adf37",
+      "bel": "p(HGNC:STAT6, pmod(Ph, Tyr, 641))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TYK2"
+      },
+      "id": "de3c2d4b9930dccb3ea48e68da43b438",
+      "bel": "p(HGNC:TYK2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TYK2"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Tyr",
+          "pos": 1054
+        }
+      ],
+      "id": "84bcc8463b3861ce38f7cde3203941f7",
+      "bel": "p(HGNC:TYK2, pmod(Ph, Tyr, 1054))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TYK2"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Tyr",
+          "pos": 1055
+        }
+      ],
+      "id": "e98687e92f2719887b66b69ad5dab41d",
+      "bel": "p(HGNC:TYK2, pmod(Ph, Tyr, 1055))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "JAK Family"
+      },
+      "id": "a90d1216df42a390cbfe38939ebfb601",
+      "bel": "p(SFAM:\"JAK Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "MAPK Erk1/2 Family"
+      },
+      "id": "a47b4828e1ed77dffa46258b02c5d36a",
+      "bel": "p(SFAM:\"MAPK Erk1/2 Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "PDGF Family"
+      },
+      "id": "827ac1b211f054933e8cc71e7a564c33",
+      "bel": "p(SFAM:\"PDGF Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "RAS Family"
+      },
+      "id": "2bd7a3d03377a9c4cb65451e6f41e910",
+      "bel": "p(SFAM:\"RAS Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "STAT Family"
+      },
+      "id": "ae74bde50dae78ffda50c3021fa1892a",
+      "bel": "p(SFAM:\"STAT Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "STAT5 Family"
+      },
+      "id": "ac6d8e45e2dc2e06d2257331f8b50e0a",
+      "bel": "p(SFAM:\"STAT5 Family\")"
+    }
+  ],
+  "links": [
+    {
+      "line": 0,
+      "relation": "increases",
+      "evidence": "Finally, we determined that STAT3 expression is required for PDGF-mediated regulation of cell cycle targets cyclin D3 and p27. These data define a novel mitogenic signaling pathway in airway smooth muscle cells leading from PDGF to Rac1 and STAT3 and subsequent cell cycle gene regulation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18310224"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 38,
+      "target": 17,
+      "key": "1d15a88d4f7da46f7e6a02fdedca198e"
+    },
+    {
+      "line": 83,
+      "relation": "increases",
+      "evidence": "In many cells PKA inhibits the extracellular receptor kinase (ERK1/2) cascade of the mitogen-activated protein kinase (MAPK) pathway leading to inhibition of cell proliferation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12812976"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 12,
+      "target": 1,
+      "key": "c8a3c1d9625a032f36be5c6142d5a9be"
+    },
+    {
+      "line": 83,
+      "relation": "increases",
+      "evidence": "1) STAT proteins play an essential role in angiotensin II-induced vascular smooth muscle cell proliferation, 2) JAK2 plays an essential role in the tyrosine phosphorylation of Raf-1, and 3) convergent mitogenic signaling cascades involving the cytosolic kinases JAK2, MEK1, and ERK1 mediate vascular smooth muscle cell proliferation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9305939"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 12,
+      "target": 1,
+      "key": "bed2351584cb0120aee0a5eaca6a0a1e"
+    },
+    {
+      "line": 83,
+      "relation": "increases",
+      "evidence": "Subsequent studies showed that PDGF activated extracellular signal-regulated kinase, Jun N-terminal protein kinase, and phosphatidylinositol 3 (PI3)-kinase pathways in SMCs.  Inhibition of these pathways blocked SMC proliferation in response to PDGF, but only inhibition of PI3-kinase or its effector, Akt, blocked PDGF-induced CREB loss.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16782881"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Muscle, Smooth": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 12,
+      "target": 1,
+      "key": "431c64fb76795129413b8de437647b9c"
+    },
+    {
+      "line": 83,
+      "relation": "increases",
+      "evidence": "Although there are now four known adenosine receptors, and the nomenclature has been changed and refined, the early classification scheme still mirrors the generally accepted profile of adenosine receptor G protein coupling (Table 1)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12834807"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 12,
+      "target": 1,
+      "key": "cf0537ba73342884e02da391106b0e67"
+    },
+    {
+      "line": 83,
+      "relation": "increases",
+      "evidence": "siRNA-mediated depletion of B-Raf reduced cell proliferation by up to 65% through the inhibition of ERK1/2 activation, irrespective of the mutational status of B-Raf.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16452469"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Neoplasms": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 12,
+      "target": 1,
+      "key": "af1939b83a99a9a0a6ecb320b3f0af39"
+    },
+    {
+      "line": 83,
+      "relation": "increases",
+      "evidence": "Both early passage and immortalized MEF cells from GSTpi(-/-) animals expressed significantly elevated activity of extracellular signal-regulated kinases ERK1/ERK2, kinases linked to cell proliferation pathways",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11408560"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 12,
+      "target": 1,
+      "key": "2eb6b90dde4189d670f7763e9f3eade5"
+    },
+    {
+      "line": 38,
+      "relation": "directlyIncreases",
+      "evidence": "PhosphoElm data from PMID 15212693",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10961885"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 36,
+      "target": 32,
+      "key": "1cac007a1577ee3fe07747570c661494"
+    },
+    {
+      "line": 82,
+      "relation": "increases",
+      "evidence": "These results indicate the production of EN-RAGE is induced by IL-6 through de novo protein synthesis via the JAK-STAT kinase pathway and inhibited by the activation of peroxisome proliferator-activated receptor-gamma (PPARgamma) in human macrophages.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14644389"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 36,
+      "target": 40,
+      "key": "ed7f1fc043072c7e04fcb79609c7db3b"
+    },
+    {
+      "line": 82,
+      "relation": "increases",
+      "evidence": "Inhibition of the Src and JAK kinases blocked PDGF-stimulated gene expression of the STAT target genes cyclin D1 and c-myc",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12003786"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 36,
+      "target": 40,
+      "key": "1987a90c9d32cbd4216b29899b9fde43"
+    },
+    {
+      "line": 82,
+      "relation": "increases",
+      "evidence": "Pretreatment with IL-1 suppressed Janus kinase-STAT signaling by IL-6, modified patterns of gene activation, and blocked IL-6 induction of tissue inhibitor of metalloproteases 1 expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11673558"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 36,
+      "target": 40,
+      "key": "0aade06820e9a41139962c8a4625f4ef"
+    },
+    {
+      "line": 82,
+      "relation": "increases",
+      "evidence": "Thrombin induces SMC proliferation directly by activating JAK/STAT pathways [25]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17133101"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        },
+        "Tissue": {
+          "vascular tissue": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 36,
+      "target": 40,
+      "key": "762ede87cfd90955574f13976e41f2e6"
+    },
+    {
+      "line": 82,
+      "relation": "increases",
+      "evidence": "Dumler, I., Kopmann, A., Weis, A., Mayboroda, O.A., Wagner, K., Gulba, D.C., and Haller, H. 1999a. Urokinase activates the Jak/ Stat signal transduction pathway in human vascular endothelial cells. Arterioscler. Thromb. Vasc. Biol. 19: 290–297. PMID:9974409.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19064999"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        },
+        "Tissue": {
+          "vascular tissue": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 36,
+      "target": 40,
+      "key": "3b34d9d164cbbbbe27e43f0a79d4402e"
+    },
+    {
+      "line": 82,
+      "relation": "increases",
+      "evidence": "as well as for NFkB, STAT, and c-Rel (hatched boxes labeled NFkB, STAT, and c-Rel in figure 2) that are down stream of cytokine signaling.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12649597"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 36,
+      "target": 40,
+      "key": "f8329d99c142d394eb745d3f03d7d22f"
+    },
+    {
+      "line": 12,
+      "relation": "increases",
+      "evidence": "NRG-1 induces cell proliferation through a high-affinity receptor complex composed of a heterodimer of human epidermal growth factor-like receptor (HER) 2 and 3. In this study, we show that NRG-1 activates the Janus kinases (JAK) and signal transducer and activator of transcription proteins (STAT). NRG-1 induced a rapid and transient increase in tyrosine phosphorylation of TYK2 and JAK3, but not JAK1 or JAK2, and induced STAT3 and STAT5 tyrosine phosphorylation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12204892"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Epithelium": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 6,
+      "target": 10,
+      "key": "348985a120a236a483f79972a1d28f4c"
+    },
+    {
+      "line": 87,
+      "relation": "association",
+      "evidence": "Recent studies have identified MUC4 mucin as a ligand for activation of ErbB2, a receptor tyrosine kinase that modulates epithelial cell proliferation following epithelial damage in airways of asthmatics.",
+      "citation": {
+        "db": "Other",
+        "db_id": "16551361"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 6,
+      "target": 13,
+      "key": "5758995a8ef1f2fed630b0d083b40c80"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "In addition to tyrosine phosphorylation, phosphorylation of Stat1 on serine 727 is essential for induction of its transcriptional activity",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11839738"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 22,
+      "target": 21,
+      "key": "e83339ac63dc080aa742ab7a71485e78"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "The influence of PKCdelta on IFN-mediated induction of PLSCR1 was dependent upon the phosphorylation of STAT1 at Ser-727.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16260419"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 22,
+      "target": 21,
+      "key": "8f41f4b5a33c41daa1418592074d4b17"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "Furthermore, Stat1 must be phosphorylated on Ser-727 to be fully active in transcription (29).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15994321"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 22,
+      "target": 21,
+      "key": "b11dafe34ac72bf1b3ced499607b8bb0"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "Biochemical analysis illustrated that the mechanism of this transcriptional synergy involves interaction between BRCA1 aa 502-802 and the C-terminal transcriptional activation domain of STAT1 including Ser-727 whose phosphorylation is crucial for transcriptional activation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10792030"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 22,
+      "target": 21,
+      "key": "487b73f527855dcf96d557aca93466a8"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "For maximal gene activation, S727 in the transcription activation domain of Stat1 also is inducibly phosphorylated by IFN-gamma. CaMKII can interact directly with Stat1 and phosphorylate Stat1 on S727 in vitro.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11972023"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 22,
+      "target": 21,
+      "key": "721ade8030b47e00ba2983ad40822692"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "STAT1 must be phosphorylated on serine 727 to be fully active in transcription.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11438544"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 22,
+      "target": 21,
+      "key": "6ce03f2ba2b0924196ad33b52e83516e"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 21,
+      "target": 22,
+      "key": "9e92c1cf13e5ba82309e957b8aa0c96d"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 21,
+      "target": 23,
+      "key": "a04686ce5c63d1c86b649d1ab1b0f66f"
+    },
+    {
+      "line": 60,
+      "relation": "increases",
+      "evidence": "The signaling pathway of type I IFNs activates STAT1 and STAT2. In primary endothelial cells, we demonstrate that STAT3 and STAT5 are also activated, and these STATs may contribute to cellular proliferation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12759411"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 21,
+      "target": 1,
+      "key": "91f4c0c9f95e64950364da99dcd513bb"
+    },
+    {
+      "line": 60,
+      "relation": "increases",
+      "evidence": "Fludarabine abolishes VSMC proliferation in vitro and reduces neointimal formation after balloon injury in vivo through specific inhibition of STAT-1 activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17293493"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 21,
+      "target": 1,
+      "key": "c6b95354dd60505fae2f4932728a2e3b"
+    },
+    {
+      "line": 1,
+      "relation": "increases",
+      "evidence": "1) STAT proteins play an essential role in angiotensin II-induced vascular smooth muscle cell proliferation, 2) JAK2 plays an essential role in the tyrosine phosphorylation of Raf-1, and 3) convergent mitogenic signaling cascades involving the cytosolic kinases JAK2, MEK1, and ERK1 mediate vascular smooth muscle cell proliferation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9305939"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 9,
+      "target": 18,
+      "key": "8983e202cd28612f2d2a4aab2ab7f021"
+    },
+    {
+      "line": 30,
+      "relation": "directlyIncreases",
+      "evidence": "ligand-receptor binding activated STAT3, STAT5 and STAT6",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12020765"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 30,
+      "key": "783b61ab14ebd94a606bf276374375dc"
+    },
+    {
+      "line": 48,
+      "relation": "increases",
+      "evidence": "increases JAK2 activation and STAT5A and STAT5B tyrosine and serine phosphorylation and leads to cell cycle progression",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15795318"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 28,
+      "key": "4c51a218a93714096f59ffb450dda1ce"
+    },
+    {
+      "line": 48,
+      "relation": "increases",
+      "evidence": "However, using an antibody that recognizes the tyrosine-phosphorylated forms of both Stat5a and Stat5b (Y694/Y699), it was found that AG490 could inhibit PRL-induced Stat5a phosphorylation only and had little or no effect on Stat5b phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11682625"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Cell": {
+          "ovarian granulosa cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 28,
+      "key": "18d3d812885b22234302ff2159c09647"
+    },
+    {
+      "line": 48,
+      "relation": "increases",
+      "evidence": "Furthermore, GH induced rapid, time- and dose-dependent signaling events in LNCaP cells, including phosphorylation of JAK2 tyrosine kinase, of GHR itself and of STAT5A (JAK2-STAT5A pathway), of p42/p44 MAPK and of Akt/PKB.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15196705"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 28,
+      "key": "46353222ba4fdff3899955597c00c5fd"
+    },
+    {
+      "line": 48,
+      "relation": "increases",
+      "evidence": "SOCS-7 also attenuated STAT3 and STAT5 signaling induced by overexpression of JH1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15677474"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 28,
+      "key": "73924b4d4ab25f9965a7464e91430dbb"
+    },
+    {
+      "line": 48,
+      "relation": "increases",
+      "evidence": "Here, we provide evidence that Rho GTPases modulate Stat5a, a transcription factor of the family of signal transducers and activators of transcription. RhoA triggers tyrosine phosphorylation (Y696) of Stat5a via a JAK2-dependent mechanism and promotes DNA-binding activity of Stat5a.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12529425"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 28,
+      "key": "b4aac369f95c635a4e68d07789d10a0b"
+    },
+    {
+      "line": 48,
+      "relation": "increases",
+      "evidence": "The expression of MUP2 is known to be stimulated by growth hormone (GH), through the GH receptor (GHR), Janus kinase 2 (JAK2) and signal transducer and activator of transcription 5 (STAT5) signal transduction pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14759523"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 28,
+      "key": "18c53ce8d4b1ae6260a5d3a116dd7ef6"
+    },
+    {
+      "line": 48,
+      "relation": "increases",
+      "evidence": "Transcription of the genes encoding both ERalpha (Esr1) and ERbeta (Esr2) is stimulated by PRL through the Jak2-Stat5 pathway and Stat5-response elements that are located in each of the Esr promoters.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12670737"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 28,
+      "key": "c87cb3bfd359d905492a5e189085aff7"
+    },
+    {
+      "line": 86,
+      "relation": "directlyIncreases",
+      "evidence": "The suppression of STAT3 was mediated through the inhibition of activation of upstream JAK1, JAK2, and c-Src kinases.",
+      "citation": {
+        "db": "Other",
+        "db_id": ""
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 25,
+      "key": "b7fe44f7ba503e4857a6e0cfe2591c06"
+    },
+    {
+      "line": 86,
+      "relation": "directlyIncreases",
+      "evidence": "ligand-receptor binding activated STAT3, STAT5 and STAT6",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12020765"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 25,
+      "key": "e953a061254044a67d69da2ccda84363"
+    },
+    {
+      "line": 86,
+      "relation": "directlyIncreases",
+      "evidence": "Here we report a novel signaling pathway whereby RhoA can efficiently modulate Stat3 transcriptional activity by inducing its simultaneous tyrosine and serine phosphorylation. Tyrosine phosphorylation is exerted via a member of the Src family of kinases (SrcFK) and JAK2, whereas the JNK pathway mediates serine phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11598209"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 25,
+      "key": "f2f71c40838db6ff108e31653cb230f2"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 33,
+      "target": 35,
+      "key": "a29088bb184ef0643e25a3171f9a997e"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 33,
+      "target": 34,
+      "key": "a62e67217d846e10b32bb4bef49671bd"
+    },
+    {
+      "line": 6,
+      "relation": "increases",
+      "evidence": "the IFN-a receptor lacks intrinsic kinase activity and instead uses Jak1 and Tyk2 to initiate signal transduction. Ligandinduced dimerization of IFNAR-1 and IFNAR-2 allows juxtaposition and activation of the associated Jaks, leading to activation of downstream signaling pathways (e.g., STAT1, -2, and -3)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12646637"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Multiple Myeloma": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 24,
+      "key": "8270b9a72524ae008a562f6619960f96"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "the IFN-a receptor lacks intrinsic kinase activity and instead uses Jak1 and Tyk2 to initiate signal transduction. Ligandinduced dimerization of IFNAR-1 and IFNAR-2 allows juxtaposition and activation of the associated Jaks, leading to activation of downstream signaling pathways (e.g., STAT1, -2, and -3)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12646637"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Multiple Myeloma": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 21,
+      "key": "b511ceb63f11f58d898de5e43729c84f"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "Study on signal transduction through Mp1 revealed that Tpo induces activation of JAK2 and Tyk2, which in turn activate STAT1, STAT3 and STAT5. Further, Tpo stimulates transcription factors GATA-1 and NF-E2, which induce differentiation markers, GPIIb/IIIa and Pm-1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9209416"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "megakaryocyte": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 21,
+      "key": "7e6eef58d13d8cc612a3b5a42c77be3c"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "the IFN-a receptor lacks intrinsic kinase activity and instead uses Jak1 and Tyk2 to initiate signal transduction. Ligandinduced dimerization of IFNAR-1 and IFNAR-2 allows juxtaposition and activation of the associated Jaks, leading to activation of downstream signaling pathways (e.g., STAT1, -2, and -3)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12646637"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Multiple Myeloma": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 25,
+      "key": "d0c0c45d6a9d33fe8e6ad1da3abcc3fe"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "Study on signal transduction through Mp1 revealed that Tpo induces activation of JAK2 and Tyk2, which in turn activate STAT1, STAT3 and STAT5. Further, Tpo stimulates transcription factors GATA-1 and NF-E2, which induce differentiation markers, GPIIb/IIIa and Pm-1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9209416"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "megakaryocyte": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 25,
+      "key": "2f971ce18ca1f450b8d992dd96f690eb"
+    },
+    {
+      "line": 51,
+      "relation": "increases",
+      "evidence": "NRG-1 induces cell proliferation through a high-affinity receptor complex composed of a heterodimer of human epidermal growth factor-like receptor (HER) 2 and 3. In this study, we show that NRG-1 activates the Janus kinases (JAK) and signal transducer and activator of transcription proteins (STAT). NRG-1 induced a rapid and transient increase in tyrosine phosphorylation of TYK2 and JAK3, but not JAK1 or JAK2, and induced STAT3 and STAT5 tyrosine phosphorylation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12204892"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Epithelium": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 10,
+      "target": 41,
+      "key": "f6ff3e9f88b120dcc00a6f9053fd39fa"
+    },
+    {
+      "line": 51,
+      "relation": "increases",
+      "evidence": "More recently, the IL-2-JAK3-STAT5 axis has been demonstrated to regulate Th1 cell differentiation, suggesting that IL-2-mediated JAK3-STAT5 signaling may generically operate in the production of Th1-related cytokines [27].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21776333"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 10,
+      "target": 41,
+      "key": "9d9df82d6e3cb569aa41cba8ae378ea0"
+    },
+    {
+      "line": 51,
+      "relation": "increases",
+      "evidence": "IL-4 also induced Jak3-dependent activation of STAT1, STAT3, and STAT5 in CD8  T cells,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17200144"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "CD8+ T-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 10,
+      "target": 41,
+      "key": "498e978135ed13e6a4b3e4bec54ef01d"
+    },
+    {
+      "line": 51,
+      "relation": "increases",
+      "evidence": "we demonstrate that the JAK3/STAT5 signaling pathway is constitutively activated in pre-B leukemia cells derived from BLNK(-/-) mice, mostly due to autocrine production of IL-7. Inhibition of IL-7R signaling or JAK3/STAT5 activity resulted in the induction of p27(kip1) expression and cell-cycle arrest",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19047679"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 10,
+      "target": 41,
+      "key": "df0a3cad4080dbd75fff9d83561791b6"
+    },
+    {
+      "line": 51,
+      "relation": "increases",
+      "evidence": "IL-4 can also induce a Jak3-dependent activation of STAT1 and STAT5,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17200144"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "CD4+ T-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 10,
+      "target": 41,
+      "key": "630b558675e9fc4cf1c98186e6aa5d25"
+    },
+    {
+      "line": 51,
+      "relation": "increases",
+      "evidence": "More recently, the IL-2-JAK3-STAT5 axis has been demonstrated to regulate Th1 cell differentiation, suggesting that IL-2-mediated JAK3-STAT5 signaling may generically operate in the production of Th1-related cytokines [27].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21884580"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Th1 cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 10,
+      "target": 41,
+      "key": "fb7220d173f0219c74bffef33b583785"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "12559972;15659558;15659558",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15212693"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 10,
+      "target": 8,
+      "key": "a91dde6db6a4c9b7707409035b988fb4"
+    },
+    {
+      "line": 85,
+      "relation": "directlyIncreases",
+      "evidence": "In early stages, IL-2, IL-7 and IL-15 signaling via JAK1 and JAK3 kinases is believed to be responsible for activating STAT5, while in advanced stages development of IL-21 autocrine signaling is thought to be important for STAT3 activation.",
+      "citation": {
+        "db": "Other",
+        "db_id": ""
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 10,
+      "target": 25,
+      "key": "b855c5ed5255006d10a4e57023ac714c"
+    },
+    {
+      "line": 85,
+      "relation": "directlyIncreases",
+      "evidence": "ligand-receptor binding activated STAT3, STAT5 and STAT6",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12020765"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 10,
+      "target": 25,
+      "key": "b9f4dc50fd1b5701d762e63591116543"
+    },
+    {
+      "line": 54,
+      "relation": "directlyIncreases",
+      "evidence": "Because Raf binds tightly to the GTP-bound form of Ras but not to the GDP-bound form, such differential affinity can be used to determine the GTP-bound status of Ras.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10542228"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 39,
+      "target": 18,
+      "key": "3b28967b9faeb1029f60d168d7f34130"
+    },
+    {
+      "line": 54,
+      "relation": "directlyIncreases",
+      "evidence": "115,132,133 This occurs because Rap1 binds to the CRD of C-Raf with higher affinity than Ras and excludes Ras from binding.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16170185"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 39,
+      "target": 18,
+      "key": "077c3f94315f981f8020aa18e3c68b27"
+    },
+    {
+      "line": 54,
+      "relation": "directlyIncreases",
+      "evidence": "however, phosphorylation of Raf-1 was significantly lower in Hpca(-/-) slices. These results suggest that Hpca plays an important role in the activation of Raf conducted by Ras.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17279541"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 39,
+      "target": 18,
+      "key": "8a3b3017fb1e9657e1eb9c66ec04794d"
+    },
+    {
+      "line": 54,
+      "relation": "directlyIncreases",
+      "evidence": "Figure 1 | The ErbB signalling network.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11252954"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 39,
+      "target": 18,
+      "key": "4beab96427134afa7e0ca132dfffe73b"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 31,
+      "target": 32,
+      "key": "3f7a9a4f4a2e68c205a99de63bb3859c"
+    },
+    {
+      "line": 9,
+      "relation": "increases",
+      "evidence": "Thus, Stat6 is an important and specific mediator of IL-4-enhanced PDGF-induced proliferation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10602484"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 31,
+      "target": 1,
+      "key": "a351cdd6c59c314add004ad8139851ea"
+    },
+    {
+      "line": 42,
+      "relation": "increases",
+      "evidence": "NRG-1 induces cell proliferation through a high-affinity receptor complex composed of a heterodimer of human epidermal growth factor-like receptor (HER) 2 and 3. In this study, we show that NRG-1 activates the Janus kinases (JAK) and signal transducer and activator of transcription proteins (STAT). NRG-1 induced a rapid and transient increase in tyrosine phosphorylation of TYK2 and JAK3, but not JAK1 or JAK2, and induced STAT3 and STAT5 tyrosine phosphorylation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12204892"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Epithelium": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 1,
+      "key": "604bb10610adad21c722f709023bd432"
+    },
+    {
+      "line": 42,
+      "relation": "increases",
+      "evidence": "The signaling pathway of type I IFNs activates STAT1 and STAT2. In primary endothelial cells, we demonstrate that STAT3 and STAT5 are also activated, and these STATs may contribute to cellular proliferation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12759411"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 1,
+      "key": "7370ed94361fd87bc76e92cce60d2084"
+    },
+    {
+      "line": 47,
+      "relation": "directlyIncreases",
+      "evidence": "The Structure of Raf The structure of Raf consists of the following: (1) an amino terminus that contains the regulatory domain; (2) an activation loop; and (3) a carboxyl terminus that contains the kinase domain116-118 (Fig 4). All Raf kinases are composed of three conserved regions, CR1 (adjacent to the amino terminus), CR2, and CR3 (adjacent to the carboxyl terminus). The regulation of Raf kinase activity is a complex process involving phosphorylation of the regulatory and catalytic domains of the protein and both inter- and intramolecular interactions. The initial process of Raf activation involves the interaction of active GTP-bound Ras with the RBD of Raf and the adjacent zinc-binding cysteine-rich domain (CRD) of CR1, facilitating recruitment of Raf to the cell membrane for activation.78 The role of CR2, which is rich in serine and threonine residues, is less well defined; however, the phosphorylation of moieities within CR2 and various proteinprotein interactions involving CR2 also affect Raf localization and activation.89,119-121 Deletions of the amino-terminal regulatory domains CR1 and CR2, similar to v-Raf, are found in several types of human cancers with activating Raf mutations, suggesting that these domains negatively regulate Raf function. CR3, the catalytic domain of Raf, is also subject to regulation by phosphorylation. Regulation of Raf Kinase Activity General. The overlapping functional aspects of the three Raf isoforms have been elucidated by studies involving Raf knockout mice. In C-Raf knockouts, B-Raf can compensate for the loss of C-Raf in activating MEK in the MAPK pathway, but C-Raf knockouts are much more susceptible to apoptotic stimuli, despite the presence of A-Raf and B-Raf.122 With regard to differences in signaling between the Raf isoforms, A-Raf is a weaker activator of MEK than B-Raf or C-Raf. Furthermore, A-Raf can activate MEK1 only, whereas C-Raf activates both MEK1 and MEK2.123-125",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16170185"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 11,
+      "key": "643f799d61e962550e7314365494f698"
+    },
+    {
+      "line": 47,
+      "relation": "directlyIncreases",
+      "evidence": "Protein kinase C (PKC) regulates activation of the Raf-1 signaling cascade by growth factors, but the mechanism by which this occurs has not been elucidated. Here we report that one mechanism involves dissociation of Raf kinase inhibitory protein (RKIP) from Raf-1. Classic and atypical but not novel PKC isoforms phosphorylate RKIP at serine 153 (Ser-153). RKIP Ser-153 phosphorylation by PKC either in vitro or in response to 12-O-tetradecanoylphorbol-13-acetate or epidermal growth factor causes release of RKIP from Raf-1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12551925"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 11,
+      "key": "0c83bf6c3a0f22b290ec3bc57dde6498"
+    },
+    {
+      "line": 47,
+      "relation": "directlyIncreases",
+      "evidence": "hKSR-2 selectively inhibited the Cot-mediated activation of MEK by  60%. In contrast, hKSR-2 up-regulated the Rafmediated MEK activation by up to 70%.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12975377"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 11,
+      "key": "944dfd0997f1804a92bb1aefa9fbc038"
+    },
+    {
+      "line": 47,
+      "relation": "directlyIncreases",
+      "evidence": "Raf-1 phosphorylates and activates MEK-1, a kinase that activates the extracellular signal regulated kinases (ERK)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10490027"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 11,
+      "key": "150e34ed262a1b51dcc969115962a696"
+    },
+    {
+      "line": 47,
+      "relation": "directlyIncreases",
+      "evidence": "Raf-1 activity, measured by the abundance of phosphorylated S217/221 MEK1 2, a direct target of Raf-1 (30) , was consistently elevated in Cdc37 overexpressing cells, whereas total MEK1 2 levels were unchanged.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12907640"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 11,
+      "key": "9967d586785593c1ba0bdfb198611bad"
+    },
+    {
+      "line": 47,
+      "relation": "directlyIncreases",
+      "evidence": "c-Raf activates MEK1 by phosphorylating at serine residues 218 and 222 (30–32).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8621729"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 11,
+      "key": "535ed5c9fee081eb077de448e8b849ca"
+    },
+    {
+      "line": 50,
+      "relation": "increases",
+      "evidence": "activation of ERK depended on EGFR, Src tyrosine kinase and calcium calmodulin in PC12 cells (31), while requiring ras/Raf-1/MEK activation in human neutrophils (58).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19273391"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Neutrophils": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 12,
+      "key": "00171c9b086433bee7fa3c1deb4798d7"
+    },
+    {
+      "line": 50,
+      "relation": "increases",
+      "evidence": "JAK1 activity may be involved in activation of Raf-1 and ERK1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10408379"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 12,
+      "key": "44ea055c3fbb1382c431c4454b14f1d4"
+    },
+    {
+      "line": 50,
+      "relation": "increases",
+      "evidence": "we reported in H9C2 cardiomyocytes that peroxynitritemediated activation of ERK, although dependent on Raf-1 and MEK, was not due to upstream activation of p21ras (63).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19273391"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Cell": {
+          "cardiomyocyte": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 12,
+      "key": "ff03d514d8b8102a7d4a285c5c0b9ca0"
+    },
+    {
+      "line": 50,
+      "relation": "increases",
+      "evidence": "Activation of Raf-1 suppresses integrin activation, potentially through the activation of extracellular signal-regulated kinases 1 and 2 (ERK1/2).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14506247"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 12,
+      "key": "a85370ad4c385b61ba03c7b330498853"
+    },
+    {
+      "line": 50,
+      "relation": "increases",
+      "evidence": "The Raf-1 inhibitor, GW5074, dose-dependently blocked strain-induced Erk activation and Raf-1 phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15567062"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Cell": {
+          "mesangial cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 12,
+      "key": "228020d2d20717a7fda7b6a023bcea57"
+    },
+    {
+      "line": 50,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12048182"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 12,
+      "key": "f265455f0331a1beda996ad23d86c0d0"
+    },
+    {
+      "line": 50,
+      "relation": "increases",
+      "evidence": "inhibition of CaMKII activity by specific inhibitors inhibited Erk-1/2 phosphorylation. Whereas CaMK inhibition affected neither integrin-stimulated Akt phosphorylation nor p21Ras or Mek-1 activity, it was necessary for Raf-1 activity...Active CaMKII phosphorylated Raf-1 in vitro.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12954639"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 12,
+      "key": "3dfa69879fa42592dd97aae32c6df92b"
+    },
+    {
+      "line": 50,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10490655"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 12,
+      "key": "d62dd1686a9dc4669ef21495d4e58c10"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 7,
+      "target": 8,
+      "key": "5d39066f0dbfb02d6f0443ab6ab17892"
+    },
+    {
+      "line": 49,
+      "relation": "directlyIncreases",
+      "evidence": "7592750;15322115;11438544;10748192",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15212693"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 7,
+      "target": 23,
+      "key": "a9e2a7d0f3d24ed5225d503f0587da81"
+    },
+    {
+      "line": 79,
+      "relation": "directlyIncreases",
+      "evidence": "It is in the cell membrane where Ras cycles between inactive guanosine diphosphate-bound and active guanosine triphosphate (GTP) -bound states, thereby activating a series of effector kinases that phosphorylate a cascade of signaling proteins.58 Ras mutants exhibit slightly less intrinsic GTPase activity than wild-type Ras; however, the principal consequence of the mutated proteins is a marked decrease in interactions between Ras and its GTPase activator protein.59 Instead of reverting to its inactive guanosine diphosphate-bound state, the modified conformation of mutant Ras favors its active GTP-bound state, which has a higher propensity to activate downstream effectors even in the absence of growth factor stimulation, conferring a proliferative advantage to tumors. The considerable attention paid to targeting Ras as a therapeutic strategy is based on the high incidence of activating ras mutations in human malignancies, including approximately 22% of non-small-cell lung, 50% of colorectal, and 90% of pancreatic cancers.53,60,61 Of the strategies directed at Ras, targeting FTase has received the most attention, but the FTIs are not Ras specific, and a bonafide Ras-specific therapeutic agent has not yet been evaluated in clinical trials.62,63 Fortunately, because K-ras mutations constitute most ras mutations in the aforementioned malignancies, in which the therapeutic expectations of FTIs were among the highest, the failure of this strategy should not be surprising because geranylgeranyl transferase I can alternatively prenylate K-ras, rendering it functional even when FTase is completely inhibited. 64,65 Although the FTIs have shown notable antitumor activity in patients with advanced breast cancer and some hematologic malignancies, the low ras mutation rates in these cancers suggest that farnesylation of other critical proteins is being inhibited.66 DOWNSTREAM OF RAS: RAF AND OTHER RAS EFFECTORS Localization of GTP-bound Ras to the inner surface of the cell membrane activates several downstream effectors, most notably the serine/threonine kinase Raf, which is the first signaling element in the MAPK pathway.2,67,68 As shown in Figure 1, other downstream effectors of Ras include the PI3K cell survival pathway, the small GTP-binding proteins Rac and Rho, and the stress-activated protein kinase pathway (also referred to as the c-jun N-terminal kinase [JNK] pathway).69-71 In addition, in response to cellular stress and cytokine stimulation mediated through Ras, the dual-specificity p38MAPK kinases (MKK3 and MKK6) and the JNK kinases (MKK4 and MKK7) phosphorylate p38MAPK and JNK, respectively.72-76 GTP-bound Ras interacts directly with Raf and mobilizes the inactive protein from the cytoplasm (Figs 1 and 2). Once the Ras-Raf complex is translocated to the cell membrane, Ras activates the serine/threonine kinase function of Raf through an association between its Ras-binding domain (RBD) in the amino-terminal regulatory region and Ras-GTP. This is followed by a series of Ras-dependent phosphorylation events and conformational changes, which will be described later in this review.77-84 The regulatory mechanisms of various Raf isoforms differ in that A-Raf and C-Raf require additional phosphorylation reactions for activity, whereas B-Raf has a much higher level of basal kinase activity.85 Raf is also activated by Ras-independent activators, including the soluble non-RTK Src and Janus kinase 1,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16170185"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 7,
+      "target": 18,
+      "key": "c7c17f84a3132f04b7475e4e969f892e"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "increases JAK2 activation and STAT5A and STAT5B tyrosine and serine phosphorylation and leads to cell cycle progression",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15795318"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 30,
+      "target": 0,
+      "key": "99199a7812ac7e17f57da3aa2af76dcf"
+    },
+    {
+      "line": 14,
+      "relation": "increases",
+      "evidence": "The signaling pathway of type I IFNs activates STAT1 and STAT2. In primary endothelial cells, we demonstrate that STAT3 and STAT5 are also activated, and these STATs may contribute to cellular proliferation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12759411"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 24,
+      "target": 1,
+      "key": "21602280b9415a24d04cafb3dfad3cad"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 28,
+      "target": 29,
+      "key": "21d91117404b99622d7a1645e0aff3b3"
+    },
+    {
+      "line": 78,
+      "relation": "increases",
+      "evidence": "increases JAK2 activation and STAT5A and STAT5B tyrosine and serine phosphorylation and leads to cell cycle progression",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15795318"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 28,
+      "target": 0,
+      "key": "51598eddcd5a2f91310f307274d02a25"
+    },
+    {
+      "line": 18,
+      "relation": "directlyIncreases",
+      "evidence": "We found that the Tyr701 phosphorylation kinetics of Stat1 mediated by IFN stimulation was higher when cells were incubated with IFN-alpha5 than when using IFN-alpha2. Similarly, Tyr(1054/1055) phosphorylation kinetics of Tyk2 were more intense after exposure to IFN-alpha5 than when using IFN-alpha2. Concomitantly, Tyr705 phosphorylation of Stat3 was higher after stimulation with IFN-alpha5 than with IFN-alpha2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15320963"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 23,
+      "target": 21,
+      "key": "69e3c27000e2b21b645c504517b8d62a"
+    },
+    {
+      "line": 18,
+      "relation": "directlyIncreases",
+      "evidence": "The transiently expressed MuV V protein also inhibited IFN-beta-induced Y701-STAT1 and Y689-STAT2 phosphorylation,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15767445"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 23,
+      "target": 21,
+      "key": "ba15d31c2924d5d6d25c3cbde4d5b80c"
+    },
+    {
+      "line": 36,
+      "relation": "directlyIncreases",
+      "evidence": "To elucidate the role of MAPKs in keratinocyte differentiation, activation of ERK, JNK, and p38 in response to stimulation with extracellular calcium was analyzed. We provide evidence that calcium-induced differentiation of keratinocytes is associated with rapid and transient activation of the Raf/MEK/ERK pathway. Stimulation of keratinocytes with extracellular calcium resulted in activation of Raf isozymes and their downstream effector ERK within 10-15 min, but did not increase JNK or p38 activity",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11018025"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Keratinocytes": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 11,
+      "target": 12,
+      "key": "0887c8026d9ddaf4cc1e28c9214e7f1e"
+    },
+    {
+      "line": 36,
+      "relation": "directlyIncreases",
+      "evidence": "in embryonic kidney cells expressing full-length DCC, NTN1 causes increased transient phosphorylation and activity of ERK1 and ERK2 but not of JNK1, JNK2 or MAPK14 this phosphorylation was mediated by MAP2K1 (aka MEK1) and/or MAP2K2 (aka MEK2)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11986622"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 11,
+      "target": 12,
+      "key": "83ebc1f3aa1bea5e34b90c4b91faa540"
+    },
+    {
+      "line": 36,
+      "relation": "directlyIncreases",
+      "evidence": "Finally, Ark-mediated repression was significantly attenuated by a dominant negative MEF2C, whereas repression induced by constitutively active Rac was unaffected, indicating that MEF2 proteins are not targets of the Ark -- Rac -- MEK -- ERK cascade.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12138087"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 11,
+      "target": 12,
+      "key": "48088320c9f5225195bf91ebe96a397c"
+    },
+    {
+      "line": 36,
+      "relation": "directlyIncreases",
+      "evidence": "For comparison, ElkC was also phosphorylated using recombinant ERK1 that had been activated by phosphorylation with a constitutively active mutant of the MAPK/ERK kinase MKK1 [23].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8548291"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 11,
+      "target": 12,
+      "key": "0b875929e967a112949314ad417c13ad"
+    },
+    {
+      "line": 36,
+      "relation": "directlyIncreases",
+      "evidence": "The activated GST-MEK1 was then used to activate the purified recombinant extracellular signal-regulated kinase 1, whose activity was measured by the [32P-g]ATP incorporation into MBP, an extracellular signal-regulated kinase 1 substrate.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8621729"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 11,
+      "target": 12,
+      "key": "2eea759d4c5cbd0fc096f39551abff18"
+    },
+    {
+      "line": 36,
+      "relation": "directlyIncreases",
+      "evidence": "In this paper, we present a comprehensive pathway map of EGFR signaling and other related pathways. The map reveals that the overall architecture of the pathway is a bow-tie (or hourglass) structure with several feedback loops.  See figure 2: The bow-tie architecture of the EGFR signaling pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16729045"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 11,
+      "target": 12,
+      "key": "470e360ab1b0cdd056b538b4396c69a1"
+    },
+    {
+      "line": 36,
+      "relation": "directlyIncreases",
+      "evidence": "Once activated, Raf-1 phosphorylates serines in the catalytic sites of MKK/MEK [345,367]. MKK1/MEK1 and MKK2/MEK2 activate members of the MAP kinase family (ERK-1/ERK-2),",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10699758"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 11,
+      "target": 12,
+      "key": "94176fc83d0f95d13fff6e09315951d9"
+    },
+    {
+      "line": 36,
+      "relation": "directlyIncreases",
+      "evidence": "Fig.1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15567848"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 11,
+      "target": 12,
+      "key": "5d079744565e458c8e9c6a2b0d112bc0"
+    },
+    {
+      "line": 36,
+      "relation": "directlyIncreases",
+      "evidence": "Raf-1 phosphorylates and activates MEK-1, a kinase that activates the extracellular signal regulated kinases (ERK)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10490027"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 11,
+      "target": 12,
+      "key": "137ac74e35a9aaa2706ce64119a91701"
+    },
+    {
+      "line": 81,
+      "relation": "directlyIncreases",
+      "evidence": "p160ROCK, a serine/threonine protein kinase, is a direct RhoA target mediating RhoA-induced assembly of focal adhesions and stress fibers.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10845663"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Cell": {
+          "hepatic stellate cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 19,
+      "target": 20,
+      "key": "dedc2652fff0627b0d97ff38a30103b8"
+    },
+    {
+      "line": 81,
+      "relation": "directlyIncreases",
+      "evidence": "When expressed in cells, XPLN activates RhoA and RhoB, but not RhoC, and stimulates the assembly of stress fibers and focal adhesions in a Rho kinase-dependent manner.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12221096"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 19,
+      "target": 20,
+      "key": "2fd36ed1c0fbf8670c8f43e0589eda38"
+    },
+    {
+      "line": 81,
+      "relation": "directlyIncreases",
+      "evidence": "Figure 2. Signaling from Rho to the CytoskeletonThe pathways from Rho to the formation of stress fibers are described in the text. Direct activating signals are presented by solid arrows. Inhibitory signals are depicted as red bars. Double-lined arrows and bars represent the net result of a signaling pathway. Abbreviations used: LIMK, LIM kinase; MLC-P, phosphorylated myosin II regulatory light chain; MLC phosphatase, myosin light chain phosphatase.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14744429"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 19,
+      "target": 20,
+      "key": "4002c40e82cb9da60567dda8b25a1ba5"
+    },
+    {
+      "line": 3,
+      "relation": "directlyIncreases",
+      "evidence": "Both enzymes are associated with the interferon-alpha/beta receptor, and upon ligand binding, they undergo tyrosine phosphorylation and catalytic activation in an interdependent manner....These results indicate that Tyk2 is activated by phosphorylation on Tyr-1054 and/or Tyr-1055 and that this phosphorylation requires another kinase, most likely JAK1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8702790"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 35,
+      "target": 33,
+      "key": "9e3f30937bc417d7f0a3624e69da7a53"
+    },
+    {
+      "line": 3,
+      "relation": "directlyIncreases",
+      "evidence": "We found that the Tyr701 phosphorylation kinetics of Stat1 mediated by IFN stimulation was higher when cells were incubated with IFN-alpha5 than when using IFN-alpha2. Similarly, Tyr(1054/1055) phosphorylation kinetics of Tyk2 were more intense after exposure to IFN-alpha5 than when using IFN-alpha2. Concomitantly, Tyr705 phosphorylation of Stat3 was higher after stimulation with IFN-alpha5 than with IFN-alpha2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15320963"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 35,
+      "target": 33,
+      "key": "2a6d0a9c13f6a133a63c805bab68a086"
+    },
+    {
+      "line": 27,
+      "relation": "directlyIncreases",
+      "evidence": "In response to interleukin-4 (IL-4) or IL-13 stimulation of cells, Stat6 becomes phosphorylated on Tyr(641) and forms homodimers that migrate to the nucleus, bind to cognate DNA elements, and drive the transcription of target genes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16181056"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 32,
+      "target": 31,
+      "key": "6b5edfa33bbb9f190fe7e6de4dafe43b"
+    },
+    {
+      "line": 10,
+      "relation": "increases",
+      "evidence": "Induction of STAT3 Tyr705 and Ser727 phosphorylations by Galpha(s)QL was suppressed by inhibition of protein kinase A, Janus kinase 2/3, Rac1, c-Jun N-terminal kinase (JNK), or phosphatidylinositol 3-kinase, and a similar profile was observed in response to beta2-adrenergic receptor stimulation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17008315"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 17,
+      "target": 26,
+      "key": "b2d1101c3e62b01198a69d0e05a5b831"
+    },
+    {
+      "line": 31,
+      "relation": "increases",
+      "evidence": "Induction of STAT3 Tyr705 and Ser727 phosphorylations by Galpha(s)QL was suppressed by inhibition of protein kinase A, Janus kinase 2/3, Rac1, c-Jun N-terminal kinase (JNK), or phosphatidylinositol 3-kinase, and a similar profile was observed in response to beta2-adrenergic receptor stimulation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17008315"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 17,
+      "target": 27,
+      "key": "a4fc0a609e32b41b730a2029eedbe7e7"
+    },
+    {
+      "line": 43,
+      "relation": "increases",
+      "evidence": "Finally, we determined that STAT3 expression is required for PDGF-mediated regulation of cell cycle targets cyclin D3 and p27. These data define a novel mitogenic signaling pathway in airway smooth muscle cells leading from PDGF to Rac1 and STAT3 and subsequent cell cycle gene regulation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18310224"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 17,
+      "target": 25,
+      "key": "ac7238b4e59e0b59664b064237520f3d"
+    },
+    {
+      "line": 43,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11470914"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 17,
+      "target": 25,
+      "key": "8dc3f765f45d19f8750bcb178f65f59e"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 25,
+      "target": 26,
+      "key": "6e6f08272975b09ae429e6fdfff8a07b"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 25,
+      "target": 27,
+      "key": "b2fffea67c0fc940b0f97df9f7d7ab88"
+    },
+    {
+      "line": 2,
+      "relation": "increases",
+      "evidence": "Finally, we determined that STAT3 expression is required for PDGF-mediated regulation of cell cycle targets cyclin D3 and p27. These data define a novel mitogenic signaling pathway in airway smooth muscle cells leading from PDGF to Rac1 and STAT3 and subsequent cell cycle gene regulation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18310224"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 3,
+      "key": "a501ce9b5adb1b94bf98352234e5b402"
+    },
+    {
+      "line": 39,
+      "relation": "increases",
+      "evidence": "Finally, we determined that STAT3 expression is required for PDGF-mediated regulation of cell cycle targets cyclin D3 and p27. These data define a novel mitogenic signaling pathway in airway smooth muscle cells leading from PDGF to Rac1 and STAT3 and subsequent cell cycle gene regulation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18310224"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 5,
+      "key": "a776fee979f53a4bbd1b7c9d274569af"
+    },
+    {
+      "line": 39,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10858439"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 5,
+      "key": "03f03fde33d960e7aa059c081ee54d91"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "NRG-1 induces cell proliferation through a high-affinity receptor complex composed of a heterodimer of human epidermal growth factor-like receptor (HER) 2 and 3. In this study, we show that NRG-1 activates the Janus kinases (JAK) and signal transducer and activator of transcription proteins (STAT). NRG-1 induced a rapid and transient increase in tyrosine phosphorylation of TYK2 and JAK3, but not JAK1 or JAK2, and induced STAT3 and STAT5 tyrosine phosphorylation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12204892"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Epithelium": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 1,
+      "key": "50533ef2ec44673a4ca03a4dd475cca9"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "These ligands, through complex molecular mechanisms, activate transcription factors including NF-kB, signal transducer and activator of transcription 3 (STAT3), activator protein 1 (AP-1), and CCAAT/enhancer-binding protein (C/EBP)b that initiate a cascade of gene expression that ultimately is responsible for proliferation (9).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12177410"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "hepatocyte": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 1,
+      "key": "ca013e6df6e7a0b6e13a1f9d4106ccbc"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "Signal transduction and activator of transcription 3 (STAT3) signaling is constitutively activated in various tumors, and is involved in cell survival and proliferation during oncogenesis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15077160"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 1,
+      "key": "1d34bc9a9d70aa7ef637d8cda7bc7c81"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "These data indicate that MEN2A-RET enhances proliferation via STAT3, and that a full length STAT3 is required to mediate the MEN2A-RET induced proliferation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11536047"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 1,
+      "key": "d40820348a12ae2db5231eb17e114096"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "Our study clearly shows that shear stress exerts its inhibitory regulation by suppressing the IL-6-induced JAK2/STAT3 signaling pathway and thus inhibits IL-6-induced EC proliferation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15151905"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 1,
+      "key": "64339b45edb13468e8e9a5ea992ff6fd"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "In normal NIH 3T3 cells, disruption of Stat3 signaling with dominant-negative Stat3beta protein inhibits PDGF-induced mitogenesis in a manner that is reversed by ectopic c-Myc expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11404481"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 1,
+      "key": "a9474890dac4d845fc9994d861016b86"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "The signaling pathway of type I IFNs activates STAT1 and STAT2. In primary endothelial cells, we demonstrate that STAT3 and STAT5 are also activated, and these STATs may contribute to cellular proliferation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12759411"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 1,
+      "key": "57f87c5e816372de73b55c0ffde0c52c"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "whilst STAT-3 promotes cellular proliferation and is activated in a variety of tumour cells, STAT-1 appears to have an anti-proliferative effect.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16243709"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 1,
+      "key": "7a51106ec037ce094aebd9380e2550b6"
+    },
+    {
+      "line": 8,
+      "relation": "directlyIncreases",
+      "evidence": "We found that the Tyr701 phosphorylation kinetics of Stat1 mediated by IFN stimulation was higher when cells were incubated with IFN-alpha5 than when using IFN-alpha2. Similarly, Tyr(1054/1055) phosphorylation kinetics of Tyk2 were more intense after exposure to IFN-alpha5 than when using IFN-alpha2. Concomitantly, Tyr705 phosphorylation of Stat3 was higher after stimulation with IFN-alpha5 than with IFN-alpha2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15320963"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 34,
+      "target": 33,
+      "key": "c0da513b7d6326aaeba20456068c416a"
+    },
+    {
+      "line": 8,
+      "relation": "directlyIncreases",
+      "evidence": "Both enzymes are associated with the interferon-alpha/beta receptor, and upon ligand binding, they undergo tyrosine phosphorylation and catalytic activation in an interdependent manner....These results indicate that Tyk2 is activated by phosphorylation on Tyr-1054 and/or Tyr-1055 and that this phosphorylation requires another kinase, most likely JAK1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8702790"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 34,
+      "target": 33,
+      "key": "95600a4ebf5acdff103db74b197a4cbe"
+    },
+    {
+      "line": 11,
+      "relation": "decreases",
+      "evidence": "The growth-stimulating effects of thrombin are mediated primarily via activation of a G protein-coupled receptor, PAR-1. Because PAR-1 has no intrinsic tyrosine kinase activity, yet requires tyrosine phosphorylation events to induce mitogenesis, we investigated the role of the Janus tyrosine kinases (JAKs) in thrombin-mediated signaling. JAK2 was activated rapidly in rat vascular smooth muscle cells (VSMC) treated with thrombin, and signal transducers and activators of transcription (STAT1 and STAT3) were phosphorylated and translocated to the nucleus in a JAK2-dependent manner. AG-490, a JAK2-specific inhibitor, and a dominant negative JAK2 mutant inhibited thrombin-induced ERK2 activity and VSMC proliferation suggesting that JAK2 is upstream of the Ras/Raf/MEK/ERK pathway. To elucidate the functional significance of JAK-STAT activation, we studied the effect of thrombin on heat shock protein (Hsp) expression, based upon the following: 1) reports that thrombin stimulates reactive oxygen species production in VSMC; 2) the putative role of Hsps in modulating cellular responses to reactive oxygen species; and 3) the presence of functional STAT1/3-binding sites in Hsp70 and Hsp90beta promoters. Indeed, thrombin up-regulated Hsp70 and Hsp90 protein expression via enhanced binding of STATs to cognate binding sites in the Hsp70 and Hsp90 promoters. Together, these results suggest that JAK-STAT pathway activation is necessary for thrombin-induced VSMC growth and Hsp gene expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11278437"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 16,
+      "target": 9,
+      "key": "619781298241ae7bc0eb572f32b7493d"
+    },
+    {
+      "line": 15,
+      "relation": "decreases",
+      "evidence": "Methyl-thioadenosine, a methyl-transferase inhibitor that accumulates in many transformed cells, inhibits STAT1-mediated IFN responses. This inhibition arises from impaired STAT1-DNA binding due to an increased association of the STAT inhibitor PIAS1 with phosphorylated STAT1 dimers in the absence of arginine methylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11257227"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 21,
+      "key": "9884344fbabc38d603a88d55055301d0"
+    },
+    {
+      "line": 17,
+      "relation": "increases",
+      "evidence": "NRG-1 induces cell proliferation through a high-affinity receptor complex composed of a heterodimer of human epidermal growth factor-like receptor (HER) 2 and 3. In this study, we show that NRG-1 activates the Janus kinases (JAK) and signal transducer and activator of transcription proteins (STAT). NRG-1 induced a rapid and transient increase in tyrosine phosphorylation of TYK2 and JAK3, but not JAK1 or JAK2, and induced STAT3 and STAT5 tyrosine phosphorylation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12204892"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Epithelium": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 15,
+      "target": 10,
+      "key": "2546758132020031422697803734cd8d"
+    },
+    {
+      "line": 24,
+      "relation": "increases",
+      "evidence": "NRG-1 induces cell proliferation through a high-affinity receptor complex composed of a heterodimer of human epidermal growth factor-like receptor (HER) 2 and 3. In this study, we show that NRG-1 activates the Janus kinases (JAK) and signal transducer and activator of transcription proteins (STAT). NRG-1 induced a rapid and transient increase in tyrosine phosphorylation of TYK2 and JAK3, but not JAK1 or JAK2, and induced STAT3 and STAT5 tyrosine phosphorylation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12204892"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Epithelium": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 15,
+      "target": 33,
+      "key": "d91939295479ff990128ef818ad919e9"
+    },
+    {
+      "line": 62,
+      "relation": "directlyIncreases",
+      "evidence": ". Furthermore, the bFGF-induced activation of ERK1/2 seems to enhance the transcriptional activity of STAT3. Co-stimulation of KMS-11 with bFGF and IL-6 leads to marked expression of STAT3 target genes, such as c-myc and bcl-2, further suggesting the relevance of STAT3 phosphorylated at both Tyr705 and Ser727 for the full activation as a transcription factor (Fig. 5). In addition, the",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17142955"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Multiple Myeloma": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 26,
+      "target": 25,
+      "key": "7c8ba3a6a3a092cb55f9d91b553e80e0"
+    },
+    {
+      "line": 62,
+      "relation": "directlyIncreases",
+      "evidence": "Taken together, our results demonstrate that the STAT3 phosphorylation at Ser(727) is triggered by active RSK2 or JNK1 Additionally, RSK2-mediated phosphorylation of STAT3 (Ser(727)) was further determined to be required for basal and UVA-stimulated STAT3 transcriptional activities",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12562765"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "lymphocyte": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 26,
+      "target": 25,
+      "key": "7d2c0e4ba415c4ef6d85ddb7df6839a3"
+    },
+    {
+      "line": 62,
+      "relation": "directlyIncreases",
+      "evidence": "Signal transducer and activator of transcription 3 (STAT3) is activated by the IL-6 family of cytokines and growth factors. STAT3 requires phosphorylation on Ser-727, in addition to tyrosine phosphorylation on Tyr-705, to be transcriptionally active.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15764709"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 26,
+      "target": 25,
+      "key": "779646809666e36892d4ceabdc7784a6"
+    },
+    {
+      "line": 62,
+      "relation": "directlyIncreases",
+      "evidence": "ZIPK phosphorylated STAT3 on serine 727 (Ser727) and enhanced STAT3 transcriptional activity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16219639"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 26,
+      "target": 25,
+      "key": "d9ccb85e23249df562a345a3b93b41b7"
+    },
+    {
+      "line": 62,
+      "relation": "directlyIncreases",
+      "evidence": "leads to phosphorylation of MITF at S73 and of STAT3 at both tyrosine 705 and S727. This phosphorylation increases the transcriptional activity of MITF and STAT3 as indicated by mRNA accumulation of their target genes such as Bcl-2, granzyme B, and c-Myc",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16034081"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "lymphocyte": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 26,
+      "target": 25,
+      "key": "d8f5f188b75b260319a470cb61b9f548"
+    },
+    {
+      "line": 62,
+      "relation": "directlyIncreases",
+      "evidence": "We show that A549 cells overexpressing COX-2 have constitutive STAT3 (Tyr705 and Ser727) activation, whereas A549 cells with limited COX-2 lacked this activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16278387"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 26,
+      "target": 25,
+      "key": "a53c4aba40cebca4e38d2ba82140be86"
+    },
+    {
+      "line": 62,
+      "relation": "directlyIncreases",
+      "evidence": "LIGHT, a member of tumor necrosis factor superfamily, activates Stat3 in cancer cells. LIGHT induces dose-dependent activation of Stat3 by phosphorylation at both the tyrosine 705 and serine 727 residues.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17543278"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 26,
+      "target": 25,
+      "key": "887ff63a75b2c62e9dc6f5c338cebdbe"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "Here, we report identification of signal transducer and activator of transcription 3 (STAT3) as a substrate of PTPRT. Phosphorylation of a tyrosine at amino acid Y705 is essential for the function of STAT3, and PTPRT specifically dephosphorylated STAT3 at this position. Accordingly, overexpression of normal PTPRT in colorectal cancer cells reduced the expression of STAT3 target genes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17360477"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 25,
+      "key": "819d61692dddb71a6e5bb26c8a476f28"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "LIGHT, a member of tumor necrosis factor superfamily, activates Stat3 in cancer cells. LIGHT induces dose-dependent activation of Stat3 by phosphorylation at both the tyrosine 705 and serine 727 residues.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17543278"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 25,
+      "key": "eab4f399ce8ad29b4851fa0084cd4484"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "We found that the Tyr701 phosphorylation kinetics of Stat1 mediated by IFN stimulation was higher when cells were incubated with IFN-alpha5 than when using IFN-alpha2. Similarly, Tyr(1054/1055) phosphorylation kinetics of Tyk2 were more intense after exposure to IFN-alpha5 than when using IFN-alpha2. Concomitantly, Tyr705 phosphorylation of Stat3 was higher after stimulation with IFN-alpha5 than with IFN-alpha2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15320963"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 25,
+      "key": "c4aa72fcf61f09f07cfa127994a21274"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "leads to phosphorylation of MITF at S73 and of STAT3 at both tyrosine 705 and S727. This phosphorylation increases the transcriptional activity of MITF and STAT3 as indicated by mRNA accumulation of their target genes such as Bcl-2, granzyme B, and c-Myc",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16034081"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "mast cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 25,
+      "key": "84a4c2c75a9ae10f9eabc1d27d5bcbb1"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "A dramatic reduction of the phosphorylation of the Stat3 protein at Tyr residue 705 was observed in cells infected with adenovirus Wild type p53. Co-transfection of cells with wild type p53 along with Stat3 luciferase reporter, inhibited Stat3 dependent luciferase activity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11809683"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 25,
+      "key": "73b0daa2d07e089c0416c3ca58331e65"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": ". Furthermore, the bFGF-induced activation of ERK1/2 seems to enhance the transcriptional activity of STAT3. Co-stimulation of KMS-11 with bFGF and IL-6 leads to marked expression of STAT3 target genes, such as c-myc and bcl-2, further suggesting the relevance of STAT3 phosphorylated at both Tyr705 and Ser727 for the full activation as a transcription factor (Fig. 5). In addition, the",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17142955"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Multiple Myeloma": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 25,
+      "key": "a8d28e6c6fc8f0144fdab24994558bc6"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "Stat3 is activated by phosphorylation on Tyr-705, which leads to dimer formation, nuclear translocation, and regulation of gene expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10446219"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 25,
+      "key": "53995bc9da0a4410da7af7e0be746c28"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "activated form of STAT3, Tyr-705 phospho-stat3, was found in the nucleus of cancer cells in 11 of 40 (27.5%) human gastric cancer specimens.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15077160"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Neoplasms": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 25,
+      "key": "fe6ade742583bee35556149169f34832"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "Signal transducer and activator of transcription 3 (STAT3) is activated by the IL-6 family of cytokines and growth factors. STAT3 requires phosphorylation on Ser-727, in addition to tyrosine phosphorylation on Tyr-705, to be transcriptionally active.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15764709"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 25,
+      "key": "047bf6c13c9f0b05cb4aa8cf3ca422f6"
+    },
+    {
+      "line": 40,
+      "relation": "directlyIncreases",
+      "evidence": "Tyrosine phosphorylation is essential for Stat dimerization, nuclear translocation, DNA binding, and transcriptional activation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10744710"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 29,
+      "target": 28,
+      "key": "7e3b68f63e17fcee690cf2c14c8ac961"
+    },
+    {
+      "line": 40,
+      "relation": "directlyIncreases",
+      "evidence": "Moreover, we demonstrated that human Stat5 activation is also dependent on Tyr-694 in Stat5A and Tyr-699 in Stat5B, indicating that these tyrosines are required for dimerization.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8631883"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 29,
+      "target": 28,
+      "key": "f1f4153410e216d34775e35792c8c01b"
+    },
+    {
+      "line": 87,
+      "relation": "association",
+      "evidence": "Recent studies have identified MUC4 mucin as a ligand for activation of ErbB2, a receptor tyrosine kinase that modulates epithelial cell proliferation following epithelial damage in airways of asthmatics.",
+      "citation": {
+        "db": "Other",
+        "db_id": "16551361"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 13,
+      "target": 6,
+      "key": "18ab1002111909ae2d1b5503a3eb483f"
+    }
+  ]
+}

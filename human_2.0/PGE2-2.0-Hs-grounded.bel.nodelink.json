@@ -1,0 +1,1574 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "PGE2-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The PGE2 network depicts the pathways exerting regulatory control of PGE2 in the context of cellular proliferation. The network includes cAMP-mediated activation of PKA-, Epac/Rap1- and Tiam1/Vav2-dependent pathways of Rac1 activation."
+    },
+    "namespace_url": {},
+    "namespace_pattern": {
+      "chebi": ".*",
+      "mesh": ".*",
+      "fplx": ".*",
+      "go": ".*",
+      "hgnc": ".*"
+    },
+    "annotation_url": {},
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "arachidonic acid",
+        "identifier": "15843"
+      },
+      "id": "47a5343e7acc09ba2293aa56e173cfd9",
+      "bel": "a(chebi:15843 ! \"arachidonic acid\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "celecoxib",
+        "identifier": "41423"
+      },
+      "id": "ce635300ff05f31d2a099859b5b088e7",
+      "bel": "a(chebi:41423 ! celecoxib)"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "fplx",
+        "name": "PI3K",
+        "identifier": "PI3K"
+      },
+      "id": "2de818cb7bd5f3eacdbb22c78861bdd8",
+      "bel": "complex(fplx:PI3K ! PI3K)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "PI3K_p110",
+        "identifier": "PI3K_p110"
+      },
+      "id": "8b79e969188c2874eba3fa100a633e65",
+      "bel": "p(fplx:\"PI3K_p110\" ! \"PI3K_p110\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "AKT",
+        "identifier": "AKT"
+      },
+      "id": "c89a87549439c8dc34a13d9082b33a57",
+      "bel": "p(fplx:AKT ! AKT)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "ERK",
+        "identifier": "ERK"
+      },
+      "id": "44a9148a4c46d6790c5018593934ee6c",
+      "bel": "p(fplx:ERK ! ERK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "MEK",
+        "identifier": "MEK"
+      },
+      "id": "8812524d09d27ead405ac6981c8205a2",
+      "bel": "p(fplx:MEK ! MEK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "PDE4",
+        "identifier": "PDE4"
+      },
+      "id": "3fbddd1141e8300464b148a00f580509",
+      "bel": "p(fplx:PDE4 ! PDE4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "PRKAC",
+        "identifier": "PRKAC"
+      },
+      "id": "d7b0a3f9dd7c83574fe44f6e40746cfb",
+      "bel": "p(fplx:PRKAC ! PRKAC)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "RAF",
+        "identifier": "RAF"
+      },
+      "id": "b42a1ce4d50e4f9306f65640a18462a0",
+      "bel": "p(fplx:RAF ! RAF)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "RAS",
+        "identifier": "RAS"
+      },
+      "id": "9274f5e848a1e5f0ecc9620413e7c24b",
+      "bel": "p(fplx:RAS ! RAS)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "TGFB",
+        "identifier": "TGFB"
+      },
+      "id": "2ea3a352aefaf597fbda8a8606b415ff",
+      "bel": "p(fplx:TGFB ! TGFB)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TGFB1",
+        "identifier": "11766"
+      },
+      "id": "576a88bfbb29664cc1307c6239712c90",
+      "bel": "p(hgnc:11766 ! TGFB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TGFB2",
+        "identifier": "11768"
+      },
+      "id": "3f3b74f13f88d5a10bb394c1c82c3bb8",
+      "bel": "p(hgnc:11768 ! TGFB2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TGFB3",
+        "identifier": "11769"
+      },
+      "id": "ef1336e052ef75e99a0f07bc340ca65e",
+      "bel": "p(hgnc:11769 ! TGFB3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TIAM1",
+        "identifier": "11805"
+      },
+      "id": "4ba01f30fc3b1d95fa8cfcf83b19b36f",
+      "bel": "p(hgnc:11805 ! TIAM1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "VAV2",
+        "identifier": "12658"
+      },
+      "id": "4713bb62f092b29ba9b10864bbaa7a85",
+      "bel": "p(hgnc:12658 ! VAV2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "VEGFA",
+        "identifier": "12680"
+      },
+      "id": "710d068636280068962cf864d9ed7526",
+      "bel": "p(hgnc:12680 ! VEGFA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "VIP",
+        "identifier": "12693"
+      },
+      "id": "d8dedfa529cf00c41e694b4fe45ad42e",
+      "bel": "p(hgnc:12693 ! VIP)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "VIPR1",
+        "identifier": "12694"
+      },
+      "id": "6201458c8dae0e63c750763392ca621d",
+      "bel": "p(hgnc:12694 ! VIPR1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CCND1",
+        "identifier": "1582"
+      },
+      "id": "7948aef17947d3efb076ccc443c7c3a6",
+      "bel": "p(hgnc:1582 ! CCND1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTGES3",
+        "identifier": "16049"
+      },
+      "id": "1972b09e42968a378b0a62c5d66271f3",
+      "bel": "p(hgnc:16049 ! PTGES3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RAPGEF3",
+        "identifier": "16629"
+      },
+      "id": "37a9ad82db0a872754b9af05afd8106c",
+      "bel": "p(hgnc:16629 ! RAPGEF3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTGES2",
+        "identifier": "17822"
+      },
+      "id": "21bb3d495bf4b84cf0ac2702b184faea",
+      "bel": "p(hgnc:17822 ! PTGES2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CREB1",
+        "identifier": "2345"
+      },
+      "id": "f5623397316edb3f74ee540482bae375",
+      "bel": "p(hgnc:2345 ! CREB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CREB1",
+        "identifier": "2345"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Ser",
+          "pos": 133
+        }
+      ],
+      "id": "27ce85c9e8dd0f2a01e51262c8e05825",
+      "bel": "p(hgnc:2345 ! CREB1, pmod(go:0006468 ! \"protein phosphorylation\", Ser, 133))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "FGF7",
+        "identifier": "3685"
+      },
+      "id": "787666f9d48ca373485bc75b3336900e",
+      "bel": "p(hgnc:3685 ! FGF7)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HRAS",
+        "identifier": "5173"
+      },
+      "id": "b8a01f06c344f373e8943e096ee741bb",
+      "bel": "p(hgnc:5173 ! HRAS)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL1A",
+        "identifier": "5991"
+      },
+      "id": "3387db44069f5c5f839321b589e6fef5",
+      "bel": "p(hgnc:5991 ! IL1A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CXCL8",
+        "identifier": "6025"
+      },
+      "id": "ff6d8ebf56ab67532ff6ab8e1ad8745c",
+      "bel": "p(hgnc:6025 ! CXCL8)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "NPPA",
+        "identifier": "7939"
+      },
+      "id": "d223277a789ac2d9a64d444ecaa1a33c",
+      "bel": "p(hgnc:7939 ! NPPA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PDE4A",
+        "identifier": "8780"
+      },
+      "id": "f8a7c6e3ea3e9c57a526fc5fa04f859c",
+      "bel": "p(hgnc:8780 ! PDE4A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PDE4C",
+        "identifier": "8782"
+      },
+      "id": "dda5a4eaaf146bca43a036589d565b6e",
+      "bel": "p(hgnc:8782 ! PDE4C)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PDGFRA",
+        "identifier": "8803"
+      },
+      "id": "8d9db70f1f3a53dda834dd7d21b2b883",
+      "bel": "p(hgnc:8803 ! PDGFRA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTGER1",
+        "identifier": "9593"
+      },
+      "id": "c227e052b6400e6ad275db99fcc1f146",
+      "bel": "p(hgnc:9593 ! PTGER1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTGER2",
+        "identifier": "9594"
+      },
+      "id": "914546c5888fbf65ba8e231ed4a5fb11",
+      "bel": "p(hgnc:9594 ! PTGER2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTGER3",
+        "identifier": "9595"
+      },
+      "id": "2f4e9b38de8c5a75047161757a4d0d16",
+      "bel": "p(hgnc:9595 ! PTGER3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTGER4",
+        "identifier": "9596"
+      },
+      "id": "fb678c8d44011d6c5485d575e86d9cf5",
+      "bel": "p(hgnc:9596 ! PTGER4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTGES",
+        "identifier": "9599"
+      },
+      "id": "3c0e2faf661bc4dc2d9ef46131a4b2db",
+      "bel": "p(hgnc:9599 ! PTGES)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTGS1",
+        "identifier": "9604"
+      },
+      "id": "ff020df4d72542da60cc4a74fc5c32b2",
+      "bel": "p(hgnc:9604 ! PTGS1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTGS2",
+        "identifier": "9605"
+      },
+      "id": "a599840205cea50660db6b94062760db",
+      "bel": "p(hgnc:9605 ! PTGS2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RAC1",
+        "identifier": "9801"
+      },
+      "id": "1833ca3c80fe75acb1c59c3ffc45f2ec",
+      "bel": "p(hgnc:9801 ! RAC1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RAP1A",
+        "identifier": "9855"
+      },
+      "id": "7dcb29184d0ce12c162d30238a7a1bd4",
+      "bel": "p(hgnc:9855 ! RAP1A)"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "mesh",
+        "name": "Pulmonary Disease, Chronic Obstructive",
+        "identifier": "D029424"
+      },
+      "id": "98cb883d84a9775f973f1e99c68ba3a2",
+      "bel": "path(mesh:D029424 ! \"Pulmonary Disease, Chronic Obstructive\")"
+    }
+  ],
+  "links": [
+    {
+      "line": 79,
+      "relation": "directlyDecreases",
+      "evidence": "was able to prevent the development of N-methylnitrosurea-induced prostate and mammary carcinomas in rats by 50% (REF. 38). Celecoxib, an inhibitor of the inducible prostaglandin G/H synthase COX2, was able to reduce the number of colorectal polyps in patients with familial adenomatous polyposis (FAP). Patients with FAP are at high risk of developing colorectal neoplasias39.COX2 inhibitors are anti-inflammatory agents with anti-angiogenic activities that downregulate the expression of the pro-angiogenic factors FGF and VEGF40.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12778130"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 1,
+      "target": 40,
+      "key": "efb1d0e677fe382255fdb415b1e50fc0"
+    },
+    {
+      "line": 79,
+      "relation": "directlyDecreases",
+      "evidence": "JAK/STATs C225 Phase I treatment (47) AG490 Preclinical treatment (48-51) #----------------------------------------------------------------- Table II. Chemopreventive Agents for Targeting Signal Transduction Pathways Target Drug Phase of Testing Reference Cox-2 Celecoxib Preclinical treatment (164,174-177) and prevention Nimesulide, Valdecoxib, Preclinical treatment (178) Parecoxib, Etoricoxib, Lumaricoxib Sulindac Phase II treatment (179-181) Exisulind Phase I treatment",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14587863"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 1,
+      "target": 40,
+      "key": "df9181a3bca75861943aab5b2d883169"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 24,
+      "target": 25,
+      "key": "b5c1d1cd3c6f7d440819d8b3e76780a7"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "Their minimum consensus sequence Hyd-X-R-X-X-(S/T) (where Hyd is any hydrophobic amino acid), determined through peptide studies, provides only a rough template common to many protein kinases (11). Additional specificity is provided by residues adjacent to the phosphorylation site of the substrate, producing differences in substrate preference among these kinases. The differences can have important transcriptional implications; for example, although all three can phosphorylate CREB on the activating site Ser-133, only CaMKII phosphorylates an additional inhibitory site, Ser-142 (13).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11096122"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "7b82dbcd289da65e8b656ee797d890fb"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "Moreover, PP1 was shown to act as a major CTD phosphatase in nuclear extracts and to affinity-purify with RNA polymerase II. Both PP1 and the nuclear regulator NIPP1 have also been identified as components of the Tat-associated RNA polymerase II complex, which regulates transcription from the human immunodeficiency virus type 1 promoter (40, 275). The transcription factor CREB mediates the expression of cAMP-induced genes by binding to a conserved cAMP-responsive element. Phosphorylation of CREB on Ser-133, e.g., by PKA, promotes the recruitment of the histone acetyltransferase CBP, which facilitates access of the promoter region to the transcriptional machinery.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14715909"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "2659da39f579e2e4446a0fd87f117d4e"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "We found that the intracellular domain of Notch2 interacted with a phosphorylated form of the transcription factor CREB1, and together these proteins bound the transcriptional coactivator p300 to form a complex on the promoter of the gene encoding granzyme B. Our results suggest that the highly regulated, dynamic control of T cell cytotoxicity depends on the integration of Notch2 and CREB1 signals.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18724371"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "4306ea9f128638b1bc00157243cab75f"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "LDL promotes cAMP response element binding protein (CREB) activation (phosphorylation in Ser133). In transfection assays a dominant-negative of CREB inhibits NOR-1 promoter activity, while mutation of specific (cAMP response element) CRE sites in the NOR-1 promoter abolishes LDL-induced NOR-1 promoter activity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14962944"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "628e324b90ce8c994c4f52b1030b9b61"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "aken together, these data provide strong evidence that PKA is the enzyme responsible for phosphorylating CREB at S133 in response to PTH and that PKA activity is required for PTH-induced c-fos expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10067851"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "a374e3f51e27e7a102c326b84c391030"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "Mutation of the CREB-binding site reduced cyclin D2 promoter activity 5-10-fold. CREB-1 is phosphorylated at serine 133, a critical site for activity, in both T cells and Epstein-Barr virus immortalized B cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16301994"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "4653be4971fd5bc63ba804eb3807f953"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "We found that, in contrast to Akt1 that induces CREB phosphorylation at Ser-133 and CREB target gene expression, Akt2 was unable to induce CREB phosphorylation at Ser-133 in vivo and CREB target gene expression. This difference is specific to CREB as both Akt1 and Akt2 similarly inhibits FoxO1 mediated gene expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17276404"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "8c75309ad47faac0162d3639d96d05a6"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "A constitutive active mutant of PKD1 stimulates GAL4-CREB-mediated transcription in a Ser-133-dependent manner, activates CRE-responsive promoters, and increases the expression of CREB target genes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17389598"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "8dda5fc04947fc4bd5764f03f2fd6522"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "Protein kinase A phosphorylation of CREB at serine 133 facilitates transcription from cellular CREs by recruiting CBP/p300 via its KIX domain.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17449469"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "5b6861c00d81728f87603442bfa46122"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "As shown in Fig. 6, TPA and the presence of caPKD1 clearly augmented Nur77 transcript levels. The PKD1-induced increase of Nur77 expression is mediated through CREB, as co-transfection with the dominant negative A-CREB or K-CREB resulted in reduced PKD1-induced Nur77 expression (Fig. 6).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17389598"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "88e7456935d22c72917e84a1130f4b3d"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "CREB activation via phosphorylation at serine 133 and resulting CREB mediated gene expression is a critical event which can have a significant effect on many cellular processes, including cell survival and plasticity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19070599"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "2ca5d4215f438cddda16dccfa5a0cf3b"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "The induction of CREB-mediated transcription was Ser-133-dependent, because caPKD1 failed to stimulate GAL4-CREBS133A-driven transcription. Similar results were obtained with co-transfection studies in COS-1 cells (results not shown), indicating that PKD1-induced CREB activation is not cell-specific.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17389598"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "19e8d5c17917e835618f382301ddcceb"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "Inactivating the kinase A phosphorylation site by in vitro mutagenesis of the cloned CREB cDNA at Ser-133 completely abolished CREB transcriptional activity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "2573431"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "949ff03d87bb536a6bed755d5c164b20"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "CaMKIV, and p38 MAPK were also the kinases involved in CREB Ser(133) phosphorylation induced by CD3/CD28.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11123304"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "b696060842dba6344f3380a873b6c91e"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "MSK1 is localized in the nucleus of unstimulated or stimulated cells, and phosphorylates CREB at Ser133 with a Km value far lower than PKA, MAPKAP-K1(p90Rsk) and MAPKAP-K2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9687510"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "eb8a8479b1e33c436b85f4f877af6164"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "pp60(v-src) induction of CREB was blocked by the p38 inhibitor SB203580 or by mutation of CREB at Ser133.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10066798"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "24c1e469331f1f1cbc7a2455dbf2a8d1"
+    },
+    {
+      "line": 80,
+      "relation": "negativeCorrelation",
+      "evidence": "In results, read the section \"cAMP signalling attenuates CSE-induced IL-8 release from human ASM cells.\"\nRemember that Epac is an alias of RAPGEF3 (http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:16629)",
+      "citation": {
+        "db": "Other",
+        "db_id": "22363678"
+      },
+      "annotations": {},
+      "source": 29,
+      "target": 22,
+      "key": "d5be955d6a15e04f0fd680de7d6ef7dc"
+    },
+    {
+      "line": 11,
+      "relation": "increases",
+      "evidence": "Cyclooxygenase (COX)-2 and the subsequent production of prostaglandin E2 (PGE2) were also induced by H-Ras",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16721810"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 27,
+      "target": 40,
+      "key": "7170f013f2e8f3b613605ba5d575ba7a"
+    },
+    {
+      "line": 9,
+      "relation": "increases",
+      "evidence": "The recently described cAMP-dependent guanine nucleotide exchange factor (GEF) Epac activates small GTPase Rap1, which results in activation of small GTPase Rac-specific GEFs Tiam1 and Vav2 and Rac-mediated EC barrier protective responses. Our results show that ANP stimulated protein kinase A and the Epac/Rap1/Tiam/Vav/Rac cascade",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18064650"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 30,
+      "target": 22,
+      "key": "797384bdee66972f6d51be0564c21011"
+    },
+    {
+      "line": 30,
+      "relation": "increases",
+      "evidence": "The recently described cAMP-dependent guanine nucleotide exchange factor (GEF) Epac activates small GTPase Rap1, which results in activation of small GTPase Rac-specific GEFs Tiam1 and Vav2 and Rac-mediated EC barrier protective responses. Our results show that ANP stimulated protein kinase A and the Epac/Rap1/Tiam/Vav/Rac cascade",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18064650"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 30,
+      "target": 8,
+      "key": "879451ad49114f3b20b744e2284016ae"
+    },
+    {
+      "line": 30,
+      "relation": "increases",
+      "evidence": "Our results show that, in addition to significant elevation of intracellular cGMP levels, ANP treatment of human pulmonary EC induced time-dependent increases in intracellular cAMP concentrations (Fig. 1A,B) and activation of cAMP-dependent protein kinase (PKA, Fig. 1C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18064650"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 30,
+      "target": 8,
+      "key": "be21e19dde79b0f0beca8816a9d39442"
+    },
+    {
+      "line": 25,
+      "relation": "decreases",
+      "evidence": "Cell-specific prostaglandin synthases convert PGH2 into a series of prostaglandins, including PGI2, PGF2alpha, PGD2 and PGE2 (Fig. 1).   Fig. 1 Legend - Pathway of prostaglandin production. Arachidonic acid is liberated from membranes by phospholipase A2. The cyclooxygenase enzymes (COX-1 and COX-2) produce prostaglandin H2 (PGH2) from arachidonic acid. PGH2 is acted upon by prostaglandin synthases to produce PGI2, PGD2, PGE2 and PGF2alpha. PGD2 is metabolized to 15-deoxy-12,14-PGJ2 (15-d-PGJ2).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11864843"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 39,
+      "target": 0,
+      "key": "848aa79c878fe1e6e0d8b5d1e219725e"
+    },
+    {
+      "line": 15,
+      "relation": "decreases",
+      "evidence": "Cell-specific prostaglandin synthases convert PGH2 into a series of prostaglandins, including PGI2, PGF2alpha, PGD2 and PGE2 (Fig. 1).   Fig. 1 Legend - Pathway of prostaglandin production. Arachidonic acid is liberated from membranes by phospholipase A2. The cyclooxygenase enzymes (COX-1 and COX-2) produce prostaglandin H2 (PGH2) from arachidonic acid. PGH2 is acted upon by prostaglandin synthases to produce PGI2, PGD2, PGE2 and PGF2alpha. PGD2 is metabolized to 15-deoxy-12,14-PGJ2 (15-d-PGJ2).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11864843"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 40,
+      "target": 0,
+      "key": "d83ab01f6d7d4575cf62508130026073"
+    },
+    {
+      "line": 15,
+      "relation": "decreases",
+      "evidence": "FACL4 and COX-2 synergistically inhibit apoptosis by reducing the intracellular level of free arachidonic acid. Here, we report that expression of FACL4 is significantly increased in colon adenocarcinoma",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11731423"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 40,
+      "target": 0,
+      "key": "71927dda87711210e450a4391d2784e1"
+    },
+    {
+      "line": 42,
+      "relation": "increases",
+      "evidence": "The recently described cAMP-dependent guanine nucleotide exchange factor (GEF) Epac activates small GTPase Rap1, which results in activation of small GTPase Rac-specific GEFs Tiam1 and Vav2 and Rac-mediated EC barrier protective responses. Our results show that ANP stimulated protein kinase A and the Epac/Rap1/Tiam/Vav/Rac cascade",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18064650"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 42,
+      "target": 15,
+      "key": "87c02822d140f90990e9e66f44ef7426"
+    },
+    {
+      "line": 42,
+      "relation": "increases",
+      "evidence": "Both PGs caused cAMP-mediated activation of PKA-, Epac/Rap1- and Tiam1/Vav2-dependent pathways of Rac1 activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17493609"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 42,
+      "target": 15,
+      "key": "7f87c3bf7a333be9d4d7a0a35ba8f50d"
+    },
+    {
+      "line": 54,
+      "relation": "increases",
+      "evidence": "The recently described cAMP-dependent guanine nucleotide exchange factor (GEF) Epac activates small GTPase Rap1, which results in activation of small GTPase Rac-specific GEFs Tiam1 and Vav2 and Rac-mediated EC barrier protective responses. Our results show that ANP stimulated protein kinase A and the Epac/Rap1/Tiam/Vav/Rac cascade",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18064650"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 42,
+      "target": 16,
+      "key": "8db710f8a212c4dde3c28785aeb04b54"
+    },
+    {
+      "line": 54,
+      "relation": "increases",
+      "evidence": "Both PGs caused cAMP-mediated activation of PKA-, Epac/Rap1- and Tiam1/Vav2-dependent pathways of Rac1 activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17493609"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 42,
+      "target": 16,
+      "key": "ae63fdb99a898988ab28670275fdbf45"
+    },
+    {
+      "line": 10,
+      "relation": "directlyIncreases",
+      "evidence": "From CST pathway map for GPCR Signaling to ERK.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16890451"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 22,
+      "target": 42,
+      "key": "3ffb6d522ad0d5a881208399db5fbef4"
+    },
+    {
+      "line": 80,
+      "relation": "negativeCorrelation",
+      "evidence": "In results, read the section \"cAMP signalling attenuates CSE-induced IL-8 release from human ASM cells.\"\nRemember that Epac is an alias of RAPGEF3 (http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:16629)",
+      "citation": {
+        "db": "Other",
+        "db_id": "22363678"
+      },
+      "annotations": {},
+      "source": 22,
+      "target": 29,
+      "key": "7d1488243f291e77000a9d7dc676e5d4"
+    },
+    {
+      "line": 8,
+      "relation": "directlyIncreases",
+      "evidence": "Tiam1 and Ras-GRF1 are guanine nucleotide exchange factors (GEFs) that activate the Rac GTPase.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12024021"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 15,
+      "target": 41,
+      "key": "fdc84ccd07f56eb3e6782fcd4d61fd0d"
+    },
+    {
+      "line": 82,
+      "relation": "directlyIncreases",
+      "evidence": "The extraction was prevented when Rac1 was activated to its GTP-bound state by Rac-specific guanine nucleotide exchange factors (GEFs), such as Vav2, Dbl, Tiam1, P-Rex1 and TrioN, and bound by the downstream effector Pak1",
+      "citation": {
+        "db": "Other",
+        "db_id": "25014207"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 16,
+      "target": 41,
+      "key": "6ab7f2de2f0285828be90f4a36156d32"
+    },
+    {
+      "line": 82,
+      "relation": "directlyIncreases",
+      "evidence": "First, we determined that RhoG was regulated by guanine nucleotide exchange factors that also activate Rac and/or Cdc42. Vav2 (which activates RhoA, Rac1, and Cdc42) and to a lesser degree Dbs (which activates RhoA and Cdc42) activated RhoG in vitro.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12376551"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 16,
+      "target": 41,
+      "key": "8469e5dcdee97ea56dd1a2122bd9d616"
+    },
+    {
+      "line": 82,
+      "relation": "directlyIncreases",
+      "evidence": "Vav2 phosphorylation observed in these experiments reflects the activation of Rac-specific Vav2 nucleotide exchange activity (Aghazadeh et al., 2000).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18064650"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 16,
+      "target": 41,
+      "key": "ad1edf1887122c6e05d6b008fb9f820b"
+    },
+    {
+      "line": 78,
+      "relation": "increases",
+      "evidence": "We synthesized a VIP analog that combines mutations that decrease the affinity for the VPAC1 receptor but maintain a high affinity for the VPAC2 receptor with an amino-terminal hexanoylation that increases the affinity for the VPAC2 receptor with a limited decrease in the affinity of the VPAC1 receptor.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15063009"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 18,
+      "target": 19,
+      "key": "292fbdc079891dcae68e9c9953611534"
+    },
+    {
+      "line": 71,
+      "relation": "negativeCorrelation",
+      "evidence": "fibroblasts obtained from patients with COPD maintained inhibitory PGE2 signaling after PGE2 pretreatment. These data identify a PDE4-mediated attenuation of PGE2 inhibitory signaling in normal fibroblasts that appears to be altered in COPD fibroblasts. These alterations may contribute to COPD pathogenesis and could provide novel therapeutic targets.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23043089"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 7,
+      "target": 43,
+      "key": "a0b96af145ab94e3e7af082c8e1ceec6"
+    },
+    {
+      "line": 7,
+      "relation": "directlyIncreases",
+      "evidence": "aken together, these data provide strong evidence that PKA is the enzyme responsible for phosphorylating CREB at S133 in response to PTH and that PKA activity is required for PTH-induced c-fos expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10067851"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 8,
+      "target": 24,
+      "key": "b7530f3b03f337f1a38c47ed34f6ebec"
+    },
+    {
+      "line": 20,
+      "relation": "increases",
+      "evidence": "Both PGs caused cAMP-mediated activation of PKA-, Epac/Rap1- and Tiam1/Vav2-dependent pathways of Rac1 activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17493609"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 8,
+      "target": 41,
+      "key": "935f671b9e495fe513a209190d45779b"
+    },
+    {
+      "line": 76,
+      "relation": "increases",
+      "evidence": "It consists of the Raf protein (MAP3K) that phosphorylates MEK (MAP2K), which in turn phosphorylates ERK (MAPK), the latter influencing transcription of different target genes. (From full text)",
+      "citation": {
+        "db": "Other",
+        "db_id": "21512581"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 9,
+      "target": 6,
+      "key": "db2d55cec70a472c15490226b5e96ddf"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "Moreover, Erbin inhibits the Erk activation by active Ras, while it fails to do so in the presence of active Raf-1. Erbin associates with active Ras, but not inactive Ras nor Raf. Consistently, Erbin interferes with the interaction between Ras and Raf both in vivo and in vitro. Erbin associates with active Ras, but not inactive Ras nor Raf.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12379659"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 10,
+      "target": 9,
+      "key": "5a1a151dcd624d699c12a645fe0545e5"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "Figure 1 | The ErbB signalling network.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11252954"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 10,
+      "target": 9,
+      "key": "94be1ef4c3c066818c7d0665a9fc5f2f"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "Fig.1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15567848"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 10,
+      "target": 9,
+      "key": "79e55c42d886ff191b30e7ce8d82c81f"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "Because Raf binds tightly to the GTP-bound form of Ras but not to the GDP-bound form, such differential affinity can be used to determine the GTP-bound status of Ras.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10542228"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 10,
+      "target": 9,
+      "key": "93cf72fdb40fcce965290a5dae230c48"
+    },
+    {
+      "line": 71,
+      "relation": "negativeCorrelation",
+      "evidence": "fibroblasts obtained from patients with COPD maintained inhibitory PGE2 signaling after PGE2 pretreatment. These data identify a PDE4-mediated attenuation of PGE2 inhibitory signaling in normal fibroblasts that appears to be altered in COPD fibroblasts. These alterations may contribute to COPD pathogenesis and could provide novel therapeutic targets.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23043089"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 43,
+      "target": 7,
+      "key": "c37623416429330521bf5790789e317c"
+    }
+  ]
+}

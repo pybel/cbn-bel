@@ -1,0 +1,2344 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "NK Signaling-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The NK Signaling network depicts the causal mechanisms involved in NK cell activation and the induction of target cell cytolysis in response to upstream signals, including interleukins, TGFB1, IFNs and ITGB2."
+    },
+    "namespace_url": {},
+    "namespace_pattern": {
+      "go": ".*",
+      "fplx": ".*",
+      "hgnc": ".*"
+    },
+    "annotation_url": {},
+    "annotation_pattern": {
+      "cl": ".*"
+    },
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "natural killer cell differentiation",
+        "identifier": "0001779"
+      },
+      "id": "bc94ffeb9f02ef5e36780157b18f157b",
+      "bel": "bp(go:0001779 ! \"natural killer cell differentiation\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "cytolysis",
+        "identifier": "0019835"
+      },
+      "id": "eda3774f2724c712012704f78d069539",
+      "bel": "bp(go:0019835 ! cytolysis)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "natural killer cell activation",
+        "identifier": "0030101"
+      },
+      "id": "408724f5e49a39347cf49fa6394ffc48",
+      "bel": "bp(go:0030101 ! \"natural killer cell activation\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "fplx",
+        "name": "AP1",
+        "identifier": "AP1"
+      },
+      "id": "0083d297c265cb2ade870cd66cc5abb0",
+      "bel": "complex(fplx:AP1 ! AP1)"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "fplx",
+        "name": "PI3K",
+        "identifier": "PI3K"
+      },
+      "id": "2de818cb7bd5f3eacdbb22c78861bdd8",
+      "bel": "complex(fplx:PI3K ! PI3K)"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "IL12A",
+            "identifier": "5969"
+          },
+          "id": "6051b00924e029743acb4fb37328917c",
+          "bel": "p(hgnc:5969 ! IL12A)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "IL12B",
+            "identifier": "5970"
+          },
+          "id": "ccb0be98e961d2a673a4b5f9bc55b587",
+          "bel": "p(hgnc:5970 ! IL12B)"
+        }
+      ],
+      "id": "48741cb4e3d769f71a801b7ff04ab4e2",
+      "bel": "complex(p(hgnc:5969 ! IL12A), p(hgnc:5970 ! IL12B))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "PI3K_p110",
+        "identifier": "PI3K_p110"
+      },
+      "id": "8b79e969188c2874eba3fa100a633e65",
+      "bel": "p(fplx:\"PI3K_p110\" ! \"PI3K_p110\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "JNK",
+        "identifier": "JNK"
+      },
+      "id": "2f6658f9c547f93c3f37c98276d1a287",
+      "bel": "p(fplx:JNK ! JNK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "MEK",
+        "identifier": "MEK"
+      },
+      "id": "8812524d09d27ead405ac6981c8205a2",
+      "bel": "p(fplx:MEK ! MEK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "STAT5",
+        "identifier": "STAT5"
+      },
+      "id": "552e31c88ae63b744dbd68c35c21cb41",
+      "bel": "p(fplx:STAT5 ! STAT5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CX3CL1",
+        "identifier": "10647"
+      },
+      "id": "c1eb12de9280eafe7408108ab1f8f369",
+      "bel": "p(hgnc:10647 ! CX3CL1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "STAT1",
+        "identifier": "11362"
+      },
+      "id": "f7d1b847944e3df57e7f145af8cfee1e",
+      "bel": "p(hgnc:11362 ! STAT1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "STAT3",
+        "identifier": "11364"
+      },
+      "id": "16cbb4ba8a8e57b2fe2119d9545dd71a",
+      "bel": "p(hgnc:11364 ! STAT3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TGFB1",
+        "identifier": "11766"
+      },
+      "id": "576a88bfbb29664cc1307c6239712c90",
+      "bel": "p(hgnc:11766 ! TGFB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TRAF1",
+        "identifier": "12031"
+      },
+      "id": "15622dd005f156db0adc271b05d81f70",
+      "bel": "p(hgnc:12031 ! TRAF1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "VAV1",
+        "identifier": "12657"
+      },
+      "id": "35f9c19648c1ebddc0e022f5f5f0b0c1",
+      "bel": "p(hgnc:12657 ! VAV1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "C3",
+        "identifier": "1318"
+      },
+      "id": "6d8e8d2f843fb3570958cc04bf44d0d3",
+      "bel": "p(hgnc:1318 ! C3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CASP3",
+        "identifier": "1504"
+      },
+      "id": "573a004b2df2894f9eae97d1d2539176",
+      "bel": "p(hgnc:1504 ! CASP3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "KLRK1",
+        "identifier": "18788"
+      },
+      "id": "4e4365c9c245860d3e726882f92d1c56",
+      "bel": "p(hgnc:18788 ! KLRK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "FCGR3A",
+        "identifier": "3619"
+      },
+      "id": "c45d674ea96e118dc5ae70e557764d05",
+      "bel": "p(hgnc:3619 ! FCGR3A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GAS6",
+        "identifier": "4168"
+      },
+      "id": "0a0c8f2c8f77d0a7d1e7ca3dd9c96400",
+      "bel": "p(hgnc:4168 ! GAS6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GZMB",
+        "identifier": "4709"
+      },
+      "id": "2952e854a55f3534add483edf9ef9ce4",
+      "bel": "p(hgnc:4709 ! GZMB)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ICAM1",
+        "identifier": "5344"
+      },
+      "id": "c5face8b2f6d500a3c2f01a6a4557a4a",
+      "bel": "p(hgnc:5344 ! ICAM1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IFNA1",
+        "identifier": "5417"
+      },
+      "id": "8a957fe83c75c42f37a4249758c1a492",
+      "bel": "p(hgnc:5417 ! IFNA1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IFNB1",
+        "identifier": "5434"
+      },
+      "id": "73e74c29ec966f5c26691f7c34bd80c4",
+      "bel": "p(hgnc:5434 ! IFNB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IFNG",
+        "identifier": "5438"
+      },
+      "id": "8d5ef5447b27e0c7ddc305f191ba0bed",
+      "bel": "p(hgnc:5438 ! IFNG)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IGF2",
+        "identifier": "5466"
+      },
+      "id": "06592276208e0512443680edf30ead22",
+      "bel": "p(hgnc:5466 ! IGF2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "BIRC3",
+        "identifier": "591"
+      },
+      "id": "dfc094fe80294db95dd4ba660e20fbb5",
+      "bel": "p(hgnc:591 ! BIRC3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL12A",
+        "identifier": "5969"
+      },
+      "id": "6051b00924e029743acb4fb37328917c",
+      "bel": "p(hgnc:5969 ! IL12A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL12B",
+        "identifier": "5970"
+      },
+      "id": "ccb0be98e961d2a673a4b5f9bc55b587",
+      "bel": "p(hgnc:5970 ! IL12B)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL15",
+        "identifier": "5977"
+      },
+      "id": "716e2b97037ca2f5fb8aeeaaf64e78dc",
+      "bel": "p(hgnc:5977 ! IL15)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL18",
+        "identifier": "5986"
+      },
+      "id": "e8012500bdeed5ae5d828514031acbf4",
+      "bel": "p(hgnc:5986 ! IL18)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL2",
+        "identifier": "6001"
+      },
+      "id": "03965642c6a230d83212d22d0e2e4533",
+      "bel": "p(hgnc:6001 ! IL2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL4",
+        "identifier": "6014"
+      },
+      "id": "b2dc2b588b6dc1976273a46353ae2435",
+      "bel": "p(hgnc:6014 ! IL4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL7",
+        "identifier": "6023"
+      },
+      "id": "2851dbcd669805ea2efbdbe6504fa1e4",
+      "bel": "p(hgnc:6023 ! IL7)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IRF1",
+        "identifier": "6116"
+      },
+      "id": "6ea817f34e5b8dda26e41e8126d9fbc3",
+      "bel": "p(hgnc:6116 ! IRF1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ITGB2",
+        "identifier": "6155"
+      },
+      "id": "39cf77ac4da138246fe2924a3f1dd106",
+      "bel": "p(hgnc:6155 ! ITGB2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "JAK2",
+        "identifier": "6192"
+      },
+      "id": "b5b3a121a985286d7064022b07a0a559",
+      "bel": "p(hgnc:6192 ! JAK2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "JUN",
+        "identifier": "6204"
+      },
+      "id": "fbc362581b3fc676170a17f33a024a1a",
+      "bel": "p(hgnc:6204 ! JUN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MAP2K1",
+        "identifier": "6840"
+      },
+      "id": "1887028bf690a022109acb77071c0cf8",
+      "bel": "p(hgnc:6840 ! MAP2K1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MAPK1",
+        "identifier": "6871"
+      },
+      "id": "e0c0225b558aed46aa00177aa93224b5",
+      "bel": "p(hgnc:6871 ! MAPK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MAPK3",
+        "identifier": "6877"
+      },
+      "id": "6dd741794d73ab1e916725d3d79849b7",
+      "bel": "p(hgnc:6877 ! MAPK3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MICA",
+        "identifier": "7090"
+      },
+      "id": "d53cd7fa6e4fdccf5383f5aad0c4086b",
+      "bel": "p(hgnc:7090 ! MICA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MICB",
+        "identifier": "7091"
+      },
+      "id": "12c6e10282b06b1ee312e7185b55e193",
+      "bel": "p(hgnc:7091 ! MICB)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PAK1",
+        "identifier": "8590"
+      },
+      "id": "82810c055a127b23364af6817718095c",
+      "bel": "p(hgnc:8590 ! PAK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "AXL",
+        "identifier": "905"
+      },
+      "id": "e2b5c1ae70ebebcd9539503cc3208d3b",
+      "bel": "p(hgnc:905 ! AXL)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PRF1",
+        "identifier": "9360"
+      },
+      "id": "06f6afd18b9a1f286bdee126eaef0499",
+      "bel": "p(hgnc:9360 ! PRF1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RAC1",
+        "identifier": "9801"
+      },
+      "id": "1833ca3c80fe75acb1c59c3ffc45f2ec",
+      "bel": "p(hgnc:9801 ! RAC1)"
+    }
+  ],
+  "links": [
+    {
+      "line": 71,
+      "relation": "increases",
+      "evidence": "Slaying the Trojan horse: Natural killer cells exhibit robust anti-HIV-1 antibody-dependent activation and cytolysis against allogeneic T-cells.\n\nWe found that NK cells are robustly activated in an anti-HIV-1 Ab-dependent manner against allogeneic targets, and that tested target cells are subject to Ab-dependent cytolysis.",
+      "citation": {
+        "db": "Other",
+        "db_id": "25320293"
+      },
+      "annotations": {},
+      "source": 2,
+      "target": 1,
+      "key": "425f0646f86c3270fd0a86af04327dac"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 3,
+      "target": 38,
+      "key": "4b7eb9e40418a6dc10ee3da22aaa1f82"
+    },
+    {
+      "relation": "partOf",
+      "source": 28,
+      "target": 5,
+      "key": "2ab6f7aa8f053a0329c3d0f1dbc66d3d"
+    },
+    {
+      "relation": "partOf",
+      "source": 29,
+      "target": 5,
+      "key": "258cefef78c78bf2a6729c6f24297a1f"
+    },
+    {
+      "line": 1,
+      "relation": "increases",
+      "evidence": "Blocking the Axl-Gas6 interaction with a soluble Axl fusion protein (Axl-Fc) or the vitamin K inhibitor warfarin significantly diminished the absolute number and percentage of CD3(-)CD56(+) NK cells derived from human CD34(+) HPCs cultured in the presence of IL-15, probably resulting in part from reduced phosphorylation of STAT5",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18840707"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 45,
+      "target": 9,
+      "key": "ee69c53d2ef21d3bb7a7dd0c36afb869"
+    },
+    {
+      "line": 33,
+      "relation": "directlyDecreases",
+      "evidence": "Table 1 Apparent inhibitory constants (KI,app in M) for IAPs against selected human caspases",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12042762"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 27,
+      "target": 17,
+      "key": "6d28e3084afefde87bb9ec89c8b1bc14"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "In WT mice CH induced an approximate 2-fold increase in IL-6 mRNA at three weeks that was abrogated in C3 -/- mice... We observed increases in lung intracellular adhesion molecule 1 (ICAM-1)...the increase in ICAM-1 was abrogated in C3 -/- mice (Fig. 7).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22194859"
+      },
+      "annotations": {},
+      "source": 16,
+      "target": 22,
+      "key": "0c94908d88f6481a89d4d5b207a646ee"
+    },
+    {
+      "line": 72,
+      "relation": "increases",
+      "evidence": "We show that CX3CL1 promotes NK activation by mDCs...In contrast, CX3CL1 neutralization led to killer cell immunoglobulin-like receptor (KIR) phosphorylation and SHP-1 recruitment in YTS(KIR2DL1) cultured with HLA-Cw4 mDCs. Moreover, CX3CL1 neutralization promoted dispersion of lipid rafts and the formation of a multiprotein complex required for cytoskeletal rearrangements in YTS NK cells. These findings point to a pivotal role of CX3CL1 in the activation of resting NK cells by mature DCs.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18682600"
+      },
+      "annotations": {
+        "cl": {
+          "0000451": true
+        }
+      },
+      "source": 10,
+      "target": 2,
+      "key": "c8d7b2ffbe7dec98ac1c10a0160d620f"
+    },
+    {
+      "line": 30,
+      "relation": "increases",
+      "evidence": "We found that NK cells produce several cytokines and chemokines related to an allergic reaction upon IgE stimulation. Furthermore, NK cells exhibited cytotoxicity against IgE-coated target cells in an Fc gamma RIII-dependent manner.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12626560"
+      },
+      "annotations": {},
+      "source": 19,
+      "target": 2,
+      "key": "e959e549b2ec8bad15f30ff5204ba278"
+    },
+    {
+      "line": 19,
+      "relation": "directlyIncreases",
+      "evidence": "Human Gas6 was recently shown to act as a ligand for both human Rse and human Ax1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8621659"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 20,
+      "target": 45,
+      "key": "36a94d5154e3734723a9e3f65ed08e1b"
+    },
+    {
+      "line": 19,
+      "relation": "directlyIncreases",
+      "evidence": "Blocking the Axl-Gas6 interaction with a soluble Axl fusion protein (Axl-Fc) or the vitamin K inhibitor warfarin significantly diminished the absolute number and percentage of CD3(-)CD56(+) NK cells derived from human CD34(+) HPCs cultured in the presence of IL-15, probably resulting in part from reduced phosphorylation of STAT5",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18840707"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 20,
+      "target": 45,
+      "key": "0fb103517048783757306cc64d291880"
+    },
+    {
+      "line": 19,
+      "relation": "directlyIncreases",
+      "evidence": "The current study evaluated the contribution of each of the three known Gas6 receptors (Axl, Sky and Mer) in human and mouse platelet function.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15733062"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 20,
+      "target": 45,
+      "key": "3b3d4c49d64a83280843ae8b8a6dc2e6"
+    },
+    {
+      "line": 76,
+      "relation": "increases",
+      "evidence": "the same agonists triggered a sustained activation of the ?2 integrin Mac-1 for its ligand intercellular adhesion molecule (ICAM) 1,",
+      "citation": {
+        "db": "Other",
+        "db_id": "12545245"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 22,
+      "target": 36,
+      "key": "89cdb75e689696aeadbaa5ac871846e4"
+    },
+    {
+      "line": 76,
+      "relation": "increases",
+      "evidence": "the same agonists triggered a sustained activation of the ?2 integrin Mac-1 for its ligand intercellular adhesion molecule (ICAM) 1,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12545245"
+      },
+      "annotations": {
+        "cl": {
+          "0000771": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 22,
+      "target": 36,
+      "key": "ad92ce1754cd76829a7e0baa47c69961"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "IL-2 induced less STAT1 alpha activation and IFN-alpha induced greater STAT5 activation in NK3.3 cells compared with preactivated primary NK cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8683106"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 23,
+      "target": 9,
+      "key": "0e7885dc64481535ba67716d2aed6e73"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "(see introduction) STAT3 and STAT5 are strongly activated by type I IFNs",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15634877"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 23,
+      "target": 9,
+      "key": "f210a697b45f9a2969b7013ca45c0565"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "In vitro, cytolytic activity in IRF-1-deficient NK cells remained defective after stimulation with IFN-beta, IL-2, and IL-12.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8920893"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 24,
+      "target": 35,
+      "key": "3382a4d5fdc2bd1ece78736f3cb89075"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "At a 2 h time point IFN-B priming alone induced some binding of IRF1 and IRF7 to the promoter ISRE site and this binding was not further improved by TLR ligand stimulation (Fig. 6A).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21040977"
+      },
+      "annotations": {
+        "cl": {
+          "0000451": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 24,
+      "target": 35,
+      "key": "929dd9a27c49ebc70318eceab4b49d9e"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "The apoptosis induced by IFN-beta in EW-7 and COH cell lines appeared to be mediated by IRF-1 and involved the activation of caspase-7. Ectopic expression of IRF-1 induced apoptosis in all four cell lines which correlated with the activation of caspase-7 and with the downregulation of the Bcl-2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10918594"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 24,
+      "target": 35,
+      "key": "2efbe00a47e98264f19766acc3ffd4a5"
+    },
+    {
+      "line": 4,
+      "relation": "increases",
+      "evidence": "TABLE 1. Cytokine/chemokines, their receptors, and functions.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17615396"
+      },
+      "annotations": {},
+      "source": 25,
+      "target": 2,
+      "key": "22204797034f4e293ad52f61128da7b1"
+    },
+    {
+      "line": 75,
+      "relation": "increases",
+      "evidence": "The protein abundance of IGF2 increases the biological process of GO:cytolysis.",
+      "citation": {
+        "db": "Other",
+        "db_id": "2220391"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "source": 26,
+      "target": 1,
+      "key": "d932dd9ade267a335c0c3b9c3dd0ae68"
+    },
+    {
+      "line": 75,
+      "relation": "increases",
+      "evidence": "IGF-II was found to stimulate the cytotoxic activity of natural killer cells (as does interleukin 2).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "2220391"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "source": 26,
+      "target": 1,
+      "key": "e7c63b0fc9b283f838afa5c60ab659ff"
+    },
+    {
+      "line": 0,
+      "relation": "increases",
+      "evidence": "TABLE 1. Cytokine/chemokines, their receptors, and functions.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17615396"
+      },
+      "annotations": {},
+      "source": 30,
+      "target": 2,
+      "key": "c83e71870a2fbf47a262d326f23d4567"
+    },
+    {
+      "line": 36,
+      "relation": "increases",
+      "evidence": "We report here that IL-15 activates peripheral blood mononuclear cells to lyse Cryptosporidium-infected epithelial cells in a dose-dependent manner. Lysis was due to CD3(-)CD16(+)CD56+ cells (i.e., natural killer [NK] cells).......Furthermore, flow cytometry revealed that IL-15 increased expression of the activation receptor NKG2D on NK cells, particularly among the CD16Hi cytolytically active cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16136475"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "source": 30,
+      "target": 18,
+      "key": "f782de75e8c1e0b1287ead8a92358802"
+    },
+    {
+      "line": 37,
+      "relation": "increases",
+      "evidence": "Blocking the Axl-Gas6 interaction with a soluble Axl fusion protein (Axl-Fc) or the vitamin K inhibitor warfarin significantly diminished the absolute number and percentage of CD3(-)CD56(+) NK cells derived from human CD34(+) HPCs cultured in the presence of IL-15, probably resulting in part from reduced phosphorylation of STAT5",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18840707"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 30,
+      "target": 9,
+      "key": "6d93df024af5beabd35cb68757ab25eb"
+    },
+    {
+      "line": 37,
+      "relation": "increases",
+      "evidence": "Activation of Stat5 by cytokines that share a common gamma receptor subunit, IL-2, IL-7, and IL-15",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9973378"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 30,
+      "target": 9,
+      "key": "af6b4d18110fc5cc9b2ad053be48bd93"
+    },
+    {
+      "line": 9,
+      "relation": "increases",
+      "evidence": "IL-2/IL-18 strongly prevented the TGF-beta-induced NKG2D down-regulation in NK cells via the JNK pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17070508"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 31,
+      "target": 7,
+      "key": "de4f5c548b764e71edba455909851c0b"
+    },
+    {
+      "line": 28,
+      "relation": "increases",
+      "evidence": "Using phosphoinositide 3-kinase (PI3-kinase) inhibitor LY294002 and Src inhibitor PP2, we show that interleukin (IL)-18-induced ERK1/2 activation is Src kinase-dependent.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12105209"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 31,
+      "target": 40,
+      "key": "cac12c7b02b2484b775339b9b9231cc6"
+    },
+    {
+      "line": 28,
+      "relation": "increases",
+      "evidence": "Stimulation by IL-18 strongly enhanced tyrosine phosphorylation of STAT3 and of the mitogen-activated protein kinases (MAPK) p44erk-1and p42erk-2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10903731"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 31,
+      "target": 40,
+      "key": "2689ff86d6ab8fee67c9b0d82e214148"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "TABLE 1. Cytokine/chemokines, their receptors, and functions.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17615396"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "source": 31,
+      "target": 2,
+      "key": "8b89ec5f63f8f9792f2862f113804e10"
+    },
+    {
+      "line": 64,
+      "relation": "increases",
+      "evidence": "Stimulation by IL-18 strongly enhanced tyrosine phosphorylation of STAT3 and of the mitogen-activated protein kinases (MAPK) p44erk-1and p42erk-2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10903731"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 31,
+      "target": 41,
+      "key": "2d86db62e0e8d991f4cf16d7505f291a"
+    },
+    {
+      "line": 64,
+      "relation": "increases",
+      "evidence": "Using phosphoinositide 3-kinase (PI3-kinase) inhibitor LY294002 and Src inhibitor PP2, we show that interleukin (IL)-18-induced ERK1/2 activation is Src kinase-dependent.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12105209"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 31,
+      "target": 41,
+      "key": "f9217aa5ff2c6098fa1328d65c72add6"
+    },
+    {
+      "line": 20,
+      "relation": "increases",
+      "evidence": "IL-2/IL-18 strongly prevented the TGF-beta-induced NKG2D down-regulation in NK cells via the JNK pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17070508"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 32,
+      "target": 7,
+      "key": "7116cae8b3c82c2cc6c4d41a4f2e8cab"
+    },
+    {
+      "line": 46,
+      "relation": "increases",
+      "evidence": "These results reveal selective signaling differences between NK cells and T lymphocytes; in NK cells, the MKK/ERK pathway and not p38 MAPK plays a critical positive regulatory role during activation by IL-2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10843677"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 32,
+      "target": 39,
+      "key": "f3343539e779e2bd325fd4902b511430"
+    },
+    {
+      "line": 68,
+      "relation": "increases",
+      "evidence": "In vitro, cytolytic activity in IRF-1-deficient NK cells remained defective after stimulation with IFN-beta, IL-2, and IL-12.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8920893"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 32,
+      "target": 35,
+      "key": "3255243c105711c62f2b7740fbcc7661"
+    },
+    {
+      "line": 68,
+      "relation": "increases",
+      "evidence": "We also report that IL-12, as well as IL-2, induced IRF-1 gene expression",
+      "citation": {
+        "db": "Other",
+        "db_id": "10358173"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 32,
+      "target": 35,
+      "key": "e6457fb3fbe5747376d20e6f513ef8ad"
+    },
+    {
+      "line": 68,
+      "relation": "increases",
+      "evidence": "IL-12 Induces IFN Regulating Factor-1 (IRF-1) Gene Expression in Human NK and T Cells",
+      "citation": {
+        "db": "Other",
+        "db_id": "10358173"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 32,
+      "target": 35,
+      "key": "bb2cdc68f6910a9d60ba9bdd075c1fd1"
+    },
+    {
+      "line": 10,
+      "relation": "increases",
+      "evidence": "STAT3 is activated by many interleukins, IFNg,c-Kit, SCF, GCSF and EGF (for a review, see Heinrich et al., 2003) similar to STAT5, which is activated in particular by IL-2 and IL-7, Prolactin, G-CSF and GM-CSF.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15694833"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 34,
+      "target": 9,
+      "key": "b55525f9aa3ed4e260a3817ce2feaaa4"
+    },
+    {
+      "line": 10,
+      "relation": "increases",
+      "evidence": "Activation of Stat5 by cytokines that share a common gamma receptor subunit, IL-2, IL-7, and IL-15",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9973378"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 34,
+      "target": 9,
+      "key": "c14e718e8b6e0b95513861960d0a0aeb"
+    },
+    {
+      "line": 18,
+      "relation": "increases",
+      "evidence": "IL-7 has been demonstrated to augment the cytolytic activity of cytotoxic T cells (CTL) and natural killer (NK) cells against various neoplastic targets including melanoma cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8840152"
+      },
+      "annotations": {},
+      "source": 34,
+      "target": 2,
+      "key": "9cbb23dd80eb549105e8e6ae26539cf1"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "In vitro, cytolytic activity in IRF-1-deficient NK cells remained defective after stimulation with IFN-beta, IL-2, and IL-12.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8920893"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 35,
+      "target": 1,
+      "key": "925fb1d48976460f9b621d5c0d403ca2"
+    },
+    {
+      "line": 67,
+      "relation": "increases",
+      "evidence": "LFA-1 induced the activation of src family kinases, Vav1 and p44/42 mitogen-activated protein kinase (MAPK), in human CD56+ NK cells",
+      "citation": {
+        "db": "Other",
+        "db_id": "15113754"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 36,
+      "target": 15,
+      "key": "8911a758dd6fee447910ed779d86d003"
+    },
+    {
+      "line": 67,
+      "relation": "increases",
+      "evidence": "binding of LFA-1 to ICAM-1 on target cells may initiate an early signaling cascade in NK cells through activation of Vav1,",
+      "citation": {
+        "db": "Other",
+        "db_id": "12885870"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 36,
+      "target": 15,
+      "key": "bf7083359c29c2a634f32b8fc5be2ab4"
+    },
+    {
+      "line": 11,
+      "relation": "directlyIncreases",
+      "evidence": "Here we report a novel signaling pathway whereby RhoA can efficiently modulate Stat3 transcriptional activity by inducing its simultaneous tyrosine and serine phosphorylation. Tyrosine phosphorylation is exerted via a member of the Src family of kinases (SrcFK) and JAK2, whereas the JNK pathway mediates serine phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11598209"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 37,
+      "target": 12,
+      "key": "b352ba6611408bc2f0ce63c572130ca6"
+    },
+    {
+      "line": 11,
+      "relation": "directlyIncreases",
+      "evidence": "ligand-receptor binding activated STAT3, STAT5 and STAT6",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12020765"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 37,
+      "target": 12,
+      "key": "f57f8b29e47fa6a72dd928fb90ec22b6"
+    },
+    {
+      "line": 24,
+      "relation": "increases",
+      "evidence": "We report here that IL-15 activates peripheral blood mononuclear cells to lyse Cryptosporidium-infected epithelial cells in a dose-dependent manner. Lysis was due to CD3(-)CD16(+)CD56+ cells (i.e., natural killer [NK] cells).......Furthermore, flow cytometry revealed that IL-15 increased expression of the activation receptor NKG2D on NK cells, particularly among the CD16Hi cytolytically active cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16136475"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 18,
+      "target": 1,
+      "key": "8bacd3469bdad24bcd6e0599b2ae24b4"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "in embryonic kidney cells expressing full-length DCC, NTN1 causes increased transient phosphorylation and activity of ERK1 and ERK2 but not of JNK1, JNK2 or MAPK14 this phosphorylation was mediated by MAP2K1 (aka MEK1) and/or MAP2K2 (aka MEK2)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11986622"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 41,
+      "key": "f3af6108914b20d7593f4b14760a24e6"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "To elucidate the role of MAPKs in keratinocyte differentiation, activation of ERK, JNK, and p38 in response to stimulation with extracellular calcium was analyzed. We provide evidence that calcium-induced differentiation of keratinocytes is associated with rapid and transient activation of the Raf/MEK/ERK pathway. Stimulation of keratinocytes with extracellular calcium resulted in activation of Raf isozymes and their downstream effector ERK within 10-15 min, but did not increase JNK or p38 activity",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11018025"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 41,
+      "key": "d922b96f447e1809aa472d84f0318239"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "In this paper, we present a comprehensive pathway map of EGFR signaling and other related pathways. The map reveals that the overall architecture of the pathway is a bow-tie (or hourglass) structure with several feedback loops.  See figure 2: The bow-tie architecture of the EGFR signaling pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16729045"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 41,
+      "key": "8126b20243f4ebc248af2663e6425fbe"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "For comparison, ElkC was also phosphorylated using recombinant ERK1 that had been activated by phosphorylation with a constitutively active mutant of the MAPK/ERK kinase MKK1 [23].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8548291"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 41,
+      "key": "a8921a642fd5f9603ceb3d96314400db"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "Finally, Ark-mediated repression was significantly attenuated by a dominant negative MEF2C, whereas repression induced by constitutively active Rac was unaffected, indicating that MEF2 proteins are not targets of the Ark -- Rac -- MEK -- ERK cascade.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12138087"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 41,
+      "key": "447574e52270ed37895e0846cfb4b3db"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "The activated GST-MEK1 was then used to activate the purified recombinant extracellular signal-regulated kinase 1, whose activity was measured by the [32P-g]ATP incorporation into MBP, an extracellular signal-regulated kinase 1 substrate.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8621729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 41,
+      "key": "62e072f6811dcd2ff3fc964f25ab31c9"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "Once activated, Raf-1 phosphorylates serines in the catalytic sites of MKK/MEK [345,367]. MKK1/MEK1 and MKK2/MEK2 activate members of the MAP kinase family (ERK-1/ERK-2),",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10699758"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 41,
+      "key": "a58d1bc65c758138ffae93936c891e12"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "Fig.1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15567848"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 41,
+      "key": "b9ee8bc01fc262afd45adeb8d18a4ef1"
+    },
+    {
+      "line": 52,
+      "relation": "directlyIncreases",
+      "evidence": "Raf-1 phosphorylates and activates MEK-1, a kinase that activates the extracellular signal regulated kinases (ERK)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10490027"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 41,
+      "key": "df62c8239cd57483f3271b4b05b3a004"
+    },
+    {
+      "line": 53,
+      "relation": "directlyIncreases",
+      "evidence": "To elucidate the role of MAPKs in keratinocyte differentiation, activation of ERK, JNK, and p38 in response to stimulation with extracellular calcium was analyzed. We provide evidence that calcium-induced differentiation of keratinocytes is associated with rapid and transient activation of the Raf/MEK/ERK pathway. Stimulation of keratinocytes with extracellular calcium resulted in activation of Raf isozymes and their downstream effector ERK within 10-15 min, but did not increase JNK or p38 activity",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11018025"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 40,
+      "key": "67d0ba0ed5c1c4b162025f0d8fe721f5"
+    },
+    {
+      "line": 53,
+      "relation": "directlyIncreases",
+      "evidence": "Finally, Ark-mediated repression was significantly attenuated by a dominant negative MEF2C, whereas repression induced by constitutively active Rac was unaffected, indicating that MEF2 proteins are not targets of the Ark -- Rac -- MEK -- ERK cascade.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12138087"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 40,
+      "key": "507dcb848745de08413f66adcfae421d"
+    },
+    {
+      "line": 53,
+      "relation": "directlyIncreases",
+      "evidence": "In this paper, we present a comprehensive pathway map of EGFR signaling and other related pathways. The map reveals that the overall architecture of the pathway is a bow-tie (or hourglass) structure with several feedback loops.  See figure 2: The bow-tie architecture of the EGFR signaling pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16729045"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 40,
+      "key": "31619e08d3bc3593268f44fbaf5de8ab"
+    },
+    {
+      "line": 53,
+      "relation": "directlyIncreases",
+      "evidence": "Once activated, Raf-1 phosphorylates serines in the catalytic sites of MKK/MEK [345,367]. MKK1/MEK1 and MKK2/MEK2 activate members of the MAP kinase family (ERK-1/ERK-2),",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10699758"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 40,
+      "key": "5acdd938e7a99c5b7647226c68463d68"
+    },
+    {
+      "line": 53,
+      "relation": "directlyIncreases",
+      "evidence": "in embryonic kidney cells expressing full-length DCC, NTN1 causes increased transient phosphorylation and activity of ERK1 and ERK2 but not of JNK1, JNK2 or MAPK14 this phosphorylation was mediated by MAP2K1 (aka MEK1) and/or MAP2K2 (aka MEK2)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11986622"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 40,
+      "key": "f5c4da05144139c4ae0f136b989021f3"
+    },
+    {
+      "line": 53,
+      "relation": "directlyIncreases",
+      "evidence": "The dual phosphorylation of Thr-183 and Tyr-185 in ERK2 is catalyzed by MAPK/ERK kinase 1 (MEK1).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12082107"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 40,
+      "key": "36d314eeb38b6de6b9f9a00062e231e1"
+    },
+    {
+      "line": 53,
+      "relation": "directlyIncreases",
+      "evidence": "Fig.1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15567848"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 40,
+      "key": "f8d807e605c608c48f7c33dc2404795c"
+    },
+    {
+      "line": 53,
+      "relation": "directlyIncreases",
+      "evidence": "Raf-1 phosphorylates and activates MEK-1, a kinase that activates the extracellular signal regulated kinases (ERK)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10490027"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 39,
+      "target": 40,
+      "key": "acfdd9c03e1b93e4fee887dca0a00c31"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "MAPK activation appears to play a prominent role in IL-18 signaling, being involved in transcription and translation of IL-18-induced IFN-gamma mRNA and IL-18-induced cytolytic effects.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10903731"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 40,
+      "target": 25,
+      "key": "e38b84369f130b2be8213e9a010e411a"
+    },
+    {
+      "line": 48,
+      "relation": "increases",
+      "evidence": "MAPK activation appears to play a prominent role in IL-18 signaling, being involved in transcription and translation of IL-18-induced IFN-gamma mRNA and IL-18-induced cytolytic effects.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10903731"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 40,
+      "target": 1,
+      "key": "b4c273c0a21aea9446abf286a7092e11"
+    },
+    {
+      "line": 48,
+      "relation": "increases",
+      "evidence": "These results document a specific PI3K-->Rac1-->PAK1-->MEK-->ERK pathway in NK cells that effects lysis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11062502"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 40,
+      "target": 1,
+      "key": "5ed3fae6513a9e9a5babfe2c0f32b976"
+    },
+    {
+      "line": 12,
+      "relation": "increases",
+      "evidence": "We propose that the FGF-1-induced signaling pathway that leads to promatrilysin expression is ERK-dependent and leads to phosphorylation of Ser-727 on STAT3, phosphorylated STAT3, then binds and transactivates the matrilysin promoter",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11922392"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 41,
+      "target": 12,
+      "key": "b7a2a7b041790160eb5a176da357522c"
+    },
+    {
+      "line": 23,
+      "relation": "increases",
+      "evidence": "MAPK activation appears to play a prominent role in IL-18 signaling, being involved in transcription and translation of IL-18-induced IFN-gamma mRNA and IL-18-induced cytolytic effects.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10903731"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 41,
+      "target": 1,
+      "key": "5516c75dae0e218f07f8d2d8b8d94762"
+    },
+    {
+      "line": 23,
+      "relation": "increases",
+      "evidence": "These results document a specific PI3K-->Rac1-->PAK1-->MEK-->ERK pathway in NK cells that effects lysis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11062502"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 41,
+      "target": 1,
+      "key": "0a9aa813b36ce70058c1bbb2ff5de600"
+    },
+    {
+      "line": 74,
+      "relation": "increases",
+      "evidence": "“...diminished extracellular signal-regulated kinase 1/2, p65RelA, signal transducer and activator of transduction 4 (STAT4), and STAT5 activity in monokine-stimulated NK cells, potentially contributing to the reduction in IFN-γ gene expression.”",
+      "citation": {
+        "db": "Other",
+        "db_id": "1787567"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 41,
+      "target": 25,
+      "key": "5dc9df40c5ee853ce70e1e52d7d22fb8"
+    },
+    {
+      "line": 74,
+      "relation": "increases",
+      "evidence": "MAPK activation appears to play a prominent role in IL-18 signaling, being involved in transcription and translation of IL-18-induced IFN-gamma mRNA and IL-18-induced cytolytic effects.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10903731"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 41,
+      "target": 25,
+      "key": "40b7c2a46ff54c99f3cea8c949a983bc"
+    },
+    {
+      "line": 70,
+      "relation": "directlyIncreases",
+      "evidence": "Major histocompatibility complex class I-related molecules A and B (MICA and MICB), ligands for NKG2D, were increased after infection of epithelial cell lines and human ileal tissue",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16136475"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 42,
+      "target": 18,
+      "key": "7001940c28ef3cc6fa31dfc61b1624e6"
+    },
+    {
+      "line": 73,
+      "relation": "directlyIncreases",
+      "evidence": "Major histocompatibility complex class I-related molecules A and B (MICA and MICB), ligands for NKG2D, were increased after infection of epithelial cell lines and human ileal tissue. These data suggest that IL-15 has an important role in activating an NK cell-mediated pathway that leads to the elimination of intracellular protozoans from the intestines, which is a previously unrecognized feature of NK cell function.",
+      "citation": {
+        "db": "Other",
+        "db_id": "16136475"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 43,
+      "target": 18,
+      "key": "b2f9114e69d2efa11012dd84b5d4894a"
+    },
+    {
+      "line": 73,
+      "relation": "directlyIncreases",
+      "evidence": "Major histocompatibility complex class I-related molecules A and B (MICA and MICB), ligands for NKG2D, were increased after infection of epithelial cell lines and human ileal tissue",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16136475"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 43,
+      "target": 18,
+      "key": "6aae1972c141674183458be7c36e5e3a"
+    },
+    {
+      "line": 17,
+      "relation": "directlyIncreases",
+      "evidence": "Activated, GTP-bound Cdc42, Rac1, and Rac2 bind to the p21-binding domain (PBD) of PAK1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15169870"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 47,
+      "target": 44,
+      "key": "0e5a8df322f5b5f12b1e993567b2efc0"
+    },
+    {
+      "line": 69,
+      "relation": "increases",
+      "evidence": "NK cell IFN-gamma production was dependent on distinct signals mediated by the IL-21R and the FcR and was abrogated in STAT1-deficient NK cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16785506"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "source": 11,
+      "target": 25,
+      "key": "64c76c8722ab02a86db6fa4d436caa4b"
+    },
+    {
+      "line": 15,
+      "relation": "increases",
+      "evidence": "IL-2/IL-18 strongly prevented the TGF-beta-induced NKG2D down-regulation in NK cells via the JNK pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17070508"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 7,
+      "target": 18,
+      "key": "570408c1a451422674aad952c58e2102"
+    },
+    {
+      "line": 13,
+      "relation": "increases",
+      "evidence": "Blocking the Axl-Gas6 interaction with a soluble Axl fusion protein (Axl-Fc) or the vitamin K inhibitor warfarin significantly diminished the absolute number and percentage of CD3(-)CD56(+) NK cells derived from human CD34(+) HPCs cultured in the presence of IL-15, probably resulting in part from reduced phosphorylation of STAT5",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18840707"
+      },
+      "annotations": {
+        "cl": {
+          "0000623": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 9,
+      "target": 0,
+      "key": "ad6ba500e7f11f1080766ba6da3e4b9a"
+    }
+  ]
+}

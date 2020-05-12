@@ -1,0 +1,4097 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Endoplasmic Reticulum Stress-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Endoplasmic Reticulum Stress network depicts the causal mechanisms that regulate endoplasmic reticulum stress including the unfolded protein response and the pathways downstream of the three key stress mediators: PERK (EIF2AK3), ATF6, and IRE1alpha (ERN1). The pro-apoptotic arm of the ER stress response was excluded from this network, but included in the Apoptosis network where the context is more relevant."
+    },
+    "namespace_url": {
+      "HGNC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-human-genes/hgnc-human-genes-20150601.belns",
+      "GOBP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20150601.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20150601.belns",
+      "GOCC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170511.belns",
+      "MESHPP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20150601.belns",
+      "MGI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20150601.belns",
+      "RGD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20150601.belns",
+      "CHEBI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20150601.belns",
+      "SCHEM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-chemicals/selventa-legacy-chemicals-20150601.belns",
+      "EGID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/entrez-gene-ids/entrez-gene-ids-20150601.belns",
+      "MESHD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20150601.belns",
+      "SDIS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-diseases/selventa-legacy-diseases-20150601.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20150601.belns",
+      "MESHC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170511.belns",
+      "GOBPID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process-ids/go-biological-process-ids-20150601.belns",
+      "GOCCID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component-ids/go-cellular-component-ids-20150601.belns",
+      "MESHCS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20150601.belns"
+    },
+    "namespace_pattern": {},
+    "annotation_url": {
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20150601.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20150601.belanno",
+      "Species": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+      "Tissue": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20150601.belanno"
+    },
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "nitric oxide"
+      },
+      "id": "da5a3d810aacb9c4649ec7df3b5f60d3",
+      "bel": "a(CHEBI:\"nitric oxide\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "reactive oxygen species"
+      },
+      "id": "39a67bec2ea8cb7a2bec39cf66e565ba",
+      "bel": "a(CHEBI:\"reactive oxygen species\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "acrolein"
+      },
+      "id": "7bc12257f749d5fd14db42e1f42a897a",
+      "bel": "a(CHEBI:acrolein)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "glutathione"
+      },
+      "id": "61c5446d1e6637cc42f9ac2109f37eeb",
+      "bel": "a(CHEBI:glutathione)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "simvastatin"
+      },
+      "id": "d605d757fc87b8d6d1b857065350843b",
+      "bel": "a(CHEBI:simvastatin)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "thapsigargin"
+      },
+      "id": "b818dce734618f56caebf0d4267a0ee4",
+      "bel": "a(CHEBI:thapsigargin)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "MESHCS",
+        "name": "Cell Nucleus"
+      },
+      "id": "171d5dc6c86f745b02c877ec51328187",
+      "bel": "a(MESHCS:\"Cell Nucleus\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "MESHCS",
+        "name": "Cytoplasm"
+      },
+      "id": "1d4bad53927a05a663b659cb2d5ca16c",
+      "bel": "a(MESHCS:Cytoplasm)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "7-Ketocholesterol"
+      },
+      "id": "68b85ced7ef4f06ae331d18e90ffcf00",
+      "bel": "a(SCHEM:\"7-Ketocholesterol\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Particulate Matter"
+      },
+      "id": "d0538e16e25d89d8cf0272b9eb04827b",
+      "bel": "a(SCHEM:\"Particulate Matter\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "clasto lactacystin beta lactone"
+      },
+      "id": "6cf3ed4fe0209f694732c368bbc94b85",
+      "bel": "a(SCHEM:\"clasto lactacystin beta lactone\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Tunicamycin"
+      },
+      "id": "d364d9af8b37c542249e8d37cbe660bd",
+      "bel": "a(SCHEM:Tunicamycin)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "ER-associated ubiquitin-dependent protein catabolic process"
+      },
+      "id": "9c83efeb9ea8fe9a601f8cda0996acae",
+      "bel": "bp(GOBP:\"ER-associated ubiquitin-dependent protein catabolic process\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "cell death"
+      },
+      "id": "0903b59ad0582cb667db2d46f284b907",
+      "bel": "bp(GOBP:\"cell death\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "protein maturation"
+      },
+      "id": "4cabafc527adb3401928502ed6b11668",
+      "bel": "bp(GOBP:\"protein maturation\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "response to endoplasmic reticulum stress"
+      },
+      "id": "fca37a64b2a17e5107b101a38a9257a5",
+      "bel": "bp(GOBP:\"response to endoplasmic reticulum stress\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "response to unfolded protein"
+      },
+      "id": "d0f1b91339d3822c55972c1f0e1bef4d",
+      "bel": "bp(GOBP:\"response to unfolded protein\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "translation"
+      },
+      "id": "db14cbf60a79c3f32e021fb65fc128ed",
+      "bel": "bp(GOBP:translation)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBPID",
+        "name": "0030433"
+      },
+      "id": "85e09afea4f218d8ef2dd26b26e8c8c6",
+      "bel": "bp(GOBPID:0030433)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "MESHPP",
+        "name": "Protein Biosynthesis"
+      },
+      "id": "8ed1592bf88073691f9b47298ae5d54d",
+      "bel": "bp(MESHPP:\"Protein Biosynthesis\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "SCOMP",
+        "name": "AP-1 Complex"
+      },
+      "id": "bcaac21c04f15ba8da704de83ff7f128",
+      "bel": "complex(SCOMP:\"AP-1 Complex\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "SCOMP",
+        "name": "Nfkb Complex"
+      },
+      "id": "c8f3260aaedabca7831d823ec3e87186",
+      "bel": "complex(SCOMP:\"Nfkb Complex\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "SCOMP",
+        "name": "Proteasome Complex"
+      },
+      "id": "23933d4185028d22cfdf39e0c0c280b0",
+      "bel": "complex(SCOMP:\"Proteasome Complex\")"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ATF4"
+          },
+          "id": "282cadf3251e5d5824f4de2c8c668106",
+          "bel": "p(HGNC:ATF4)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "NFE2L2"
+          },
+          "id": "7e8941fff5d3be67079854e55d40d075",
+          "bel": "p(HGNC:NFE2L2)"
+        }
+      ],
+      "id": "d739ce6607cf8d7617d4e1830f475c25",
+      "bel": "complex(p(HGNC:ATF4), p(HGNC:NFE2L2))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "EIF4G1"
+          },
+          "id": "06c732030a9ba6ac3252336e0d2001ca",
+          "bel": "p(HGNC:EIF4G1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "NQO1"
+          },
+          "id": "94e2999a00b060c444ee1ae49eb794fb",
+          "bel": "p(HGNC:NQO1)"
+        }
+      ],
+      "id": "c3e802b6cca325f818849e7a9886e4cc",
+      "bel": "complex(p(HGNC:EIF4G1), p(HGNC:NQO1))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ATF2"
+      },
+      "id": "90d217135c89d489956e43f7baeb9372",
+      "bel": "p(HGNC:ATF2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ATF2"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Thr",
+          "pos": 71
+        }
+      ],
+      "id": "3651bd48da70f07a6f1887fd3f4633c5",
+      "bel": "p(HGNC:ATF2, pmod(Ph, Thr, 71))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ATF3"
+      },
+      "id": "cb4ea0748f023a8f58e5ece98d858fcf",
+      "bel": "p(HGNC:ATF3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ATF4"
+      },
+      "id": "282cadf3251e5d5824f4de2c8c668106",
+      "bel": "p(HGNC:ATF4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ATF5"
+      },
+      "id": "c1be76a315126a8ef5540970876c1032",
+      "bel": "p(HGNC:ATF5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ATF6"
+      },
+      "id": "67283f6c98f1851e0c1b96ea585ebd09",
+      "bel": "p(HGNC:ATF6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "DDIT3"
+      },
+      "id": "8467896dba02638019c0752735903695",
+      "bel": "p(HGNC:DDIT3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "DNAJC3"
+      },
+      "id": "333ac5f019fc2382c9d0bed99e52c987",
+      "bel": "p(HGNC:DNAJC3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "EIF2AK2"
+      },
+      "id": "ba4d5ce6d4277428de4c6903251e48b8",
+      "bel": "p(HGNC:EIF2AK2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "EIF2AK3"
+      },
+      "id": "b81e05bdb4a0257b5fc71dbc4d46cd71",
+      "bel": "p(HGNC:EIF2AK3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "EIF2S1"
+      },
+      "id": "59d6bde13275a91c28804ad61b102bde",
+      "bel": "p(HGNC:EIF2S1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "EIF2S1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          }
+        }
+      ],
+      "id": "a0c1808dd44354f95282271f6b6d6396",
+      "bel": "p(HGNC:EIF2S1, pmod(Ph))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "EIF2S1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser",
+          "pos": 52
+        }
+      ],
+      "id": "aea0e83e278bb22369cfbe27c7777694",
+      "bel": "p(HGNC:EIF2S1, pmod(Ph, Ser, 52))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "EIF4EBP1"
+      },
+      "id": "738d2e7577c6119646f3f87fe6311cc0",
+      "bel": "p(HGNC:EIF4EBP1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "EIF4G1"
+      },
+      "id": "06c732030a9ba6ac3252336e0d2001ca",
+      "bel": "p(HGNC:EIF4G1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ERN1"
+      },
+      "id": "d2fe05210d7cefc1001bd4a2718e8d4c",
+      "bel": "p(HGNC:ERN1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ERO1L"
+      },
+      "id": "17555edfe523ca1bb2cfc295e2fecff3",
+      "bel": "p(HGNC:ERO1L)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "F2"
+      },
+      "id": "25ae37337fe7b191b67395ba83ac1a98",
+      "bel": "p(HGNC:F2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HERPUD1"
+      },
+      "id": "cce9915c0048fc7946d719c64dbe3b76",
+      "bel": "p(HGNC:HERPUD1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HMOX1"
+      },
+      "id": "d8af6078f1872edbf59623df2a9fa1c2",
+      "bel": "p(HGNC:HMOX1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HSP90B1"
+      },
+      "id": "ebebf53d78a2b8f1d92acb52d21dd913",
+      "bel": "p(HGNC:HSP90B1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HSPA5"
+      },
+      "id": "650f02e92327fa9894f3cf5b3dafccf3",
+      "bel": "p(HGNC:HSPA5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "JUN"
+      },
+      "id": "0f80512a01fa9da3da3e442cd3289fc7",
+      "bel": "p(HGNC:JUN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MAP3K5"
+      },
+      "id": "f2dc75eee6b5e335308cb999dbe95dcc",
+      "bel": "p(HGNC:MAP3K5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MAPK8"
+      },
+      "id": "73ec0c85b488c0466116e1bac13a9cc1",
+      "bel": "p(HGNC:MAPK8)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MAPK9"
+      },
+      "id": "b6a850a2ae2442a003af2f8196e5773c",
+      "bel": "p(HGNC:MAPK9)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MBTPS1"
+      },
+      "id": "38f8c4e6e109c7cabf12eb10e1277658",
+      "bel": "p(HGNC:MBTPS1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MBTPS2"
+      },
+      "id": "d6876f290e3705f9a07ba2008ea95fda",
+      "bel": "p(HGNC:MBTPS2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MDM2"
+      },
+      "id": "6e3726349615c0706bf0d671ba20a453",
+      "bel": "p(HGNC:MDM2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NFE2L2"
+      },
+      "id": "7e8941fff5d3be67079854e55d40d075",
+      "bel": "p(HGNC:NFE2L2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NFKB1"
+      },
+      "id": "6e6f7419cc0edfa08d7d4c82eae0f4c4",
+      "bel": "p(HGNC:NFKB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NFKB2"
+      },
+      "id": "abbd5705b1ea40000c511775f7c199f1",
+      "bel": "p(HGNC:NFKB2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NOX4"
+      },
+      "id": "e6246d0d53b9bf72b37a3f9d39fd8e6e",
+      "bel": "p(HGNC:NOX4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NQO1"
+      },
+      "id": "94e2999a00b060c444ee1ae49eb794fb",
+      "bel": "p(HGNC:NQO1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PDIA3"
+      },
+      "id": "42804c436550cdb6b45860f351db5768",
+      "bel": "p(HGNC:PDIA3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PPP1R15A"
+      },
+      "id": "4a076e19fb27f21323587f744a4dab4e",
+      "bel": "p(HGNC:PPP1R15A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RCAN1"
+      },
+      "id": "6c02db2dac20e9cbc6bfcb9e2d627b00",
+      "bel": "p(HGNC:RCAN1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "REL"
+      },
+      "id": "9fa50f20b3c7075b69e46dc2231d7ae8",
+      "bel": "p(HGNC:REL)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RELA"
+      },
+      "id": "64cb49613db164980ff43274b6c270cf",
+      "bel": "p(HGNC:RELA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RELB"
+      },
+      "id": "37d868887982aa1259666792624a0a33",
+      "bel": "p(HGNC:RELB)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SERPINA1"
+      },
+      "id": "6344cd37b331f1f7d8fc9d6395bc4715",
+      "bel": "p(HGNC:SERPINA1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SERPINA1"
+      },
+      "variants": [
+        {
+          "kind": "hgvs",
+          "hgvs": "p.Glu342Lys"
+        }
+      ],
+      "id": "e6127d906d3d6bee77d09fa08cfe14ca",
+      "bel": "p(HGNC:SERPINA1, var(\"p.Glu342Lys\"))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT3"
+      },
+      "id": "9523cd88bdb7daf4a0aaf38eb43fbe28",
+      "bel": "p(HGNC:STAT3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SYVN1"
+      },
+      "id": "751538514ef2fa7c7d1410d9ebb0d124",
+      "bel": "p(HGNC:SYVN1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TLR3"
+      },
+      "id": "8e283e8a56191737442a695574bbee2b",
+      "bel": "p(HGNC:TLR3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TLR4"
+      },
+      "id": "4d3aa2ce51d0cd7f2aa9267a9c61f9f7",
+      "bel": "p(HGNC:TLR4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TMBIM6"
+      },
+      "id": "cf55f39df6e7166fe032eb0a6064c5fc",
+      "bel": "p(HGNC:TMBIM6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TMEM67"
+      },
+      "id": "d2005e9986a54c97efb740ac93422ede",
+      "bel": "p(HGNC:TMEM67)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TRIB3"
+      },
+      "id": "3c8f9e0e9aa30a2e356d11016af774bf",
+      "bel": "p(HGNC:TRIB3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "VCP"
+      },
+      "id": "7ccb44c75290e10bc2f3def8ba9b3577",
+      "bel": "p(HGNC:VCP)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "WFS1"
+      },
+      "id": "73f59f08d92c05a9701aab06d7ce664e",
+      "bel": "p(HGNC:WFS1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "XBP1"
+      },
+      "id": "8e67e3b49afef6059fb35779872c0404",
+      "bel": "p(HGNC:XBP1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "MGI",
+        "name": "Ppp1r15a"
+      },
+      "id": "53dc04448b64ac429c78726394c28455",
+      "bel": "p(MGI:Ppp1r15a)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "MAPK JNK Family"
+      },
+      "id": "2c12ea9eb341ac97eaa46efce68f20d7",
+      "bel": "p(SFAM:\"MAPK JNK Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "MAPK p38 Family"
+      },
+      "id": "f808149b6c7bdafd00cef9802f8d3d34",
+      "bel": "p(SFAM:\"MAPK p38 Family\")"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "MESHD",
+        "name": "Hyperoxia"
+      },
+      "id": "9945201aaa7c783a1eec193b836a8faf",
+      "bel": "path(MESHD:Hyperoxia)"
+    }
+  ],
+  "links": [
+    {
+      "line": 1,
+      "relation": "association",
+      "evidence": "We show here that aggregation of intracellular mutant Z-AT invokes a specific deleterious cellular inflammatory phenotype in COPD. Oxidant-induced intracellular polymerization of Z-AT in epithelial cells causes ER stress, and promotes excess cytokine and cellular inflammation. This pathway is likely to contribute to the development of COPD in ZZ-AT homozygotes, and therefore merits further investigation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24592811"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 66,
+      "target": 15,
+      "key": "1283ff9070293a09e005b2408619a827"
+    },
+    {
+      "line": 1,
+      "relation": "association",
+      "evidence": "Oxidant-induced intracellular polymerization of Z-AT in epithelial cells causes ER stress... This pathway is likely to contribute to the development of COPD in ZZ-AT homozygotes,",
+      "citation": {
+        "db": "Other",
+        "db_id": "24592811"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 66,
+      "target": 15,
+      "key": "c0738ac8a786f70e3762100449511edf"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 65,
+      "target": 66,
+      "key": "df5094ad99558a8e72a699cb3ae6eab1"
+    },
+    {
+      "line": 3,
+      "relation": "association",
+      "evidence": "The region predicted to encode the transmembrane domains of MKS3 interacted with cytosolic p97.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19815549"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "HEK293": true
+        },
+        "Cell": {
+          "cell line": true
+        }
+      },
+      "source": 74,
+      "target": 72,
+      "key": "73536a543efe769435fb5082a3233f5f"
+    },
+    {
+      "line": 2,
+      "relation": "increases",
+      "evidence": "Autosomal dominant mutations in the SFTPC gene are associated with idiopathic pulmonary fibrosis, a progressive lethal interstitial lung disease. Mutations that cause misfolding of the encoded proprotein surfactant protein C (SP-C) trigger endoplasmic reticulum (ER)-associated degradation, a pathway that segregates terminally misfolded substrate for retrotranslocation to the cytosol and degradation by proteasome. Microarray screens for genes involved in SP-C ER-associated degradation identified MKS3/TMEM67, a locus previously linked to the ciliopathy Meckel-Gruber syndrome.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19815549"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "hek293 cells": true
+        },
+        "Cell": {
+          "cell line": true
+        }
+      },
+      "source": 72,
+      "target": 12,
+      "key": "c46151aac770a92c8c762cd6d0370d8b"
+    },
+    {
+      "line": 2,
+      "relation": "increases",
+      "evidence": "These results support a model in which MKS3 links the ER lumenal quality control machinery with the cytosolic degradation apparatus.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19815549"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "HEK293 cells": true
+        },
+        "Cell": {
+          "cell line": true
+        }
+      },
+      "source": 72,
+      "target": 12,
+      "key": "3d39594f1f3758acd956c0cace7f4a3d"
+    },
+    {
+      "line": 3,
+      "relation": "association",
+      "evidence": "The region predicted to encode the transmembrane domains of MKS3 interacted with cytosolic p97.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19815549"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "HEK293": true
+        },
+        "Cell": {
+          "cell line": true
+        }
+      },
+      "source": 72,
+      "target": 74,
+      "key": "22aabbfcc7a99773a4240eb043de5318"
+    },
+    {
+      "line": 4,
+      "relation": "association",
+      "evidence": "In this study, MKS3 was identified as a membrane glycoprotein predominantly localized to the ER. Expression of MKS3 was up-regulated by genetic or pharmacological inducers of ER stress.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19815549"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "HEK293": true
+        },
+        "Cell": {
+          "cell line": true
+        }
+      },
+      "source": 72,
+      "target": 15,
+      "key": "cae0cdb2f2cdc832a2cba00feb235092"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "We observed that simvastatin exposure activates UPR (activated transcription factor 4, activated transcription factor 6 and IRE1α) and caspase-4 in primary human airway fibroblasts and smooth muscle cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24637330"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "smooth muscle cell": true
+        },
+        "Cell": {
+          "primary cell line": true
+        }
+      },
+      "source": 4,
+      "target": 16,
+      "key": "0d87e83654262262e0c7944b5a27bf58"
+    },
+    {
+      "line": 6,
+      "relation": "increases",
+      "evidence": "We observed that thrombin, which is over-expressed in scleroderma and other interstitial lung diseases (ILD), increases the expression of CHOP in primary AEC and in A549 cells via an Ets1-dependent pathway.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24279877"
+      },
+      "annotations": {
+        "Disease": {
+          "normal": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "primary alveolar epithelia": true
+        },
+        "Cell": {
+          "cell line": true
+        }
+      },
+      "source": 42,
+      "target": 31,
+      "key": "60dfa6577d5255fd9ddc8d9d24946eac"
+    },
+    {
+      "line": 6,
+      "relation": "increases",
+      "evidence": "Thrombin increases lung fibroblast survival while promoting alveolar epithelial cell apoptosis via the endoplasmic reticulum stress marker, CCAAT enhancer-binding homologous protein.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24279877"
+      },
+      "annotations": {
+        "Disease": {
+          "normal": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "primary alveolar epithelia": true
+        },
+        "Cell": {
+          "cell line": true
+        }
+      },
+      "source": 42,
+      "target": 31,
+      "key": "07df77c859d3e78412ff4c4d62ca657b"
+    },
+    {
+      "line": 6,
+      "relation": "increases",
+      "evidence": "We observed that thrombin, which is over-expressed in scleroderma and other interstitial lung diseases (ILD), increases the expression of CHOP in primary AEC and in A549 cells via an Ets1-dependent pathway",
+      "citation": {
+        "db": "Other",
+        "db_id": "24279877"
+      },
+      "annotations": {
+        "Disease": {
+          "normal": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "a549 cells": true
+        },
+        "Cell": {
+          "cell line": true
+        }
+      },
+      "source": 42,
+      "target": 31,
+      "key": "f6ed18156dd0cf1701a4e7f644fcccbd"
+    },
+    {
+      "line": 7,
+      "relation": "decreases",
+      "evidence": "thrombin decreases ER stress-induced CHOP in lung fibroblasts through Myc-dependent mechanisms and protects such cells from apoptosis.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24279877"
+      },
+      "annotations": {
+        "Disease": {
+          "normal": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung fibroblast": true
+        },
+        "Cell": {
+          "cell line": true
+        }
+      },
+      "source": 42,
+      "target": 31,
+      "key": "807e27f4e6dbf2cd9f69ac3fe79ef5c8"
+    },
+    {
+      "line": 8,
+      "relation": "association",
+      "evidence": "BI-1 regulates an apoptosis pathway linked to endoplasmic reticulum stress.\nCells from BI-1-deficient mice, including fibroblasts, hepatocytes, and neurons, display selective hypersensitivity to apoptosis induced by ER stress agents (thapsigargin, tunicamycin, brefeldin A), but not to stimulators of mitochondrial or TNF/Fas-death receptor apoptosis pathways.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15304216"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "fibroblast": true
+        },
+        "Cell": {
+          "Bi-1 deficient": true
+        }
+      },
+      "source": 71,
+      "target": 15,
+      "key": "330dd95819d0fe9f54c5714c4f11de68"
+    },
+    {
+      "line": 8,
+      "relation": "association",
+      "evidence": "BI-1 regulates an apoptosis pathway linked to endoplasmic reticulum stress.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15304216"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "neuron": true
+        }
+      },
+      "source": 71,
+      "target": 15,
+      "key": "39ea4dfe24364cb39e2b4ef9bd5e2a6c"
+    },
+    {
+      "line": 14,
+      "relation": "increases",
+      "evidence": "To understand the impact of high fatty acids on oocytes, ER stress and lipotoxicity were induced in mouse cumulus-oocyte complexes during in vitro maturation using the ER Ca(2+) channel blocker thapsigargin or high physiological levels of palmitic acid; both of which significantly induced ER stress marker genes (Atf4, Atf6, Xbp1s, and Hspa5) and inositol-requiring protein-1α phosphorylation, demonstrating an ER stress response that was reversible with the ER stress inhibitor salubrinal",
+      "citation": {
+        "db": "Other",
+        "db_id": "22383462"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 46,
+      "target": 14,
+      "key": "5851b6bf1fa016f2ba696fd941f59ea4"
+    },
+    {
+      "line": 14,
+      "relation": "increases",
+      "evidence": "BiP is the mammalian endoplasmic reticulum (ER) Hsp70 orthologue that plays a major role in all functions of this organelle including the seemingly opposing functions of aiding the maturation of unfolded nascent proteins and identifying and targeting chronically unfolded proteins for degradation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20026282"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 46,
+      "target": 14,
+      "key": "a15172cae9966be280ee47ee177a94b6"
+    },
+    {
+      "line": 141,
+      "relation": "directlyIncreases",
+      "evidence": "p54/46 ATF-2 kinases were bound to the GST-ATF-2 column and after elution of the kinases from the column with 2 M urea, fractions were tested for kinase activity (Figure 7A)....we used a mutant of ATF-2 containing point mutations at positions Thr69, Thr71 and Ser9O. As shown in Figure 7B (right panel), both the kinases purified with GST-ATF-2 and with GST-Jun (JNK) hardly phosphorylated GST-ATF-2 protein lacking the putative phosphoacceptor sites (M).....The GST-c-Jun protein containing point mutations at positions Ser63 and Ser73 (M) was phosphorylated less efficiently than wild-type c-Jun (W) by ATF-2 kinases (Figure 7B, left panel), similar to that found for p54/46 JNK (Hibi et al., 1993).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "7737130"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 50,
+      "target": 26,
+      "key": "f83b7ce68dcd5b7b52cf97eb77d757bf"
+    },
+    {
+      "line": 126,
+      "relation": "increases",
+      "evidence": "Release of Grp78 from the N-terminus of ATF6 triggers a different mechanism of protein activation, compared with PERK and Ire1. Instead of oligomerizing, release of Grp78 frees ATF6 to translocate to the Golgi apparatus, where resident proteases (site 1 and site 2 protease) cleave ATF6 at a juxtamembrane site, releasing this transcription factor into the cytosol and allowing it to migrate into the nucleus to regulate gene expression (15). ATF6 collaborates with Ire1, where ATF6 induces transcription to increase XBP-1 mRNA, and Ire1ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢s endoribonuclease activity then processes that mRNA so that XBP-1 protein is produced.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16200199"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 51,
+      "target": 30,
+      "key": "3bc8deeab3042c8d1b8b31d05dda6d31"
+    },
+    {
+      "line": 126,
+      "relation": "increases",
+      "evidence": "Upon ER stress, transcription factor ATF6 translocates from the ER to Golgi, where it is sequentially cleaved by site 1 and site 2 proteases, S1P and S2P, to a 50-kDa form that activates transcription of ERSE genes",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18287014"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 51,
+      "target": 30,
+      "key": "a8400bf0452c46695f17d820e47cd73e"
+    },
+    {
+      "line": 126,
+      "relation": "increases",
+      "evidence": "both Srebp and ATF6 are cleaved sequentially first by the Site-1 protease [serine protease] and then by the Site-2 protease [metalloprotease]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12782636"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 51,
+      "target": 30,
+      "key": "0fb2e371fb22b2da5227e2c496151263"
+    },
+    {
+      "relation": "partOf",
+      "source": 39,
+      "target": 24,
+      "key": "09012dc823dca48d90010cf357b52da8"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 39,
+      "target": 24,
+      "key": "2ca2f8b90328c1fcbb4714e963b6c508"
+    },
+    {
+      "line": 16,
+      "relation": "increases",
+      "evidence": "Although eIF4GI has been shown to be sensitive to proteasomal degradation, how the eIF4GI steady-state level is controlled remains unknown. Here, we show that eIF4GI exists in a complex with NAD(P)H quinone-oxydoreductase 1 (NQO1) in cell extracts.",
+      "citation": {
+        "db": "Other",
+        "db_id": "20028737"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 39,
+      "target": 19,
+      "key": "5b68b907ea92d67a7a95bec9e704a8d6"
+    },
+    {
+      "line": 16,
+      "relation": "increases",
+      "evidence": "We further reveal that treatment of cells with dicumarol frees eIF4GI from mRNA translation initiation complexes due to strong activation of its natural competitor, the translational repressor 4E-BP1. As a consequence of cap-binding complex dissociation and eIF4GI degradation, protein synthesis is dramatically inhibited.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20028737"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 39,
+      "target": 19,
+      "key": "c99923dc81928223218782e6775877f8"
+    },
+    {
+      "line": 17,
+      "relation": "increases",
+      "evidence": "We further reveal that treatment of cells with dicumarol frees eIF4GI from mRNA translation initiation complexes due to strong activation of its natural competitor, the translational repressor 4E-BP1. As a consequence of cap-binding complex dissociation and eIF4GI degradation, protein synthesis is dramatically inhibited.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20028737"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 39,
+      "target": 17,
+      "key": "b3852a7b38557b1801c6e105aeaf865f"
+    },
+    {
+      "line": 75,
+      "relation": "directlyDecreases",
+      "evidence": "he eukaryotic translation initiation factor 4GI (eIF4GI) serves as a central adapter in cap-binding complex assembly. Although eIF4GI has been shown to be sensitive to proteasomal degradation, how the eIF4GI steady-state level is controlled remains unknown. Here, we show that eIF4GI exists in a complex with NAD(P)H quinone-oxydoreductase 1 (NQO1) in cell extracts.",
+      "citation": {
+        "db": "Other",
+        "db_id": "20028737"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 39,
+      "target": 39,
+      "key": "c68ba11ef2a5619df58550fad9941999"
+    },
+    {
+      "line": 75,
+      "relation": "directlyDecreases",
+      "evidence": "Here, we show that eIF4GI exists in a complex with NAD(P)H quinone-oxydoreductase 1 (NQO1) in cell extracts. Treatment of cells with dicumarol (dicoumarol), a pharmacological inhibitor of NQO1 known to preclude NQO1 binding to its protein partners, provokes eIF4GI degradation by the proteasome. Consistently, the eIF4GI steady-state level also diminishes upon the silencing of NQO1 (by transfection with small interfering RNA), while eIF4GI accumulates upon the overexpression of NQO1 (by transfection with cDNA).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20028737"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 39,
+      "target": 39,
+      "key": "f145018801a8850669d1e1fcf73175ae"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 56,
+      "target": 21,
+      "key": "822e548538bfc9de7ae8e8d3b7ce801b"
+    },
+    {
+      "line": 18,
+      "relation": "decreases",
+      "evidence": "We show here that STAT3-dependent signaling is increased in the absence of ERp57 and this can be rescued by expression of ER-targeted ERp57 but not by cytoplasmic-targeted protein, indicating that ERp57 affects STAT3 signaling from the lumen of the ER. ERp57 effects on STAT3 signaling are enhanced by ER luminal complex formation between ERp57 and calreticulin.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20022947"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 59,
+      "target": 67,
+      "key": "4e92224a50799320ed223010d9615d6a"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 20,
+      "target": 47,
+      "key": "9adb7d34acc66c46e81e2bfcdccc454c"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "Acrolein (25-50μM) caused apoptotic cell death mediated by the ER after 2h, which was characterised by the induction of CHOP",
+      "citation": {
+        "db": "Other",
+        "db_id": "24373849"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "A549 lung cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 2,
+      "target": 31,
+      "key": "685b2ad6adf156d5aecfedf8f73a1cb1"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "The exposure of cells to acrolein (15-50μM) for shorter times of 15 to 30min activated several ER stress markers. These included the ER chaperone protein BiP",
+      "citation": {
+        "db": "Other",
+        "db_id": "24373849"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "A549 lung cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 2,
+      "target": 46,
+      "key": "be980c65a90afb5c28a1cb0709e7aa8c"
+    },
+    {
+      "line": 23,
+      "relation": "increases",
+      "evidence": "Treatment with 2 to 10 uM acrolein led to a significant increase in ATF3 expression. This increase was detectable in cells treated with 2 uM acrolein and was maximal at 10 uM.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18951912"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "umbilical vein endothelial cell": true
+        }
+      },
+      "source": 2,
+      "target": 27,
+      "key": "38c424eba7928a984745ad21a5bb74c0"
+    },
+    {
+      "line": 24,
+      "relation": "increases",
+      "evidence": "Treatment with 10 uM acrolein led to a 3-fold increase in ATF4 protein 4h after treatment, which was comparable to the increase in AFT4 protein in thapsigargin-treated cells (Fig. 3A).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18951912"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "umbilical vein endothelial cell": true
+        }
+      },
+      "source": 2,
+      "target": 28,
+      "key": "820442d55f0f224f250a21d0d9c287ad"
+    },
+    {
+      "line": 25,
+      "relation": "increases",
+      "evidence": "No change in cell viability, as assessed by the MTT assay, was observed under these conditions (data not shown). As shown in Fig. 1A, no increase in phospho-eIF-2alpha was observed 5 min after acrolein treatment; however, after 10 min, a significant increase in eIF-2a phosphorylation was observed with 25 uM acrolein. After 15 or 30 min of exposure, significant phosphorylation of eIF-2alpha was observed with both concentrations of acrolein tested.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18951912"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "umbilical vein endothelial cell": true
+        }
+      },
+      "source": 2,
+      "target": 37,
+      "key": "f9d9ff75352706218488daa530e50774"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "As shown in Fig. 2A, treatment with 5-10 uM acrolein for 2h resulted in a 3.5- to 16-fold increase in the alternatively spliced form of XBP-1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18951912"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "umbilical vein endothelial cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 2,
+      "target": 76,
+      "key": "cf46d3c0f34f4b19a4ea85d224ccae07"
+    },
+    {
+      "line": 27,
+      "relation": "directlyIncreases",
+      "evidence": "pp60(v-src) induction of ATF-2 was abolished by the c-Jun N-terminal kinase inhibitor JNK-interacting protein-1 or by mutation of ATF-2 at Thr69 and Thr71.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10066798"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 26,
+      "target": 25,
+      "key": "0a3fad10f76bd8283d24edaf0ca44426"
+    },
+    {
+      "line": 27,
+      "relation": "directlyIncreases",
+      "evidence": "Mutation of either Thr69 or Thr71, or both, led to an almost complete loss of inducibility.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "7737130"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 26,
+      "target": 25,
+      "key": "af001e1e378b67ad7d7b880207815c48"
+    },
+    {
+      "line": 27,
+      "relation": "directlyIncreases",
+      "evidence": "The transacting capacity of ATF4 depends on its expression level and that of ATF2 on its phosphorylation state.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14630918"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 26,
+      "target": 25,
+      "key": "3ecf39f11b07d2e93cfba6f25bcf18fe"
+    },
+    {
+      "line": 27,
+      "relation": "directlyIncreases",
+      "evidence": "Consistent with this, both Gal4-c-Jun- and Gal4-ATF2-fusion proteins were activated by RalA signalling through phosphorylation of their activation domains at Ser63 and Ser73 of c-Jun or Thr69 and Thr71 of ATF2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11313929"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 26,
+      "target": 25,
+      "key": "98a9e1279a3c6b769e960ffb7969dfae"
+    },
+    {
+      "line": 27,
+      "relation": "directlyIncreases",
+      "evidence": "JNK, which phosphorylates ATF2 in Thr-69 and Thr-71,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15105425"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 26,
+      "target": 25,
+      "key": "37b1127957cf735f894a3848b5cf49c1"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 25,
+      "target": 26,
+      "key": "12e12c1983227363820755a3a1cce83b"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 21,
+      "target": 63,
+      "key": "f8d4be484eb11e457d6444dcf6561c82"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "These results further confirmed that PM2.5 can induce PERK-mediated UPR pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20554909"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "source": 9,
+      "target": 16,
+      "key": "c6127c76581d4e8344f3d1085d62c6f9"
+    },
+    {
+      "line": 35,
+      "relation": "increases",
+      "evidence": "Likewise, expression of the other early UPR cellular sensor, the 50-kDa cleavage product of ATF-6 was increased in PM-treated cells (p ¼ <0.001) with concentration.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19675143"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 30,
+      "key": "f85d4d22cd4dd69992a6b860d1b79515"
+    },
+    {
+      "line": 35,
+      "relation": "increases",
+      "evidence": "In response to PM2.5, levels of cleaved ATF6 in the RAW264.7 cells expressing full-length ATF6 were increased (Fig. 6E), thus confirming the activation of ATF6 upon PM2.5 exposure.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20554909"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 30,
+      "key": "144d0ec00051833a8d338d93db85ed3c"
+    },
+    {
+      "line": 36,
+      "relation": "increases",
+      "evidence": "Our result indicated that incubation with 50 ?g/ml PM2.5 for 6 h was sufficient to induce the initial phase of ER stress response, as evidenced by the increased expression of the ER chaperone BiP (Fig. 5A).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20554909"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "source": 9,
+      "target": 15,
+      "key": "24125c21345ec2bc6eff7db20ce2f8b2"
+    },
+    {
+      "line": 37,
+      "relation": "increases",
+      "evidence": "phosphorylated (p)-PERK was significantly elevated in cells treated with PM2.5 and PM10 compared to that in control cells (p < 0.001)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19675143"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 9,
+      "target": 34,
+      "key": "fbcc78a237dc758e2146302c9738ca4c"
+    },
+    {
+      "line": 38,
+      "relation": "increases",
+      "evidence": "A signaling cascade from the Fas receptor via ceramide, Ras, Rac1, and JNK/p38-K to GADD153 is demonstrated employing transfection of transdominant inhibitory N17Ras, N17Rac1, c-Jun, or treatment with a specific p38-K inhibitor. The critical function of this signaling cascade is indicated by prevention of Fas- or C6-ceramide-induced apoptosis after inhibition of Ras, Rac1, or JNK/p38-K.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9268362"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 78,
+      "target": 31,
+      "key": "12f49ac4f1145f264e8090fb4cf24c6b"
+    },
+    {
+      "line": 38,
+      "relation": "increases",
+      "evidence": "Cyclic stretch significantly increased GADD153 protein and mRNA expression after 18 h of stretch. Addition of c-jun N-terminal kinase (JNK) inhibitor SP600125, JNK siRNA, tumour necrosis factor-alpha (TNF-alpha) and TNF-alpha receptor antibody 30 min before stretch inhibited the induction of GADD153 protein",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18006442"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "vascular tissue": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 78,
+      "target": 31,
+      "key": "aaaf65bf5b72dc400eeee04a9312adaa"
+    },
+    {
+      "line": 39,
+      "relation": "directlyIncreases",
+      "evidence": "the transcriptional activity of the AP1 subunit c-Jun is enhanced through phosphorylation on Ser63/73 by members of the JNK subfamily in response to inflammatory cytokines",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12682725"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 78,
+      "target": 20,
+      "key": "6cf1acf12e27257635756a45bb40a9a7"
+    },
+    {
+      "line": 39,
+      "relation": "directlyIncreases",
+      "evidence": "JunB binds directly to the P1 site and synergizes with c-Maf to activate an IL-4 luciferase reporter gene. JunB-control of IL-4 expression is mediated by the phosphorylation of JunB at Thr102 and -104 by JNK MAP kinase",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9889198"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 78,
+      "target": 20,
+      "key": "8a781a1c0ac4f2d8cd916cf80078f30f"
+    },
+    {
+      "relation": "partOf",
+      "source": 28,
+      "target": 23,
+      "key": "ff1b3ab60f69934b87821bfbe3a9b665"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 28,
+      "target": 23,
+      "key": "9a8c33888a6f4246fc9984d90bd88374"
+    },
+    {
+      "line": 1,
+      "relation": "association",
+      "evidence": "We show here that aggregation of intracellular mutant Z-AT invokes a specific deleterious cellular inflammatory phenotype in COPD. Oxidant-induced intracellular polymerization of Z-AT in epithelial cells causes ER stress, and promotes excess cytokine and cellular inflammation. This pathway is likely to contribute to the development of COPD in ZZ-AT homozygotes, and therefore merits further investigation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24592811"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 15,
+      "target": 66,
+      "key": "d747aef553e0ea8bd621bc9e7b592b41"
+    },
+    {
+      "line": 1,
+      "relation": "association",
+      "evidence": "Oxidant-induced intracellular polymerization of Z-AT in epithelial cells causes ER stress... This pathway is likely to contribute to the development of COPD in ZZ-AT homozygotes,",
+      "citation": {
+        "db": "Other",
+        "db_id": "24592811"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 15,
+      "target": 66,
+      "key": "57260c2e45e8bda913ea1d9642e23526"
+    },
+    {
+      "line": 4,
+      "relation": "association",
+      "evidence": "In this study, MKS3 was identified as a membrane glycoprotein predominantly localized to the ER. Expression of MKS3 was up-regulated by genetic or pharmacological inducers of ER stress.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19815549"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "HEK293": true
+        },
+        "Cell": {
+          "cell line": true
+        }
+      },
+      "source": 15,
+      "target": 72,
+      "key": "835e67ff0509aa7c4b6c5b28e0d13149"
+    },
+    {
+      "line": 8,
+      "relation": "association",
+      "evidence": "BI-1 regulates an apoptosis pathway linked to endoplasmic reticulum stress.\nCells from BI-1-deficient mice, including fibroblasts, hepatocytes, and neurons, display selective hypersensitivity to apoptosis induced by ER stress agents (thapsigargin, tunicamycin, brefeldin A), but not to stimulators of mitochondrial or TNF/Fas-death receptor apoptosis pathways.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15304216"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "fibroblast": true
+        },
+        "Cell": {
+          "Bi-1 deficient": true
+        }
+      },
+      "source": 15,
+      "target": 71,
+      "key": "a54b08ff3ffcf48bd5cd518c30ffbad8"
+    },
+    {
+      "line": 8,
+      "relation": "association",
+      "evidence": "BI-1 regulates an apoptosis pathway linked to endoplasmic reticulum stress.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15304216"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "neuron": true
+        }
+      },
+      "source": 15,
+      "target": 71,
+      "key": "384c45c412424f4bf51552b5f53551dd"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "mammalian cells express several transcription factors embedded in the ER as transmembrane proteins that are activated by proteolysis, 2 types 1 type comprises the Srebp1 and Srebp2 the other type comprises the activating transcription factors 6, ATF6a and ATF6b, which are activated in response to ER stress",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12782636"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 15,
+      "target": 30,
+      "key": "cd4ac4b8db994134ff970bc924891121"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "% ATF6 and XBP1 are transcription factors activated specifically in response to endoplasmic reticulum (ER) stress.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15598891"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 15,
+      "target": 30,
+      "key": "65c58f20f05151e4d6edd24cd458e6d8"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "% The unfolded protein response (UPR) events triggered by the accumulation of unfolded protein in endoplasmic reticulum (ER) activate the three UPR signaling pathways mediated by IRE1, ATF6 and PERK.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16772704"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 15,
+      "target": 30,
+      "key": "23bad2079e16ea0517a12775f71c3d31"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "Two UPR-specific signaling pathways involving transmembrane proteins ATF6 and XBP1 generate critical transcription factors that activate UPR-responsive genes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17092596"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 15,
+      "target": 30,
+      "key": "2ffcadbca180e7c12cee43ef415dc171"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "A dominant negative form of ATF6 blocked ER stress induction of both ATF6 site and GRP78 reporter genes. We further found that GAL4-ATF6 could be activated by ER stress. These results demonstrate that ATF6 is a direct target of the ER stress response. A proximal sensor of the ER stress response, human IRE1 (hIRE1), was sufficient to activate the ATF6 reporter gene, while a dominant negative form of hIRE1 blocked ER stress activation, suggesting that hIRE1 is upstream of ATF6 in the ER stress signaling pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10856300"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 15,
+      "target": 30,
+      "key": "fd82e6df730b076c965106eb65538c07"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "Accumulation of unfolded proteins in the endoplasmic reticulum (ER) evokes the ER stress response, including activating transcription factor 6 (ATF6), a key transcriptional activator to maintain cellular homeostasis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20380836"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 15,
+      "target": 30,
+      "key": "569703e9069ed00a8d872b3663f245fa"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "Because the XBP1 promoter carries a perfect ER stress-response element, namely, the cis-acting element responsible for the induction of ER chaperones, and XBP1 mRNA is induced in response to ER stress with a time course similar to that of ER chaperone mRNAs, it is conjectured that transcription factor ATF6, activated immediately upon ER stress, induces the transcription of not only ER chaperone genes but also of XBP1 gene, such that pXBP1(S) produced by the splicing of an increased level of XBP1 mRNA escapes from proteasome-mediated degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17110785"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 15,
+      "target": 30,
+      "key": "9aaf87d7ea524c7d02bbbd4dd1e69b0a"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "These results suggest that specific ER stress signaling transmitted by ATF6 leads to naturally occurring apoptosis during muscle development.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15897261"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 15,
+      "target": 30,
+      "key": "b52554263f690b7123aafd6c9900f129"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "ATF6 has been implicated in the endoplasmic reticulum (ER) stress response pathway since it can activate expression of GRP78 and other genes induced by the ER stress response. ER stress appears to activate ATF6 by cleavage from the ER membrane and translocation to the nucleus",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10856300"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "GOCCID",
+            "name": "0005737"
+          },
+          "toLoc": {
+            "namespace": "GOCCID",
+            "name": "0005634"
+          }
+        }
+      },
+      "source": 15,
+      "target": 30,
+      "key": "faf8299104304c87153e5c0c5f664e95"
+    },
+    {
+      "line": 48,
+      "relation": "increases",
+      "evidence": "To understand the impact of high fatty acids on oocytes, ER stress and lipotoxicity were induced in mouse cumulus-oocyte complexes during in vitro maturation using the ER Ca(2+) channel blocker thapsigargin or high physiological levels of palmitic acid; both of which significantly induced ER stress marker genes (Atf4, Atf6, Xbp1s, and Hspa5) and inositol-requiring protein-1α phosphorylation, demonstrating an ER stress response that was reversible with the ER stress inhibitor salubrinal",
+      "citation": {
+        "db": "Other",
+        "db_id": "22383462"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 15,
+      "target": 30,
+      "key": "d0a250b3075b090964434446aabf76bb"
+    },
+    {
+      "line": 42,
+      "relation": "increases",
+      "evidence": "To understand the impact of high fatty acids on oocytes, ER stress and lipotoxicity were induced in mouse cumulus-oocyte complexes during in vitro maturation using the ER Ca(2+) channel blocker thapsigargin or high physiological levels of palmitic acid; both of which significantly induced ER stress marker genes (Atf4, Atf6, Xbp1s, and Hspa5) and inositol-requiring protein-1α phosphorylation, demonstrating an ER stress response that was reversible with the ER stress inhibitor salubrinal",
+      "citation": {
+        "db": "Other",
+        "db_id": "22383462"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 15,
+      "target": 28,
+      "key": "b45f00b5d186cec59691cc7a23831856"
+    },
+    {
+      "line": 42,
+      "relation": "increases",
+      "evidence": "BMP-2 activation of the ER stress sensor PERK stimulated phosphorylation of eIF2α and led to increased biosynthesis of the osteoblast differentiation factor ATF4.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24362451"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 15,
+      "target": 28,
+      "key": "c0225f8c48421fa42b9f6f786ae96d1a"
+    },
+    {
+      "line": 43,
+      "relation": "increases",
+      "evidence": "Here, we demonstrate that homocysteine induces the ER stress response and leads to the expression of a novel protein, Herp, containing a ubiquitin-like domain at the N terminus. mRNA expression of Herp was strongly up-regulated by inducers of ER stress, including mercaptoethanol, tunicamycin, A23187, and thapsigargin. The ER stress-dependent induction of Herp was also observed at the protein level.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10922362"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 15,
+      "target": 43,
+      "key": "0e8f517532b3fe3e93316aa48796966a"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "When unfolded proteins accumulate and aggregate in the ER, two major molecules are activated in the ER membrane and transduce the signal to the nucleus. One is IRE1, whose cytosolic domain contains a Ser/Thr protein kinase domain and endoribonuclease domain.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15305022"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 15,
+      "target": 40,
+      "key": "9170ed2d50717f538e9c257418b6d796"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "A dominant negative form of ATF6 blocked ER stress induction of both ATF6 site and GRP78 reporter genes. We further found that GAL4-ATF6 could be activated by ER stress. These results demonstrate that ATF6 is a direct target of the ER stress response. A proximal sensor of the ER stress response, human IRE1 (hIRE1), was sufficient to activate the ATF6 reporter gene, while a dominant negative form of hIRE1 blocked ER stress activation, suggesting that hIRE1 is upstream of ATF6 in the ER stress signaling pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10856300"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 15,
+      "target": 40,
+      "key": "84d79571e08de28019496edbc7ca4410"
+    },
+    {
+      "line": 46,
+      "relation": "increases",
+      "evidence": "Inhalation exposure of the mice to environmentally-relevant fine particulate matter (aerodynamic diameter < 2.5 mum, PM(2.5)) induces endoplasmic reticulum (ER) stress and activation of unfolded protein response (UPR) in the lung and liver tissues as well as in the mouse macrophage cell line RAW264.7. Ambient PM(2.5) exposure activates double-strand RNA-activated protein kinase-like ER kinase (PERK), leading to phosphorylation of translation initiation factor eIF2alpha and induction of C/EBP homologous transcription factor CHOP/GADD153.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20554909"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 15,
+      "target": 16,
+      "key": "2a02084a8dc5eb9f085b41f55026fe22"
+    },
+    {
+      "line": 46,
+      "relation": "increases",
+      "evidence": "Many disturbances, including those of cellular redox regulation, cause accumulation of unfolded proteins in the ER, triggering an evolutionarily conserved response, termed the unfolded protein response (UPR).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16200199"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 15,
+      "target": 16,
+      "key": "e3f674717765a187cd3c0ba93ac0045a"
+    },
+    {
+      "line": 109,
+      "relation": "association",
+      "evidence": "Thrombin Increases Lung Fibroblast Survival While Promoting Alveolar Epithelial Cell Apoptosis via the ER Stress Marker CHOP",
+      "citation": {
+        "db": "Other",
+        "db_id": "24279877"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 15,
+      "target": 31,
+      "key": "2e1dc6e23ceb279a690f9e728ac5fd10"
+    },
+    {
+      "line": 52,
+      "relation": "increases",
+      "evidence": "Inhalation exposure of the mice to environmentally-relevant fine particulate matter (aerodynamic diameter < 2.5 mum, PM(2.5)) induces endoplasmic reticulum (ER) stress and activation of unfolded protein response (UPR) in the lung and liver tissues as well as in the mouse macrophage cell line RAW264.7. Ambient PM(2.5) exposure activates double-strand RNA-activated protein kinase-like ER kinase (PERK), leading to phosphorylation of translation initiation factor eIF2alpha and induction of C/EBP homologous transcription factor CHOP/GADD153.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20554909"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 16,
+      "target": 34,
+      "key": "7b782ccb2d93cec2f13b47b95b9039ba"
+    },
+    {
+      "line": 52,
+      "relation": "increases",
+      "evidence": "From Figure 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16200199"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 16,
+      "target": 34,
+      "key": "8af59f4db29c48234d9e62f095fb4f7e"
+    },
+    {
+      "line": 53,
+      "relation": "increases",
+      "evidence": "Here we demonstrate that the IRE1alpha-XBP1 pathway, the most conserved branch of the unfolded protein response (UPR), is indispensable for adipogenesis. Indeed, XBP1-deficient mouse embryonic fibroblasts and 3T3-L1 cells with XBP1 or IRE1alpha knockdown exhibit profound defects in adipogenesis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19490910"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 16,
+      "target": 40,
+      "key": "deebb43ce6e9c65611ae540bdc0e1544"
+    },
+    {
+      "line": 54,
+      "relation": "increases",
+      "evidence": "The UPR-mediated activation of ATF6 (Activation of Transcription Factor 6) induces cytoprotective ER stress proteins, including GRP78 and GRP94",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16601230"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 30,
+      "key": "f06b2e8ed3fdfffc300ca43a9e8422af"
+    },
+    {
+      "line": 56,
+      "relation": "directlyDecreases",
+      "evidence": "P58(IPK) is an Hsp40 family member known to inhibit the interferon (IFN)-induced, double-stranded RNA-activated, eukaryotic initiation factor 2alpha (eIF2alpha) protein kinase R (PKR) by binding to its kinase domain.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12446838"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 32,
+      "target": 33,
+      "key": "fcd92c2691ff3ead4f27919e7c0a5ff4"
+    },
+    {
+      "line": 57,
+      "relation": "directlyDecreases",
+      "evidence": "We find that the stress of unfolded proteins in the endoplasmic reticulum (ER) activates P58(IPK) gene transcription through an ER stress-response element in its promoter region. P58(IPK) interacts with and inhibits the PKR-like ER-localized eIF2alpha kinase PERK, which is normally activated during the ER-stress response to protect cells from ER stress by attenuating protein synthesis and reducing ER client protein load.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12446838"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 32,
+      "target": 34,
+      "key": "a745fe340f966629993819f5249bbc9e"
+    },
+    {
+      "line": 60,
+      "relation": "decreases",
+      "evidence": "Levels of phosphorylated eIF2alpha were lower in ER-stressed P58(IPK)-overexpressing cells and were enhanced in P58(IPK) mutant cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12446838"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 32,
+      "target": 36,
+      "key": "8ee76c848575b711b393720a5b0668f3"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "Since Txnip is involved in ceramide-induced ASK1 activation, the regulation of ASK1 on ceramide-activated p38 MAPK and JNK was subsequently determined. In ASK1 siRNA-transfected EGFP+ Jurkat T cells, ceramide-induced phosphorylation of p38 MAPK and JNK was inhibited (Figures 6B,S4E,F).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18270325"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 48,
+      "target": 78,
+      "key": "e287b09ba80586e5f0306b2d71663d92"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "GRX is a negative regulator of ASK1 and dissociation of GRX from ASK1 activates ASK1-SEK1-JNK1 signaling leading to cytotoxicity during glucose deprivation. These results support the hypothesis that the GRX-ASK1 interaction is redox sensitive and regulated in a glutathione-dependent fashion by H(2)O(2).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12244106"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 48,
+      "target": 78,
+      "key": "3e59f6f0fb3ca9419ea98893c379ec8d"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "Beta-arrestin2 acts as a scaffold to enhance signaling to JNK3 stimulated by overexpression of the MAP3 kinase ASK1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11356842"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 48,
+      "target": 78,
+      "key": "ae6e07555ef275833e9156fe87abf2b8"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "TNFR-associated factor 2 recruitment, which in turn recruits and activates apoptosis signal-regulating kinase-1, leading to downstream activation of c-Jun N-terminal/stress-activated protein kinases (JNK/SAPK)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10477561"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 48,
+      "target": 78,
+      "key": "dda4a98822cb6921fa73603a108d5a59"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "paraquat activates the IRE1/ASK1/JNK cascade associated with apoptosis in SY5Y cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19735704"
+      },
+      "annotations": {
+        "Disease": {
+          "neuroblastoma": true
+        },
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 48,
+      "target": 78,
+      "key": "d2bc755a0372fa470feaf40a3f3d6d87"
+    },
+    {
+      "line": 63,
+      "relation": "increases",
+      "evidence": "We also showed that 7-Kchol activated the IRE-1/Jun-NH(2)-terminal kinase (JNK)/AP-1 signaling pathway to promote Nox-4 expression. Silencing of IRE-1 and JNK inhibition downregulated Nox-4 expression and subsequently prevented the UPR-dependent cell death induced by 7-Kchol.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15572675"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "source": 8,
+      "target": 40,
+      "key": "51726dab160499b3c2e14bdd762a0da0"
+    },
+    {
+      "line": 64,
+      "relation": "increases",
+      "evidence": "Furthermore, the 7-Kchol activating pathway included an early triggering of endoplasmic reticulum stress, as assessed by transient intracellular Ca(2+) oscillations, and the induction of the expression of the cell death effector CHOP and of GRP78/Bip chaperone via the activation of IRE-1, all hallmarks of the unfolded protein response (UPR).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15572675"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "source": 8,
+      "target": 15,
+      "key": "c02239af80f174e43b814eb948cfec42"
+    },
+    {
+      "line": 67,
+      "relation": "increases",
+      "evidence": "If the defect in XBP1 mRNA splicing is responsible for the defect in 5× ATF6 reporter induction in the IRE1alpha-null MEFs, then expression of the spliced form of XBP1 mRNA, but not the unspliced form, should complement the 5× ATF6 reporter defect in the IRE1alpha-null MEFs. cDNAs encoding XBP1alphaORF1 alone, XBP1-u (unspliced form of XBP1), and XBP1-s (spliced form of XBP1) were inserted behind the CMV promoter to direct their expression in transiently transfected cells. Expression of XBP1-s greatly increased 5× ATF6 reporter gene expression in the wild-type MEFs, even in the absence of ER stress (Fig.4H). Qualitatively similar results were obtained from cotransfection experiments in COS-1 cells (data not shown). Strikingly, only XBP1-s complemented the 5× ATF6 reporter expression in the IRE1alpha-null MEFs.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11850408"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 40,
+      "target": 30,
+      "key": "98952309f9e7acf1b236ea703847e1a7"
+    },
+    {
+      "line": 67,
+      "relation": "increases",
+      "evidence": "To test whether IRE1alpha is required for ATF6 cleavage and function, we used a luciferase reporter plasmid under transcriptional control of a multimerized ATF6-binding site (Fig. ?(Fig.2A,2A, bottom). This multimerized ATF6-binding site is sufficient to direct ER stress-induced expression of luciferase (Wang et al. 2000). Previously, we showed that overexpression of wild-type IRE1alpha activates this 5× ATF6 reporter, whereas overexpression of a kinase and RNase domain-deleted mutant IRE1alpha (IRE1?C) acts in a trans-dominant negative manner to prevent the ER stress-induced expression of the 5× ATF6 reporter (Wang et al. 2000).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11850408"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 40,
+      "target": 30,
+      "key": "8649d804e55323fd80b739cb2c19eea1"
+    },
+    {
+      "line": 67,
+      "relation": "increases",
+      "evidence": "A dominant negative form of ATF6 blocked ER stress induction of both ATF6 site and GRP78 reporter genes. We further found that GAL4-ATF6 could be activated by ER stress. These results demonstrate that ATF6 is a direct target of the ER stress response. A proximal sensor of the ER stress response, human IRE1 (hIRE1), was sufficient to activate the ATF6 reporter gene, while a dominant negative form of hIRE1 blocked ER stress activation, suggesting that hIRE1 is upstream of ATF6 in the ER stress signaling pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10856300"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 40,
+      "target": 30,
+      "key": "0bef24b8ccba5a1c04487673e1ce0e99"
+    },
+    {
+      "line": 68,
+      "relation": "increases",
+      "evidence": "Overexpression of unspliced XBP1 mRNA together with IRE1alpha converted essentially all of pXBP1(U) to pXBP1(S) (lane 4), resulting in constitutive activation of the human GRP78 promoter luciferase fusion reporter gene (Figure 5C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11779464"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 40,
+      "target": 76,
+      "key": "8b534e27de2cb2d1a054c8c5f687c9f8"
+    },
+    {
+      "line": 68,
+      "relation": "increases",
+      "evidence": "Here we demonstrate that the IRE1alpha-XBP1 pathway, the most conserved branch of the unfolded protein response (UPR), is indispensable for adipogenesis. Indeed, XBP1-deficient mouse embryonic fibroblasts and 3T3-L1 cells with XBP1 or IRE1alpha knockdown exhibit profound defects in adipogenesis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19490910"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 40,
+      "target": 76,
+      "key": "5afee4c101d8225f808f9ee5f2682ec3"
+    },
+    {
+      "line": 69,
+      "relation": "decreases",
+      "evidence": "In 293 cells with the dominant-negative mutant of IRE1, both activations of NF-k B and AP-1 by ER stress were completely suppressed, compared with those in normal cells (Fig. 3B). These results indicate that IRE1 is required for the activation of NF-k B and AP-1 in response to ER stress.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15305022"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 40,
+      "target": 21,
+      "key": "3e81ef88ee144d467eb0ee5126c1ce1b"
+    },
+    {
+      "line": 71,
+      "relation": "decreases",
+      "evidence": "In 293 cells with the dominant-negative mutant of IRE1, both activations of NF-k B and AP-1 by ER stress were completely suppressed, compared with those in normal cells (Fig. 3B). These results indicate that IRE1 is required for the activation of NF-k B and AP-1 in response to ER stress.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15305022"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 40,
+      "target": 20,
+      "key": "6b18f306c16c98b1bcd5760f420cec43"
+    },
+    {
+      "line": 72,
+      "relation": "increases",
+      "evidence": "paraquat activates the IRE1/ASK1/JNK cascade associated with apoptosis in SY5Y cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19735704"
+      },
+      "annotations": {
+        "Disease": {
+          "neuroblastoma": true
+        },
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 40,
+      "target": 48,
+      "key": "e7e61a5d1a356461f9d880eb491398ca"
+    },
+    {
+      "line": 73,
+      "relation": "increases",
+      "evidence": "We also showed that 7-Kchol activated the IRE-1/Jun-NH(2)-terminal kinase (JNK)/AP-1 signaling pathway to promote Nox-4 expression. Silencing of IRE-1 and JNK inhibition downregulated Nox-4 expression and subsequently prevented the UPR-dependent cell death induced by 7-Kchol.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15572675"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 40,
+      "target": 78,
+      "key": "a8b371c8f334faa7fc4746b136ac7922"
+    },
+    {
+      "line": 76,
+      "relation": "increases",
+      "evidence": "The high rate of protein synthesis in beta-cells renders them susceptible to endoplasmic reticulum (ER) stress",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17565413"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "pancreatic beta cell": true
+        }
+      },
+      "source": 19,
+      "target": 15,
+      "key": "b6ef44e3dac72cdea36c54f0f7bda466"
+    },
+    {
+      "line": 76,
+      "relation": "increases",
+      "evidence": "Importantly, cycloheximide treatment also completely suppressed PERK (Thr980) phosphorylation in both Tsc1-/- and Tsc2-/- cells (Figure S1C), supporting the hypothesis that increased protein synthesis is likely the underlying mechanism for activation of UPR in TSC1- and TSC2-deficient cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18342602"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 19,
+      "target": 15,
+      "key": "46e7f32565fcd3c7b76f533fd6ea5246"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "Here, we demonstrate that mouse double minute 2 (MDM2) is a bona fide E3 ubiquitin ligase for ATF3 and regulates ATF3 expression by promoting its degradation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20592017"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 53,
+      "target": 27,
+      "key": "ca9ae84a25356d23fec317c89efa26a2"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 35,
+      "target": 37,
+      "key": "671e95ed6ad3ff4d3364110fe0f775d4"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 35,
+      "target": 36,
+      "key": "fb4912f566f1b38ceeb327214171ba3f"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "phosphorylation of JNK was induced 2 fold in normal cells but not in Perk-/- MEF cells (Figure 4).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16124869"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 34,
+      "target": 78,
+      "key": "2064dcf7257bc53afc12d626a1e9e6dc"
+    },
+    {
+      "line": 80,
+      "relation": "increases",
+      "evidence": "The level of phosphorylated p38 MAPK was increased 2–3 fold in Perk+/+ but not in Perk-/- MEFs after thapsigargin treatment (Figure 4), indicating that activation of the p38 MAPK signal pathway by thapsigargin is PERK-dependent.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16124869"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 34,
+      "target": 79,
+      "key": "7b3964f10051061362a1859be5ffa6cb"
+    },
+    {
+      "line": 81,
+      "relation": "directlyIncreases",
+      "evidence": "The enhanced transcription of folding and degradation machinery messages is initiated by IRE1 through its endonuclease activity and ATF6, which is itself a transcription factor. In addition, the kinase PERK attenuates general protein synthesis through its phosphorylation of eIF2a.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16973428"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 34,
+      "target": 36,
+      "key": "5602ce229e3200d945535218ba3e1f34"
+    },
+    {
+      "line": 81,
+      "relation": "directlyIncreases",
+      "evidence": "Treatment of tumor cells with FAS inhibitors induces robust PERK-dependent phosphorylation of the translation initiation factor eIF2alpha and concomitant inhibition of protein synthesis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17283163"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "tumor": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 34,
+      "target": 36,
+      "key": "4aa9143a7975f2f7f18ff0f8165dfc4c"
+    },
+    {
+      "line": 82,
+      "relation": "decreases",
+      "evidence": "WFS1 negatively regulates a key transcription factor involved in ER stress signaling, activating transcription factor 6alpha (ATF6alpha), through the ubiquitin-proteasome pathway. WFS1 suppressed expression of ATF6alpha target genes and repressed ATF6alpha-mediated activation of the ER stress response element (ERSE) promoter",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20160352"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "pancreatic beta cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 75,
+      "target": 30,
+      "key": "e77662a68ede0c2c8c7c99f2c878356a"
+    },
+    {
+      "line": 84,
+      "relation": "directlyIncreases",
+      "evidence": "Analysis of ubiquitination and degradation of the constitutively dimerized ATF2 mutant (ATF2(Delta150-248)) showed that activation of JNK or p38 kinase renders ATF2 resistant to ubiquitination and degradation. This effect is mediated by JNK/p38-dependent phosphorylation of ATF2 at Thr-69 and Thr-71, because the phosphorylation-deficient mutant (ATF2(Delta150-248-T69A,T71A)) was not protected from ubiquitination and degradation by the activation of SAPK.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10777545"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 49,
+      "target": 26,
+      "key": "7bc21772bff06d4a23ec62d6d89696dc"
+    },
+    {
+      "line": 84,
+      "relation": "directlyIncreases",
+      "evidence": "p54/46 ATF-2 kinases were bound to the GST-ATF-2 column and after elution of the kinases from the column with 2 M urea, fractions were tested for kinase activity (Figure 7A)....we used a mutant of ATF-2 containing point mutations at positions Thr69, Thr71 and Ser9O. As shown in Figure 7B (right panel), both the kinases purified with GST-ATF-2 and with GST-Jun (JNK) hardly phosphorylated GST-ATF-2 protein lacking the putative phosphoacceptor sites (M).....The GST-c-Jun protein containing point mutations at positions Ser63 and Ser73 (M) was phosphorylated less efficiently than wild-type c-Jun (W) by ATF-2 kinases (Figure 7B, left panel), similar to that found for p54/46 JNK (Hibi et al., 1993).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "7737130"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 49,
+      "target": 26,
+      "key": "52eb0bfa4b124ea3310ea6b6f543fb5c"
+    },
+    {
+      "line": 132,
+      "relation": "increases",
+      "evidence": "ATF6 has been implicated in the endoplasmic reticulum (ER) stress response pathway since it can activate expression of GRP78 and other genes induced by the ER stress response. ER stress appears to activate ATF6 by cleavage from the ER membrane and translocation to the nucleus",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10856300"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "GOCCID",
+            "name": "0005737"
+          },
+          "toLoc": {
+            "namespace": "GOCCID",
+            "name": "0005634"
+          }
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 30,
+      "target": 30,
+      "key": "142bc0d0a05de428182f904b2c72c6c1"
+    },
+    {
+      "line": 108,
+      "relation": "increases",
+      "evidence": "When RAW 264.7 cells or COS-7 cells were transfected with expression plasmids for CHOP, p90ATF6, or p50ATF6, cell death was observed. In addition, apoptosis induced by p50ATF6 was prevented by a CHOP dominant negative form as well as by an ATF6 dominant negative form, and LPS/IFN-gamma-induced apoptosis was prevented by the CHOP dominant negative form. Peritoneal macrophages from CHOP knockout mice showed resistance to NO-induced apoptosis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11805088"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 31,
+      "target": 13,
+      "key": "c6b2751dcc97e29a0818a91016142c6c"
+    },
+    {
+      "line": 108,
+      "relation": "increases",
+      "evidence": "Transient overexpression of GADD153 in A549 cells produced an approximate 50% loss in cell viability relative to pMaxGFP-transfected control cells in the absence of cytotoxic TRPV1 agonists (Fig. 5A).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17332266"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 31,
+      "target": 13,
+      "key": "5ac0fed7dcea02b3174f7a2735136060"
+    },
+    {
+      "line": 109,
+      "relation": "association",
+      "evidence": "Thrombin Increases Lung Fibroblast Survival While Promoting Alveolar Epithelial Cell Apoptosis via the ER Stress Marker CHOP",
+      "citation": {
+        "db": "Other",
+        "db_id": "24279877"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 31,
+      "target": 15,
+      "key": "0c092e6e57c08a0474972bdba65b95b0"
+    },
+    {
+      "line": 110,
+      "relation": "decreases",
+      "evidence": "Investigation of the mechanisms contributing to this effect revealed that elevated Gadd153 expression results in the down-regulation of Bcl2 expression, depletion of cellular glutathione, and exaggerated production of reactive oxygen species.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11158311"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        }
+      },
+      "source": 31,
+      "target": 3,
+      "key": "02e033e4cbcffc0a1cfada4511731df9"
+    },
+    {
+      "line": 112,
+      "relation": "increases",
+      "evidence": "In Chop-/- macrophages, the increase in Ero1a mRNA and both basal and ER stress–induced ERO1-alpha protein were diminished.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19752026"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "source": 31,
+      "target": 41,
+      "key": "d6fc9478d9962b951973963107f61ab3"
+    },
+    {
+      "relation": "partOf",
+      "source": 54,
+      "target": 23,
+      "key": "5d3d77bfda4122dd418fb9235d952ac1"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 54,
+      "target": 23,
+      "key": "dd1025feb09418d98aa3bd11ca623c0a"
+    },
+    {
+      "line": 119,
+      "relation": "decreases",
+      "evidence": "Compared with wild-type mice, emphysematous lungs of CS-exposed Nrf2-deficient mice exhibited markedly lower proteasomal activity and elevated markers of ER stress",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19797762"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 54,
+      "target": 15,
+      "key": "87dbfa2c31806b17ac646a9f25222ed0"
+    },
+    {
+      "relation": "partOf",
+      "source": 58,
+      "target": 24,
+      "key": "55264ed3c2ac361f64487dce946cc3a4"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 58,
+      "target": 24,
+      "key": "087b95d67e2c1bac48c515086b400e27"
+    },
+    {
+      "line": 91,
+      "relation": "decreases",
+      "evidence": "Here, we show that eIF4GI exists in a complex with NAD(P)H quinone-oxydoreductase 1 (NQO1) in cell extracts. Treatment of cells with dicumarol (dicoumarol), a pharmacological inhibitor of NQO1 known to preclude NQO1 binding to its protein partners, provokes eIF4GI degradation by the proteasome. Consistently, the eIF4GI steady-state level also diminishes upon the silencing of NQO1 (by transfection with small interfering RNA), while eIF4GI accumulates upon the overexpression of NQO1 (by transfection with cDNA).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20028737"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 58,
+      "target": 39,
+      "key": "cb08d2f3e44bf81fe0be2e57f34b58b2"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 55,
+      "target": 21,
+      "key": "2e64fa9541d7261178d469cafd586183"
+    },
+    {
+      "line": 97,
+      "relation": "increases",
+      "evidence": "Lower levels of eIF2alpha phosphorylation in Nck-overexpressing cells were still observed for up to 24 h of treatment with Tn (data not shown) or with the calcium ATPase inhibitor thapsigargin, which also induces ER stress (Tg) (Fig. 1, B  and D), demonstrating that Nck overexpression causes a long-lasting inhibition of eIF2alpha Ser51 phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16835242"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 5,
+      "target": 15,
+      "key": "72609d62af48c5a97e4e0c7ac873c904"
+    },
+    {
+      "line": 97,
+      "relation": "increases",
+      "evidence": "Accordingly, thapsigargin, a known ER stress inducer, stimulated ET-1 mRNA and protein levels in ECs",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20335527"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "source": 5,
+      "target": 15,
+      "key": "7497cc1173c1fa82e06751cb55fa656c"
+    },
+    {
+      "line": 97,
+      "relation": "increases",
+      "evidence": "Thapsigargin, an endoplasmic reticulum (ER) stress-inducing agent, significantly decreased threonine32-phosphorylation of FOXO3a, and increased nuclear and decreased cytosolic FOXO3a, suggesting that thapsigargin activates FOXO3a.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15207915"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 5,
+      "target": 15,
+      "key": "d65907f02f4d64ca57e7bdfe768f54db"
+    },
+    {
+      "line": 97,
+      "relation": "increases",
+      "evidence": "The ATF4+/- MEF cells experiencing an ER stress (thapsigargin) increased VEGF expression 2.0-fold. This induction was completely abolished in the ATF4-/- MEF strain, indicating the importance of ATF4 in VEGF regulation during ER stress.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15788408"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "embryonic tissue": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 5,
+      "target": 15,
+      "key": "cf919563a12309e7d694fcd5fc1fb22b"
+    },
+    {
+      "line": 97,
+      "relation": "increases",
+      "evidence": "selective hypersensitivity to apoptosis induced by ER stress agents (thapsigargin, tunicamycin, brefeldin A), but not to stimulators of mitochondrial or TNF/Fas-death receptor apoptosis pathways.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15304216"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 5,
+      "target": 15,
+      "key": "4eaced321263cb81ca8bf1bee813b20c"
+    },
+    {
+      "line": 97,
+      "relation": "increases",
+      "evidence": "Here, we demonstrate that homocysteine induces the ER stress response and leads to the expression of a novel protein, Herp, containing a ubiquitin-like domain at the N terminus. mRNA expression of Herp was strongly up-regulated by inducers of ER stress, including mercaptoethanol, tunicamycin, A23187, and thapsigargin. The ER stress-dependent induction of Herp was also observed at the protein level.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10922362"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 5,
+      "target": 15,
+      "key": "40957fd14b4d31d85058dcdf5516e201"
+    },
+    {
+      "line": 97,
+      "relation": "increases",
+      "evidence": "transcription from the human C/EBPbeta gene is induced in response to endoplasmic reticulum stress, such as glucose deprivation, or treatment of cells with tunicamycin or thapsigargin.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15102854"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 5,
+      "target": 15,
+      "key": "0157a9e99513351853f9667b489016cd"
+    },
+    {
+      "line": 98,
+      "relation": "increases",
+      "evidence": "Oxidative maturation of secretory and membrane proteins in the endoplasmic reticulum (ER) is powered by Ero1 oxidases. To prevent cellular hyperoxidation, Ero1 activity can be regulated by intramolecular disulphide switches. Here, we determine the redox-driven shutdown mechanism of Ero1alpha, the housekeeping Ero1 enzyme in human cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18833192"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 41,
+      "target": 14,
+      "key": "47cb30451a75c777435e1cb145a0a265"
+    },
+    {
+      "line": 100,
+      "relation": "increases",
+      "evidence": "ER stress pathway induced by NO",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16645155"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 0,
+      "target": 15,
+      "key": "6db2ce363bb4bfa4ca63e5b3155afd1e"
+    },
+    {
+      "line": 102,
+      "relation": "directlyDecreases",
+      "evidence": "Here, we demonstrate that mouse double minute 2 (MDM2) is a bona fide E3 ubiquitin ligase for ATF3 and regulates ATF3 expression by promoting its degradation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20592017"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 27,
+      "target": 27,
+      "key": "422c5f76e313ea2ac4e4331caf75b3f0"
+    },
+    {
+      "line": 147,
+      "relation": "decreases",
+      "evidence": "During arsenite treatment of PC12 cells, we observed enhanced binding of ATF4 to the C/EBP-ATF site at 2 h as Gadd153 mRNA levels increased, and enhanced binding of ATF3 complexes at 6 h as Gadd153 expression declined. We further demonstrated that ATF4 activates, while ATF3 represses, Gadd153 promoter activity through the C/EBP-ATF site. ATF3 also repressed ATF4-mediated transactivation and arsenite-induced activation of the Gadd153 promoter.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10085237"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 28,
+      "key": "f2efdd0f6c30bf36e04c60e3f6e5fe2d"
+    },
+    {
+      "line": 114,
+      "relation": "increases",
+      "evidence": "Here, we demonstrate that homocysteine induces the ER stress response and leads to the expression of a novel protein, Herp, containing a ubiquitin-like domain at the N terminus. mRNA expression of Herp was strongly up-regulated by inducers of ER stress, including mercaptoethanol, tunicamycin, A23187, and thapsigargin. The ER stress-dependent induction of Herp was also observed at the protein level.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10922362"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 11,
+      "target": 15,
+      "key": "7703164ccd122bb4c5f5633e98fb3e34"
+    },
+    {
+      "line": 114,
+      "relation": "increases",
+      "evidence": "Endoplasmic reticulum (ER) stress has been implicated in the pathogenesis of ischemic and neurodegenerative disorders. Treatment of human SH-SY5Y neuroblastoma cells with tunicamycin, an inhibitor of protein glycosylation, rapidly induced the expression of target genes of the unfolded protein response. However, prolonged treatment also triggered a delayed, caspase-dependent cell death. Microarray analysis of gene expression changes during tunicamycin-induced apoptosis revealed that the Bcl-2 homology domain 3-only family member, Bcl-2 binding component 3/p53 upregulated modulator of apoptosis (Bbc3/PUMA), was the most strongly induced pro-apoptotic gene. Expression of Bbc3/PUMA correlated with a Bcl-xL-sensitive release of cytochrome c and the activation of caspase-9 and -3. Increased expression of Bbc3/PUMA was also observed in p53-deficient human cells, in response to the ER stressor thapsigargin, and in rat hippocampal neurons after transient forebrain ischemia. Overexpression of Bbc3/PUMA was sufficient to trigger apoptosis in SH-SY5Y neuroblastoma cells, and human cells deficient in Bbc3/PUMA showed dramatically reduced apoptosis in response to ER stress. Our data suggest that the transcriptional induction of Bbc3/PUMA may be sufficient and necessary for ER stress-induced apoptosis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12913114"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 11,
+      "target": 15,
+      "key": "f440f2b2656d588830473e414606a1a4"
+    },
+    {
+      "line": 114,
+      "relation": "increases",
+      "evidence": "selective hypersensitivity to apoptosis induced by ER stress agents (thapsigargin, tunicamycin, brefeldin A), but not to stimulators of mitochondrial or TNF/Fas-death receptor apoptosis pathways.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15304216"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 11,
+      "target": 15,
+      "key": "cc00e1146d5ff680393e21b0f7c13a6e"
+    },
+    {
+      "line": 114,
+      "relation": "increases",
+      "evidence": "unfolded protein response (UPR)-inducing agent, tunicamycin (Fig. 1A), an inhibitor of N-linked glycosylation, or phorbol myristate acetate (PMA) (100 nM), a phorbol ester",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14517290"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 11,
+      "target": 15,
+      "key": "4f95af3096c4d375debfa3155665ef3c"
+    },
+    {
+      "line": 114,
+      "relation": "increases",
+      "evidence": "transcription from the human C/EBPbeta gene is induced in response to endoplasmic reticulum stress, such as glucose deprivation, or treatment of cells with tunicamycin or thapsigargin.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15102854"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 11,
+      "target": 15,
+      "key": "8d2964e15bf9498a2540fc5c256f2600"
+    },
+    {
+      "line": 115,
+      "relation": "decreases",
+      "evidence": "We further reveal that treatment of cells with dicumarol frees eIF4GI from mRNA translation initiation complexes due to strong activation of its natural competitor, the translational repressor 4E-BP1. As a consequence of cap-binding complex dissociation and eIF4GI degradation, protein synthesis is dramatically inhibited.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20028737"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 38,
+      "target": 39,
+      "key": "89880ea3c73647c637bea85105ea0af5"
+    },
+    {
+      "line": 148,
+      "relation": "directlyIncreases",
+      "evidence": "Analysis of ubiquitination and degradation of the constitutively dimerized ATF2 mutant (ATF2(Delta150-248)) showed that activation of JNK or p38 kinase renders ATF2 resistant to ubiquitination and degradation. This effect is mediated by JNK/p38-dependent phosphorylation of ATF2 at Thr-69 and Thr-71, because the phosphorylation-deficient mutant (ATF2(Delta150-248-T69A,T71A)) was not protected from ubiquitination and degradation by the activation of SAPK.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10777545"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 79,
+      "target": 26,
+      "key": "6745f7c53b9b654a9b0252c21cc78aa3"
+    },
+    {
+      "line": 148,
+      "relation": "directlyIncreases",
+      "evidence": "Interestingly, recent in vitro kinetic studies using recombinant active p38a expressed in Escherichia coli showed that p38 phosphorylates GST-ATF2 (amino acids 1-115) via a two-step (double collision) mechanism, involving the dissociation of mono-phosphorylated ATF2 Thr71 or Thr69 from the enzyme after the first phosphorylation step (Waas et al., 2001). Moreover, these authors found that mono-phosphorylation of ATF2 Thr69 strongly reduces the phosphorylation rate of Thr71, whereas, in contrast, mono-phosphorylation of Thr71 does not reduce the rate of Thr69 phosphorylation. Thus, efficient phosphorylation of ATF2 by recombinant E.coli-expressed active p38 only occurs in the order Thr71-> Thr69 + 71 (Figure 7).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12110590"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 79,
+      "target": 26,
+      "key": "1d3a6e42504fb39a65838cdc92fed113"
+    },
+    {
+      "line": 148,
+      "relation": "directlyIncreases",
+      "evidence": "The transcription factor ATF2 is phosphorylated in vitro by p38 MAP kinase on Thr-69 and Thr-71 (17, 44).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8622669"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 79,
+      "target": 26,
+      "key": "0261d9a1d037fb6bb2f449bbad58b9cb"
+    },
+    {
+      "line": 148,
+      "relation": "directlyIncreases",
+      "evidence": "Phosphorylation of ATF2 on threonines 69,71 is mediated by stress activated protein kinases JNK (Buschmann et al., 2000, Gupta et al., 1995, Livingstone et al., 1995) or p38/MAPK (Raingeaud et al., 1996).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17935492"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 79,
+      "target": 26,
+      "key": "dea1ec992f066317c40e5c745c503686"
+    },
+    {
+      "line": 127,
+      "relation": "increases",
+      "evidence": "Release of Grp78 from the N-terminus of ATF6 triggers a different mechanism of protein activation, compared with PERK and Ire1. Instead of oligomerizing, release of Grp78 frees ATF6 to translocate to the Golgi apparatus, where resident proteases (site 1 and site 2 protease) cleave ATF6 at a juxtamembrane site, releasing this transcription factor into the cytosol and allowing it to migrate into the nucleus to regulate gene expression (15). ATF6 collaborates with Ire1, where ATF6 induces transcription to increase XBP-1 mRNA, and Ire1ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢s endoribonuclease activity then processes that mRNA so that XBP-1 protein is produced.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16200199"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 52,
+      "target": 30,
+      "key": "6e672fb90ab2338353b36981fcfcf871"
+    },
+    {
+      "line": 127,
+      "relation": "increases",
+      "evidence": "both Srebp and ATF6 are cleaved sequentially first by the Site-1 protease [serine protease] and then by the Site-2 protease [metalloprotease]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12782636"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 52,
+      "target": 30,
+      "key": "cb03d607b1c1e9387fe501dcd90f20c0"
+    },
+    {
+      "line": 127,
+      "relation": "increases",
+      "evidence": "Upon ER stress, transcription factor ATF6 translocates from the ER to Golgi, where it is sequentially cleaved by site 1 and site 2 proteases, S1P and S2P, to a 50-kDa form that activates transcription of ERSE genes",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18287014"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 52,
+      "target": 30,
+      "key": "c906e717c1c82d4f7f2ef59a5562cd25"
+    },
+    {
+      "line": 128,
+      "relation": "increases",
+      "evidence": "GRP94, an essential endoplasmic reticulum chaperone, is required for the conformational maturation of proteins destined for cell-surface display or export",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17936703"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 45,
+      "target": 14,
+      "key": "637442547d479100ba0889d02121622d"
+    },
+    {
+      "line": 136,
+      "relation": "decreases",
+      "evidence": "Interestingly, c-Jun Re cells had dramatically lower Grp78 and Gadd153 expression in response to TG treatment compared to c-jun–/– cells (Fig. 2C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18641051"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 47,
+      "target": 46,
+      "key": "e26643c08eea0645fde3d7bcca5b0fbf"
+    },
+    {
+      "line": 138,
+      "relation": "increases",
+      "evidence": "Intriguingly, Adapt78 expression was up-regulated in response to TG treatment in c-Jun Re cells but not in c-jun–/– cells (Fig. 2C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18641051"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 47,
+      "target": 61,
+      "key": "6f9f12800352b484aa1c72d7caf4dcb4"
+    },
+    {
+      "line": 139,
+      "relation": "decreases",
+      "evidence": "Interestingly, c-Jun Re cells had dramatically lower Grp78 and Gadd153 expression in response to TG treatment compared to c-jun–/– cells (Fig. 2C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18641051"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 47,
+      "target": 31,
+      "key": "6b93ebee44b23ec3760175e24532cc99"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 62,
+      "target": 21,
+      "key": "8bfaabe0f78bf0eb4246adb1b53443d2"
+    },
+    {
+      "line": 153,
+      "relation": "decreases",
+      "evidence": "In vitro, curcumin boosted antioxidant defenses by increasing heme oxygenase 1 (HO-1) levels in primary lung endothelial and fibroblast cells and blocked radiation-induced generation of reactive oxygen species (ROS)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20426658"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "source": 44,
+      "target": 1,
+      "key": "6308641158a99b6455135aa007db65e4"
+    }
+  ]
+}

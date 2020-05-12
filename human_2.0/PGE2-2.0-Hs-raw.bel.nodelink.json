@@ -1,0 +1,3943 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "PGE2-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The PGE2 network depicts the pathways exerting regulatory control of PGE2 in the context of cellular proliferation. The network includes cAMP-mediated activation of PKA-, Epac/Rap1- and Tiam1/Vav2-dependent pathways of Rac1 activation."
+    },
+    "namespace_url": {
+      "HGNC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-human-genes/hgnc-human-genes-20150601.belns",
+      "GOBP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20150601.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20150601.belns",
+      "GOCC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170511.belns",
+      "MESHPP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20150601.belns",
+      "MGI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20150601.belns",
+      "RGD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20150601.belns",
+      "CHEBI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20150601.belns",
+      "SCHEM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-chemicals/selventa-legacy-chemicals-20150601.belns",
+      "EGID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/entrez-gene-ids/entrez-gene-ids-20150601.belns",
+      "MESHD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20150601.belns",
+      "SDIS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-diseases/selventa-legacy-diseases-20150601.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20150601.belns",
+      "MESHC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170511.belns",
+      "GOBPID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process-ids/go-biological-process-ids-20150601.belns",
+      "GOCCID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component-ids/go-cellular-component-ids-20150601.belns",
+      "MESHCS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20150601.belns"
+    },
+    "namespace_pattern": {},
+    "annotation_url": {
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20150601.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20150601.belanno",
+      "Species": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+      "Tissue": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20150601.belanno"
+    },
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "arachidonic acid"
+      },
+      "id": "082e87b42d9c314316b9dc289d2a1f6d",
+      "bel": "a(CHEBI:\"arachidonic acid\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "celecoxib"
+      },
+      "id": "3b9fb0fc442fbefc332b8501ea352bd8",
+      "bel": "a(CHEBI:celecoxib)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Cyclic GMP"
+      },
+      "id": "6378ee2e3a5d320523d97c61069e408a",
+      "bel": "a(SCHEM:\"Cyclic GMP\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "cyclic AMP"
+      },
+      "id": "a41b757efbae8390738072fdff022590",
+      "bel": "a(SCHEM:\"cyclic AMP\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Colforsin"
+      },
+      "id": "db092b7e1a9c353ec5f36123524184cc",
+      "bel": "a(SCHEM:Colforsin)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Dinoprostone"
+      },
+      "id": "32ddb8a37b4846f83fcb2ac790b9e2bd",
+      "bel": "a(SCHEM:Dinoprostone)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Epoprostenol"
+      },
+      "id": "cc3c24151b2a4e9ab9bbb55542352928",
+      "bel": "a(SCHEM:Epoprostenol)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "cell proliferation"
+      },
+      "id": "14a7545c48b4be2b5e986ded11b09652",
+      "bel": "bp(GOBP:\"cell proliferation\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "SCOMP",
+        "name": "p85/p110 PI3Kinase Complex"
+      },
+      "id": "31d5253c8cb9a0f486e265bc6fddd28c",
+      "bel": "complex(SCOMP:\"p85/p110 PI3Kinase Complex\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCND1"
+      },
+      "id": "af65521e8dc8a9417952f6aebb7725c6",
+      "bel": "p(HGNC:CCND1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CREB1"
+      },
+      "id": "b2c7eca9616c7cb9eedbe0da548afc35",
+      "bel": "p(HGNC:CREB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CREB1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser",
+          "pos": 133
+        }
+      ],
+      "id": "0764d355a529ac99d46acf8fb1a326ab",
+      "bel": "p(HGNC:CREB1, pmod(Ph, Ser, 133))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CXCL8"
+      },
+      "id": "325a76cdc17ef7ce6a715ed6201f2a09",
+      "bel": "p(HGNC:CXCL8)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "FGF7"
+      },
+      "id": "ffd35200d17ef64cdfc1bc6a5108979f",
+      "bel": "p(HGNC:FGF7)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HRAS"
+      },
+      "id": "3b38b9e6d1635e238a9d231ff621f3f7",
+      "bel": "p(HGNC:HRAS)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL1A"
+      },
+      "id": "017f14e3a15a95b856bdaba5630dcf34",
+      "bel": "p(HGNC:IL1A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NPPA"
+      },
+      "id": "dfb47d8945311295ff69e2635800bffc",
+      "bel": "p(HGNC:NPPA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PDE4A"
+      },
+      "id": "014f6e9167217328f1c99bd4f8f6e15f",
+      "bel": "p(HGNC:PDE4A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PDE4C"
+      },
+      "id": "404b413fb423fec02d9c7ada1efae48c",
+      "bel": "p(HGNC:PDE4C)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PDGFRA"
+      },
+      "id": "032f2ddddebed5b37677ecb275aa0b02",
+      "bel": "p(HGNC:PDGFRA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PTGER1"
+      },
+      "id": "a3024431b2db6e3e646215a45f9a60b0",
+      "bel": "p(HGNC:PTGER1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PTGER2"
+      },
+      "id": "26b68640249f83fe2e870fb0c2357d9a",
+      "bel": "p(HGNC:PTGER2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PTGER3"
+      },
+      "id": "d8e2f939bb8735f8f5052528f6125b3a",
+      "bel": "p(HGNC:PTGER3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PTGER4"
+      },
+      "id": "e5ceed588c04c35b47c9443f738dd879",
+      "bel": "p(HGNC:PTGER4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PTGES"
+      },
+      "id": "c52ed402f353516b9691130817ed7e7e",
+      "bel": "p(HGNC:PTGES)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PTGES2"
+      },
+      "id": "49d59e797bc83d38f31e1ed0ec5fbac2",
+      "bel": "p(HGNC:PTGES2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PTGES3"
+      },
+      "id": "f3cf891b5455730db56f755ea78283ad",
+      "bel": "p(HGNC:PTGES3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PTGS1"
+      },
+      "id": "1c61a10ba60d6468b489e010a936cb71",
+      "bel": "p(HGNC:PTGS1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PTGS2"
+      },
+      "id": "fcfa5df7382bf321071715cd08501263",
+      "bel": "p(HGNC:PTGS2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RAC1"
+      },
+      "id": "130f71781150307370486c5cced7a456",
+      "bel": "p(HGNC:RAC1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RAP1A"
+      },
+      "id": "1d43d9a5ca1d024d03a2118286e42b92",
+      "bel": "p(HGNC:RAP1A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RAPGEF3"
+      },
+      "id": "c1960674c2392f826b06eb5e54c8a240",
+      "bel": "p(HGNC:RAPGEF3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TGFB1"
+      },
+      "id": "f1f493c4771241860fc73aaa3bfdad66",
+      "bel": "p(HGNC:TGFB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TGFB2"
+      },
+      "id": "69e19ccddcad078d85a4a2651edbd7d5",
+      "bel": "p(HGNC:TGFB2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TGFB3"
+      },
+      "id": "d4e314eb841e189874bba14627b4dee1",
+      "bel": "p(HGNC:TGFB3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TIAM1"
+      },
+      "id": "3c748251f36ca200b9635e5535e9447e",
+      "bel": "p(HGNC:TIAM1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "VAV2"
+      },
+      "id": "e5f98cd7036ac5bae63dcd34df7abee5",
+      "bel": "p(HGNC:VAV2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "VEGFA"
+      },
+      "id": "3537912f85b0c685b323cfa4aaff98c1",
+      "bel": "p(HGNC:VEGFA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "VIP"
+      },
+      "id": "24041a8a34cf4075715d7acacb23ab88",
+      "bel": "p(HGNC:VIP)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "VIPR1"
+      },
+      "id": "7cc7861a5ac4a13d0999b1f2982d1d7e",
+      "bel": "p(HGNC:VIPR1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "AKT Family"
+      },
+      "id": "69ad76f4d839fef7fd396895e57fbbc7",
+      "bel": "p(SFAM:\"AKT Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "MAPK Erk1/2 Family"
+      },
+      "id": "a47b4828e1ed77dffa46258b02c5d36a",
+      "bel": "p(SFAM:\"MAPK Erk1/2 Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "MEK1/2 Family"
+      },
+      "id": "d000696fa4da39360cd2ef5b22fee5eb",
+      "bel": "p(SFAM:\"MEK1/2 Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "PDE4 Family"
+      },
+      "id": "560651462541e584006cf9a3692abcea",
+      "bel": "p(SFAM:\"PDE4 Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "PIK3C Class IA Family"
+      },
+      "id": "81e3e58d9656deaee4fcea6b2331946f",
+      "bel": "p(SFAM:\"PIK3C Class IA Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "PRKA Family"
+      },
+      "id": "7c47eff9c97674e1cc5e7ec96ab5fd5d",
+      "bel": "p(SFAM:\"PRKA Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "RAF Family"
+      },
+      "id": "d58fea5f2da846ca9155affcc72086f9",
+      "bel": "p(SFAM:\"RAF Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "RAS Family"
+      },
+      "id": "2bd7a3d03377a9c4cb65451e6f41e910",
+      "bel": "p(SFAM:\"RAS Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "TGFB Family"
+      },
+      "id": "ea4ba1294b41dfcd8ecc0785b58a3edb",
+      "bel": "p(SFAM:\"TGFB Family\")"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "MESHD",
+        "name": "Pulmonary Disease, Chronic Obstructive"
+      },
+      "id": "7c231d4db4388a89f9bcabb26d912509",
+      "bel": "path(MESHD:\"Pulmonary Disease, Chronic Obstructive\")"
+    }
+  ],
+  "links": [
+    {
+      "line": 29,
+      "relation": "increases",
+      "evidence": "Endothelialderived relaxing factors, such as NO or prostacyclin (PGI2), relax blood vessels and inhibit the proliferation and migration of SMCs by increasing the synthesis of the cyclic nucleotides cAMP or cGMP.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14692693"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        }
+      },
+      "source": 6,
+      "target": 2,
+      "key": "d6d6db06c02cfad20081e7b8dba823c2"
+    },
+    {
+      "line": 43,
+      "relation": "increases",
+      "evidence": "The major antiplatelet agents secreted by endothelial cells are prostacyclin (PGI2) and nitric oxide (NO) (Cines et al., 1998). Both synergistically increasecAMPcontent in platelets, hence preventing their aggregation (de Graaf et al., 1992).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12891700"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Blood Platelets": true
+        }
+      },
+      "source": 6,
+      "target": 3,
+      "key": "0fb30ffd49ce5313aa54f408ef51f2e0"
+    },
+    {
+      "line": 43,
+      "relation": "increases",
+      "evidence": "Endothelial cells convert arachidonic acid into prostacyclin with the help of cyclooxygenase-1 or cyclooxygenase-2 (COX-1 or COX-2) and prostacyclin synthase. COX-2 appears to be important in prostacyclin synthesis, on the basis of the effects of selective COX-2 inhibitors on the excretion of prostacyclin metabolites.19-21 Prostacyclin inhibits platelet function by elevating intracellular cyclic AMP levels.22",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18077812"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Blood Platelets": true
+        }
+      },
+      "source": 6,
+      "target": 3,
+      "key": "c139892350f10b1066077a1736b23565"
+    },
+    {
+      "line": 43,
+      "relation": "increases",
+      "evidence": "Endothelialderived relaxing factors, such as NO or prostacyclin (PGI2), relax blood vessels and inhibit the proliferation and migration of SMCs by increasing the synthesis of the cyclic nucleotides cAMP or cGMP.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14692693"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        }
+      },
+      "source": 6,
+      "target": 3,
+      "key": "63d81e485eae2ebd4efc5322c2f58e5d"
+    },
+    {
+      "line": 43,
+      "relation": "increases",
+      "evidence": "antimitogenic effects of NO and PGI2 on SMCs have been demonstrated in vitro and in vivo acting via production of the intracellular messengers cGMP and cAMP, respectivley",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11350732"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 6,
+      "target": 3,
+      "key": "63e80c9dc1f47e4dc32deddce91d68d4"
+    },
+    {
+      "line": 43,
+      "relation": "increases",
+      "evidence": "Both PGs caused cAMP-mediated activation of PKA-, Epac/Rap1- and Tiam1/Vav2-dependent pathways of Rac1 activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17493609"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Endothelium, Vascular": true
+        }
+      },
+      "source": 6,
+      "target": 3,
+      "key": "16fdd1ea666af3acb61e54de562f3634"
+    },
+    {
+      "line": 18,
+      "relation": "increases",
+      "evidence": "PGE2 synthesis was drastically increased by IL-1alpha from the basal level (45 ± 8 pg/well) to 280 ± 29 pg/well (n = 3).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16569220"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 15,
+      "target": 5,
+      "key": "9de60da6b0c90f1d669b93c0d21c3dde"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "Mechanisms of cancer promotion by COX-2 are not fully understood, but signaling through prostaglandin (PG)E2 receptors is a contributing factor. The major PGE2 receptors on epithelial cells, EP2 and EP4, increase cAMP production, which promotes growth and inhibits apoptosis in some cell types.  To explore the hypothesis that PGE2-stimulated cAMP  is a key intracellular mediator of COX-2-dependent antiapoptosis and define the underlying mechanisms, we used the T84 human colon epithelial cell line, which exhibits inducible apoptosis and is responsive to PGE2  stimulation (31, 34, 35). The major PGE2 receptors on colon epithelial cells are EP2 and EP4  (25), a finding we confirmed by RT-PCR of T84 cells (data not shown). Both EP2 and EP4 receptors activate adenylyl cyclase and increase cAMP as a second messenger, suggesting that cAMP mediates antiapoptotic functions in epithelial cells. Consistent with this idea, we found that a membrane-permeant  cAMP analog, 8-CPT-cAMP, and CTX, which catalyzes the ADP-ribosylation of Gs regulatory protein, leading to the activation of adenylyl  cyclase, also inhibited Fas- and staurosporine-promoted apoptosis  (Fig. 1 A). These findings were confirmed by evidence that CTX and 8-CPT-cAMP also inhibited the formation of apoptosis-associated DNA laddering in T84 cells (Fig. 1B and data not shown). We obtained similar results with the normal rat intestinal epithelial  cell line, RIE-1 (Fig. 1C). Thus, the antiapoptotic response to increases in cAMP in intestinal epithelial cells is independent of their state of transformation and conserved across at least two species.\\\"From full text\\\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12837940"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 21,
+      "target": 3,
+      "key": "bfec88cb8891d497a1ba76b61c4d9347"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "Work in our laboratory (13) and others (14) has shown that the inhibitory actions of PGE2 in lung fibroblasts are a result of increases in cAMP, mediated through the Gas-coupled EP2 receptor;",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18421013"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 21,
+      "target": 3,
+      "key": "9517e5dc9c624b01375d2700108cc567"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "Activation of the adenylyl cyclase-coupled beta2-adrenoceptor expressed in HEK-293 cells or the endogenous receptor for prostaglandin E1 in N1E-115 neuroblastoma cells induced calcium mobilization and PLC stimulation, seemingly caused by cAMP formation,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11715024"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 21,
+      "target": 3,
+      "key": "dc2f5c931b220a4cb8d43bedc56c728e"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "Figure 1. Pathways to MUC5AC expression in COPD",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17615396"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 21,
+      "target": 3,
+      "key": "2a005c1eeebcfb7e5cb61fbd348dc897"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11739606"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 21,
+      "target": 3,
+      "key": "c6114f342059cdd8d05a41380cd43247"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "Stimulation of EP2 and EP4 is linked with cyclic adenosine 3', 5'-monophosphate (cAMP)-dependent protein kinase A (PKA). specific agonists of these receptors induced growth inhibition with an accompanying increase in cAMP production.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12228765"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Neoplasms": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 21,
+      "target": 3,
+      "key": "eb9d688177fd2a7ebbda698d43e46d8d"
+    },
+    {
+      "line": 36,
+      "relation": "increases",
+      "evidence": "We conclude that in this coculture system, IL-1alpha secretion by ATII cells is one factor that stimulates PGE2 production by lung fibroblasts, thereby inhibiting fibroblast proliferation. In addition, these studies demonstrate that KGF enhances ATII cell PGE2 production through an IL-1alpha-independent pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16169897"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Alveolar type II cell": true
+        }
+      },
+      "source": 13,
+      "target": 5,
+      "key": "b55432073649d20448839466c67ba06c"
+    },
+    {
+      "line": 6,
+      "relation": "increases",
+      "evidence": "VIP/VPAC1 interaction is associated with a cAMP increase and activation of a cAMP/p38 MAPK pathway, which regulates MMP-9, CD35, and CD11b exocytosis, and a cAMP/EPAC/PI-3K/ERK pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18174366"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Monocytes": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 39,
+      "target": 3,
+      "key": "7133ce8f10dfc52f2ae89f831c6bbea3"
+    },
+    {
+      "line": 52,
+      "relation": "increases",
+      "evidence": "Mechanisms of cancer promotion by COX-2 are not fully understood, but signaling through prostaglandin (PG)E2 receptors is a contributing factor. The major PGE2 receptors on epithelial cells, EP2 and EP4, increase cAMP production, which promotes growth and inhibits apoptosis in some cell types.  To explore the hypothesis that PGE2-stimulated cAMP  is a key intracellular mediator of COX-2-dependent antiapoptosis and define the underlying mechanisms, we used the T84 human colon epithelial cell line, which exhibits inducible apoptosis and is responsive to PGE2  stimulation (31, 34, 35). The major PGE2 receptors on colon epithelial cells are EP2 and EP4  (25), a finding we confirmed by RT-PCR of T84 cells (data not shown). Both EP2 and EP4 receptors activate adenylyl cyclase and increase cAMP as a second messenger, suggesting that cAMP mediates antiapoptotic functions in epithelial cells. Consistent with this idea, we found that a membrane-permeant  cAMP analog, 8-CPT-cAMP, and CTX, which catalyzes the ADP-ribosylation of Gs regulatory protein, leading to the activation of adenylyl  cyclase, also inhibited Fas- and staurosporine-promoted apoptosis  (Fig. 1 A). These findings were confirmed by evidence that CTX and 8-CPT-cAMP also inhibited the formation of apoptosis-associated DNA laddering in T84 cells (Fig. 1B and data not shown). We obtained similar results with the normal rat intestinal epithelial  cell line, RIE-1 (Fig. 1C). Thus, the antiapoptotic response to increases in cAMP in intestinal epithelial cells is independent of their state of transformation and conserved across at least two species.\\\"From full text\\\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12837940"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 23,
+      "target": 3,
+      "key": "b1d2801f1d306f58d93055d0d3f4954e"
+    },
+    {
+      "line": 52,
+      "relation": "increases",
+      "evidence": "Activation of the adenylyl cyclase-coupled beta2-adrenoceptor expressed in HEK-293 cells or the endogenous receptor for prostaglandin E1 in N1E-115 neuroblastoma cells induced calcium mobilization and PLC stimulation, seemingly caused by cAMP formation,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11715024"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 23,
+      "target": 3,
+      "key": "f0f1d61cdf968da913bef191fe179faf"
+    },
+    {
+      "line": 52,
+      "relation": "increases",
+      "evidence": "Figure 1. Pathways to MUC5AC expression in COPD",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17615396"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 23,
+      "target": 3,
+      "key": "6e381b9e2414fb767e76a33e7a8d8c73"
+    },
+    {
+      "line": 52,
+      "relation": "increases",
+      "evidence": "Stimulation of EP2 and EP4 is linked with cyclic adenosine 3', 5'-monophosphate (cAMP)-dependent protein kinase A (PKA). specific agonists of these receptors induced growth inhibition with an accompanying increase in cAMP production.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12228765"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Neoplasms": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 23,
+      "target": 3,
+      "key": "059d1a9f00ea9b96cdd0b639dc6f456f"
+    },
+    {
+      "line": 15,
+      "relation": "decreases",
+      "evidence": "Cell-specific prostaglandin synthases convert PGH2 into a series of prostaglandins, including PGI2, PGF2alpha, PGD2 and PGE2 (Fig. 1).   Fig. 1 Legend - Pathway of prostaglandin production. Arachidonic acid is liberated from membranes by phospholipase A2. The cyclooxygenase enzymes (COX-1 and COX-2) produce prostaglandin H2 (PGH2) from arachidonic acid. PGH2 is acted upon by prostaglandin synthases to produce PGI2, PGD2, PGE2 and PGF2alpha. PGD2 is metabolized to 15-deoxy-12,14-PGJ2 (15-d-PGJ2).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11864843"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 0,
+      "key": "c814c4f20327efba943952f5d4ede8ae"
+    },
+    {
+      "line": 15,
+      "relation": "decreases",
+      "evidence": "FACL4 and COX-2 synergistically inhibit apoptosis by reducing the intracellular level of free arachidonic acid. Here, we report that expression of FACL4 is significantly increased in colon adenocarcinoma",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11731423"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 0,
+      "key": "7917f1abc6602ffecab6e65b51f84022"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "Cell-specific prostaglandin synthases convert PGH2 into a series of prostaglandins, including PGI2, PGF2alpha, PGD2 and PGE2 (Fig. 1).   Fig. 1 Legend - Pathway of prostaglandin production. Arachidonic acid is liberated from membranes by phospholipase A2. The cyclooxygenase enzymes (COX-1 and COX-2) produce prostaglandin H2 (PGH2) from arachidonic acid. PGH2 is acted upon by prostaglandin synthases to produce PGI2, PGD2, PGE2 and PGF2alpha. PGD2 is metabolized to 15-deoxy-12,14-PGJ2 (15-d-PGJ2).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11864843"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 5,
+      "key": "c4972f3e2c3b4eb00a0789dac78fdc8b"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "Mechanisms of cancer promotion by COX-2 are not fully understood, but signaling through prostaglandin (PG)E2 receptors is a contributing factor. The major PGE2 receptors on epithelial cells, EP2 and EP4, increase cAMP production, which promotes growth and inhibits apoptosis in some cell types.  To explore the hypothesis that PGE2-stimulated cAMP  is a key intracellular mediator of COX-2-dependent antiapoptosis and define the underlying mechanisms, we used the T84 human colon epithelial cell line, which exhibits inducible apoptosis and is responsive to PGE2  stimulation (31, 34, 35). The major PGE2 receptors on colon epithelial cells are EP2 and EP4  (25), a finding we confirmed by RT-PCR of T84 cells (data not shown). Both EP2 and EP4 receptors activate adenylyl cyclase and increase cAMP as a second messenger, suggesting that cAMP mediates antiapoptotic functions in epithelial cells. Consistent with this idea, we found that a membrane-permeant  cAMP analog, 8-CPT-cAMP, and CTX, which catalyzes the ADP-ribosylation of Gs regulatory protein, leading to the activation of adenylyl  cyclase, also inhibited Fas- and staurosporine-promoted apoptosis  (Fig. 1 A). These findings were confirmed by evidence that CTX and 8-CPT-cAMP also inhibited the formation of apoptosis-associated DNA laddering in T84 cells (Fig. 1B and data not shown). We obtained similar results with the normal rat intestinal epithelial  cell line, RIE-1 (Fig. 1C). Thus, the antiapoptotic response to increases in cAMP in intestinal epithelial cells is independent of their state of transformation and conserved across at least two species.\\\"From full text\\\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12837940"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 5,
+      "key": "e33c9cf8880ca1377e5409c29da179f2"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "Prostaglandins, particularly prostaglandin E2 (PGE2), play an important role during inflammation. This is exemplified by the clinical use of cyclooxygenase 2 inhibitors, which interfere with PGE2 synthesis, as effective antiinflammatory drugs. In human purified naive T cells, PGE2 acts via prostaglandin receptor EP2- and EP4-mediated signaling and cyclic AMP pathways to up-regulate IL-23 and IL-1 receptor expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19273625"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "naive T-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 5,
+      "key": "d8975a43a3cd6ff53e465127622d515d"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "in both benign and malignant mouse intestinal tumors, stromal expression of COX2 results in elevated PGE2 levels that stimulate, in turn, cell surface receptor EP2, followed by induction of VEGF and angiogenesis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15294883"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 5,
+      "key": "ef2814ee89843d1b8938ca644673db3b"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "COX-2 synthesizes prostaglandin E2 (PGE2) which stimulates bcl-2 and inhibits apoptosis, and induces interleukin-6 (IL-6) which enhances haptoglobin synthesis. PGE2 is associated with tumor metastases, IL-6 with cancer cell invasion, and haptoglobin with implantation and angiogenesis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10678579"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 5,
+      "key": "c1da4e418040ef1fb2419fe889966402"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "These data suggest that H2O2 stimulates CFTR Cl(-) channel-mediated Cl(-) secretion through cyclooxygenase- and mPGES-1-dependent release of PGE2 and subsequent activation of PKA.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17699556"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "renal medulla": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 5,
+      "key": "bf4971f22dd63598448775105a5dfc75"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "To test whether the PGE2 produced was through COX-2, a COX-2-selective inhibitor NS398 was used (51). At 300 nM, there was complete inhibition of TNF-induced PGE2 production, suggesting a key role for COX-2 in the PGE2 response to TNF in this system (Fig. 1B).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12890694"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 5,
+      "key": "5170fc9241d65f71a24df7409128e4d0"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "These results indicate that PGE(2) synthetic capacity in AECs is predominantly COX-2-dependent under both basal and stimulated conditions",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12444036"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Alveolar type II cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 5,
+      "key": "1d402911b1697da9d3d9d47204834d04"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "The elevated PGE2 production by metastatic cancer cells was due to COX-2 activity since dual COX-1/2 inhibitor indomethacin and selective COX-2 inhibitor NS-398 equally suppressed both basal and inducible (by IFN-gamma/LPS or Ca2+-ionophores) PGE2 accumulation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14499627"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 5,
+      "key": "23f27510b777d18f944dbd8e3b73c4ae"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "Cyclooxygenase-2 (COX-2) antagonists, by blocking prostaglandin production, might inhibit this pathway 149.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12635173"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 5,
+      "key": "272c58009c16153ca77f13eb53738cb3"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "Cyclooxygenase-2 (COX-2) is a crucial enzyme in the conversion of arachidonicacid to prostaglandin E2 (PGE(2)) and is significantly upregulated in many typesof adenocarcinomas.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15033780"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 5,
+      "key": "0079cf48352715ec82547111ad8d9279"
+    },
+    {
+      "line": 25,
+      "relation": "decreases",
+      "evidence": "Cell-specific prostaglandin synthases convert PGH2 into a series of prostaglandins, including PGI2, PGF2alpha, PGD2 and PGE2 (Fig. 1).   Fig. 1 Legend - Pathway of prostaglandin production. Arachidonic acid is liberated from membranes by phospholipase A2. The cyclooxygenase enzymes (COX-1 and COX-2) produce prostaglandin H2 (PGH2) from arachidonic acid. PGH2 is acted upon by prostaglandin synthases to produce PGI2, PGD2, PGE2 and PGF2alpha. PGD2 is metabolized to 15-deoxy-12,14-PGJ2 (15-d-PGJ2).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11864843"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 27,
+      "target": 0,
+      "key": "0737fd31cc3ddbb260786f5be4a80765"
+    },
+    {
+      "line": 79,
+      "relation": "directlyDecreases",
+      "evidence": "was able to prevent the development of N-methylnitrosurea-induced prostate and mammary carcinomas in rats by 50% (REF. 38). Celecoxib, an inhibitor of the inducible prostaglandin G/H synthase COX2, was able to reduce the number of colorectal polyps in patients with familial adenomatous polyposis (FAP). Patients with FAP are at high risk of developing colorectal neoplasias39.COX2 inhibitors are anti-inflammatory agents with anti-angiogenic activities that downregulate the expression of the pro-angiogenic factors FGF and VEGF40.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12778130"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 1,
+      "target": 28,
+      "key": "02fe7ad92e78f9458b3785830f04b8f7"
+    },
+    {
+      "line": 79,
+      "relation": "directlyDecreases",
+      "evidence": "JAK/STATs C225 Phase I treatment (47) AG490 Preclinical treatment (48-51) #----------------------------------------------------------------- Table II. Chemopreventive Agents for Targeting Signal Transduction Pathways Target Drug Phase of Testing Reference Cox-2 Celecoxib Preclinical treatment (164,174-177) and prevention Nimesulide, Valdecoxib, Preclinical treatment (178) Parecoxib, Etoricoxib, Lumaricoxib Sulindac Phase II treatment (179-181) Exisulind Phase I treatment",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14587863"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 1,
+      "target": 28,
+      "key": "e4d8044fa8967e1b04e04617210e8eed"
+    },
+    {
+      "line": 17,
+      "relation": "increases",
+      "evidence": "VEGF induced cyclooxygenase (COX) -2 mRNA expression in HUVECs and increased the PGE2 concentration in the medium. PGE2 treatment enhanced the expression of VEGF mRNA",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16651031"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 37,
+      "target": 5,
+      "key": "49df9ad393fb1661809c69411ad6c477"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "Moreover, Erbin inhibits the Erk activation by active Ras, while it fails to do so in the presence of active Raf-1. Erbin associates with active Ras, but not inactive Ras nor Raf. Consistently, Erbin interferes with the interaction between Ras and Raf both in vivo and in vitro. Erbin associates with active Ras, but not inactive Ras nor Raf.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12379659"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 47,
+      "target": 46,
+      "key": "97c1d23167cab339661adb4447638bbf"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "Figure 1 | The ErbB signalling network.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11252954"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 47,
+      "target": 46,
+      "key": "ba5f1991e508578239cf25a5fd84e636"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "Fig.1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15567848"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 47,
+      "target": 46,
+      "key": "4e3d6d030ecadb00b8c19ed9b27cdd19"
+    },
+    {
+      "line": 37,
+      "relation": "directlyIncreases",
+      "evidence": "Because Raf binds tightly to the GTP-bound form of Ras but not to the GDP-bound form, such differential affinity can be used to determine the GTP-bound status of Ras.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10542228"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 47,
+      "target": 46,
+      "key": "31b85e8c1c2f0505c42a6db6ae258282"
+    },
+    {
+      "line": 14,
+      "relation": "increases",
+      "evidence": "Cell-specific prostaglandin synthases convert PGH2 into a series of prostaglandins, including PGI2, PGF2alpha, PGD2 and PGE2 (Fig. 1).   Fig. 1 Legend - Pathway of prostaglandin production. Arachidonic acid is liberated from membranes by phospholipase A2. The cyclooxygenase enzymes (COX-1 and COX-2) produce prostaglandin H2 (PGH2) from arachidonic acid. PGH2 is acted upon by prostaglandin synthases to produce PGI2, PGD2, PGE2 and PGF2alpha. PGD2 is metabolized to 15-deoxy-12,14-PGJ2 (15-d-PGJ2).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11864843"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 24,
+      "target": 5,
+      "key": "5776aa22543833e3c4cd179b34012abc"
+    },
+    {
+      "line": 14,
+      "relation": "increases",
+      "evidence": "PGH2 are metabolized to PGE2, PGI2, PGD2, PGF2alpha, and thromboxane A2 (TXA2) by respective actions of PGE2 synthase (PGES), PGI2 synthase (PGIS), PGD2 synthase (PGDS), PGF2 synthase (PGFS), and thromboxane synthase.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22346776"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 24,
+      "target": 5,
+      "key": "edf3cec899bbe8d9e8586e02bd04dff1"
+    },
+    {
+      "line": 14,
+      "relation": "increases",
+      "evidence": "Treatment of HCA-7 cells with an mPGES-1 inhibitor or antisense oligonucleotide attenuated, whereas overexpression of mPGES-1 accelerated, PGE2 production and cell proliferation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12626523"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Neoplasms": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 24,
+      "target": 5,
+      "key": "c6caf350b8a32797882cedde4f50fd9e"
+    },
+    {
+      "line": 72,
+      "relation": "increases",
+      "evidence": "AEC actively inhibit the proliferation of both normal and fibrotic fibroblasts via TGF-beta, which induces the prostaglandin E(2) synthesis in fibroblasts",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18503568"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 48,
+      "target": 5,
+      "key": "20d3a6de60fe6803599483b91c6d663b"
+    },
+    {
+      "line": 78,
+      "relation": "increases",
+      "evidence": "We synthesized a VIP analog that combines mutations that decrease the affinity for the VPAC1 receptor but maintain a high affinity for the VPAC2 receptor with an amino-terminal hexanoylation that increases the affinity for the VPAC2 receptor with a limited decrease in the affinity of the VPAC1 receptor.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15063009"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 38,
+      "target": 39,
+      "key": "e25f1f01b6ed32d8b088160b08ff47b4"
+    },
+    {
+      "line": 9,
+      "relation": "increases",
+      "evidence": "The recently described cAMP-dependent guanine nucleotide exchange factor (GEF) Epac activates small GTPase Rap1, which results in activation of small GTPase Rac-specific GEFs Tiam1 and Vav2 and Rac-mediated EC barrier protective responses. Our results show that ANP stimulated protein kinase A and the Epac/Rap1/Tiam/Vav/Rac cascade",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18064650"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Endothelium, Vascular": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 16,
+      "target": 31,
+      "key": "f0a737557273471c3057340b5850f6f9"
+    },
+    {
+      "line": 30,
+      "relation": "increases",
+      "evidence": "The recently described cAMP-dependent guanine nucleotide exchange factor (GEF) Epac activates small GTPase Rap1, which results in activation of small GTPase Rac-specific GEFs Tiam1 and Vav2 and Rac-mediated EC barrier protective responses. Our results show that ANP stimulated protein kinase A and the Epac/Rap1/Tiam/Vav/Rac cascade",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18064650"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Endothelium, Vascular": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 16,
+      "target": 45,
+      "key": "c8eb1648ec207ecf1e43af26ee831e26"
+    },
+    {
+      "line": 30,
+      "relation": "increases",
+      "evidence": "Our results show that, in addition to significant elevation of intracellular cGMP levels, ANP treatment of human pulmonary EC induced time-dependent increases in intracellular cAMP concentrations (Fig. 1A,B) and activation of cAMP-dependent protein kinase (PKA, Fig. 1C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18064650"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 16,
+      "target": 45,
+      "key": "7c3f0981e44c1a08276c60761ef7c29b"
+    },
+    {
+      "line": 8,
+      "relation": "directlyIncreases",
+      "evidence": "Tiam1 and Ras-GRF1 are guanine nucleotide exchange factors (GEFs) that activate the Rac GTPase.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12024021"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 35,
+      "target": 29,
+      "key": "b3505589ffda5abddfa641ddf0e45cd2"
+    },
+    {
+      "line": 42,
+      "relation": "increases",
+      "evidence": "The recently described cAMP-dependent guanine nucleotide exchange factor (GEF) Epac activates small GTPase Rap1, which results in activation of small GTPase Rac-specific GEFs Tiam1 and Vav2 and Rac-mediated EC barrier protective responses. Our results show that ANP stimulated protein kinase A and the Epac/Rap1/Tiam/Vav/Rac cascade",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18064650"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Endothelium, Vascular": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 35,
+      "key": "4da7c9f660908c55771395a0de310f4d"
+    },
+    {
+      "line": 42,
+      "relation": "increases",
+      "evidence": "Both PGs caused cAMP-mediated activation of PKA-, Epac/Rap1- and Tiam1/Vav2-dependent pathways of Rac1 activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17493609"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Endothelium, Vascular": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 35,
+      "key": "13abc3c542f231b95c07bbab186107b3"
+    },
+    {
+      "line": 49,
+      "relation": "decreases",
+      "evidence": "inhibition of fibroblast proliferation was mediated exclusively by activation of Epac-1. PGE(2) and Epac-1 inhibited cell proliferation through activation of the small GTPase Rap1, since decreasing Rap1 activity by transfection with Rap1GAP or the dominant-negative Rap1N17 prevented, and transfection with the constitutively active Rap1V12 mimicked, the anti-proliferative effects of PGE(2)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18421013"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 30,
+      "target": 7,
+      "key": "86255bcbadfa746a65157f28d2990697"
+    },
+    {
+      "line": 54,
+      "relation": "increases",
+      "evidence": "The recently described cAMP-dependent guanine nucleotide exchange factor (GEF) Epac activates small GTPase Rap1, which results in activation of small GTPase Rac-specific GEFs Tiam1 and Vav2 and Rac-mediated EC barrier protective responses. Our results show that ANP stimulated protein kinase A and the Epac/Rap1/Tiam/Vav/Rac cascade",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18064650"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Endothelium, Vascular": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 36,
+      "key": "ae6635234451b767e930b910e5297727"
+    },
+    {
+      "line": 54,
+      "relation": "increases",
+      "evidence": "Both PGs caused cAMP-mediated activation of PKA-, Epac/Rap1- and Tiam1/Vav2-dependent pathways of Rac1 activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17493609"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Endothelium, Vascular": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 36,
+      "key": "ca6f5b8d2f369b26c9140d9dbf4df74b"
+    },
+    {
+      "line": 75,
+      "relation": "increases",
+      "evidence": "Cell-specific prostaglandin synthases convert PGH2 into a series of prostaglandins, including PGI2, PGF2alpha, PGD2 and PGE2 (Fig. 1).   Fig. 1 Legend - Pathway of prostaglandin production. Arachidonic acid is liberated from membranes by phospholipase A2. The cyclooxygenase enzymes (COX-1 and COX-2) produce prostaglandin H2 (PGH2) from arachidonic acid. PGH2 is acted upon by prostaglandin synthases to produce PGI2, PGD2, PGE2 and PGF2alpha. PGD2 is metabolized to 15-deoxy-12,14-PGJ2 (15-d-PGJ2).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11864843"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 25,
+      "target": 5,
+      "key": "6623da687b9d9f4177025028a9f06d72"
+    },
+    {
+      "line": 75,
+      "relation": "increases",
+      "evidence": "These data suggest that H2O2 stimulates CFTR Cl(-) channel-mediated Cl(-) secretion through cyclooxygenase- and mPGES-1-dependent release of PGE2 and subsequent activation of PKA.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17699556"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "renal medulla": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 25,
+      "target": 5,
+      "key": "7211addc30bc69e05bed1146a7cb9d96"
+    },
+    {
+      "line": 38,
+      "relation": "directlyIncreases",
+      "evidence": "Stimulation of phosphoinositide-hydrolysing phospholipase C (PLC) generating inositol-1,4,5-trisphosphate is a major calcium signalling pathway used by a wide variety of membrane receptors, activating distinct PLC-beta or PLC-gamma isoforms. Here we report a new PLC and calcium signalling pathway that is triggered by cyclic AMP (cAMP) and mediated by a small GTPase of the Rap family. Activation of the adenylyl cyclase-coupled beta2-adrenoceptor expressed in HEK-293 cells or the endogenous receptor for prostaglandin E1 in N1E-115 neuroblastoma cells induced calcium mobilization and PLC stimulation, seemingly caused by cAMP formation, but was independent of protein kinase A (PKA). We provide evidence that these receptor responses are mediated by a Rap GTPase, specifically Rap2B, activated by a guanine-nucleotide-exchange factor (Epac) regulated by cAMP, and involve the recently identified PLC-epsilon isoform.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11715024"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 3,
+      "target": 31,
+      "key": "48a8fff62e3db8651e0a89cb441c42e5"
+    },
+    {
+      "line": 38,
+      "relation": "directlyIncreases",
+      "evidence": "Two principal effector proteins for cAMP are protein kinase A (PKA) and EPAC (exchange protein directly activated by cAMP), a Rap guanosine 5'-diphosphate (GDP) exchange factor.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14615375"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 3,
+      "target": 31,
+      "key": "4555e0737f3ee70fef8f661bfe15a141"
+    },
+    {
+      "line": 39,
+      "relation": "directlyIncreases",
+      "evidence": "Insulin also profoundly inhibits lipolysis in adipocytes, primarily through inhibition of the enzyme hormone sensitive lipase71. This enzyme is acutely regulated by control of its phosphorylation state, which is activated by PKA-dependent phosphorylation, and inhibited as a result of a combination of kinase inhibition and phosphatase activation. Insulin inhibits the activity of the lipase primarily through reductions in cAMP levels, owing to the activation of a cAMP-specific phosphodiesterase in fat cells72.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11742412"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Adipose Tissue": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 3,
+      "target": 45,
+      "key": "dadabcbb4d02b1a49a656832c6ce7edf"
+    },
+    {
+      "line": 39,
+      "relation": "directlyIncreases",
+      "evidence": "Because Rap1b is one of the proteins that become phosphorylated by PKA upon elevation of intracellular cAMP levels, we evaluated the effect of the absence of Rap1b in platelets on cAMP-induced inhibition of AYPGKF peptide-induced platelet aggregation (Figure ?(Figure4C).4C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15696195"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Blood Platelets": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 3,
+      "target": 45,
+      "key": "411df4a39dc7dc6f66425d37f16abb22"
+    },
+    {
+      "line": 39,
+      "relation": "directlyIncreases",
+      "evidence": "Cyclic AMP activates PKA, therefore we expect to see an increased difference between active and inactive PKA when cAMP levels are physiologically high.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19607691"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 3,
+      "target": 45,
+      "key": "4bbd54ac238d809d7f3b198c7b9d671a"
+    },
+    {
+      "line": 39,
+      "relation": "directlyIncreases",
+      "evidence": "Hepatic gluconeogenesis is essential for maintenance of normal blood glucose concentrations and is regulated by opposing stimulatory (cyclic adenosine monophosphate, cAMP) and inhibitory (insulin) signaling pathways. The cAMP signaling pathway leads to phosphorylation of cAMP response element-binding (CREB) protein, resulting in recruitment of the coactivators CREB-binding protein (CBP) and p300 and subsequent activation of gluconeogenesis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15146178"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 3,
+      "target": 45,
+      "key": "56dad37af0386831b521b39a54fa1d6e"
+    },
+    {
+      "line": 44,
+      "relation": "decreases",
+      "evidence": "Figure 2 shows that different cAMP elevating agents inhibit the growth of MDA-MB-231 cells. Cells were incubated for 48 h with increasing (from 10-9 to 10-4 M) concentrations of forskolin (A), or (from 0.05 to10 mM) 8-Br-cAMP (B), or (from 0.05, to 5 mM ) IBMX (C); then cell proliferation was calculated by a conventional tetrazolium-based (MTT) assay. As shown in Figure 2, all cAMP elevating compounds induced anti-proliferative effects",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19662684"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 3,
+      "target": 7,
+      "key": "dd50da4ce558ba4addf85aaf7ebc2ac5"
+    },
+    {
+      "line": 44,
+      "relation": "decreases",
+      "evidence": "Endothelialderived relaxing factors, such as NO or prostacyclin (PGI2), relax blood vessels and inhibit the proliferation and migration of SMCs by increasing the synthesis of the cyclic nucleotides cAMP or cGMP.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14692693"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "vascular smooth muscle": true
+        }
+      },
+      "source": 3,
+      "target": 7,
+      "key": "1a01854ab7497b82dcf4d62ba82e832f"
+    },
+    {
+      "line": 44,
+      "relation": "decreases",
+      "evidence": "Gaumond et al demonstrated in rat vascular smooth muscle cells that augmentation of cAMP levels or activation of PKA inhibited proliferation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14715700"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        }
+      },
+      "source": 3,
+      "target": 7,
+      "key": "ea68829cdebf5e05e9ff8f5626e55e74"
+    },
+    {
+      "line": 44,
+      "relation": "decreases",
+      "evidence": "Cyclic AMP analogues inhibited proliferation, as well as other treatments that increased intracellular cAMP. The cAMP-induced inhibition could be reversed after 24 h by the removal of dibutyryl-cAMP from the culture medium and readdition of IL6. In the absence of IL6, cAMP induced a slow loss of viable cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11281645"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 3,
+      "target": 7,
+      "key": "6e93b28ef822dcc3994c4604cb56fe55"
+    },
+    {
+      "line": 44,
+      "relation": "decreases",
+      "evidence": "Forskolin, a cAMP-elevating agent, or 8-Bromo-cAMP (8-B-cAMP), a cell permeable cAMP analogue, inhibited the cell proliferation and markedly enhanced apoptosis induced by transforming growth factor-beta1, but completely suppressed serum deprivation-induced apoptosis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15833279"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 3,
+      "target": 7,
+      "key": "875b121ebd487befbd7ad4f2a6689558"
+    },
+    {
+      "line": 10,
+      "relation": "directlyIncreases",
+      "evidence": "From CST pathway map for GPCR Signaling to ERK.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16890451"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 31,
+      "target": 30,
+      "key": "d0111e352d69e2d78eca17e37d69d119"
+    },
+    {
+      "line": 80,
+      "relation": "negativeCorrelation",
+      "evidence": "In results, read the section \"cAMP signalling attenuates CSE-induced IL-8 release from human ASM cells.\"\nRemember that Epac is an alias of RAPGEF3 (http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:16629)",
+      "citation": {
+        "db": "Other",
+        "db_id": "22363678"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "COPD": true
+        },
+        "Cell": {
+          "human ASM cells": true
+        },
+        "Tissue": {
+          "Human lung tissue": true
+        }
+      },
+      "source": 31,
+      "target": 12,
+      "key": "3685a4a5fe0295fb03b545c1394864ee"
+    },
+    {
+      "line": 11,
+      "relation": "increases",
+      "evidence": "Cyclooxygenase (COX)-2 and the subsequent production of prostaglandin E2 (PGE2) were also induced by H-Ras",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16721810"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 14,
+      "target": 28,
+      "key": "22e7f5f8dd0edcb853c2f44fd44199e7"
+    },
+    {
+      "line": 19,
+      "relation": "increases",
+      "evidence": "Cyclooxygenase (COX)-2 and the subsequent production of prostaglandin E2 (PGE2) were also induced by H-Ras",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16721810"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 14,
+      "target": 5,
+      "key": "0fde798d446bc20140cf8dc54ec60893"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 10,
+      "target": 11,
+      "key": "6bfab9eb44280caed35675a74d8dc921"
+    },
+    {
+      "line": 40,
+      "relation": "increases",
+      "evidence": "All TGFbeta isoforms stimulated PGE2 synthesis; TGFbeta3 was approximately twice as potent as TGFbeta1 and TGFbeta2, each of which had similar effects",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9032448"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 33,
+      "target": 5,
+      "key": "fff8d2e777222c0add09d1a4e15f7dbd"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "Their minimum consensus sequence Hyd-X-R-X-X-(S/T) (where Hyd is any hydrophobic amino acid), determined through peptide studies, provides only a rough template common to many protein kinases (11). Additional specificity is provided by residues adjacent to the phosphorylation site of the substrate, producing differences in substrate preference among these kinases. The differences can have important transcriptional implications; for example, although all three can phosphorylate CREB on the activating site Ser-133, only CaMKII phosphorylates an additional inhibitory site, Ser-142 (13).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11096122"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "dfd1fe44159fee79dda848235e5948e7"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "Moreover, PP1 was shown to act as a major CTD phosphatase in nuclear extracts and to affinity-purify with RNA polymerase II. Both PP1 and the nuclear regulator NIPP1 have also been identified as components of the Tat-associated RNA polymerase II complex, which regulates transcription from the human immunodeficiency virus type 1 promoter (40, 275). The transcription factor CREB mediates the expression of cAMP-induced genes by binding to a conserved cAMP-responsive element. Phosphorylation of CREB on Ser-133, e.g., by PKA, promotes the recruitment of the histone acetyltransferase CBP, which facilitates access of the promoter region to the transcriptional machinery.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14715909"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "386e95c3c11340fc37bc3c7d7d55b531"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "We found that the intracellular domain of Notch2 interacted with a phosphorylated form of the transcription factor CREB1, and together these proteins bound the transcriptional coactivator p300 to form a complex on the promoter of the gene encoding granzyme B. Our results suggest that the highly regulated, dynamic control of T cell cytotoxicity depends on the integration of Notch2 and CREB1 signals.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18724371"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "1d281c6cfedfe6b695aae89ca1cb1a9b"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "LDL promotes cAMP response element binding protein (CREB) activation (phosphorylation in Ser133). In transfection assays a dominant-negative of CREB inhibits NOR-1 promoter activity, while mutation of specific (cAMP response element) CRE sites in the NOR-1 promoter abolishes LDL-induced NOR-1 promoter activity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14962944"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "vascular smooth muscle": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "54659be63cd1814274d147e7e18cbf23"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "aken together, these data provide strong evidence that PKA is the enzyme responsible for phosphorylating CREB at S133 in response to PTH and that PKA activity is required for PTH-induced c-fos expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10067851"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "0f47e0071a54610fedc9fae9d5926c1b"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "Mutation of the CREB-binding site reduced cyclin D2 promoter activity 5-10-fold. CREB-1 is phosphorylated at serine 133, a critical site for activity, in both T cells and Epstein-Barr virus immortalized B cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16301994"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "b408595ac761b549a0fce7944d7d345d"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "We found that, in contrast to Akt1 that induces CREB phosphorylation at Ser-133 and CREB target gene expression, Akt2 was unable to induce CREB phosphorylation at Ser-133 in vivo and CREB target gene expression. This difference is specific to CREB as both Akt1 and Akt2 similarly inhibits FoxO1 mediated gene expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17276404"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "a3708ebd6a17ee0849cf8cb54ac17770"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "A constitutive active mutant of PKD1 stimulates GAL4-CREB-mediated transcription in a Ser-133-dependent manner, activates CRE-responsive promoters, and increases the expression of CREB target genes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17389598"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "9da143f3d7108be5b0416a4baead729a"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "Protein kinase A phosphorylation of CREB at serine 133 facilitates transcription from cellular CREs by recruiting CBP/p300 via its KIX domain.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17449469"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "35efbb6e1ceb1c11c1775901dedf0011"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "As shown in Fig. 6, TPA and the presence of caPKD1 clearly augmented Nur77 transcript levels. The PKD1-induced increase of Nur77 expression is mediated through CREB, as co-transfection with the dominant negative A-CREB or K-CREB resulted in reduced PKD1-induced Nur77 expression (Fig. 6).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17389598"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "16c516c0084ed48efe1fd71990519ef9"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "CREB activation via phosphorylation at serine 133 and resulting CREB mediated gene expression is a critical event which can have a significant effect on many cellular processes, including cell survival and plasticity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19070599"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "e6d721ea088bacc315c8a693040dc941"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "The induction of CREB-mediated transcription was Ser-133-dependent, because caPKD1 failed to stimulate GAL4-CREBS133A-driven transcription. Similar results were obtained with co-transfection studies in COS-1 cells (results not shown), indicating that PKD1-induced CREB activation is not cell-specific.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17389598"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "a1463e406b1fe71e612a7de2b37681de"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "Inactivating the kinase A phosphorylation site by in vitro mutagenesis of the cloned CREB cDNA at Ser-133 completely abolished CREB transcriptional activity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "2573431"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "fcade685868437375015a7b7ec192ea0"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "CaMKIV, and p38 MAPK were also the kinases involved in CREB Ser(133) phosphorylation induced by CD3/CD28.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11123304"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "377ae79e6a68baad4203e54c892e8ca6"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "MSK1 is localized in the nucleus of unstimulated or stimulated cells, and phosphorylates CREB at Ser133 with a Km value far lower than PKA, MAPKAP-K1(p90Rsk) and MAPKAP-K2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9687510"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "2b87dfd23bba02fb10137b8b445e0f47"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "pp60(v-src) induction of CREB was blocked by the p38 inhibitor SB203580 or by mutation of CREB at Ser133.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10066798"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "eecf0c3bd83f1bace1d4b5c22e0ac0f3"
+    },
+    {
+      "line": 76,
+      "relation": "increases",
+      "evidence": "It consists of the Raf protein (MAP3K) that phosphorylates MEK (MAP2K), which in turn phosphorylates ERK (MAPK), the latter influencing transcription of different target genes. (From full text)",
+      "citation": {
+        "db": "Other",
+        "db_id": "21512581"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 46,
+      "target": 42,
+      "key": "09f24eec3413d35875a6d30ee6fd9f39"
+    },
+    {
+      "line": 1,
+      "relation": "decreases",
+      "evidence": "PGE2 downregulated PDGF-Ralpha protein and messenger RNA expression",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10030841"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 5,
+      "target": 19,
+      "key": "fdcbed745bdaff115bc494a0140d0850"
+    },
+    {
+      "line": 16,
+      "relation": "directlyIncreases",
+      "evidence": "PGE2 acts via EP1 and EP2 receptor subtypes to stimulate both the PKC and PKA pathways.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8940410"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 5,
+      "target": 20,
+      "key": "8653cdde326ce563a7c77139086f966f"
+    },
+    {
+      "line": 33,
+      "relation": "directlyIncreases",
+      "evidence": "PGE(2) acts through different receptors (EP1-4). (EP1=PTGER1, EP2=PTGER2..etc.) ....EP1, EP2, EP3, and EP4 were expressed on human platelets and megakaryocytes",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21059804"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Blood Platelets": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 5,
+      "target": 21,
+      "key": "9ab5553deff384b80562336d147c21e9"
+    },
+    {
+      "line": 33,
+      "relation": "directlyIncreases",
+      "evidence": "PGE2 acts via EP1 and EP2 receptor subtypes to stimulate both the PKC and PKA pathways.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8940410"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 5,
+      "target": 21,
+      "key": "c1162690a54253f54d6dec5b5a8b8d90"
+    },
+    {
+      "line": 33,
+      "relation": "directlyIncreases",
+      "evidence": "Work in our laboratory (13) and others (14) has shown that the inhibitory actions of PGE2 in lung fibroblasts are a result of increases in cAMP, mediated through the Gas-coupled EP2 receptor;",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18421013"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 5,
+      "target": 21,
+      "key": "96e6a2859ed91024dabd50e6c695fd4d"
+    },
+    {
+      "line": 35,
+      "relation": "increases",
+      "evidence": "we found that PGE2 stimulated the activation of Ras and ERK, but not Akt, and reduced matrix deprivation-induced apoptosis, in untransformed epithelial cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17477350"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 5,
+      "target": 47,
+      "key": "2602fe911bd713de7e2c507872d40655"
+    },
+    {
+      "line": 46,
+      "relation": "directlyIncreases",
+      "evidence": "PGE(2) acts through different receptors (EP1-4). (EP1=PTGER1, EP2=PTGER2..etc.) ....EP1, EP2, EP3, and EP4 were expressed on human platelets and megakaryocytes",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21059804"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Blood Platelets": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 5,
+      "target": 22,
+      "key": "55df32aab999da657641e6b4cfb37808"
+    },
+    {
+      "line": 46,
+      "relation": "directlyIncreases",
+      "evidence": "PGE2 exerted its action by activating EP3 receptors.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17692121"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 5,
+      "target": 22,
+      "key": "fcb3ff0e5774717f474c5808b9b47dee"
+    },
+    {
+      "line": 73,
+      "relation": "increases",
+      "evidence": "PGE2 significantly stimulated PDE4A and -4C (𝑃 < 0.05) expression",
+      "citation": {
+        "db": "Other",
+        "db_id": "24227907"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "fibroblast": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 5,
+      "target": 17,
+      "key": "4efb718e8354758e56d2f5a6a34ec635"
+    },
+    {
+      "line": 74,
+      "relation": "increases",
+      "evidence": "PGE2 significantly stimulated PDE4A and -4C (𝑃 < 0.05) expression",
+      "citation": {
+        "db": "Other",
+        "db_id": "24227907"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "fibroblast": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 5,
+      "target": 18,
+      "key": "3fa98a7125e67707970df19f67e449f4"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "Treatment of EC with PGE2 and beraprost markedly increased intracellular cAMP levels (Figure 3A, upper panels) without significant changes in cGMP levels (Figure 3A, lower panels).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17493609"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "source": 5,
+      "target": 3,
+      "key": "98260e92adf727c06aa435b7f409430c"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "3. On human washed platelet suspensions the PGE analogues, with the exception of butaprost,inhibited the rise in adenosine 3':5'-cyclic monophosphate (cyclic AMP) induced by cicaprost (8 nM).PGE2 produced a monophasic inhibition curve (IC50 = 5.4 nM, 92% inhibition at 600 nM).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8448586"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Blood Platelets": true
+        }
+      },
+      "source": 5,
+      "target": 3,
+      "key": "d7dbb2808fce267799c05318219fe5d1"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "both Isoproterenol and PGE2 elevate and sustain increases in cyclic adenosine 3',5'-monophosphate (cAMP)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9809467"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "mast cell": true
+        }
+      },
+      "source": 5,
+      "target": 3,
+      "key": "b5b6a8b60aa18fbed4cb7d65214be917"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "PGE2 increased phosphorylation of Akt and endothelial nitric oxide synthase (eNOS), eNOS activity, and nitric oxide (NO) production by the activation of cAMP-dependent protein kinase (PKA) and phosphatidylinositol 3-kinase (PI3K). Dibutyryl cAMP (DB-cAMP) mimicked the role of PGE2 in angiogenesis and the signaling pathway, suggesting that cAMP is a down-stream mediator of PGE2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16391520"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 5,
+      "target": 3,
+      "key": "160f87bcac5a68c493d32be328adc223"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "Thrombin and U46619-induced platelet aggregation, as well as basal and prostaglandin E2 (PGE2)-stimulated platelet cyclic adenosine monophosphate (cAMP) levels were unchanged after ingestion of either agent.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9890391"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Blood Platelets": true
+        }
+      },
+      "source": 5,
+      "target": 3,
+      "key": "a6313b898fc189f1be2b0855d8b7f177"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "Addition of prostaglandin E2 or other agents that elevate cAMP levels resulted in inhibition of DNA synthesis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8388375"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 5,
+      "target": 3,
+      "key": "c7458fed969a94cfbe6034ac0dd5efcc"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "Both PGs caused cAMP-mediated activation of PKA-, Epac/Rap1- and Tiam1/Vav2-dependent pathways of Rac1 activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17493609"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Endothelium, Vascular": true
+        }
+      },
+      "source": 5,
+      "target": 3,
+      "key": "2eec431a8d936a7bb112b6d2b9526be0"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "An increase of intracellular cAMP mediated by prostaglandin E2 (PGE2) has been shown to delay spontaneous apoptosis of neutrophils.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10947062"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 5,
+      "target": 3,
+      "key": "ebbac18b990e6ba1a72c6c0a3a929400"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "The TSH-induced increase in cathepsin B mRNA concentrations (approximately fivefold over that in untreated cells) was partially mimicked by forskolin (approximately threefold) and ionomycin, while phorbol ester decreased cathepsin B mRNA concentrations. Similar changes were observed for thyroglobulin and actin mRNA concentrations.... These results demonstrate (1) that cathepsin B expression in the thyroid is regulated in parallel with that of thyroglobulin and actin, and (2) that cyclic AMP- and Ca2+-dependent processes stimulate gene expression, while phorbol ester treatment inhibits gene expression in FRTL5 cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "2751829"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        }
+      },
+      "source": 4,
+      "target": 3,
+      "key": "a3a2178a13a442a5878eff6311a341c0"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "The increase in cellular cAMP concentration during 10-min incubation of rat hepatocytes with glucagon or forskolin was enhanced markedly when the hepatocytes had been cultured for several hours with herbimycin A",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10095774"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 4,
+      "target": 3,
+      "key": "5915ec5b7e69d43d7c03f5744790a143"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "HGF secretion by the cells was markedly stimulated by the cAMP-elevating agents, forskolin, cholera toxin, prostaglandin E2 (PGE2), and 3-isobutyl-1-methylxanthine, as well as by the membrane-permeable cAMP analogues, 8-bromo-cAMP and dibutyryl cAMP.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "7507855"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 4,
+      "target": 3,
+      "key": "88994b36f8ce50eb28306094db7291c5"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "the cardiac fibroblasts expressed SMA following exposure to TGFbeta (10 ng/ml for 6 hours at 37°C) (Figures 5D and G [lane 4]), which was markedly attenuated in the presence of forskolin (Figures 5E and G [lane 5]).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18050204"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 4,
+      "target": 3,
+      "key": "adb3dc7306e83dfdb6119efeb46bc3e5"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "In the osteoblastic cell line, MC3T3-E1, continuous treatment with cAMP elevating agents inhibited both osteoblastic differentiation based on alkaline phosphatase assay and DNA binding ability of Cbfa1 based on a gel retardation assay. Cbfa1 inhibition was paralleled by an inhibitory effect of forskolin on Cbfa1-regulated genes. Northern and Western blot analyses suggested that the inhibition of Cbfa1 by forskolin was mainly at the protein level.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10506130"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 4,
+      "target": 3,
+      "key": "bc6d2e34279512122269086f0118a701"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "However, when expressed in vitro, VACM-1 attenuates basal and vasopressin- and forskolin-induced cAMP production.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12917106"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 4,
+      "target": 3,
+      "key": "00c7dfa8ff71647419a363b3e6baa9df"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "Treatment with forskolin increased the steady-state levels of ATA1 and ATA2 mRNAs, but decreased that of ATA3 mRNA.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11566196"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 4,
+      "target": 3,
+      "key": "cb1fe4b3f80b2d22e90614f076112014"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "Sodium nitroprusside inhibited PDE3 activity and augmented forskolin- and isoproterenol-stimulated cAMP levels; PDE3 inhibition was reversed by blockade of cGMP synthesis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11832336"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 4,
+      "target": 3,
+      "key": "260bcb750601f695e9b87678a99ec2fb"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "FSK, a cyclic adenosine 3#,5#-monophosphate activator, strongly induced Nurr1 expression consistent with the inhibitor study.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19570744"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Lung Neoplasms": true
+        }
+      },
+      "source": 4,
+      "target": 3,
+      "key": "d48b636a0c3b25c4748e9422fcbe892a"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "Direct activation of adenylyl cyclase with forskolin stimulated a magnitude of ERK activation and cAMP accumulation similar to that seen with 5-CT (Table 1 and Fig. 1b).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14622088"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        }
+      },
+      "source": 4,
+      "target": 3,
+      "key": "1d736705146520d8604d556442df7c02"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "Elevated levels of cAMP induced by forskolin mimicked the effects of relaxation on the regulation of Cyr61, CTGF and Nov.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15053922"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 4,
+      "target": 3,
+      "key": "fd8f93f3868ab57c0a3056ebef3883b0"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "Incubation of cultured VSMCs with a PDE4-selective inhibitor, Ro 20-1724, markedly potentiated both the antimigratory effect and the increase in cAMP caused by forskolin.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9576105"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 4,
+      "target": 3,
+      "key": "a4ef6484e64cae807295f1268897a877"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "Phagocytosis and accumulation of PDE-4 and PKA near adherent zymosan were inhibited by elevating cAMP levels with forskolin or rolipram",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9515168"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 4,
+      "target": 3,
+      "key": "07f1b86d27d3b9f1cb702a36b75ba6d0"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "Additionally, RGS4 and RGS10 significantly inhibited forskolin-stimulated cAMP production in both cell lines",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15093612"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 4,
+      "target": 3,
+      "key": "8968026b32347a7b90c05c280cc4ef06"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "phosphorylation of CREB at Ser-133 is induced 6-fold in vivo, following treatment of PC12 cells with forskolin.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "2573431"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 4,
+      "target": 3,
+      "key": "fb0ecc62583b868f29dc3eaa5a576ffc"
+    },
+    {
+      "line": 82,
+      "relation": "directlyIncreases",
+      "evidence": "The extraction was prevented when Rac1 was activated to its GTP-bound state by Rac-specific guanine nucleotide exchange factors (GEFs), such as Vav2, Dbl, Tiam1, P-Rex1 and TrioN, and bound by the downstream effector Pak1",
+      "citation": {
+        "db": "Other",
+        "db_id": "25014207"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 36,
+      "target": 29,
+      "key": "079c23c7166f517cadc2880a3c4c0d02"
+    },
+    {
+      "line": 82,
+      "relation": "directlyIncreases",
+      "evidence": "First, we determined that RhoG was regulated by guanine nucleotide exchange factors that also activate Rac and/or Cdc42. Vav2 (which activates RhoA, Rac1, and Cdc42) and to a lesser degree Dbs (which activates RhoA and Cdc42) activated RhoG in vitro.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12376551"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 36,
+      "target": 29,
+      "key": "53cd14677b71afbe57e0e1aca0f80f8e"
+    },
+    {
+      "line": 82,
+      "relation": "directlyIncreases",
+      "evidence": "Vav2 phosphorylation observed in these experiments reflects the activation of Rac-specific Vav2 nucleotide exchange activity (Aghazadeh et al., 2000).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18064650"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 36,
+      "target": 29,
+      "key": "a34268d0194803095329cffdc57a497d"
+    },
+    {
+      "line": 12,
+      "relation": "decreases",
+      "evidence": "Endothelialderived relaxing factors, such as NO or prostacyclin (PGI2), relax blood vessels and inhibit the proliferation and migration of SMCs by increasing the synthesis of the cyclic nucleotides cAMP or cGMP.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14692693"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "vascular smooth muscle": true
+        }
+      },
+      "source": 2,
+      "target": 7,
+      "key": "7e68edf55e2c636f43e23689c889bc21"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "Cell-specific prostaglandin synthases convert PGH2 into a series of prostaglandins, including PGI2, PGF2alpha, PGD2 and PGE2 (Fig. 1).   Fig. 1 Legend - Pathway of prostaglandin production. Arachidonic acid is liberated from membranes by phospholipase A2. The cyclooxygenase enzymes (COX-1 and COX-2) produce prostaglandin H2 (PGH2) from arachidonic acid. PGH2 is acted upon by prostaglandin synthases to produce PGI2, PGD2, PGE2 and PGF2alpha. PGD2 is metabolized to 15-deoxy-12,14-PGJ2 (15-d-PGJ2).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11864843"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 26,
+      "target": 5,
+      "key": "58261f05f473b33b7f6c2c2337bd127b"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "Prostaglandin E synthase (PGES) is a terminal prostanoid synthase and can catalyse the isomerization of the COX product PGH2 to PGE2, including microsomal PGES-1 (mPGES-1), cytosolic PGES (cPGES) and mPGES-2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16128405"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "embryonic tissue": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 26,
+      "target": 5,
+      "key": "723c09a8f9ded09af9768f3edcc824c8"
+    },
+    {
+      "line": 24,
+      "relation": "increases",
+      "evidence": "All TGFbeta isoforms stimulated PGE2 synthesis; TGFbeta3 was approximately twice as potent as TGFbeta1 and TGFbeta2, each of which had similar effects",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9032448"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 34,
+      "target": 5,
+      "key": "0d098dc81006778bd8bd5c20441f9a96"
+    },
+    {
+      "line": 61,
+      "relation": "increases",
+      "evidence": "All TGFbeta isoforms stimulated PGE2 synthesis; TGFbeta3 was approximately twice as potent as TGFbeta1 and TGFbeta2, each of which had similar effects",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9032448"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 32,
+      "target": 5,
+      "key": "c6b733a71a748dac4b882d2a61a0fe6f"
+    },
+    {
+      "line": 7,
+      "relation": "directlyIncreases",
+      "evidence": "aken together, these data provide strong evidence that PKA is the enzyme responsible for phosphorylating CREB at S133 in response to PTH and that PKA activity is required for PTH-induced c-fos expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10067851"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 45,
+      "target": 10,
+      "key": "e3c736547860c767de4408b90b0b01f1"
+    },
+    {
+      "line": 20,
+      "relation": "increases",
+      "evidence": "Both PGs caused cAMP-mediated activation of PKA-, Epac/Rap1- and Tiam1/Vav2-dependent pathways of Rac1 activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17493609"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Endothelium, Vascular": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 45,
+      "target": 29,
+      "key": "fb115de4446806df07ed0420eba1e578"
+    },
+    {
+      "line": 71,
+      "relation": "negativeCorrelation",
+      "evidence": "fibroblasts obtained from patients with COPD maintained inhibitory PGE2 signaling after PGE2 pretreatment. These data identify a PDE4-mediated attenuation of PGE2 inhibitory signaling in normal fibroblasts that appears to be altered in COPD fibroblasts. These alterations may contribute to COPD pathogenesis and could provide novel therapeutic targets.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23043089"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "COPD": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        },
+        "Tissue": {
+          "Lung": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 43,
+      "target": 49,
+      "key": "2e58b262c162cca8d8f226ae15b6fa2c"
+    },
+    {
+      "line": 81,
+      "relation": "directlyDecreases",
+      "evidence": "PDE4 enzymes are expressed in distal human PASMCs and the effects of cAMP-stimulating agents on DNA synthesis, proliferation and MMP production is dependent, at least in part, on PDE4 activity. PDE4 inhibition may provide greater control of cAMP-mediated anti-proliferative effects in human PASMCs",
+      "citation": {
+        "db": "Other",
+        "db_id": "16423283"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "pulmonary artery smooth muscle cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 43,
+      "target": 3,
+      "key": "477032f7860e173e7be4b6ca340a7c85"
+    },
+    {
+      "line": 81,
+      "relation": "directlyDecreases",
+      "evidence": "These data identify a PDE4-mediated attenuation of PGE2 inhibitory signaling in normal fibroblasts that appears to be altered in COPD fibroblasts. These alterations may contribute to COPD pathogenesis and could provide novel therapeutic targets.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23043089"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        },
+        "Tissue": {
+          "Lung": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 43,
+      "target": 3,
+      "key": "fa0c30b88dc6039d37bd6cb387e59649"
+    },
+    {
+      "line": 81,
+      "relation": "directlyDecreases",
+      "evidence": "These data suggest that ROS-mediated lung inflammation could be mediated at least in part by calcium and elevated PDE activity associated with decreased cAMP in both macrophages and epithelial cells. Inhibition of these pathways may provide a route for treatment of inflammatory lung diseases.",
+      "citation": {
+        "db": "Other",
+        "db_id": "17129690"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung macrophages, epithelial cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 43,
+      "target": 3,
+      "key": "77971b4e853a7eac6261ce6753e0de77"
+    },
+    {
+      "line": 81,
+      "relation": "directlyDecreases",
+      "evidence": "Enhanced epithelial cAMP levels, induced by forskolin and PDE4 inhibition, increased formation of prostaglandin E2 (PGE2), but not of interleukin (IL)-8 or 15-hydroxyeicosatetraenoic acid (15-HETE) in airway epithelial cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "9922221"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "airway epithelial cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 43,
+      "target": 3,
+      "key": "738d942d4aed805219a03e7a1b00b9f1"
+    },
+    {
+      "line": 81,
+      "relation": "directlyDecreases",
+      "evidence": "Only two forms of the cAMP-specific PDE4 were found to be sensitive to physiologically relevant phosphatidic acid (PA) concentrations. ...The PDE4-peak 2 form was inhibited only by PA with saturated fatty acyl groups. ...These results suggest that PA may contribute to the lowering of cAMP level required in the early steps of a lympho-proliferative response, thus regulating immune functions through PDE4 activation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "9023016"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "thymocytes": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 43,
+      "target": 3,
+      "key": "242981a091e28bc872df3f4e65c8b62f"
+    },
+    {
+      "line": 81,
+      "relation": "directlyDecreases",
+      "evidence": "Analysis of PDE activity of our AEC-II preparations revealed that PDE4 is the major cAMP hydrolysing PDE in human adult AEC-II.",
+      "citation": {
+        "db": "Other",
+        "db_id": "22815690"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "alveolar epithelial": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 43,
+      "target": 3,
+      "key": "4505d602850358522b166f68a095a54d"
+    },
+    {
+      "line": 81,
+      "relation": "directlyDecreases",
+      "evidence": "Whereas PDE1 and PDE3 activities were augmented, PDE4 activity, which represented the major cyclic AMP-hydrolysing activity of peripheral blood monocytes, rapidly declined.",
+      "citation": {
+        "db": "Other",
+        "db_id": "9154331"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "monocytes": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 43,
+      "target": 3,
+      "key": "962664f352c2407b332974934b4d14e4"
+    },
+    {
+      "line": 71,
+      "relation": "negativeCorrelation",
+      "evidence": "fibroblasts obtained from patients with COPD maintained inhibitory PGE2 signaling after PGE2 pretreatment. These data identify a PDE4-mediated attenuation of PGE2 inhibitory signaling in normal fibroblasts that appears to be altered in COPD fibroblasts. These alterations may contribute to COPD pathogenesis and could provide novel therapeutic targets.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23043089"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "COPD": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        },
+        "Tissue": {
+          "Lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 49,
+      "target": 43,
+      "key": "ae7d3ac2d1db517cb00874d13fe7e299"
+    },
+    {
+      "line": 80,
+      "relation": "negativeCorrelation",
+      "evidence": "In results, read the section \"cAMP signalling attenuates CSE-induced IL-8 release from human ASM cells.\"\nRemember that Epac is an alias of RAPGEF3 (http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:16629)",
+      "citation": {
+        "db": "Other",
+        "db_id": "22363678"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "COPD": true
+        },
+        "Cell": {
+          "human ASM cells": true
+        },
+        "Tissue": {
+          "Human lung tissue": true
+        }
+      },
+      "source": 12,
+      "target": 31,
+      "key": "f4f82266389f4af830fef5131f0c813f"
+    }
+  ]
+}

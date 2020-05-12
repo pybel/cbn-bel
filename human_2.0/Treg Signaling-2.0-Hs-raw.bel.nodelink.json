@@ -1,0 +1,3064 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Treg Signaling-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Treg Signaling network depicts the causal mechanisms that are activated in CD4+ Foxp3+ regulatory T-cells following T-cell receptor (TCR) ligation. Expanding on these processes, the network highlights the chemokines secreted by macrophages and dendritic cells, as well as the cognate T-cell receptors, involved in mediating T-cell recruitment to compromised lung tissue during COPD development."
+    },
+    "namespace_url": {
+      "HGNC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-human-genes/hgnc-human-genes-20150601.belns",
+      "GOBP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20150601.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20150601.belns",
+      "GOCC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170511.belns",
+      "MESHPP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20150601.belns",
+      "MGI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20150601.belns",
+      "RGD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20150601.belns",
+      "CHEBI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20150601.belns",
+      "SCHEM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-chemicals/selventa-legacy-chemicals-20150601.belns",
+      "EGID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/entrez-gene-ids/entrez-gene-ids-20150601.belns",
+      "MESHD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20150601.belns",
+      "SDIS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-diseases/selventa-legacy-diseases-20150601.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20150601.belns",
+      "MESHC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170511.belns",
+      "GOBPID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process-ids/go-biological-process-ids-20150601.belns",
+      "GOCCID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component-ids/go-cellular-component-ids-20150601.belns",
+      "MESHCS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20150601.belns"
+    },
+    "namespace_pattern": {},
+    "annotation_url": {
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20150601.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20150601.belanno",
+      "Species": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+      "Tissue": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20150601.belanno"
+    },
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Tretinoin"
+      },
+      "id": "cbeaff007abf4e4ae51cb28894409165",
+      "bel": "a(SCHEM:Tretinoin)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "lymphocyte chemotaxis"
+      },
+      "id": "8269c163af9a75e4d77cdd195a56ee46",
+      "bel": "bp(GOBP:\"lymphocyte chemotaxis\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "regulatory T cell differentiation"
+      },
+      "id": "0b0ef2072875e7ddffbb023483a7cdfc",
+      "bel": "bp(GOBP:\"regulatory T cell differentiation\")"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "IL12A"
+          },
+          "id": "1e1573f4a37206d19b8eb6259a87f6b3",
+          "bel": "p(HGNC:IL12A)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "IL12B"
+          },
+          "id": "60dbcf5bfd39cff30cca20dce8691ea4",
+          "bel": "p(HGNC:IL12B)"
+        }
+      ],
+      "id": "c4df930c06e3b0b1175f37425de79e9f",
+      "bel": "complex(p(HGNC:IL12A), p(HGNC:IL12B))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "BACH2"
+      },
+      "id": "93a8006b23dbb890f908abb3caf50edf",
+      "bel": "p(HGNC:BACH2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCL3"
+      },
+      "id": "5cf35694ebdc37f754621a1d29763a9c",
+      "bel": "p(HGNC:CCL3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCR3"
+      },
+      "id": "6e2f8d5c3aa966ae3d0cce72b37c02ff",
+      "bel": "p(HGNC:CCR3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCR5"
+      },
+      "id": "2e4b13732bf9dbd6951295cd4f9b6443",
+      "bel": "p(HGNC:CCR5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CD80"
+      },
+      "id": "ccd444429dcb21d283ed56a0178f70be",
+      "bel": "p(HGNC:CD80)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CREBBP"
+      },
+      "id": "46148e81658994544d74b5db695e5cd8",
+      "bel": "p(HGNC:CREBBP)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CRLF2"
+      },
+      "id": "da482eec9ac65fb82c1b49661262a77d",
+      "bel": "p(HGNC:CRLF2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CTLA4"
+      },
+      "id": "aaf25db57f576942305c22a7dad63574",
+      "bel": "p(HGNC:CTLA4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CXCL16"
+      },
+      "id": "22e5d6eb07be2832840cb270c8b139c1",
+      "bel": "p(HGNC:CXCL16)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CXCL9"
+      },
+      "id": "c05f89a6141199866dc090939b690365",
+      "bel": "p(HGNC:CXCL9)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CXCR3"
+      },
+      "id": "df3a8eec30741c6b0442f7e7f0c75d51",
+      "bel": "p(HGNC:CXCR3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CXCR6"
+      },
+      "id": "408f47a63ab1a89db497cf1aa7112b17",
+      "bel": "p(HGNC:CXCR6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "FOXO1"
+      },
+      "id": "2033f8081edbb34b1001aa0b729bc5fe",
+      "bel": "p(HGNC:FOXO1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "FOXO3"
+      },
+      "id": "9e226f0660a7dda64bfb997091734ca4",
+      "bel": "p(HGNC:FOXO3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "FOXP3"
+      },
+      "id": "c7d84ece4399b8a2d71b1963911d1875",
+      "bel": "p(HGNC:FOXP3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "FURIN"
+      },
+      "id": "f83a63eb6f02936c9e35615d2c96805f",
+      "bel": "p(HGNC:FURIN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GATA3"
+      },
+      "id": "9c1bf4561a6594ba84c7536c52a3aef0",
+      "bel": "p(HGNC:GATA3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HIF1A"
+      },
+      "id": "589a3a55500d0b280fdfeb11b3a4c4b3",
+      "bel": "p(HGNC:HIF1A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IFNG"
+      },
+      "id": "20367a6ea54ae1032be4f48276f3c524",
+      "bel": "p(HGNC:IFNG)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL10"
+      },
+      "id": "e0c41f4b3cb8bef32af4e3217ba8aa12",
+      "bel": "p(HGNC:IL10)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL12A"
+      },
+      "id": "1e1573f4a37206d19b8eb6259a87f6b3",
+      "bel": "p(HGNC:IL12A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL12B"
+      },
+      "id": "60dbcf5bfd39cff30cca20dce8691ea4",
+      "bel": "p(HGNC:IL12B)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL6"
+      },
+      "id": "8a1d3c4828c5416eba867c395cc65caa",
+      "bel": "p(HGNC:IL6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL7"
+      },
+      "id": "253f0f08d4c20eab61bc9946251a5238",
+      "bel": "p(HGNC:IL7)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL7R"
+      },
+      "id": "8f03304c9638961a777d7a013a578178",
+      "bel": "p(HGNC:IL7R)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ITCH"
+      },
+      "id": "644854004c1712bf5a1e36434b0e26fe",
+      "bel": "p(HGNC:ITCH)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "KLF10"
+      },
+      "id": "35986b4f8034845e6d7d678a2dd7ad8b",
+      "bel": "p(HGNC:KLF10)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NFKBID"
+      },
+      "id": "fb0e9a37f026b87d5dadf88e26a072af",
+      "bel": "p(HGNC:NFKBID)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NR4A2"
+      },
+      "id": "f61f4d090d20b94566876bc72cd4de22",
+      "bel": "p(HGNC:NR4A2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SMAD2"
+      },
+      "id": "c9970108d2ec5b25ad8b9dda89642656",
+      "bel": "p(HGNC:SMAD2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SMAD3"
+      },
+      "id": "2f743161af902b8f862629700c7c12c3",
+      "bel": "p(HGNC:SMAD3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SMAD7"
+      },
+      "id": "952f4e1beecde3448717a297416b4fe5",
+      "bel": "p(HGNC:SMAD7)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SOCS1"
+      },
+      "id": "231b37d127c5b0ecfebf12055bf910b9",
+      "bel": "p(HGNC:SOCS1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT3"
+      },
+      "id": "9523cd88bdb7daf4a0aaf38eb43fbe28",
+      "bel": "p(HGNC:STAT3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT4"
+      },
+      "id": "828cad2e021670cb1ebf88a84c9627fe",
+      "bel": "p(HGNC:STAT4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STUB1"
+      },
+      "id": "d87d73cafef28fc2c05ea70f059c61a4",
+      "bel": "p(HGNC:STUB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TBX21"
+      },
+      "id": "814733359932752ee5ffcef8ba8e4465",
+      "bel": "p(HGNC:TBX21)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TGFB1"
+      },
+      "id": "f1f493c4771241860fc73aaa3bfdad66",
+      "bel": "p(HGNC:TGFB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TNFRSF4"
+      },
+      "id": "e54bc58a4311ed9b84fe98343478d489",
+      "bel": "p(HGNC:TNFRSF4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TSLP"
+      },
+      "id": "d02168c84526aa39b065c86aa3792665",
+      "bel": "p(HGNC:TSLP)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "UBE2N"
+      },
+      "id": "36b9ad01934d52b7da32789ce3e407a3",
+      "bel": "p(HGNC:UBE2N)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "USP7"
+      },
+      "id": "d6d6ca34a6db13894d16b2041f1070d7",
+      "bel": "p(HGNC:USP7)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "Chemokine Receptor Family"
+      },
+      "id": "fc8f85f883e1205345e007273a47cb6a",
+      "bel": "p(SFAM:\"Chemokine Receptor Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "IFNA Family"
+      },
+      "id": "461fa3c3254ee7034679212da99db9c9",
+      "bel": "p(SFAM:\"IFNA Family\")"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "SDIS",
+        "name": "T-cell migration"
+      },
+      "id": "e20bfd72d63d95adea57bc4823d990e1",
+      "bel": "path(SDIS:\"T-cell migration\")"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "SDIS",
+        "name": "regulatory t-cell differentiation"
+      },
+      "id": "47b404f6bcb1ae79910855c51d961be5",
+      "bel": "path(SDIS:\"regulatory t-cell differentiation\")"
+    }
+  ],
+  "links": [
+    {
+      "line": 12,
+      "relation": "increases",
+      "evidence": "T-bet transfection also induced IL-12Rbeta2 and CXCR3 expression on human T(H)2 cells, whereas the IL-18 receptor was only induced as a consequence of T-bet-mediated increased responsiveness to IL-12.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15131585"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Th2 cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 40,
+      "target": 14,
+      "key": "0e8478abfb19257145ddc3e610f2bcb6"
+    },
+    {
+      "line": 13,
+      "relation": "decreases",
+      "evidence": "Signal transducer and activator of transcription 4 (STAT4) is critical for the response to IL-12, although there is a parallel pathway involving T box expressed in T cells (T-bet), and cells from mice double-deficient in STAT4 and T-bet are refractory to the inhibition of aTreg-cell development by IL-12.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19604309"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 40,
+      "target": 49,
+      "key": "5f2ce1f3f074c44280287c1133d98537"
+    },
+    {
+      "line": 68,
+      "relation": "directlyIncreases",
+      "evidence": "The role of dendritic cells (DC) in transplantation is often overshadowed by the more prominent roles of T and B cells, which interact directly with and, in the absence of immunosuppressive therapy, destroy the allograft. It has become increasingly recognized, however, that these potent antigen-presenting cells exert control over the immune response and regulate the balance between tolerance and immunity to transplanted organs and tissues. The role that chemokines play in influencing DC function with impact on regulation of immune responses against the graft is only beginning to be understood. This article considers how the manipulation of DC trafficking during an alloimmune response can affect graft outcome.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19028258"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "dendritic cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 5,
+      "target": 7,
+      "key": "6dcb833c7804a610e72a49c760680dd7"
+    },
+    {
+      "line": 68,
+      "relation": "directlyIncreases",
+      "evidence": "Numerous studies have shown that immature human and mouse blood- and bone marrow-derived DC subsets express a panel of inflammatory chemokine receptors (CCR1-6,8,9, CXCR3,4, CX3CR1) [Table 1 and reviewed in (1-5)]. [Table 1 Chemokine receptors expressed by DC and the functional outcome of receptor ligation}]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19028258"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "dendritic cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 5,
+      "target": 7,
+      "key": "ab0773f090a61505da962493eaea086a"
+    },
+    {
+      "line": 16,
+      "relation": "increases",
+      "evidence": "Combined deletion of IL-7 and TSLP receptor greatly reduced Treg cell development in the thymus but was not required for survival of mature peripheral Treg cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18664628"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "source": 28,
+      "target": 49,
+      "key": "8bcc42930d1d48a156305fc6f82dabdf"
+    },
+    {
+      "line": 10,
+      "relation": "directlyIncreases",
+      "evidence": "There are 2 known ligands for IL-7Ralpha: IL-7 itself and thymic stromal lymphopoietin (TSLP).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18664628"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 43,
+      "target": 28,
+      "key": "efca9d6e9fbba0ac0111783a08ce05e6"
+    },
+    {
+      "line": 67,
+      "relation": "directlyIncreases",
+      "evidence": "Interleukin-7 (IL-7), a cytokine produced by stromal cells, is required for thymic development and peripheral homeostasis of most major subsets of T cells. We examined whether regulatory T (Treg) cells also required the IL-7 pathway by analyzing IL-7Ralpha(-/-) mice. We observed a striking reduction in cells with the Treg surface phenotype (CD4, CD25, GITR (glucocorticoid-induced tumor necrosis factor [TNF]-like receptor), CD45RB, CD62L, CD103) or intracellular markers (cytotoxic T-lymphocyte-associated antigen-4, CTLA-4, and forkhead box transcription factor 3, Foxp3). Foxp3 transcripts were virtually absent in IL-7Ralpha(-/-) lymphoid tissues, and no Treg cell suppressive activity could be detected. There are 2 known ligands for IL-7Ralpha: IL-7 itself and thymic stromal lymphopoietin (TSLP).",
+      "citation": {
+        "db": "Other",
+        "db_id": "18664628"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "regulatory t-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 43,
+      "target": 10,
+      "key": "f56e401226fb2dd86e9e7515c0fcc4d8"
+    },
+    {
+      "line": 67,
+      "relation": "directlyIncreases",
+      "evidence": "Combined deletion of IL-7 and TSLP receptor greatly reduced Treg cell development in the thymus but was not required for survival of mature peripheral Treg cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18664628"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 43,
+      "target": 10,
+      "key": "5de1bd91ad97d9d64554c67f7b022915"
+    },
+    {
+      "line": 26,
+      "relation": "directlyIncreases",
+      "evidence": "By using a CXCR3 ligand reporter mouse, we found that stromal cells predominately expressed the chemokine ligand CXCL9 whereas hematopoietic cells expressed CXCL10 in lymph nodes (LNs). Dendritic cell (DC)-derived CXCL10 facilitated T cell-DC interactions in LNs during T cell priming while both chemokines guided intranodal positioning of CD4(+) T cells to interfollicular and medullary zones. Thus, different chemokines acting on the same receptor can function locally to facilitate DC-T cell interactions and globally to influence intranodal positioning, and both functions contribute to Th1 cell differentiation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23123063"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "dendritic cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 13,
+      "target": 14,
+      "key": "dca323ec3584e21c3908ca57616e3d92"
+    },
+    {
+      "line": 26,
+      "relation": "directlyIncreases",
+      "evidence": "Numerous studies have shown that immature human and mouse blood- and bone marrow-derived DC subsets express a panel of inflammatory chemokine receptors (CCR1-6,8,9, CXCR3,4, CX3CR1) [Table 1 and reviewed in (1-5)]. [Table 1 Chemokine receptors expressed by DC and the functional outcome of receptor ligation}]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19028258"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "dendritic cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 13,
+      "target": 14,
+      "key": "036f60e7491ac932e934477568fe35a0"
+    },
+    {
+      "line": 26,
+      "relation": "directlyIncreases",
+      "evidence": "T cells in peripheral airways of COPD patients show increased expression of CXCR3, a receptor activated by interferon-{gamma} inducible protein of 10 kDa (IP-10; CXCL10), monokine induced by interferon-{gamma} (Mig; CXCL9), and interferon-inducible T cell-{alpha} chemoattractant (I-TAC; CXCL11). All three cytokines activate CXCR3, although CXCL11 has the highest affinity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15602009"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 13,
+      "target": 14,
+      "key": "34efd3b41923c31aea1a3101072dc05a"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "It is notable that in Treg cells, IFN-g and IL-10 also activate STAT1 and STAT3, respectively",
+      "citation": {
+        "db": "Other",
+        "db_id": "22981537"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "Treg": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 23,
+      "target": 37,
+      "key": "fc2ab5dc61ddec61bbe0b92beba7043d"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "IL-10 was a more potent inducer of STAT3 phosphorylation in Treg cells as compared to naïve T cells (Figures 1A–1C).",
+      "citation": {
+        "db": "Other",
+        "db_id": "21511185"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "treg": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 23,
+      "target": 37,
+      "key": "46d245334e746d94d25b2ddec192d7c2"
+    },
+    {
+      "line": 4,
+      "relation": "increases",
+      "evidence": "from full text - Both cytokines (IL-12 and IL-23) activate TYK2 and JAK2 as well as STAT1, STAT3, STAT4, and STAT5 [60].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18666314"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 3,
+      "target": 38,
+      "key": "aa373d9d5d02af0a0eb0c5d453106ab9"
+    },
+    {
+      "relation": "partOf",
+      "source": 24,
+      "target": 3,
+      "key": "078e9ad6fc9212a1e7a128a57d042c00"
+    },
+    {
+      "relation": "partOf",
+      "source": 25,
+      "target": 3,
+      "key": "7ffddf02d7b05322005d8907185fa60f"
+    },
+    {
+      "line": 56,
+      "relation": "decreases",
+      "evidence": "we demonstrate that TGF-beta is able to induce Foxp3 expression and subsequently a regulatory phenotype in CD4(+)CD25(-) peripheral murine T cells. Similarly, TGF-beta induced Foxp3 in human CD4(+)CD25(-) T cells. Moreover, we show that the inhibitory Smad7 protein that is normally induced by TGF-beta and limits TGF-beta signaling, is strongly down-regulated by Foxp3 at the transcriptional level.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15100250"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 35,
+      "target": 18,
+      "key": "666f272b01b03f3eb8dde8eecff3d59a"
+    },
+    {
+      "line": 56,
+      "relation": "decreases",
+      "evidence": "\"We demonstrate that TGF-beta induces a regulatory phenotype in CD4(+)CD25(-) T cells through the induction of Foxp3 and a positive autoregulatory loop of TGF-beta signaling due to the absence of Smad7.\"",
+      "citation": {
+        "db": "Other",
+        "db_id": "15100250"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 35,
+      "target": 18,
+      "key": "6aa3039b4160ac27e8ad9faf6608307d"
+    },
+    {
+      "line": 56,
+      "relation": "decreases",
+      "evidence": "SMAD7 overexpression in T cells using newly created transgenic mice rendered CD4(+)CD25(-) T cells resistant to the induction of FoxP3",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17675459"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "source": 35,
+      "target": 18,
+      "key": "215dad0ddfef08f0b4e766031d85ec38"
+    },
+    {
+      "line": 46,
+      "relation": "decreases",
+      "evidence": "Signal transducer and activator of transcription 4 (STAT4) is critical for the response to IL-12, although there is a parallel pathway involving T box expressed in T cells (T-bet), and cells from mice double-deficient in STAT4 and T-bet are refractory to the inhibition of aTreg-cell development by IL-12.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19604309"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 38,
+      "target": 49,
+      "key": "874762831bfe0fe1683aba5701f2c9f6"
+    },
+    {
+      "line": 53,
+      "relation": "increases",
+      "evidence": "Most importantly, CCR5 deficiency resulted in decreased recruitment of memory T cells expressing key effector molecules and impaired control of virus replication during the initial stages of a secondary response. These data highlight the critical importance of early memory T cell recruitment for the efficacy of cellular immunity in the lung.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18617426"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "source": 7,
+      "target": 48,
+      "key": "8cb7d74ff7eb4890014a8565b3b2a914"
+    },
+    {
+      "line": 53,
+      "relation": "increases",
+      "evidence": "Most importantly, CCR5 deficiency resulted in decreased recruitment of memory T cells expressing key effector molecules and impaired control of virus replication during the initial stages of a secondary response.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18617426"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "source": 7,
+      "target": 48,
+      "key": "00942fc009127761051b303beeda0aaf"
+    },
+    {
+      "line": 0,
+      "relation": "increases",
+      "evidence": "Itch cooperated with TIEG1 to induce Foxp3 expression, which was reversed by TIEG1 deficiency.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18278048"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "source": 29,
+      "target": 18,
+      "key": "867980fcb1b9dbb2f26f209cab2ca32e"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "In this study, we generated T cell-specific Smad2 conditional knockout (KO) mice and unexpectedly found that Smad2 and Smad3 were redundantly essential for TGF-beta-mediated induction of Foxp3-expressing regulatory T cells and suppression of IFN-gamma production in CD4(+) T cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20548029"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 49,
+      "key": "626e2e06454d5b28c89bbcd55d4b1439"
+    },
+    {
+      "line": 47,
+      "relation": "directlyIncreases",
+      "evidence": "Recent studies demonstrate that IL-7 and thymic stromal lymphopoietin (TSLP) are critical for Treg maturation. Therefore, altered signaling through their receptors (IL-7R, TSLP receptor (TSLPR)), sharing the IL-7R?-chain (IL-7R?), might contribute to impaired Treg development",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21287555"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 27,
+      "target": 28,
+      "key": "740a406e70af5e287ea6886a774943ee"
+    },
+    {
+      "line": 47,
+      "relation": "directlyIncreases",
+      "evidence": "There are 2 known ligands for IL-7Ralpha: IL-7 itself and thymic stromal lymphopoietin (TSLP).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18664628"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 27,
+      "target": 28,
+      "key": "a8e34c4778471841e56e4e3f523ec941"
+    },
+    {
+      "line": 38,
+      "relation": "decreases",
+      "evidence": "A noticeable feature of OX86 expanded Tregs, as compared to control Tregs, is that OX40-expanded Tregs express much lower levels of Foxp3, as shown by the mean fluorescence intensity (MFI).",
+      "citation": {
+        "db": "Other",
+        "db_id": "22147766"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Disease": {
+          "no": true
+        },
+        "Cell": {
+          "tregs": true
+        },
+        "Tissue": {
+          "spleen": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 42,
+      "target": 18,
+      "key": "3f431be75e5da6dba09fda7fd92cc89d"
+    },
+    {
+      "line": 49,
+      "relation": "increases",
+      "evidence": "Herein we show that RA enhances TGF-beta signaling by increasing the expression and phosphorylation of Smad3, and this results in increased Foxp3 expression even in the presence of IL-6 or IL-21.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18684916"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 34,
+      "target": 18,
+      "key": "10a5a23ad77d6160be2ff85cfa4c4613"
+    },
+    {
+      "line": 51,
+      "relation": "increases",
+      "evidence": "In this study, we generated T cell-specific Smad2 conditional knockout (KO) mice and unexpectedly found that Smad2 and Smad3 were redundantly essential for TGF-beta-mediated induction of Foxp3-expressing regulatory T cells and suppression of IFN-gamma production in CD4(+) T cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20548029"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 34,
+      "target": 49,
+      "key": "7ec9fe0426f89436762ad51e31e6c611"
+    },
+    {
+      "line": 18,
+      "relation": "increases",
+      "evidence": "Unlike IL6, LIF supported expression of Foxp3, the Treg lineage transcription factor, and LIF opposed IL6 by suppressing IL-6-induced IL-17A protein release.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19342884"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "source": 18,
+      "target": 49,
+      "key": "6976292793bfd659bfec07704bca5776"
+    },
+    {
+      "line": 50,
+      "relation": "increases",
+      "evidence": "FoxP3 is the transcription factor driving CD4+ T cell differentiation towards T regulatory cells, which is known to attenuate T cell-mediated immune responses [86].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22190938"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "CD4+ T-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 18,
+      "target": 49,
+      "key": "f6f06656c4dad6a928feac8b1d8dee47"
+    },
+    {
+      "line": 50,
+      "relation": "increases",
+      "evidence": "Here, we show that retroviral transduction of FOXP3 induces a Treg phenotype in human leukemic CD4(+) Jurkat-T cells, evidenced by increased expression of Treg-associated cell surface markers as well as inhibition of cytokine production.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17706604"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 18,
+      "target": 49,
+      "key": "fa96b6803b2bc4a3a2d98acbf20ca388"
+    },
+    {
+      "line": 31,
+      "relation": "increases",
+      "evidence": "Foxo1 is a pivotal regulator of Treg cell function. Mice with Treg-cell specific deletion of Foxo1 develop a fata inflammatory disorder similar in severity to that seen in Foxp3-deficient mice, but without the loss of Treg cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23135404"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "treg": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 18,
+      "key": "394fbe04e65df9128a0c76b9ce19ac69"
+    },
+    {
+      "line": 63,
+      "relation": "increases",
+      "evidence": "neutralization of CXCR3 reduced MIG/CXCL9-induced T lymphocyte proliferation and the number of IFN-gamma-positive spots",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15187119"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 14,
+      "target": 1,
+      "key": "ff3cf9999dbc8077c210c81ec9bd419b"
+    },
+    {
+      "line": 63,
+      "relation": "increases",
+      "evidence": "supernatants harvested from stimulated PMN induced migration and rapid integrin-dependent adhesion of CXCR3-expressing lymphocytes; these activities were significantly reduced by neutralizing anti-MIG and anti-IP-10 Abs,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10202039"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 14,
+      "target": 1,
+      "key": "61e5950e5ddf279581954dd2fbda6a04"
+    },
+    {
+      "line": 3,
+      "relation": "increases",
+      "evidence": "Itch cooperated with TIEG1 to induce Foxp3 expression, which was reversed by TIEG1 deficiency.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18278048"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "source": 30,
+      "target": 18,
+      "key": "ca2ca98eb59eeb8b5d0c0456e5bd2d04"
+    },
+    {
+      "line": 77,
+      "relation": "directlyIncreases",
+      "evidence": "Since CXCL16 is induced by cytokines at sites of inflammation, neurodegeneration, ischemia and malignant transformation, it should attract CXCR6-positive glial precursor cells",
+      "citation": {
+        "db": "Other",
+        "db_id": "18619850"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "brain": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 12,
+      "target": 15,
+      "key": "e2cff2e640cf72b2b4b374ee4a6819d3"
+    },
+    {
+      "line": 77,
+      "relation": "directlyIncreases",
+      "evidence": "CXCR6, the receptor for CXCL16",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14625285"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 12,
+      "target": 15,
+      "key": "d1b4e5bbeb3d4a8e6d8c42c59154c83b"
+    },
+    {
+      "line": 5,
+      "relation": "increases",
+      "evidence": "Foxo3a deficiency results in defective TGF-beta-driven Foxp3 induction......Foxo1 exerts similar effects as Foxo3a on Foxp3 expression. This study reveals that Foxo factors promote transcription of the Foxp3 gene in induced T reg cells, and thus provides new mechanistic insight into Foxo-mediated T cell regulation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20439537"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 17,
+      "key": "1cc4326322353106bae145faaf793729"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "The changes in glucocorticoid binding were associated with identical changes in GR protein and mRNA levels Functional inactivation of Smad 2/3 and AP-1 limited the response to TGF-beta 1, indicating a role for these transcription factors TGF-beta 1 increases glucocorticoid binding and signaling in inflammatory cells through a Smad 2/3- and AP-1-mediated process",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12753290"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 33,
+      "key": "06feb99b2ac97d78f3b018cdb241405e"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "TGF-beta phosphorylation of Smad2/3, an obligatory step of intracellular TGF-beta signaling, was also suppressed by VEGF. VEGF attenuation of TGF-beta action was also demonstrated in two other endothelial cell lines. In conclusion, VEGF attenuates TGF-beta action in the human endothelial cell, specifically at the level of transcription of PAI-1 gene and Smad2/3 phosphorylation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15494412"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Endothelium": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 33,
+      "key": "a3df040205c42b19ff09965c418973a0"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "By RT-PCR we have shown that TGFbeta up-regulates expression not only of plasminogen activator inhibitor type-1 (PAI-1), but also of the urokinase-type plasminogen activator receptor (uPAR), whose inhibition by specific antibodies blunted the TGFbeta angiogenic response in vitro. The SMAD2/3 and FAK signaling pathways were activated by TGFbeta in MVEC",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19041849"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 33,
+      "key": "5eb9097b03de64abfe59c84a467d9054"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "Primary astrocytes cultured from SBE-luc mice showed specific activation of the reporter in response to Smad2/3-activating TGF-beta family members. Treatment of mice with the endotoxin LPS resulted in a fast and vigorous, but transient activation of the reporter in the intestine",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15972691"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "astrocyte": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 33,
+      "key": "adc096fe00d3ada035a70f26a53aa5bd"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "Both SMAD2 and SMAD1/5 were activated upon exposure to TGF-beta1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19270180"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 33,
+      "key": "0ccb9df2f7cd0c7d342af0a874fee840"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "TGFb1 signaling activates receptor SMADs, SMAD2 and SMAD3, which associate with a variety of nuclear factors to regulate gene transcription",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20656683"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Th17 cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 33,
+      "key": "6aac401a420e38f7ca9574fb9f54e031"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "In this study, we generated T cell-specific Smad2 conditional knockout (KO) mice and unexpectedly found that Smad2 and Smad3 were redundantly essential for TGF-beta-mediated induction of Foxp3-expressing regulatory T cells and suppression of IFN-gamma production in CD4(+) T cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20548029"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 33,
+      "key": "ca392fc28d9bf8d58b6c4a71b5ce0127"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "Blocking TGF-beta1 signaling pathway by knocking down Smad2 significantly blunted the aldosterone induced fibronectin production.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16876110"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "mesangial cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 33,
+      "key": "a8f069ef5a33410147401c9e311f834a"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "TGF-beta1 (1 ng/ml) significantly upregulated SMAD phosphorylation in COPD ASMC following 2-h stimulation (P < 0.05; n = 5; Fig. 4A); however, the differences were not significant for other ASMC types.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22003087"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Chronic Obstructive Pulmonary Disease": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 33,
+      "key": "96a2d6ebdaa5a92c18460f14bcaff27a"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "FIGURE 11. TGF-beta1 induces activation of Smad2/3 pathway in AML12 cell line",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17513865"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "hepatocyte": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 33,
+      "key": "ba8e8c882fdfe6b97138346e5f0be1d3"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "In our previous studies we have shown that both Smad2 and p38 MAPK were activated in human lung fibroblasts within 10 min of TGF1 stimulation, and peak activation was reached at 1 h (19).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18353785"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 33,
+      "key": "29bfcd25f55276c45173f16094ca5f70"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11784716"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 33,
+      "key": "c26fe11a9dc1bcd732229bc9ca54113f"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "Expression of wild-type Dab2 in a TGFbeta-signaling mutant restores TGFbeta-mediated Smad2 phosphorylation, Smad translocation to the nucleus and Smad-dependent transcriptional responses.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11387212"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 33,
+      "key": "dd6a446ac8d7313ae2ae7ba3121db7c9"
+    },
+    {
+      "line": 52,
+      "relation": "increases",
+      "evidence": "Foxo3a deficiency results in defective TGF-beta-driven Foxp3 induction......Foxo1 exerts similar effects as Foxo3a on Foxp3 expression. This study reveals that Foxo factors promote transcription of the Foxp3 gene in induced T reg cells, and thus provides new mechanistic insight into Foxo-mediated T cell regulation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20439537"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 16,
+      "key": "a6c0f0beca9890fd5c02a6a717ae465d"
+    },
+    {
+      "line": 59,
+      "relation": "increases",
+      "evidence": "we report that negative CTLA-4 costimulation is necessary for generating phenotypically and functionally similar adaptive CD4+CD25+ suppressor cells. TGF-beta could not induce CD4+CD25- cells from CTLA-4(-/-) mice to express normal levels of FoxP3 or to develop suppressor activity. Moreover, blockade of CTLA-4 following activation of wild-type CD4+ cells abolished the ability of TGF-beta to induce FoxP3-expressing mouse suppressor cells. TGF-beta accelerated expression of CTLA-4, and time course studies suggested that CTLA-4 ligation of CD80 shortly after T cell activation enables TGF-beta to induce CD4+CD25- cells to express FoxP3 and develop suppressor activity",
+      "citation": {
+        "db": "Other",
+        "db_id": "16517699"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "regulatory t-cell": true
+        }
+      },
+      "source": 41,
+      "target": 11,
+      "key": "111d8d35bc2d9910fa193a910a8d6a63"
+    },
+    {
+      "line": 59,
+      "relation": "increases",
+      "evidence": "TGF-beta accelerated expression of CTLA-4, and time course studies suggested that CTLA-4 ligation of CD80 shortly after T cell activation enables TGF-beta to induce CD4+CD25- cells to express FoxP3 and develop suppressor activity. TGF-beta also enhanced CD4+ cell expression of CD80.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16517699"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "source": 41,
+      "target": 11,
+      "key": "4f1c591042e4227bd8f48a301790eebc"
+    },
+    {
+      "line": 62,
+      "relation": "increases",
+      "evidence": "TGF-beta accelerated expression of CTLA-4, and time course studies suggested that CTLA-4 ligation of CD80 shortly after T cell activation enables TGF-beta to induce CD4+CD25- cells to express FoxP3 and develop suppressor activity. TGF-beta also enhanced CD4+ cell expression of CD80.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16517699"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "source": 41,
+      "target": 8,
+      "key": "f2a4a3917eedd9a6634490f6384819ce"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "TGF-beta1 (1 ng/ml) significantly upregulated SMAD phosphorylation in COPD ASMC following 2-h stimulation (P < 0.05; n = 5; Fig. 4A); however, the differences were not significant for other ASMC types.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22003087"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Chronic Obstructive Pulmonary Disease": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "0209cf455031a482eb7a1c33bd5bb45d"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "Smad3 activity was decreased in P311-expressing cells, but was corrected by exogenous TGF-beta1 treatment, which also elevated TGF-beta1 mRNA level.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14985127"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "daf26449565f8fc3e03c1d9d8edcb58b"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "However, Western blot analysis reveals that IGF-I selectively inhibits the TGF-beta-triggered activation Smad3 but not Smad2, while not altering expression of total Smads 2, 3, or 4. The phosphatidylinositol 3-kinase (PI3K) inhibitor, LY29004 reverses the ability of IGF-I to inhibit TGF-beta-induced transcriptional responses and the activation of Smad3, suggesting that the suppression of TGF-beta signaling by IGF-I is mediated through activation of PI3K. Moreover, we show that enforced expression of dominant-negative PI3K (DN-p85alpha) or phosphatidylinositol 3-phosphate-phosphatase, PTEN, also reverse the suppressive effect of IGF-I on TGF-beta-induced 3TP-luciferase reporter activity, whereas constitutively active PI3K (p110alphaCAAX) completely blocks TGF-beta-induced 3TP-luciferase reporter activity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12876289"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "5a58f20e1b2bc3dfcb61236591b04420"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "TGFb1 signaling activates receptor SMADs, SMAD2 and SMAD3, which associate with a variety of nuclear factors to regulate gene transcription",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20656683"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Th17 cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "4c00b5d03b96b73a5feea804293ae5ed"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "In this study, we generated T cell-specific Smad2 conditional knockout (KO) mice and unexpectedly found that Smad2 and Smad3 were redundantly essential for TGF-beta-mediated induction of Foxp3-expressing regulatory T cells and suppression of IFN-gamma production in CD4(+) T cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20548029"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "0dc02388eb19f4bc1fc779983d740d49"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "Transforming growth factor-beta (TGF-beta) is a potent inhibitor of skeletal muscle differentiation, but the molecular mechanism and signaling events that lead to this inhibition are poorly characterized. Here we show that the TGF-beta intracellular effector Smad3, but not Smad2, mediates the inhibition of myogenic differentiation in MyoD-expressing C3H10T1/2 cells and C2C12 myoblasts by repressing the activity of the MyoD family of transcriptional factors. Central to the induction of myogenic differentiation is the function of the MyoD family of basic helix-loop-helix (bHLH) transcription factors, which include MyoD, myogenin, Myf5, and MRF4 and are collectively referred to as myogenic regulatory factors or MRFs",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11711431"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "e020f90dd93b95e45f9dea380e252dff"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "FIGURE 9. TGF-beta1 induces snail-1 in hepatocytes in EMT state and lack of evidence for Akt/Erk1/2 activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17513865"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "hepatocyte": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "d754139999b7b2cfa4183714eea56b08"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "TGF-beta phosphorylation of Smad2/3, an obligatory step of intracellular TGF-beta signaling, was also suppressed by VEGF. VEGF attenuation of TGF-beta action was also demonstrated in two other endothelial cell lines. In conclusion, VEGF attenuates TGF-beta action in the human endothelial cell, specifically at the level of transcription of PAI-1 gene and Smad2/3 phosphorylation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15494412"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Endothelium": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "35bcd8928e0c923dedbf7c16a698c1d6"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "A recent study [22] provided evidence for the contribution of Smad1, in addition to Smad3, to TGF-bdependent stimulation of collagen and CCN2 genes in cultured dermal fibroblasts.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17917537"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "3b8a58a9ccc0bbda86ea5f237e9b86bb"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "By RT-PCR we have shown that TGFbeta up-regulates expression not only of plasminogen activator inhibitor type-1 (PAI-1), but also of the urokinase-type plasminogen activator receptor (uPAR), whose inhibition by specific antibodies blunted the TGFbeta angiogenic response in vitro. The SMAD2/3 and FAK signaling pathways were activated by TGFbeta in MVEC",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19041849"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "847f8311716f33c4e8e97414281f96e2"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "Here we report that epidermal growth factor (EGF) potentializes transforming growth factor beta (TGF-beta)-induced Smad3 transactivation in rat hepatocytes, an effect abrogated by TAM-67, a dominant negative mutant of AP-1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11134003"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "4f6bf63f58fcfeb6c9f7fddaf7a7d650"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "The expression of JunD colocalised with pSmad 3 in fibrotic skin and silencing of Smad 3 or Smad 4 by siRNA prevented the induction of JunD by TGFbeta......The expression of JunD was analysed by real-time PCR, immunofluorescence, western blotting and immunohistochemistry.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21515915"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "d83dcd0d8d6a7afa9880b78850e140d6"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "Wnt and TGF-B pathways cooperate to suppress colon 125 and pancreatic 126 tumorigenesis through several direct interactions between these pathways: Axin, a negative regulator of the Wnt pathway, activates TGF-B signaling through binding Smad3",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15774796"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "626cb6d11ab46ac7b5e0b1994fb0190a"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "Previously we have reported that the intracellular effectors of TGF-beta, Smad3 and Smad4, functionally cooperate with Sp1 to activate the human p21 promoter in hepatoma HepG2 cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10878024"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "4c3ea6c786c715020e6e6f9f143f3faf"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "C/EBPbeta and C/EBPdelta were found to physically interact with Smad3 and Smad4, and Smad3 cooperated with Smad4 and TGF-beta signaling to repress the transcriptional activity of C/EBPs. Thus, repression of the activity of C/EBPs by Smad3/4 at C/EBP binding sites inhibited transcription from the PPARgamma2 and leptin promoters.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12524424"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "680429af94bdad3d4c74f5984f6b51a0"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "These result suggest that TGF-beta1 stimulation of VEGF production by fibroblasts is regulated by Smad3 but not by Smad2 signaling",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15629128"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "73c406556a2fc1e394eacacfb2c44012"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "Furthermore, expression of dominant negative Smad3 or Smad4 in cells decreased or abolished the stimulation of beta(5) promoter activity by TGF-beta. Smad4 mutant also inhibited the up-regulation of surface beta(5) level by TGF-beta. Thus, TGF-beta increases expression of the integrin beta(5) gene by mechanisms involving Sp1/Sp3 and Smad transcription factors.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10964912"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "56883c5be6fc5a2f1f8edf98e8114682"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "TGFbeta stimulates the gene coding for human alpha2(I)-collagen (COL1A2) by inducing binding of an Sp1-containing complex to an upstream promoter element (TGFbeta responsive element or TbRE) that contains a CAGA box. Here we report that the CAGA box of the TbRE is the binding site of the Smad3/Smad4 complex, and that the binding of the complex is required for TGFbeta-induced COL1A2 up-regulation. Recombinant Smad3 and Smad4 bind in vitro to the CAGA box of COL1A2; TGFbeta treatment of cultured fibroblasts induces Smad3/Smad4 binding to the TbRE; transient overexpression of Smad3 and Smad4 in fibroblasts transactivates TbRE-driven transcription;",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11007770"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "0d9674f88ff2c207d1dd927661fa9ba7"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "The changes in glucocorticoid binding were associated with identical changes in GR protein and mRNA levels Functional inactivation of Smad 2/3 and AP-1 limited the response to TGF-beta 1, indicating a role for these transcription factors TGF-beta 1 increases glucocorticoid binding and signaling in inflammatory cells through a Smad 2/3- and AP-1-mediated process",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12753290"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "cb54913c92364e485d7dc360f9f177d1"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "Second, silencing of SMAD protein levels using short interfering RNAs revealed that TGFbeta-induced activation of the endogenous gadd45beta gene required SMAD3 and SMAD4 but not SMAD2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14630914"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "24ca2b78f5528a54ed79fd36abf01d2b"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "Neutralizing Ab to TGF-beta1 eliminated TMEV-induced IL-23 production and SMAD-3 activation in RAW264.7 cells, BMM, and SPM.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18802055"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "37917862ad55cb702366089f4c00c4c6"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "Smad3E suppressed Nrf2-mediated activation of the GCLC reporter. We demonstrate that TGF-beta increased ATF3 protein levels, as did transient overexpression of Smad3E. Ectopic expression of ATF3 was sufficient to suppress the GCLC reporter activity, as well as endogenous GCLC expression",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15629866"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "f6315dd834cb647ce5872397581464d1"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "Primary astrocytes cultured from SBE-luc mice showed specific activation of the reporter in response to Smad2/3-activating TGF-beta family members. Treatment of mice with the endotoxin LPS resulted in a fast and vigorous, but transient activation of the reporter in the intestine",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15972691"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "astrocyte": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "b9c185591c275a374cac883a64914e90"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "We show that SRF significantly inhibits the TGF-beta1/Smad-dependent transcription by associating with Smad3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16819512"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 34,
+      "key": "7dbe4ef801f69eea7b97df88025a20b7"
+    },
+    {
+      "line": 75,
+      "relation": "increases",
+      "evidence": "TGF-beta1 can promote the development of both Th17 effector and adaptive Treg cells, while the contemporaneous production of IL-6 contributes to the development of Th17 cells, but inhibits Treg cells",
+      "citation": {
+        "db": "Other",
+        "db_id": "17083345"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 41,
+      "target": 2,
+      "key": "8ec1c116bea73c858a3c4ce9510425d3"
+    },
+    {
+      "line": 6,
+      "relation": "increases",
+      "evidence": "Interleukin (IL)-10 is the most important cytokine with anti-inflammatory properties besides TGF-?? and IL-35. It is produced by activated immune cells, in particular monocytes/macrophages and T cell subsets including Tr1, Treg, and Th1 cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21115385"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 49,
+      "target": 23,
+      "key": "130cf2b0db56616e12535bada8309466"
+    },
+    {
+      "line": 57,
+      "relation": "increases",
+      "evidence": "Herein we show that RA enhances TGF-beta signaling by increasing the expression and phosphorylation of Smad3, and this results in increased Foxp3 expression even in the presence of IL-6 or IL-21. RA also inhibits the expression of IL-6Ralpha, IRF-4, and IL-23R and thus inhibits Th17 development",
+      "citation": {
+        "db": "Other",
+        "db_id": "18684916"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "regulatory t-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 0,
+      "target": 34,
+      "key": "9c1f37c5c5b3bd16928f9e9491c62825"
+    },
+    {
+      "line": 57,
+      "relation": "increases",
+      "evidence": "Herein we show that RA enhances TGF-beta signaling by increasing the expression and phosphorylation of Smad3, and this results in increased Foxp3 expression even in the presence of IL-6 or IL-21.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18684916"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "regulatory T-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 0,
+      "target": 34,
+      "key": "7cf85423bc63c24b9ead80dfb15d166a"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "Foxp3 is a critical Tx for Treg polarization and regulated by one of many mechanisms, including ubiquitination-dependent degradation. Deubiquitinase USP7 decreases Foxp3 polyunibiutination and stabilize Foxp3, thus increases Treg-suppressive capacity.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23973222"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Treg": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 45,
+      "target": 18,
+      "key": "dc1d884ae251bb21b2664cda665beec2"
+    },
+    {
+      "line": 33,
+      "relation": "increases",
+      "evidence": "Flow cytometry also showed considerable SOCS1 expression in wild-type Treg cells and much lower SOCS1 expression in Ubc13-deficient Treg cells (Fig. 7e).",
+      "citation": {
+        "db": "Other",
+        "db_id": "22484734"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "Treg": true
+        }
+      },
+      "source": 44,
+      "target": 36,
+      "key": "580b34318f37b27392e016bdb1a1f300"
+    },
+    {
+      "line": 72,
+      "relation": "increases",
+      "evidence": "This function of Ubc13 involved its downstream target, the kinase IKK. The Ubc13-IKK signaling axis controlled the expression of specific Treg cell effector molecules, including IL-10 and SOCS1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "22484734"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "source": 44,
+      "target": 23,
+      "key": "28339394b44eca671d16f682ff1eb681"
+    },
+    {
+      "line": 72,
+      "relation": "increases",
+      "evidence": "Ubc13-deficient Treg cells expressed Tgfb1 (which encodes TGF-β); however, their expres-sion of Il10 (which encodes IL-10) was attenuated (Fig. 7b). We further confirmed those results by flow cytometry (Fig. 7c) and ELISA (Fig. 7d)",
+      "citation": {
+        "db": "Other",
+        "db_id": "22484734"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "Treg": true
+        }
+      },
+      "source": 44,
+      "target": 23,
+      "key": "b28a0fb6aa8c851a53fd787f8a4e7fec"
+    },
+    {
+      "line": 34,
+      "relation": "decreases",
+      "evidence": "Stub1 removes Foxp3 from the transcriptional regulatory landscape by promoting its degradation, immunoblotting of these doubly transduced cells confirmed that Stub1 overexpression coincided with the reduction of Foxp3 protein amounts (Figure S5D). These results suggest that within T cells, Stub1 negatively regulates Foxp3-mediated transcriptional repression.",
+      "citation": {
+        "db": "Other",
+        "db_id": ""
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "Treg": true
+        }
+      },
+      "source": 39,
+      "target": 18,
+      "key": "5a875096d60e4c26eddc8eafb6c6f93d"
+    },
+    {
+      "line": 35,
+      "relation": "increases",
+      "evidence": "IkBNS intrinsically regulates Treg cell development",
+      "citation": {
+        "db": "Other",
+        "db_id": "23200824"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "Treg": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 31,
+      "target": 49,
+      "key": "73097a18b5bef671575a71dfd269036b"
+    },
+    {
+      "line": 36,
+      "relation": "increases",
+      "evidence": "GATA-3 affects Treg homeostasis and suppressive function, through binding to Foxp3 promoter, regulating Foxp3 and other Treg cell signature genes expression. GATA-3 prevents transition of Treg into Th17 cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21924928"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "Treg": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 20,
+      "target": 18,
+      "key": "c129fb7178ef1efc50c710ebae6f95c5"
+    },
+    {
+      "line": 74,
+      "relation": "directlyIncreases",
+      "evidence": "GATA-3 affects Treg homeostasis and suppressive function, through binding to Foxp3 promoter, regulating Foxp3 and other Treg cell signature genes expression. GATA-3 prevents transition of Treg into Th17 cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21924928"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 20,
+      "target": 18,
+      "key": "fffa83ee7057f960b60bdde9f1ab0c91"
+    },
+    {
+      "line": 73,
+      "relation": "positiveCorrelation",
+      "evidence": "Both autoactivation and inhibition of GATA-3 play a crucial role in this process.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15261525"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 20,
+      "target": 20,
+      "key": "6694c9e4f5523db1c0cdf3e9e9ee72dd"
+    },
+    {
+      "line": 73,
+      "relation": "positiveCorrelation",
+      "evidence": "Both autoactivation and inhibition of GATA-3 play a crucial role in this process.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15261525"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 20,
+      "target": 20,
+      "key": "09afa3168d296bcae68875c56707b4ee"
+    },
+    {
+      "line": 39,
+      "relation": "increases",
+      "evidence": "BACH2 is required during induction for the formation of iTreg cells. In addition, Bach2 overexpression in WT cells enhanced FOXP3 induction under suboptimal polarizing conditions",
+      "citation": {
+        "db": "Other",
+        "db_id": "23728300"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "Treg": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 4,
+      "target": 18,
+      "key": "eadfcc776540d8a8f857c562563c6e3d"
+    },
+    {
+      "line": 40,
+      "relation": "increases",
+      "evidence": "We found that adoptive transfer of naïve furin-deficient CD4+ cells into T-cell-deficient hosts resulted in the generation of fewer Foxp3+ cells than wild-type cells, perhaps owing to lack of autocrine TGF-1 production (Fig. 4E).",
+      "citation": {
+        "db": "Other",
+        "db_id": "18701887"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "Treg": true
+        }
+      },
+      "source": 19,
+      "target": 49,
+      "key": "a273a24d96ea4bba78fd7884151d2e0b"
+    },
+    {
+      "line": 48,
+      "relation": "increases",
+      "evidence": "We first explored furin’s criticality in the production of biologically active TGF-beta1 by assessing whether furin-deficient T cells generated normal levels of TGF-beta1 in vitro. To this end, we measured the secretion of TGF-beta1 by CD4+CD25- and CD4+CD25+ T cells and found that furin-deficient T cells secreted considerably reduced levels of activated TGF-beta1 (Fig. 3c).",
+      "citation": {
+        "db": "Other",
+        "db_id": "18701887"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "Treg": true
+        }
+      },
+      "object": {
+        "modifier": "Activity"
+      },
+      "source": 19,
+      "target": 41,
+      "key": "eaecc4436ea136d8f869600b1901fdea"
+    },
+    {
+      "line": 42,
+      "relation": "increases",
+      "evidence": "Nr4a2-deficeint Tregs are prone to lose Foxp3 expression and have attenuated suppressive ability both in vitro and in vivo.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21468021"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "Treg": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 32,
+      "target": 18,
+      "key": "9d7eb13d514588459e11c2ce18dd2a34"
+    },
+    {
+      "line": 43,
+      "relation": "decreases",
+      "evidence": "Both IFN-γ and IL-17 were significantly repressed under Th1- and Th17-conditions, respectively, and Foxp3 was induced in both conditions by Nr4a2 (Fig. 3d).",
+      "citation": {
+        "db": "Other",
+        "db_id": "21468021"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "Treg": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 32,
+      "target": 22,
+      "key": "8c0b01e100797030acc7bcb61d54c99a"
+    },
+    {
+      "line": 44,
+      "relation": "increases",
+      "evidence": "Nr4a receptors directly activated the promoter of the gene encoding the transcription factor Foxp3",
+      "citation": {
+        "db": "Other",
+        "db_id": "23334790"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "Treg": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 32,
+      "target": 49,
+      "key": "d4bc7f1656f877009cba5455fa2f0de9"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Concurrently, HIF-1 attenuates Treg development by binding Foxp3 and\ntargeting it for proteasomal degradation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21871655"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "Treg": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 21,
+      "target": 18,
+      "key": "24848ac7bd8a23beb8616827bd80e3ee"
+    },
+    {
+      "line": 66,
+      "relation": "increases",
+      "evidence": "CBP and p300 cooperate with several key Treg transcription factors that act on the Foxp3 promoter to promote Foxp3 production.",
+      "citation": {
+        "db": "Other",
+        "db_id": "25154413"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 18,
+      "key": "1a328c4c690a2e0415490a50b3627b60"
+    },
+    {
+      "line": 71,
+      "relation": "decreases",
+      "evidence": "Thus, IFN-α/β disrupts the GATA3-autoactivation loop and promotes epigenetic silencing of a Th2-specific regulatory region within the GATA3 gene.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24813204"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 47,
+      "target": 20,
+      "key": "7c028f57cd2f44cc0487715773f84e22"
+    },
+    {
+      "line": 76,
+      "relation": "decreases",
+      "evidence": "production of IL-6 contributes to the development of Th17 cells, but inhibits Treg cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "17083345"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 26,
+      "target": 2,
+      "key": "910d6bd51644418646b988e17567a457"
+    }
+  ]
+}

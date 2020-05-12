@@ -1,0 +1,3120 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "ECM Degradation-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The ECM Degradation network depicts the causal mechanisms involved in the key events leading to degradation of the extracellular matrix (ECM) in the context of COPD, including the release of proteases (e.g. MMPs and neutrophil elastase) from inflammatory cells, which degrade ECM components such as collagens, laminins and elastins. ECM degradation results in destruction of the alveolar walls, contributing to emphysema and COPD."
+    },
+    "namespace_url": {},
+    "namespace_pattern": {
+      "chebi": ".*",
+      "mesh": ".*",
+      "fplx": ".*",
+      "go": ".*",
+      "hgnc": ".*"
+    },
+    "annotation_url": {},
+    "annotation_pattern": {
+      "cl": ".*"
+    },
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "desmosine",
+        "identifier": "37628"
+      },
+      "id": "19d87f8b39f32563f0efc55bdddcea19",
+      "bel": "a(chebi:37628 ! desmosine)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "go",
+        "name": "collagen trimer",
+        "identifier": "0005581"
+      },
+      "id": "613f5c1e8475093a4b7bffdab9e8541b",
+      "bel": "a(go:0005581 ! \"collagen trimer\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "go",
+        "name": "extracellular matrix",
+        "identifier": "0031012"
+      },
+      "id": "7f824b804b01e4ed5f5c740761db3d3b",
+      "bel": "a(go:0031012 ! \"extracellular matrix\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "mesh",
+        "name": "Smoke",
+        "identifier": "D012906"
+      },
+      "id": "4bc945b1177a7f243d320f77fd37425c",
+      "bel": "a(mesh:D012906 ! Smoke)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "blood vessel development",
+        "identifier": "0001568"
+      },
+      "id": "b022e0ead4b9801c606e3e0dc4054156",
+      "bel": "bp(go:0001568 ! \"blood vessel development\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "inflammatory response",
+        "identifier": "0006954"
+      },
+      "id": "f657d507de55962e6bbc9e079c01cfa4",
+      "bel": "bp(go:0006954 ! \"inflammatory response\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "canonical Wnt signaling pathway",
+        "identifier": "0060070"
+      },
+      "id": "bf7f2ad7f5e93f00a80ce39d29616189",
+      "bel": "bp(go:0060070 ! \"canonical Wnt signaling pathway\")"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "ITGA2",
+            "identifier": "6137"
+          },
+          "id": "03d0e09962d31864d291d6f37fc9469e",
+          "bel": "p(hgnc:6137 ! ITGA2)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "ITGB1",
+            "identifier": "6153"
+          },
+          "id": "205f17e81451031805037b86f4295763",
+          "bel": "p(hgnc:6153 ! ITGB1)"
+        }
+      ],
+      "id": "4e448cee60f9fd1adebb7152419f5501",
+      "bel": "complex(p(hgnc:6137 ! ITGA2), p(hgnc:6153 ! ITGB1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "ITGA3",
+            "identifier": "6139"
+          },
+          "id": "a0d988b828c24a7bb1339e48c08bd901",
+          "bel": "p(hgnc:6139 ! ITGA3)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "ITGB1",
+            "identifier": "6153"
+          },
+          "id": "205f17e81451031805037b86f4295763",
+          "bel": "p(hgnc:6153 ! ITGB1)"
+        }
+      ],
+      "id": "5819536877f1007499dbf004cae4a9b6",
+      "bel": "complex(p(hgnc:6139 ! ITGA3), p(hgnc:6153 ! ITGB1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "ITGAV",
+            "identifier": "6150"
+          },
+          "id": "6990c458423689ae3596979592bf444d",
+          "bel": "p(hgnc:6150 ! ITGAV)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "ITGB1",
+            "identifier": "6153"
+          },
+          "id": "205f17e81451031805037b86f4295763",
+          "bel": "p(hgnc:6153 ! ITGB1)"
+        }
+      ],
+      "id": "893d4023e5525cd661975e080b985b17",
+      "bel": "complex(p(hgnc:6150 ! ITGAV), p(hgnc:6153 ! ITGB1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "ITGAV",
+            "identifier": "6150"
+          },
+          "id": "6990c458423689ae3596979592bf444d",
+          "bel": "p(hgnc:6150 ! ITGAV)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "ITGB3",
+            "identifier": "6156"
+          },
+          "id": "625abead240b698a82ddd715b0bede45",
+          "bel": "p(hgnc:6156 ! ITGB3)"
+        }
+      ],
+      "id": "4b20a36ac9514114fc3c0a6d1309ebe9",
+      "bel": "complex(p(hgnc:6150 ! ITGAV), p(hgnc:6156 ! ITGB3))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "COL1",
+        "identifier": "COL1"
+      },
+      "id": "0ba1cf84efb0056fcce4ff83ac96a4fd",
+      "bel": "p(fplx:COL1 ! COL1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "COL4",
+        "identifier": "COL4"
+      },
+      "id": "fb1d098183d8cd2b45b255d3e8470a5c",
+      "bel": "p(fplx:COL4 ! COL4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "MMP",
+        "identifier": "MMP"
+      },
+      "id": "87b54a2d21234ef791697c656b8bfe6e",
+      "bel": "p(fplx:MMP ! MMP)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TGFB1",
+        "identifier": "11766"
+      },
+      "id": "576a88bfbb29664cc1307c6239712c90",
+      "bel": "p(hgnc:11766 ! TGFB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TIMP1",
+        "identifier": "11820"
+      },
+      "id": "7dddd4a79b8c535ce8d6155f92eafa03",
+      "bel": "p(hgnc:11820 ! TIMP1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TIMP1",
+        "identifier": "11820"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein acetylation",
+            "identifier": "0006473"
+          }
+        }
+      ],
+      "id": "b5d0c09774c6dfb83b3f7115fd23bbab",
+      "bel": "p(hgnc:11820 ! TIMP1, pmod(go:0006473 ! \"protein acetylation\"))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TIMP2",
+        "identifier": "11821"
+      },
+      "id": "fe087bed95da6428bdff0ba723c4d4c4",
+      "bel": "p(hgnc:11821 ! TIMP2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TIMP3",
+        "identifier": "11822"
+      },
+      "id": "9aa158e2908041f5800ae355c648d85b",
+      "bel": "p(hgnc:11822 ! TIMP3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TIMP4",
+        "identifier": "11823"
+      },
+      "id": "dea6199bd953f8f98bf5bde83dc4a5aa",
+      "bel": "p(hgnc:11823 ! TIMP4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TNF",
+        "identifier": "11892"
+      },
+      "id": "000255f3feb3add4cefe963ffea45204",
+      "bel": "p(hgnc:11892 ! TNF)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SIRT1",
+        "identifier": "14929"
+      },
+      "id": "ee235c4b7fcc97b9f15cd3eb36039f18",
+      "bel": "p(hgnc:14929 ! SIRT1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "COL1A1",
+        "identifier": "2197"
+      },
+      "id": "b996a91381aafd2fb0ad82f3b618a7a9",
+      "bel": "p(hgnc:2197 ! COL1A1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "COL1A2",
+        "identifier": "2198"
+      },
+      "id": "1618137078965d9b5717ff2c6469706a",
+      "bel": "p(hgnc:2198 ! COL1A2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "COL2A1",
+        "identifier": "2200"
+      },
+      "id": "4370af488192b2763bbcef5a3073854c",
+      "bel": "p(hgnc:2200 ! COL2A1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "COL3A1",
+        "identifier": "2201"
+      },
+      "id": "8ddab625813e2a4ccb3a6673d84f69b7",
+      "bel": "p(hgnc:2201 ! COL3A1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "COL4A1",
+        "identifier": "2202"
+      },
+      "id": "1eba7633722a795f0dccef0fde502e70",
+      "bel": "p(hgnc:2202 ! COL4A1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "COL4A2",
+        "identifier": "2203"
+      },
+      "id": "9ae47d0ef87861590bc66aa6ad58af6f",
+      "bel": "p(hgnc:2203 ! COL4A2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CRP",
+        "identifier": "2367"
+      },
+      "id": "270708a0cd42c9c40d7dac5d113c31ae",
+      "bel": "p(hgnc:2367 ! CRP)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EGR1",
+        "identifier": "3238"
+      },
+      "id": "9c7e203a4f3da840dc94f92a943bf4c2",
+      "bel": "p(hgnc:3238 ! EGR1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ELANE",
+        "identifier": "3309"
+      },
+      "id": "f57d83f4113f5aac9c09c0b88dd12b0e",
+      "bel": "p(hgnc:3309 ! ELANE)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ELN",
+        "identifier": "3327"
+      },
+      "id": "cdd4680d5455964e3e135bbca86aac2c",
+      "bel": "p(hgnc:3327 ! ELN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "FN1",
+        "identifier": "3778"
+      },
+      "id": "ebb2dba1a019d929ce79c6f8c54d278c",
+      "bel": "p(hgnc:3778 ! FN1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "IL1B",
+        "identifier": "5992"
+      },
+      "id": "a47b7e81e6919ae516ff58b51cca978d",
+      "bel": "p(hgnc:5992 ! IL1B)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ITGA2",
+        "identifier": "6137"
+      },
+      "id": "03d0e09962d31864d291d6f37fc9469e",
+      "bel": "p(hgnc:6137 ! ITGA2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ITGA3",
+        "identifier": "6139"
+      },
+      "id": "a0d988b828c24a7bb1339e48c08bd901",
+      "bel": "p(hgnc:6139 ! ITGA3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ITGA5",
+        "identifier": "6141"
+      },
+      "id": "9e380e3b38c0d7a6aeb1742bcc265998",
+      "bel": "p(hgnc:6141 ! ITGA5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ITGAV",
+        "identifier": "6150"
+      },
+      "id": "6990c458423689ae3596979592bf444d",
+      "bel": "p(hgnc:6150 ! ITGAV)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ITGB1",
+        "identifier": "6153"
+      },
+      "id": "205f17e81451031805037b86f4295763",
+      "bel": "p(hgnc:6153 ! ITGB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ITGB3",
+        "identifier": "6156"
+      },
+      "id": "625abead240b698a82ddd715b0bede45",
+      "bel": "p(hgnc:6156 ! ITGB3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MMP1",
+        "identifier": "7155"
+      },
+      "id": "7f6d08d9782b0532a69bf40529525fa8",
+      "bel": "p(hgnc:7155 ! MMP1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MMP12",
+        "identifier": "7158"
+      },
+      "id": "8246826d8afef202b2181e0b35d7a4ae",
+      "bel": "p(hgnc:7158 ! MMP12)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MMP14",
+        "identifier": "7160"
+      },
+      "id": "a24b746452133b5505a3fb1556dd1479",
+      "bel": "p(hgnc:7160 ! MMP14)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MMP2",
+        "identifier": "7166"
+      },
+      "id": "1c85abe98843efda56d81a58c088ebd5",
+      "bel": "p(hgnc:7166 ! MMP2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MMP3",
+        "identifier": "7173"
+      },
+      "id": "adf2988c0131f8687c09147f029b193b",
+      "bel": "p(hgnc:7173 ! MMP3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MMP7",
+        "identifier": "7174"
+      },
+      "id": "1ae432c9b2e9e5fb9a10582adfdaeaad",
+      "bel": "p(hgnc:7174 ! MMP7)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MMP8",
+        "identifier": "7175"
+      },
+      "id": "ce0d096ee4397ac63e97db793d43a941",
+      "bel": "p(hgnc:7175 ! MMP8)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MMP9",
+        "identifier": "7176"
+      },
+      "id": "f6fc79beb30e63df945575f6f15f77e3",
+      "bel": "p(hgnc:7176 ! MMP9)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SERPINA1",
+        "identifier": "8941"
+      },
+      "id": "90d4d1366eaaf18d68d25bdaf4e07c7c",
+      "bel": "p(hgnc:8941 ! SERPINA1)"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "mesh",
+        "name": "Pulmonary Disease, Chronic Obstructive",
+        "identifier": "D029424"
+      },
+      "id": "98cb883d84a9775f973f1e99c68ba3a2",
+      "bel": "path(mesh:D029424 ! \"Pulmonary Disease, Chronic Obstructive\")"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MMP2",
+        "identifier": "7166"
+      },
+      "id": "9c779af104ee802bc223df8260e693e9",
+      "bel": "r(hgnc:7166 ! MMP2)"
+    }
+  ],
+  "links": [
+    {
+      "line": 1,
+      "relation": "positiveCorrelation",
+      "evidence": "\"...Plasma levels of MMP-1, MMP-7, MMP-9, and MMP-9/TIMP-1 and CRP were higher in BE and TS than in the NS healthy women (p <0.01)...\" See figure 1.\nBE  is biomass combustion exposure.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24980707"
+      },
+      "annotations": {},
+      "source": 3,
+      "target": 40,
+      "key": "03f9b725e79939eace4a3452cd61fb5b"
+    },
+    {
+      "line": 2,
+      "relation": "positiveCorrelation",
+      "evidence": "\"...Plasma levels of MMP-1, MMP-7, MMP-9, and MMP-9/TIMP-1 and CRP were higher in BE and TS than in the NS healthy women (p <0.01)...\" See figure 1. BE is biomass combustion exposure.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24980707"
+      },
+      "annotations": {},
+      "source": 3,
+      "target": 45,
+      "key": "6b84bd53341eb47e5da21c5fab8396cd"
+    },
+    {
+      "line": 3,
+      "relation": "positiveCorrelation",
+      "evidence": "\"...Plasma levels of MMP-1, MMP-7, MMP-9, and MMP-9/TIMP-1 and CRP were higher in BE and TS than in the NS healthy women (p <0.01)...\" See figure 2. BE is biomass combustion exposure.",
+      "citation": {
+        "db": "Other",
+        "db_id": ""
+      },
+      "annotations": {},
+      "source": 3,
+      "target": 47,
+      "key": "7d7bb0045d8c3c063fc7750eb0cda2f3"
+    },
+    {
+      "line": 4,
+      "relation": "positiveCorrelation",
+      "evidence": "\"...Plasma levels of MMP-1, MMP-7, MMP-9, and MMP-9/TIMP-1 and CRP were higher in BE and TS than in the NS healthy women (p <0.01)...\" See figure 3. BE is biomass combustion exposure.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24980707"
+      },
+      "annotations": {},
+      "source": 3,
+      "target": 28,
+      "key": "078470f9f64f3b632b34b26f248a4e7d"
+    },
+    {
+      "line": 10,
+      "relation": "increases",
+      "evidence": "Activation of WNT/β-catenin signaling in pulmonary fibroblasts by TGF-β₁ is increased in chronic obstructive pulmonary disease.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21980461"
+      },
+      "annotations": {},
+      "source": 6,
+      "target": 49,
+      "key": "3aafc1cface5e1211841974af3a5e59c"
+    },
+    {
+      "line": 45,
+      "relation": "association",
+      "evidence": "Matrix metalloproteinase-9 (MMP-9) and its inhibitor tissue inhibitor of metalloproteinase-1 (TIMP-1) are involved in the pathogenesis of airway inflammation in patients with chronic obstructive pulmonary disease (COPD).",
+      "citation": {
+        "db": "Other",
+        "db_id": "22832426"
+      },
+      "annotations": {},
+      "source": 5,
+      "target": 47,
+      "key": "b880d9e54798c6ad68e60671c34279c8"
+    },
+    {
+      "line": 125,
+      "relation": "association",
+      "evidence": "Matrix metalloproteinase-9 (MMP-9) and its inhibitor tissue inhibitor of metalloproteinase-1 (TIMP-1) are involved in the pathogenesis of airway inflammation in patients with chronic obstructive pulmonary disease (COPD).",
+      "citation": {
+        "db": "Other",
+        "db_id": "22832426"
+      },
+      "annotations": {},
+      "source": 5,
+      "target": 15,
+      "key": "37e08658c5662b012f6ffa20454e9413"
+    },
+    {
+      "line": 57,
+      "relation": "increases",
+      "evidence": "Major functions of the alpha2beta1 receptor include the induction of MMP1, % MMP13 and MT1-MMP, as well as activation of proMMP2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11701397"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 7,
+      "target": 42,
+      "key": "e631cf5c77cda29f756f5169c8f47d03"
+    },
+    {
+      "line": 59,
+      "relation": "increases",
+      "evidence": "Major functions of the alpha2beta1 receptor include the induction of MMP1, % MMP13 and MT1-MMP, as well as activation of proMMP2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11701397"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 7,
+      "target": 43,
+      "key": "aeda806ff0bd5076c350c80b8b24125a"
+    },
+    {
+      "line": 59,
+      "relation": "increases",
+      "evidence": "Specific antibodies against the subunits of alpha2beta1 integrins, the major collagen I receptor, induced partial inhibition of MMP2 activation. Treatment of cells with concanavalin A resulted in a marked activation of MMP2 that correlated with the proteolytic processing of MT1-MMP, the MMP2 activator, from a Mr=60 kd toward a Mr=43 kd polypeptide.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10421655"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 7,
+      "target": 43,
+      "key": "63b6e24100f431716c4957b243948a03"
+    },
+    {
+      "line": 60,
+      "relation": "increases",
+      "evidence": "Major functions of the alpha2beta1 receptor include the induction of MMP1, % MMP13 and MT1-MMP, as well as activation of proMMP2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11701397"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 7,
+      "target": 40,
+      "key": "30aeb49d219d107d4375a522bf3d5c61"
+    },
+    {
+      "relation": "partOf",
+      "source": 34,
+      "target": 7,
+      "key": "c33483f84fa1b25de521ed5fbe912a0d"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 34,
+      "target": 7,
+      "key": "ddfb0c543920358dd583c1cf8237f13b"
+    },
+    {
+      "relation": "partOf",
+      "source": 38,
+      "target": 7,
+      "key": "e784ea26eecfc7f0caea278a8f2b4c5d"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 38,
+      "target": 7,
+      "key": "1cb0a9a2a529ee05c386c37e13a53c50"
+    },
+    {
+      "relation": "partOf",
+      "source": 38,
+      "target": 8,
+      "key": "73e048568d7010e0663d1f980ededa86"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 38,
+      "target": 8,
+      "key": "efa5b053e4e6cde9cabd2dec36e5f457"
+    },
+    {
+      "relation": "partOf",
+      "source": 38,
+      "target": 9,
+      "key": "6d15b3607782e67b7464a3990d8cf55b"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 38,
+      "target": 9,
+      "key": "3ab7861b58766c1af5ceadf5018f1486"
+    },
+    {
+      "relation": "partOf",
+      "source": 35,
+      "target": 8,
+      "key": "1d7e042d5f4a26b4a91d8b919ba7a0e0"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 35,
+      "target": 8,
+      "key": "35a4c90dfe4245a0ca045f3f18982889"
+    },
+    {
+      "relation": "partOf",
+      "source": 37,
+      "target": 9,
+      "key": "7471d3571f00677675c4aa623d8babe7"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 37,
+      "target": 9,
+      "key": "7779a0e7fae65e6392d49f78768e4ed4"
+    },
+    {
+      "relation": "partOf",
+      "source": 37,
+      "target": 10,
+      "key": "d5e51ab3144e417e92532ca82c6bf76c"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 37,
+      "target": 10,
+      "key": "bcac723e6a6c69f413f903c6dcab600c"
+    },
+    {
+      "line": 44,
+      "relation": "directlyIncreases",
+      "evidence": "MMP-2 binds to ?v?3 at the cell surface, and blocking this binding inhibits MMP-2 protease activity in cultured cells, suppressing angiogenesis and tumour growth in chorioallantoic membrane assays43.Conversely, the membrane MMP (MT-1) cleaves ?v?3, enhancing the ligand binding activity of this integrin44. So,?v?3 seems to be important in regulating angiogenesis in adult animals.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12635171"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 10,
+      "target": 43,
+      "key": "ca858b4187ba89f1f92b619f5c8e6745"
+    },
+    {
+      "relation": "partOf",
+      "source": 39,
+      "target": 10,
+      "key": "4ba84950dc39f9dd50c6f1d0b06f1727"
+    },
+    {
+      "line": 139,
+      "relation": "directlyDecreases",
+      "evidence": "This gene encodes a secreted enzyme which breaks down the interstitial collagens, types I, II, and III.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11701397"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 22,
+      "target": 22,
+      "key": "24eb92fe94499b3b65019b14f161563b"
+    },
+    {
+      "line": 139,
+      "relation": "directlyDecreases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 22,
+      "target": 22,
+      "key": "8b1bb6b683c875d3e69dfb97a864f3fd"
+    },
+    {
+      "line": 17,
+      "relation": "directlyDecreases",
+      "evidence": "This gene encodes a secreted enzyme which breaks down the interstitial collagens, types I, II, and III.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11701397"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 23,
+      "target": 23,
+      "key": "be7e0924a1ac581ffa3dfa4ee1553f49"
+    },
+    {
+      "line": 17,
+      "relation": "directlyDecreases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 23,
+      "target": 23,
+      "key": "d034dad8f63e4e8ab24464d9a4699cd1"
+    },
+    {
+      "line": 14,
+      "relation": "directlyDecreases",
+      "evidence": "Figure 2. Inhibition by doxycycline (DOXY) of digestion of type II collagen by collagenases 1, 2, or 3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10366106"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 24,
+      "target": 24,
+      "key": "de05e02311f2d3c1cdbd218c319c06fd"
+    },
+    {
+      "line": 14,
+      "relation": "directlyDecreases",
+      "evidence": "MMP-1 and MMP-13 preferentially cleave type III and II collagen,5?10 respectively.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11602491"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 24,
+      "target": 24,
+      "key": "17149f2b360216980a5f8e106eb36391"
+    },
+    {
+      "line": 14,
+      "relation": "directlyDecreases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 24,
+      "target": 24,
+      "key": "8eb408f2b596a88c83043cd4afadde70"
+    },
+    {
+      "line": 14,
+      "relation": "directlyDecreases",
+      "evidence": "This gene encodes a secreted enzyme which breaks down the interstitial collagens, types I, II, and III.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11701397"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 24,
+      "target": 24,
+      "key": "c49721e85ee44aed92ff96f162aa24b0"
+    },
+    {
+      "line": 14,
+      "relation": "directlyDecreases",
+      "evidence": "It was determined that when collagen fibrils were formed from 10 ug type I collagen, about 80% of the collagen could be degraded in an overnight digestion using either 100 ng MMP1 or 75 ng MMP13 (Fig. 1A). MMP1 showed a similar response towards type II collagen, with 100 ng MMP1 being able to cleave about 80% of the collagen in fibrils formed from 10 ug type II collagen (Fig. 1B).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16979885"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 24,
+      "target": 24,
+      "key": "fdf36bc86bb26eb7bcc0c6ec5a071d2c"
+    },
+    {
+      "line": 138,
+      "relation": "directlyDecreases",
+      "evidence": "MMP-1 and MMP-13 preferentially cleave type III and II collagen,5?10 respectively.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11602491"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 25,
+      "target": 25,
+      "key": "6d3295c6d9589800f471bcd4ab4f56fc"
+    },
+    {
+      "line": 138,
+      "relation": "directlyDecreases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 25,
+      "target": 25,
+      "key": "a0b175c51de54d01a132b1fd00a4ce20"
+    },
+    {
+      "line": 138,
+      "relation": "directlyDecreases",
+      "evidence": "This gene encodes a secreted enzyme which breaks down the interstitial collagens, types I, II, and III.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11701397"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 25,
+      "target": 25,
+      "key": "1288526e27565ba81b189642f9992df9"
+    },
+    {
+      "line": 33,
+      "relation": "directlyDecreases",
+      "evidence": "Matrix metalloproteinase 2 (MMP2), which degrades Type IV collagen, is produced as proMMP2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14715700"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 26,
+      "target": 26,
+      "key": "620382e662e098b4bbd4e760f41f31e4"
+    },
+    {
+      "line": 33,
+      "relation": "directlyDecreases",
+      "evidence": "This gene encodes an enzyme which degrades type IV collagen, the major structural component of basement membranes. The enzyme plays a role in endometrial menstrual breakdown, regulation of vascularization and the inflammatory response.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11701397"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 26,
+      "target": 26,
+      "key": "b18b1b9a7fb135bea0295a410cbdf40a"
+    },
+    {
+      "line": 16,
+      "relation": "directlyDecreases",
+      "evidence": "This gene encodes an enzyme which degrades type IV collagen, the major structural component of basement membranes. The enzyme plays a role in endometrial menstrual breakdown, regulation of vascularization and the inflammatory response.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11701397"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 27,
+      "target": 27,
+      "key": "000a081ed539f3ad1cdb83311814a711"
+    },
+    {
+      "line": 4,
+      "relation": "positiveCorrelation",
+      "evidence": "\"...Plasma levels of MMP-1, MMP-7, MMP-9, and MMP-9/TIMP-1 and CRP were higher in BE and TS than in the NS healthy women (p <0.01)...\" See figure 3. BE is biomass combustion exposure.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24980707"
+      },
+      "annotations": {},
+      "source": 28,
+      "target": 3,
+      "key": "65548ca759757d728b2cf0c751f743e9"
+    },
+    {
+      "line": 11,
+      "relation": "increases",
+      "evidence": "\"We observed markedly decreased MMP-2 mRNA expression in Egr1-/- cells compared with Egr1+/+ cells after CSE [cigarette smoke extract].\" (p. 483)",
+      "citation": {
+        "db": "Other",
+        "db_id": "17099140"
+      },
+      "annotations": {},
+      "source": 29,
+      "target": 50,
+      "key": "5808ec469567371094846faf8874c58b"
+    },
+    {
+      "line": 42,
+      "relation": "directlyIncreases",
+      "evidence": "The degradation of elastin by HLE has been studied extensively (8?12). Figure 1 illustrates the degradation of [ 14 C]elastin by HLE, CatG, and Pr3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11867344"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 30,
+      "target": 31,
+      "key": "2e506ffce98512fd47338bcb6eb354ad"
+    },
+    {
+      "line": 43,
+      "relation": "directlyIncreases",
+      "evidence": "NE released by polymorphonuclear neutrophils is capable of hydrolyzing a broad spectrum of extracellular matrix (ECM) and cell surface proteins, such as elastin, interstitial collagens, proteoglycans, fibronectin, laminin, and others, leading to tissue damage (3, 4).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11889128"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 30,
+      "target": 32,
+      "key": "17baaf06aa29b14bc412501ec63cc0a2"
+    },
+    {
+      "line": 103,
+      "relation": "increases",
+      "evidence": "Elastin degradation products, such as desmosine, are increased in the urine of subjects with COPD (6)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11970913"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 31,
+      "target": 0,
+      "key": "244f958d73ec746e8972d4d456093575"
+    },
+    {
+      "line": 104,
+      "relation": "directlyDecreases",
+      "evidence": "In summary, the findings reported here provide evidence that human AAA tissues contain soluble peptides capable of specifically directing the migration of mononuclear phagocytes and that much of this chemotactic activity is attributable to peptides released during the process of elastin degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11854722"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 31,
+      "target": 31,
+      "key": "a46ae67831a07747600c2ae57928ade2"
+    },
+    {
+      "line": 104,
+      "relation": "directlyDecreases",
+      "evidence": "It has also become apparent that macrophage-derived metalloproteases, including gelatinase A (MMP-2), gelatinase B (MMP-9), matrilysin MMP-7), and macrophage metalloelastase (MMP-12), can degrade elastin and collagen (11, 13, 14).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12522030"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 31,
+      "target": 31,
+      "key": "819609ecdb93d0a63690839939eeb21e"
+    },
+    {
+      "line": 104,
+      "relation": "directlyDecreases",
+      "evidence": "HNE-mediated degradation of proteoglycan and elastin in vitro was inhibited by MDL 101,146 in a dose-related manner.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8035315"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 31,
+      "target": 31,
+      "key": "872f7940a85d4865abeb7f0a8bfb4870"
+    },
+    {
+      "line": 104,
+      "relation": "directlyDecreases",
+      "evidence": "Elastin degradation products, such as desmosine, are increased in the urine of subjects with COPD (6)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11970913"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 31,
+      "target": 31,
+      "key": "7932e8079014c0222990501fedd871dc"
+    },
+    {
+      "line": 104,
+      "relation": "directlyDecreases",
+      "evidence": "Neutrophil elastase is released in the lung in response to inflammation and infection and can destroy the elastin in healthy pulmonary tissue.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20920295"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 31,
+      "target": 31,
+      "key": "17fcd0adcaf81fb69351c0e9cdd549c2"
+    },
+    {
+      "line": 104,
+      "relation": "directlyDecreases",
+      "evidence": "The degradation of elastin by HLE has been studied extensively (8?12). Figure 1 illustrates the degradation of [ 14 C]elastin by HLE, CatG, and Pr3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11867344"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 31,
+      "target": 31,
+      "key": "d0ef63ee22586c3b08efb01ac0dd469c"
+    },
+    {
+      "line": 97,
+      "relation": "directlyDecreases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 32,
+      "target": 32,
+      "key": "609007877ce818e8640e821fd86bdbd9"
+    },
+    {
+      "line": 97,
+      "relation": "directlyDecreases",
+      "evidence": "NE released by polymorphonuclear neutrophils is capable of hydrolyzing a broad spectrum of extracellular matrix (ECM) and cell surface proteins, such as elastin, interstitial collagens, proteoglycans, fibronectin, laminin, and others, leading to tissue damage (3, 4).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11889128"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 32,
+      "target": 32,
+      "key": "4409d31488e312eebf2836e7cf28d08a"
+    },
+    {
+      "line": 97,
+      "relation": "directlyDecreases",
+      "evidence": "Both cell detachment and apoptosis were blocked when cells were incubated in fibronectin-coated plates. The increase of soluble fibronectin was dependent on the amount of chymase added and the exposure time. A caspase inhibitor (antiapoptotic agent) rescued cells from apoptosis but did not prevent cell detachment. These results indicate that chymase-induced apoptosis of conjunctival epithelial cells represents anoikis, which is a slowly occurring apoptotic process induced by lack of adhesion to an extracellular matrix. CONCLUSIONS: Human mast cell chymase caused conjunctival epithelial cell detachment by degrading fibronectin, and this led to secondary apoptosis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16020275"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 32,
+      "target": 32,
+      "key": "d1f048ce0d8f2d47ed985a7c0f5712ae"
+    },
+    {
+      "line": 97,
+      "relation": "directlyDecreases",
+      "evidence": "In this study indomethacin treatment in vivo reduced neutrophil chemotaxis and proteolytic degradation of fibronectin, with a maximal effect after 14 days.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10564723"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 32,
+      "target": 32,
+      "key": "f06bded2af3e133ac6c868836c843241"
+    },
+    {
+      "line": 97,
+      "relation": "directlyDecreases",
+      "evidence": "Elastase induced an almost complete disappearance of intact FN, TSP, and vWF from the ECM at 0.02 units/ml within 5 minutes of incubation at 37 degrees C.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10822079"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 32,
+      "target": 32,
+      "key": "65b43add4b5ab7019eb61d9c1751055c"
+    },
+    {
+      "line": 97,
+      "relation": "directlyDecreases",
+      "evidence": "Plasmin and uPA located in certain regions of the endothelial cell surface initiate a directed degradation of the basement membrane proteins such as fibronectin and laminin.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11841347"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 32,
+      "target": 32,
+      "key": "ad708198dc7fe1f64109187c382e11bd"
+    },
+    {
+      "line": 97,
+      "relation": "directlyDecreases",
+      "evidence": "Both HNE and PPE removed fibronectin from basement membranes (as determined by loss of binding of fibronectin antibodies after exposure to elastase), but neither elastase was detected on basement membrane.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8315277"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 32,
+      "target": 32,
+      "key": "7672b8569db44966ab0b315e332dd8f6"
+    },
+    {
+      "line": 97,
+      "relation": "directlyDecreases",
+      "evidence": "Here we report that cathepsin B from normal or tumour tissues degrades purified extracellular-matrix components, type IV collagen, laminin and fibronectin, at both acid pH and neutral pH.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "1540143"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 32,
+      "target": 32,
+      "key": "c131979e1f99169ad7b0197037e593fe"
+    },
+    {
+      "line": 117,
+      "relation": "increases",
+      "evidence": "The production of the neutrophil attractant CXC chemokines KC (CXCL1) and MIP-2 (CXCL2), and of matrix metalloproteases MMP-9 and MMP-12, was increased by IL-1beta.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15668323"
+      },
+      "annotations": {},
+      "source": 33,
+      "target": 41,
+      "key": "2843659416757ee20f41c9c0d15a5ada"
+    },
+    {
+      "line": 117,
+      "relation": "increases",
+      "evidence": "Overexpression of interleukin (IL)-1b in transgenic mice has been reported to increase MMP-12 in the lung [27]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17620183"
+      },
+      "annotations": {},
+      "source": 33,
+      "target": 41,
+      "key": "113caffa34b1835cfb78d4b22f36bc4b"
+    },
+    {
+      "line": 117,
+      "relation": "increases",
+      "evidence": "The pro-inflammatory cytokine, interleukin (IL)-1beta, induced a >100-fold increase in MMP-12 gene expression and a >10-fold enhancement in MMP-12 activity of primary airway smooth muscle cell cultures. Selective inhibitors of extracellular signal-regulated kinase, c-Jun N-terminal kinase and phosphatidylinositol 3-kinase reduced the activity of IL-1beta on MMP-12, indicating a role for these kinases in IL-1beta-induced induction and release of MMP-12.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16359550"
+      },
+      "annotations": {},
+      "source": 33,
+      "target": 41,
+      "key": "93fc985085cf240d17dc8dee9c014440"
+    },
+    {
+      "line": 117,
+      "relation": "increases",
+      "evidence": "Lappalainen and coworkers (14) reported that inducible transgenic mice overexpressing IL-1b in the lung developed increased numbers of lower respiratory tract inflammatory cells, evidence of elastin breakdown, increased levels of MMP-9 and MMP-12,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18931327"
+      },
+      "annotations": {},
+      "source": 33,
+      "target": 41,
+      "key": "29750398466d702a35a3b6f9930a0e5f"
+    },
+    {
+      "line": 117,
+      "relation": "increases",
+      "evidence": "IL-1beta induced the expression of MMP-12 mRNA via activation of JNK and PI3K (357). IL-1beta-mediated expression of MMP-9 and -12 was demonstrated in IL-1beta overexpressing transgenic mice as well (175).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17615396"
+      },
+      "annotations": {},
+      "source": 33,
+      "target": 41,
+      "key": "1172cd320125ec625a22df69c3cf1882"
+    },
+    {
+      "line": 118,
+      "relation": "increases",
+      "evidence": "The concentration of secreted MMP-3 was increased by 370-fold (7480.0+/-435.9ng/ml) when stimulated by IL-1beta (1ng/ml).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10587545"
+      },
+      "annotations": {},
+      "source": 33,
+      "target": 44,
+      "key": "c4ec16e4763276bf8f2c0dc0dc23db20"
+    },
+    {
+      "line": 118,
+      "relation": "increases",
+      "evidence": "Casein zymography confirmed that IL-1beta stimulated stromlysin (matrix metalloproteinase 3; MMP-3) and gelatin zymography demonstrated that TNF-alpha induced MMP-9 production in human lung fibroblast, whereas PDGF alone did not.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11132772"
+      },
+      "annotations": {},
+      "source": 33,
+      "target": 44,
+      "key": "df9fff4cf12f90dc04fcac53a039d02d"
+    },
+    {
+      "line": 119,
+      "relation": "increases",
+      "evidence": "Lappalainen and coworkers (14) reported that inducible transgenic mice overexpressing IL-1b in the lung developed increased numbers of lower respiratory tract inflammatory cells, evidence of elastin breakdown, increased levels of MMP-9 and MMP-12,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18931327"
+      },
+      "annotations": {},
+      "source": 33,
+      "target": 47,
+      "key": "a482db6190ad7902c71bfd06da4dcb21"
+    },
+    {
+      "line": 119,
+      "relation": "increases",
+      "evidence": "Proinflammatory cytokines (IL-1b, IL-6, and TNF-alpha) increased VEGF and MMP-9 in corneal cells and macrophages.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19115032"
+      },
+      "annotations": {},
+      "source": 33,
+      "target": 47,
+      "key": "ebff72021ccd0133c57cd7ab41d4dd7d"
+    },
+    {
+      "line": 119,
+      "relation": "increases",
+      "evidence": "IL-1beta induced the expression of MMP-12 mRNA via activation of JNK and PI3K (357). IL-1beta-mediated expression of MMP-9 and -12 was demonstrated in IL-1beta overexpressing transgenic mice as well (175).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17615396"
+      },
+      "annotations": {},
+      "source": 33,
+      "target": 47,
+      "key": "ffe1a5c4d241f8f0ea854ccf5ba172b5"
+    },
+    {
+      "line": 119,
+      "relation": "increases",
+      "evidence": "The production of the neutrophil attractant CXC chemokines KC (CXCL1) and MIP-2 (CXCL2), and of matrix metalloproteases MMP-9 and MMP-12, was increased by IL-1beta.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15668323"
+      },
+      "annotations": {},
+      "source": 33,
+      "target": 47,
+      "key": "c91ec15314609cccf8ef0180142949cd"
+    },
+    {
+      "line": 119,
+      "relation": "increases",
+      "evidence": "It has also been shown that IL-1b stimulates the release and activity of MMP-9 (matrix metalloproteinase-9) from AM obtained from COPD smokers, which is significantly higher in comparison with those obtained from healthy smokers and non-smokers [155].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19842832"
+      },
+      "annotations": {},
+      "source": 33,
+      "target": 47,
+      "key": "857e616d9ba87572308f0814d3cfd341"
+    },
+    {
+      "line": 119,
+      "relation": "increases",
+      "evidence": "IL1B stimulates the expression of MMP9",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15602009"
+      },
+      "annotations": {},
+      "source": 33,
+      "target": 47,
+      "key": "4727653f0854d47802288d8cfcd85b09"
+    },
+    {
+      "line": 1,
+      "relation": "positiveCorrelation",
+      "evidence": "\"...Plasma levels of MMP-1, MMP-7, MMP-9, and MMP-9/TIMP-1 and CRP were higher in BE and TS than in the NS healthy women (p <0.01)...\" See figure 1.\nBE  is biomass combustion exposure.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24980707"
+      },
+      "annotations": {},
+      "source": 40,
+      "target": 3,
+      "key": "21fca47870dda0d048b0afef1d2fde0b"
+    },
+    {
+      "line": 92,
+      "relation": "increases",
+      "evidence": "MMP-1 and MMP-13 preferentially cleave type III and II collagen,5?10 respectively.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11602491"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 40,
+      "target": 25,
+      "key": "49ef067f38eafd7c0dedbd8f3c5243ce"
+    },
+    {
+      "line": 92,
+      "relation": "increases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 40,
+      "target": 25,
+      "key": "7e08110d62c64e53dd2265693375d09a"
+    },
+    {
+      "line": 92,
+      "relation": "increases",
+      "evidence": "This gene encodes a secreted enzyme which breaks down the interstitial collagens, types I, II, and III.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11701397"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 40,
+      "target": 25,
+      "key": "869e8b59d5c5862a3a9c277f13c5434b"
+    },
+    {
+      "line": 93,
+      "relation": "increases",
+      "evidence": "This gene encodes a secreted enzyme which breaks down the interstitial collagens, types I, II, and III.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11701397"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 40,
+      "target": 23,
+      "key": "ee44824ff49376fc8a18e9b3023bdbe1"
+    },
+    {
+      "line": 93,
+      "relation": "increases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 40,
+      "target": 23,
+      "key": "7c0d077337ff0b6e7e2766e829dc417a"
+    },
+    {
+      "line": 95,
+      "relation": "increases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 40,
+      "target": 22,
+      "key": "f9412e63625750e399b14d1aea1712af"
+    },
+    {
+      "line": 95,
+      "relation": "increases",
+      "evidence": "This gene encodes a secreted enzyme which breaks down the interstitial collagens, types I, II, and III.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11701397"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 40,
+      "target": 22,
+      "key": "e59fdf12da0fa05f8d04c52dca25ef6c"
+    },
+    {
+      "line": 96,
+      "relation": "increases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 40,
+      "target": 24,
+      "key": "19c731022fb04240f2bcffabf129ab98"
+    },
+    {
+      "line": 96,
+      "relation": "increases",
+      "evidence": "It was determined that when collagen fibrils were formed from 10 ug type I collagen, about 80% of the collagen could be degraded in an overnight digestion using either 100 ng MMP1 or 75 ng MMP13 (Fig. 1A). MMP1 showed a similar response towards type II collagen, with 100 ng MMP1 being able to cleave about 80% of the collagen in fibrils formed from 10 ug type II collagen (Fig. 1B).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16979885"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 40,
+      "target": 24,
+      "key": "f0a97c6ea725f0bb855d015b7e8d8766"
+    },
+    {
+      "line": 96,
+      "relation": "increases",
+      "evidence": "Figure 2. Inhibition by doxycycline (DOXY) of digestion of type II collagen by collagenases 1, 2, or 3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10366106"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 40,
+      "target": 24,
+      "key": "a7e8c21d1882d1b6820f607e1c709e6d"
+    },
+    {
+      "line": 96,
+      "relation": "increases",
+      "evidence": "This gene encodes a secreted enzyme which breaks down the interstitial collagens, types I, II, and III.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11701397"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 40,
+      "target": 24,
+      "key": "0618fba22406dfb3d5c703428a9ac76f"
+    },
+    {
+      "line": 105,
+      "relation": "directlyDecreases",
+      "evidence": "MMP-12 degrades different substrates among which are elastin, laminin, type-IV collagen, fibronectin, casein but not interstitial collagens or gelatin [6].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15723202"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 41,
+      "target": 32,
+      "key": "c3efe4c1fde4184b2ddb139c5dcc5a9c"
+    },
+    {
+      "line": 107,
+      "relation": "increases",
+      "evidence": "It has also become apparent that macrophage-derived metalloproteases, including gelatinase A (MMP-2), gelatinase B (MMP-9), matrilysin MMP-7), and macrophage metalloelastase (MMP-12), can degrade elastin and collagen (11, 13, 14).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12522030"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 31,
+      "key": "35028a58745ada92767d321b138f2327"
+    },
+    {
+      "line": 130,
+      "relation": "increases",
+      "evidence": "we show that EC tube morphogenesis (lumen formation and invasion) is primarily controlled by the TIMP-2 and -3 target membrane type (MT) 1 MMP",
+      "citation": {
+        "db": "Other",
+        "db_id": "17030988"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 42,
+      "target": 4,
+      "key": "1293f3457ad38cdab5fe4b2e09d5235d"
+    },
+    {
+      "line": 131,
+      "relation": "increases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 42,
+      "target": 23,
+      "key": "6f6e3c581c5b04aa41af1a9d6261f040"
+    },
+    {
+      "line": 133,
+      "relation": "increases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 42,
+      "target": 25,
+      "key": "0ec6183e8634287cf8207d7f56e20d7b"
+    },
+    {
+      "line": 134,
+      "relation": "increases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 42,
+      "target": 22,
+      "key": "5f1831426f7196288c907c2a7b41a72f"
+    },
+    {
+      "line": 135,
+      "relation": "increases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 42,
+      "target": 32,
+      "key": "ea0fdb7ee819391d0d8abfcd857befc2"
+    },
+    {
+      "line": 136,
+      "relation": "increases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 42,
+      "target": 24,
+      "key": "b66b9c4c584c639298ae46ee003fae58"
+    },
+    {
+      "line": 67,
+      "relation": "increases",
+      "evidence": "This gene encodes an enzyme which degrades type IV collagen, the major structural component of basement membranes. The enzyme plays a role in endometrial menstrual breakdown, regulation of vascularization and the inflammatory response.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11701397"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 43,
+      "target": 27,
+      "key": "8a0aae01e245a57b5f737c776cbb9965"
+    },
+    {
+      "line": 68,
+      "relation": "increases",
+      "evidence": "Matrix metalloproteinase 2 (MMP2), which degrades Type IV collagen, is produced as proMMP2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14715700"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 43,
+      "target": 26,
+      "key": "e1ff77f89154bfe291baf680ec111c75"
+    },
+    {
+      "line": 68,
+      "relation": "increases",
+      "evidence": "This gene encodes an enzyme which degrades type IV collagen, the major structural component of basement membranes. The enzyme plays a role in endometrial menstrual breakdown, regulation of vascularization and the inflammatory response.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11701397"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 43,
+      "target": 26,
+      "key": "d573d540da99d1cc30851f04a3f05113"
+    },
+    {
+      "line": 69,
+      "relation": "increases",
+      "evidence": "It has also become apparent that macrophage-derived metalloproteases, including gelatinase A (MMP-2), gelatinase B (MMP-9), matrilysin MMP-7), and macrophage metalloelastase (MMP-12), can degrade elastin and collagen (11, 13, 14).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12522030"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 43,
+      "target": 31,
+      "key": "c03b138ad2aaa6506376703d367f2752"
+    },
+    {
+      "line": 71,
+      "relation": "increases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 43,
+      "target": 32,
+      "key": "d4e087f9543ab067d221ca1c8fdafcb8"
+    },
+    {
+      "line": 61,
+      "relation": "increases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 44,
+      "target": 32,
+      "key": "35d3259eae10d90059b4c1f59a89894f"
+    },
+    {
+      "line": 2,
+      "relation": "positiveCorrelation",
+      "evidence": "\"...Plasma levels of MMP-1, MMP-7, MMP-9, and MMP-9/TIMP-1 and CRP were higher in BE and TS than in the NS healthy women (p <0.01)...\" See figure 1. BE is biomass combustion exposure.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24980707"
+      },
+      "annotations": {},
+      "source": 45,
+      "target": 3,
+      "key": "054e69604c0329132c7434cc62489639"
+    },
+    {
+      "line": 31,
+      "relation": "increases",
+      "evidence": "It has also become apparent that macrophage-derived metalloproteases, including gelatinase A (MMP-2), gelatinase B (MMP-9), matrilysin MMP-7), and macrophage metalloelastase (MMP-12), can degrade elastin and collagen (11, 13, 14).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12522030"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 45,
+      "target": 31,
+      "key": "a9fdc165af3dec341e7f698ca8716738"
+    },
+    {
+      "line": 98,
+      "relation": "increases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 46,
+      "target": 23,
+      "key": "8bb555190fb57c9df74d802881c69f94"
+    },
+    {
+      "line": 100,
+      "relation": "increases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 46,
+      "target": 24,
+      "key": "322a3f220416b8985be146eab58710eb"
+    },
+    {
+      "line": 100,
+      "relation": "increases",
+      "evidence": "Figure 2. Inhibition by doxycycline (DOXY) of digestion of type II collagen by collagenases 1, 2, or 3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10366106"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 46,
+      "target": 24,
+      "key": "4fb8ac8a89b646bd66b890fc2fb65497"
+    },
+    {
+      "line": 101,
+      "relation": "increases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 46,
+      "target": 22,
+      "key": "41766ada07004341cfa630697867ba52"
+    },
+    {
+      "line": 102,
+      "relation": "increases",
+      "evidence": "Interstitial collagenases (MMP-1, MMP-8 and MMP-13) are capable of degrading fibrillar collagens, whereas type IV collagenases or gelatinases (MMP-2 and MMP-9) are specific for the degradation of type IV collagen. Stromelysins (MMP-3 and MMP-10 and MMP-11) have a wider range of substrate specificity, including proteoglycans, laminin, fibronectin and other MMPs like MMP-1 and MMP-9. Other members of this group include matrilysin (MMP-7) and metalloelastase (MMP-12). The fourth group contains the membrane-associated MMPs MT-MMPs (MT1-MMP, MT2-MMP, MT3-MMP and MT4-MMP), which activate proMMP-2. Recently, some new MMPs (MMP-19 and MMP-20) have been identified, but little is known about their substrate specificity and functional role (255).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11172729"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 46,
+      "target": 25,
+      "key": "c5e9884cc1bc90972f4446cbd65f1b4d"
+    },
+    {
+      "line": 3,
+      "relation": "positiveCorrelation",
+      "evidence": "\"...Plasma levels of MMP-1, MMP-7, MMP-9, and MMP-9/TIMP-1 and CRP were higher in BE and TS than in the NS healthy women (p <0.01)...\" See figure 2. BE is biomass combustion exposure.",
+      "citation": {
+        "db": "Other",
+        "db_id": ""
+      },
+      "annotations": {},
+      "source": 47,
+      "target": 3,
+      "key": "356e5ba474fb4c395bb1391f1c6939d7"
+    },
+    {
+      "line": 20,
+      "relation": "increases",
+      "evidence": "It has also become apparent that macrophage-derived metalloproteases, including gelatinase A (MMP-2), gelatinase B (MMP-9), matrilysin MMP-7), and macrophage metalloelastase (MMP-12), can degrade elastin and collagen (11, 13, 14).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12522030"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 47,
+      "target": 31,
+      "key": "f1c1e356354dc8829956f8fc7b6b4dad"
+    },
+    {
+      "line": 45,
+      "relation": "association",
+      "evidence": "Matrix metalloproteinase-9 (MMP-9) and its inhibitor tissue inhibitor of metalloproteinase-1 (TIMP-1) are involved in the pathogenesis of airway inflammation in patients with chronic obstructive pulmonary disease (COPD).",
+      "citation": {
+        "db": "Other",
+        "db_id": "22832426"
+      },
+      "annotations": {},
+      "source": 47,
+      "target": 5,
+      "key": "0f2d25f7ca3d13d354b016e99b619b0c"
+    },
+    {
+      "line": 15,
+      "relation": "decreases",
+      "evidence": "Alpha-1 Antitrypsin (A1AT) is a serine protease inhibitor that is encoded by the SERPINA 1 gene located on chromosome 14 [1,2]. It is a highly effective inhibitor of neutrophil elastase, and serves a protective function to prevent excessive proteolysis of matrix components in the airways and other organs",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22078084"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "phosphatase activity",
+          "identifier": "0016791"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 48,
+      "target": 30,
+      "key": "0b7493ed8371e35d8bc137f071c0c005"
+    },
+    {
+      "line": 129,
+      "relation": "decreases",
+      "evidence": "Neutrophil elastase (Ela2) is a serine protease that is inhibited by alpha-1-antitrypsin (SerpinA1) in the lung parenchyma. There is an increase in Ela1:SerpinA1 complexes in the bronchoalveolar lavage fluid of COPD patients.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15602009"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 48,
+      "target": 30,
+      "key": "e1a13c2981e9e4a5ff1dd98ee9409436"
+    },
+    {
+      "line": 74,
+      "relation": "positiveCorrelation",
+      "evidence": "AAT was elevated in smokers and in subjects with COPD in the lung endothelial cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23030783"
+      },
+      "annotations": {},
+      "source": 48,
+      "target": 49,
+      "key": "25f17a3b31f64fa2a52d040171f6e1eb"
+    },
+    {
+      "line": 12,
+      "relation": "decreases",
+      "evidence": "\"These results suggest that, in addition to SIRT1 reduction, CS-induced disruption of SIRT1's association with TIMP-1 increases TIMP-1 acetylation in mouse lungs,\" (p. L620)",
+      "citation": {
+        "db": "Other",
+        "db_id": "24039251"
+      },
+      "annotations": {},
+      "source": 21,
+      "target": 16,
+      "key": "caf9e19a76f295a8badc051448278c2a"
+    },
+    {
+      "line": 13,
+      "relation": "decreases",
+      "evidence": "the decline of the SIRT1 level was associated with elevated MMP-9 expression via an increase in histone acetylation at the activator protein-1- (AP1-), NF-κB-, and Pea3-binding sites of the MMP-9 promoter.",
+      "citation": {
+        "db": "Other",
+        "db_id": "25116588"
+      },
+      "annotations": {},
+      "source": 21,
+      "target": 47,
+      "key": "a2a120a67b81c87d2a0736115090ba31"
+    },
+    {
+      "line": 0,
+      "relation": "increases",
+      "evidence": "Activation of WNT/β-catenin signaling in pulmonary fibroblasts by TGF-β₁ is increased in chronic obstructive pulmonary disease.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21980461"
+      },
+      "annotations": {},
+      "source": 14,
+      "target": 6,
+      "key": "62a807b41b954c34beb0fbfff92fc8aa"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 15,
+      "target": 16,
+      "key": "0403317a6a09e3421d176a49579d6605"
+    },
+    {
+      "line": 123,
+      "relation": "decreases",
+      "evidence": "TIMP-1 also inhibited matrilysin-mediated cell migration and spreading in vitro",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18385523"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 15,
+      "target": 45,
+      "key": "ff914973b9274b20599bd0e3b10a80d7"
+    },
+    {
+      "line": 125,
+      "relation": "association",
+      "evidence": "Matrix metalloproteinase-9 (MMP-9) and its inhibitor tissue inhibitor of metalloproteinase-1 (TIMP-1) are involved in the pathogenesis of airway inflammation in patients with chronic obstructive pulmonary disease (COPD).",
+      "citation": {
+        "db": "Other",
+        "db_id": "22832426"
+      },
+      "annotations": {},
+      "source": 15,
+      "target": 5,
+      "key": "8c936995f126d17cd0ce864aaf1de706"
+    },
+    {
+      "line": 126,
+      "relation": "decreases",
+      "evidence": "Matrix metalloproteinase-9 (MMP-9) and its inhibitor tissue inhibitor of metalloproteinase-1 (TIMP-1) are involved in the pathogenesis of airway inflammation in patients with chronic obstructive pulmonary disease (COPD).",
+      "citation": {
+        "db": "Other",
+        "db_id": "22832426"
+      },
+      "annotations": {},
+      "source": 15,
+      "target": 47,
+      "key": "accf5939e678db5ccd1980d6fdf524ba"
+    },
+    {
+      "line": 126,
+      "relation": "decreases",
+      "evidence": "The tissue inhibitors of matrix metalloproteinases (TIMPs) all have affinity for MMP-9, but typically the enzyme is secreted by cells in a noncovalent complex with TIMP-1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "12495928"
+      },
+      "annotations": {},
+      "source": 15,
+      "target": 47,
+      "key": "df27f7dd7bb4235c6aba03321d29e233"
+    },
+    {
+      "line": 127,
+      "relation": "directlyDecreases",
+      "evidence": "TIMP-1 is an endogenous inhibitor of MMPs... enhanced TIMP-1 activity observed in the lungs of SP-C-TIMP-1 transgenics was associated with a decreased expression of MMP-2 and -9... Bleomycin-treated SP-C-TIMP-1 mice had reduced MMP-9 activity as assessed by zymographic analysis compared with their NT littermates",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18178676"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 15,
+      "target": 47,
+      "key": "c0e0fb4f9d8d9f447d5325f2971a8bb7"
+    },
+    {
+      "line": 127,
+      "relation": "directlyDecreases",
+      "evidence": "The TIMPs bind with high affinity in a 1:1 molar ratio to the catalytic site of active MMPs resulting in loss of proteolytic activity. Moreover, TIMP-1 and TIMP-2 can form a specific complex with the zymogens of MMP-9 and MMP-2, respectively.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10881049"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 15,
+      "target": 47,
+      "key": "4234981cbb11735c53cfe18fe871b79d"
+    },
+    {
+      "line": 111,
+      "relation": "decreases",
+      "evidence": "Macrophages also produce two specific inhibitors of MMPs, known as tissue inhibitors of metalloproteinases-1 and -2 (TIMP-1 and TIMP-2) (6, 12).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8892653"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 17,
+      "target": 13,
+      "key": "63830d7d98bcdd100a77f9ab5ba78d40"
+    },
+    {
+      "line": 111,
+      "relation": "decreases",
+      "evidence": "The major physiological inhibitors of the MMPs in vivo are {alpha}-2 macroglobulin and the TIMP family",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17615396"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 17,
+      "target": 13,
+      "key": "84418fdb51f9582c8784f198cb5021b1"
+    },
+    {
+      "line": 111,
+      "relation": "decreases",
+      "evidence": "Lack of TIMP2 leads to exacerbated cardiac dysfunction and remodeling after pressure overload because of excess activity of membrane type MMP",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21986284"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 17,
+      "target": 13,
+      "key": "729ad068845e632a8a7c069dfc5e3d0f"
+    },
+    {
+      "line": 141,
+      "relation": "decreases",
+      "evidence": "TIMP-2 is a better inhibitor of MT1-MMP. MT3-MMP requires TIMP-2 to accomplish full pro-MMP-2 activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14681236"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 17,
+      "target": 42,
+      "key": "a6b78786b22d7860535af55b65273b3a"
+    },
+    {
+      "line": 142,
+      "relation": "decreases",
+      "evidence": "The reactive site-modified TIMP-2 also prevented an accumulation of active gelatinase A on the cell surface.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10187841"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 17,
+      "target": 43,
+      "key": "a6723c1c3097302d967500057a3a28de"
+    },
+    {
+      "line": 52,
+      "relation": "decreases",
+      "evidence": "proMMP-2 activation is down-regulated by TIMP-3",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15387372"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 18,
+      "target": 43,
+      "key": "1ad6fe1e58e08916e5a1af8ea5b1a4e4"
+    },
+    {
+      "line": 53,
+      "relation": "decreases",
+      "evidence": "cells expressing Sry induced proliferation of mesonephric cells migrating into male gonads, and inhibited expression of the tissue inhibitor of metalloproteinases (TIMP)-3 gene, which is the endogenous inhibitor of matrix metalloproteinases (MMP)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11869290"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 18,
+      "target": 13,
+      "key": "5ec09524eed0316b17ace244dbd35d6a"
+    },
+    {
+      "line": 120,
+      "relation": "decreases",
+      "evidence": "Here, we establish that Timp4-/- mice are specifically predisposed to LV rupture after MI, which is prevented by MMPi-treatment or the loss of Mmp2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20516072"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 19,
+      "target": 13,
+      "key": "b1f8aa8b5a572a71ed7b8a98492a8199"
+    },
+    {
+      "line": 121,
+      "relation": "decreases",
+      "evidence": "Here, we establish that Timp4-/- mice are specifically predisposed to LV rupture after MI, which is prevented by MMPi-treatment or the loss of Mmp2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20516072"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 19,
+      "target": 43,
+      "key": "3147b8a6e58c6a6e9782a130468955f0"
+    },
+    {
+      "line": 114,
+      "relation": "increases",
+      "evidence": "In addition, TNFalpha induced the release of MMP9 from neutrophils and antibody blocking of TNF? prevented their recruitment into the lungs in response to influenza virus infection in vivo.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22496659"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 47,
+      "key": "35f4acff9b97c41d7c031523e303a849"
+    },
+    {
+      "line": 114,
+      "relation": "increases",
+      "evidence": "Casein zymography confirmed that IL-1beta stimulated stromlysin (matrix metalloproteinase 3; MMP-3) and gelatin zymography demonstrated that TNF-alpha induced MMP-9 production in human lung fibroblast, whereas PDGF alone did not. PDGF in combination with IL-1beta and TNF-alpha induced MMP-3 and MMP-9 activity, as demonstrated by zymography",
+      "citation": {
+        "db": "Other",
+        "db_id": "11132772"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 47,
+      "key": "bc4d0bd585c51e59e862b27637b42b17"
+    },
+    {
+      "line": 114,
+      "relation": "increases",
+      "evidence": "TNF-? highly stimulated pro-MMP-9 and MMP-9 release in intact and wounded NuLi and CuFi monolayers",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19358684"
+      },
+      "annotations": {
+        "cl": {
+          "0002328": true
+        }
+      },
+      "source": 20,
+      "target": 47,
+      "key": "4c8d5484b601567ad07bf443c0cf96a5"
+    },
+    {
+      "line": 114,
+      "relation": "increases",
+      "evidence": "Casein zymography confirmed that IL-1beta stimulated stromlysin (matrix metalloproteinase 3; MMP-3) and gelatin zymography demonstrated that TNF-alpha induced MMP-9 production in human lung fibroblast, whereas PDGF alone did not.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11132772"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 47,
+      "key": "ead893e949768dd08c2e5d8c48b83277"
+    },
+    {
+      "line": 114,
+      "relation": "increases",
+      "evidence": "The capacity of TNF to induce MMP expression in chondrocytes was not altered by the deficiency of c-fos, since MMP-3, MMP-9, and MMP-13 were similarly induced in hTNFtg and c-fos-/-hTNFtg mice (Table 3).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12438440"
+      },
+      "annotations": {
+        "cl": {
+          "0000138": true
+        }
+      },
+      "source": 20,
+      "target": 47,
+      "key": "aac1ea2ccc3b9c55b3a85d809bdb7ead"
+    },
+    {
+      "line": 114,
+      "relation": "increases",
+      "evidence": "Whereas TNF-? and other cytokines up-regulate MMP-9 expression, interferons (IFNs) inhibit MMP-9 expression. We found that IFN-? treatment or forced expression of the IFN-induced GTPase, mGBP-2, inhibit TNF-?-induced MMP-9 expression in NIH 3T3 fibroblasts, by inhibiting MMP-9 transcription. The NF-?B transcription factor is required for full induction of MMP-9 by TNF-?.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21502320"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 47,
+      "key": "cc533f34a580a08e43d843624158d631"
+    },
+    {
+      "line": 114,
+      "relation": "increases",
+      "evidence": "Proinflammatory cytokines (IL-1b, IL-6, and TNF-alpha) increased VEGF and MMP-9 in corneal cells and macrophages.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19115032"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 47,
+      "key": "3bd2323e01ebc320d34415c0a3ee9f5e"
+    },
+    {
+      "line": 114,
+      "relation": "increases",
+      "evidence": "The role of TNFalpha in stimulating retinal microvascular endothelial cell (RMVEC) proteinase production was evaluated using isolated murine RMVECs...TNFalpha increased the expression (production) of MT1-MMP, MMP-3, and MMP-9",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11773040"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 47,
+      "key": "72d6b2bcc4c1e7282ff1d18634ffa50a"
+    },
+    {
+      "line": 115,
+      "relation": "increases",
+      "evidence": "TNF-a-mediated increase in MT1-MMP mRNA correlated with a 2.5-fold increase in MT1-MMP protein levels in EC membranes (Fig. 6A).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10207013"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 42,
+      "key": "8897cd304a088f84da48c70b17fe201c"
+    },
+    {
+      "line": 115,
+      "relation": "increases",
+      "evidence": "The role of TNFalpha in stimulating retinal microvascular endothelial cell (RMVEC) proteinase production was evaluated using isolated murine RMVECs...TNFalpha increased the expression (production) of MT1-MMP, MMP-3, and MMP-9",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11773040"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 42,
+      "key": "32634b706a69a85e6ca8244ca74400e2"
+    },
+    {
+      "line": 116,
+      "relation": "increases",
+      "evidence": "IL-1beta-induced MMP-12 activity and gene expression was down-regulated by the corticosteroid dexamethasone but up-regulated by the inflammatory cytokine tumour necrosis factor (TNF)-alpha through enhancing activator protein-1 activation by IL-1beta.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16359550"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 41,
+      "key": "902c052b800734b8a1e5068533e63212"
+    },
+    {
+      "line": 116,
+      "relation": "increases",
+      "evidence": "Tumor necrosis factor-alpha (TNF-alpha) is known to cause an upregulation of MMP-12 via an activation of activator protein-1 (AP-1) in monocytes....  Both MMP-12 mRNA and protein were upregulated by the treatment with TNF-alpha in time- and concentration-dependent manners. Both BMS-345541 and SP600125 inhibited the upregulation of MMP-12 induced by TNF-alpha",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20051654"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 41,
+      "key": "3b800e5cfbde98f2862c96c7d0d74e2b"
+    },
+    {
+      "line": 116,
+      "relation": "increases",
+      "evidence": "overexpression of TNF produced an increase in neutrophils, parenchymal B cell nodules, MMP-12, cathepsin K, and emphysema in the absence of smoke (176).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18223159"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 41,
+      "key": "d5ffdbf37dcd3c184c3b7c3351c64df0"
+    },
+    {
+      "line": 74,
+      "relation": "positiveCorrelation",
+      "evidence": "AAT was elevated in smokers and in subjects with COPD in the lung endothelial cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23030783"
+      },
+      "annotations": {},
+      "source": 49,
+      "target": 48,
+      "key": "260a4cddae86e1140ec81bdf84afd87e"
+    }
+  ]
+}

@@ -1,0 +1,650 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Hox-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Hox network describes the causal mechanisms in the Hox signaling pathway that leads to cell proliferation as well as downstream targets of the HOX family members such as CDKN1A, CDKN1B, CDKN1C, ITGAV, and ITGB3."
+    },
+    "namespace_url": {},
+    "namespace_pattern": {
+      "go": ".*",
+      "fplx": ".*",
+      "hgnc": ".*"
+    },
+    "annotation_url": {},
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "endothelial cell activation",
+        "identifier": "0042118"
+      },
+      "id": "9037d041c5d25b4d861b51d2a6601396",
+      "bel": "bp(go:0042118 ! \"endothelial cell activation\")"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "ITGAV",
+            "identifier": "6150"
+          },
+          "id": "6990c458423689ae3596979592bf444d",
+          "bel": "p(hgnc:6150 ! ITGAV)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "ITGB3",
+            "identifier": "6156"
+          },
+          "id": "625abead240b698a82ddd715b0bede45",
+          "bel": "p(hgnc:6156 ! ITGB3)"
+        }
+      ],
+      "id": "4b20a36ac9514114fc3c0a6d1309ebe9",
+      "bel": "complex(p(hgnc:6150 ! ITGAV), p(hgnc:6156 ! ITGB3))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "AKT",
+        "identifier": "AKT"
+      },
+      "id": "c89a87549439c8dc34a13d9082b33a57",
+      "bel": "p(fplx:AKT ! AKT)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "AKT",
+        "identifier": "AKT"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Ser",
+          "pos": 473
+        }
+      ],
+      "id": "e6253aee344df3baae5deab477a7ac0a",
+      "bel": "p(fplx:AKT ! AKT, pmod(go:0006468 ! \"protein phosphorylation\", Ser, 473))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CDKN1A",
+        "identifier": "1784"
+      },
+      "id": "c69ccac4eb4c3c60456600ec83f7543f",
+      "bel": "p(hgnc:1784 ! CDKN1A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CDKN1B",
+        "identifier": "1785"
+      },
+      "id": "87c5a5b2e4e167ba850ccfe261b272d7",
+      "bel": "p(hgnc:1785 ! CDKN1B)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CDKN1C",
+        "identifier": "1786"
+      },
+      "id": "568c86a66182ea4692e224c1ffbcb5b5",
+      "bel": "p(hgnc:1786 ! CDKN1C)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CDKN2D",
+        "identifier": "1790"
+      },
+      "id": "c835a95311ce774460e7b1ef24342af3",
+      "bel": "p(hgnc:1790 ! CDKN2D)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HOXA3",
+        "identifier": "5104"
+      },
+      "id": "90fc472a7b72c6ac404f43bd115f4654",
+      "bel": "p(hgnc:5104 ! HOXA3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HOXA5",
+        "identifier": "5106"
+      },
+      "id": "ebe492361833d5a5384ff4076a535c7d",
+      "bel": "p(hgnc:5106 ! HOXA5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HOXA9",
+        "identifier": "5109"
+      },
+      "id": "f7aeb95dbfcc2d457592a46d0dd2351f",
+      "bel": "p(hgnc:5109 ! HOXA9)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HOXB4",
+        "identifier": "5115"
+      },
+      "id": "4c4135b09dd6fbdfc6bfd379f29d6224",
+      "bel": "p(hgnc:5115 ! HOXB4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HOXD3",
+        "identifier": "5137"
+      },
+      "id": "4ac4fe771e9d1cb589f2e77c5e807c33",
+      "bel": "p(hgnc:5137 ! HOXD3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ITGA5",
+        "identifier": "6141"
+      },
+      "id": "9e380e3b38c0d7a6aeb1742bcc265998",
+      "bel": "p(hgnc:6141 ! ITGA5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ITGAV",
+        "identifier": "6150"
+      },
+      "id": "6990c458423689ae3596979592bf444d",
+      "bel": "p(hgnc:6150 ! ITGAV)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "ITGB3",
+        "identifier": "6156"
+      },
+      "id": "625abead240b698a82ddd715b0bede45",
+      "bel": "p(hgnc:6156 ! ITGB3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "JUN",
+        "identifier": "6204"
+      },
+      "id": "fbc362581b3fc676170a17f33a024a1a",
+      "bel": "p(hgnc:6204 ! JUN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "KDR",
+        "identifier": "6307"
+      },
+      "id": "04acdd6fe94a9adc2b80c0d3a611cc56",
+      "bel": "p(hgnc:6307 ! KDR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MEOX2",
+        "identifier": "7014"
+      },
+      "id": "180e3e4c6b364df689ea3326699b6b3d",
+      "bel": "p(hgnc:7014 ! MEOX2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MMP14",
+        "identifier": "7160"
+      },
+      "id": "a24b746452133b5505a3fb1556dd1479",
+      "bel": "p(hgnc:7160 ! MMP14)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PDGFRB",
+        "identifier": "8804"
+      },
+      "id": "bea0ff73ec82d823c8e4d313776e69c7",
+      "bel": "p(hgnc:8804 ! PDGFRB)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PLAU",
+        "identifier": "9052"
+      },
+      "id": "71cdb3e83409cf510fc27f624ff32309",
+      "bel": "p(hgnc:9052 ! PLAU)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PLAUR",
+        "identifier": "9053"
+      },
+      "id": "12babcfc9d72a0ae54f5ff3eefadcdba",
+      "bel": "p(hgnc:9053 ! PLAUR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PTGS2",
+        "identifier": "9605"
+      },
+      "id": "a599840205cea50660db6b94062760db",
+      "bel": "p(hgnc:9605 ! PTGS2)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CDKN1A",
+        "identifier": "1784"
+      },
+      "id": "24470a032c8d62f3ef68f01d757a1b75",
+      "bel": "r(hgnc:1784 ! CDKN1A)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CDKN2A",
+        "identifier": "1787"
+      },
+      "id": "88443e7fb11ddb0e098570a5e3b848f9",
+      "bel": "r(hgnc:1787 ! CDKN2A)"
+    }
+  ],
+  "links": [
+    {
+      "relation": "partOf",
+      "source": 14,
+      "target": 1,
+      "key": "d5e51ab3144e417e92532ca82c6bf76c"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 14,
+      "target": 1,
+      "key": "bcac723e6a6c69f413f903c6dcab600c"
+    },
+    {
+      "relation": "partOf",
+      "source": 15,
+      "target": 1,
+      "key": "4ba84950dc39f9dd50c6f1d0b06f1727"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 15,
+      "target": 1,
+      "key": "83634385f3b6b3e6150d2746654aef98"
+    },
+    {
+      "line": 29,
+      "relation": "increases",
+      "evidence": "Here we show that HOXA3 increases endothelial cell migration, induces angiogenesis in vivo, and leads to increased expression of the matrix metalloproteinase-14 (MMP-14) and urokinase-type plasminogen activator receptor (uPAR) genes in endothelial cells in culture and in vivo in response to injury.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15914537"
+      },
+      "annotations": {},
+      "source": 8,
+      "target": 22,
+      "key": "1a01e912393b41835b87ac1f7e6c512a"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "we treated HoxA5 expressing EOMA cells with LY294002, an inhibitor of PI3Kinase and Akt activity. As expected, addition of LY294002 reduced levels of phospho-Akt in EOMA cells expressing HoxA5 cells but did not influence total Akt protein … HoxA5 mediated stabilization of junctions requires Akt activity. (A) Western blot showing levels of Ser473 phoshorylated AkT (upper panel) in EOMA cells expressing HoxA5\nNote: EOMA were used as in-vitro system for virus-mediated expression of proteins studied",
+      "citation": {
+        "db": "Other",
+        "db_id": "19262140"
+      },
+      "annotations": {},
+      "source": 9,
+      "target": 3,
+      "key": "ae30e66946b0d8d39ba05e44c51c65a9"
+    },
+    {
+      "line": 27,
+      "relation": "decreases",
+      "evidence": "Sustained expression of Hox A5 leads to down regulation of many pro-angiogenic genes including VEGFR2, ephrin A1, Hif1alpha and COX-2",
+      "citation": {
+        "db": "Other",
+        "db_id": "16379594"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 9,
+      "target": 23,
+      "key": "7e8409b08dde9ccca748b4394c11c475"
+    },
+    {
+      "line": 28,
+      "relation": "decreases",
+      "evidence": "Q-PCR analyses further revealed a downregulation of Cdknlb (p27Kipl) and Mxdl (MadI) transcript levels in Hoxb4hiPbxl(l0) primitive cells",
+      "citation": {
+        "db": "Other",
+        "db_id": "17577929"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 11,
+      "target": 4,
+      "key": "116d0cec10920aa7ff1f7b6d90a10ce7"
+    },
+    {
+      "line": 24,
+      "relation": "increases",
+      "evidence": "We have previously established that Hox D3 is required for expression of integrin alphavbeta3 and urokinase plasminogen activator (uPA), which contribute to EC adhesion, invasion, and migration during angiogenesis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10648567"
+      },
+      "annotations": {},
+      "source": 12,
+      "target": 15,
+      "key": "9a5816b3b63a1dcb148f63570373fdcf"
+    },
+    {
+      "line": 24,
+      "relation": "increases",
+      "evidence": "exposure of EC to the angiogenic cytokine bFGF leads to increased levels of Hox D3, resulting in the functional expression of the angiogenic-promoting genes integrin β3 and uPA in these cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "9314544"
+      },
+      "annotations": {},
+      "source": 12,
+      "target": 15,
+      "key": "50be89514982ff18e9157b8ea14585fe"
+    },
+    {
+      "line": 25,
+      "relation": "increases",
+      "evidence": "We have previously established that Hox D3 is required for expression of integrin alphavbeta3 and urokinase plasminogen activator (uPA), which contribute to EC adhesion, invasion, and migration during angiogenesis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10648567"
+      },
+      "annotations": {},
+      "source": 12,
+      "target": 14,
+      "key": "5a16f3f296e766882296969df2a39d3a"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "We have previously established that Hox D3 is required for expression of integrin alphavbeta3 and urokinase plasminogen activator (uPA), which contribute to EC adhesion, invasion, and migration during angiogenesis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10648567"
+      },
+      "annotations": {},
+      "source": 12,
+      "target": 21,
+      "key": "50a00722dbeaef7a0eb96c492b36f976"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "exposure of EC to the angiogenic cytokine bFGF leads to increased levels of Hox D3, resulting in the functional expression of the angiogenic-promoting genes integrin β3 and uPA in these cells",
+      "citation": {
+        "db": "Other",
+        "db_id": "9314544"
+      },
+      "annotations": {},
+      "source": 12,
+      "target": 21,
+      "key": "2f40fa50129a14129934df6ca1da024b"
+    },
+    {
+      "line": 35,
+      "relation": "increases",
+      "evidence": "Stimulation of EC with basic fibroblast growth factor (bFGF) resulted in increased expression of Hox D3, integrin alphavbeta3, and the urokinase plasminogen activator (uPA). Hox D3 antisense blocked the ability of bFGF to induce uPA and integrin alphavbeta3 expression, yet had no effect on EC cell proliferation or bFGF-mediated cyclin D1 expression. Expression of Hox D3, in the absence of bFGF, resulted in enhanced expression of integrin alphavbeta3 and uPA.",
+      "citation": {
+        "db": "Other",
+        "db_id": "9314544"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 12,
+      "target": 21,
+      "key": "ab2069fa332b9aebfa9c1dbba80c3e60"
+    },
+    {
+      "line": 35,
+      "relation": "increases",
+      "evidence": "uPAR activation by uPA induces its association with platelet-derived growth factor receptor (PDGFR)-beta. The interaction results in PDGF-independent PDGFR-beta activation by phosphorylation of cytoplasmic tyrosine kinase domains and receptor dimerization. Association of the receptors as well as the tyrosine kinase activity of PDGFR-beta are decisive in mediating uPA-induced downstream signaling that regulates",
+      "citation": {
+        "db": "Other",
+        "db_id": "15889147"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 12,
+      "target": 21,
+      "key": "49ff1d097a8903e133088f57696b3d87"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "p21 expression in HUVECs transduced with Gax was increased up to 5-fold as measured by Northern blot, and p21 promoter activity was activated by 4- to 5-fold.",
+      "citation": {
+        "db": "Other",
+        "db_id": "12842453"
+      },
+      "annotations": {},
+      "source": 18,
+      "target": 24,
+      "key": "5c559de9ad4c069f19f86cc78f6d48cb"
+    },
+    {
+      "line": 22,
+      "relation": "decreases",
+      "evidence": "p21CIP1-mediated inhibition of cell proliferation by overexpression of the gax homeodomain gene",
+      "citation": {
+        "db": "Other",
+        "db_id": "9224717"
+      },
+      "annotations": {},
+      "source": 18,
+      "target": 0,
+      "key": "dcc880176a24a874231bec24b8f109d4"
+    },
+    {
+      "line": 22,
+      "relation": "decreases",
+      "evidence": "Inhibition of endothelial cell activation by the homeobox gene Gax.",
+      "citation": {
+        "db": "Other",
+        "db_id": "12842453"
+      },
+      "annotations": {},
+      "source": 18,
+      "target": 0,
+      "key": "646796383a623a6c06c509888a973597"
+    },
+    {
+      "line": 23,
+      "relation": "directlyIncreases",
+      "evidence": "MEOX1 and MEOX2 activate p16(INK4a) in a DNA binding dependent manner.",
+      "citation": {
+        "db": "Other",
+        "db_id": "22206000"
+      },
+      "annotations": {},
+      "source": 18,
+      "target": 25,
+      "key": "973db4889858eed2e87f441766550c3a"
+    },
+    {
+      "line": 30,
+      "relation": "increases",
+      "evidence": "\"The homeodomain transcription factor MEOX2 is an important regulator of vascular cell proliferation and is a direct transcriptional activator of both p21(CIP1/WAF1) and p16(INK4a)\"",
+      "citation": {
+        "db": "Other",
+        "db_id": "22206000"
+      },
+      "annotations": {},
+      "source": 18,
+      "target": 4,
+      "key": "58524bc3c3e0736e23d93a4853f665b4"
+    },
+    {
+      "line": 30,
+      "relation": "increases",
+      "evidence": "p21 expression in HUVECs transduced with Gax was increased up to 5-fold as measured by Northern blot, and p21 promoter activity was activated by 4- to 5-fold.",
+      "citation": {
+        "db": "Other",
+        "db_id": "12842453"
+      },
+      "annotations": {},
+      "source": 18,
+      "target": 4,
+      "key": "510f77fdb2218da77e3be48bcec0beef"
+    },
+    {
+      "line": 36,
+      "relation": "increases",
+      "evidence": "MMP-2 binds to ?v?3 at the cell surface, and blocking this binding inhibits MMP-2 protease activity in cultured cells, suppressing angiogenesis and tumour growth in chorioallantoic membrane assays43.Conversely, the membrane MMP (MT-1) cleaves ?v?3, enhancing the ligand binding activity of this integrin44. So,?v?3 seems to be important in regulating angiogenesis in adult animals.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12635171"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 19,
+      "target": 1,
+      "key": "c28c610e61915ffc4c3d6f905ac5aa00"
+    },
+    {
+      "line": 9,
+      "relation": "increases",
+      "evidence": "Kiyan, J., Kiyan, R., Haller, H., and Dumler, I. 2005. Urokinase-induced signaling in human vascular smooth muscle cells is mediated by PDGFR-beta. EMBO J. 24: 1787–1797. doi:10. 1038/sj.emboj.7600669. PMID:15889147",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19064999"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 21,
+      "target": 20,
+      "key": "656079caa89d609a10ea6732b690dcc4"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 2,
+      "target": 3,
+      "key": "58b28f338117080dcb6b2fb68a4d1bf8"
+    }
+  ]
+}

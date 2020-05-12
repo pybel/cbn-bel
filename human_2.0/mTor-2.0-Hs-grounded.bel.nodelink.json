@@ -1,0 +1,1251 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "mTor-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The mTor network depicts the causal mechanisms involved in the canonical mTor signaling pathway, including AMPK, TSC1/2, RHEB, and RPS6KB1. Elements of this pathway are important for mediating the proliferative processes seen following lung injury."
+    },
+    "namespace_url": {},
+    "namespace_pattern": {
+      "hgnc": ".*",
+      "fplx": ".*",
+      "go": ".*",
+      "mesh": ".*"
+    },
+    "annotation_url": {},
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "mesh",
+        "name": "Protein Biosynthesis",
+        "identifier": "D014176"
+      },
+      "id": "6881678b8e6b1d04cb0a48685844ea5c",
+      "bel": "bp(mesh:D014176 ! \"Protein Biosynthesis\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "fplx",
+        "name": "AMPK",
+        "identifier": "AMPK"
+      },
+      "id": "eaa432facad9be5ed82b07c936e3cd6f",
+      "bel": "complex(fplx:AMPK ! AMPK)"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "TSC1",
+            "identifier": "12362"
+          },
+          "id": "dd85e84fc19fcc415de2296139b18332",
+          "bel": "p(hgnc:12362 ! TSC1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "TSC2",
+            "identifier": "12363"
+          },
+          "id": "e1061c47f021440dcdeeac6d29939f20",
+          "bel": "p(hgnc:12363 ! TSC2)"
+        }
+      ],
+      "id": "9a98fef58ef5fda3f174a5dc34255034",
+      "bel": "complex(p(hgnc:12362 ! TSC1), p(hgnc:12363 ! TSC2))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "EIF3A",
+            "identifier": "3271"
+          },
+          "id": "c4ab9f23a87f4d4ad0209fea4c873018",
+          "bel": "p(hgnc:3271 ! EIF3A)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "EIF4E",
+            "identifier": "3287"
+          },
+          "id": "5fcab178119a08da9738e0807423268f",
+          "bel": "p(hgnc:3287 ! EIF4E)"
+        }
+      ],
+      "id": "661ba3cce6b8108354422c69e18dd0a2",
+      "bel": "complex(p(hgnc:3271 ! EIF3A), p(hgnc:3287 ! EIF4E))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "EIF4E",
+            "identifier": "3287"
+          },
+          "id": "5fcab178119a08da9738e0807423268f",
+          "bel": "p(hgnc:3287 ! EIF4E)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "hgnc",
+            "name": "EIF4EBP1",
+            "identifier": "3288"
+          },
+          "id": "d8a5ffeac7e61856cdace10a32d60bbe",
+          "bel": "p(hgnc:3288 ! EIF4EBP1)"
+        }
+      ],
+      "id": "ab24a31b5b4a6b4a783b1363ca09cd2c",
+      "bel": "complex(p(hgnc:3287 ! EIF4E), p(hgnc:3288 ! EIF4EBP1))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "AKT",
+        "identifier": "AKT"
+      },
+      "id": "c89a87549439c8dc34a13d9082b33a57",
+      "bel": "p(fplx:AKT ! AKT)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "JAK",
+        "identifier": "JAK"
+      },
+      "id": "ac2dbbeb425edc533f9ae036b100d695",
+      "bel": "p(fplx:JAK ! JAK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "PPP2C",
+        "identifier": "PPP2C"
+      },
+      "id": "56d92c105ad78929f06f2a1a669dffac",
+      "bel": "p(fplx:PPP2C ! PPP2C)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "STAT",
+        "identifier": "STAT"
+      },
+      "id": "76415a669adc625928ce89d9e191fd7d",
+      "bel": "p(fplx:STAT ! STAT)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RHEB",
+        "identifier": "10011"
+      },
+      "id": "083bc43862265dfa01eb3d133f39b4e2",
+      "bel": "p(hgnc:10011 ! RHEB)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RPS6KA1",
+        "identifier": "10430"
+      },
+      "id": "1e0382cadd697195074e4ec9cf6e825b",
+      "bel": "p(hgnc:10430 ! RPS6KA1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RPS6KA1",
+        "identifier": "10430"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Ser",
+          "pos": 380
+        }
+      ],
+      "id": "35ae83b11f593020102860dd7e301630",
+      "bel": "p(hgnc:10430 ! RPS6KA1, pmod(go:0006468 ! \"protein phosphorylation\", Ser, 380))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RPS6KB1",
+        "identifier": "10436"
+      },
+      "id": "ce979a8307f8810da4923caf7946ea8a",
+      "bel": "p(hgnc:10436 ! RPS6KB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RPS6KB1",
+        "identifier": "10436"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Ser",
+          "pos": 424
+        }
+      ],
+      "id": "96f0cc301dcc5e8ba428f20fd6782ed7",
+      "bel": "p(hgnc:10436 ! RPS6KB1, pmod(go:0006468 ! \"protein phosphorylation\", Ser, 424))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RPS6KB1",
+        "identifier": "10436"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Thr",
+          "pos": 389
+        }
+      ],
+      "id": "6fd8d54ef48e4ec391894d4822092724",
+      "bel": "p(hgnc:10436 ! RPS6KB1, pmod(go:0006468 ! \"protein phosphorylation\", Thr, 389))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RPS6KB1",
+        "identifier": "10436"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Thr",
+          "pos": 421
+        }
+      ],
+      "id": "e26a0d081a2709a919c659b2a913e984",
+      "bel": "p(hgnc:10436 ! RPS6KB1, pmod(go:0006468 ! \"protein phosphorylation\", Thr, 421))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TSC1",
+        "identifier": "12362"
+      },
+      "id": "dd85e84fc19fcc415de2296139b18332",
+      "bel": "p(hgnc:12362 ! TSC1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TSC2",
+        "identifier": "12363"
+      },
+      "id": "e1061c47f021440dcdeeac6d29939f20",
+      "bel": "p(hgnc:12363 ! TSC2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TSC2",
+        "identifier": "12363"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Ser"
+        }
+      ],
+      "id": "38ea0a203082432cec6ab28394b10735",
+      "bel": "p(hgnc:12363 ! TSC2, pmod(go:0006468 ! \"protein phosphorylation\", Ser))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "TSC2",
+        "identifier": "12363"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Thr",
+          "pos": 1462
+        }
+      ],
+      "id": "652e52a79cd0bf39193138c4916cdf39",
+      "bel": "p(hgnc:12363 ! TSC2, pmod(go:0006468 ! \"protein phosphorylation\", Thr, 1462))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EIF3A",
+        "identifier": "3271"
+      },
+      "id": "c4ab9f23a87f4d4ad0209fea4c873018",
+      "bel": "p(hgnc:3271 ! EIF3A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EIF4E",
+        "identifier": "3287"
+      },
+      "id": "5fcab178119a08da9738e0807423268f",
+      "bel": "p(hgnc:3287 ! EIF4E)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EIF4E",
+        "identifier": "3287"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Ser",
+          "pos": 422
+        }
+      ],
+      "id": "5dab78cfebb7113a386cc75e7332a64b",
+      "bel": "p(hgnc:3287 ! EIF4E, pmod(go:0006468 ! \"protein phosphorylation\", Ser, 422))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EIF4EBP1",
+        "identifier": "3288"
+      },
+      "id": "d8a5ffeac7e61856cdace10a32d60bbe",
+      "bel": "p(hgnc:3288 ! EIF4EBP1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EIF4EBP1",
+        "identifier": "3288"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Ser",
+          "pos": 65
+        }
+      ],
+      "id": "1b778b252d93ab3523f55ad57627712e",
+      "bel": "p(hgnc:3288 ! EIF4EBP1, pmod(go:0006468 ! \"protein phosphorylation\", Ser, 65))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EIF4EBP1",
+        "identifier": "3288"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "go",
+            "name": "protein phosphorylation",
+            "identifier": "0006468"
+          },
+          "code": "Thr",
+          "pos": 70
+        }
+      ],
+      "id": "9185217afe229b376eea638e330be5e2",
+      "bel": "p(hgnc:3288 ! EIF4EBP1, pmod(go:0006468 ! \"protein phosphorylation\", Thr, 70))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EIF4G1",
+        "identifier": "3296"
+      },
+      "id": "8cb2d6092b2116c8e5bcc743859e1159",
+      "bel": "p(hgnc:3296 ! EIF4G1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SMAD4",
+        "identifier": "6770"
+      },
+      "id": "1cce812745466e6df1789e98dbaa9e13",
+      "bel": "p(hgnc:6770 ! SMAD4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "MYC",
+        "identifier": "7553"
+      },
+      "id": "be0155fc0a36b4974c35171c73809693",
+      "bel": "p(hgnc:7553 ! MYC)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "POLD1",
+        "identifier": "9175"
+      },
+      "id": "9241217b46e8229db17b3edb67fe4181",
+      "bel": "p(hgnc:9175 ! POLD1)"
+    }
+  ],
+  "links": [
+    {
+      "line": 16,
+      "relation": "directlyIncreases",
+      "evidence": "In fact, AMPK acts on mTOR through phosphorylating and activating tumour suppressor tuberous sclerosis complex-2 (TSC2), an upstream negative regulator of mTOR.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18728656"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 1,
+      "target": 18,
+      "key": "4d163c8fd9557ffb967aac3147f7965b"
+    },
+    {
+      "line": 1,
+      "relation": "increases",
+      "evidence": "S6K and RSK phosphorylate eIF4B at Ser422, thus enhancing its interaction with the eIF3 and promoting protein translation (Shahbazian et al., 2006).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18794886"
+      },
+      "annotations": {},
+      "source": 3,
+      "target": 0,
+      "key": "27f092aa6f97c390cf88b6c408f59bb8"
+    },
+    {
+      "relation": "partOf",
+      "source": 20,
+      "target": 3,
+      "key": "f0ac387fdad12b3d3cdb97aa3932c308"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 20,
+      "target": 3,
+      "key": "cde9c5571488c47e91382519e7041aa0"
+    },
+    {
+      "relation": "partOf",
+      "source": 21,
+      "target": 3,
+      "key": "735125d4687f96ad2bf6b21cfc150f5d"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 21,
+      "target": 3,
+      "key": "fe84770671fd1ff7efa27f83905f79bd"
+    },
+    {
+      "relation": "partOf",
+      "source": 21,
+      "target": 4,
+      "key": "927acfb0cabe7fa7a8c04273b213d133"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 21,
+      "target": 4,
+      "key": "7177eda2654a682fb22c8ce4c74c4244"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 21,
+      "target": 22,
+      "key": "c3afd9062b18ab95330d589a64d10650"
+    },
+    {
+      "line": 37,
+      "relation": "increases",
+      "evidence": "Involvement of Rheb in the insulin TOR S6K signaling pathway was further investigated in mammalian cells. Transient transfection of Rheb1 or Rheb2 in HEK293 cells results in the increase of the phosphorylation of ribosomal S6 kinase (S6K) 25,30-33. Increase of the phosphorylation of S6 as well as 4E-BP1 was observed 30,31,33. In contrast, Rheb did not stimulate Akt phosphorylation 30,33]. The increase of S6K activity by the transient expression of Rheb was inhibited by the addition of rapamycin but not by wortmannin, an inhibitor of PI3K This led to the activation of S6K as detected by its phosphorylation. However, expression of dominant negative Rheb mutant, Rheb1D60K, blocked serum-inducted activation of S6K The overall picture of the involvement of Rheb in the insulin mTOR S6K signaling pathway is shown in Fig. 3. During serum activation of this signaling pathway, insulin or IGF1 is received by their respective receptors at the cell surface. This results in the activation of PI3K, which then phosphorylates Akt. The activated Akt phosphorylates Tsc2 and inhibits the ability of Tsc1 Tsc2 to negatively regulate mTOR. The inhibition of Tsc1 Tsc2 leads to the activation of Rheb, which then causes activation of mTOR. At least two downstream events, activation of p70S6K and phosphorylation of S6, as well as phosphorylation of 4E BP1 contribute to the increase in protein synthesis and progression of cell cycle49.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15240005"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 21,
+      "target": 0,
+      "key": "b7ec383ea05c622d10e9c46b7f1b17e3"
+    },
+    {
+      "line": 37,
+      "relation": "increases",
+      "evidence": "(Fig. 1). In addition to stimulating p70S6 kinase-mediated protein translation, activation of mTOR inhibits PHAS1 (phosphorylated heat- and acid-stable protein 1) (also known as 4E-BP), which is a negative regulator of the translation initiation factor eIF-4E [59]. It has recently been shown that PHAS-1 can directly bind a protein called Raptor, which also binds mTOR [60,61] (Fig. 1). Mutations in PHAS-1 that inhibit interaction with Raptor also inhibit mTOR-mediated phosphorylation of PHAS-1 [62]. Finally, overexpression of Raptor can enhance the phosphorylation of PHAS-1 by mTOR in vitro [62,63]. mTOR binds PHAS-1 by a TOR signaling (TOS) motif; this same motif is found in p70S6K [63].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12928036"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 21,
+      "target": 0,
+      "key": "2318473baa57c4dfaa9840b5a5659f05"
+    },
+    {
+      "line": 37,
+      "relation": "increases",
+      "evidence": "thus, mTOR-mediated inhibition of 4EBP1 results in activation of eif4e and subsequent increased protein synthesis",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15292521"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 21,
+      "target": 0,
+      "key": "a349c1208a003e3e0c01a5e795578860"
+    },
+    {
+      "line": 10,
+      "relation": "directlyDecreases",
+      "evidence": "Phosphorylation of 4E-BP1 relieves its binding to and inhibition of eIF-4E, which, along with S6K1 activity, leads to increased protein synthesis and cell growth",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14607085"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 4,
+      "target": 21,
+      "key": "20c5e57906476dbfdc76a28ac83695cd"
+    },
+    {
+      "relation": "partOf",
+      "source": 23,
+      "target": 4,
+      "key": "e6aed5026cccc72676d74538f999cd94"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 23,
+      "target": 4,
+      "key": "45ec62ff30a63e4dc9f99664b3df9c8c"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 23,
+      "target": 24,
+      "key": "a314d9fc17dd7230c32c9a3b29065fc1"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 23,
+      "target": 25,
+      "key": "7c367d19911a1c66d113649064178576"
+    },
+    {
+      "line": 34,
+      "relation": "directlyDecreases",
+      "evidence": "Genetic support for a linear Akt1-mTOR-p70S6K pathway has recently come from reports demonstrating that the tuberous sclerosis complex 1 and 2 proteins (Tsc1 and Tsc2) can inhibit mTOR (Fig. 1). Akt1 phosphorylates Tsc2, thereby activating mTOR at least in part by disrupting the Tsc1-Tsc2 complex [54].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12928036"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 2,
+      "target": 9,
+      "key": "7c07e7a72ef658760c910be9b099106f"
+    },
+    {
+      "line": 34,
+      "relation": "directlyDecreases",
+      "evidence": "The tuberous sclerosis complex (TSC1/2), consisting of a heterodimer of TSC1 and TSC2, is an upstream negative regulator of mTORC1. TSC1/2 is the GTPase-activating protein for the Ras-family GTP-binding protein Rheb, which directly binds and activates mTORC1 (Guertin and Sabatini, 2009).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21726807"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 2,
+      "target": 9,
+      "key": "c3f754ca76fca6ad21168f2b96290cc3"
+    },
+    {
+      "line": 34,
+      "relation": "directlyDecreases",
+      "evidence": "TSC2 is a GTPase-activating protein (GAP) toward Rheb, a Ras family GTPase",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12869586"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 2,
+      "target": 9,
+      "key": "20794b252b04975082167492b71d40fd"
+    },
+    {
+      "line": 34,
+      "relation": "directlyDecreases",
+      "evidence": "The tuberin-hamartin complex is active as a GTPase-activating protein (GAP) towards Rheb, causing hydrolysis of GTP by Rheb and conversion from the active GTP-bound form to the inactive GDP-bound form. Active proteins are denoted with an asterisk",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14607085"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "GTP binding",
+          "identifier": "0005525"
+        }
+      },
+      "source": 2,
+      "target": 9,
+      "key": "0a09fcd6d40ed011059350591551af15"
+    },
+    {
+      "relation": "partOf",
+      "source": 16,
+      "target": 2,
+      "key": "c0411cfbcfcaf16fc4130a56b62514bf"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 16,
+      "target": 2,
+      "key": "074973d9836153aa69d5e1660838e16d"
+    },
+    {
+      "relation": "partOf",
+      "source": 17,
+      "target": 2,
+      "key": "c7822fedd9210263544298b82cf72b51"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 17,
+      "target": 2,
+      "key": "55234addbee66ff59be5f2b851a22175"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 17,
+      "target": 18,
+      "key": "ccbf176664fcab351a5b8856c1abef24"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 17,
+      "target": 19,
+      "key": "53e6ce4eb403ae3598b481aaf7db09a7"
+    },
+    {
+      "line": 19,
+      "relation": "increases",
+      "evidence": "S6K and RSK phosphorylate eIF4B at Ser422, thus enhancing its interaction with the eIF3 and promoting protein translation (Shahbazian et al., 2006).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18794886"
+      },
+      "annotations": {},
+      "source": 22,
+      "target": 3,
+      "key": "5043541f4803a58f207456869ed5a175"
+    },
+    {
+      "line": 20,
+      "relation": "decreases",
+      "evidence": "Here, we investigated the role of ROS in the regulation of PHAS-I phosphorylation on Thr-70 and Ser-65, an event required for the release of eIF4E from PHAS-I. Ang II-induced Ser-65 phosphorylation was ROS-dependent as assessed by pretreatment with ebselen (3.6 +/- 0.2 versus 1.1 +/- 0.2), diphenylene iodonium (3.6 +/- 0.2 versus 1.0 +/- 0.1), and N-acetyl cysteine (3.6 +/- 0.2 versus 1.2 +/- 0.1), but Ang II-stimulated phosphorylation of Thr-70 was ROS-insensitive.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12860993"
+      },
+      "annotations": {},
+      "source": 24,
+      "target": 4,
+      "key": "19565d00c6690283ec5c642b831325a0"
+    },
+    {
+      "line": 20,
+      "relation": "decreases",
+      "evidence": "Two N-terminal threonines (T37 and T46 in the human protein) are required for phosphorylation of T70, which in turn is required for phosphorylation of S65. Phosphorylation at T70 appears to be of major importance in bringing about the release of 4E-BP1 from eIF4E, while it has been suggested that phosphorylation of S65 prevents the reassociation of eIF4E and 4E-BP1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12588975"
+      },
+      "annotations": {},
+      "source": 24,
+      "target": 4,
+      "key": "39a2c3f20b5bf5b1b61d9fb224772afe"
+    },
+    {
+      "line": 20,
+      "relation": "decreases",
+      "evidence": "The immunosuppressant rapamycin specifically inhibits mTOR activity and retards cancer growth. mTOR phosphorylates 4E-BP1 primarily at residues Ser65 abd Thr73.  As a result, eIF4E is released from 4E-BP1 with a subsequent increase in cap-dependent translation (Mamane et al, 2004).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16404421"
+      },
+      "annotations": {},
+      "source": 24,
+      "target": 4,
+      "key": "2f93b000849d9eb02275fa896b685534"
+    },
+    {
+      "line": 31,
+      "relation": "increases",
+      "evidence": "Recombinant eIF4GI fragments containing an RNA-binding region enhanced eIF4E cross-linking to the cap structure (Fig. 4E , while N-terminal eIF4GI fragments lacking the RNA-binding region failed to enhance eIF4E cross-linking to the cap structure (lanes 7 and 13)....These results demonstrate that the RNA-binding region of eIF4GI is essential for the enhancement of the interaction between the cap structure and eIF4E.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19114555"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 26,
+      "target": 21,
+      "key": "89116be39a05f0789ca4607854240505"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 10,
+      "target": 11,
+      "key": "bc38e4410ae59f8f84ba47adb1cc5885"
+    },
+    {
+      "line": 3,
+      "relation": "directlyIncreases",
+      "evidence": "S6K and RSK phosphorylate eIF4B at Ser422, thus enhancing its interaction with the eIF3 and promoting protein translation (Shahbazian et al., 2006).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18794886"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 10,
+      "target": 22,
+      "key": "5c78406160e2417d495edad904905da3"
+    },
+    {
+      "line": 24,
+      "relation": "directlyIncreases",
+      "evidence": "Increased phosphorylation of two sites essential for RSK1 kinase activity (Ser(380) and Ser(363)) in RSK1S154A compared with RSK1 wild type, demonstrated that 14-3-3 interferes with RSK1 phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12618428"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 11,
+      "target": 10,
+      "key": "ce3c4d722ae5a048ed7212d0218af3e3"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 12,
+      "target": 13,
+      "key": "49287f4ed932fb9f93bf596402897d4b"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 12,
+      "target": 14,
+      "key": "8fae582e46b630874391b3410532150b"
+    },
+    {
+      "line": 4,
+      "relation": "increases",
+      "evidence": "Consistent with this, epidermal growth factor-induced Thr(389) phosphorylation in wild type S6K1 persisted for up to 120 min, whereas kinase-inactive mutants of S6K1 displayed only a reduced and transient increase in Thr(389) phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12183455"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 12,
+      "target": 14,
+      "key": "060fc6d7a672570577b52cd28edefe95"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 12,
+      "target": 15,
+      "key": "3d6778a24d5a2d8e51c31a9e84de9ca4"
+    },
+    {
+      "line": 28,
+      "relation": "directlyIncreases",
+      "evidence": "S6K and RSK phosphorylate eIF4B at Ser422, thus enhancing its interaction with the eIF3 and promoting protein translation (Shahbazian et al., 2006).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18794886"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 12,
+      "target": 22,
+      "key": "ba91a144945adfa27cf4d1f5d145432d"
+    },
+    {
+      "line": 0,
+      "relation": "directlyDecreases",
+      "evidence": "conditional inactivation of Cdc2 reduces phosphorylation of S6K1 at S/TP sites while simultaneously increasing phosphorylation of Thr(389) and of the S6K1 substrate, RPS6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12586835"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 13,
+      "target": 12,
+      "key": "51513c9c3137a737aa7577075873c474"
+    },
+    {
+      "line": 39,
+      "relation": "directlyIncreases",
+      "evidence": "The initially identified sites of phosphorylation (of RPS6KBP1), S411, S418, T421 and S424 are all flanked by a proline in the +1 position and reside within the putative autoinhibitory domain of Module IV [22]. Peptides which correspond in sequence to this domain inhibit the kinase [51], consistent with the hypothesis that Module IV acts as an autoinhibitory domain. These four residues are hypophosphorylated in quiescent cells, and become hyperphosphorylated in response to serum [23]. Substitution of these S/T-P sites with alanines [23] suppresses activation of the kinase, whilst the corresponding acidic residue replacements raise basal kinase activity [10].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9247127"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 15,
+      "target": 12,
+      "key": "603a1c9304777013a897e7aa6e748f39"
+    },
+    {
+      "line": 39,
+      "relation": "directlyIncreases",
+      "evidence": "from full text - T229 is situated in the catalytic domain of p70S6K, and in addition to T389, its phosphorylation is necessary for full activation of the protein. Residues T421 and S424 are situated in the autoinhibitory/pseudosubstrate domain of the C-terminus, and phosphorylation of these residues is proposed to be one of the early steps of p70S6K activation (2).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16262259"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 15,
+      "target": 12,
+      "key": "991e7c6813eff9dea3a0d6afc05f2df3"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "Smad4, a transcription factor normally required for TGFbeta-mediated inhibition of normal cell proliferation, enhances 4E-BP1 gene-promoter activity through binding to a conserved element",
+      "citation": {
+        "db": "Other",
+        "db_id": "19834456"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 27,
+      "target": 23,
+      "key": "549fabc0026eef1b3dd1403e8bcb4943"
+    },
+    {
+      "line": 9,
+      "relation": "directlyIncreases",
+      "evidence": "In fact, AMPK acts on mTOR through phosphorylating and activating tumour suppressor tuberous sclerosis complex-2 (TSC2), an upstream negative regulator of mTOR.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18728656"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 18,
+      "target": 17,
+      "key": "c12be074299408072eaa873ad3233cc1"
+    },
+    {
+      "line": 33,
+      "relation": "directlyDecreases",
+      "evidence": "Akt then phosphorylates tuberin on three residues (S939, S1130 and T1462 of full length human tuberin), and this inhibits the tuberin-hamartin complex through an as-yet-undefined mechanism (reviewed in [8]).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14607085"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 19,
+      "target": 2,
+      "key": "fdef8dd1c97ba9e15c5d8004b8f2975f"
+    },
+    {
+      "line": 35,
+      "relation": "directlyIncreases",
+      "evidence": "PhosphoElm data from PMID 15212693",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12150915"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 5,
+      "target": 19,
+      "key": "41469f25153467e86a4dc0bb444759bb"
+    },
+    {
+      "line": 35,
+      "relation": "directlyIncreases",
+      "evidence": "Akt/PKB serves as a branch point in the PI3K-mTOR signalling pathway and has been reported to phosphorylate glycogen synthase kinase (GSK) 3b at Ser9 (Ser23 on GSK-3a; for review, see Coffer et al. 1998), mTOR at Ser2448 (Nave et al. 1999) and tuberous sclerosis complex (TSC) 2 on multiple residues including Ser939, Ser1130 and Thr1462 (for review, see Manning & Cantley, 2003).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15294054"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 5,
+      "target": 19,
+      "key": "b5c90329ad78e4205a4746f121dfb809"
+    },
+    {
+      "line": 35,
+      "relation": "directlyIncreases",
+      "evidence": "Akt then phosphorylates tuberin on three residues (S939, S1130 and T1462 of full length human tuberin), and this inhibits the tuberin-hamartin complex through an as-yet-undefined mechanism (reviewed in [8]).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14607085"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 5,
+      "target": 19,
+      "key": "f812a55bc226b7c9821440a912baaac6"
+    },
+    {
+      "line": 59,
+      "relation": "increases",
+      "evidence": "Inhibition of the Src and JAK kinases blocked PDGF-stimulated gene expression of the STAT target genes cyclin D1 and c-myc",
+      "citation": {
+        "db": "Other",
+        "db_id": "12003786"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 6,
+      "target": 8,
+      "key": "ef28a6572fe930a7973c85c97e76056a"
+    },
+    {
+      "line": 14,
+      "relation": "directlyDecreases",
+      "evidence": "The same phosphatase that dephosphorylates Akt1, pp2A, has also been shown to dephosphorylate p70S6K [64]. Therefore, pp2A seems to be an important modulator of IGF-1 signaling.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12928036"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "phosphatase activity",
+          "identifier": "0016791"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 7,
+      "target": 12,
+      "key": "0a868ae52957400c6ca6b817f72b6aaa"
+    }
+  ]
+}

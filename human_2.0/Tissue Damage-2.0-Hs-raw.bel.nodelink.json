@@ -1,0 +1,5753 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Tissue Damage-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Tissue Damage network depicts the causal mechanisms leading to the secretion of damage-associated molecular patterns (DAMPs) and pathogen associated molecular patterns (PAMPs) following tissue injury. The network includes pathways related to the detection of DAMPs, which serve to perpetuate heightened immune responses to noninfectious tissue insult."
+    },
+    "namespace_url": {
+      "HGNC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-human-genes/hgnc-human-genes-20150601.belns",
+      "GOBP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20150601.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20150601.belns",
+      "GOCC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170511.belns",
+      "MESHPP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20150601.belns",
+      "MGI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20150601.belns",
+      "RGD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20150601.belns",
+      "CHEBI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20150601.belns",
+      "SCHEM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-chemicals/selventa-legacy-chemicals-20150601.belns",
+      "EGID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/entrez-gene-ids/entrez-gene-ids-20150601.belns",
+      "MESHD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20150601.belns",
+      "SDIS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-diseases/selventa-legacy-diseases-20150601.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20150601.belns",
+      "MESHC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170511.belns",
+      "GOBPID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process-ids/go-biological-process-ids-20150601.belns",
+      "GOCCID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component-ids/go-cellular-component-ids-20150601.belns",
+      "MESHCS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20150601.belns"
+    },
+    "namespace_pattern": {},
+    "annotation_url": {
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20150601.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20150601.belanno",
+      "Species": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+      "Tissue": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20150601.belanno"
+    },
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "lipoteichoic acid"
+      },
+      "id": "75a36ef7956485aac7e3b5b285283b94",
+      "bel": "a(CHEBI:\"lipoteichoic acid\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "uric acid"
+      },
+      "id": "ef3d9494369a31b96298a967ff018db6",
+      "bel": "a(CHEBI:\"uric acid\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "ATP"
+      },
+      "id": "08c2bd47cf55782389bbaba34887a39c",
+      "bel": "a(CHEBI:ATP)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "acrolein"
+      },
+      "id": "7bc12257f749d5fd14db42e1f42a897a",
+      "bel": "a(CHEBI:acrolein)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "adenosine"
+      },
+      "id": "47a9115e40f8bcf8b2b8deb3faa4231b",
+      "bel": "a(CHEBI:adenosine)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "heparin"
+      },
+      "id": "ce9c9ee733209cd7a8b905cec98ea0d6",
+      "bel": "a(CHEBI:heparin)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "lipopolysaccharide"
+      },
+      "id": "9d74ac839ff5ff882ee29395de5ecb86",
+      "bel": "a(CHEBI:lipopolysaccharide)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "peptidoglycan"
+      },
+      "id": "e61b63cbedcd59c3cfdc7b0dc89c7ca2",
+      "bel": "a(CHEBI:peptidoglycan)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Acetylmuramyl-alanyl-isoglutamine"
+      },
+      "id": "ddd9caa390e311c45987f449a497265f",
+      "bel": "a(SCHEM:\"Acetylmuramyl-alanyl-isoglutamine\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "CPG-oligonucleotide"
+      },
+      "id": "22085727cd5b96490a3f40be033e22ce",
+      "bel": "a(SCHEM:\"CPG-oligonucleotide\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Damage Associated Molecular Patterns"
+      },
+      "id": "b5556cda7d072de263f95df380dcbc18",
+      "bel": "a(SCHEM:\"Damage Associated Molecular Patterns\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Pathogen Associated Molecular Patterns"
+      },
+      "id": "15b8311d9427d64308c8a52bba074803",
+      "bel": "a(SCHEM:\"Pathogen Associated Molecular Patterns\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Poly I-C"
+      },
+      "id": "3ca99a81e17d4e1fbb3c8a77e2e0a21b",
+      "bel": "a(SCHEM:\"Poly I-C\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "double-stranded RNA"
+      },
+      "id": "e25c4c576b4e6ac280203cf59fbf30b3",
+      "bel": "a(SCHEM:\"double-stranded RNA\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Biglycan"
+      },
+      "id": "6e507d73767477fbe229e4d450a8b356",
+      "bel": "a(SCHEM:Biglycan)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "FMLP"
+      },
+      "id": "92f30783ab05d6f75e50ef25c893f515",
+      "bel": "a(SCHEM:FMLP)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Flagellin"
+      },
+      "id": "95cb989c2e41e4fe20d50eab511d38d7",
+      "bel": "a(SCHEM:Flagellin)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Zymosan"
+      },
+      "id": "29a941cb056120b6830139ab2afabf0c",
+      "bel": "a(SCHEM:Zymosan)"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "SCOMP",
+        "name": "IkappaB Kinase Complex"
+      },
+      "id": "69376e39c5793cf53cf8373d89bc1185",
+      "bel": "complex(SCOMP:\"IkappaB Kinase Complex\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "SCOMP",
+        "name": "Nfkb Complex"
+      },
+      "id": "c8f3260aaedabca7831d823ec3e87186",
+      "bel": "complex(SCOMP:\"Nfkb Complex\")"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "LY96"
+          },
+          "id": "34f53344ab7f2287b285c8eaf0b21bdb",
+          "bel": "p(HGNC:LY96)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "TLR2"
+          },
+          "id": "582bd46752f7f09b247672cebb3f0ea1",
+          "bel": "p(HGNC:TLR2)"
+        }
+      ],
+      "id": "9ff9a5a3e5ffe21e27d09e2d7725985b",
+      "bel": "complex(p(HGNC:LY96), p(HGNC:TLR2))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "LY96"
+          },
+          "id": "34f53344ab7f2287b285c8eaf0b21bdb",
+          "bel": "p(HGNC:LY96)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "TLR4"
+          },
+          "id": "4d3aa2ce51d0cd7f2aa9267a9c61f9f7",
+          "bel": "p(HGNC:TLR4)"
+        }
+      ],
+      "id": "d740949590db78b0578dc063cd9e8858",
+      "bel": "complex(p(HGNC:LY96), p(HGNC:TLR4))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CHUK"
+      },
+      "id": "9c1fa58e8fe80330403e1557850d9f53",
+      "bel": "p(HGNC:CHUK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HMGB1"
+      },
+      "id": "49cae6a35157605b512bcf8e54c1a60d",
+      "bel": "p(HGNC:HMGB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IKBKB"
+      },
+      "id": "5dc945f5997da1736276b351fed21de6",
+      "bel": "p(HGNC:IKBKB)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IKBKB"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser",
+          "pos": 177
+        }
+      ],
+      "id": "ef66dfc26afa0fc634c13b269ee6ea07",
+      "bel": "p(HGNC:IKBKB, pmod(Ph, Ser, 177))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IKBKB"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser",
+          "pos": 181
+        }
+      ],
+      "id": "f1b83a388f702a221ba788f973a07f6a",
+      "bel": "p(HGNC:IKBKB, pmod(Ph, Ser, 181))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IKBKE"
+      },
+      "id": "e2ea52a4c2e2d25268d3bfd31609d48e",
+      "bel": "p(HGNC:IKBKE)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IKBKG"
+      },
+      "id": "72bd82f6bc922dbd9fa66f1428a4e407",
+      "bel": "p(HGNC:IKBKG)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL1A"
+      },
+      "id": "017f14e3a15a95b856bdaba5630dcf34",
+      "bel": "p(HGNC:IL1A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL33"
+      },
+      "id": "d84a840e0e00974f647236983a671c47",
+      "bel": "p(HGNC:IL33)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IRAK1"
+      },
+      "id": "e9d1fefd162243ca5b829dadab66663d",
+      "bel": "p(HGNC:IRAK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IRAK4"
+      },
+      "id": "5b3d0fc0229243f6eed8ffbc8fe4849a",
+      "bel": "p(HGNC:IRAK4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IRF3"
+      },
+      "id": "897eff5dfdc1e9477decd386f7648733",
+      "bel": "p(HGNC:IRF3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IRF5"
+      },
+      "id": "faeb70ae2df17e1cc85d66018a77d226",
+      "bel": "p(HGNC:IRF5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IRF7"
+      },
+      "id": "545adca2f0a5794cbcca6075912741ab",
+      "bel": "p(HGNC:IRF7)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "LY96"
+      },
+      "id": "34f53344ab7f2287b285c8eaf0b21bdb",
+      "bel": "p(HGNC:LY96)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MAP3K7"
+      },
+      "id": "810f14f548ee28f5c2207bc68c761ff1",
+      "bel": "p(HGNC:MAP3K7)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MYD88"
+      },
+      "id": "f14c331d37210d025523a016597e9de6",
+      "bel": "p(HGNC:MYD88)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NFKB1"
+      },
+      "id": "6e6f7419cc0edfa08d7d4c82eae0f4c4",
+      "bel": "p(HGNC:NFKB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NFKB2"
+      },
+      "id": "abbd5705b1ea40000c511775f7c199f1",
+      "bel": "p(HGNC:NFKB2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NFKBIA"
+      },
+      "id": "28d32c6c98451e7b39d3e27ade59cb9a",
+      "bel": "p(HGNC:NFKBIA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NFKBIA"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser",
+          "pos": 32
+        }
+      ],
+      "id": "cf202321c06427e92f5add6ddce2c159",
+      "bel": "p(HGNC:NFKBIA, pmod(Ph, Ser, 32))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NFKBIA"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser",
+          "pos": 36
+        }
+      ],
+      "id": "d10b84dbe11d094a453a20bf4894c8fd",
+      "bel": "p(HGNC:NFKBIA, pmod(Ph, Ser, 36))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "REL"
+      },
+      "id": "9fa50f20b3c7075b69e46dc2231d7ae8",
+      "bel": "p(HGNC:REL)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RELA"
+      },
+      "id": "64cb49613db164980ff43274b6c270cf",
+      "bel": "p(HGNC:RELA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RELB"
+      },
+      "id": "37d868887982aa1259666792624a0a33",
+      "bel": "p(HGNC:RELB)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "S100A12"
+      },
+      "id": "8d88793834aaad2df17102aa8fbe6682",
+      "bel": "p(HGNC:S100A12)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "S100A8"
+      },
+      "id": "2139d00984e7a6c9ed27f687991d06e8",
+      "bel": "p(HGNC:S100A8)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "S100A9"
+      },
+      "id": "12eb46dba7fcf1c897b2e96110f9e5ee",
+      "bel": "p(HGNC:S100A9)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SAP130"
+      },
+      "id": "52d34b2f22c08cba0cb4d40cc7c20fbd",
+      "bel": "p(HGNC:SAP130)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TBK1"
+      },
+      "id": "23fc9956fab807934042c65b055af556",
+      "bel": "p(HGNC:TBK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TICAM1"
+      },
+      "id": "7f339bf2fb1b3874312f15c03ccf7d0f",
+      "bel": "p(HGNC:TICAM1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TLR1"
+      },
+      "id": "32a9a1547708f86897357533dd5fed07",
+      "bel": "p(HGNC:TLR1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TLR2"
+      },
+      "id": "582bd46752f7f09b247672cebb3f0ea1",
+      "bel": "p(HGNC:TLR2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TLR3"
+      },
+      "id": "8e283e8a56191737442a695574bbee2b",
+      "bel": "p(HGNC:TLR3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TLR4"
+      },
+      "id": "4d3aa2ce51d0cd7f2aa9267a9c61f9f7",
+      "bel": "p(HGNC:TLR4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TLR5"
+      },
+      "id": "ddd991214ddd0dc030e381cd257d46fb",
+      "bel": "p(HGNC:TLR5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TLR9"
+      },
+      "id": "63e22ab9502c41d0972e9941bac852da",
+      "bel": "p(HGNC:TLR9)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TRAF6"
+      },
+      "id": "c8dbe00612e3bf1cb55f201df44f953a",
+      "bel": "p(HGNC:TRAF6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "VCAN"
+      },
+      "id": "5a81a19fe8e6e44d309a38ebb3572b57",
+      "bel": "p(HGNC:VCAN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "HSPA Family"
+      },
+      "id": "198c741b16ca85e7191f9bfe5e120ed4",
+      "bel": "p(SFAM:\"HSPA Family\")"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "SDIS",
+        "name": "bacterial infection"
+      },
+      "id": "4b2c7e6fa8fc99cc4454d59480e33260",
+      "bel": "path(SDIS:\"bacterial infection\")"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "SDIS",
+        "name": "tissue damage"
+      },
+      "id": "5f0936b036604cd1aae618800acdf016",
+      "bel": "path(SDIS:\"tissue damage\")"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "SDIS",
+        "name": "viral infection"
+      },
+      "id": "05a42e309cbdfee9792d643880e02abc",
+      "bel": "path(SDIS:\"viral infection\")"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HMGB1"
+      },
+      "id": "c2412d99743439d1ea0ee964cd3d1b63",
+      "bel": "r(HGNC:HMGB1)"
+    }
+  ],
+  "links": [
+    {
+      "relation": "hasVariant",
+      "source": 41,
+      "target": 42,
+      "key": "1c4f1369feaf989d70b6df7609f79f16"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 41,
+      "target": 43,
+      "key": "ff07f02d2041f16d4eda3e272dfc63b9"
+    },
+    {
+      "line": 24,
+      "relation": "decreases",
+      "evidence": "Low shear for 6 h resulted in a reduction of IkappaBalpha levels, an activation of NF-kappaB, and an increase in kappaB-dependent vascular cell adhesion molecule 1 (VCAM-1) mRNA expression and endothelial-monocyte adhesion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12620896"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 19,
+      "key": "dd0d04fadee117e5e946926223ef107d"
+    },
+    {
+      "line": 24,
+      "relation": "decreases",
+      "evidence": "Induction of RAW264.7-derived NO inhibited lipopolysaccharide-induced endothelial VCAM-1 expression, which was reversed by the NO synthase inhibitor Nomega-monomethyl-L-arginine. These findings indicate that NO inhibits NF-kappaB activation and VCAM-1 expression by increasing the expression and nuclear translocation of IkappaBalpha.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9388244"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 19,
+      "key": "b199e0690eb54f63ebdea7e6573638ce"
+    },
+    {
+      "line": 33,
+      "relation": "directlyDecreases",
+      "evidence": "Since activation of NF-B in A549 cells is dependent on IKK2, which phosphorylates serines 32 and 36 of IB as a prelude to IB degradation and activation of NF-B (Catley et al., 2005",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17322026"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 19,
+      "key": "94c0f5d990c2c2ed9e454db2f8cc69e1"
+    },
+    {
+      "line": 33,
+      "relation": "directlyDecreases",
+      "evidence": "from the paper:",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11909978"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 19,
+      "key": "b69003a9c3f37548c9d9bd661f67d825"
+    },
+    {
+      "line": 33,
+      "relation": "directlyDecreases",
+      "evidence": "TAK1 activates the IkB kinase (IKK) complex (composed of IKKa, IKKb, and NEMO/IKKa) that in turn phosphorylates the NF-bB inhibitor IkB to induce its K48 polyubiquitination and proteasomal degradation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19632174"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 19,
+      "key": "be0211c18d24f954030a1a4269f34535"
+    },
+    {
+      "line": 33,
+      "relation": "directlyDecreases",
+      "evidence": "In most cell types, the NFkB p50-p65 dimer is bound to one of the closely related endogneous  inhibitory proteins, collectively referred to as IkB, and is held inactive in the cyotplasm. A variety of extracellular signaling, including LPS, cytokines, stress factors have been reported to activate NFkb through phosphorylation of IkB at serine-32 and serine-36, dissociation of IkB from the complex, and translocation of the p50-p65 dimer fromt he cytolplasm to the nucleus.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12882972"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 19,
+      "key": "eb59ad333094fe163d1701a52dfd1d85"
+    },
+    {
+      "line": 33,
+      "relation": "directlyDecreases",
+      "evidence": "Here, we demonstrate that in astrocyte cultures IGF-I regulates NFkappaB, a transcription factor known to play a key role in the inflammatory reaction. IGF-I induces a site-specific dephosphorylation of IkappaBalpha (phospho-Ser(32)) in astrocytes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10973957"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 19,
+      "key": "5fc65b498754c84eb7ee18832b1d878b"
+    },
+    {
+      "line": 33,
+      "relation": "directlyDecreases",
+      "evidence": "The key event in the NF-?B activation is the IL-1-induced phosphorylation and degradation of the inhibitory cytoplasmic protein I?B, which leads to the release of NF-?B, its translocation to the nucleus and binding and transcriptional regulation of its target genes",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21776333"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 19,
+      "key": "8c835236978eb85e891c621a48b398f3"
+    },
+    {
+      "line": 33,
+      "relation": "directlyDecreases",
+      "evidence": "Exercise resulted in up to 2-fold increases in IKKalpha/beta phosphorylation in the soleus and red gastrocnemius muscles throughout the time course studied. In red gastrocnemius muscles, NF-kappaB activity increased 50% 1-3 h following 60 min of treadmill exercise, and returned to basal by 5 h. Contraction of isolated extensor digitorum longus (EDL) muscles in vitro increased IKKalpha/beta phosphorylation 10-fold and this was accompanied by a parallel increase in IkappaBalpha phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15888549"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "striated muscle": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 19,
+      "key": "103aebde22f56878f0dfd365db88b0c5"
+    },
+    {
+      "line": 33,
+      "relation": "directlyDecreases",
+      "evidence": "This was accompanied by reduced lung caspase-3 activity and defective degradation of NF-kappaB inhibitor IkappaB-alpha.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18372427"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 41,
+      "target": 19,
+      "key": "a39f88d4152262d560b76af3bfb70f9f"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Figures 2C and D show that exposure to hyperoxia induced a degradation of I?B?, supporting the EMSA data for hyperoxia-induced NF-?B activation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15477018"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "bronchial epithelial cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "fb8267aa480365bfe22fa9f7cda48b0e"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "In human neutrophils, TNF-alpha (200 U/ml) induced rapid I kappa B-alpha degradation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15162444"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Neutrophils": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "38435f1b53f16ffa3bceb53129265926"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "agents that inhibit NF?B activation are desired, and are currently being pursued,based on strategies that seek to maintain levels of endogenous NF?B-inhibiting I?B-family proteins, by either suppressing the IkB kinases (IKKs) responsible for phosphorylation of IkBalpha (which induces its polyubiquitination) or blocking the proteolytic activity of the 26s proteasome responsible for degrading IkB following ubiquitination (Figure 2A).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12559172"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "4fd87c40f1594d491810e2131375e692"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Simultaneous overexpression of selenophosphate synthetase and phospholipid-hydroperoxide GSH peroxidase (PHGPx) [250] blocks activation of NF-kB by IL-1. Overexpression of SOD [84] or GSH peroxidase [81, 211] abolished NF-kB activation by preventing degradation of IkB after stimulation with TNF-a. The precise mechanism(s) through which oxidants and reductants influence activation of NF-kB is presently unknown; however, there is evidence that antioxidant enzyme (AOE372), a redox-sensitive thioredoxin peroxidase, regulates IkB phosphorylation [246]. Phosphatases The phosphatases are an important component of most signal transduction pathways, because failure to reverse kinase actions can disrupt normal cellular functions. For example, transfection of human fibroblasts with constitutively active ras (hRasV12) inhibits cell growth and ultimately results in a senescentlike phenotype [441]. Similarly, constitutive ERK activation has an inhibitory effect on cell cycle progression [442,443]. Both the serine/threonine phosphatases and the PTPs are known to be redox-sensitive [82,144,153,156,271,281, 444-449]. The mechanism of redox effects on activity is probably best understood for the PTPs. Without exception, the PTPs contain a highly conserved region of 11 amino acid residues in their catalytic domain; specifi- cally, (Ile/Val)-His-Cys-X-Ala-Gly-X-X-Arg-(Ser/Thr)- Gly, where X is a nonconserved amino acid [17]. Either oxidation or mutation of the cysteine renders these molecules inactive [17,281]. H2O2 is a potent inhibitor of PTPs. As in the case of other oxidants, H2O2 probably oxidizes the thiolate anion at the catalytic site [280]. Because formation of a phosphorylcysteine intermediate seems to be critical to PTP activity [450-452], blocking it through oxidation of the cysteine inactivates the molecules. In many cases, treatment of cells with H2O2 stimulates increases in protein phosphorylation by inhibiting phosphatase-catalyzed removal of phosphate groups. Furthermore, mitogens that increase cellular ox- idant production may stimulate phosphorylation indirectly by decreasing phosphatase activity. Additional mechanisms are involved in stimulation of pathways activated by growth factors that increase oxidant production, however, because there are known instances in which the oxidants they produce have no effect on protein phosphorylation. For example, TGF-b1 stimulates phosphorylation of numerous proteins and has been shown to cause a large increase in H2O2 production; however, its effects on protein phosphorylation are not blocked by catalase [453]. Furthermore, H2O2 is effective in promoting phosphorylation of phospholipase D, the PDGF receptor, and PKC-a even after pretreatment of Swiss 3T3 fibroblasts with orthovanadate to inhibit phosphatases [454]. Thus, although diminished phosphatase activity may partially account for increased phosphorylation in some cases, it cannot totally account for oxidation effects on phosphorylation in every case. SPECIFICITY In general, there is good agreement between studies on redox effects on any given gene; albeit, not all oxidizing or reducing treatments exert equivalent effects. This is clearly demonstrated in studies of pag , which encodes a protein associated with cellular proliferation. Pag protein inhibits the tyrosine kinase activity of the Abelson (abl ) protein by binding to its SH3-binding domain [455]. BSO, menadione, sodium arsenate, and diethyl maleate all stimulate pag expression, but H2O2 does not [269]. Conversely, H2O2 stimulates c-fos expression (Table 1), although 4-hydroynonenal (a product of v-6-polyunsaturated fatty acid peroxidation) not only fails to induce c-fos expression but is actually inhibitory to c-fos induction by EGF and PDGF [185]. Similarly, some oxidants such as diamide decrease hypoxia-induced signals [201], although others such as H2O2 increase them [124]. As might be expected, the effects of any stimu...",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10699758"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "8297c96eb722838f4fdb4d2062e77a1a"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Here we show that beta-arrestin2 directly interacts with IkappaBalpha (inhibitor of NF-kappaB, the key molecule in innate and adaptive immunity) and thus prevents the phosphorylation and degradation of IkappaBalpha. Consequently, beta-arrestin2 effectively modulates activation of NF-kappa",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15125834"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "d08cad64a4c1e4293ec1e22dbcd07658"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "The IRAK4:IRAK1:TRAF6 complex then interacts at the membrane with another preformed complex consisting of TAK1, TAB1 and TAB2.  This interaction induces phosphorylation of TAB2 and TAK1.  TAK1 is subsuequently activated in the cytoplasm, leading to the activation of IKK.  Activation leads to phosphorylation and degradation of IKB and consequent release of NFKB. Activation of TAK1 also results in the activation of MAP kinases and JNK.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12893815"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "2fe196945c25a8f36523e5be3a4febbf"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "PKC (protein kinase C) enzymes which phosphorylate IkappaBalpha, leading to its degradation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15330761"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "e9f512afbd366b097171dd39595034a2"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "we found that IL-33R signaling induced a time-dependent activation of Erk1/2, protein kinase B (PKB), JNK1/2, NF-kB, and p38, and degradation of IkB (supplemental Figure 1B).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20200353"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "mast cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "aba1aa2e374b9cfc12922852248ad03a"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "# from full text # Here we show that UVC radiation leads to activation of a signaling pathway, distinct from the IKK pathway, which induces I?B? degradation in a manner dependent on phosphorylation of a cluster of C-terminal sites. The kinase that phosphorylates these sites is CK2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14580335"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "f420c5c1d006a5464475025f07ac5536"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "HSP27 does not affect I-kappaBalpha phosphorylation but enhances the degradation of phosphorylated I-kappaBalpha by the proteasome. The interaction of HSP27 with the 26S proteasome is required to activate the proteasome and the degradation of phosphorylated I-kappaBalpha. A protein complex that includes HSP27, phosphorylated I-kappaBalpha, and the 26S proteasome is formed",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12897149"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "501eb32515f0f87b21a9d4b53d392170"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Similar to wild-type A549 cells, treatment with TNF-? for 30 min induced I?B? degradation in vector control cells (Fig. 4B). On the other hand, TNF-?-induced I?B? degradation was blunted in DN I?B mutant cells (Fig. 4B), further supporting that these DN I?B mutant cells are less efficient in response to a NF-?B activator compared to the vector control cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15477018"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "d3c5135c9316c6035f1019117387c096"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Activation-induced induction of transcription factor NFkappaB in T lymphocytes is regulated by its inhibitor IkappaBalpha. NFkappaB activation has been demonstrated to occur either by phosphorylation on serine residues 32 and 36 of the inhibitor, IkappaBalpha, followed by ubiquitination and degradation of the inhibitor by the 26S proteasome, or by a proteasome-independent mechanism involving tyrosine phosphorylation, but not degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16271147"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "lymphocyte": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "f17f33b5ff221e32aa922dcd2f120f45"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Figure 1. Pathways to MUC5AC expression in COPD",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17615396"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "966d876dd84fd44046136014961b6911"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "The activation of TLR2 by Pam3CSK4 induced the degradation of the NF-kB inhibitor IkBa in human monocyte-derived macrophages. NF-kB activation was blocked by S1P at low micromolar concentrations. Statistically significant inhibition of TLR2-dependent NF-kB activation was observed with 1 mM S1P, which argues in favour of a receptor-dependent and physiologically relevant effect (Figure 4A).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18411230"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "c560f3d7cc81b2ad3b6dac4d5af766ab"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "The actual recognition of N-terminally phosphorylated IKappaBs is carried out by aWD repeat- and F box-containing protein called beta-TrCP (Ben-Neriah, 2002). Upon ubiquiti-nation, the IKappaB proteins are rapidly degraded by the proteasome,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11983155"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "bcf275a17a39269b6dca47fd711c7169"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "These studies provide new evidence that the protein kinase CKII physically associates with I kappa B alpha in vivo, induces multisite (serine/threonine) phosphorylation, and is required for the basal and HIV-induced degradation of I kappa B alpha in vitro.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8622692"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "830f991b9e11c7d805639720069a5bab"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Cytoplasmic and total cell protein extracts were analyzed by Western blotting for total IkBa and IkBa phosphorylated at serine residues 32 and 36. LPS exposure induced the rapid (within 15 min) phosphorylation and degradation of IkBa in both THP-1 cells (p,0.0001 for both processes; Figure 8, A and B) and elutriated primary human monocytes (p =0.003 and p,0.0001, respectively, ANOVA post hoc contrast of LPS vs. control for each; Figure 8, C and D).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19956541"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Monocytes": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "69b0f9cfb1137bc8e6f99025579a1e95"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "The Bcl-2-mediated loss of IkappaBalpha could be prevented by the proteasome inhibitor lactacystin, consistent with the notion that the targeted degradation of IkappaBalpha consequent to overexpression of Bcl-2 utilizes the ubiquitin-proteasome pathway.  This was further tested in human 293 cells in which the N-terminal region of IkappaBalpha was identified to be an important regulatory site for Bcl-2. Deletion of this region or a serine to alanine substitution mutant at amino acids 32 and 36, which are defective for both phosphorylation and degradation, were more resistant than wild type IkappaBalpha to the inhibitory effects of Bcl-2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9727009"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "2f3eebe7f70d27569cbd6a1abe76c63c"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Moreover, IGF-I-mediated dephosphorylation of IkappaBalpha protects this molecule from tumor necrosis factor alpha (TNFalpha)-stimulated degradation; therefore, IGF-I also inhibits the nuclear translocation of NFkappaB (p65) induced by TNFalpha exposure.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10973957"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "b1a3276c370f968c8746d53cc09026a6"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "TNF-alpha induced both phosphorylation and degradation of IKappaB-alpha in A549 cells within several minutes",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15489375"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "848c7488a2f92e0365b980a62e40abe7"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "In contrast to the serine 32/34 phosphorylation that triggers ubiquitination and degradation of IkappaBalpha, c-Abl-mediated phosphorylation at tyrosine 305 is associated with an increase of the IkappaBalpha protein stability. We also demonstrate that c-Abl targets the nuclear subpopulation of IkappaBalpha for phosphorylation and induces it to accumulate in the nucleus",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12167702"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "8333bbd7c75d291596eee003fb527c72"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "CSM-induced activation of TLR-4 has been shown to induce IRAK1 phosphorylation and TRAF6 degradation. An increase in IkB phosphorylation and degradation is also observed which ultimately leads to the translocation of NF-kB (p65) into the nucleus. The ability of cigarette smoke condensate (CSC) to activate NF-kB has also been demonstrated in another study using U937 cells. CSC has been shown to induce the activation of IKK (-a and -b) at 15 minutes post treatment, which resulted in increased phosphorylation of I?-B? at serine 32, resulting in Ik-Ba degradation and subsequent activation of NF-kB [53].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19842832"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "c2032c2738cf40b8618bc174ad5a30ef"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Expression of SphKG82D dramatically blocked the degradation of IKBa (Fig. 5a) and inhibited the NF-KB DNA binding activity in a dose-dependent manner (Fig. 5, b and c).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11777919"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "6870a55362352706ce839d17b760dbeb"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "MIP-1alpha treatment stimulated the degradation of IkappaBalpha, a cytoplasmic inhibitor of NF-kappaB",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11152622"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "87e0d5cc8446b492bff3d454f5984d2a"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Immunoblotting analyses revealed that constitutively active AKT2 significantly promoted IkBalpha degradation (Fig. 4D).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12048203"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "648d6f068fe6ebed7b2d6efc5fd86f77"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "5alpha-dihydrotestosterone achieved this effect through maintenance of IkappaBalpha protein levels in the face of phorbol ester, a stimulus that results in IkappaBalpha degradation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8824277"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "84bd0fd55722b3e2a4e40ec4e036ad3f"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "As shown in Fig. 10C, TNF-a rapidly induced complete degradation of I-kB-a",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10946303"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "d4fdd2b800655548c99ca33c88f874dd"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "It also associates specifically with phosphorylated IkappaBalpha and beta-catenin destruction motifs, probably functioning in multiple transcriptional programs by activating the NF-kappaB pathway and inhibiting the beta-catenin pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11850407"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "1c98d3f787540d2209c1f4ceb29c0e5b"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "ursodeoxycholic acid UDCA inhibited TGF-beta1-induced degradation of nuclear factor kappaB (NF-kappaB) and its inhibitor IkappaB (p < 0.05).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14514686"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "hepatocyte": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "2e175cf39b435ba9034fcb4984aaacba"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "To exclude off-target effects, SphK1 expression was also downregulated with siRNAs targeted to two other regions of the SphK1 sequence and both inhibited TNF-alpha-induced phosphorylation of IkBalpha and IKKalpha/beta (Supplementary Fig. 2a). Similar results were obtained in several other cell types (Supplementary Fig. 2b), suggesting that SphK1 has a general role in the canonical NF-kappaB pathway.  To conclusively demonstrate the involvement of SphK1, we also used pharmacological and genetic approaches. The specific SphK1 inhibitor, SK1-I, which decreases intracellular S1P levels 6, reduced TNF-alpha-induced I?B? degradation and phosphorylation of IKKalpha/beta (Fig. 1b)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20577214"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "55fc7f86f65027a550499a438d1f3721"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Reconstitution of NEMO-deficient Jurkat cells with wild-type, but not NEMOL329P, restored TNF-alpha-induced IkappaB degradation. Similar results were obtained for TNF-alpha-induced IkappaB degradation (Fig. 3c, d) and NF-kappaB binding (Fig. 3e) in NEMO-deficient mouse embryonic fibroblast (MEF) subclones reconstituted with wildtype NEMO or NEMOL329P.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16547522"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "3853687306af286904785c178b594e3b"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "In turn, IKK2 phosphorylates inhibitor of NF-kappaB (I-kappaBalpha), leading to its ubiquitination and subsequent degradation by the proteasome. This frees up the p65 and p50 subunits of NF-kappaB, which translocate to the nucleus. Intranuclear NF-kappaB then binds to kappaB recognition sites in the 5'-promoter (upstream) region of inflammatory genes, resulting in increased gene transcription, messenger RNA, and synthesis of inflammatory proteins.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16865089"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "dbce7f2468c4f3d6a4585a4967f93bbb"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Ubiquitin-tagged Ikappa Balpha  is degraded by the proteasome releasing NF-kappa B for migration to the nucleus. As a first approach to check the role of NF-kappa B in PKR-induced apoptosis, the NF-kappa B induction pathway was blocked by using the specific proteasome inhibitors, lactacystin and PSI.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10373514"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "5bf7bdbdf8f972702481f076fdbe444a"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "IL-33 rapidly activated ERK1/2, JNK, p38, and NF-kB signaling cascades, as evidenced by phosphorylation of MAP kinases and phosphorylation and degradation of the NF-kB inhibitor IkB-a.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18955562"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "basophil": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "af357efa6d4808542b93d77217d65b06"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "In human embryonic kidney 293 cells, IL-1beta induces IkappaB kinase beta (IKKbeta) activation, IkappaBalpha degradation, NF-kappaB transactivation, and weak Akt activation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11976320"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "300ceaf8658ee45fef6a136fb3394a1c"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "The mechanism of adiponectin action in endothelial cells has been further investigated. TNF-A activates nuclear transcription factor NF-KB in these cells by stimulating protein kinase NIK (NF-kB inducing kinase), which phosphorylates the NF-kB inhibitor, IkB, initiating its degradation and thus leading to NF-KB activation. NF-KB stimulates the expression of cytokines and adhesion molecules involved in the inflammatory process.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15916985"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "b973efb2b8c31895150778f55ceeda5e"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Inducers of NF-kB, which include inflammatory cytokines, reactive oxygen species, and viral products, activate a dimeric IkB kinase (IKK) complex, which phophorylates IkBa leading to subsequent ubiquitination and degradation of IkBa and release of NF-kB proteins [33,34].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14561188"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "8bcc8438ebf7f2546dd8c15e1c192215"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Phosphorylation of IkappaBalpha at serine 32 (S32) and serine 36 (S36) is necessary for this stimuli-induced degradation. IKKalpha/beta kinases and p90(rsk1)are involved in stimuli-induced targeting of one or both of these IkappaBalpha sites.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10398585"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "c5bb6196af4b559c2aaec883f189e5b0"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Since activation of NF-B in A549 cells is dependent on IKK2, which phosphorylates serines 32 and 36 of IB as a prelude to IB degradation and activation of NF-B (Catley et al., 2005",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17322026"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "c79650087462b0caa64ca142a0c86dcb"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "the I-kappaB kinase (IKK) is present and may phosphorylate I-kappaB during platelet activation. Coupled with intracellular calcium flux, this leads to I-kappaB dissociation from the NF-kappaB/I-kappaB complex and proteolysis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12297126"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Blood Platelets": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "ee00142b3c57d903bf99e1e0b0549881"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Pretreatment with EGF protected monolayers by increasing native PKC-beta1 activity, decreasing IkappaBalpha phosphorylation/degradation, suppressing NF-kappaB activation (p50/p65 subunit nuclear translocation/activity), enhancing stable actin (increased F-actin-to-G-actin ratio), increasing stability of actin cytoskeleton, and reducing barrier hyperpermeability.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14602581"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "2fc8f885767e85870d6786d08069b7f2"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "TNF induced NF-kappaB activation as measured by DNA binding but deletion of PKR abolished this activation.This inhibition was associated with suppression of inhibitory subunit of NF-kappaB (IkappaB)alpha kinase (IKK) activation, IkappaBalpha phosphorylation and degradation, p65 phosphorylation and nuclear translocation, and NF-kappaB-dependent reporter gene transcription.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16924232"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "d67766fccbbe9c5c9002b63ac0124b8c"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Moreover, immunopurified beta-TrCP ubiquitinates phosphorylated IkappaBalpha at specific lysines in the presence of Ub-activating (E1) and -conjugating (Ubch5) enzymes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9990853"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "9bf26b9bfca993379cbede91f95e9fb0"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "fro full text Results - Plumbagin inhibited TPA-induced DNA-binding activities of NF-kB, c-Fos, and c-Jun/IkBa degradation and phosphorylation in A549 cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19768635"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Lung Neoplasms": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "911c6f44578974db93bc97692442ece8"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Upon phosphorylation by IKKs, I{kappa}B proteins are recognized and ubiquitinated by members of the Skp1-Culin-Roc1/Rbx1/Hrt-1-F-box (SCF or SCRF) family of ubiquitin ligases (for review, see Ben-Neriah 2002Go) and subsequently degraded (Modified from full text).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15371334"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "800c76c80190793c5ba4ff77e19428d2"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "We found that IL-1 caused rapid phosphorylation of ERK1/2, JNK, p38, MKK3/6, Akt, IKK, c-Jun, ATF-2, ATF-1, CREB, p65, and IKBa, induced the degradation of IKBa and IKBe, and activated the synthesis of c-fos (Fig. 4)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19074142"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "glioblastoma": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "25d5bbf274431008de83a4c0df52c8da"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Treatment of A549 cells with TGF-beta1-induced IkappaB kinase alpha/beta (IKKalpha/beta) phosphorylation, IkappaBalpha phosphorylation, IkappaBalpha degradation, p65 Ser536 phosphorylation, and kappaB-luciferase activity. The TGF-beta1-mediated increases in IKKalpha/beta phosphorylation, p65 Ser536 phosphorylation, and kappaB-luciferase activity were inhibited by LY 294002, an Akt inhibitor",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17307160"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "48ba8a954e3ba3d968ef59d131affc7a"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "CHUK specifically phosphorylates IkappaB-alpha on both serine 32 and serine 36, modifications that are required for targeted degradation of IkappaB-alpha via the ubiquitin-proteasome pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9244310"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "a7decf56c835e8104384998e14ed1f53"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Activation of NF-kappaB by TNF-alpha occurred within 15 min and coincided with rapid degradation of IkappaBalpha. Co-treatment with NO donors did not prevent IkappaBalpha phosphorylation or degradation. However, after 2 h of TNF-alpha stimulation, NO donors inhibited NF-kappaB activation and augmented IkappaBalpha resynthesis and nuclear translocation by 2.5- and 3-fold, respectively. This correlated with a 75% reduction in TNF-alpha-induced VCAM-1 expression. In a time-dependent manner, NO donors alone caused the nuclear translocation of IkappaBalpha",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9388244"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "157ff4a4aa627eb7a46d79c9a28eb22e"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "CD86 stimulation also increased the level of IkappaB-alpha phosphorylation but in a protein kinase C-independent manner",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15024018"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "f1251002bb534ac43619b9a779aa3c14"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "We demonstrated recently that BCL11B controls expression from the IL (interleukin)-2 promoter through direct binding to the US1 (upstream site 1). In the present study, we provide evidence that BCL11B also participates in the activation of IL-2 gene expression by enhancing NF-kappaB (nuclear factor kappaB) activity in the context of TCR (T-cell receptor)/CD28-triggered T-cell activation. The enhanced IkappaB degradation in cells with increased levels of BCL11B was specific for T-cells activated through the TCR, but not for cells activated through TNFalpha (tumour necrosis factor alpha) or UV light, and was caused by increased activity of IkappaB kinase, as indicated by its increase in phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18831712"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "ab02d3b4f5b557a304ed02b608552eda"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "We investigated its role in NF-?B activation and ROS production induced by TNF-? by using rapamycin (sirolimus), a well-characterized immunosuppressant and potent inhibitor of the signaling cascade. As described above, the phosphorylation and subsequent degradation of I?B play a critical role in regulating NF-?B translocation to the nucleus and subsequent transcriptional regulation. In Figure 6, we asked if rapamycin has any effect on TNF-?-induced degradation of I?B?; clearly, it did. I?B? is largely stabilized by the pretreatment.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18463678"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Keratinocytes": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "4546480bd8ba19220ce71812b7840991"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "ctivation of NF-kappaB by TNF and IL-1 is initiated by the phosphorylation of the inhibitory subunit, IkappaB, which targets IkappaB for degradation and leads to the release of active NF-kappaB.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9418855"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "9360f38ae810453e5a4318a61857edc2"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "phosphorylation and ubiquitination-dependent degradation of IkappaBalpha, the cytoplasmic inhibitor of NFkappaB, via the inducible IkappaB kinase (IKK) complex, liberates NFkappaB to translocate into the nucleus and to transcriptionally activate its target genes, including the IL2 gene",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12044776"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "1057f926f37e1ef512b8956ca4d878e5"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Stimulation of the MDMs with CSM for 30 min induced the phosphorylation of IRAK which was abolished by adding NAC (Fig. 6A). Moreover, CSM and LPS (as a control) degradated I?B-? and preincubation of MDMs with NAC suppressed the degradation of I?B-? induced by CSM (Fig. 6D).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19409098"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "d8aacac1c1d38a6f2dc94cd8f76e9c9c"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Consistent with this, these reagents also eliminate the ability of the Skp1-CUL1-HOS-ROC1 E3 ligase complex to support the ubiquitination of IkappaBalpha.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10748083"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "8e18d7d7f969d7ce839ce9c6cd5d938f"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "SUMO-1 modification was found to antagonize IkappaBalpha ubiquitination and protect it from degradation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10788439"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "02732fe2c75ed3dc4b2d72c52f6cf442"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "The degradation of IKappaB-alpha at 20 min after stimulation by LPS was completely abolished in the presence of paxilline",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16951373"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "dbac0130c95c08b4eaf125c4f8e97acf"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "SAA induced IkappaB-alpha degradation, RelA serine 536 (S536) phosphorylation, NF-kappaB transcriptional activity",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15724247"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "bab345344a7d4343a0fb4c55450e37a8"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "from the paper:",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11909978"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "2ffc8ccc7a50f842c68440f640b56ea4"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "OPN also induces NFkappaB activation through phosphorylation and degradation of IkappaBalpha by inducing the IKK activity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12771144"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "d001d79c4598d5fbadec4ccf9473e0e1"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "neutrophil stimulation with pro-inflammatory signals results in degradation of IkappaBalpha that occurs in both cytoplasm and nucleus.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12244195"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "235f74734b606b5554ddc578d0fd0fe2"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Activation of NF-kappaB mainly occurs via IkappaB kinase (IKK)-mediated phosphorylation of inhibitory molecules, including IkappaBalpha",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15653325"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "dde2cadb2a87b3aeecbf79fdefc45d81"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "reducing endogenous levels of ASC using siRNA enhanced TNF- and LPS-induced degradation of the IKK substrate, IkappaBalpha.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12486103"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "afdca0f105e4886cbe2d9216118edd54"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "BetaTrCP and HOS are closely related F-box proteins, which play key roles in ubiquitination and degradation of beta-catenin and IkappaB through associating with those phosphorylated substrates and recruiting SCF E3 ubiquitin ligase",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11850814"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "0d8a17d19260c454a19fa2ac3f71212f"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Furthermore, TWEAK induced rapid phosphorylation of IkappaB-alpha in human keratinocytes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15140220"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Keratinocytes": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "481b32d078d8ffdeb3854e3eff737e43"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "overexpressing PKC-zeta results in lower steady-state protein levels of free IkappaBalpha, which is dependent on S293.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10764587"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "9836d5d7336e01ac350706ae09f074cd"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "The lipopolysaccharide-induced degradation of IL-1R-associated kinase 1, IkappaBalpha, and IkappaBbeta was inhibited by elafin",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16980310"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "e2da3d12572f0c5802edc8d452d61682"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "The incubation of ECs for 1 h in the presence of TNF-a alone induced significant degradation of IkB-a.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20351055"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "ccb1df0640280c0e4222b743293daf46"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "PAR-4 was found to directly inhibit the phosphorylation and degradation of I kappa B alpha, which led to the loss of NF kappa B activity causing repression of endogenous and radiation-induced Bcl-2 protein.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12170775"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "3146b5f1c5a3a677ba184be1e02aa70a"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "Two related kinases, IkappaB kinase alpha (IKKalpha) and IKKbeta, phosphorylate the IkappaB proteins, leading to their degradation and the subsequent activation of gene expression by NF-kappaB",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10779355"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "e406d7db68d6aeb4224a82c40c63933d"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "NFKB PDTC Preclinical treatment (44) PS-341 Preclinical treatment (45,46)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14587863"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "7ba623d4f78363ce917f0c10465356e5"
+    },
+    {
+      "line": 45,
+      "relation": "directlyDecreases",
+      "evidence": "The microtubule disassembly also induced IkappaB degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11306700"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 41,
+      "target": 41,
+      "key": "9ff876888a674aad6518c7e98fe70b77"
+    },
+    {
+      "relation": "partOf",
+      "source": 36,
+      "target": 20,
+      "key": "d95e8bdcf55e2d2b904f1cd426ebbe9a"
+    },
+    {
+      "relation": "partOf",
+      "source": 36,
+      "target": 21,
+      "key": "223a6325fbed1cf9ae800f2999ce664d"
+    },
+    {
+      "relation": "partOf",
+      "source": 54,
+      "target": 20,
+      "key": "d59bd30b676f1d378918839e8503af55"
+    },
+    {
+      "line": 104,
+      "relation": "increases",
+      "evidence": "Both interleukin-1 receptor (IL-1R) and toll-like receptor 2 (TLR2) signal via the adapter molecule MyD88.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16413919"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 54,
+      "target": 38,
+      "key": "8e39a8fcad1df32f6ff171116dce5c43"
+    },
+    {
+      "line": 104,
+      "relation": "increases",
+      "evidence": "Bacterial lipoproteins (BLPs), which are expressed by all bacteria, are potent activators of Toll-like receptor-2 (TLR2). Here we show that the adaptor molecule, myeloid differentiation factor 88 (MyD88), mediates both apoptosis and nuclear factor-kappaB (NF-kappaB) activation by BLP-stimulated TLR2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10880445"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 54,
+      "target": 38,
+      "key": "44499812e9766827cf3163c828b84d84"
+    },
+    {
+      "line": 104,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11441107"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 54,
+      "target": 38,
+      "key": "55d485cc720e2b45df972968d0ea8e9a"
+    },
+    {
+      "line": 104,
+      "relation": "increases",
+      "evidence": "Furthermore, pretreatment of DCs with MyD88 and IL-1 receptor-associated kinase (IRAK) 1/4 inhibitors, or TLR2 antibody diminished the S. pneumoniae induced IL-23 and abolished morphine's inhibitory effects, indicating that S. pneumoniae induced IL-23 production depends on activation of the TLR2-MyD88-IRAK1/4 signaling pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21245149"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "dendritic cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 54,
+      "target": 38,
+      "key": "312a2df93b939f16bea18c361979e571"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "A common characteristic of infiltrating cell populations was elevated expression of genes encoding components of the toll-like receptor signaling pathway (e.g., Irf5 and Myd88).",
+      "citation": {
+        "db": "Other",
+        "db_id": "20686622"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "liver": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 34,
+      "target": 38,
+      "key": "7147fa374059047cd76ea1ee2e1c4185"
+    },
+    {
+      "relation": "partOf",
+      "source": 56,
+      "target": 21,
+      "key": "c3641ac6c5c5359069e4827c0bb98964"
+    },
+    {
+      "line": 23,
+      "relation": "increases",
+      "evidence": "These results indicate that LPS induces autophagy through a TRIF-dependent TLR4 signaling pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17658277"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 56,
+      "target": 52,
+      "key": "cf7543d81f9f2671b81c64eb5d4b792c"
+    },
+    {
+      "line": 23,
+      "relation": "increases",
+      "evidence": "From full text: TLRs signal through two main pathways, defined by the adaptor molecules used at the start of each. The best characterized of these is the MyD88-dependent pathway, common to all TLRs except TLR3, which results in rapid activation of the transcription molecules nuclear factor ?B (NF-?B), activator protein 1 and Elk-1 and induction of proinflammatory mediators such as tumour necrosis factor-? (TNF-?), interleukin-6 (IL-6) and cyclooxygenase-2.13,14 Activation of the NF-?B p65 and activator protein 1 transcription factors is reduced in endotoxin-tolerant cells.15 TLR7, -8 and -9 can also induce type I interferon (IFN) production in a MyD88-dependent manner, involving the activation of the interferon regulatory factor 5 (IRF-5)16 and IRF-717 transcription factors. The second, less well-studied pathway is thought to be limited to TLR3 and TLR4. TLR signalling via the adaptor molecules Toll/IL-1-receptor-domain-containing adaptor inducing IFN-? (TRIF) and TRIF-related adaptor molecule (TRAM) activates IRF-3 and IRF-7 and, ultimately, IFN-inducible genes such as IFN-?-inducible protein 10 (IP-10) and RANTES, via type I IFN production and autocrine activation of the JAK/STAT pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17034424"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 56,
+      "target": 52,
+      "key": "d6962722f2994ed8acb7c40738373e56"
+    },
+    {
+      "line": 23,
+      "relation": "increases",
+      "evidence": "TLR3 and TLR4 activate IRF3 and NF-kappaB through the TRIF-dependent pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16143103"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 56,
+      "target": 52,
+      "key": "0e1b0473a468f8b79283cf4295340e37"
+    },
+    {
+      "line": 23,
+      "relation": "increases",
+      "evidence": "TLR4 links to both MyD88 and Trif, TLR3 exclusively uses Trif, and the other TLRs use MyD88 as their major adaptor to transduce signals to downstream effectors (4).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18772134"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 56,
+      "target": 52,
+      "key": "11936477d459eb3d2324f640a10745ca"
+    },
+    {
+      "line": 23,
+      "relation": "increases",
+      "evidence": "while TRAM recruits TRIF to TLR4 for activation of IRF3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21108806"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 56,
+      "target": 52,
+      "key": "5c322581b9a9cb5e2066642002dc088d"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "MyD88 also interacts with IRF5 and IRF1 and is required for the activation of these IRFs. IRF5 was identified as being crucial for the induction of proinflammatory cytokines and type I IFNs by all TLRs tested...other TLR4-mediated MyD88-dependent signals, such as IRF5 activation,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17457343"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 56,
+      "target": 38,
+      "key": "e96a3cdbc4c58579e9bef914d994d318"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "TLR4 links to both MyD88 and Trif, TLR3 exclusively uses Trif, and the other TLRs use MyD88 as their major adaptor to transduce signals to downstream effectors (4).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18772134"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 56,
+      "target": 38,
+      "key": "26674d2095cdc561f0d74a58e339ea85"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "An impaired IRAK4 activation was observed with TLR4 mutant PMN, in which the HMGB1-induced IRAK4 activity was attenuated by 64% compared with that in TLR4 WT PMN (Fig. 5B).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17475888"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Neutrophils": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 56,
+      "target": 38,
+      "key": "20abeec4f09de3a817047453d71e3e26"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "Aggregation through TLR4 and 2 involved the production of NO, increase in cellular cGMP, and activation of PKG.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19945154"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Blood Platelets": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 56,
+      "target": 38,
+      "key": "a1851a97d824e4511c1499f666fc2044"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "TLR4, in addition, activates NF-kappaB and MAP kinases via the MyD88-dependent pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16143103"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 56,
+      "target": 38,
+      "key": "198423a7849c0e5e2e0bf27a6d244e03"
+    },
+    {
+      "line": 86,
+      "relation": "directlyIncreases",
+      "evidence": "Upon phosphorylation by IKKs, I{kappa}B proteins are recognized and ubiquitinated by members of the Skp1-Culin-Roc1/Rbx1/Hrt-1-F-box (SCF or SCRF) family of ubiquitin ligases (for review, see Ben-Neriah 2002Go) and subsequently degraded (Modified from full text).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15371334"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 42,
+      "target": 41,
+      "key": "ac407f5807e120ff95327d71f3f25af9"
+    },
+    {
+      "line": 86,
+      "relation": "directlyIncreases",
+      "evidence": "Since activation of NF-B in A549 cells is dependent on IKK2, which phosphorylates serines 32 and 36 of IB as a prelude to IB degradation and activation of NF-B (Catley et al., 2005",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17322026"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 42,
+      "target": 41,
+      "key": "9aed3c411c3d6a9de79f184648d0281b"
+    },
+    {
+      "line": 86,
+      "relation": "directlyIncreases",
+      "evidence": "Phosphorylation of IkappaBalpha at serine 32 (S32) and serine 36 (S36) is necessary for this stimuli-induced degradation. IKKalpha/beta kinases and p90(rsk1)are involved in stimuli-induced targeting of one or both of these IkappaBalpha sites.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10398585"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 42,
+      "target": 41,
+      "key": "6e054fe8ad90b0088f61dcc5087a63e7"
+    },
+    {
+      "line": 86,
+      "relation": "directlyIncreases",
+      "evidence": "Activation-induced induction of transcription factor NFkappaB in T lymphocytes is regulated by its inhibitor IkappaBalpha. NFkappaB activation has been demonstrated to occur either by phosphorylation on serine residues 32 and 36 of the inhibitor, IkappaBalpha, followed by ubiquitination and degradation of the inhibitor by the 26S proteasome, or by a proteasome-independent mechanism involving tyrosine phosphorylation, but not degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16271147"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 42,
+      "target": 41,
+      "key": "c82d028ac6f1f3a10cbcc917824389ae"
+    },
+    {
+      "line": 86,
+      "relation": "directlyIncreases",
+      "evidence": "Figure 1. Pathways to MUC5AC expression in COPD",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17615396"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 42,
+      "target": 41,
+      "key": "23099432c61ae9cf2b5db1ee8482ec38"
+    },
+    {
+      "line": 73,
+      "relation": "increases",
+      "evidence": "The type-I interferon (IFN-alpha/beta) response is critical to immunity against viruses and can be triggered in many cell types by cytosolic detection of viral infection, or in differentiated plasmacytoid dendritic cells by the Toll-like receptor 9 (TLR9) subfamily, which generates signals via the adaptor MyD88 to elicit robust IFN induction. Using mice deficient in the Irf7 gene (Irf7-/- mice), we show that the transcription factor IRF-7 is essential for the induction of IFN-alpha/beta genes via the virus-activated, MyD88-independent pathway and the TLR-activated, MyD88-dependent pathway. Viral induction of MyD88-independent IFN-alpha/beta genes is severely impaired in Irf7-/- fibroblasts. Consistently, Irf7-/- mice are more vulnerable than Myd88-/- mice to viral infection, and this correlates with a marked decrease in serum IFN levels, indicating the importance of the IRF-7-dependent induction of systemic IFN responses for innate antiviral immunity. Furthermore, robust induction of IFN production by activation of the TLR9 subfamily in plasmacytoid dendritic cells is entirely dependent on IRF-7, and this MyD88-IRF-7 pathway governs the induction of CD8+ T-cell responses. Thus, all elements of IFN responses, whether the systemic production of IFN in innate immunity or the local action of IFN from plasmacytoid dendritic cells in adaptive immunity, are under the control of IRF-7.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15800576"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 35,
+      "target": 38,
+      "key": "13b660882dac30fb73b86b89e7612f2b"
+    },
+    {
+      "line": 10,
+      "relation": "increases",
+      "evidence": "The detection of a viral infection by pattern recognition receptors (PAMPs) is an integral part of antiviral immunity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16424225"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 64,
+      "target": 11,
+      "key": "d4e46673e616d2e2376db7603530c75d"
+    },
+    {
+      "line": 8,
+      "relation": "increases",
+      "evidence": "The IRAK4:IRAK1:TRAF6 complex then interacts at the membrane with another preformed complex consisting of TAK1, TAB1 and TAB2.  This interaction induces phosphorylation of TAB2 and TAK1.  TAK1 is subsuequently activated in the cytoplasm, leading to the activation of IKK.  Activation leads to phosphorylation and degradation of IKB and consequent release of NFKB. Activation of TAK1 also results in the activation of MAP kinases and JNK.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12893815"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 37,
+      "target": 22,
+      "key": "935b8692100d6a8ed70fc311f7e5c8f0"
+    },
+    {
+      "line": 15,
+      "relation": "directlyIncreases",
+      "evidence": "We show that TAK1 physically interacts with NIK and with IKK2, and both XIAP or active TAK1 can stimulate IKK2 kinase activity",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10807933"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 37,
+      "target": 24,
+      "key": "3d787727ef29608b013e14a565b199cb"
+    },
+    {
+      "line": 18,
+      "relation": "increases",
+      "evidence": "Thus, IKKepsilon and TBK1 have a pivotal role in coordinating the activation of IRF3 and NF-kappaB in the innate immune response (via TLR3 activation).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12692549"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 55,
+      "target": 27,
+      "key": "95d44b4f501b531d55079c7d400434d7"
+    },
+    {
+      "line": 78,
+      "relation": "increases",
+      "evidence": "From full text: TLRs signal through two main pathways, defined by the adaptor molecules used at the start of each. The best characterized of these is the MyD88-dependent pathway, common to all TLRs except TLR3, which results in rapid activation of the transcription molecules nuclear factor ?B (NF-?B), activator protein 1 and Elk-1 and induction of proinflammatory mediators such as tumour necrosis factor-? (TNF-?), interleukin-6 (IL-6) and cyclooxygenase-2.13,14 Activation of the NF-?B p65 and activator protein 1 transcription factors is reduced in endotoxin-tolerant cells.15 TLR7, -8 and -9 can also induce type I interferon (IFN) production in a MyD88-dependent manner, involving the activation of the interferon regulatory factor 5 (IRF-5)16 and IRF-717 transcription factors. The second, less well-studied pathway is thought to be limited to TLR3 and TLR4. TLR signalling via the adaptor molecules Toll/IL-1-receptor-domain-containing adaptor inducing IFN-? (TRIF) and TRIF-related adaptor molecule (TRAM) activates IRF-3 and IRF-7 and, ultimately, IFN-inducible genes such as IFN-?-inducible protein 10 (IP-10) and RANTES, via type I IFN production and autocrine activation of the JAK/STAT pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17034424"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 55,
+      "target": 52,
+      "key": "7087293578ed693be89e7ee35c7120a1"
+    },
+    {
+      "line": 78,
+      "relation": "increases",
+      "evidence": "Interestingly, signaling through TLR1 or TLR3 induced similar responses, despite their use of different adaptor proteins, MydD88 for TLR1 and Trif for TLR3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18772134"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 55,
+      "target": 52,
+      "key": "c42f0aaa7654d468daf74ff26c73afc7"
+    },
+    {
+      "line": 78,
+      "relation": "increases",
+      "evidence": "TLR3 and TLR4 activate IRF3 and NF-kappaB through the TRIF-dependent pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16143103"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 55,
+      "target": 52,
+      "key": "77759baa58a90d679be3564244e26f95"
+    },
+    {
+      "line": 102,
+      "relation": "increases",
+      "evidence": "Thus, IKKepsilon and TBK1 have a pivotal role in coordinating the activation of IRF3 and NF-kappaB in the innate immune response (via TLR3 activation).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12692549"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 55,
+      "target": 51,
+      "key": "17672bcd0242bc390732d331963c2ff0"
+    },
+    {
+      "line": 101,
+      "relation": "increases",
+      "evidence": "Then, IRAK4 activates IRAK1 and IRAK2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22661952"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 32,
+      "target": 31,
+      "key": "a0952f2b1e744c1f12e69b31bfd701b7"
+    },
+    {
+      "line": 101,
+      "relation": "increases",
+      "evidence": "MyD88 promotes association with IRAK4 and IRAK1.  During the formation of this complex, IRAK4 is activated, leading to the hyperphosphorylation of IRAK1, which then induces interaction of TRAF6 with the complex.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12893815"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 32,
+      "target": 31,
+      "key": "69bc9e6b7ba41754e284740497d24a02"
+    },
+    {
+      "line": 101,
+      "relation": "increases",
+      "evidence": "In this report, we demonstrate that IRAK-4 is recruited to the IL-1R complex upon IL-1 stimulation and is required for the recruitment of IRAK-1 and its subsequent activation/degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15292196"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 32,
+      "target": 31,
+      "key": "e8f71c95dba55fbacadd0644f643bb50"
+    },
+    {
+      "line": 27,
+      "relation": "directlyIncreases",
+      "evidence": "The IKK immunoprecipitates from thrombin-treated cells showed increased phosphorylation of GST-IkBalpha compared with the immunoprecipitates from control cells (Fig. 6), indicating the activation of IKK by thrombin.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15843586"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "umbilical vein endothelial cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 43,
+      "key": "00b2e326cf2f19f74ce23de94ffe476b"
+    },
+    {
+      "line": 27,
+      "relation": "directlyIncreases",
+      "evidence": "In the classical NF-{kappa}B signaling pathway, IKK{beta} is both necessary and sufficient for phosphorylation of I{kappa}B{alpha} on Ser 32 and Ser 36, and I{kappa}B{beta} on Ser 19 and Ser 23.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15371334"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 43,
+      "key": "715ed17af6fb5e4f7f41135b260a0749"
+    },
+    {
+      "line": 84,
+      "relation": "directlyIncreases",
+      "evidence": "In the classical NF-{kappa}B signaling pathway, IKK{beta} is both necessary and sufficient for phosphorylation of I{kappa}B{alpha} on Ser 32 and Ser 36, and I{kappa}B{beta} on Ser 19 and Ser 23.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15371334"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 42,
+      "key": "6117674978385fd080ba5f1991b48c65"
+    },
+    {
+      "line": 84,
+      "relation": "directlyIncreases",
+      "evidence": "The IKK immunoprecipitates from thrombin-treated cells showed increased phosphorylation of GST-IkBalpha compared with the immunoprecipitates from control cells (Fig. 6), indicating the activation of IKK by thrombin.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15843586"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "umbilical vein endothelial cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 42,
+      "key": "5db1e5fa15733aa3c15e8b19f41f773a"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 44,
+      "target": 19,
+      "key": "8bfaabe0f78bf0eb4246adb1b53443d2"
+    },
+    {
+      "line": 82,
+      "relation": "directlyIncreases",
+      "evidence": "the stimulatory effects of biglycan are significantly reduced in TLR4-mutant (TLR4-M), TLR2–/–, and myeloid differentiation factor 88–/– (MyD88–/–) macrophages and completely abolished in TLR2–/–/TLR4-M macrophages",
+      "citation": {
+        "db": "Other",
+        "db_id": "16025156"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "macrophages": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 14,
+      "target": 56,
+      "key": "0901be914b1c625fed3340989a820755"
+    },
+    {
+      "line": 85,
+      "relation": "directlyIncreases",
+      "evidence": "In agreement, the stimulatory effects of biglycan are significantly reduced in TLR4-mutant (TLR4-M), TLR2-/-, and myeloid differentiation factor 88-/- (MyD88-/-) macrophages and completely abolished in TLR2-/-/TLR4-M macrophages. Biglycan-null mice have a considerable survival benefit in LPS- or zymosan-induced sepsis due to lower levels of circulating TNF-alpha and reduced infiltration of mononuclear cells in the lung, which cause less end-organ damage. Importantly, when stimulated by LPS-induced proinflammatory factors, macrophages themselves are able to synthesize biglycan.",
+      "citation": {
+        "db": "Other",
+        "db_id": ""
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "macrophages": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 14,
+      "target": 54,
+      "key": "925bfe6728273f7660b1fe956f933784"
+    },
+    {
+      "line": 85,
+      "relation": "directlyIncreases",
+      "evidence": "the stimulatory effects of biglycan are significantly reduced in TLR4-mutant (TLR4-M), TLR2–/–, and myeloid differentiation factor 88–/– (MyD88–/–) macrophages and completely abolished in TLR2–/–/TLR4-M macrophages",
+      "citation": {
+        "db": "Other",
+        "db_id": "16025156"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "macrophages": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 14,
+      "target": 54,
+      "key": "9623c83a0bde12b70926a4f21c677722"
+    },
+    {
+      "line": 83,
+      "relation": "increases",
+      "evidence": "lipoteichoic acid induced signalling by human innate immune receptor TLR2, confirming its role as a microbe-associated molecular pattern. Its activity was partially dependant on TLR1",
+      "citation": {
+        "db": "Other",
+        "db_id": "22028855"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "gram positive bacteria": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 0,
+      "target": 53,
+      "key": "c7a4768b19fa33f8a7e03ba5fd24f3e9"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "Thus, IKKepsilon and TBK1 have a pivotal role in coordinating the activation of IRF3 and NF-kappaB in the innate immune response (via TLR3 activation).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12692549"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 51,
+      "target": 33,
+      "key": "904d840bc90c6f5ca9ba5784fcb23521"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "The interaction of TRIF and non-canonical IlB kinases IKKe and TANK-binding kinase 1 (TBK1) leads to phosphorylation of IRF-3 by the kinases.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19025601"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 51,
+      "target": 33,
+      "key": "f9c40a272f53086de79a458e4f954b5a"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "TANK-binding kinase-1 (TBK1) and the inducible IkappaB kinase (IKK-i) have been shown recently to activate interferon (IFN) regulatory factor-3 (IRF3), the primary transcription factor regulating induction of type I IFNs.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15210743"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 51,
+      "target": 33,
+      "key": "4e9b583a2f3dd3c9e696946ebf91b51f"
+    },
+    {
+      "line": 97,
+      "relation": "increases",
+      "evidence": "Unlike mDCs, however, pDCs express TLR9, which recognizes viral double-stranded microbial DNA [4].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19515231"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "dendritic cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 9,
+      "target": 58,
+      "key": "a7fb1f7c7dfa8e7b66b2a062a77fc028"
+    },
+    {
+      "line": 57,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11526399"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 58,
+      "target": 38,
+      "key": "73cb90b3a1e0c93987fbc4c7e27582ee"
+    },
+    {
+      "line": 57,
+      "relation": "increases",
+      "evidence": "These results suggest that CpG ODN activates the TLR9-MyD88-ERK1/2 pathway causing expression of Egr-1 and its target genes such as TF and Nab2, thus inducing foam cell formation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19737531"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 58,
+      "target": 38,
+      "key": "aaf7aa3157c22d6572149de2282d9a65"
+    },
+    {
+      "line": 57,
+      "relation": "increases",
+      "evidence": "TLR9 primarily induces ISRE gene expression through IRF7...TLR9, which exclusively couples to the MyD88-dependent pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16143103"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 58,
+      "target": 38,
+      "key": "9bf3ae0d0ab42f6aa4ce24924dae429f"
+    },
+    {
+      "line": 57,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12902324"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 58,
+      "target": 38,
+      "key": "ec3866f424d5f1325216e7c9b6a119bb"
+    },
+    {
+      "line": 110,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11489966"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 16,
+      "target": 57,
+      "key": "58812e1b801da9ba6e4903d943689c92"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "Interestingly, signaling through TLR1 or TLR3 induced similar responses, despite their use of different adaptor proteins, MydD88 for TLR1 and Trif for TLR3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18772134"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 53,
+      "target": 38,
+      "key": "00b9ebf96b617f1d3339a8df61a8e0e2"
+    },
+    {
+      "line": 106,
+      "relation": "directlyIncreases",
+      "evidence": "Here we show that the MAPKK kinase TAK1 acts upstream of NIK in the IL-1-activated signalling pathway and that TAK1 associates with TRAF6 during IL-1 signalling.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10094049"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 59,
+      "target": 37,
+      "key": "7777870aef871178a86fd6602847e064"
+    },
+    {
+      "line": 106,
+      "relation": "directlyIncreases",
+      "evidence": "All living organisms are exposed constantly to microorganisms that are present in the environment and need to cope with invasion of these organisms into the body. The vertebrate immune response can be divided into innate and acquired immunity, with innate immunity being the first line of defence against pathogens. By contrast, acquired immune responses are slower processes, which are mediated by T and B cells, both of which express highly diverse antigen receptors that are generated through DNA rearrangement and are thereby able to respond to a wide range of potential antigens. This highly sophisticated system of antigen detection is found only in vertebrates and has been the subject of considerable research. Far less attention has been directed towards innate immunity, as it has been regarded as a relatively nonspecific system, with its main roles being to destroy pathogens and to present antigen to the cells involved in acquired immunity. However, recent studies have shown that the innate immune system has a greater degree of specificity than was previously thought and that it is highly developed in its ability to discriminate between self and foreign pathogens1. This discrimination relies, to a great extent, on a family of evolutionarily conserved receptors, known as the Toll-like receptors (TLRs), which have a crucial role in early host defence against invading pathogens1, 2. Furthermore, accumulating evidence indicates that activation of the innate immune system is a prerequisite for the induction of acquired immunity, particularly for the induction of a T helper 1 (TH1)-cell response3, 4. This marked shift in our thinking has changed our ideas about the pathogenesis and treatment of cancers, and infectious, immune and allergic diseases. In the past few years, our knowledge of TLR signalling and the responses these receptors control has greatly increased. In this review, we discuss the TLRs, focusing on their signalling pathways.  TLR/IL-1R superfamily: structure and function  The discovery of the TLR family began with the identification of Toll, a receptor that is expressed by insects and was found to be essential for establishing dorsoventral polarity during embryogenesis5. Subsequent studies revealed that Toll also has an essential role in the insect innate immune response against fungal infection6. Homologues of Toll were identified through database searches, and so far, 11 members of the TLR family have been identified in mammals. The TLRs are type I integral membrane glycoproteins, and on the basis of considerable homology in the cytoplasmic region, they are members of a larger superfamily that includes the interleukin-1 receptors (IL-1Rs). By contrast, the extracellular region of the TLRs and IL-1Rs differs markedly: the extracellular region of TLRs contains leucine-rich repeat (LRR) motifs, whereas the extracellular region of IL-1Rs contains three immunoglobulin-like domains (Fig. 1a).     Figure 1 |  TLR structure and signalling.  a | Toll-like receptors (TLRs) and interleukin-1 receptors (IL-1Rs) have a conserved cytoplasmic domain, that is known as the Toll/IL-1R (TIR) domain. The TIR domain is characterized by the presence of three highly homologous regions (known as boxes 1, 2 and 3). Despite the similarity of the cytoplasmic domains of these molecules, their extracellular regions differ markedly: TLRs have tandem repeats of leucine-rich regions (known as leucine rich repeats, LRR), whereas IL-1Rs have three immunoglobulin (Ig)-like domains. b | Stimulation of TLRs triggers the association of MyD88 (myeloid differentiation primary-response protein 88), which in turn recruits IRAK4 (IL-1R-associated kinase 4), thereby allowing the association of IRAK1. IRAK4 then induces the phosphorylation of IRAK1. TRAF6 (tumour-necrosis-factor-receptor-associated factor 6) is also recruited to the receptor complex, by associating with phosphorylated IRAK1. Phosphorylated ...",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15229469"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 59,
+      "target": 37,
+      "key": "c957b6c79ca9895da9f22aa22ac7412e"
+    },
+    {
+      "line": 69,
+      "relation": "directlyIncreases",
+      "evidence": "The list of endogenous TLR2 and 4 activators has expanded quickly and encompasses other intracellular molecules such as heat shock proteins including HSP70, Gp96 [15-17], HSP22, and HSP72 [18, 19] and high-mobility group box-1 protein (HMGB1) [20-22] as well as ECMmolecules such as biglycan [23], tenascin-C [24], versican [25], and fragments of ECM molecules including oligosaccharides of hyaluronic acid (HA) [26] and heparan sulfate (HS) [27].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20706656"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 23,
+      "target": 54,
+      "key": "328c5eab01dc16180b3020a3f588cff3"
+    },
+    {
+      "line": 69,
+      "relation": "directlyIncreases",
+      "evidence": "FRET images in RAW264.7 macrophages demonstrated association of HMGB1 with TLR2 and TLR4 but not RAGE. Transient transfections into human embryonic kidney-293 cells showed that HMGB1 induced cellular activation and NF-kappaB-dependent transcription through TLR2 or TLR4 but not RAGE. Coimmunoprecipitation also found interaction between HMGB1 and TLR2 as well as TLR4, but not with RAGE. These studies provide the first direct evidence that HMGB1 can interact with both TLR2 and TLR4 and also supply an explanation for the ability of HMGB1 to induce cellular activation and generate inflammatory responses that are similar to those initiated by LPS.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16267105"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 23,
+      "target": 54,
+      "key": "f92fef65174d7a8216b7bfa6e1ddc2dd"
+    },
+    {
+      "line": 69,
+      "relation": "directlyIncreases",
+      "evidence": "For example, the high mobility group box protein 1 (HMGB1) protein that normally resides in the cell nucleus can activate TLR2 and induce hallmarks of lupus-like disease when released from apoptotic cells as a complex with nucleosomes [18].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21108806"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 23,
+      "target": 54,
+      "key": "1c15bf6e14dedb9a032500b8a010e4cb"
+    },
+    {
+      "line": 69,
+      "relation": "directlyIncreases",
+      "evidence": "Those known or hypothesized to be increased in atherosclerosis include fibronectin extra domain A (EDA) (48?50), hyaluronan (51?53), biglycan (54,55), high-mobility box chromosomal protein 1 (HMGB1) (56,57), and components of minimally oxidized or oxidized low-density lipoprotein (mmLDL and OxLDL, respectively) (58,59). It is noteworthy that all these ligands activate either TLR4 or TLR2 (or both) (Fig. 1).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16891671"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "atherosclerotic lesion": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 23,
+      "target": 54,
+      "key": "35b5a92e8aea01ce0482dc9e044b9ebe"
+    },
+    {
+      "line": 70,
+      "relation": "directlyIncreases",
+      "evidence": "The list of endogenous TLR2 and 4 activators has expanded quickly and encompasses other intracellular molecules such as heat shock proteins including HSP70, Gp96 [15-17], HSP22, and HSP72 [18, 19] and high-mobility group box-1 protein (HMGB1) [20-22] as well as ECMmolecules such as biglycan [23], tenascin-C [24], versican [25], and fragments of ECM molecules including oligosaccharides of hyaluronic acid (HA) [26] and heparan sulfate (HS) [27].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20706656"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 23,
+      "target": 56,
+      "key": "c2d93fa8d977159d5cff0a3632a8b068"
+    },
+    {
+      "line": 70,
+      "relation": "directlyIncreases",
+      "evidence": "FRET images in RAW264.7 macrophages demonstrated association of HMGB1 with TLR2 and TLR4 but not RAGE. Transient transfections into human embryonic kidney-293 cells showed that HMGB1 induced cellular activation and NF-kappaB-dependent transcription through TLR2 or TLR4 but not RAGE. Coimmunoprecipitation also found interaction between HMGB1 and TLR2 as well as TLR4, but not with RAGE. These studies provide the first direct evidence that HMGB1 can interact with both TLR2 and TLR4 and also supply an explanation for the ability of HMGB1 to induce cellular activation and generate inflammatory responses that are similar to those initiated by LPS.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16267105"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 23,
+      "target": 56,
+      "key": "4add8f2b5f249d63dc462a0c3655cf06"
+    },
+    {
+      "line": 70,
+      "relation": "directlyIncreases",
+      "evidence": "Those known or hypothesized to be increased in atherosclerosis include fibronectin extra domain A (EDA) (48?50), hyaluronan (51?53), biglycan (54,55), high-mobility box chromosomal protein 1 (HMGB1) (56,57), and components of minimally oxidized or oxidized low-density lipoprotein (mmLDL and OxLDL, respectively) (58,59). It is noteworthy that all these ligands activate either TLR4 or TLR2 (or both) (Fig. 1).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16891671"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "atherosclerotic lesion": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 23,
+      "target": 56,
+      "key": "a7dcba825e138c0548cd9bffdea8d9be"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 24,
+      "target": 26,
+      "key": "6c76c31a03601bfd20863bc230d31d82"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 24,
+      "target": 25,
+      "key": "50609174bd0964cca664892156e20cd5"
+    },
+    {
+      "line": 25,
+      "relation": "directlyDecreases",
+      "evidence": "Since activation of NF-B in A549 cells is dependent on IKK2, which phosphorylates serines 32 and 36 of IB as a prelude to IB degradation and activation of NF-B (Catley et al., 2005",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17322026"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 24,
+      "target": 41,
+      "key": "dbbc65cd2656bc4177ec42c881b7fd2b"
+    },
+    {
+      "line": 6,
+      "relation": "directlyDecreases",
+      "evidence": "This finding agrees with previous studies that showed that IkBa is a better substrate for the IKKs than IkBb (17). The kinetics of IkBa and IkBb phosphorylation were coincident with the degradation of endogenous IkBa as well as the appearance of DNA-binding NF-kB complexes in the nucleus at approximately 15–30 min (Fig. 1B, bottom three panels).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10553070"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 22,
+      "target": 41,
+      "key": "c648b4fb6c6a713997030c1dc336ed98"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "TANK-binding kinase-1 (TBK1) and the inducible IkappaB kinase (IKK-i) have been shown recently to activate interferon (IFN) regulatory factor-3 (IRF3), the primary transcription factor regulating induction of type I IFNs.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15210743"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 33,
+      "key": "cc60042c81719d761053f8270c389005"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "Thus, IKKepsilon and TBK1 have a pivotal role in coordinating the activation of IRF3 and NF-kappaB in the innate immune response (via TLR3 activation).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12692549"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 33,
+      "key": "8e2c4a679e66fc2a5a359ecaca6b165b"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "The interaction of TRIF and non-canonical IlB kinases IKKe and TANK-binding kinase 1 (TBK1) leads to phosphorylation of IRF-3 by the kinases.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19025601"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 33,
+      "key": "184c52a534525235a6a739b8b2539d79"
+    },
+    {
+      "line": 103,
+      "relation": "directlyIncreases",
+      "evidence": "We also provide evidence that IRF-5 interacts with and is activated by MyD88 and TRAF6",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15665823"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 38,
+      "target": 34,
+      "key": "a3bdf6b8a85d081649cfb02917db8744"
+    },
+    {
+      "line": 105,
+      "relation": "directlyIncreases",
+      "evidence": "MyD88 promotes association with IRAK4 and IRAK1.  During the formation of this complex, IRAK4 is activated, leading to the hyperphosphorylation of IRAK1, which then induces interaction of TRAF6 with the complex.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12893815"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 38,
+      "target": 32,
+      "key": "812e8f0718b9dccbe56122241c242329"
+    },
+    {
+      "line": 71,
+      "relation": "directlyIncreases",
+      "evidence": "\"Interestingly, blocking TLR-4 with TAK-242 almost completely suppressed the S100A9-mediated elevation of MMP-3 (79% inhibition), the cytokine IL-6 (83% inhibition), the chemokine MCP-1 (79% inhibition) and type II collagen (86% inhibition).\" (p. 1483)",
+      "citation": {
+        "db": "Other",
+        "db_id": "22127564"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "osteoarthritic chondrocytes": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 49,
+      "target": 56,
+      "key": "3058bfbe37e42e4040fc9bf9f039ca0a"
+    },
+    {
+      "line": 71,
+      "relation": "directlyIncreases",
+      "evidence": "The Toll-like receptor 4 ligands Mrp8 and Mrp14 are crucial in the development of autoreactive CD8+ T cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20473308"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 49,
+      "target": 56,
+      "key": "797457412ad4636594103c11320b3d2b"
+    },
+    {
+      "line": 29,
+      "relation": "increases",
+      "evidence": "The second, less well-studied pathway is thought to be limited to TLR3 and TLR4. TLR signalling via the adaptor molecules Toll/IL-1-receptor-domain-containing adaptor inducing IFN-? (TRIF) and TRIF-related adaptor molecule (TRAM) activates IRF-3 and IRF-7 and, ultimately, IFN-inducible genes such as IFN-?-inducible protein 10 (IP-10) and RANTES, via type I IFN production and autocrine activation of the JAK/STAT pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17034424"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 52,
+      "target": 33,
+      "key": "8e490787089cf4b6bd5d5aab35a098d0"
+    },
+    {
+      "line": 29,
+      "relation": "increases",
+      "evidence": "while TRAM recruits TRIF to TLR4 for activation of IRF3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21108806"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 52,
+      "target": 33,
+      "key": "dd9f02679d59355912d402202b1d08c5"
+    },
+    {
+      "line": 29,
+      "relation": "increases",
+      "evidence": "TLR3 and TLR4 activate IRF3 and NF-kappaB through the TRIF-dependent pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16143103"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 52,
+      "target": 33,
+      "key": "12ebca5358bda24d8ca6540c24ffda04"
+    },
+    {
+      "line": 40,
+      "relation": "increases",
+      "evidence": "A dominant-negative form of TRIF inhibited TLR2-, TLR4-, and TLR7-dependent NF-kappaB activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12471095"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 52,
+      "target": 19,
+      "key": "30bbe056490222defafc91b5cadf4971"
+    },
+    {
+      "line": 40,
+      "relation": "increases",
+      "evidence": "TLR3 and TLR4 activate IRF3 and NF-kappaB through the TRIF-dependent pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16143103"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 52,
+      "target": 19,
+      "key": "c3a4c91ceda0000bff3d23848a88e41e"
+    },
+    {
+      "line": 14,
+      "relation": "increases",
+      "evidence": "MD-2 physically associated with TLR2, but this association was weaker than with TLR4.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11160242"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 6,
+      "target": 54,
+      "key": "c92d84243f624b1d40a8c1fcc20c022b"
+    },
+    {
+      "line": 89,
+      "relation": "directlyIncreases",
+      "evidence": "Lipopolysaccharides (LPS), which activate Toll-like receptor 4 (TLR4), reduced PPARgamma expression and function in peritoneal macrophages and macrophage cell lines",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18422969"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 6,
+      "target": 56,
+      "key": "ed7779a290da41a16b7cff6a052a9f58"
+    },
+    {
+      "line": 89,
+      "relation": "directlyIncreases",
+      "evidence": "Finally, we show that Syk associates with Toll-like receptor 4 (TLR4) upon LPS stimulation further implicating Syk in the LPS-induced signaling pathway in neutrophils.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14699155"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Neutrophils": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 6,
+      "target": 56,
+      "key": "9d6097aec93bf4e1143e11eb1b6922d6"
+    },
+    {
+      "line": 89,
+      "relation": "directlyIncreases",
+      "evidence": "From Full Paper Introduction The TLRs agonist include LPS for Tlr4, peptidglycan for Tlr2 and 6...",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12865424"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 6,
+      "target": 56,
+      "key": "91c7d294c0ad21454e320bbaa4501ffe"
+    },
+    {
+      "line": 89,
+      "relation": "directlyIncreases",
+      "evidence": "Prototypic examples of PAMPs include lipopolysaccharide (LPS), a outer membrane component of Gram-negative bacteria that stimulates TLR4 [8,9], bacterial lipoproteins that stimulate TLR2 in conjunction with either TLR1 or TLR6 [10], and flagellin, the protein monomer of bacterial flagella that activates TLR5 [11]. Nucleic acids are recognized by endosomal TLRs; double-stranded DNA with unmethylated CpG motifs activates TLR9 in a host species-specific manner while TLR3 and TLR7/8 are activated by dsRNA including synthetic poly (I:C) [12] and ssRNA, respectively [13,14].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21108806"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 6,
+      "target": 56,
+      "key": "5b782885d623a5da7a054b29037d6c06"
+    },
+    {
+      "line": 89,
+      "relation": "directlyIncreases",
+      "evidence": "lipopolysaccharide (LPS; endotoxin) from Gram-negative bacteria, which stimulates TLR4; bacterial lipoproteins and lipotechoic acid and fungal zymosan, which stimulate TLR1, TLR2 and TLR6; bacterial flagellin, which activates TLR5; a profilin-like molecule from the protozoan Toxoplasma gondii, which activates TLR11; unmethylated CpG motifs present in DNA that function as stimulators of TLR9; double-stranded RNA that activates TLR3; and singlestranded RNA that can stimulate TLR7 and TLR8",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19052556"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 6,
+      "target": 56,
+      "key": "c3e344e8a686a49bb06b19588afb8131"
+    },
+    {
+      "line": 89,
+      "relation": "directlyIncreases",
+      "evidence": "In response to lipopolysaccharide (LPS) exposure, macrophages activate the transcription of a large number of pro-inflammatory genes by way of signaling pathways downstream of the LPS receptor, Toll-Like Receptor 4.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15107417"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 6,
+      "target": 56,
+      "key": "7e97c34088c412c9934b90fbd3ce67e8"
+    },
+    {
+      "line": 89,
+      "relation": "directlyIncreases",
+      "evidence": "LPS, which ligates TLR-4, preferentially upregulated MICA and not MICB......LPS preferentially upregulated MICAand not MICB,CL097 stimulation resulted in upregulation of both MICA and MICB, and poly(I:C) upregulated neither (Fig. 1A, 1B).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20488792"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 6,
+      "target": 56,
+      "key": "64b524ac8f1ee1fae44ba7b7d0b375a3"
+    },
+    {
+      "line": 89,
+      "relation": "directlyIncreases",
+      "evidence": "LPS-induced Bambi downregulation and sensitization to TGF-beta is mediated by a MyD88-NF-kappaB-dependent pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17952090"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "hepatic stellate cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 6,
+      "target": 56,
+      "key": "894a9e3f5e8ea566427d533e66644b33"
+    },
+    {
+      "line": 87,
+      "relation": "increases",
+      "evidence": "Finally, the structure of the TLR4-MD-2-LPS complex shows that TLR4 employs the co-receptor MD-2 to recognise LPS and that no direct contacts between the receptor and the ligand take place [52–54].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20706656"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 21,
+      "target": 56,
+      "key": "ee9a50a96e014eca3781bd2e63689fa1"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 39,
+      "target": 19,
+      "key": "2e64fa9541d7261178d469cafd586183"
+    },
+    {
+      "line": 111,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11489966"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 57,
+      "target": 38,
+      "key": "ee4fdd4eb5feaafcf6c7600a0c58a5d3"
+    },
+    {
+      "line": 111,
+      "relation": "increases",
+      "evidence": "\"Intraperitoneal injection of wild type mice with purified flagellin [PAMP for TLR5] induced systemic IL-6 within 2h.  By contrast mice deficient in the adaptor protein MyD88, which is required for TLR signalling, were completely unresponsive to flagellin.\"",
+      "citation": {
+        "db": "Other",
+        "db_id": "11323673"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "intraperitoneal injection of wild type mice": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 57,
+      "target": 38,
+      "key": "2b327380cffaa956701ccdf6d095fe29"
+    },
+    {
+      "line": 90,
+      "relation": "directlyIncreases",
+      "evidence": "The Toll-like receptor 4 ligands Mrp8 and Mrp14 are crucial in the development of autoreactive CD8+ T cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20473308"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 48,
+      "target": 56,
+      "key": "eceaec410e573f437455966e25505183"
+    },
+    {
+      "line": 20,
+      "relation": "increases",
+      "evidence": "from full text - We previously showed that TL1A is induced by the Fc?R signaling pathway [45]. Recently, the potential interaction of TL1A in microbial-host interaction was illustrated by a report showing microbial organisms can induce TL1A in APCs [46]. Microbial-activated TL1A was in part mediated by TLR 1, 2, 4, and 9 signaling pathways and dependent on downstream p38 MAP kinase and NF-kappaB activation (Fig. 1) [46]. Negative regulators of the TL1A signaling pathway also exist and may serve to maintain gut immune homeostasis. Our group showed that TLR8 or TLR7/8 ligand (R848) can inhibit TL1A production in a dose dependent manner [47•].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19903423"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "antigen presenting cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 62,
+      "target": 58,
+      "key": "7c10047c0da9f15d06b9085022ab866c"
+    },
+    {
+      "line": 39,
+      "relation": "increases",
+      "evidence": "FIGURE 2. Activation of TLR2 and TLR4 by Y. enterocolitica infection.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14530354"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 62,
+      "target": 54,
+      "key": "107bde10c64851aa2474050090adf8c2"
+    },
+    {
+      "line": 39,
+      "relation": "increases",
+      "evidence": "from full text - We previously showed that TL1A is induced by the Fc?R signaling pathway [45]. Recently, the potential interaction of TL1A in microbial-host interaction was illustrated by a report showing microbial organisms can induce TL1A in APCs [46]. Microbial-activated TL1A was in part mediated by TLR 1, 2, 4, and 9 signaling pathways and dependent on downstream p38 MAP kinase and NF-kappaB activation (Fig. 1) [46]. Negative regulators of the TL1A signaling pathway also exist and may serve to maintain gut immune homeostasis. Our group showed that TLR8 or TLR7/8 ligand (R848) can inhibit TL1A production in a dose dependent manner [47•].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19903423"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "antigen presenting cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 62,
+      "target": 54,
+      "key": "2f19beed5c69898cc4b987dbb14507e4"
+    },
+    {
+      "line": 39,
+      "relation": "increases",
+      "evidence": "In HEK293 cells transfected with murine or human TLRs, CD14, and MD-2, heat-killed B. pseudomallei activated TLR2 (in combination with TLR1 or TLR6) and TLR4",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18691413"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 62,
+      "target": 54,
+      "key": "2dab3a68c8daf4b6110f9c386971f737"
+    },
+    {
+      "line": 39,
+      "relation": "increases",
+      "evidence": "[Table 1 listing ligands and stimuli for members of the TLR family]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15229469"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 62,
+      "target": 54,
+      "key": "184ae1ce81697c42ebb26c560403c3ff"
+    },
+    {
+      "line": 46,
+      "relation": "increases",
+      "evidence": "FIGURE 2. Activation of TLR2 and TLR4 by Y. enterocolitica infection.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14530354"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 62,
+      "target": 56,
+      "key": "d6d100f6867b9841cd0cebf9155b73b4"
+    },
+    {
+      "line": 46,
+      "relation": "increases",
+      "evidence": "[Table 1 listing ligands and stimuli for members of the TLR family]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15229469"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 62,
+      "target": 56,
+      "key": "4fed34b031a054d846cbd7c9b6e5c187"
+    },
+    {
+      "line": 46,
+      "relation": "increases",
+      "evidence": "from full text - We previously showed that TL1A is induced by the Fc?R signaling pathway [45]. Recently, the potential interaction of TL1A in microbial-host interaction was illustrated by a report showing microbial organisms can induce TL1A in APCs [46]. Microbial-activated TL1A was in part mediated by TLR 1, 2, 4, and 9 signaling pathways and dependent on downstream p38 MAP kinase and NF-kappaB activation (Fig. 1) [46]. Negative regulators of the TL1A signaling pathway also exist and may serve to maintain gut immune homeostasis. Our group showed that TLR8 or TLR7/8 ligand (R848) can inhibit TL1A production in a dose dependent manner [47•].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19903423"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "antigen presenting cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 62,
+      "target": 56,
+      "key": "f1b9260e30681fa73b36ef325e4b3954"
+    },
+    {
+      "line": 88,
+      "relation": "increases",
+      "evidence": "In addition, TLR2 can signal a number of PAMPs expressed by bacteria, in particular lipoteichoic acid (exclusively expressed by gram-positive bacteria), peptidoglycan and triacyl lipopeptides (found in most bacteria), and porins (Neisseria).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17676990"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 62,
+      "target": 11,
+      "key": "4a3116b698980a1410e482779a403829"
+    },
+    {
+      "line": 98,
+      "relation": "increases",
+      "evidence": "from full text - We previously showed that TL1A is induced by the Fc?R signaling pathway [45]. Recently, the potential interaction of TL1A in microbial-host interaction was illustrated by a report showing microbial organisms can induce TL1A in APCs [46]. Microbial-activated TL1A was in part mediated by TLR 1, 2, 4, and 9 signaling pathways and dependent on downstream p38 MAP kinase and NF-kappaB activation (Fig. 1) [46]. Negative regulators of the TL1A signaling pathway also exist and may serve to maintain gut immune homeostasis. Our group showed that TLR8 or TLR7/8 ligand (R848) can inhibit TL1A production in a dose dependent manner [47•].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19903423"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "antigen presenting cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 62,
+      "target": 53,
+      "key": "729116686fbfa06db335e4c63d24c94d"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 46,
+      "target": 19,
+      "key": "6ae69218e35cdd86b66edd907314c92e"
+    },
+    {
+      "line": 72,
+      "relation": "increases",
+      "evidence": "Here we show an essential role of IL-1 receptor-associated kinase (IRAK)-1 in TLR7- and TLR9-mediated IRF7 signaling pathway. IRAK-1 directly bound and phosphorylated IRF7 in vitro. The kinase activity of IRAK-1 was necessary for transcriptional activation of IRF7. LR7- and TLR9-mediated IFN-α production was abolished in Irak-1–deficient mice, whereas inflammatory cytokine production was not impaired. Despite normal activation of NF-κB and mitogen-activated protein kinases, IRF7 was not activated by a TLR9 ligand in Irak-1–deficient pDCs. These results indicated that IRAK-1 is a specific regulator for TLR7- and TLR9-mediated IFN-α induction in pDCs.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15767370"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 31,
+      "target": 35,
+      "key": "6d70bddd233c6871363d349af1cdbc9d"
+    },
+    {
+      "line": 108,
+      "relation": "increases",
+      "evidence": "small interfering RNA silencing of TRAF6 expression inhibited MyD88-induced and IRAK-1-induced activation, and supplementation with the TRAF6 dominant-negative mutant did not restore the IRAK-1-induced activation. Expression of IRAK-1, but not MyD88, induced the oligomerization of TRAF6",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18070982"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 31,
+      "target": 59,
+      "key": "5a7b70395fc21802d4b328d5d461d5a0"
+    },
+    {
+      "line": 108,
+      "relation": "increases",
+      "evidence": "Phosphorylated IRAK1 dissociates from the complex and activates TRAF6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22566960"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 31,
+      "target": 59,
+      "key": "47d4e1d77b20819a7361a82256cca5a2"
+    },
+    {
+      "line": 108,
+      "relation": "increases",
+      "evidence": "IRAK-1 activation and recruitment is essential for activation of TRAF6 (TNF-associated factor 6), which is an essential adaptor for MyD88-dependent NF-kB activation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19842832"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 31,
+      "target": 59,
+      "key": "a42aac59b04b2a6f78aa7e4358747fc1"
+    },
+    {
+      "line": 108,
+      "relation": "increases",
+      "evidence": "Schematic representation of NE-induced IL-8 signal transduction pathway in human bronchial epithelial cells. In bronchial epithelial cells, NE activates an as yet unidentified receptor. The cytosolic protein MyD88 acts as an adaptor coupling the receptor complex to IRAK. The signal is relayed downstream via TRAF-6 to the I?B kinases (IKKs) (via NIK/MEKK1), resulting in phosphorylation and degradation of I?B?, and subsequent release and translocation of NF?B to the nucleus where it transactivates IL-8 gene expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11461907"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "bronchial epithelial cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 31,
+      "target": 59,
+      "key": "9504f25e28ff53fb27f93800e3a02429"
+    },
+    {
+      "line": 108,
+      "relation": "increases",
+      "evidence": "FIGURE 8. Model for neutrophil signaling mechanisms triggered by bacterial DNA. Although the activation of the intermediates indicated in the figure have been probed, a causal relationship between TIR pathway activation and MAPKs, AP-1 and NF-kB, has not been directly determined.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16951367"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Neutrophils": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 31,
+      "target": 59,
+      "key": "cc22609397df987712b1503a9974997d"
+    },
+    {
+      "line": 108,
+      "relation": "increases",
+      "evidence": "Except for TLR3, all TLR ligation events recruit the adaptor MyD88, followed by the IRAK family of protein kinases, leading to the activation of TRAF6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20981241"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 31,
+      "target": 59,
+      "key": "256b67e2b1357c4c085184fff8fa92a5"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 19,
+      "target": 45,
+      "key": "f8d4be484eb11e457d6444dcf6561c82"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 45,
+      "target": 19,
+      "key": "9b6d6a8ffe584786debfa7f0cb16cd63"
+    },
+    {
+      "line": 99,
+      "relation": "directlyIncreases",
+      "evidence": "The TLR3 ligand poly(I)poly(C) triggered up-regulation of its own receptor in NOR and pre-diabetic NOD, but TLR3 was already highly expressed in diabetic NOD mice.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16728431"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 12,
+      "target": 55,
+      "key": "857ceaf138ce80c1df578cce0154fb2b"
+    },
+    {
+      "line": 99,
+      "relation": "directlyIncreases",
+      "evidence": "Prototypic examples of PAMPs include lipopolysaccharide (LPS), a outer membrane component of Gram-negative bacteria that stimulates TLR4 [8,9], bacterial lipoproteins that stimulate TLR2 in conjunction with either TLR1 or TLR6 [10], and flagellin, the protein monomer of bacterial flagella that activates TLR5 [11]. Nucleic acids are recognized by endosomal TLRs; double-stranded DNA with unmethylated CpG motifs activates TLR9 in a host species-specific manner while TLR3 and TLR7/8 are activated by dsRNA including synthetic poly (I:C) [12] and ssRNA, respectively [13,14].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21108806"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 12,
+      "target": 55,
+      "key": "e7d9941e4444caf52bf7d8badd77c934"
+    },
+    {
+      "line": 99,
+      "relation": "directlyIncreases",
+      "evidence": "Table 1: Microarray analysis of poly(I:C) -- inducer ligand of TLR3 -- in human astrocytes",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16982913"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "astrocyte": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 12,
+      "target": 55,
+      "key": "56b26c4655bcad180e7b19bf362b025a"
+    },
+    {
+      "line": 81,
+      "relation": "directlyIncreases",
+      "evidence": "\"In conclusion we introduce human S100A12 as a novel endogenous TLR4 ligand and establish its role as a mediator facilitating inflammatory monocyte activation in a cross-talk with activated granulocytes.\" (p. 2013)",
+      "citation": {
+        "db": "Other",
+        "db_id": "23611140"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "peripheral blood monocytes": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 47,
+      "target": 56,
+      "key": "b3e87d07080756aa3951c74abe21c4dd"
+    },
+    {
+      "line": 28,
+      "relation": "directlyIncreases",
+      "evidence": "Since activation of NF-B in A549 cells is dependent on IKK2, which phosphorylates serines 32 and 36 of IB as a prelude to IB degradation and activation of NF-B (Catley et al., 2005",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17322026"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 43,
+      "target": 41,
+      "key": "0c975edb4bc5296fa67eaf839d12eb78"
+    },
+    {
+      "line": 28,
+      "relation": "directlyIncreases",
+      "evidence": "Activation-induced induction of transcription factor NFkappaB in T lymphocytes is regulated by its inhibitor IkappaBalpha. NFkappaB activation has been demonstrated to occur either by phosphorylation on serine residues 32 and 36 of the inhibitor, IkappaBalpha, followed by ubiquitination and degradation of the inhibitor by the 26S proteasome, or by a proteasome-independent mechanism involving tyrosine phosphorylation, but not degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16271147"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 43,
+      "target": 41,
+      "key": "dea0b232190c17820928f67d8e6a50f2"
+    },
+    {
+      "line": 28,
+      "relation": "directlyIncreases",
+      "evidence": "Phosphorylation of IkappaBalpha at serine 32 (S32) and serine 36 (S36) is necessary for this stimuli-induced degradation. IKKalpha/beta kinases and p90(rsk1)are involved in stimuli-induced targeting of one or both of these IkappaBalpha sites.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10398585"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 43,
+      "target": 41,
+      "key": "5cf003442787274ffc8330db984eb7e7"
+    },
+    {
+      "line": 28,
+      "relation": "directlyIncreases",
+      "evidence": "Figure 1. Pathways to MUC5AC expression in COPD",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17615396"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 43,
+      "target": 41,
+      "key": "365818befeb0aa04adaf2a098f019264"
+    },
+    {
+      "line": 28,
+      "relation": "directlyIncreases",
+      "evidence": "Upon phosphorylation by IKKs, I{kappa}B proteins are recognized and ubiquitinated by members of the Skp1-Culin-Roc1/Rbx1/Hrt-1-F-box (SCF or SCRF) family of ubiquitin ligases (for review, see Ben-Neriah 2002Go) and subsequently degraded (Modified from full text).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15371334"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 43,
+      "target": 41,
+      "key": "e6128def4ac6a7203712561e3f134f6e"
+    },
+    {
+      "line": 80,
+      "relation": "directlyIncreases",
+      "evidence": "The list of endogenous TLR2 and 4 activators has expanded quickly and encompasses other intracellular molecules such as heat shock proteins including HSP70, Gp96 [15-17], HSP22, and HSP72 [18, 19] and high-mobility group box-1 protein (HMGB1) [20-22] as well as ECMmolecules such as biglycan [23], tenascin-C [24], versican [25], and fragments of ECM molecules including oligosaccharides of hyaluronic acid (HA) [26] and heparan sulfate (HS) [27].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20706656"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 60,
+      "target": 54,
+      "key": "b87b9171917f0e6e461b079593420046"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 40,
+      "target": 19,
+      "key": "822e548538bfc9de7ae8e8d3b7ce801b"
+    },
+    {
+      "line": 76,
+      "relation": "increases",
+      "evidence": "Information taken from Table 3 (p. 197) showing a 3.39-fold increase in Hmgb1 expression in gamma delta T cells as determined by microarray results and a 1.96-fold increase using qRT-PCR",
+      "citation": {
+        "db": "Other",
+        "db_id": "18515264"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "gamma delta T cells": true
+        }
+      },
+      "source": 3,
+      "target": 65,
+      "key": "c8a8e7099dca9e8c967892ba0762d596"
+    }
+  ]
+}

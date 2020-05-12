@@ -1,0 +1,3289 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "B-cell Signaling-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The B-cell Signaling network depicts the causal mechanisms linking the repertoire of surface receptors expressed on B-cells to a variety of causal downstream signaling pathways leading to B-cell activation and differentiation. The network includes key components involved in the class switching process frequently observed during COPD development, which may contribute to the generation of an autoimmune component underlying disease progression."
+    },
+    "namespace_url": {
+      "HGNC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-human-genes/hgnc-human-genes-20150601.belns",
+      "GOBP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20150601.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20150601.belns",
+      "GOCC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170511.belns",
+      "MESHPP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20150601.belns",
+      "MGI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20150601.belns",
+      "RGD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20150601.belns",
+      "CHEBI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20150601.belns",
+      "SCHEM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-chemicals/selventa-legacy-chemicals-20150601.belns",
+      "EGID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/entrez-gene-ids/entrez-gene-ids-20150601.belns",
+      "MESHD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20150601.belns",
+      "SDIS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-diseases/selventa-legacy-diseases-20150601.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20150601.belns",
+      "MESHC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170511.belns",
+      "GOBPID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process-ids/go-biological-process-ids-20150601.belns",
+      "GOCCID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component-ids/go-cellular-component-ids-20150601.belns",
+      "MESHCS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20150601.belns"
+    },
+    "namespace_pattern": {},
+    "annotation_url": {
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20150601.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20150601.belanno",
+      "Species": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+      "Tissue": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20150601.belanno"
+    },
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Antigens"
+      },
+      "id": "603687b8c55b68431b9ab1508b730046",
+      "bel": "a(SCHEM:Antigens)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "cell proliferation"
+      },
+      "id": "14a7545c48b4be2b5e986ded11b09652",
+      "bel": "bp(GOBP:\"cell proliferation\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "isotype switching"
+      },
+      "id": "3156331c16994303b34ea873e82ec68d",
+      "bel": "bp(GOBP:\"isotype switching\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBPID",
+        "name": "0042100"
+      },
+      "id": "997732315b08884f715d03c81df07a96",
+      "bel": "bp(GOBPID:0042100)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBPID",
+        "name": "0042113"
+      },
+      "id": "52ecec3258c6c30d8e577d4993ba0d7f",
+      "bel": "bp(GOBPID:0042113)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "MESHPP",
+        "name": "Apoptosis"
+      },
+      "id": "baaedb0856f338f39e21733a8239632d",
+      "bel": "bp(MESHPP:Apoptosis)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "MESHPP",
+        "name": "Autoimmunity"
+      },
+      "id": "3050c2bf6cd1c3931dc40d72c443db7b",
+      "bel": "bp(MESHPP:Autoimmunity)"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "GOCC",
+        "name": "B cell receptor complex"
+      },
+      "id": "1fecf6d78cfd4f3f5c92209a7de1b0d9",
+      "bel": "complex(GOCC:\"B cell receptor complex\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "SCOMP",
+        "name": "AP-1 Complex"
+      },
+      "id": "bcaac21c04f15ba8da704de83ff7f128",
+      "bel": "complex(SCOMP:\"AP-1 Complex\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "SCOMP",
+        "name": "Nfkb Complex"
+      },
+      "id": "c8f3260aaedabca7831d823ec3e87186",
+      "bel": "complex(SCOMP:\"Nfkb Complex\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "AICDA"
+      },
+      "id": "177d03bc815adf1a20cf5600a91c56d8",
+      "bel": "p(HGNC:AICDA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "BLNK"
+      },
+      "id": "c71e5b7d0b8d5aedfb87140684fdeb93",
+      "bel": "p(HGNC:BLNK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "BTK"
+      },
+      "id": "f96b72092e39901067621e40cc7c6590",
+      "bel": "p(HGNC:BTK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CASP3"
+      },
+      "id": "bdb963bb3852568b08002cd7bd9187b1",
+      "bel": "p(HGNC:CASP3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CASP6"
+      },
+      "id": "51593fd7d1843118cc02c428e7014010",
+      "bel": "p(HGNC:CASP6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CD22"
+      },
+      "id": "bc89b538042834b05652c848490140df",
+      "bel": "p(HGNC:CD22)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CD40"
+      },
+      "id": "d0e4ab75e5b3e614230b53e8fc730403",
+      "bel": "p(HGNC:CD40)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CDC25C"
+      },
+      "id": "5e7aaeec95ddef1d6a4d792424d4ac69",
+      "bel": "p(HGNC:CDC25C)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CDK2"
+      },
+      "id": "10f419c217b25dc1a0363b7341b8e0b8",
+      "bel": "p(HGNC:CDK2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CXCL8"
+      },
+      "id": "325a76cdc17ef7ce6a715ed6201f2a09",
+      "bel": "p(HGNC:CXCL8)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CXCR4"
+      },
+      "id": "af48f9d33c6072ead628dbb7a01c7ecd",
+      "bel": "p(HGNC:CXCR4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "DAPP1"
+      },
+      "id": "3bd87a2be1287397359b9c0573335072",
+      "bel": "p(HGNC:DAPP1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "DAPP1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Tyr",
+          "pos": 139
+        }
+      ],
+      "id": "774bb11ed4a0e5d89d05f17b15c92080",
+      "bel": "p(HGNC:DAPP1, pmod(Ph, Tyr, 139))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HOXC4"
+      },
+      "id": "311108a88809f5e85df80002b2b50db6",
+      "bel": "p(HGNC:HOXC4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IKZF1"
+      },
+      "id": "0c3b76f4fe7cda43528d6d0c770a30f8",
+      "bel": "p(HGNC:IKZF1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IKZF3"
+      },
+      "id": "c33482ffa3070a28d4e5752a6584f181",
+      "bel": "p(HGNC:IKZF3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL13"
+      },
+      "id": "148a1f49575f988c19d1ea5763eedfd0",
+      "bel": "p(HGNC:IL13)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL4"
+      },
+      "id": "4bf986cc68574441e53aac56e3621b28",
+      "bel": "p(HGNC:IL4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL4R"
+      },
+      "id": "55517f4b598ef5c9f945abf7b8eb1835",
+      "bel": "p(HGNC:IL4R)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL6"
+      },
+      "id": "8a1d3c4828c5416eba867c395cc65caa",
+      "bel": "p(HGNC:IL6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IRF5"
+      },
+      "id": "faeb70ae2df17e1cc85d66018a77d226",
+      "bel": "p(HGNC:IRF5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "LYN"
+      },
+      "id": "bb579f446d62f01d73b824a80a1276db",
+      "bel": "p(HGNC:LYN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MAP3K14"
+      },
+      "id": "b65063323a8d175618e57c94e9425c62",
+      "bel": "p(HGNC:MAP3K14)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MYC"
+      },
+      "id": "8c05a82e1b8591c8a3d254aa5d1dd3ee",
+      "bel": "p(HGNC:MYC)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MYD88"
+      },
+      "id": "f14c331d37210d025523a016597e9de6",
+      "bel": "p(HGNC:MYD88)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PLCG1"
+      },
+      "id": "41296d7c819e63f9765f532f34f02d17",
+      "bel": "p(HGNC:PLCG1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PRDM1"
+      },
+      "id": "cb55e95e0dc79f67373ca09811837a25",
+      "bel": "p(HGNC:PRDM1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RAC1"
+      },
+      "id": "130f71781150307370486c5cced7a456",
+      "bel": "p(HGNC:RAC1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SRC"
+      },
+      "id": "5bbd95ea1b6e2166887017af0837608d",
+      "bel": "p(HGNC:SRC)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "STAT6"
+      },
+      "id": "5bd870f793169273343832758b24f19d",
+      "bel": "p(HGNC:STAT6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SYK"
+      },
+      "id": "806bc00e7c8b912cc89daa7261aec5b1",
+      "bel": "p(HGNC:SYK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SYK"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          }
+        }
+      ],
+      "id": "92168fdd50da88120d9bff0daf53d694",
+      "bel": "p(HGNC:SYK, pmod(Ph))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TLR7"
+      },
+      "id": "03cc8d43a716831bcf864664562fa813",
+      "bel": "p(HGNC:TLR7)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TLR9"
+      },
+      "id": "63e22ab9502c41d0972e9941bac852da",
+      "bel": "p(HGNC:TLR9)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TNFSF13"
+      },
+      "id": "ac01949bd8cca6a2328d07199108cdd7",
+      "bel": "p(HGNC:TNFSF13)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TNFSF13B"
+      },
+      "id": "65d5e974cb4f4dc918da86c29f68def2",
+      "bel": "p(HGNC:TNFSF13B)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "VAV1"
+      },
+      "id": "253d9bf0631c77296d811a64acdc316e",
+      "bel": "p(HGNC:VAV1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "MGI",
+        "name": "Dapp1"
+      },
+      "id": "236e85bd8717023b12e7451d487ef4e2",
+      "bel": "p(MGI:Dapp1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "PIK3C Class IA Family"
+      },
+      "id": "81e3e58d9656deaee4fcea6b2331946f",
+      "bel": "p(SFAM:\"PIK3C Class IA Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "SRC Family"
+      },
+      "id": "150a68482b6706051bbfa34b68c21f26",
+      "bel": "p(SFAM:\"SRC Family\")"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IFNB1"
+      },
+      "id": "0741df84ff6642ebb4c57401b4765a09",
+      "bel": "r(HGNC:IFNB1)"
+    }
+  ],
+  "links": [
+    {
+      "line": 69,
+      "relation": "increases",
+      "evidence": "developing B lymphocytes have a reduced capacity to proliferate in the absence of c-Myc in vivo",
+      "citation": {
+        "db": "Other",
+        "db_id": "21572027"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "b lymphocytes": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 3,
+      "key": "a42d8ed3f93bd7272bd515508fc74271"
+    },
+    {
+      "line": 69,
+      "relation": "increases",
+      "evidence": "the upregulation of c-Myc, CDC25, and CDC2/CDK2 kinase activities results in the augmentation of B cell proliferation",
+      "citation": {
+        "db": "Other",
+        "db_id": "9806630"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "b cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 3,
+      "key": "bba213acc7344aa5e335a61a19d0db57"
+    },
+    {
+      "line": 69,
+      "relation": "increases",
+      "evidence": "Myc promotes a BCR-dependent clonal expansion of mature B cells by inducing proliferation",
+      "citation": {
+        "db": "Other",
+        "db_id": "19607732"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "b lymphocytes": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 3,
+      "key": "33da7a2e5b5290c5f2b86f6058accc67"
+    },
+    {
+      "line": 69,
+      "relation": "increases",
+      "evidence": "we show that c-Myc not only regulates cell proliferation, but it is also essential for Ab-secreting cell function and differentiation in vivo. c-Myc-deficient B lymphocytes hypersecrete IgM and do not undergo Ig class switch recombination (CSR). CSR has been previously linked to proliferation, and in this study we mechanistically link class switching and proliferation via c-Myc.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23690468"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "b lymphocyte": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 33,
+      "target": 3,
+      "key": "e037067f489b32d25bfa6ebd190ec924"
+    },
+    {
+      "line": 66,
+      "relation": "directlyIncreases",
+      "evidence": "we demonstrate for the first time that Syk is constitutively associated with IL-4R(alpha)in human polymorphonuclear neutrophils (PMNs) and that IL-4 stimulation increases the amount of Syk associated with IL-4R(alpha). Moreover, upon IL-4 treatment, a pool of Syk associated with IL-4R(alpha) is phosphorylated.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19783684"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Neutrophils": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 28,
+      "target": 40,
+      "key": "195437925b3d627ab5181854334b4e61"
+    },
+    {
+      "line": 66,
+      "relation": "directlyIncreases",
+      "evidence": "We also report that such association is not unique to PMNs because Syk associates with IL-4R(alpha) in Raji and in PBMC cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19783684"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 28,
+      "target": 40,
+      "key": "39ec3c04ccc83389420b8f7706bfdd4f"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "Induction of germline C epsilon transcripts in DND39 cells by IL-4 required at least two distinct signaling cascades. One was mediated by enhancement of tyrosine phosphorylation of a 57 kd protein associated with phospholipase C-gamma 1 (PLC-gamma 1) that resulted in PLC-gamma 1 activation, inositol lipid hydrolysis, and protein kinase C delta translocation. The other was dependent on phosphatidylinositol 3-kinase, whose activation induced protein kinase C zeta translocation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8543771"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 35,
+      "key": "e87ace7d2978081aaef6612ffbfbe5b0"
+    },
+    {
+      "line": 76,
+      "relation": "increases",
+      "evidence": "Activation through IL4R and CD40 is required both for infection of GC B cells with HIV-1 and for induction of AID expression in the same cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "14757362"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "b-cell": true
+        }
+      },
+      "source": 28,
+      "target": 10,
+      "key": "fba8827cc98c4a285d5e3d3752cb35f4"
+    },
+    {
+      "line": 23,
+      "relation": "directlyIncreases",
+      "evidence": "All TLRs (except for TLR3) and IL-1 receptor family members signal through MyD88.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19052556"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 43,
+      "target": 34,
+      "key": "cb37827d31eb16b1dbb8b342247e8914"
+    },
+    {
+      "line": 11,
+      "relation": "increases",
+      "evidence": "Our results suggested that K1-mediated constitutive Lyn kinase activation in K1 lymphoma cells is crucial for the production of VEGF and NF-kappaB activation, both strongly implicated in the development of KSHV-induced lymphoproliferative disorders.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15665117"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 31,
+      "target": 9,
+      "key": "4066b4e9de3cfe170dd6ffceecf217c5"
+    },
+    {
+      "line": 17,
+      "relation": "increases",
+      "evidence": "Our results suggested that K1-mediated constitutive Lyn kinase activation in K1 lymphoma cells is crucial for the production of VEGF and NF-kappaB activation, both strongly implicated in the development of KSHV-induced lymphoproliferative disorders.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15665117"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 31,
+      "target": 1,
+      "key": "e369cd766d3fd204c40aa76a37c690d5"
+    },
+    {
+      "line": 42,
+      "relation": "directlyIncreases",
+      "evidence": "Src, Lyn and Lck tyrosine kinases phosphorylate DAPP1 at Tyr(139) in vitro at similar rates in the presence or absence of PtdIns(3,4,5)P(3), and overexpression of these kinases in HEK-293 cells induces the phosphorylation of Tyr(139). co-expression of DAPP1 with Src, Lyn or Lck induced a very high level of phosphorylation of DAPP1 at Tyr139, even in unstimulated cells, which was not increased further by agonist stimulation of cells. As Src-family kinases activate the PI 3-kinase pathway in many cells [1], it is possible that the overexpression of Src, Lyn or Lck in HEK-293 cells induces the activation of PI 3-kinase, thereby promoting DAPP1 phosphorylation in unstimulated cells. As Src-family tyrosine kinases are located at the plasma membrane by virtue of myristoylation and palmitoylation of their N-termini [26], it is likely that the role of PtdIns(3,4,5)P3 is to recruit DAPP1 to the cell membrane, where it can be phosphorylated with Src-family tyrosine kinases.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10880360"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 38,
+      "target": 22,
+      "key": "212a41a5e523e327401d64b0a33e07cf"
+    },
+    {
+      "line": 42,
+      "relation": "directlyIncreases",
+      "evidence": "The positive and negative effects of Bam32 variants on F-actin levels were closely mirrored by their effects on the activation of the GTPase Rac1, which is known to regulate actin remodeling in lymphocytes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15247305"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "B cell lymphoma": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 38,
+      "target": 22,
+      "key": "13401dbd73c40149ded0b9703a04c836"
+    },
+    {
+      "line": 19,
+      "relation": "increases",
+      "evidence": "The cytidine deaminase AID is critical for immunoglobulin class-switch recombination (CSR) and somatic hypermutation (SHM). HoxC4 deficiency also resulted in impaired CSR and SHM because of lower AID expression and not some other putative HoxC4-dependent activity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19363484"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "b-cell": true
+        },
+        "Tissue": {
+          "germinal center": true
+        }
+      },
+      "source": 10,
+      "target": 2,
+      "key": "db83376931a612ba1bb0f93b62cdd70e"
+    },
+    {
+      "line": 19,
+      "relation": "increases",
+      "evidence": "DSBs detected by LM-PCR are induced in Sm and Sg3 segments in wild type (WT) but not in aid-/- splenic B cells 48 h after induction of CSR (Fig. 2)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16103411"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "source": 10,
+      "target": 2,
+      "key": "e64a22c377f6f43453420fa30efc5f05"
+    },
+    {
+      "line": 19,
+      "relation": "increases",
+      "evidence": "AID deficiency caused a complete defect in class switching and showed a hyper-IgM phenotype with enlarged germinal centers containing strongly activated B cells before or after immunization.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11007474"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "source": 10,
+      "target": 2,
+      "key": "1b62d32b5674029c9ebbfb322c253069"
+    },
+    {
+      "line": 1,
+      "relation": "increases",
+      "evidence": "Following activation with proliferative stimuli, including ligation of CD40, dense human tonsillar B cells (>98% cells in G(0)) have increased cleavage and activation of caspase-8 and -6 accompanied by decreased caspase-3 activation and apoptosis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12794135"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 16,
+      "target": 14,
+      "key": "5f19cec7fd64da507b1befb1b8a5d4a4"
+    },
+    {
+      "line": 14,
+      "relation": "increases",
+      "evidence": "dendritic cells up-regulate BLyS and APRIL upon exposure to interferon-alpha, interferon-gamma or CD40 ligand.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12154359"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "neuron": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 16,
+      "target": 44,
+      "key": "776b6ae30f3a1332d758dc0146802aa7"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "we transiently transfected the wild-type and CD40 cytoplasmic domain mutants with a plasmid containing the NF-kappaB response element upstream of a luciferase gene (pNF-kappaB-luc) and 2 ug of a Renilla luciferase (pHRL-luc) plasmid to normalize for transfection efficiency. The cells were subsequently stimulated via CD40 using CHO-CD154 for 16 h. Stimulation of both the wild-type and hCD 32 mutant resulted in a 3-fold induction of NF-kappaB luciferase activity above background, whereas stimulation of the hCD40EEAA mutant did not result in detectable stimulation of NF-kappaB reporter activity (Fig. 9A). Thus, optimal NF-kappaB activation requires an intact TRAF6 binding domain of CD40.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15634933"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 9,
+      "key": "a8ccf0291d572dd27379c60585f18c4f"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "Similarly, prolonged CD40 coupling to NF-ÃŽÂºB signaling results in sustained increases in c-Myc mRNA and protein levels",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15199223"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 9,
+      "key": "1e9948fe708122bfd0c4c49bef3fd71d"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "BCL6 prevents CD40-induced expression of CD80 by binding its promoter region in vivo and suppressing its transcriptional activation by NF-kappaB.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12860928"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 9,
+      "key": "1152a69ae028b92fb8e2f43aceb5c46e"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "The rescue mechanism induced by CD40 engagement was dependent on NF-kappaB, as an NF-kappaB inhibitor prevented rescue.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15778364"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 9,
+      "key": "85882cde06ef3a8ec17db93eb29abe7b"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "Further promoter assays showed that the transcription factors NF-kappaB and AP-1 are downstream transcriptional mediators of CD40-induced IL-6 gene expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11886848"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 9,
+      "key": "4167c8a6eddb808eefee38750fffd234"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "in B cells, Gadd45 beta is induced by CD40 through a mechanism that requires NF-kappa B and that this induction suppresses Fas-mediated killing.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12855571"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 9,
+      "key": "ebd38eb3515d1b18da0178fd4c641673"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "Little is known about how the very early events induced by CD40 cross-linking link to cellular responses. In this study, we demonstrate that nuclear factor (NF)-kappa B and NF-kappa B-like transcription factors are activated after cross-linking CD40 on resting human tonsillar B cells and on B cell lines",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "7525701"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 9,
+      "key": "cfe42b5a99821fc58d5beff4d8c26893"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "Following exposure to either CD40-specific mAbs or the soluble trimeric ligand (sCD40L), high responder (HR) lines showed rapid aggregation, activation of NF-kappa B, up-regulation of cell surface markers ICAM-1/CD54 and Fas/CD95, and growth inhibition",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10092782"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 9,
+      "key": "659ac21bbb4fb2f6d26f306c58e85dea"
+    },
+    {
+      "line": 38,
+      "relation": "decreases",
+      "evidence": "Following activation with proliferative stimuli, including ligation of CD40, dense human tonsillar B cells (>98% cells in G(0)) have increased cleavage and activation of caspase-8 and -6 accompanied by decreased caspase-3 activation and apoptosis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12794135"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 16,
+      "target": 13,
+      "key": "ae64c57a2bc07d36a09d79204c523184"
+    },
+    {
+      "line": 67,
+      "relation": "increases",
+      "evidence": "CD40 signaling is required for optimal AID production",
+      "citation": {
+        "db": "Other",
+        "db_id": "12574355"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "b-cell": true
+        }
+      },
+      "source": 16,
+      "target": 10,
+      "key": "39b04bfa5674e9c309e48aff99bcd214"
+    },
+    {
+      "line": 67,
+      "relation": "increases",
+      "evidence": "IL-4 was able to induce AID expression in human primary B cells and B cell lines, and IL-4-inducedAID expression was further enhanced by CD40 signaling. IL-4-dependent AID induction was inhibited by a dominant-negative STAT6, indicating that IL-4 induced AID expression via the Janus kinase (JAK)/STAT6 signaling pathway.",
+      "citation": {
+        "db": "Other",
+        "db_id": "12574355"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "B-cell": true
+        }
+      },
+      "source": 16,
+      "target": 10,
+      "key": "94ec2271763588ac3b4b52543bd29b59"
+    },
+    {
+      "line": 71,
+      "relation": "increases",
+      "evidence": "Within 1 rain after stimulation with anti-CD40 mAb, lyn immunoprecipitates showed an increased capacity to phosphorylate the substrata enolase. Lyn enzymatic activity peaked between 1 and 5 rain, and remained elevated for up to 20 min.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "7507510"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 16,
+      "target": 31,
+      "key": "748c3a8fbb3ba27c9859fb485acc3c70"
+    },
+    {
+      "line": 73,
+      "relation": "increases",
+      "evidence": "To determine the mechanism by which CD40 induces AP-1 transcriptional  activation, nuclear translocation of AP-1 complexes and binding to DNA were  determined by EMSA.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12626566"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 8,
+      "key": "1e926e3a1483a6c4e7af79ed748b2946"
+    },
+    {
+      "line": 82,
+      "relation": "decreases",
+      "evidence": "Following activation with proliferative stimuli, including ligation of CD40, dense human tonsillar B cells (>98% cells in G(0)) have increased cleavage and activation of caspase-8 and -6 accompanied by decreased caspase-3 activation and apoptosis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12794135"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "source": 16,
+      "target": 5,
+      "key": "65becfb6ebd47604c4f7701b05039ec2"
+    },
+    {
+      "line": 83,
+      "relation": "increases",
+      "evidence": "In both 293 cells and primary splenic B cells, the ability of CD40 to trigger p100 processing requires functional NF-kappaB-inducing kinase (NIK).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12374738"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 16,
+      "target": 32,
+      "key": "5cbae4816092dfc80a4de18bc00c807e"
+    },
+    {
+      "line": 58,
+      "relation": "directlyIncreases",
+      "evidence": "We also provide evidence that IRF-5 interacts with and is activated by MyD88 and TRAF6",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15665823"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 34,
+      "target": 30,
+      "key": "a3bdf6b8a85d081649cfb02917db8744"
+    },
+    {
+      "line": 59,
+      "relation": "increases",
+      "evidence": "Lipopolysaccharide (LPS), which is a component of the outer membrane of Gram-negative bacteria including H pylori, is a signalling molecule for the innate immune system and is the main source of infl ammation in Gram-negative infections[55]. LPS targets the transmembranous patternrecognition receptor called toll-like receptor 4 (TLR4), which is expressed on macrophages and monocytes[56]. LPS binding to TLR4 activates signal transduction through MyD88, interleukin-1 receptor associated kinase and TRAF6 to activate the NF-?B and mitogen-activated protein kinase pathways[57-59], which leads to the synthesis and release of infl ammatory cytokines such as IL-1, IL-8 and TNF-?, various chemokines GRO?, IP10, MIG and MIP -1? & ?[60], iNOS[61,62] and antimicrobial peptides providing a critical link to the adaptive immune system[63,64].Induction of infl ammation is an important component in the defence against H pylori. The presence of H pylori leads to the release of mutagenic substances such as metabolites of inducible nitric oxide synthase (iNOS), which is known to promote oncogenesis[65]. Nitric oxide generated by iNOS is converted to reactive nitrogen species, which can exert oncogenic effects including direct DNA and protein damage, inhibition of apoptosis, mutation of DNA and cellular repair functions such as p53 and also promotion of angiogenesis[66]. H pylori infection is also known to induce the expression of pro-infl ammatory Cyclooxygenase enzyme (COX-2)[67-71]. COX-2 expression is normally undetectable in most normal tissues, but is induced rapidly during an inflammatory reaction[72,73]. Cox-2 activity is induced by a variety of mediators including inflammatory cytokines such as TNF-?, interferon-? and IL-1[74]. COX-2 facilitates tumour growth by inhibiting apoptosis, maintaining cell proliferation and stimulating angiogenesis within cancer cells[75-77].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16718776"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Carcinoma of gastrointestinal tract": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 34,
+      "target": 9,
+      "key": "08f06121eddcb6210ce9b7a1b27c9824"
+    },
+    {
+      "line": 59,
+      "relation": "increases",
+      "evidence": "Treatment with palmitate rapidly induced the association of myeloid differentiation factor 88 (MyD88) with the TLR2 receptor, activated the stress-linked kinases p38, JNK, and protein kinase C, induced degradation of IkappaBalpha, and increased NF-kappaB DNA binding...TLR2 mediates the initial events of fatty acid-induced insulin resistance in muscle",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16798732"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 34,
+      "target": 9,
+      "key": "416117e49bc4016c353eeb65b17fa1f1"
+    },
+    {
+      "line": 59,
+      "relation": "increases",
+      "evidence": "In primary human macrophages and macrophages from Fas- or Fas ligand (FasL)-deficient mice, interruption of Fas-FasL signaling suppressed nuclear factor-kappa B activation and cytokine expression induced by IL-1 beta and lipopolysaccharide. This cross-talk was mediated by the Fas-associated death domain through interaction with myeloid differentiation factor 88.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15004557"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 34,
+      "target": 9,
+      "key": "8c3509f99c86ebe841d544bbaed86e32"
+    },
+    {
+      "line": 59,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11489966"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 34,
+      "target": 9,
+      "key": "dd20d175f0a6b5340cd223c345df0053"
+    },
+    {
+      "line": 59,
+      "relation": "increases",
+      "evidence": "TLR4, in addition, activates NF-kappaB and MAP kinases via the MyD88-dependent pathway",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16143103"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 34,
+      "target": 9,
+      "key": "f2db5f42219e02902e280cff197581ad"
+    },
+    {
+      "line": 75,
+      "relation": "increases",
+      "evidence": "We demonstrate that CXCR4-dependent stimulation of Lyn is associated with the activation of phosphatidylinositol 3-kinase (PI3-kinase).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12208881"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 20,
+      "target": 31,
+      "key": "5bb1ebfadc88fe551aa51d0700e6ad46"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 21,
+      "target": 22,
+      "key": "4404efa4b8f5d2b2373c4e7c70cf0e9b"
+    },
+    {
+      "line": 65,
+      "relation": "increases",
+      "evidence": "Here, we demonstrate that the transcription factor IRF-5 is generally involved downstream of the TLR-MyD88 signalling pathway for gene induction of proinflammatory cytokines, such as interleukin-6 (IL-6), IL-12 and tumour-necrosis factor-alpha. In haematopoietic cells from mice deficient in the Irf5 gene (Irf5-/- mice), the induction of these cytokines by various TLR ligands is severely impaired, whereas interferon-alpha induction is normal.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15665823"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 30,
+      "target": 29,
+      "key": "28591aa7053572c8b7971c280e9f9684"
+    },
+    {
+      "line": 65,
+      "relation": "increases",
+      "evidence": "IRF5 deficiency reduces IFN-α, IFN-β and IL-6 production by Toll-like receptor 9 (TLR9)- and TLR7-stimulated DCs and reduces TLR7- and TLR9-induced IL-6 production by B cells",
+      "citation": {
+        "db": "Other",
+        "db_id": "23291967"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "b cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 30,
+      "target": 29,
+      "key": "8aa44bb08b16848a8e891f783cd7bb65"
+    },
+    {
+      "line": 65,
+      "relation": "increases",
+      "evidence": "Irf5(-/-) mice show higher susceptibility to viral infection and decreased serum levels of type I IFN and the inflammatory cytokines IL-6 and TNF-alpha",
+      "citation": {
+        "db": "Other",
+        "db_id": "20176957"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "b cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 30,
+      "target": 29,
+      "key": "63153d48c9ebd39030e6388ca9c5498c"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "IRF-5 stimulates transcription of the Prdm1 gene encoding Blimp-1 and binds to the IRF site in the Prdm1 promoter.",
+      "citation": {
+        "db": "Other",
+        "db_id": "20176957"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 30,
+      "target": 36,
+      "key": "3230128ce9adf5e13cbf7f64bfe9e1ee"
+    },
+    {
+      "line": 61,
+      "relation": "increases",
+      "evidence": "We have previously reported that the highly conserved homeodomain HoxC4 transcription factor binds to the Aicda(AID gene) promoter to induce AID expression.",
+      "citation": {
+        "db": "Other",
+        "db_id": "23178148"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "b cell": true
+        }
+      },
+      "source": 23,
+      "target": 10,
+      "key": "e4c66ad06b576cb21b9b7642acf604b8"
+    },
+    {
+      "line": 61,
+      "relation": "increases",
+      "evidence": "Here we showed that AID expression was induced by the HoxC4 homeodomain transcription factor, which bound to a highly conserved HoxC4-Oct site in the Aicda promoter.",
+      "citation": {
+        "db": "Other",
+        "db_id": "19363484"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "b cells": true
+        }
+      },
+      "source": 23,
+      "target": 10,
+      "key": "b110dcaf87f7972096532334d4b0b933"
+    },
+    {
+      "line": 53,
+      "relation": "decreases",
+      "evidence": "c-Myc protein expression was dramatically reduced in Aiolos- and Ikaros-infected cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "20566697"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "b220+ cells": true
+        },
+        "Tissue": {
+          "bone marrow": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 24,
+      "target": 33,
+      "key": "ba729f355aca35557974a396eb17ec7d"
+    },
+    {
+      "line": 55,
+      "relation": "increases",
+      "evidence": "When the cells were transfected with dominant-negative mutant of NIK, activation of NFkB by APO-3L was inhibited.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9560343"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 32,
+      "target": 9,
+      "key": "fabcd47294914f1d40e66cfcebf71a72"
+    },
+    {
+      "line": 13,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15007095"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 12,
+      "target": 35,
+      "key": "88a285b1580c5139271bf6e3a594649a"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "we show that transgenic mice overexpressing Btk specifically in B cells spontaneously formed germinal centers and manifested increased plasma cell numbers, leading to antinuclear autoantibody production and systemic lupus erythematosus (SLE)-like autoimmune pathology affecting kidneys, lungs, and salivary glands.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22383797"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 12,
+      "target": 6,
+      "key": "94a04add4b9d36572fb0f65a4096233a"
+    },
+    {
+      "line": 60,
+      "relation": "increases",
+      "evidence": "IL-4 was able to induce AID expression in human primary B cells and B cell lines, and IL-4-inducedAID expression was further enhanced by CD40 signaling. IL-4-dependent AID induction was inhibited by a dominant-negative STAT6, indicating that IL-4 induced AID expression via the Janus kinase (JAK)/STAT6 signaling pathway.",
+      "citation": {
+        "db": "Other",
+        "db_id": "12574355"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "b-cell": true
+        }
+      },
+      "source": 39,
+      "target": 10,
+      "key": "3676257794bd47ccc9e06040585e9370"
+    },
+    {
+      "line": 7,
+      "relation": "increases",
+      "evidence": "Overexpression of dominant negative N17Rac1 significantly inhibits VEGF-induced ROS production that is involved in VEGFR2 activation, EC migration, and proliferation (100).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17511588"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 37,
+      "target": 1,
+      "key": "649e0af89afd20679258150bd85574f8"
+    },
+    {
+      "line": 7,
+      "relation": "increases",
+      "evidence": "Rac2, but not Rac1, regulates superoxide production and directed migration in neutrophils, and in each cell type, the two GTPases play distinct roles in actin organization, cell survival, and proliferation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14564009"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 37,
+      "target": 1,
+      "key": "ab971609ac1ce8b7f716dc967c1962fc"
+    },
+    {
+      "line": 20,
+      "relation": "increases",
+      "evidence": "IL-4 and GM-CSF upregulated the expression of CD40 on Synovial fluid macrophages.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9851271"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 27,
+      "target": 16,
+      "key": "005521d518a61c8a8c6a5c1c7f314daa"
+    },
+    {
+      "line": 20,
+      "relation": "increases",
+      "evidence": "IL-4, but not IL-2, induces a twofold increase of the CD40 antigen expression on B cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "2476318"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "source": 27,
+      "target": 16,
+      "key": "2326304f23a8caf937c92c591c72ca68"
+    },
+    {
+      "line": 45,
+      "relation": "directlyIncreases",
+      "evidence": "The intracellular signaling induced by IL-4/IL-4R interactions on CD4  T cells has been characterized in great detail. The binding of IL-4 to the Type I receptor in CD4  T cells induces the activation of the nonreceptor tyrosine kinase Jak1, which promotes the phosphorylation of STAT6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17200144"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "CD4+ T-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 27,
+      "target": 28,
+      "key": "65b01aee19d3d2541597d7f9b0613630"
+    },
+    {
+      "line": 45,
+      "relation": "directlyIncreases",
+      "evidence": "we demonstrate for the first time that Syk is constitutively associated with IL-4R(alpha)in human polymorphonuclear neutrophils (PMNs) and that IL-4 stimulation increases the amount of Syk associated with IL-4R(alpha). Moreover, upon IL-4 treatment, a pool of Syk associated with IL-4R(alpha) is phosphorylated.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19783684"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Neutrophils": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 27,
+      "target": 28,
+      "key": "ec08956d922e1aeffbaab92deceef473"
+    },
+    {
+      "line": 45,
+      "relation": "directlyIncreases",
+      "evidence": "Figure 1. Pathways to MUC5AC expression in COPD",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17615396"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 27,
+      "target": 28,
+      "key": "bd88649d5b9a80c95ce890cc410e21e4"
+    },
+    {
+      "line": 57,
+      "relation": "increases",
+      "evidence": "IL-4 was able to induce AID expression in human primary B cells and B cell lines, and IL-4-inducedAID expression was further enhanced by CD40 signaling. IL-4-dependent AID induction was inhibited by a dominant-negative STAT6, indicating that IL-4 induced AID expression via the Janus kinase (JAK)/STAT6 signaling pathway",
+      "citation": {
+        "db": "Other",
+        "db_id": "12574355"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "b-cell": true
+        }
+      },
+      "source": 27,
+      "target": 10,
+      "key": "a6a1d32946a7ec360fc1f10d8d23c1dc"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "IL-4 has been documented to regulate the expression of eotaxin-1 (41), eotaxin-2 (42), and eotaxin-3 (34) in endothelial cells and fibroblasts in a STAT6-dependent manner (42, 43, 44, 45). IL-4 signal transduction includes activation of STAT6 (46, 47, 48, 49, 50).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16547273"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "a8dd4309de1c5f9dac4a9094863ef6c7"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "Finally, reconstitution of Stat6-deficient splenic B cells with Bcl-xL was able to protect those cells from Fas-induced cell death.  These results suggest that the anti-apoptotic activity of IL-4 in B cells is mediated through the activation of Stat6 and subsequent transcription of Bcl-xL",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12023955"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "f94f9ccb3f521e28d64a7569938ea8c1"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "SOCS-1 and SOCS-3 inhibit interleukin (IL)-4-dependent signal transducer and activator of transcription 6 (Stat6) activation of and subsequent gene induction. By contrast, SOCS-2 and cytokine-inducible Src homology domain 2 (SH2)-containing protein up-regulate these processes",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10950967"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "c218eb83caf529ba0fbc36b3fa5e38b6"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "To verify the absence of the STAT6-signaling cascade in STAT6-/-  MLF, we assessed mOSM and mIL-4 induced responses with respect to STAT3 and STAT6 activation. Fig. 6 confirms the absence of STAT6 protein and STAT6 induction in STAT6-/- MLF but equivalent activation of STAT3 in both wt and STAT6-/- MLF.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16547273"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "59b4a260451c3ddced411b21c980134b"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "In this report we demonstrate that Stat6 is a critical signaling molecule for IL-4 in protecting primary B cells from passive and Fas-induced cell death. We show that expression of the Bcl-2 family member, Bcl-xL, is induced maximally by IL-4 and anti-IgM/IL-4 in a Stat6-dependent manner. Additionally, we demonstrate that bcl-xL transcription is likely to be directly activated through a Stat6 binding site in the bcl-xL-flanking region.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12023955"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "207dd1773f0e836d0e897508f1698330"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "The Th2 cytokine IL-4 preferentially stimulated the expression of CCR3 ligand chemokines including eotaxin in ASM cells. The transcription factor STAT6 may play a pivotal role in the activation of eotaxin transcription in response to IL-4. [ELISA and rtPCR]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17541284"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Muscle, Smooth": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "cbae2f1c850b77c642b05031fbaaf601"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "Recently we reported a correlation between the ability of IL-4 to regulate TNFalpha production by monocytes and the expression of the IL-4 receptor gamma chain or gamma common (gamma c chain). interferon alpha (IFNalpha)-treated monocytes expressed less IL-4 receptor gamma c chain, reduced levels of IL-4-activated STAT6 and IL-4 could not suppress LPS-induced TNFalpha production.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11991671"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "8cf83946e317953521072bb9c051724f"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "Expression microarray analyses demonstrated that IL-4 upregulated CCL26, SOCS1, CISH, EGLN3, and SIDT1, and downregulated DUSP1, FOS, and FOSB, respectively, in these breast cancer cells. Among those genes, CCL26 and SOCS1 were known genes regulated by IL-4/Stat6 pathway, but CISH, EGLN3, SIDT1, DUSP1, FOS, and FOSB were novel genes demonstrated to be IL-4 responsive for the first time.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18342537"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "carcinoma of breast": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "5d7bbc31c671c05c1a9d3356f53621ed"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "IL-4 activation of the LTalpha promoter is mediated by STAT6... This data demonstrates the presence of a STAT6 binding site in the LTalpha gene promoter... These results demonstrate that the STAT6 binding site in the LTalpha gene promoter is functional and responsive to IL-4.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9541585"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "9ce1c22483e54731b2bf1e9d1c685124"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "demonstrate the existence of 2 functional signal transducer and activator of transcription 6 (Stat6) binding sites on the P-selectin promoter and further demonstrate, by functional analysis of the P-selectin promoter, that binding of activated Stat6 to at least 1 site is essential for IL-4-induction of P-selectin transcription.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10364072"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "518460253bc8d09212730a6ffbb879c9"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "we demonstrate that IL-4-induced STAT6 activation was inhibited profoundly by 24 h pretreatment with IFN-gamma in human primary airway epithelial cell cultures.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15297269"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "2244ed350f69bae56fd9260cc42d759d"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "These results suggest that IL-4 inhibition of IFN-gamma-induced CD40 gene expression is mediated by direct STAT-6 binding to the CD40 promoter.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11086058"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "b97ec7be252f237721a0a082df04c06e"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "Fig. 4. IL-4 induces STAT6 binding to a site in the 5' upstream regulatory region of the AID gene.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14978013"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "03de6ad36630071d55c50fc8bcce3d58"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "Induction of T-bet was, however, suppressed by IL-4 (Fig. 1D) acting via STAT6 (17). Thus, T-bet expression and TH1 differentiation are coordinately induced without requiring IL-12/STAT4 and are coordinately suppressed by IL-4/STAT6.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11397944"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "017ddaf8340137d5b2e416db96e04741"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "CCL23 expression is induced by IL-4 in a STAT6-dependent fashion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17371990"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Monocytes": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "c002863b16f2ccd298ea7534c28c2af6"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "Besides GATA3 and STAT5, many other transcription factors are also involved in regulating IL-4 production and Th2 differentiation. Growth factor independent 1 (Gfi-1) is a STAT6-dependent immediate early gene induced by IL-4.55  TCR activation also induces Gfi-1,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20065998"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Th2 cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "fa988df035ed4b95afdde11359f79cc2"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "Cytokines control the outcome of TH immunity, with IL-12, acting via signal transducer and activator of transcription 4 (STAT4), to promote TH1 development, whereas IL-4 promotes TH2 development via the actions of STAT6 (2).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11397944"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Th2 cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "0d868470135302cacb2a9688cfc583ee"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "IL-4 and IL-13 induced phosphorylation of STAT6 in mtCC cells, which binds to the proximal STAT-binding element (SBE) in the Ugrp2 gene promoter, leading to transcriptional activation of this gene.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16237061"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "70ab8f15ea6693da5aa91a8e560530a9"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "This unconventional interaction of SOCS5 protein with the IL-4R resulted in the inhibition of IL-4-mediated signal transducer and activator of transcription-6 activation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12242343"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "45748f47d0db9af561e6c799360c54db"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "Socs1 inhibits activation of STAT6 by Il4 stimulation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12110143"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "404c881530cb221806077e74c28a5f38"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "Stimulation by IL-4/IL-13 was accompanied by increases in phosphorylated STAT6 and JAK1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15322207"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 39,
+      "key": "bde4c7031be88b3cd156b720358b4b8e"
+    },
+    {
+      "line": 86,
+      "relation": "increases",
+      "evidence": "Here we identified BLNK as a direct target of the transcription factor Pax5 (BSAP). Restoration of BLNK expression in Ig(mu) transgenic Pax5(--) pro-B cells resulted in constitutive pre-BCR signaling and increased cell proliferation without inducing progression to the pre-B cell stage.....Pax5 Activates BLNK by Binding to the Transcription  Initiation Region",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12387741"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "source": 11,
+      "target": 1,
+      "key": "0226e68c4a6f9cf3fda3266a3fad0cbe"
+    },
+    {
+      "line": 25,
+      "relation": "directlyIncreases",
+      "evidence": "D2-induced phosphorylation of the zeta-chain and influx of Ca2+ was defective in the ZAP-70-deficient T cells, whereas CD2-induced phosphorylation of several other proteins, including Syk, was not affected.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11034358"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 41,
+      "target": 40,
+      "key": "279e3bb6a4b32a2c3870de80cd4b96f0"
+    },
+    {
+      "line": 25,
+      "relation": "directlyIncreases",
+      "evidence": "Interaction with Pak2 enhances the intrinsic kinase activity of Syk. This is supported by in vitro studies showing that Pak2 phosphorylates and activates Syk.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14673144"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 41,
+      "target": 40,
+      "key": "1e68b40fb01442f9fe802eac907b994d"
+    },
+    {
+      "line": 25,
+      "relation": "directlyIncreases",
+      "evidence": "Furthermore, hyperglycemia was found to inhibit protein tyrosine phosphatase (PTP) activity and increase phosphorylation of the tyrosine kinase Syk",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11375352"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 41,
+      "target": 40,
+      "key": "95679dfad78604a5a7c497990e8c0295"
+    },
+    {
+      "line": 25,
+      "relation": "directlyIncreases",
+      "evidence": "phosphorylation of syk and PLC gamma2 by collagen",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9028946"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 41,
+      "target": 40,
+      "key": "2b312978c9b8d80e255c46a3cbed1902"
+    },
+    {
+      "line": 25,
+      "relation": "directlyIncreases",
+      "evidence": "Pretreatment of PMN with piceatannol, a Syk-selective inhibitor, blocked EIgG phagocytosis and Syk phosphorylation Both wortmannin and piceatannol inhibited PI 3-kinase, but only piceatannol inhibited Syk.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10586078"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 41,
+      "target": 40,
+      "key": "1caafafb0f690a7d44d365c230d9eb9a"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 40,
+      "target": 41,
+      "key": "21d186decc20bd637e28badeb4aeda2b"
+    },
+    {
+      "line": 6,
+      "relation": "increases",
+      "evidence": "BCR induced tyrosine phosphorylation of BLNK was mediated by SYK. SYK induced tyrosine phosphorylation of BLNK was observed in Sf9, an insect cell line expressing SYK and BLNK. The results were confirmed by the absence of tyrosine phosphorylation in cells deficient in expressing SYK.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11226282"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 40,
+      "target": 11,
+      "key": "282cdaaa4320df4208664fbce608b03c"
+    },
+    {
+      "line": 80,
+      "relation": "increases",
+      "evidence": "In a reconstitution cell system, coexpression of BLNK allows Syk to phosphorylate Btk on its tyrosine 551, leading to the enhancement of Btk activity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11226282"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 40,
+      "target": 12,
+      "key": "ac6627cb484dd7d6b251eb8235723d11"
+    },
+    {
+      "line": 63,
+      "relation": "increases",
+      "evidence": "Bam32/DAPP1 mediates multiple PI3K-dependent responses in B-cells through membrane-proximal mechanisms involving Src kinases, Rac1, F-actin and mitogen-activated protein kinases, resulting in selective effects on BCR-mediated proliferation, antigen presentation and generation of antibody responses.",
+      "citation": {
+        "db": "Other",
+        "db_id": "17371232"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "b cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 47,
+      "target": 37,
+      "key": "8394f7098b5c43e34afce293c7494064"
+    },
+    {
+      "line": 30,
+      "relation": "increases",
+      "evidence": "expression of BAFF and APRIL receptors (B-cell maturation antigen [BCMA], transmembrane activator and calcium modulator and cyclophilin ligand interactor [TACI], and BAFF-R) in a majority of 13 myeloma cell lines and in the purified primary myeloma cells of 11 patients. APRIL and BAFF were potent survival factors for exogenous cytokine-dependent myeloma cell lines and were autocrine growth factors for the RPMI8226 and L363 autonomously growing cell lines. These factors activated nuclear factor (NF)-kappaB, phosphatidylinositol-3 (PI-3) kinase/AKT, and mitogen-activated protein kinase (MAPK) kinase pathways and induced a strong up-regulation of the Mcl-1 and Bcl-2 antiapoptotic proteins in myeloma cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15070697"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 44,
+      "target": 9,
+      "key": "4aadea85cc572cf101076678d6876816"
+    },
+    {
+      "line": 30,
+      "relation": "increases",
+      "evidence": "Neutralization of endogenous BAFF and APRIL by soluble TACI and BCMA decoy receptors attenuates the survival of NHL B cells, decreases activation of the prosurvival transcription factor NF-kappaB, down-regulates the antiapoptotic proteins Bcl-2 and Bcl-x(L), and up-regulates the proapoptotic protein Bax.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14978135"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 44,
+      "target": 9,
+      "key": "597dfe72148333379187b037c047aa10"
+    },
+    {
+      "line": 30,
+      "relation": "increases",
+      "evidence": "Adding soluble BAFF or APRIL protected B-CLL cells against spontaneous and drug-induced apoptosis and stimulated NF-kappaB activation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14504101"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 44,
+      "target": 9,
+      "key": "09e2783e68ad364d3de530f86bcc5a38"
+    },
+    {
+      "line": 64,
+      "relation": "increases",
+      "evidence": "Interestingly, IL-13 increased the expression of CD40 on peripheral blood B cells, providing a possible mechanism for the observed synergy.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9192766"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 26,
+      "target": 16,
+      "key": "d0c8c069abb346173e01386d3c41a561"
+    },
+    {
+      "line": 64,
+      "relation": "increases",
+      "evidence": "IL-13 increased the expression of CD40 on peripheral blood B cells, providing a possible mechanism for the observed synergy",
+      "citation": {
+        "db": "Other",
+        "db_id": "9192766"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "b cells": true
+        }
+      },
+      "source": 26,
+      "target": 16,
+      "key": "3a3976a80f7669a06d4f790d4e2c7dd5"
+    },
+    {
+      "line": 54,
+      "relation": "increases",
+      "evidence": "The fact that caspase-6 inhibitors block the induction of both cdk4 and d-type cyclins suggests that caspase-6 activity is required for resting B cells to enter the G1 phase of the cell cycle.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12794135"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "b-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 14,
+      "target": 1,
+      "key": "c1954bf3d236b8b1a9e7c6d8e8eb1217"
+    },
+    {
+      "line": 84,
+      "relation": "decreases",
+      "evidence": "We have identified and characterized a novel repressor of human beta-interferon (beta-IFN) gene expression. This protein, designated PRDI-BF1, binds specifically to the PRDI element of the beta-IFN gene promoter and is distinct from previously reported proteins that bind to this sequence. PRDI-BF1 is an 88-kD protein containing five zinc-finger motifs. Cotransfection experiments in cultured mammalian cells revealed that PRDI-BF1 is a potent repressor of PRDI-dependent transcription. PRDI-BF1 blocks virus induction of the intact beta-IFN gene promoter and of synthetic promoters containing multiple PRDI sites. PRDI-BF1 can also block the SV40 enhancer when PRDI sites are located between the enhancer and the promoter. This repression is highly dependent on the location of the PRDI sites, however, indicating that PRDI-BF1 cannot act at a distance. On the basis of the properties of PRDI-BF1 and the observation that PRDI-BF1 mRNA accumulation is virus inducible, we propose that PRDI-BF1 may act as a postinduction repressor of the beta-IFN gene by displacing positive regulatory proteins from the PRDI site of the promoter.",
+      "citation": {
+        "db": "Other",
+        "db_id": "1851123"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 36,
+      "target": 50,
+      "key": "b1d22cb4ce3bd81a8089588b153e0cbc"
+    },
+    {
+      "line": 50,
+      "relation": "increases",
+      "evidence": "Vav proteins thus regulate an NF-kappaB-dependent survival signal in naive B cells and are required for NF-kappaB function after BCR cross-linking.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15941910"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 46,
+      "target": 9,
+      "key": "4cb20498d14e41b3580eaa2a47e8466c"
+    },
+    {
+      "line": 56,
+      "relation": "directlyIncreases",
+      "evidence": "Furthermore, the association of DOCK2 and Vav, the guanine-nucleotide exchanging factor (GEF) for Rac1, was demonstrated in Jurkat cells. Finally, the stable expression of DOCK2-dCS mutant in Jurkat cells was shown to reduce cell attachment. These data suggest the presence of a novel protein complex of CrkL, DOCK2, and Vav to regulate Rac1 in leukemia cell lines.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12393632"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 46,
+      "target": 37,
+      "key": "cf18897113e708fb0966130783e36799"
+    },
+    {
+      "line": 56,
+      "relation": "directlyIncreases",
+      "evidence": "Consistent with the Rac1 GTP-loading results, BCR stimulation of mature B cells resulted in an increase of Vav phosphorylation as early as 2 min that peaked at 15 min poststimulation. Likewise, the apparent inability of transitional immature B cells to activate Rac1 was associated with reduced Vav phosphorylation in both resting and anti-BCR-stimulated cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "17878342"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "b cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 46,
+      "target": 37,
+      "key": "cd4fe832a7abe9962b79d618797fd1dd"
+    },
+    {
+      "line": 62,
+      "relation": "decreases",
+      "evidence": "c-Myc protein expression was dramatically reduced in Aiolos- and Ikaros-infected cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "20566697"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "b220+ cells": true
+        },
+        "Tissue": {
+          "bone marrow": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 33,
+      "key": "396459d1624a60f6446d4cd68df21179"
+    },
+    {
+      "line": 51,
+      "relation": "increases",
+      "evidence": "the upregulation of c-Myc, CDC25, and CDC2/CDK2 kinase activities results in the augmentation of B cell proliferation",
+      "citation": {
+        "db": "Other",
+        "db_id": "9806630"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "B cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 17,
+      "target": 3,
+      "key": "702d61c31f378be3710250f99815f48c"
+    },
+    {
+      "line": 52,
+      "relation": "increases",
+      "evidence": "the upregulation of c-Myc, CDC25, and CDC2/CDK2 kinase activities results in the augmentation of B cell proliferation",
+      "citation": {
+        "db": "Other",
+        "db_id": "9806630"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "B cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 18,
+      "target": 3,
+      "key": "6f215c6a135e1d4fb6a01b14d9991ae3"
+    },
+    {
+      "line": 68,
+      "relation": "increases",
+      "evidence": "IRF5 deficiency reduces IFN-α, IFN-β and IL-6 production by Toll-like receptor 9 (TLR9)- and TLR7-stimulated DCs and reduces TLR7- and TLR9-induced IL-6 production by B cells",
+      "citation": {
+        "db": "Other",
+        "db_id": "23291967"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "B-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 42,
+      "target": 30,
+      "key": "737c5b6bc7559407e5377ae89efda457"
+    },
+    {
+      "line": 68,
+      "relation": "increases",
+      "evidence": "IRF5 is activated following engagement of TLR7 or 9, and\nperhaps TLR8.",
+      "citation": {
+        "db": "Other",
+        "db_id": ""
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 42,
+      "target": 30,
+      "key": "366f24f0498fcfd35a82e15e39ebe22d"
+    }
+  ]
+}

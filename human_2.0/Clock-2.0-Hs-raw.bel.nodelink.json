@@ -1,0 +1,2829 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Clock-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Clock network depicts the causal mechanisms that regulate circadian clock signaling leading to cell proliferation. The network focuses on downstream targets of the CLOCK:ARNTL transcriptional complex such as NR1D1, CRY1, PERs, and BHLHs."
+    },
+    "namespace_url": {
+      "HGNC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-human-genes/hgnc-human-genes-20150601.belns",
+      "GOBP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20150601.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20150601.belns",
+      "GOCC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170511.belns",
+      "MESHPP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20150601.belns",
+      "MGI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20150601.belns",
+      "RGD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20150601.belns",
+      "CHEBI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20150601.belns",
+      "SCHEM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-chemicals/selventa-legacy-chemicals-20150601.belns",
+      "EGID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/entrez-gene-ids/entrez-gene-ids-20150601.belns",
+      "MESHD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20150601.belns",
+      "SDIS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-diseases/selventa-legacy-diseases-20150601.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20150601.belns",
+      "MESHC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170511.belns",
+      "GOBPID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process-ids/go-biological-process-ids-20150601.belns",
+      "GOCCID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component-ids/go-cellular-component-ids-20150601.belns",
+      "MESHCS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20150601.belns"
+    },
+    "namespace_pattern": {},
+    "annotation_url": {
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20150601.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20150601.belanno",
+      "Species": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+      "Tissue": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20150601.belanno"
+    },
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Smoke, cigarette"
+      },
+      "id": "2ef524381f7680ce6cfba5fa9781b085",
+      "bel": "a(SCHEM:\"Smoke, cigarette\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "G1/S transition of mitotic cell cycle"
+      },
+      "id": "606a3e7b2b334293984d34ee522d4751",
+      "bel": "bp(GOBP:\"G1/S transition of mitotic cell cycle\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "G2/M transition of mitotic cell cycle"
+      },
+      "id": "9143a9b3a49973aec75aa80674b8d2cc",
+      "bel": "bp(GOBP:\"G2/M transition of mitotic cell cycle\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "cell cycle"
+      },
+      "id": "1aab0c4b46e129766c1d301bf05c47c8",
+      "bel": "bp(GOBP:\"cell cycle\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "circadian behavior"
+      },
+      "id": "02104faac353301584934c860e0bc728",
+      "bel": "bp(GOBP:\"circadian behavior\")"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ARNTL"
+          },
+          "id": "c09c0e2c93a85f567a98d8cfcaab6a35",
+          "bel": "p(HGNC:ARNTL)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CLOCK"
+          },
+          "id": "de57a1405707722d8454f0adc0e42b94",
+          "bel": "p(HGNC:CLOCK)"
+        }
+      ],
+      "id": "037938c3ec4df315201afeb33e184506",
+      "bel": "complex(p(HGNC:ARNTL), p(HGNC:CLOCK))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ARNTL"
+          },
+          "id": "c09c0e2c93a85f567a98d8cfcaab6a35",
+          "bel": "p(HGNC:ARNTL)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "NPAS2"
+          },
+          "id": "afffc30c77a430d5edf67564dd147452",
+          "bel": "p(HGNC:NPAS2)"
+        }
+      ],
+      "id": "e98f33d5cb3b94b2ef8ca25c0d4b0b2d",
+      "bel": "complex(p(HGNC:ARNTL), p(HGNC:NPAS2))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CCNB1"
+          },
+          "id": "55f1369d23de944064085b235c0d99d6",
+          "bel": "p(HGNC:CCNB1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CDK1"
+          },
+          "id": "dd8065837c4f267f62011d07d870f0a3",
+          "bel": "p(HGNC:CDK1)"
+        }
+      ],
+      "id": "831c1db33a4fef02567d70ca963c05d7",
+      "bel": "complex(p(HGNC:CCNB1), p(HGNC:CDK1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CLOCK"
+          },
+          "id": "de57a1405707722d8454f0adc0e42b94",
+          "bel": "p(HGNC:CLOCK)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "SIRT1"
+          },
+          "id": "8170e177ec2e1cce964602b364cab766",
+          "bel": "p(HGNC:SIRT1)"
+        }
+      ],
+      "id": "a43914e8a21f02650dfc776e95df6f57",
+      "bel": "complex(p(HGNC:CLOCK), p(HGNC:SIRT1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CRY1"
+          },
+          "id": "55f7a647f60740b261ae4df4dd76ee2a",
+          "bel": "p(HGNC:CRY1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "PER1"
+          },
+          "id": "73873559e1e395bbb29005731af4a7fb",
+          "bel": "p(HGNC:PER1)"
+        }
+      ],
+      "id": "7ecc1eed2f7fcf75c3380676e92a1304",
+      "bel": "complex(p(HGNC:CRY1), p(HGNC:PER1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CRY1"
+          },
+          "id": "55f7a647f60740b261ae4df4dd76ee2a",
+          "bel": "p(HGNC:CRY1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "PER2"
+          },
+          "id": "25834bb49132de851a3c6746c05b9e68",
+          "bel": "p(HGNC:PER2)"
+        }
+      ],
+      "id": "e23d964107e6cfff9595576b14c86166",
+      "bel": "complex(p(HGNC:CRY1), p(HGNC:PER2))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CRY1"
+          },
+          "id": "55f7a647f60740b261ae4df4dd76ee2a",
+          "bel": "p(HGNC:CRY1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "PER3"
+          },
+          "id": "43bb42ec4f7ac5b1844d8ef0a87af8b8",
+          "bel": "p(HGNC:PER3)"
+        }
+      ],
+      "id": "8509dbcc5651433a918d406242436627",
+      "bel": "complex(p(HGNC:CRY1), p(HGNC:PER3))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CRY1"
+          },
+          "id": "55f7a647f60740b261ae4df4dd76ee2a",
+          "bel": "p(HGNC:CRY1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "TIMELESS"
+          },
+          "id": "cbf9a6a5bb06a893cd92ac4f2083302d",
+          "bel": "p(HGNC:TIMELESS)"
+        }
+      ],
+      "id": "38ee3ef68448b23facdcc4f415b591ab",
+      "bel": "complex(p(HGNC:CRY1), p(HGNC:TIMELESS))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CRY2"
+          },
+          "id": "0f9fe764054148a793f61e6ee6d04996",
+          "bel": "p(HGNC:CRY2)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "PER1"
+          },
+          "id": "73873559e1e395bbb29005731af4a7fb",
+          "bel": "p(HGNC:PER1)"
+        }
+      ],
+      "id": "52ce42f260e63f163fe003b603967937",
+      "bel": "complex(p(HGNC:CRY2), p(HGNC:PER1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CRY2"
+          },
+          "id": "0f9fe764054148a793f61e6ee6d04996",
+          "bel": "p(HGNC:CRY2)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "PER2"
+          },
+          "id": "25834bb49132de851a3c6746c05b9e68",
+          "bel": "p(HGNC:PER2)"
+        }
+      ],
+      "id": "cc4a1e2c0e3d08995306c6841ba257a5",
+      "bel": "complex(p(HGNC:CRY2), p(HGNC:PER2))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CRY2"
+          },
+          "id": "0f9fe764054148a793f61e6ee6d04996",
+          "bel": "p(HGNC:CRY2)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "PER3"
+          },
+          "id": "43bb42ec4f7ac5b1844d8ef0a87af8b8",
+          "bel": "p(HGNC:PER3)"
+        }
+      ],
+      "id": "904a3745fc8e918321984e18b88ba207",
+      "bel": "complex(p(HGNC:CRY2), p(HGNC:PER3))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CRY2"
+          },
+          "id": "0f9fe764054148a793f61e6ee6d04996",
+          "bel": "p(HGNC:CRY2)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "TIMELESS"
+          },
+          "id": "cbf9a6a5bb06a893cd92ac4f2083302d",
+          "bel": "p(HGNC:TIMELESS)"
+        }
+      ],
+      "id": "b09553e8c11f30051708a5b5e1f3cf53",
+      "bel": "complex(p(HGNC:CRY2), p(HGNC:TIMELESS))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "PER1"
+          },
+          "id": "73873559e1e395bbb29005731af4a7fb",
+          "bel": "p(HGNC:PER1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "TIMELESS"
+          },
+          "id": "cbf9a6a5bb06a893cd92ac4f2083302d",
+          "bel": "p(HGNC:TIMELESS)"
+        }
+      ],
+      "id": "4973af8ad400462721177407111a4b54",
+      "bel": "complex(p(HGNC:PER1), p(HGNC:TIMELESS))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "PER2"
+          },
+          "id": "25834bb49132de851a3c6746c05b9e68",
+          "bel": "p(HGNC:PER2)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "TIMELESS"
+          },
+          "id": "cbf9a6a5bb06a893cd92ac4f2083302d",
+          "bel": "p(HGNC:TIMELESS)"
+        }
+      ],
+      "id": "b209c88492d4eccd22940d18bda4fd4a",
+      "bel": "complex(p(HGNC:PER2), p(HGNC:TIMELESS))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "PER3"
+          },
+          "id": "43bb42ec4f7ac5b1844d8ef0a87af8b8",
+          "bel": "p(HGNC:PER3)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "TIMELESS"
+          },
+          "id": "cbf9a6a5bb06a893cd92ac4f2083302d",
+          "bel": "p(HGNC:TIMELESS)"
+        }
+      ],
+      "id": "2b82a7df53f7d11cbcc3359d8373044f",
+      "bel": "complex(p(HGNC:PER3), p(HGNC:TIMELESS))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "EGID",
+        "name": "5424"
+      },
+      "id": "7f74f0483cfb690795057d526e0c2e30",
+      "bel": "p(EGID:5424)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "EGID",
+        "name": "5424"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Tyr",
+          "pos": 15
+        }
+      ],
+      "id": "32c269d2b63a8551071dc668553eafef",
+      "bel": "p(EGID:5424, pmod(Ph, Tyr, 15))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ARNTL"
+      },
+      "id": "c09c0e2c93a85f567a98d8cfcaab6a35",
+      "bel": "p(HGNC:ARNTL)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ARNTL"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          }
+        }
+      ],
+      "id": "a6741b8272f4a94ddfd39aa4891c9e98",
+      "bel": "p(HGNC:ARNTL, pmod(Ph))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ATM"
+      },
+      "id": "9defb308af780bf30b96c7a4ee641a2e",
+      "bel": "p(HGNC:ATM)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ATR"
+      },
+      "id": "b309a0651916151f4cd8a8a88eb5b478",
+      "bel": "p(HGNC:ATR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "BHLHE40"
+      },
+      "id": "9d9914d1ea814bc49f52e803f77bcb83",
+      "bel": "p(HGNC:BHLHE40)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "BHLHE41"
+      },
+      "id": "2f9c0c716f6dcec2150f5380fb6bbc8b",
+      "bel": "p(HGNC:BHLHE41)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCNA2"
+      },
+      "id": "1fad7e9e1c43bac1ac107fb3c11e5b2a",
+      "bel": "p(HGNC:CCNA2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCNA2"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          }
+        }
+      ],
+      "id": "c0fe8d73b7628a9259fa1586f60742bb",
+      "bel": "p(HGNC:CCNA2, pmod(Ph))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCNB1"
+      },
+      "id": "55f1369d23de944064085b235c0d99d6",
+      "bel": "p(HGNC:CCNB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCNB1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          }
+        }
+      ],
+      "id": "5e95b1a432c8d0a42ee2036de73f38ea",
+      "bel": "p(HGNC:CCNB1, pmod(Ph))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCND1"
+      },
+      "id": "af65521e8dc8a9417952f6aebb7725c6",
+      "bel": "p(HGNC:CCND1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CDK1"
+      },
+      "id": "dd8065837c4f267f62011d07d870f0a3",
+      "bel": "p(HGNC:CDK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CDKN1A"
+      },
+      "id": "ff515d244d02108af03d90d92d4fa10f",
+      "bel": "p(HGNC:CDKN1A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CHEK1"
+      },
+      "id": "45aa99080c2a9f2a6864cfcc224b221c",
+      "bel": "p(HGNC:CHEK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CHEK1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser",
+          "pos": 345
+        }
+      ],
+      "id": "6153a2ec3447a71926b3e92b79c2d6a1",
+      "bel": "p(HGNC:CHEK1, pmod(Ph, Ser, 345))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CHEK2"
+      },
+      "id": "684f6aa00b8e9a42160f5f43d57c764f",
+      "bel": "p(HGNC:CHEK2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CLOCK"
+      },
+      "id": "de57a1405707722d8454f0adc0e42b94",
+      "bel": "p(HGNC:CLOCK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CRY1"
+      },
+      "id": "55f7a647f60740b261ae4df4dd76ee2a",
+      "bel": "p(HGNC:CRY1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CRY1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          }
+        }
+      ],
+      "id": "9d9bbff1af59b4c6bfd56f8f7a505306",
+      "bel": "p(HGNC:CRY1, pmod(Ph))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CRY2"
+      },
+      "id": "0f9fe764054148a793f61e6ee6d04996",
+      "bel": "p(HGNC:CRY2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CRY2"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          }
+        }
+      ],
+      "id": "3fa5cf847250110d3c9fcd639545f74f",
+      "bel": "p(HGNC:CRY2, pmod(Ph))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CSNK1D"
+      },
+      "id": "c52e750e097fa5f8736f8b89b208d8d3",
+      "bel": "p(HGNC:CSNK1D)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CSNK1E"
+      },
+      "id": "74f70e762cb7ea2a3488242918999ea8",
+      "bel": "p(HGNC:CSNK1E)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CTNNB1"
+      },
+      "id": "4bd0b8cd92c762d4a8c78aec03f7c0b4",
+      "bel": "p(HGNC:CTNNB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "DEC1"
+      },
+      "id": "f8a8ad1e420d7051aacfdb219e62ce84",
+      "bel": "p(HGNC:DEC1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "E2F1"
+      },
+      "id": "5314a5235c40b2ce06fd3841a46b5f12",
+      "bel": "p(HGNC:E2F1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MYC"
+      },
+      "id": "8c05a82e1b8591c8a3d254aa5d1dd3ee",
+      "bel": "p(HGNC:MYC)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NPAS2"
+      },
+      "id": "afffc30c77a430d5edf67564dd147452",
+      "bel": "p(HGNC:NPAS2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NR1D1"
+      },
+      "id": "b9ed4b9feedd848d21b2c3473cafa2f7",
+      "bel": "p(HGNC:NR1D1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PER1"
+      },
+      "id": "73873559e1e395bbb29005731af4a7fb",
+      "bel": "p(HGNC:PER1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PER1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          }
+        }
+      ],
+      "id": "f40194ce157994d76b976425208e533d",
+      "bel": "p(HGNC:PER1, pmod(Ph))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PER1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser"
+        }
+      ],
+      "id": "2216f9ec2af26de85d47bcfb618fce40",
+      "bel": "p(HGNC:PER1, pmod(Ph, Ser))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PER2"
+      },
+      "id": "25834bb49132de851a3c6746c05b9e68",
+      "bel": "p(HGNC:PER2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PER2"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          }
+        }
+      ],
+      "id": "dc907d83e4804b8806673fa00e344f8d",
+      "bel": "p(HGNC:PER2, pmod(Ph))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PER2"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser"
+        }
+      ],
+      "id": "62b1adc7f1a4b8149a7a7a58b9e8fb76",
+      "bel": "p(HGNC:PER2, pmod(Ph, Ser))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PER3"
+      },
+      "id": "43bb42ec4f7ac5b1844d8ef0a87af8b8",
+      "bel": "p(HGNC:PER3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PER3"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          }
+        }
+      ],
+      "id": "2987cda5ccc0a2b1806cdfad6e644592",
+      "bel": "p(HGNC:PER3, pmod(Ph))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "POLD1"
+      },
+      "id": "da8e8f9fe6e2871115e1381d536edf29",
+      "bel": "p(HGNC:POLD1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RB1"
+      },
+      "id": "60c4cbeae2bbc7ac6feb22af759f9e42",
+      "bel": "p(HGNC:RB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RORA"
+      },
+      "id": "cf950a633a3f619f0575c6068010e326",
+      "bel": "p(HGNC:RORA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SIRT1"
+      },
+      "id": "8170e177ec2e1cce964602b364cab766",
+      "bel": "p(HGNC:SIRT1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TIMELESS"
+      },
+      "id": "cbf9a6a5bb06a893cd92ac4f2083302d",
+      "bel": "p(HGNC:TIMELESS)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "WEE1"
+      },
+      "id": "87e28286bd6915624b6c30cdddbd5cf4",
+      "bel": "p(HGNC:WEE1)"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "MESHD",
+        "name": "Pulmonary Disease, Chronic Obstructive"
+      },
+      "id": "7c231d4db4388a89f9bcabb26d912509",
+      "bel": "path(MESHD:\"Pulmonary Disease, Chronic Obstructive\")"
+    }
+  ],
+  "links": [
+    {
+      "line": 89,
+      "relation": "increases",
+      "evidence": "The c-Myc oncoprotein is strongly induced during the G0 to S-phase transition and is an important regulator of cell cycle entry.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15866886"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 48,
+      "target": 3,
+      "key": "895fe8bd94a40f2797620eea72eb0387"
+    },
+    {
+      "line": 89,
+      "relation": "increases",
+      "evidence": "from full text - Table 2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 48,
+      "target": 3,
+      "key": "b973949af159299ae08ec9e2711dbe38"
+    },
+    {
+      "line": 141,
+      "relation": "decreases",
+      "evidence": "In Results, read the section \"Effect of Dec1 overexpression on circadian rhythms of clock gene expression\".\n\nSee Figure 2 and Table 1.\n\nDEC1 is a alias of BHLHE40 (http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:1046)\nDEC2 is a alias of BHLHE41 (http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:16617)",
+      "citation": {
+        "db": "Other",
+        "db_id": "18411297"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Human fibroblast-like cells": true
+        }
+      },
+      "source": 26,
+      "target": 27,
+      "key": "36852658dfed04a738fc021dd1babdda"
+    },
+    {
+      "line": 142,
+      "relation": "decreases",
+      "evidence": "In Results, read the section \"Effect of Dec1 overexpression on circadian rhythms of clock gene expression\".\n\nSee Figure 2 and Table 1.\n\nDEC1 is a alias of BHLHE40 (http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:1046)",
+      "citation": {
+        "db": "Other",
+        "db_id": "18411297"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "human fibroblast-like cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 26,
+      "target": 26,
+      "key": "9d49f3ab413dd534a46744f32cbdca56"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 51,
+      "target": 53,
+      "key": "a2e3988a5f79ba3ecccd7be891654f43"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 51,
+      "target": 52,
+      "key": "63add0776a1e74fe664ed30a1e443060"
+    },
+    {
+      "relation": "partOf",
+      "source": 51,
+      "target": 9,
+      "key": "416067a82c2336df3b2fd1bec6b44ea3"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 51,
+      "target": 9,
+      "key": "d846a558b65e7afecb2a3008676cec8a"
+    },
+    {
+      "relation": "partOf",
+      "source": 51,
+      "target": 13,
+      "key": "4a82bdc72915c2c14d0599c712dd397b"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 51,
+      "target": 13,
+      "key": "d24b5e15cd545fdaae5062f161d635c1"
+    },
+    {
+      "relation": "partOf",
+      "source": 51,
+      "target": 17,
+      "key": "38bcc950dee4157d682657dd1d2c23e7"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 51,
+      "target": 17,
+      "key": "772e2c387cca5b60520cefb928803877"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "from full text - Table 2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 51,
+      "target": 24,
+      "key": "73bc16b1321f132b3fcef70aed6a2b4e"
+    },
+    {
+      "line": 60,
+      "relation": "directlyDecreases",
+      "evidence": "Thus the SCF system provides a primary route for phosphorylation-dependent degradation of proteins.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15917222"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 51,
+      "target": 51,
+      "key": "648b4b11a4db3ed17c5fd3e2b94c36bd"
+    },
+    {
+      "line": 60,
+      "relation": "directlyDecreases",
+      "evidence": "The inhibition of hPER1 phosphorylation by CKI-7 [ N -(2-aminoethyl)-5-chloro-isoquinoline-8-sulphonamide], a CKI inhibitor, disturbed hPER1 degradation, delayed the nuclear entry of hPER1 and allowed it to persist for longer in the nucleus.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14750904"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 51,
+      "target": 51,
+      "key": "2744cd1ca5016a8de08a00f41c218a27"
+    },
+    {
+      "line": 60,
+      "relation": "directlyDecreases",
+      "evidence": "human casein kinase Idelta (hCKIdelta), the closest homologue to hCKIepsilon, associates with and phosphorylates hPER1 and causes protein instability",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11165242"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 51,
+      "target": 51,
+      "key": "71b17765e947820e3d029bd783396955"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 57,
+      "target": 58,
+      "key": "f6e248bfbd5504f71176b6ace94d3f7e"
+    },
+    {
+      "relation": "partOf",
+      "source": 57,
+      "target": 15,
+      "key": "4ffe997903db6f6954f48dc65077fe41"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 57,
+      "target": 15,
+      "key": "94fe7c7292866409acc272885d5284c7"
+    },
+    {
+      "relation": "partOf",
+      "source": 57,
+      "target": 11,
+      "key": "f579aae2bf41299d0324ea1811c62ba6"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 57,
+      "target": 11,
+      "key": "6db40de483879d2c98660af0773cfdfb"
+    },
+    {
+      "relation": "partOf",
+      "source": 57,
+      "target": 19,
+      "key": "18aae8624da4df161cc11f242318fff7"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 57,
+      "target": 19,
+      "key": "fdea63199e68c8a37005c2c2ff2094b7"
+    },
+    {
+      "relation": "partOf",
+      "source": 30,
+      "target": 7,
+      "key": "c6bf7048a67e439e1c82de1249115f48"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 30,
+      "target": 7,
+      "key": "71885c32f051d74963d326ec086fa14e"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 30,
+      "target": 31,
+      "key": "f8a4982847edd5342a74a5ba01e75b62"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 35,
+      "target": 36,
+      "key": "a0a38fc4cd4a8e27a4939e21c3cbf02c"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 54,
+      "target": 55,
+      "key": "4630c814d98cbdd290b0b3f68f621ba2"
+    },
+    {
+      "relation": "partOf",
+      "source": 54,
+      "target": 10,
+      "key": "a0b5c4fde08c84cde28b8fa286f86bda"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 54,
+      "target": 10,
+      "key": "71029aba1a0f3f79c10159ba31e9b086"
+    },
+    {
+      "relation": "partOf",
+      "source": 54,
+      "target": 14,
+      "key": "e62bd235a56b635ac0a3a2919fb8c026"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 54,
+      "target": 14,
+      "key": "074f873db9b023e3e3d5d91274d9aba1"
+    },
+    {
+      "relation": "partOf",
+      "source": 54,
+      "target": 18,
+      "key": "efb2190fabb1efbfa173ed7e9be41ab6"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 54,
+      "target": 18,
+      "key": "10ea6f235968aeed243b3cd911ade034"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 54,
+      "target": 56,
+      "key": "f9ce3cfa57ebbaa1596d8a92b0dec69f"
+    },
+    {
+      "line": 153,
+      "relation": "directlyDecreases",
+      "evidence": "This b-catenin enhanced PER2 degradation is reversed when b-TrCP is down regulated by siRNA (Fig. 2C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19106159"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 54,
+      "target": 54,
+      "key": "2915ef5841374c8acd9ba8b6b2ce0d3e"
+    },
+    {
+      "line": 153,
+      "relation": "directlyDecreases",
+      "evidence": "both hCKIdelta and hCKIepsilon phosphorylated and caused protein instability of human period 2 protein (hPER2)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11165242"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Degradation"
+      },
+      "source": 54,
+      "target": 54,
+      "key": "18c5b419a98bdb09fd5fcfd362b59084"
+    },
+    {
+      "relation": "partOf",
+      "source": 22,
+      "target": 5,
+      "key": "1142d012990c8a724ebf2aceaaf4dfbe"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 22,
+      "target": 5,
+      "key": "4ac0a5dd71b0b4e5abc7106f825296e0"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 22,
+      "target": 23,
+      "key": "12edc17533091d6f7d70dd60893447e0"
+    },
+    {
+      "relation": "partOf",
+      "source": 22,
+      "target": 6,
+      "key": "50298a1112c2d7e19ca1c915e1c2d29b"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 22,
+      "target": 6,
+      "key": "b7830c7f9af3ad02be155c7fc68570a8"
+    },
+    {
+      "line": 147,
+      "relation": "association",
+      "evidence": "Most of the core clock genes (bmal1 [HGNC:ARNTL], clock, per1, per2, cry1, cry2, rev-erbα, and rev-erbβ) were rhythmically expressed in lung tissue from mice exposed to air or CS, either acutely (10 d; Fig. 1A, B) or chronically (6 mo; Supplemental Fig. S1A, B).",
+      "citation": {
+        "db": "Other",
+        "db_id": "24025728"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 22,
+      "target": 4,
+      "key": "529237197826a8d12816ce5bbf221254"
+    },
+    {
+      "line": 49,
+      "relation": "increases",
+      "evidence": "from full text - Table 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 43,
+      "target": 58,
+      "key": "99f5165ff6cd289815fcf7005138c58c"
+    },
+    {
+      "line": 70,
+      "relation": "increases",
+      "evidence": "from full text - Table 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 43,
+      "target": 23,
+      "key": "51137eb619650b542111ba46fc90cb9c"
+    },
+    {
+      "line": 113,
+      "relation": "increases",
+      "evidence": "human casein kinase Idelta (hCKIdelta), the closest homologue to hCKIepsilon, associates with and phosphorylates hPER1 and causes protein instability",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11165242"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 43,
+      "target": 52,
+      "key": "88e7c0d27bae224cccfb2a3c40967271"
+    },
+    {
+      "line": 123,
+      "relation": "increases",
+      "evidence": "both hCKIdelta and hCKIepsilon phosphorylated and caused protein instability of human period 2 protein (hPER2)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11165242"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 43,
+      "target": 55,
+      "key": "ec5fd866940b4cedbb657127d062abc6"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 41,
+      "target": 42,
+      "key": "9fdd63632efec074f0f11b1d04c7ebf4"
+    },
+    {
+      "relation": "partOf",
+      "source": 41,
+      "target": 15,
+      "key": "9c44538c25a91cd34e925a0947a4995a"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 41,
+      "target": 15,
+      "key": "fc9f850deaa34444fb497838a4b4e0f1"
+    },
+    {
+      "relation": "partOf",
+      "source": 41,
+      "target": 14,
+      "key": "76a67ee389226d79be22264045e5d972"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 41,
+      "target": 14,
+      "key": "896d70e61e3fd2ac831fc6127e287149"
+    },
+    {
+      "relation": "partOf",
+      "source": 41,
+      "target": 16,
+      "key": "d13c93773ff057d356c6ea42e8731e1e"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 41,
+      "target": 16,
+      "key": "35940d4fa4fdd7b5b5bf5c6720b31d5c"
+    },
+    {
+      "relation": "partOf",
+      "source": 41,
+      "target": 13,
+      "key": "f7fb3a9b9c3bd9621e4622b13f801714"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 41,
+      "target": 13,
+      "key": "cbb0212bf9320a6562833cde7d5efaf9"
+    },
+    {
+      "line": 20,
+      "relation": "increases",
+      "evidence": "both hCKIdelta and hCKIepsilon phosphorylated and caused protein instability of human period 2 protein (hPER2)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11165242"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 44,
+      "target": 55,
+      "key": "8ec26205e4b0f1d26b077c1495d7d83e"
+    },
+    {
+      "line": 23,
+      "relation": "increases",
+      "evidence": "from full text - Table 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 44,
+      "target": 23,
+      "key": "a9fb12f07bf1fb68b821b621e57df509"
+    },
+    {
+      "line": 50,
+      "relation": "increases",
+      "evidence": "overexpression of dominant-negative CKI-epsilon leads to decreased BMAL1-driven transcription.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11875063"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 44,
+      "target": 22,
+      "key": "3a99b205f794a32b25054ed575e9f8f4"
+    },
+    {
+      "line": 52,
+      "relation": "increases",
+      "evidence": "from full text - Table 2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 44,
+      "target": 31,
+      "key": "a1eabf48cfc87dec7c0c11fb89560c5a"
+    },
+    {
+      "line": 71,
+      "relation": "increases",
+      "evidence": "from full text - Table 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 44,
+      "target": 58,
+      "key": "7bb19125707fec9524577749f999321d"
+    },
+    {
+      "line": 82,
+      "relation": "increases",
+      "evidence": "from full text - Table 2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 44,
+      "target": 29,
+      "key": "1f395f2347b9a29d2b40a080939f0c39"
+    },
+    {
+      "line": 90,
+      "relation": "increases",
+      "evidence": "Casein kinase Iepsilon (CKIepsilon), a central component of the circadian clock, interacts with and phosphorylates human period protein 1 (hPER1)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11165242"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 44,
+      "target": 52,
+      "key": "5c4cdbac997d428e65db06bd3fbad860"
+    },
+    {
+      "line": 110,
+      "relation": "directlyIncreases",
+      "evidence": "once synthesized, Per1 and Per2 are phosphorylated by CKIepsilon and interacts with corresponding crytochromes CRY1/2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14754509"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 44,
+      "target": 53,
+      "key": "415770c76549016555c1e9d233ea0e7b"
+    },
+    {
+      "line": 39,
+      "relation": "increases",
+      "evidence": "In higher eukaryotes, Cdc2 activity is in part regulated by inhibitory phosphorylation of Thr14 and Tyr15, catalyzed by Wee1 and Myt1, which prevents catastrophic premature entry into mitosis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10504341"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 64,
+      "target": 21,
+      "key": "2569135b17e8dfee9d6363926ad18358"
+    },
+    {
+      "line": 42,
+      "relation": "decreases",
+      "evidence": "from full text - Table 2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 64,
+      "target": 7,
+      "key": "b2ac2b2649f903e519ea7ffaecafc803"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 20,
+      "target": 21,
+      "key": "fdbf3ad474d87661f9c4bcfc42724a4a"
+    },
+    {
+      "line": 33,
+      "relation": "directlyIncreases",
+      "evidence": "The inhibition of hPER1 phosphorylation by CKI-7 [ N -(2-aminoethyl)-5-chloro-isoquinoline-8-sulphonamide], a CKI inhibitor, disturbed hPER1 degradation, delayed the nuclear entry of hPER1 and allowed it to persist for longer in the nucleus.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14750904"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 53,
+      "target": 51,
+      "key": "9cb045fff294ae4e5a04fca1e66f0b0d"
+    },
+    {
+      "line": 29,
+      "relation": "decreases",
+      "evidence": "from full text - Table 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 15,
+      "target": 6,
+      "key": "34aa9accca500454a3b17df08b24a164"
+    },
+    {
+      "line": 58,
+      "relation": "decreases",
+      "evidence": "from full text - Table 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 15,
+      "target": 5,
+      "key": "b0171e5e7f2a35e1c3940d891f9d3904"
+    },
+    {
+      "relation": "partOf",
+      "source": 33,
+      "target": 7,
+      "key": "bbdf9d5eb742f2daad3253f2bcc4949b"
+    },
+    {
+      "line": 140,
+      "relation": "increases",
+      "evidence": "Read the section \"Circadian Molecular Oscillators\"\n\n\"... The positive limb of the\ncircadian loop is under the control of BMAL1, CLOCK\nor NPAS2. BMAL1/CLOCK or BMAL1/NPAS2\nheterodimers bind to E-boxes present in the promoter\nof\nPer, Cry,\nRev-erb\nα\n, ROR\nα\n, Dec1 and Dec2\ngenes,\nand activate their transcription...\".\n\nSee table 2.\nBMAL1 is a alias of ARNTL (http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:701)\nDEC1 is a alias of BHLHE40 (http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:1046)",
+      "citation": {
+        "db": "Other",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 5,
+      "target": 26,
+      "key": "538aa239d9b685ee761a1e50864ab11e"
+    },
+    {
+      "line": 143,
+      "relation": "increases",
+      "evidence": "In results, read the section \"Induction of mDec2 mRNA by Clock/Bmal\".\nSee figure 1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15147242"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "endothelial cells": true
+        }
+      },
+      "source": 5,
+      "target": 27,
+      "key": "afe708549bdc90071ca82e53bb843e2b"
+    },
+    {
+      "line": 143,
+      "relation": "increases",
+      "evidence": "Read the section \"Circadian Molecular Oscillators\"\n\n\"... The positive limb of the\ncircadian loop is under the control of BMAL1, CLOCK\nor NPAS2. BMAL1/CLOCK or BMAL1/NPAS2\nheterodimers bind to E-boxes present in the promoter\nof\nPer, Cry,\nRev-erb\nα\n, ROR\nα\n, Dec1 and Dec2\ngenes,\nand activate their transcription...\".\n\nSee table 2.\n\nBMAL1 is a alias of ARNTL (http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:701)\nDEC2 is a alias of BHLHE41 (http://www.genenames.org/cgi-bin/gene_symbol_report?hgnc_id=HGNC:16617)",
+      "citation": {
+        "db": "Other",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 5,
+      "target": 27,
+      "key": "6e325dcd83bf077610bedb77cf0df7df"
+    },
+    {
+      "relation": "partOf",
+      "source": 38,
+      "target": 5,
+      "key": "1103cf6d5e2555232a344b770d9b7694"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 38,
+      "target": 5,
+      "key": "771c1b1306a53578443a81d29b67f991"
+    },
+    {
+      "relation": "partOf",
+      "source": 38,
+      "target": 8,
+      "key": "687a779ed2057d5eec6770055ab5d476"
+    },
+    {
+      "line": 116,
+      "relation": "directlyIncreases",
+      "evidence": "Here, we report that replicative stress induces the polyubiquitination and degradation of Chk1 in human cells. This response is triggered by phosphorylation of Chk1 at Ser-345, a known target site for the upstream activating kinase ATR. These findings indicate that ATR-dependent phosphorylation of Chk1 delivers a signal that both activates Chk1 and marks this protein for proteolytic degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16137618"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 25,
+      "target": 36,
+      "key": "46ea937bed79d02237fbf07bdc3f54c3"
+    },
+    {
+      "line": 116,
+      "relation": "directlyIncreases",
+      "evidence": "11390642;10859164;15533933;15674326",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15212693"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 25,
+      "target": 36,
+      "key": "bd0547b73d14496216e5c4130d94b6e4"
+    },
+    {
+      "line": 116,
+      "relation": "directlyIncreases",
+      "evidence": "Moreover, Chk1 phosphorylated by PKB fails to undergo activating phosphorylation on serine 345 by ATM/ATR.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15107605"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 25,
+      "target": 36,
+      "key": "a50992fd7e2a4281ba7a9df2dbc78fca"
+    },
+    {
+      "line": 116,
+      "relation": "directlyIncreases",
+      "evidence": "We show that Rad9's role in Chk1 activation is to bind TopBP1, which stimulates ATR-mediated Chk1 phosphorylation via TopBP1's activation domain (AD), a domain that binds and activates ATR.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17575048"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 25,
+      "target": 36,
+      "key": "9f651d34ec1599dde820198b767f5ae5"
+    },
+    {
+      "line": 116,
+      "relation": "directlyIncreases",
+      "evidence": "ATM and Rad3-related (ATR) is a regulatory kinase that, when activated by hydroxyurea, UV, or human immunodeficiency virus-1 Vpr, causes cell cycle arrest through Chk1-Ser(345) phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17210576"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 25,
+      "target": 36,
+      "key": "cf12d37c4d31326e089f00d2c2b9dc15"
+    },
+    {
+      "line": 116,
+      "relation": "directlyIncreases",
+      "evidence": "ATR phosphorylates Chk1 at Ser317 and Ser345 in vitro, and phosphorylation of these sites in human cells in response to UV and hydroxyurea is ATR-dependent [16–19].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15707391"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 25,
+      "target": 36,
+      "key": "e62c2df0fbee46b426702712e768c1d8"
+    },
+    {
+      "line": 116,
+      "relation": "directlyIncreases",
+      "evidence": "The phosphorylated form of Chk1 possessed higher intrinsic protein kinase activity and eluted more quickly on gel filtration columns. Serines 317 and 345 were identified as sites of phosphorylation in vivo, and ATR (the ATM- and Rad3-related protein kinase) phosphorylated both of these sites in vitro.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11390642"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 25,
+      "target": 36,
+      "key": "bc3ecb43f87484e12fec3c249396311b"
+    },
+    {
+      "line": 116,
+      "relation": "directlyIncreases",
+      "evidence": "Consistently, the RNAi-mediated ablation of Claspin selectively abrogated ATR's ability to phosphorylate Chk1 but not other ATR targets.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16880517"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 25,
+      "target": 36,
+      "key": "27032b45448bf39af02ac05d2322234e"
+    },
+    {
+      "line": 22,
+      "relation": "decreases",
+      "evidence": "from full text - Table 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 11,
+      "target": 5,
+      "key": "49201134143b5b5787a470ca3a1195b4"
+    },
+    {
+      "line": 75,
+      "relation": "decreases",
+      "evidence": "from full text - Table 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 11,
+      "target": 6,
+      "key": "e741d492c950b61b55081ebd211164cf"
+    },
+    {
+      "relation": "partOf",
+      "source": 39,
+      "target": 11,
+      "key": "63e1e56eb2a0d3b22cbb38e94ed70213"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 39,
+      "target": 11,
+      "key": "0ed448ac81a11440d6ebc8cc7797ee9f"
+    },
+    {
+      "relation": "partOf",
+      "source": 39,
+      "target": 10,
+      "key": "fdc3bd9f8036947db866869302d6094d"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 39,
+      "target": 10,
+      "key": "ea015734e610383d5c9ce713740596a9"
+    },
+    {
+      "relation": "partOf",
+      "source": 39,
+      "target": 12,
+      "key": "87c718b9ae03f483c157da8d56a02622"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 39,
+      "target": 12,
+      "key": "688b2f463d08e0db246258a99fb818eb"
+    },
+    {
+      "relation": "partOf",
+      "source": 39,
+      "target": 9,
+      "key": "505220fb490c13645fe5fc3be82de112"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 39,
+      "target": 9,
+      "key": "95bcf94e86ca60ec40b49b2cf595bd29"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 39,
+      "target": 40,
+      "key": "2f771e0af544c43670ca3c4d646b143c"
+    },
+    {
+      "line": 11,
+      "relation": "increases",
+      "evidence": "from full text - Furthermore, Cdc2 kinase activity was reduced (Figs. 2B and 1C). Therefore, the cell cycle progression from S to M phase was impaired during liver regeneration in Cry-deficient mice",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12934012"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 39,
+      "target": 3,
+      "key": "625f0027aeeae5e6ea69cc5dd03cd2a4"
+    },
+    {
+      "line": 8,
+      "relation": "decreases",
+      "evidence": "from full text - Table 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 10,
+      "target": 5,
+      "key": "6199f0dce57756428f022aef44a3b82d"
+    },
+    {
+      "line": 97,
+      "relation": "decreases",
+      "evidence": "from full text - Table 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 10,
+      "target": 6,
+      "key": "5507a1b71b674400b8a2bb1aa632851f"
+    },
+    {
+      "relation": "partOf",
+      "source": 63,
+      "target": 12,
+      "key": "119fd87938301514d6c9c0feca43e7b5"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 63,
+      "target": 12,
+      "key": "e43a763cb750d1a31d5a106ee89ba704"
+    },
+    {
+      "relation": "partOf",
+      "source": 63,
+      "target": 16,
+      "key": "154ca35ca1291aa83cb24e65f567b91a"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 63,
+      "target": 16,
+      "key": "135e22cd40d2ea378336235f77420197"
+    },
+    {
+      "relation": "partOf",
+      "source": 63,
+      "target": 18,
+      "key": "051c1d99b201754fdfaf78cc842af577"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 63,
+      "target": 18,
+      "key": "31147d626da86decb4418a0cb66c9541"
+    },
+    {
+      "relation": "partOf",
+      "source": 63,
+      "target": 19,
+      "key": "53b66a7f40c8fda84e1013c66939d509"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 63,
+      "target": 19,
+      "key": "d8ed92a5817ce777e36ff8346731a1f2"
+    },
+    {
+      "relation": "partOf",
+      "source": 63,
+      "target": 17,
+      "key": "26dd2a969ad3ff89d41ed4366b97191c"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 63,
+      "target": 17,
+      "key": "3367e4570c60c360791504ac475b4574"
+    },
+    {
+      "line": 67,
+      "relation": "decreases",
+      "evidence": "from full text - Table 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 14,
+      "target": 5,
+      "key": "61627ebcd4a89dd426e690e66150e1b2"
+    },
+    {
+      "line": 108,
+      "relation": "decreases",
+      "evidence": "from full text - Table 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 14,
+      "target": 6,
+      "key": "39ed92d216cfd7b04c27cc9196313f84"
+    },
+    {
+      "relation": "partOf",
+      "source": 49,
+      "target": 6,
+      "key": "554fc03e3003440dcf8f2476ab29ff56"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 49,
+      "target": 6,
+      "key": "b88c61cdcbc35ce48cfdb0ee4c8af38b"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 28,
+      "target": 29,
+      "key": "d6cf637cf299426a5d352828815dea6f"
+    },
+    {
+      "line": 40,
+      "relation": "decreases",
+      "evidence": "from full text - Table 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 9,
+      "target": 6,
+      "key": "b5401edab4d352d4eec01359a1ed6fed"
+    },
+    {
+      "line": 132,
+      "relation": "decreases",
+      "evidence": "from full text - Table 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 9,
+      "target": 5,
+      "key": "a51e5e1794f62e3cc9e6bba7c5f32a1f"
+    },
+    {
+      "line": 18,
+      "relation": "decreases",
+      "evidence": "from full text - Table 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 13,
+      "target": 6,
+      "key": "db85db25f2b6fc363240bd8149c9796f"
+    },
+    {
+      "line": 131,
+      "relation": "decreases",
+      "evidence": "from full text - Table 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19221497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 13,
+      "target": 5,
+      "key": "31eccaf6b43ff24a9f7df48d5cb4d256"
+    },
+    {
+      "line": 27,
+      "relation": "decreases",
+      "evidence": "In colon cancer cells, HCT116 and SW480, endogenous b-catenin protein is elevated due to a mutation of b-catenin (HCT116) or APC (SW480) genes. In both cell lines, when b-catenin is down regulated by siRNA, PER2 protein levels are increased (Fig. 1). Knocking down b-catenin in these cells also decreases c-Myc protein (Fig. 1). This is consistent with the finding that c-Myc expression is activated by the b-catenin/TCF4 transcriptional factor (32).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19106159"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 45,
+      "target": 54,
+      "key": "44c561cb22c471d6a5f0674803d035ad"
+    },
+    {
+      "line": 27,
+      "relation": "decreases",
+      "evidence": "Here we report that increased beta-catenin destabilizes PER2 clock protein",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19106159"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "source": 45,
+      "target": 54,
+      "key": "72f22847f2c8cf0487d777d06603bea1"
+    },
+    {
+      "line": 30,
+      "relation": "increases",
+      "evidence": "On the other hand, co-expression of wildtype b-catenin or b-catenin S37A mutant markedly shortens PER2 protein half-life in 293T cells (Fig. 2C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19106159"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 45,
+      "target": 54,
+      "key": "c18edd2a0746624a9d02f86b36ed0a61"
+    },
+    {
+      "line": 127,
+      "relation": "directlyIncreases",
+      "evidence": "The basal turnover of Cdc25A operating in unperturbed S phase required Chk1-dependent phosphorylation of serines 123, 178, 278, and 292. IR-induced acceleration of Cdc25A proteolysis correlated with increased phosphate incorporation into these residues generated by a combined action of Chk1 and Chk2 kinases. Finally, phosphorylation of Chk1 by ATM was required to fully accelerate the IR-induced degradation of Cdc25A ... from full text, U2OS cells and ATM-dependent CHEK1 phosphorylation at S317 and S345",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12676583"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 36,
+      "target": 35,
+      "key": "af232d5604ac05db4711839fe031287d"
+    },
+    {
+      "line": 127,
+      "relation": "directlyIncreases",
+      "evidence": "The phosphorylated form of Chk1 possessed higher intrinsic protein kinase activity and eluted more quickly on gel filtration columns. Serines 317 and 345 were identified as sites of phosphorylation in vivo, and ATR (the ATM- and Rad3-related protein kinase) phosphorylated both of these sites in vitro.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11390642"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 36,
+      "target": 35,
+      "key": "2f7b61f0ba89b41a004b7fbd06ee5f97"
+    },
+    {
+      "line": 127,
+      "relation": "directlyIncreases",
+      "evidence": "Here we show that the oncogenic p53-induced serine/threonine phosphatase, PPM1D (or Wip1), dephosphorylates two ATM/ATR targets, Chk1 and p53. PPM1D binds Chk1 and dephosphorylates the ATR-targeted phospho-Ser 345, leading to decreased Chk1 kinase activity. PPM1D also dephosphorylates p53 at phospho-Ser 15",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15870257"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 36,
+      "target": 35,
+      "key": "4d78e092d34b0594d1477bfe6e4e7c03"
+    },
+    {
+      "line": 127,
+      "relation": "directlyIncreases",
+      "evidence": "Here, we report that replicative stress induces the polyubiquitination and degradation of Chk1 in human cells. This response is triggered by phosphorylation of Chk1 at Ser-345, a known target site for the upstream activating kinase ATR. These findings indicate that ATR-dependent phosphorylation of Chk1 delivers a signal that both activates Chk1 and marks this protein for proteolytic degradation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16137618"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 36,
+      "target": 35,
+      "key": "aef6444b67f7f8f7e17aeb5825541ed3"
+    },
+    {
+      "relation": "partOf",
+      "source": 62,
+      "target": 8,
+      "key": "6ba85fff90626bd18b5da2e4b80c1895"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 62,
+      "target": 8,
+      "key": "7818417f36da0f4e17f462851c5bc72c"
+    },
+    {
+      "line": 146,
+      "relation": "association",
+      "evidence": "To our knowledge, this is the first study showing that SIRT1 is expressed with a circadian rhythm under clock control in lung tissue. Further, we report for the first time that BMAL1 acetylation in the lung in vivo is due to a CS-dependent reduction in SIRT1 levels. There is emerging evidence that circadian rhythms govern proinflammatory cytokine gene expression (41, 44, 50).",
+      "citation": {
+        "db": "Other",
+        "db_id": "24025728"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "COPD": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 62,
+      "target": 4,
+      "key": "2dea038fa06120a9df3f9fa3435a160c"
+    },
+    {
+      "line": 150,
+      "relation": "increases",
+      "evidence": "BMAL1 was acetylated and degraded in the lungs of mice exposed to CS and in patients with chronic obstructive pulmonary disease (COPD), compared with lungs of the nonsmoking controls, linking it mechanistically to CS-induced reduction of SIRT1..........CS significantly reduced SIRT1 protein abundance, concomitant with a reduction in BMAL1 levels, and increased acetylation on lysine residue K537 of the remaining BMAL1 protein.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24025728"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Disease": {
+          "cigarette smoke": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 62,
+      "target": 22,
+      "key": "11ca3155b45a89846877e8743b25bfc2"
+    },
+    {
+      "line": 146,
+      "relation": "association",
+      "evidence": "To our knowledge, this is the first study showing that SIRT1 is expressed with a circadian rhythm under clock control in lung tissue. Further, we report for the first time that BMAL1 acetylation in the lung in vivo is due to a CS-dependent reduction in SIRT1 levels. There is emerging evidence that circadian rhythms govern proinflammatory cytokine gene expression (41, 44, 50).",
+      "citation": {
+        "db": "Other",
+        "db_id": "24025728"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "COPD": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 4,
+      "target": 62,
+      "key": "4f8bb66b2ccba9972d56e3162cc010fe"
+    },
+    {
+      "line": 147,
+      "relation": "association",
+      "evidence": "Most of the core clock genes (bmal1 [HGNC:ARNTL], clock, per1, per2, cry1, cry2, rev-erbα, and rev-erbβ) were rhythmically expressed in lung tissue from mice exposed to air or CS, either acutely (10 d; Fig. 1A, B) or chronically (6 mo; Supplemental Fig. S1A, B).",
+      "citation": {
+        "db": "Other",
+        "db_id": "24025728"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 4,
+      "target": 22,
+      "key": "b06ff1e369e084d496620b17e75d5009"
+    },
+    {
+      "line": 148,
+      "relation": "decreases",
+      "evidence": "Most of the core clock genes (bmal1, clock, per1, per2, cry1, cry2, rev-erbα, and rev-erbβ) were rhythmically expressed in lung tissue from mice exposed to air or CS, either acutely (10 d; Fig. 1A, B) or chronically (6 mo; Supplemental Fig. S1A, B)....Chronic CS exposure caused a modest reduction in the amplitude of bmal1 and rev-erbα expression and substantially reduced the amplitude of per1 expression in the lungs (Supplemental Fig. S1A, B). Further, CircWave analyses indicated that chronic CS exposure altered the phase of per1 and per2 expression in the lungs (Supplemental Fig. S1B).",
+      "citation": {
+        "db": "Other",
+        "db_id": "24025728"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 0,
+      "target": 51,
+      "key": "a6977b71a0d8056a16433874ab2fe88d"
+    },
+    {
+      "line": 149,
+      "relation": "decreases",
+      "evidence": "Chronic CS exposure caused a modest reduction in the amplitude of bmal1 and rev-erbα expression and substantially reduced the amplitude of per1 expression in the lungs (Supplemental Fig. S1A, B). Further, CircWave analyses indicated that chronic CS exposure altered the phase of per1 and per2 expression in the lungs (Supplemental Fig. S1B).",
+      "citation": {
+        "db": "Other",
+        "db_id": "24025728"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 0,
+      "target": 54,
+      "key": "fe03100bacbfa1d88fc0aced872ac171"
+    },
+    {
+      "line": 151,
+      "relation": "decreases",
+      "evidence": "Peripheral lungs of smokers and patients with COPD showed decreased levels of nuclear SIRT1, as compared with nonsmokers, associated with its post-translational modifications (formation of nitrotyrosine and aldehyde carbonyl adducts).",
+      "citation": {
+        "db": "Other",
+        "db_id": "18174544"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "COPD": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 0,
+      "target": 62,
+      "key": "59093930a613181ee6c2eafad97e31f1"
+    },
+    {
+      "line": 145,
+      "relation": "decreases",
+      "evidence": "The BMAL1 [HGNC:ARNTL] levels were modestly reduced in the smokers and significantly reduced in lungs of the patients with COPD, compared with levels in lungs of the nonsmokers (Fig. 8A, B).",
+      "citation": {
+        "db": "Other",
+        "db_id": "24025728"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "COPD": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 65,
+      "target": 22,
+      "key": "ad81445c824bd832e02992fee9884fec"
+    },
+    {
+      "line": 156,
+      "relation": "decreases",
+      "evidence": "We found that the expression of mDec1 mRNA is circadian in the liver (Fig. 3) as well as in the SCN (18)....DEC1 has shown to repress CLOCK/BMAL1-induced transactivation by direct protein-protein interaction and/or competition for E box elements.",
+      "citation": {
+        "db": "Other",
+        "db_id": "12865428"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 46,
+      "target": 5,
+      "key": "6b0e9f9eee78b58fcbd360fe0c01970c"
+    }
+  ]
+}

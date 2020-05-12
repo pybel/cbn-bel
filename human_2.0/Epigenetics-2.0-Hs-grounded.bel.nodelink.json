@@ -1,0 +1,2140 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Epigenetics-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Epigenetics network describes epigenetic changes reported to be associated with COPD, as well as epigenetic modulators reported to be affected by COPD or smoking including the histone deacetylase (HDAC) family and DNA methyltransferase (DMT) family member DNMT1, as well as connections from these epigenetic mediators to the core cell cycle components (e.g. CCND1, CDKN2A). Reviewed during Jamboree2015"
+    },
+    "namespace_url": {},
+    "namespace_pattern": {
+      "chebi": ".*",
+      "mesh": ".*",
+      "fplx": ".*",
+      "go": ".*",
+      "hgnc": ".*"
+    },
+    "annotation_url": {},
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "hydrogen peroxide",
+        "identifier": "16240"
+      },
+      "id": "e64bbd9cc428b931f810fb5aade6f08b",
+      "bel": "a(chebi:16240 ! \"hydrogen peroxide\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "N(omega),N'(omega)-dimethyl-L-arginine",
+        "identifier": "25682"
+      },
+      "id": "6d39199e0fe649d5b3e1f941c6a44d8d",
+      "bel": "a(chebi:25682 ! \"N(omega),N'(omega)-dimethyl-L-arginine\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "corticosteroid",
+        "identifier": "50858"
+      },
+      "id": "675f34398a78da1e5e2b40321747aec4",
+      "bel": "a(chebi:50858 ! corticosteroid)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "chebi",
+        "name": "EC 3.5.1.98 (histone deacetylase) inhibitor",
+        "identifier": "61115"
+      },
+      "id": "0d3b2a2c298057c04a9087bae9dc0f33",
+      "bel": "a(chebi:61115 ! \"EC 3.5.1.98 (histone deacetylase) inhibitor\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "DNA methylation",
+        "identifier": "0006306"
+      },
+      "id": "0efefac90491308f33c395d8eff65ec8",
+      "bel": "bp(go:0006306 ! \"DNA methylation\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "chromatin remodeling",
+        "identifier": "0006338"
+      },
+      "id": "6c10e04e5779e0149caa99b01fb178f0",
+      "bel": "bp(go:0006338 ! \"chromatin remodeling\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "inflammatory response",
+        "identifier": "0006954"
+      },
+      "id": "f657d507de55962e6bbc9e079c01cfa4",
+      "bel": "bp(go:0006954 ! \"inflammatory response\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "cellular response to DNA damage stimulus",
+        "identifier": "0006974"
+      },
+      "id": "027f7ca674bd043e9954a0172456b4cb",
+      "bel": "bp(go:0006974 ! \"cellular response to DNA damage stimulus\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "response to oxidative stress",
+        "identifier": "0006979"
+      },
+      "id": "93e9cda1ce236d46f9d08ff12a40d02a",
+      "bel": "bp(go:0006979 ! \"response to oxidative stress\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "histone modification",
+        "identifier": "0016570"
+      },
+      "id": "a2b787ead13b2fecd1c48dc5ce8b016f",
+      "bel": "bp(go:0016570 ! \"histone modification\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "histone methylation",
+        "identifier": "0016571"
+      },
+      "id": "d260cbcd416ffd108ba24f28031a00f0",
+      "bel": "bp(go:0016571 ! \"histone methylation\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "histone acetylation",
+        "identifier": "0016573"
+      },
+      "id": "50b2411d77fd6e671dfc95049262d2c5",
+      "bel": "bp(go:0016573 ! \"histone acetylation\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "peptidyl-arginine methylation",
+        "identifier": "0018216"
+      },
+      "id": "937499fac573c8e2d57bbbdf3d83de80",
+      "bel": "bp(go:0018216 ! \"peptidyl-arginine methylation\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "go",
+        "name": "hypomethylation of CpG island",
+        "identifier": "0044029"
+      },
+      "id": "23fdcd931b755153bae63aa6cb5c8162",
+      "bel": "bp(go:0044029 ! \"hypomethylation of CpG island\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "go",
+        "name": "ESC/E(Z) complex",
+        "identifier": "0035098"
+      },
+      "id": "5c93e09769fff7f8d78dad9f9c2ba97e",
+      "bel": "complex(go:0035098 ! \"ESC/E(Z) complex\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "go",
+        "name": "PRC1 complex",
+        "identifier": "0035102"
+      },
+      "id": "9c2f95f4c6cdabf66c876dfa1f2c94de",
+      "bel": "complex(go:0035102 ! \"PRC1 complex\")"
+    },
+    {
+      "function": "Gene",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "AHRR",
+        "identifier": "346"
+      },
+      "id": "7674c7f2a1a8837b96c4d0d4277a2640",
+      "bel": "g(hgnc:346 ! AHRR)"
+    },
+    {
+      "function": "Gene",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "F2RL3",
+        "identifier": "3540"
+      },
+      "id": "fa237de636406202d7195166f783dd73",
+      "bel": "g(hgnc:3540 ! F2RL3)"
+    },
+    {
+      "function": "Gene",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "FUT7",
+        "identifier": "4018"
+      },
+      "id": "b6638044b748f72f6807c0d781ff51d4",
+      "bel": "g(hgnc:4018 ! FUT7)"
+    },
+    {
+      "function": "Gene",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GATA4",
+        "identifier": "4173"
+      },
+      "id": "03b8c7f45823acfaab8913fabfb520fb",
+      "bel": "g(hgnc:4173 ! GATA4)"
+    },
+    {
+      "function": "Gene",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SERPINA1",
+        "identifier": "8941"
+      },
+      "id": "1869ca99d7d95c27bddd4465240ba907",
+      "bel": "g(hgnc:8941 ! SERPINA1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "HDAC",
+        "identifier": "HDAC"
+      },
+      "id": "27342355353bdd3f0713ad65ffe0af25",
+      "bel": "p(fplx:HDAC ! HDAC)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "fplx",
+        "name": "Wnt",
+        "identifier": "Wnt"
+      },
+      "id": "029a67a480adc97652292324421a28bb",
+      "bel": "p(fplx:Wnt ! Wnt)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PRMT5",
+        "identifier": "10894"
+      },
+      "id": "bbe9a3d03de84434399d53d7596c2556",
+      "bel": "p(hgnc:10894 ! PRMT5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "VEGFA",
+        "identifier": "12680"
+      },
+      "id": "710d068636280068962cf864d9ed7526",
+      "bel": "p(hgnc:12680 ! VEGFA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "WNT5A",
+        "identifier": "12784"
+      },
+      "id": "602e83c5a7bccbbb27b023482dcc4d19",
+      "bel": "p(hgnc:12784 ! WNT5A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HDAC8",
+        "identifier": "13315"
+      },
+      "id": "acd104519c41087ca129651f1f414791",
+      "bel": "p(hgnc:13315 ! HDAC8)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HDAC5",
+        "identifier": "14068"
+      },
+      "id": "0746ba27ffea0e44c76ab770085f294d",
+      "bel": "p(hgnc:14068 ! HDAC5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CCNB1",
+        "identifier": "1579"
+      },
+      "id": "3cfc750e2c1a18e8ea3f60fa0a1ca36d",
+      "bel": "p(hgnc:1579 ! CCNB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CCND1",
+        "identifier": "1582"
+      },
+      "id": "7948aef17947d3efb076ccc443c7c3a6",
+      "bel": "p(hgnc:1582 ! CCND1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "SUZ12",
+        "identifier": "17101"
+      },
+      "id": "a021e7848102bee0506f96185df37fbe",
+      "bel": "p(hgnc:17101 ! SUZ12)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CDK1",
+        "identifier": "1722"
+      },
+      "id": "18bc663dbe68820db7b9dcb84ae48667",
+      "bel": "p(hgnc:1722 ! CDK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CDKN2A",
+        "identifier": "1787"
+      },
+      "id": "7ffb192e736ba9d02670de0f3f2fdcce",
+      "bel": "p(hgnc:1787 ! CDKN2A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HDAC10",
+        "identifier": "18128"
+      },
+      "id": "335fb810e570fcd28c8cf412d24e2e7e",
+      "bel": "p(hgnc:18128 ! HDAC10)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PRMT6",
+        "identifier": "18241"
+      },
+      "id": "2d76af439f12de4086480e029fecde69",
+      "bel": "p(hgnc:18241 ! PRMT6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CHFR",
+        "identifier": "20455"
+      },
+      "id": "141a6c46c4a6ade368ca0cf1298f09b1",
+      "bel": "p(hgnc:20455 ! CHFR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CARM1",
+        "identifier": "23393"
+      },
+      "id": "21590c028e75206aabb65c19b81e881a",
+      "bel": "p(hgnc:23393 ! CARM1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PRMT9",
+        "identifier": "25099"
+      },
+      "id": "ceda0865f3e0ed3e95e7b23a807edcbe",
+      "bel": "p(hgnc:25099 ! PRMT9)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CTNNB1",
+        "identifier": "2514"
+      },
+      "id": "a0979dd18cdcf24ade81446543865014",
+      "bel": "p(hgnc:2514 ! CTNNB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "DEFB1",
+        "identifier": "2766"
+      },
+      "id": "9ca1905daac69e68bb9cfbef84704ece",
+      "bel": "p(hgnc:2766 ! DEFB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "DKK1",
+        "identifier": "2891"
+      },
+      "id": "61064f5ed55b873fed1cc0fae9d26e46",
+      "bel": "p(hgnc:2891 ! DKK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "DNMT1",
+        "identifier": "2976"
+      },
+      "id": "682c17f2cea1069e98d43c742146f64b",
+      "bel": "p(hgnc:2976 ! DNMT1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "E2F4",
+        "identifier": "3118"
+      },
+      "id": "42045f00ae942047cb71a6144b6c6147",
+      "bel": "p(hgnc:3118 ! E2F4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EED",
+        "identifier": "3188"
+      },
+      "id": "88249cc75f5df255008206af4b2efbbe",
+      "bel": "p(hgnc:3188 ! EED)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EGR1",
+        "identifier": "3238"
+      },
+      "id": "9c7e203a4f3da840dc94f92a943bf4c2",
+      "bel": "p(hgnc:3238 ! EGR1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "EZH2",
+        "identifier": "3527"
+      },
+      "id": "6d8415a531924690c19c62aa11af87d7",
+      "bel": "p(hgnc:3527 ! EZH2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GDF11",
+        "identifier": "4216"
+      },
+      "id": "c135e7696125d53b52519f568d576523",
+      "bel": "p(hgnc:4216 ! GDF11)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "GLI1",
+        "identifier": "4317"
+      },
+      "id": "fef258309c5775df01e4483b5bba33a8",
+      "bel": "p(hgnc:4317 ! GLI1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HDAC1",
+        "identifier": "4852"
+      },
+      "id": "2c22575354b37b7f7f2309e29749afb8",
+      "bel": "p(hgnc:4852 ! HDAC1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HDAC2",
+        "identifier": "4853"
+      },
+      "id": "14998ebe7b5a30ec1b0c3d98d603b0ed",
+      "bel": "p(hgnc:4853 ! HDAC2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HDAC3",
+        "identifier": "4854"
+      },
+      "id": "76131eef330ded34627b6734905dec44",
+      "bel": "p(hgnc:4854 ! HDAC3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "KMT2A",
+        "identifier": "7132"
+      },
+      "id": "b39f22b3c8ad54edb2378aed3f50c66c",
+      "bel": "p(hgnc:7132 ! KMT2A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PLK1",
+        "identifier": "9077"
+      },
+      "id": "70ea08faa41a7844209cfb949d73c7d9",
+      "bel": "p(hgnc:9077 ! PLK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RASSF1",
+        "identifier": "9882"
+      },
+      "id": "8f52f5fd191af819d8edc460b4f7e930",
+      "bel": "p(hgnc:9882 ! RASSF1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "RB1",
+        "identifier": "9884"
+      },
+      "id": "9827198cb67a6e71a0666476b4a16f75",
+      "bel": "p(hgnc:9884 ! RB1)"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "mesh",
+        "name": "Pulmonary Disease, Chronic Obstructive",
+        "identifier": "D029424"
+      },
+      "id": "98cb883d84a9775f973f1e99c68ba3a2",
+      "bel": "path(mesh:D029424 ! \"Pulmonary Disease, Chronic Obstructive\")"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PRMT5",
+        "identifier": "10894"
+      },
+      "id": "a16ce4c3e72ae7b4212a04cc6e95ad86",
+      "bel": "r(hgnc:10894 ! PRMT5)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HDAC8",
+        "identifier": "13315"
+      },
+      "id": "8eb9a43e9b224ac17764750373671dc5",
+      "bel": "r(hgnc:13315 ! HDAC8)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HDAC5",
+        "identifier": "14068"
+      },
+      "id": "ad9a08c95380d75f9ea27d48d92a1fd8",
+      "bel": "r(hgnc:14068 ! HDAC5)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "HDAC10",
+        "identifier": "18128"
+      },
+      "id": "3d072dfbd9b43e8859efa7b5f2ba541e",
+      "bel": "r(hgnc:18128 ! HDAC10)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PRMT6",
+        "identifier": "18241"
+      },
+      "id": "4655be236970946f0ef37129900d2322",
+      "bel": "r(hgnc:18241 ! PRMT6)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "CARM1",
+        "identifier": "23393"
+      },
+      "id": "716682d2ef4e8edfb69d93d1c16c733e",
+      "bel": "r(hgnc:23393 ! CARM1)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "PRMT9",
+        "identifier": "25099"
+      },
+      "id": "04d0dcd5cf768506e78efeb8dd659efd",
+      "bel": "r(hgnc:25099 ! PRMT9)"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "hgnc",
+        "name": "KMT2A",
+        "identifier": "7132"
+      },
+      "id": "aa7bdfbaea78cf1daefb0a6cebb7dd07",
+      "bel": "r(hgnc:7132 ! KMT2A)"
+    }
+  ],
+  "links": [
+    {
+      "line": 7,
+      "relation": "directlyDecreases",
+      "evidence": "The treatment of F-IPF with histone deacetylase (HDAC) inhibitors together with cytokines increased histone H3 and H4 acetylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19487460"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 3,
+      "target": 21,
+      "key": "50c5742b1e3cecc098dcfbb2f081a95f"
+    },
+    {
+      "line": 65,
+      "relation": "decreases",
+      "evidence": "In results, read the section \"H2O2 and CSC decrease HDAC activity and histone deacetylase 2 levels\". See the figure 3 and 4.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15456740"
+      },
+      "annotations": {},
+      "source": 0,
+      "target": 49,
+      "key": "fadde458d1f1c678ed48a7a55c4c2fd5"
+    },
+    {
+      "line": 77,
+      "relation": "decreases",
+      "evidence": "Corticosteroids appear to sup-\npress inflammation by switching off the inflam-\nmatory genes by targeting these transcription fac-\ntors and their ability to induce histone modifica-\ntions and chromatin remodeling",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 2,
+      "target": 6,
+      "key": "bcccd05bbb28e217dc86af46fd5fe5ed"
+    },
+    {
+      "line": 78,
+      "relation": "decreases",
+      "evidence": "Corticosteroids appear to sup-\npress inflammation by switching off the inflam-\nmatory genes by targeting these transcription fac-\ntors and their ability to induce histone modifica-\ntions and chromatin remodeling",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 2,
+      "target": 9,
+      "key": "017ca1e4c4f8219dc901e512901cf629"
+    },
+    {
+      "line": 79,
+      "relation": "decreases",
+      "evidence": "Corticosteroids appear to sup-\npress inflammation by switching off the inflam-\nmatory genes by targeting these transcription fac-\ntors and their ability to induce histone modifica-\ntions and chromatin remodeling",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 2,
+      "target": 5,
+      "key": "19a7c434334568ec34224a1a3e46c28b"
+    },
+    {
+      "line": 37,
+      "relation": "association",
+      "evidence": "When DNA methylation levels of methyl probes in CpG islands for COPD were compared with those of CTRL samples, the COPD samples were predominantly hypermethylated (S1A Fig.). Results based on probe-by-probe comparison also showed that CpG islands were more likely to be hypermethylated than hypomethylated in lung tissues of COPD patients (S4 Table). However, when comparing non-CpG island methyl probes, the pattern was very different and the numbers of hyper- and hypo- methylated probes were evenly distributed (S1B Fig. and S4 Table). This different pattern suggested there was no global methylation level difference between COPD and CTRL samples. The main difference between them was methylation levels of CpG islands, suggesting biological importance of methylation of CpG islands in transcription regulation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25569234"
+      },
+      "annotations": {},
+      "source": 4,
+      "target": 55,
+      "key": "f5d4c600ae91270c9357e413e1dd9540"
+    },
+    {
+      "line": 37,
+      "relation": "association",
+      "evidence": "Epigenetic modification may affect the expression of multiple inflammatory genes in lungs of patients with chronic obstructive pulmonary disease (COPD). Major epigenetic events include DNA methylation and various post-translational modifications of histones, such as histone methylation, acetylation, phosphorylation, ubiquitination, and sumoylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 4,
+      "target": 55,
+      "key": "081430c08c484d463c44ea2c22468413"
+    },
+    {
+      "line": 37,
+      "relation": "association",
+      "evidence": "This large-scale analysis suggests that DNA methylation may be a biomarker of COPD and may highlight new pathways of COPD pathogenesis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22161163"
+      },
+      "annotations": {},
+      "source": 4,
+      "target": 55,
+      "key": "dddeb866da0be62f5480e25dd8a9c88f"
+    },
+    {
+      "line": 37,
+      "relation": "association",
+      "evidence": "DNA methylation is globally disrupted and associated with expression changes in chronic obstructive pulmonary disease small airways.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24298892"
+      },
+      "annotations": {},
+      "source": 4,
+      "target": 55,
+      "key": "b494bad10d24f9b11e23c0f1b87e4b21"
+    },
+    {
+      "line": 63,
+      "relation": "association",
+      "evidence": "The enhancer of zeste homolog 2 (EZH2) is the catalytic subunit of the polycomb repressive complex 2 (PRC2)...EZH2 acts as a lysine-specific HMT that mediates H3K27me3...A large percentage of PRC2 target genes contain CpG islands and therefore are likely to undergo DNA methylation as a means to ensure a stable repressive state.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24652950"
+      },
+      "annotations": {},
+      "source": 4,
+      "target": 14,
+      "key": "96a214ddb67808e96d3fec7b013e1d84"
+    },
+    {
+      "line": 63,
+      "relation": "association",
+      "evidence": "The Polycomb Repressive Complex 2 (PRC2) is particularly targeted to DNA hypomethylated regions, possibly alleviating the negative effects associated with loss of DNA methylation in the endosperm.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25806038"
+      },
+      "annotations": {},
+      "source": 4,
+      "target": 14,
+      "key": "3c33dca1589f4c5a35e756c0089eb80c"
+    },
+    {
+      "line": 80,
+      "relation": "association",
+      "evidence": "HDAC2 regulates chromatin plasticity and enhances DNA vulnerability, suggesting that HDAC2 inhibition can lead to DNA damage (76). This may be due to HDAC2-mediated transcriptional repression, which prevents transcription from interfering with the repair process. Another possibility is that HDAC2 recruitment influences the ability of DNA repair factors (e.g., Ku70/Ku80) to bind the damaged DNA or to function effectively (82) (Fig. 2).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22842217"
+      },
+      "annotations": {},
+      "source": 7,
+      "target": 49,
+      "key": "d15fa9cab7d994430b522181f52e0533"
+    },
+    {
+      "line": 49,
+      "relation": "association",
+      "evidence": "Epigenetic modification may affect the expression of multiple inflammatory genes in lungs of patients with chronic obstructive pulmonary disease (COPD). Major epigenetic events include DNA methylation and various post-translational modifications of histones, such as histone methylation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 10,
+      "target": 55,
+      "key": "9343309b43e9e537391058f1648b89ea"
+    },
+    {
+      "line": 66,
+      "relation": "positiveCorrelation",
+      "evidence": "Assessment of Methylation extents in peripheral-blood DNA from 177 current smokers, former smokers, and those who had never smoked revealed a single locus, cg03636183, located in F2RL3, with genome-wide significance for lower methylation in smokers. (Adapted from the original document)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21457905"
+      },
+      "annotations": {},
+      "source": 13,
+      "target": 17,
+      "key": "09a4ce3e4e976a3bc61ef5ebd11e3204"
+    },
+    {
+      "line": 67,
+      "relation": "positiveCorrelation",
+      "evidence": "Our observations include significant, replicable associations between SERPINA1 hypomethylation and COPD and lower average lung function phenotypes (combined P values: COPD, 1.5 × 10(-23); FEV(1)/FVC, 1.5 × 10(-35); FEV(1), 2.2 × 10(-40)).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22161163"
+      },
+      "annotations": {},
+      "source": 13,
+      "target": 20,
+      "key": "626529acb7f6149186e68e611ed542bc"
+    },
+    {
+      "line": 74,
+      "relation": "positiveCorrelation",
+      "evidence": "One of the top five associated CpG sites for all three phenotypes in both cohorts was with a CpG in the fucosyltransferase-7 (FUT7) gene (OMIM 602030), which was relatively hypomethylated in the presence of COPD and lower lung function.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22161163"
+      },
+      "annotations": {},
+      "source": 13,
+      "target": 18,
+      "key": "b851c9e4fb729113838260744f783204"
+    },
+    {
+      "line": 4,
+      "relation": "increases",
+      "evidence": "PRMTs can specifically methylate protein-incorporated arginine residues to generate protein incorporated monomethylarginine (MMA), symmetric dimethylarginine (SDMA), or asymmetric dimethylarginine",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "source": 12,
+      "target": 1,
+      "key": "c5eb7c749369195b826dffa3ff9bdacd"
+    },
+    {
+      "line": 71,
+      "relation": "increases",
+      "evidence": "Oxidative stress can up-regulate the\nexpression and activity of DNA methyltransferase 1 (DNMT1) and induce DNA promoter methylation, in turn, affect the expression of the\ngenes",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 8,
+      "target": 41,
+      "key": "787800cd434032bebfdb8abd1f8bf042"
+    },
+    {
+      "line": 63,
+      "relation": "association",
+      "evidence": "The enhancer of zeste homolog 2 (EZH2) is the catalytic subunit of the polycomb repressive complex 2 (PRC2)...EZH2 acts as a lysine-specific HMT that mediates H3K27me3...A large percentage of PRC2 target genes contain CpG islands and therefore are likely to undergo DNA methylation as a means to ensure a stable repressive state.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24652950"
+      },
+      "annotations": {},
+      "source": 14,
+      "target": 4,
+      "key": "7ec4b59b3554bc2a01d66fe85126fae9"
+    },
+    {
+      "line": 63,
+      "relation": "association",
+      "evidence": "The Polycomb Repressive Complex 2 (PRC2) is particularly targeted to DNA hypomethylated regions, possibly alleviating the negative effects associated with loss of DNA methylation in the endosperm.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25806038"
+      },
+      "annotations": {},
+      "source": 14,
+      "target": 4,
+      "key": "cd8fd98213f71c3e1bf3382612616539"
+    },
+    {
+      "line": 27,
+      "relation": "decreases",
+      "evidence": "PRC1 silences the expression of PRC2 target genes by blocking the recruitment of transcriptional activation factors and preventing initiation of transcription.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24652950"
+      },
+      "annotations": {},
+      "source": 15,
+      "target": 14,
+      "key": "659d08e143cce85ed7ad98c33282d731"
+    },
+    {
+      "line": 66,
+      "relation": "positiveCorrelation",
+      "evidence": "Assessment of Methylation extents in peripheral-blood DNA from 177 current smokers, former smokers, and those who had never smoked revealed a single locus, cg03636183, located in F2RL3, with genome-wide significance for lower methylation in smokers. (Adapted from the original document)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21457905"
+      },
+      "annotations": {},
+      "source": 17,
+      "target": 13,
+      "key": "65969ec6327b60a71a08878a8778d8f7"
+    },
+    {
+      "line": 74,
+      "relation": "positiveCorrelation",
+      "evidence": "One of the top five associated CpG sites for all three phenotypes in both cohorts was with a CpG in the fucosyltransferase-7 (FUT7) gene (OMIM 602030), which was relatively hypomethylated in the presence of COPD and lower lung function.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22161163"
+      },
+      "annotations": {},
+      "source": 18,
+      "target": 13,
+      "key": "aeb09a4e957bfa7b7cd44bb78d2f556e"
+    },
+    {
+      "line": 75,
+      "relation": "association",
+      "evidence": "One of the top five associated CpG sites for all three phenotypes in both cohorts was with a CpG in the fucosyltransferase-7 (FUT7) gene (OMIM 602030), which was relatively hypomethylated in the presence of COPD and lower lung function.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22161163"
+      },
+      "annotations": {},
+      "source": 18,
+      "target": 55,
+      "key": "1095e528699d4880ea6b71c9f5b84bf4"
+    },
+    {
+      "line": 36,
+      "relation": "association",
+      "evidence": "It has previously been shown that methylation of the GATA-4 gene promoter region in sputum DNA is associated with low lung function and increased odds of chronic obstructive pulmonary disease (COPD) among smokers.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24973415"
+      },
+      "annotations": {},
+      "source": 19,
+      "target": 55,
+      "key": "1ec0ffa68b8eba7520fe0014ce32a2fd"
+    },
+    {
+      "line": 67,
+      "relation": "positiveCorrelation",
+      "evidence": "Our observations include significant, replicable associations between SERPINA1 hypomethylation and COPD and lower average lung function phenotypes (combined P values: COPD, 1.5 × 10(-23); FEV(1)/FVC, 1.5 × 10(-35); FEV(1), 2.2 × 10(-40)).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22161163"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 13,
+      "key": "59e41e540158360c3e724c329aff7159"
+    },
+    {
+      "line": 73,
+      "relation": "association",
+      "evidence": "Our observations include significant, replicable associations between SERPINA1 hypomethylation and COPD and lower average lung function phenotypes (combined P values: COPD, 1.5 × 10(-23); FEV(1)/FVC, 1.5 × 10(-35); FEV(1), 2.2 × 10(-40)).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22161163"
+      },
+      "annotations": {},
+      "source": 20,
+      "target": 55,
+      "key": "89c8367b3f22767a9e3694745233bc54"
+    },
+    {
+      "line": 1,
+      "relation": "directlyIncreases",
+      "evidence": "PRMTs can specifically methylate protein-incorporated arginine residues to generate protein incorporated monomethylarginine (MMA), symmetric dimethylarginine (SDMA), or asymmetric dimethylarginine",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "source": 36,
+      "target": 12,
+      "key": "d6bc30a31dcdfe004cc48b3a748f3b0c"
+    },
+    {
+      "line": 38,
+      "relation": "association",
+      "evidence": "Guzmán et al31\nfound a high percentage of CDKN2A and\nMGMT promoter methylation in induced sputum\nfrom COPD patients compared with healthy sub-\njects, and they are strongly associated with heavy\nsmoking",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 32,
+      "target": 55,
+      "key": "a0035e9102da8512efa4a9e345f6109b"
+    },
+    {
+      "line": 9,
+      "relation": "decreases",
+      "evidence": "We conclude that the mechanism by which CHFR delays chromosome condensation involves inhibition of accumulation of Cyclin B1 in the nucleus.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15674323"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 35,
+      "target": 28,
+      "key": "5adea22fdad312b1c8c23f0ce9200f79"
+    },
+    {
+      "line": 12,
+      "relation": "decreases",
+      "evidence": "\"Ectopic expression of Cyclin B1 with a mutant nuclear export sequence induced chromosome condensation, and thus overcame the CHFR checkpoint. We conclude that the mechanism by which CHFR delays chromosome condensation involves inhibition of accumulation of Cyclin B1 in the nucleus.\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15674323"
+      },
+      "annotations": {},
+      "source": 35,
+      "target": 28,
+      "key": "2d8eb7f6f4a5fa00985580184531cc7e"
+    },
+    {
+      "line": 10,
+      "relation": "decreases",
+      "evidence": "\"Chfr, a checkpoint with FHA and RING finger domains, plays an important role in cell cycle progression and tumor suppression. Chfr possesses the E3 ubiquitin ligase activity and stimulates the formation of polyubiquitin chains by Ub-conjugating enzymes, and induces the proteasome-dependent degradation of a number of cellular proteins, including Plk1 and Aurora A.\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19326084"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 35,
+      "target": 52,
+      "key": "cd017cdec9e5b0ccc4e1374cfcddc6a3"
+    },
+    {
+      "line": 10,
+      "relation": "decreases",
+      "evidence": "\"Mouse fibroblasts lacking Stil by genomic or RNA interference approaches, as well as E9.5 Stil(-/-) embryos, express high levels of the Chfr protein and reduced levels of the Chfr substrate Plk1\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21245198"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 35,
+      "target": 52,
+      "key": "a21ba90e9df0367a1c044add1b6e4388"
+    },
+    {
+      "line": 10,
+      "relation": "decreases",
+      "evidence": "The checkpoint protein CHFR implicated in degradation of Plk1 is involved in the regulation of Plk1 by PKB.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14638868"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 35,
+      "target": 52,
+      "key": "f8a80aa220ffcac1db1dcd85bfedd98f"
+    },
+    {
+      "line": 13,
+      "relation": "directlyDecreases",
+      "evidence": "\" The Chfr-mediated cell cycle delay requires ubiquitin-dependent protein degradation, because inactivating mutations in Chfr, interference with poly-ubiquitination, and inhibition of proteasomes all abolish this delay in mitotic entry. The direct target of the Chfr pathway is Polo-like kinase 1 (Plk1). Ubiquitination of Plk1 by Chfr delays the activation of the Cdc25C phosphatase and the inactivation of the Wee1 kinase, leading to a delay in Cdc2 activation.\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11807090"
+      },
+      "annotations": {},
+      "source": 35,
+      "target": 52,
+      "key": "743d0680cfcabee111360f73bbdf4952"
+    },
+    {
+      "line": 14,
+      "relation": "decreases",
+      "evidence": "\"We showed that Chfr is a ubiquitin ligase that targets polo-like kinase (Plk1) for degradation, leading to delayed activation of the Cdc25C phosphatase and prolonged inhibitory phosphorylation of Cdc2 at the G2/M transition.\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15187257"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 35,
+      "target": 31,
+      "key": "933b76b7f72375c17bb87f0197a92240"
+    },
+    {
+      "line": 14,
+      "relation": "decreases",
+      "evidence": "\"Ubiquitination of Plk1 by Chfr delays the activation of the Cdc25C phosphatase and the inactivation of the Wee1 kinase, leading to a delay in Cdc2 activation\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11807090"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "kinase activity",
+          "identifier": "0016301"
+        }
+      },
+      "source": 35,
+      "target": 31,
+      "key": "f36cb6114ac793f3dde4312a68cd3e03"
+    },
+    {
+      "line": 8,
+      "relation": "directlyIncreases",
+      "evidence": "In this study we have demonstrated that growth factors induce β-catenin/TCF signaling in VSMCs and attenuation of β-catenin/TCF signaling inhibits VSMC proliferation. Furthermore, inhibition of β-catenin/TCF signaling reduces cyclin D1 expression and elevates p21 expression. We therefore conclude that VSMC proliferation is regulated by β-catenin signaling, in part via the modulation of cyclin D1 and p21… β-catenin/TCF signaling regulates cyclin D1 reporter activity and mRNA levels",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17122440"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 38,
+      "target": 29,
+      "key": "8c6ccc6570efe714495f513af2c451e6"
+    },
+    {
+      "line": 8,
+      "relation": "directlyIncreases",
+      "evidence": "In these cells, activation of Wnt/β-catenin signaling was evidenced by the translocation of β-catenin into the nucleus and the increase in the expression of direct target genes as cyclin D1, axin 2, and VCAN/versican.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22874762"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 38,
+      "target": 29,
+      "key": "af4dc1d65cae650b194118aa3189a70c"
+    },
+    {
+      "line": 8,
+      "relation": "directlyIncreases",
+      "evidence": "We show in cultured explants that isolated activation of beta-catenin signaling in epithelial progenitors induces, in a TCF/Lef-dependent manner, a subset of the transcripts associated with epithelialization, including Pax8, cyclin D1 (Ccnd1) and Emx2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17693601"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 38,
+      "target": 29,
+      "key": "a58094ffd484790d58c2365e8167d328"
+    },
+    {
+      "line": 18,
+      "relation": "decreases",
+      "evidence": "Dickkopf-1 (DKK1) is a potent inhibitor of Wnt signalling, which exerts anabolic effects on bone and also takes part in the regulation of vascular cells. Our aims were to evaluate serum DKK1 in type 2 diabetes (T2DM) patients and to analyze its relationships with cardiovascular disease (CVD). We also evaluated the relationship between DKK1 and bone metabolism.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25369286"
+      },
+      "annotations": {},
+      "source": 40,
+      "target": 22,
+      "key": "5a7eb910ca80fcaaac65415a06cc96d7"
+    },
+    {
+      "line": 18,
+      "relation": "decreases",
+      "evidence": "Here we demonstrate that deficient Wnt signalling elicits synaptic degeneration in the adult striatum. Inducible expression of the secreted Wnt antagonist Dickkopf1 (Dkk1) in adult mice (iDkk1) decreases the number of cortico-striatal glutamatergic synapses and of D1 and D2 dopamine receptor clusters.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25318560"
+      },
+      "annotations": {},
+      "source": 40,
+      "target": 22,
+      "key": "99fa37bc7926035e04bd0c69e9431063"
+    },
+    {
+      "line": 18,
+      "relation": "decreases",
+      "evidence": "Differential expression of canonical (β-catenin, Wnt-4, Lrp4, Lrp6) and noncanonical Wnt signaling (Wnt-5b, Wnt-11) and their inhibitors (Dkk1, Axin1, sFRP3, sFRP5, Wif-1) surrounding the cartilage canals and osteochondral junction provides evidence of the complex interactions occurring during endochondral ossification.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25479004"
+      },
+      "annotations": {},
+      "source": 40,
+      "target": 22,
+      "key": "7c5c878a1647a150dc97beff6e5a2b6c"
+    },
+    {
+      "line": 18,
+      "relation": "decreases",
+      "evidence": "Dickkopf1 (DKK1), a canonical Wnt/β-catenin pathway antagonist, is closely associated with cardiovascular disease and adipogenesis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25436422"
+      },
+      "annotations": {},
+      "source": 40,
+      "target": 22,
+      "key": "92bc665b4f191b16898f1c4f383c2f89"
+    },
+    {
+      "line": 18,
+      "relation": "decreases",
+      "evidence": "Successful embryonic development depends upon molecules secreted by the reproductive tract. Among such molecules is the protein dickkopf 1 (DKK1), an antagonist of canonical WNT signalling that can also activate the noncanonical, planar cell polarity (PCP) pathway.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25472052"
+      },
+      "annotations": {},
+      "source": 40,
+      "target": 22,
+      "key": "c94205891e253ee80e6cd673bc99277c"
+    },
+    {
+      "line": 18,
+      "relation": "decreases",
+      "evidence": "\"Dickkopf-1 (DKK1) is a potent inhibitor of Wnt signalling, which exerts anabolic effects on bone and also takes part in the regulation of vascular cells. \"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25369286"
+      },
+      "annotations": {},
+      "source": 40,
+      "target": 22,
+      "key": "7802aa40ae6ee71a275a60428dd0f3f2"
+    },
+    {
+      "line": 18,
+      "relation": "decreases",
+      "evidence": "knockdown of Dkk-1 activated Wnt signaling and significantly up-regulated Wnt5a in lung cancer cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19351856"
+      },
+      "annotations": {},
+      "source": 40,
+      "target": 22,
+      "key": "5cb4cb73fd81d3fea6bde3de43e4df12"
+    },
+    {
+      "line": 20,
+      "relation": "increases",
+      "evidence": "\"Co-immunoprecipitation experiments showed that ICBP90 and DNMT1 are present in the same molecular complex, which was further confirmed by co-localization experiments as assessed by immunocytochemistry. Downregulation of ICBP90 and DNMT1 decreased VEGF gene expression, a major pro-angiogenic factor, whereas those of p16(INK4A) gene and RB1 gene were significantly enhanced. Together, these results indicate that DNMT1 and ICBP90 are involved in VEGF gene expression\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17934516"
+      },
+      "annotations": {},
+      "source": 41,
+      "target": 24,
+      "key": "db7c1c3472c2d07490b64218d764c832"
+    },
+    {
+      "line": 20,
+      "relation": "increases",
+      "evidence": "The interaction of the SRA domain of ICBP90 with a novel domain of DNMT1 is involved in the regulation of VEGF gene expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": ""
+      },
+      "annotations": {},
+      "source": 41,
+      "target": 24,
+      "key": "87257cb8fe040c77abda436d0cc1fbfa"
+    },
+    {
+      "line": 21,
+      "relation": "decreases",
+      "evidence": "\"Our data showed that DNMT1 loss dramatically decreased cell proliferation but significantly increased cell migratory and invasive potential. Additionally, in the limited set of genes whose expression and DNA methylation status were determined DNMT1 loss was associated with increased CDKN3 and claudin-3 expression, and also culminated in specific demethylation of Rb1 and RAR-beta promoters.\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19539327"
+      },
+      "annotations": {},
+      "source": 41,
+      "target": 54,
+      "key": "892f0b945408cc693ff13d24047969e5"
+    },
+    {
+      "line": 22,
+      "relation": "decreases",
+      "evidence": "These results provide compelling evidence that DNA damage provokes p16Ink4a gene expression, at least partly, through blocking the levels of DNMT1 gene expression by elevated levels of ROS.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19667129"
+      },
+      "annotations": {},
+      "source": 41,
+      "target": 32,
+      "key": "742fad89183a1cb16a107fab8dcbf551"
+    },
+    {
+      "line": 22,
+      "relation": "decreases",
+      "evidence": "DNA damage response regulates p16INK4a gene expression through DNMT1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20157424"
+      },
+      "annotations": {},
+      "source": 41,
+      "target": 32,
+      "key": "7d7248c901542aa369970b6d834927bb"
+    },
+    {
+      "line": 72,
+      "relation": "directlyIncreases",
+      "evidence": "Oxidative stress can up-regulate the\nexpression and activity of DNA methyltransferase 1 (DNMT1) and induce DNA promoter methylation, in turn, affect the expression of the\ngenes",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 41,
+      "target": 4,
+      "key": "c337f02d67f75aec9ca3f6cc0f4697b2"
+    },
+    {
+      "line": 6,
+      "relation": "directlyIncreases",
+      "evidence": "E2F-4 activates cyclin D1 promoter activity",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9584162"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 42,
+      "target": 29,
+      "key": "eca423eb323fb8b92a20bd2a3a059dd9"
+    },
+    {
+      "line": 23,
+      "relation": "association",
+      "evidence": "E2F-4 formed a complex with Egr-1 following cellular stimulation with CSE or the HDAC inhibitor TSA (Fig. 6C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18830406"
+      },
+      "annotations": {},
+      "source": 42,
+      "target": 44,
+      "key": "4d565f6add8be0e532c66b42ee3a3189"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 43,
+      "target": 14,
+      "key": "9da267ebcc020a49690b5a087210da69"
+    },
+    {
+      "line": 23,
+      "relation": "association",
+      "evidence": "E2F-4 formed a complex with Egr-1 following cellular stimulation with CSE or the HDAC inhibitor TSA (Fig. 6C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18830406"
+      },
+      "annotations": {},
+      "source": 44,
+      "target": 42,
+      "key": "5a471a3af8272413303f35b201f825d2"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 45,
+      "target": 14,
+      "key": "e8a0e5363f1ee7e461f0a88b5685556b"
+    },
+    {
+      "line": 64,
+      "relation": "directlyIncreases",
+      "evidence": "EZH2 acts as a lysine-specific HMT that mediates H3K27me3.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24652950"
+      },
+      "annotations": {},
+      "source": 45,
+      "target": 10,
+      "key": "16b4604e3969a23fc28a67806bb0d3c2"
+    },
+    {
+      "relation": "hasMember",
+      "source": 48,
+      "target": 21,
+      "key": "0f9891f66619bd376f841b0860364035"
+    },
+    {
+      "line": 68,
+      "relation": "decreases",
+      "evidence": "From full text, section \"Knockdown of HDAC1, but not HDAC2 or HDAC3, Increases DEFB1 Gene Expression in A549 Cells\"...These data showed that only HDAC1, but not HDAC2 or HDAC3, was involved in the transcriptional repression of DEFB1 in A549 cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23185513"
+      },
+      "annotations": {},
+      "source": 48,
+      "target": 39,
+      "key": "e8441cb2fc1b4ba8a7dfb081bc1f5d30"
+    },
+    {
+      "relation": "hasMember",
+      "source": 49,
+      "target": 21,
+      "key": "0d795441d3247037c3892714778005e2"
+    },
+    {
+      "line": 80,
+      "relation": "association",
+      "evidence": "HDAC2 regulates chromatin plasticity and enhances DNA vulnerability, suggesting that HDAC2 inhibition can lead to DNA damage (76). This may be due to HDAC2-mediated transcriptional repression, which prevents transcription from interfering with the repair process. Another possibility is that HDAC2 recruitment influences the ability of DNA repair factors (e.g., Ku70/Ku80) to bind the damaged DNA or to function effectively (82) (Fig. 2).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22842217"
+      },
+      "annotations": {},
+      "source": 49,
+      "target": 7,
+      "key": "f2caf47d28e7b6d7e5f9b28578830b8b"
+    },
+    {
+      "relation": "hasMember",
+      "source": 50,
+      "target": 21,
+      "key": "92ed46a3e348d3436829c975632a855f"
+    },
+    {
+      "line": 88,
+      "relation": "decreases",
+      "evidence": "Here we show that activation of gdf11 results from the inhibition of HDAC3 activity on the gdf11 promoter..... overexpression of HDAC3 caused a significant (10-fold) repression of the gdf11 promoter. Similar to HDAC1 and HDAC2, overexpression of class II HDACs (HDAC4, -5, -6, -7, -9, or -10) and HDAC11 resulted in either an insignificant repression or a mild activation of the gdf11 promoter (Fig. ​(Fig.4B).4B). These results suggest that HDAC3 is chiefly responsible for the repression of the gdf11 promoter.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15169878"
+      },
+      "annotations": {},
+      "source": 50,
+      "target": 46,
+      "key": "c397f19c4594d1589dedebbe26a3c867"
+    },
+    {
+      "line": 89,
+      "relation": "directlyIncreases",
+      "evidence": "In the current study, the expression of MLL, which plays an important role in H3K4 methylation [32], and CHD, which is important for chromatin modification and opening of chromatin to allow transcription [33], was increased in COPD subjects. T",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25834810"
+      },
+      "annotations": {},
+      "source": 51,
+      "target": 10,
+      "key": "f60d1c92ed4b9980609adc2e25bb773a"
+    },
+    {
+      "line": 3,
+      "relation": "directlyIncreases",
+      "evidence": "PRMTs can specifically methylate protein-incorporated arginine residues to generate protein incorporated monomethylarginine (MMA), symmetric dimethylarginine (SDMA), or asymmetric dimethylarginine",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "source": 23,
+      "target": 12,
+      "key": "907d895c592bd8977c8feb7c809ae565"
+    },
+    {
+      "line": 2,
+      "relation": "directlyIncreases",
+      "evidence": "PRMTs can specifically methylate protein-incorporated arginine residues to generate protein incorporated monomethylarginine (MMA), symmetric dimethylarginine (SDMA), or asymmetric dimethylarginine",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "source": 34,
+      "target": 12,
+      "key": "c84ba428cd058d6928cc8333956867a5"
+    },
+    {
+      "line": 0,
+      "relation": "directlyIncreases",
+      "evidence": "PRMTs can specifically\nmethylate protein-incorporated arginine residues\nto generate protein-incorporated monomethy-\nlarginine (MMA), symmetric dimethylarginine\n(SDMA), or asymmetric dimethylarginine",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "source": 37,
+      "target": 12,
+      "key": "267f708ad1a9da6da5c8040b1096c0ec"
+    },
+    {
+      "line": 16,
+      "relation": "decreases",
+      "evidence": "As shown in Fig. 1B, the exogenous expression of RASSF1A inhibited the phosphorylation of c-Jun and reduced the expression of Cyclin D1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15867363"
+      },
+      "annotations": {},
+      "source": 53,
+      "target": 29,
+      "key": "248d2df9f1b4f3352780da9c46834e3a"
+    },
+    {
+      "line": 16,
+      "relation": "decreases",
+      "evidence": "\"RASSF1A induces cell cycle arrest through inhibition of cyclin D1 accumulation.\"",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19160099"
+      },
+      "annotations": {},
+      "source": 53,
+      "target": 29,
+      "key": "862a6fb52119e67c91d542443cbb8a13"
+    },
+    {
+      "line": 16,
+      "relation": "decreases",
+      "evidence": "RNA interference-mediated downregulation of endogenous RASSF1A expression in human epithelial cells results in abnormal accumulation of cyclin D1 protein",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12024041"
+      },
+      "annotations": {},
+      "source": 53,
+      "target": 29,
+      "key": "b52fd64302eac89cf047327298d43fcc"
+    },
+    {
+      "line": 16,
+      "relation": "decreases",
+      "evidence": "The exogenous expression of RASSF1A suppressed JNK phosphorylation, and cells stably transfected with RASSF1A showed reduced JNK and c-Jun phosphorylation and Cyclin D1 down-regulation. An in vitro kinase assay showed that the exogenous expression of RASSF1A inhibited JNK activity and that JNK activity suppression due to ectopically expressed RASSF1A was revived by RASSF1A siRNA treatment.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15867363"
+      },
+      "annotations": {},
+      "source": 53,
+      "target": 29,
+      "key": "e2b4ad201051b6e607cc808e205a4129"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 30,
+      "target": 14,
+      "key": "54ec09e9b426ccfc4f9b2bea26c3d4ce"
+    },
+    {
+      "line": 28,
+      "relation": "decreases",
+      "evidence": "HDACs form complexes with and thereby regulate the activity of members of the E2F family of transcription factors...E2F-4 formed a complex with Egr-1 following cellular stimulation with CSE or the HDAC inhibitor TSA (Fig. 6C).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18830406"
+      },
+      "annotations": {},
+      "source": 21,
+      "target": 42,
+      "key": "c815a4841f98958149beaf27f644785f"
+    },
+    {
+      "line": 43,
+      "relation": "negativeCorrelation",
+      "evidence": "HDAC activity was decreased in patients with COPD, as compared with normal subjects, in both the macrophages and biopsy specimens",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15888697"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 21,
+      "target": 55,
+      "key": "36cf087fa15dce07e4c3644d57741ce8"
+    },
+    {
+      "line": 83,
+      "relation": "increases",
+      "evidence": "In human pulmonary epithelial cells, exposure to CSE or histone deacetylase (HDAC) inhibitor rapidly induced autophagy. CSE decreased HDAC activity, resulting in increased binding of early growth response-1 (Egr-1) and E2F factors to the autophagy gene LC3B promoter, and increased LC3B expression. Knockdown of E2F-4 or Egr-1 inhibited CSE-induced LC3B expression. Knockdown of Egr-1 also inhibited the expression of Atg4B, a critical factor for LC3B conversion. Inhibition of autophagy by LC3B-knockdown protected epithelial cells from CSE-induced apoptosis. Egr-1(-/-) mice, which displayed basal airspace enlargement, resisted cigarette-smoke induced autophagy, apoptosis, and emphysema.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18830406"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 21,
+      "target": 44,
+      "key": "962a2fa08323dd4a062a77f095b01336"
+    },
+    {
+      "line": 84,
+      "relation": "decreases",
+      "evidence": "Here we report that the mouse homolog of Su(fu) [mSu(fu)] specifically interacts with SAP18, a component of the mSin3 and histone deacetylase complex. In addition, we demonstrate that mSu(fu) functionally cooperates with SAP18 to repress transcription by recruiting the SAP18-mSin3 complex to promoters containing the Gli-binding element.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11960000"
+      },
+      "annotations": {},
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "nucleic acid binding transcription factor activity",
+          "identifier": "0001071"
+        }
+      },
+      "source": 21,
+      "target": 47,
+      "key": "1f246ab38d51a298a2aa3179cdf77497"
+    },
+    {
+      "line": 36,
+      "relation": "association",
+      "evidence": "It has previously been shown that methylation of the GATA-4 gene promoter region in sputum DNA is associated with low lung function and increased odds of chronic obstructive pulmonary disease (COPD) among smokers.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24973415"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 19,
+      "key": "7f52c86d759e8b72a5d7de6a537c5186"
+    },
+    {
+      "line": 37,
+      "relation": "association",
+      "evidence": "When DNA methylation levels of methyl probes in CpG islands for COPD were compared with those of CTRL samples, the COPD samples were predominantly hypermethylated (S1A Fig.). Results based on probe-by-probe comparison also showed that CpG islands were more likely to be hypermethylated than hypomethylated in lung tissues of COPD patients (S4 Table). However, when comparing non-CpG island methyl probes, the pattern was very different and the numbers of hyper- and hypo- methylated probes were evenly distributed (S1B Fig. and S4 Table). This different pattern suggested there was no global methylation level difference between COPD and CTRL samples. The main difference between them was methylation levels of CpG islands, suggesting biological importance of methylation of CpG islands in transcription regulation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25569234"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 4,
+      "key": "2dee9715652bdec66753808bcaebe2cb"
+    },
+    {
+      "line": 37,
+      "relation": "association",
+      "evidence": "Epigenetic modification may affect the expression of multiple inflammatory genes in lungs of patients with chronic obstructive pulmonary disease (COPD). Major epigenetic events include DNA methylation and various post-translational modifications of histones, such as histone methylation, acetylation, phosphorylation, ubiquitination, and sumoylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 4,
+      "key": "2902ff8ee2c63c93fe4790fdad9f1a57"
+    },
+    {
+      "line": 37,
+      "relation": "association",
+      "evidence": "This large-scale analysis suggests that DNA methylation may be a biomarker of COPD and may highlight new pathways of COPD pathogenesis.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22161163"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 4,
+      "key": "5878164c562ebf5bfc84df806c20767c"
+    },
+    {
+      "line": 37,
+      "relation": "association",
+      "evidence": "DNA methylation is globally disrupted and associated with expression changes in chronic obstructive pulmonary disease small airways.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24298892"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 4,
+      "key": "548f6dd3daf0eb6891bf4fd87457daf8"
+    },
+    {
+      "line": 38,
+      "relation": "association",
+      "evidence": "Guzmán et al31\nfound a high percentage of CDKN2A and\nMGMT promoter methylation in induced sputum\nfrom COPD patients compared with healthy sub-\njects, and they are strongly associated with heavy\nsmoking",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 32,
+      "key": "ef14658bf301a5b8cd765d0c14fdc3d2"
+    },
+    {
+      "line": 39,
+      "relation": "decreases",
+      "evidence": "Specimens of lung tissue obtained from patients with increasing clinical stages of COPD had graded reductions in HDAC activity and increases in interleukin-8 messenger RNA (mRNA) and histone-4 acetylation at the interleukin-8 promoter. The mRNA expression of HDAC2, HDAC5, and HDAC8 and expression of the HDAC2 protein were also lower in patients with increasing severity of disease",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15888697"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 49,
+      "key": "eaaec3038b7a68f2d26a718616c9b92d"
+    },
+    {
+      "line": 40,
+      "relation": "negativeCorrelation",
+      "evidence": "Specimens of lung tissue obtained from patients with increasing clinical stages of COPD had graded reductions in HDAC activity and increases in interleukin-8 messenger RNA (mRNA) and histone-4 acetylation at the interleukin-8 promoter. The mRNA expression of HDAC2, HDAC5, and HDAC8 and expression of the HDAC2 protein were also lower in patients with increasing severity of disease",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15888697"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 57,
+      "key": "b8fb588473af813ee6f426ebf4102bd5"
+    },
+    {
+      "line": 41,
+      "relation": "negativeCorrelation",
+      "evidence": "The expression of HDAC10 was decreased in the lung tissue of COPD subjects.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25834810"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 59,
+      "key": "b8839e5bea143915ea775af5f744677a"
+    },
+    {
+      "line": 42,
+      "relation": "negativeCorrelation",
+      "evidence": "Specimens of lung tissue obtained from patients with increasing clinical stages of COPD had graded reductions in HDAC activity and increases in interleukin-8 messenger RNA (mRNA) and histone-4 acetylation at the interleukin-8 promoter. The mRNA expression of HDAC2, HDAC5, and HDAC8 and expression of the HDAC2 protein were also lower in patients with increasing severity of disease",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15888697"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 58,
+      "key": "39ffad8c8fb47b0f7d03c0a143473d67"
+    },
+    {
+      "line": 43,
+      "relation": "negativeCorrelation",
+      "evidence": "HDAC activity was decreased in patients with COPD, as compared with normal subjects, in both the macrophages and biopsy specimens",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15888697"
+      },
+      "annotations": {},
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "go",
+          "name": "catalytic activity",
+          "identifier": "0003824"
+        }
+      },
+      "source": 55,
+      "target": 21,
+      "key": "132f11b161cc227cdbaa0b9e2708e877"
+    },
+    {
+      "line": 44,
+      "relation": "positiveCorrelation",
+      "evidence": "In the current study, the expression of MLL, which plays an important role in H3K4 methylation [32], and CHD, which is important for chromatin modification and opening of chromatin to allow transcription [33], was increased in COPD subjects.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25834810"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 63,
+      "key": "3bc5d61d7dd6c14802415a9fc536d040"
+    },
+    {
+      "line": 45,
+      "relation": "positiveCorrelation",
+      "evidence": "Some\nresearch has shown that the mRNA expression\nlevels of PRMT4, 5, 6, 9, and 10 were up-regu-\nlated in COPD lung tissue specimen",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 61,
+      "key": "6d4a964c95722a6845e5141d5579ecac"
+    },
+    {
+      "line": 46,
+      "relation": "positiveCorrelation",
+      "evidence": "Some\nresearch has shown that the mRNA expression\nlevels of PRMT4, 5, 6, 9, and 10 were up-regu-\nlated in COPD lung tissue specimen",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 60,
+      "key": "56d6895cc66c0a25b50722f723149d85"
+    },
+    {
+      "line": 47,
+      "relation": "positiveCorrelation",
+      "evidence": "Some\nresearch has shown that the mRNA expression\nlevels of PRMT4, 5, 6, 9, and 10 were up-regu-\nlated in COPD lung tissue specimen",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 62,
+      "key": "58dd28d87a37c17069aea09738167bff"
+    },
+    {
+      "line": 48,
+      "relation": "positiveCorrelation",
+      "evidence": "Some\nresearch has shown that the mRNA expression\nlevels of PRMT4, 5, 6, 9, and 10 were up-regu-\nlated in COPD lung tissue specimen",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 56,
+      "key": "3f25595f33418ca8a91f66d0812d6ed0"
+    },
+    {
+      "line": 49,
+      "relation": "association",
+      "evidence": "Epigenetic modification may affect the expression of multiple inflammatory genes in lungs of patients with chronic obstructive pulmonary disease (COPD). Major epigenetic events include DNA methylation and various post-translational modifications of histones, such as histone methylation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 10,
+      "key": "9b2e4f606220319b0339dada60bffe5a"
+    },
+    {
+      "line": 73,
+      "relation": "association",
+      "evidence": "Our observations include significant, replicable associations between SERPINA1 hypomethylation and COPD and lower average lung function phenotypes (combined P values: COPD, 1.5 × 10(-23); FEV(1)/FVC, 1.5 × 10(-35); FEV(1), 2.2 × 10(-40)).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22161163"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 20,
+      "key": "3a2d09ce4a64e0fb299f41dd83e8af72"
+    },
+    {
+      "line": 75,
+      "relation": "association",
+      "evidence": "One of the top five associated CpG sites for all three phenotypes in both cohorts was with a CpG in the fucosyltransferase-7 (FUT7) gene (OMIM 602030), which was relatively hypomethylated in the presence of COPD and lower lung function.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22161163"
+      },
+      "annotations": {},
+      "source": 55,
+      "target": 18,
+      "key": "4edb62b2c646b29f9b34b6795aed6448"
+    },
+    {
+      "line": 45,
+      "relation": "positiveCorrelation",
+      "evidence": "Some\nresearch has shown that the mRNA expression\nlevels of PRMT4, 5, 6, 9, and 10 were up-regu-\nlated in COPD lung tissue specimen",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 61,
+      "target": 55,
+      "key": "8b1dbc2ab94fb113e8f49ae37030f2af"
+    },
+    {
+      "line": 41,
+      "relation": "negativeCorrelation",
+      "evidence": "The expression of HDAC10 was decreased in the lung tissue of COPD subjects.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25834810"
+      },
+      "annotations": {},
+      "source": 59,
+      "target": 55,
+      "key": "589ac79e1cff9bd7dbc9cfa719dda486"
+    },
+    {
+      "line": 42,
+      "relation": "negativeCorrelation",
+      "evidence": "Specimens of lung tissue obtained from patients with increasing clinical stages of COPD had graded reductions in HDAC activity and increases in interleukin-8 messenger RNA (mRNA) and histone-4 acetylation at the interleukin-8 promoter. The mRNA expression of HDAC2, HDAC5, and HDAC8 and expression of the HDAC2 protein were also lower in patients with increasing severity of disease",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15888697"
+      },
+      "annotations": {},
+      "source": 58,
+      "target": 55,
+      "key": "cb75b5f2d6242d671cb1d57bf73b7d8f"
+    },
+    {
+      "line": 40,
+      "relation": "negativeCorrelation",
+      "evidence": "Specimens of lung tissue obtained from patients with increasing clinical stages of COPD had graded reductions in HDAC activity and increases in interleukin-8 messenger RNA (mRNA) and histone-4 acetylation at the interleukin-8 promoter. The mRNA expression of HDAC2, HDAC5, and HDAC8 and expression of the HDAC2 protein were also lower in patients with increasing severity of disease",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15888697"
+      },
+      "annotations": {},
+      "source": 57,
+      "target": 55,
+      "key": "352ebaac94b61d481fa92effc0013bfc"
+    },
+    {
+      "line": 44,
+      "relation": "positiveCorrelation",
+      "evidence": "In the current study, the expression of MLL, which plays an important role in H3K4 methylation [32], and CHD, which is important for chromatin modification and opening of chromatin to allow transcription [33], was increased in COPD subjects.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25834810"
+      },
+      "annotations": {},
+      "source": 63,
+      "target": 55,
+      "key": "a7ec520f1e9d56ef31479c890b71d5cf"
+    },
+    {
+      "line": 48,
+      "relation": "positiveCorrelation",
+      "evidence": "Some\nresearch has shown that the mRNA expression\nlevels of PRMT4, 5, 6, 9, and 10 were up-regu-\nlated in COPD lung tissue specimen",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 56,
+      "target": 55,
+      "key": "39cd1ec25cf70e9dbbe1bc741b7db3b9"
+    },
+    {
+      "line": 46,
+      "relation": "positiveCorrelation",
+      "evidence": "Some\nresearch has shown that the mRNA expression\nlevels of PRMT4, 5, 6, 9, and 10 were up-regu-\nlated in COPD lung tissue specimen",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 60,
+      "target": 55,
+      "key": "29b0fa6be28bec3c0bc13322e142a0b8"
+    },
+    {
+      "line": 47,
+      "relation": "positiveCorrelation",
+      "evidence": "Some\nresearch has shown that the mRNA expression\nlevels of PRMT4, 5, 6, 9, and 10 were up-regu-\nlated in COPD lung tissue specimen",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25807439"
+      },
+      "annotations": {},
+      "source": 62,
+      "target": 55,
+      "key": "4a17e9466176e32ee858adeaeafa7f19"
+    }
+  ]
+}

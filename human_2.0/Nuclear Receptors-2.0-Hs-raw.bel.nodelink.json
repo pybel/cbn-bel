@@ -1,0 +1,1770 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Nuclear Receptors-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Nuclear Receptors network depicts the causal mechanisms in the nuclear receptor signaling pathway that leads to cell proliferation and cell cycle progression as indicated by the core elements (cyclin-dependent kinases, E2F family members, cyclins, and CDKN1A). \\nReviewed during Jamboree2014"
+    },
+    "namespace_url": {
+      "HGNC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-human-genes/hgnc-human-genes-20150601.belns",
+      "GOBP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20150601.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20150601.belns",
+      "GOCC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170511.belns",
+      "MESHPP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20150601.belns",
+      "MGI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20150601.belns",
+      "RGD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20150601.belns",
+      "CHEBI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20150601.belns",
+      "SCHEM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-chemicals/selventa-legacy-chemicals-20150601.belns",
+      "EGID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/entrez-gene-ids/entrez-gene-ids-20150601.belns",
+      "MESHD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20150601.belns",
+      "SDIS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-diseases/selventa-legacy-diseases-20150601.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20150601.belns",
+      "MESHC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170511.belns",
+      "GOBPID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process-ids/go-biological-process-ids-20150601.belns",
+      "GOCCID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component-ids/go-cellular-component-ids-20150601.belns",
+      "MESHCS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20150601.belns"
+    },
+    "namespace_pattern": {},
+    "annotation_url": {
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20150601.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20150601.belanno",
+      "Species": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+      "Tissue": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20150601.belanno"
+    },
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "calcitriol"
+      },
+      "id": "26117682e151074c71a3b06cd295d7c6",
+      "bel": "a(CHEBI:calcitriol)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "rosiglitazone"
+      },
+      "id": "f12e54218d48ea9a2e49befce5b12ee6",
+      "bel": "a(CHEBI:rosiglitazone)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Thiazolidinedione"
+      },
+      "id": "4083783b7968fbca1cd90cac2ee45b4f",
+      "bel": "a(SCHEM:Thiazolidinedione)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "cell proliferation"
+      },
+      "id": "14a7545c48b4be2b5e986ded11b09652",
+      "bel": "bp(GOBP:\"cell proliferation\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "response to hypoxia"
+      },
+      "id": "2866331affab1cf90e8fff144642c297",
+      "bel": "bp(GOBP:\"response to hypoxia\")"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Abundance",
+          "concept": {
+            "namespace": "CHEBI",
+            "name": "calcitriol"
+          },
+          "id": "26117682e151074c71a3b06cd295d7c6",
+          "bel": "a(CHEBI:calcitriol)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "VDR"
+          },
+          "id": "2fc8bae6bce5ff9bba9e6a2b74e3e469",
+          "bel": "p(HGNC:VDR)"
+        }
+      ],
+      "id": "52b9dd4d9a824993a52013d1f35791ef",
+      "bel": "complex(a(CHEBI:calcitriol), p(HGNC:VDR))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "EGID",
+            "name": "348235"
+          },
+          "id": "e01c88fd9c1fd85cc201583fb1c7b25b",
+          "bel": "p(EGID:348235)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "NR3C1"
+          },
+          "id": "06820afe2bb1d23782b55583f42e2218",
+          "bel": "p(HGNC:NR3C1)"
+        }
+      ],
+      "id": "503b8eb59be56caff2f28a7ff0baf4c0",
+      "bel": "complex(p(EGID:348235), p(HGNC:NR3C1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CEBPA"
+          },
+          "id": "3acd2547ad2c69ad70d7ed970a769a3a",
+          "bel": "p(HGNC:CEBPA)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "NR3C1"
+          },
+          "id": "06820afe2bb1d23782b55583f42e2218",
+          "bel": "p(HGNC:NR3C1)"
+        }
+      ],
+      "id": "40f185f2e081afb1c93b05708b5d1556",
+      "bel": "complex(p(HGNC:CEBPA), p(HGNC:NR3C1))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "EGID",
+        "name": "348235"
+      },
+      "id": "e01c88fd9c1fd85cc201583fb1c7b25b",
+      "bel": "p(EGID:348235)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "AHR"
+      },
+      "id": "0ca138d4bbe12c92b43f0e47bb4ab30c",
+      "bel": "p(HGNC:AHR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCNA1"
+      },
+      "id": "b4806751837c8eb8e93de4f13ea54902",
+      "bel": "p(HGNC:CCNA1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCND1"
+      },
+      "id": "af65521e8dc8a9417952f6aebb7725c6",
+      "bel": "p(HGNC:CCND1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CDK2"
+      },
+      "id": "10f419c217b25dc1a0363b7341b8e0b8",
+      "bel": "p(HGNC:CDK2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CDK4"
+      },
+      "id": "72b88c249aeb10a8bbc2e43bc3e428f9",
+      "bel": "p(HGNC:CDK4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CDKN1A"
+      },
+      "id": "ff515d244d02108af03d90d92d4fa10f",
+      "bel": "p(HGNC:CDKN1A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CDKN1B"
+      },
+      "id": "6f4266e862549985ed5e681ce2e95639",
+      "bel": "p(HGNC:CDKN1B)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CDKN1C"
+      },
+      "id": "6247ef7a0ca411c0325e9a978a3ba210",
+      "bel": "p(HGNC:CDKN1C)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CDKN2C"
+      },
+      "id": "99da528be88811de3eeaeac434067383",
+      "bel": "p(HGNC:CDKN2C)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CEBPA"
+      },
+      "id": "3acd2547ad2c69ad70d7ed970a769a3a",
+      "bel": "p(HGNC:CEBPA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "E2F1"
+      },
+      "id": "5314a5235c40b2ce06fd3841a46b5f12",
+      "bel": "p(HGNC:E2F1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "LPL"
+      },
+      "id": "6808977739ee4d62b64774c0a8dbacae",
+      "bel": "p(HGNC:LPL)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MAP3K1"
+      },
+      "id": "c5f3b727932ef934be999625d00726d9",
+      "bel": "p(HGNC:MAP3K1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MAPK8"
+      },
+      "id": "73ec0c85b488c0466116e1bac13a9cc1",
+      "bel": "p(HGNC:MAPK8)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MMP14"
+      },
+      "id": "2c9850ba2327370f84ae3606d7bf0468",
+      "bel": "p(HGNC:MMP14)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NR3C1"
+      },
+      "id": "06820afe2bb1d23782b55583f42e2218",
+      "bel": "p(HGNC:NR3C1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NR4A1"
+      },
+      "id": "c89bcdb399b8a69a0b317284aeb07361",
+      "bel": "p(HGNC:NR4A1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NR4A1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser"
+        }
+      ],
+      "id": "b73813a164d91776e998bc9c68c520f1",
+      "bel": "p(HGNC:NR4A1, pmod(Ph, Ser))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PPARG"
+      },
+      "id": "3c576f271f63bfbdadb98704c5b62fff",
+      "bel": "p(HGNC:PPARG)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TGFB1"
+      },
+      "id": "f1f493c4771241860fc73aaa3bfdad66",
+      "bel": "p(HGNC:TGFB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "VDR"
+      },
+      "id": "2fc8bae6bce5ff9bba9e6a2b74e3e469",
+      "bel": "p(HGNC:VDR)"
+    }
+  ],
+  "links": [
+    {
+      "line": 8,
+      "relation": "increases",
+      "evidence": "We also identified the exact phosphorylation site of JNK to be serine 95 at the N terminus of TR3, around which a classical JNK phosphorylation motif exists. Furthermore, we demonstrated that TR3 phosphorylation by JNK coincided with its ubiquitination and degradation, resulting in the loss of its mitogenic activity",
+      "citation": {
+        "db": "Other",
+        "db_id": "17023523"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 22,
+      "target": 26,
+      "key": "5e8fa2838bf03006330d1442854cfdcb"
+    },
+    {
+      "line": 8,
+      "relation": "increases",
+      "evidence": "The TR3 expression vector was trans-fected into HEK293T cells, which were then treated with anisomycin, a potent inducer of JNK (18). Immunoblotting analysis revealed that anisomycin treatment resulted in the slow migration of the expressed GFP-TR3 protein, compared to the GFP-TR3 protein expressed in untreated cells (Fig. 11B). The anisomycin-induced retarded migration of the TR3 protein was prevented when cells were pretreated with a JNK inhibitor. These results suggest that phosphorylation of TR3 by JNK was responsible for the slower migration of the TR3 protein. Similar to full-length TR3, the N-terminal mutant of TR3 (TR3-1-151), which contained the first 151 amino acid residues, was modified by the anisomycin treatment, which was also prevented by the JNK inhibitor (Fig. 11B). In contrast, the migration of TR3/122, which lacks the first 122 amino acid residues, was not affected by anisomycin treatment. These data strongly suggest that TR3 is mainly phosphorylated on the N terminus by JNK. To determine whether phosphorylation of TR3 by JNK affected its DNA binding, a gel retardation assay was conducted to determine the binding of TR3 protein to NurRE before and after its phosphorylation by JNK. As shown in Fig. 11C, bacterially expressed TR3 protein formed a strong complex with the NurRE. However, upon phosphorylation by JNK in vitro, binding of TR3 to the NurRE was largely impaired. In addition, the weak complex formed between TR3 and NurRE migrated slightly faster than that formed by unphosphorylated TR3, probably reflecting a change in TR3 conformation by phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14612408"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 22,
+      "target": 26,
+      "key": "1d0c08acbc2601669e0c3f06e7a83db1"
+    },
+    {
+      "relation": "partOf",
+      "source": 18,
+      "target": 7,
+      "key": "bdf53bc23ac9a55f57499cc79e2f2f1e"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 18,
+      "target": 7,
+      "key": "03ba16443687ae7580a266790a587032"
+    },
+    {
+      "line": 28,
+      "relation": "directlyDecreases",
+      "evidence": "C/EBP{alpha} has been demonstrated to interact directly with the cyclin-dependent kinases (cdks) 2 and 4, two critical regulators of cell cycle progression (75). Interaction occurs through a short region of the C/EBP{alpha} polypeptide and prevents interaction of these kinases with their cognate cyclins. As the cyclin-cdk interaction is necessary for activity of the cdks and progression through the cell cycle, this provides a potential mechanism for the growth arrest mediated by C/EBP{alpha}",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12959923"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 12,
+      "key": "7e560f6b00966a18767c34fee7d88ead"
+    },
+    {
+      "line": 29,
+      "relation": "directlyDecreases",
+      "evidence": "C/EBP{alpha} has been demonstrated to interact directly with the cyclin-dependent kinases (cdks) 2 and 4, two critical regulators of cell cycle progression (75). Interaction occurs through a short region of the C/EBP{alpha} polypeptide and prevents interaction of these kinases with their cognate cyclins. As the cyclin-cdk interaction is necessary for activity of the cdks and progression through the cell cycle, this provides a potential mechanism for the growth arrest mediated by C/EBP{alpha}",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12959923"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 18,
+      "target": 13,
+      "key": "2a47bc4ecb28e45546a21de5acb0a720"
+    },
+    {
+      "relation": "partOf",
+      "source": 8,
+      "target": 6,
+      "key": "621cdb7543b7e018893f3128136e1b57"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 8,
+      "target": 6,
+      "key": "812d61a16faa6bfdbbc7875b01a29aff"
+    },
+    {
+      "line": 39,
+      "relation": "increases",
+      "evidence": "SKA2 overexpression increased GC transactivation in HepG2 cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18583474"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 8,
+      "target": 24,
+      "key": "1adb7ff1f02cd4270e230a4cf7a489d8"
+    },
+    {
+      "relation": "partOf",
+      "source": 24,
+      "target": 6,
+      "key": "3fc6709a6ab4111914874c62250cf5b9"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 24,
+      "target": 6,
+      "key": "1846b4992a9c68dc6b0d5c98d3cd7778"
+    },
+    {
+      "relation": "partOf",
+      "source": 24,
+      "target": 7,
+      "key": "054e974f68b52a4b05f1a246f07ce68c"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 24,
+      "target": 7,
+      "key": "d8b651799b135295b7f2fefb58666e93"
+    },
+    {
+      "line": 18,
+      "relation": "increases",
+      "evidence": "preincubation of VSMC with RU486 (NR3C1 inhibitor) (30 min) also reduced p21(Waf1/Cip1)protein expression",
+      "citation": {
+        "db": "Other",
+        "db_id": "15466360"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "primary lung vascular smooth muscle cells": true
+        }
+      },
+      "source": 24,
+      "target": 14,
+      "key": "caf1169c60927c2e80eaf71335125354"
+    },
+    {
+      "line": 35,
+      "relation": "directlyIncreases",
+      "evidence": "In Rb-deficient SAOS2 cells, however, the expression of p27 and p21 is induced upon receptor activation.SAOS2 cells that express a GR deletion derivative lacking the N-terminal transcriptional activation domain, induction of CDI expression is abolished and the cells fail to undergo ligand-dependent cell cycle arrest.",
+      "citation": {
+        "db": "Other",
+        "db_id": "9154817"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "saos2": true
+        },
+        "Tissue": {
+          "osteosarcoma": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 24,
+      "target": 14,
+      "key": "95b6354135f4c19754f98f39d695e680"
+    },
+    {
+      "line": 35,
+      "relation": "directlyIncreases",
+      "evidence": "In the presence of the GR inhibitor RU486 (10−6 M), amlodipine-dependent (10−6 M) activation of the p21(Waf1/Cip1)-luciferase reporter gene was significantly decreased",
+      "citation": {
+        "db": "Other",
+        "db_id": "15466360"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung vascular muscle cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 24,
+      "target": 14,
+      "key": "81a4a9c30c163662e668bf4fc9e6e121"
+    },
+    {
+      "line": 35,
+      "relation": "directlyIncreases",
+      "evidence": "This Network edge has no supporting evidence. Please add real evidence to this edge prior to deleting.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "0"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 24,
+      "target": 14,
+      "key": "9276260b0fb72aa01dda2d6115188eb5"
+    },
+    {
+      "line": 35,
+      "relation": "directlyIncreases",
+      "evidence": "Glucocorticoids inhibit the proliferation of fibroblastic cells in vivo and in culture........Inhibition of pRb kinase activity is associated with an increase in the abundance of one of the Cdk inhibitors, p21Cip1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "9139801"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "l929 fibroblastic cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 24,
+      "target": 14,
+      "key": "8c5d2d1b1cd8145db1f5bbbcc12714a7"
+    },
+    {
+      "line": 35,
+      "relation": "directlyIncreases",
+      "evidence": "In Rb-deficient SAOS2 cells, however, the expression of p27 and p21 is induced upon receptor activation.SAOS2 cells that express a GR deletion derivative lacking the N-terminal transcriptional activation domain, induction of CDI expression is abolished and the cells fail to undergo ligand-dependent cell cycle arrest.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9154817"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "osteosarcoma": true
+        },
+        "Cell": {
+          "saos2": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 24,
+      "target": 14,
+      "key": "3a675d3c962ea7d687a9c6914b683220"
+    },
+    {
+      "line": 36,
+      "relation": "directlyIncreases",
+      "evidence": "identified a functional glucocorticoid response element (GRE), located 5 kilo bases (kb) upstream of the transcription start site in the human p57(Kip2) promoter. This GRE was functional also when isolated, suggesting a direct transcriptional effect of the glucocorticoid receptor. Furthermore, mutation of this GRE abolished glucocorticoid induction of the reporter gene, whereas mutation of a nearby Sp1 site did not.",
+      "citation": {
+        "db": "Other",
+        "db_id": "12790805"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "293": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 24,
+      "target": 16,
+      "key": "b3f2e42c71c1643887a7cda51308a027"
+    },
+    {
+      "line": 36,
+      "relation": "directlyIncreases",
+      "evidence": "DEX treatment of the HeLa cells dramatically induced the protein and mRNA expression of the CDI p57Kip2. This induction was seen within 4 h of DEX treatment, preceding a major DEX-induced accumulation of cells in the G1 phase. DEX-induced mRNA expression of p57Kip2 did not require de novo protein synthesis, and the transcription of the p57Kip2 gene was increased as determined by a run-on transcription assay.",
+      "citation": {
+        "db": "Other",
+        "db_id": "10551775"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "hela": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 24,
+      "target": 16,
+      "key": "8885b0bfff6a14283ff8e21a2300efc8"
+    },
+    {
+      "relation": "partOf",
+      "source": 29,
+      "target": 5,
+      "key": "493e28c283205cc220f4afc80d1ee25a"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 29,
+      "target": 5,
+      "key": "1a1a6b3d5dc3a0e7c00ed7dd9b7fb28c"
+    },
+    {
+      "line": 0,
+      "relation": "increases",
+      "evidence": "Expression of MEKK1-KM attenuated activation of ERK and JNK (Figures 6A and 6B). Selective activation of MEKK1 was sufficient for the activation of both MAP kinases.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12600818"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "bronchial epithelial cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 21,
+      "target": 22,
+      "key": "488f88dcd24577f505b23796ed352122"
+    },
+    {
+      "line": 0,
+      "relation": "increases",
+      "evidence": "When the expression vector for JNK1-DN was cotransfected, the inhibitory effect of MEKK1-DA on TR3-dependent transactivation was largely relieved. In contrast, cotransfection of JNK2-DN or JNK3-DN did not show any effect on MEKK1-DA activity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14612408"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 21,
+      "target": 22,
+      "key": "2287bc76d3ead310d6dbb339c3b374ff"
+    },
+    {
+      "line": 0,
+      "relation": "increases",
+      "evidence": "Grx2 significantly activated the Ras/phosphoinositide 3-kinase/Akt/NF-kappaB cascade in parallel to the Jun N-terminal kinase (JNK)/AP1 cascade.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11290748"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 21,
+      "target": 22,
+      "key": "83b53000545b19fceaf79952cb5c688f"
+    },
+    {
+      "line": 0,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10490605"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 21,
+      "target": 22,
+      "key": "a245fb3012385fa56ba4b3128db4209f"
+    },
+    {
+      "line": 0,
+      "relation": "increases",
+      "evidence": "Modified assertion",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9275204"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 21,
+      "target": 22,
+      "key": "7730baae15abdcd914e3e9ca43a9d328"
+    },
+    {
+      "relation": "partOf",
+      "source": 0,
+      "target": 5,
+      "key": "375815023ae5afa852c08d2fecf4d9a8"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 0,
+      "target": 5,
+      "key": "bbdfc6c162fc8d41e51ec3fe2a1d5eac"
+    },
+    {
+      "line": 26,
+      "relation": "directlyIncreases",
+      "evidence": "To confirm that the PPARg/RXR transcriptional activation system was active in lung fibroblasts, primary cultures were transfected with a PPARg-dependent luciferase reporter con-struct and treated with 15d-PGJ2 or rosiglitazone. Both PPARg agonists activated the reporter, demonstrating that primary human lung fibroblasts are competent to carry out PPARg- dependent transcriptional activation (Fig. 1B).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15734787"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 1,
+      "target": 27,
+      "key": "dfc0406a1edb1659d8058af989550743"
+    },
+    {
+      "line": 26,
+      "relation": "directlyIncreases",
+      "evidence": "As expected, rosiglitazone, a PPAR-gamma agonist, activated PPAR-gamma.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20924500"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 1,
+      "target": 27,
+      "key": "1f7dabbcd26d410fb664a7726dd9dc17"
+    },
+    {
+      "line": 21,
+      "relation": "directlyIncreases",
+      "evidence": "A novel cDNA clone (VDUP1) has been isolated from a cDNA library constructed from mRNA obtained from HL-60 cells stimulated by 1,25-dihydroxyvitamin D-3. Northern blot analysis showed that VDUP1 cDNA hybridizes to a 2.9 kb mRNA species which is up-regulated in HL-60 cells by 1,25-dihydroxyvitamin D-3 (1,25-(OH)2D3) treatment.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8086474"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 5,
+      "target": 29,
+      "key": "937053455cacea7a541389128cf64ce3"
+    },
+    {
+      "line": 21,
+      "relation": "directlyIncreases",
+      "evidence": "This was strongly associated with cell cycle arrest in G1 phase, consistent with accumulation of the hypophosphorylated form of the retinoblastoma protein as well as the induction of the cyclin-dependent kinase inhibitor p21. These cell cycle events were preceded by a transient up-regulation (5-8-fold) of com1 mRNA.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11034106"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 5,
+      "target": 29,
+      "key": "62d639c22d914debc754d52081fb3562"
+    },
+    {
+      "line": 21,
+      "relation": "directlyIncreases",
+      "evidence": "1,25-dihydroxyvitamin D(3) [1,25(OH)(2)D(3)] was found to stimulate t-PA gene expression in ROS17/2.8 osteosarcoma cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10544252"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 5,
+      "target": 29,
+      "key": "de7da8de234116767fd467d9cf8ec020"
+    },
+    {
+      "line": 21,
+      "relation": "directlyIncreases",
+      "evidence": "Nuclear Receptor: VDR Ligand: 1,25(OH)2-vitamin D3 CYP Enzyme:  ^CYP24, -|CYP27B1 Cytosolic binding protein: ? ABC transporter: ?",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11729302"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 5,
+      "target": 29,
+      "key": "32992495cbed76797109e1dd56e83a0f"
+    },
+    {
+      "line": 20,
+      "relation": "directlyDecreases",
+      "evidence": "p21Cip1 overexpression also inhibited the kinase activity of Cdk4, though to a lesser extent than Cdk2 (data not shown).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11463845"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "umbilical vein endothelial cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 14,
+      "target": 13,
+      "key": "5eb91023cd5b8320933d17f8b640a84e"
+    },
+    {
+      "line": 20,
+      "relation": "directlyDecreases",
+      "evidence": "The encoded protein (CDKN1A) binds to and inhibits the activity of cyclin-CDK2 or -CDK4 complexes",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12769686"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 14,
+      "target": 13,
+      "key": "f9c42da402901ebccec3c369932d1a12"
+    },
+    {
+      "line": 20,
+      "relation": "directlyDecreases",
+      "evidence": "hese results indicate that glucocorticoid inhibition of fibroblast proliferation is due to induction of p21Cip1, which binds to and inactivates cyclinD/Cdk4 complexes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9139801"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 14,
+      "target": 13,
+      "key": "0b6e9bb2cafa632b58afbb2eb28b5398"
+    },
+    {
+      "line": 19,
+      "relation": "directlyIncreases",
+      "evidence": "Trans10, cis12 CLA fails to activate peroxisome proliferator-activated receptor gamma (PPARgamma), but selectively inhibits thiazolidinedione-induced PPARgamma activation in 3T3-L1 adipocytes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12754280"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 2,
+      "target": 27,
+      "key": "c51fda9f78fcd8b9f9aec4288a6c99f1"
+    },
+    {
+      "line": 19,
+      "relation": "directlyIncreases",
+      "evidence": "The results showed troglitazone-activated PPARγ could inhibit the production of TNF-α, one of the most important inflammatory factors, and then increased the expression of surfactant-associated protein A (SP-A) and attenuate the apoptosis of alveolar type II epithelial cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21153920"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung alveolar type ii epithelial cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 2,
+      "target": 27,
+      "key": "3769657fdefb666d95de21393fff4a30"
+    },
+    {
+      "line": 19,
+      "relation": "directlyIncreases",
+      "evidence": "PPARg is activated by TZDs,which bind to the ligand-binding domain and increase transactivation of target genes. The greatest expression of PPARg is in adipocytes",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10953022"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Adipocytes": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 2,
+      "target": 27,
+      "key": "57659688a09e3457d43363ad2a46b354"
+    },
+    {
+      "line": 13,
+      "relation": "increases",
+      "evidence": "our findings suggest that activation of PPARgamma induces HO-1 expression, and that this in turn stimulates p21(WAF1)",
+      "citation": {
+        "db": "Other",
+        "db_id": "20163460"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "pulmonary artery smooth muscle cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 14,
+      "key": "306555170905250e9399dc6b2ee2620e"
+    },
+    {
+      "line": 14,
+      "relation": "decreases",
+      "evidence": "PPAR-gamma ligands result in cell cycle arrest and inhibition of cyclin D1 protein expression in human lung fibroblasts.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18162602"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 11,
+      "key": "c55cb9fb3d05cc53af1a64101b77db56"
+    },
+    {
+      "line": 44,
+      "relation": "increases",
+      "evidence": "PPARG promotes the PPAR signaling pathway via the upregulation of lipoprotein lipase (LPL) expression",
+      "citation": {
+        "db": "Other",
+        "db_id": "22895549"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "Adenocarcinoma": true
+        },
+        "Tissue": {
+          "Lung": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 20,
+      "key": "7a99354bc6c8ed40267b5ad5849b7c10"
+    },
+    {
+      "line": 9,
+      "relation": "directlyIncreases",
+      "evidence": "This Network edge has no supporting evidence. Please add real evidence to this edge prior to deleting.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "0"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 7,
+      "target": 14,
+      "key": "68fb20be4793cd7bc17f56602de04eb3"
+    },
+    {
+      "line": 9,
+      "relation": "directlyIncreases",
+      "evidence": "full length C/EBPα proteins formed a complex with the glucocorticoid receptor to induce the cell cycle inhibitor p21cip1/waf1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "22500186"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "bronchial smooth muscle": true
+        }
+      },
+      "source": 7,
+      "target": 14,
+      "key": "cb3a53d9edcd68acfc0709487a85d21a"
+    },
+    {
+      "line": 9,
+      "relation": "directlyIncreases",
+      "evidence": "Here we describe that glucocorticoid-induced activation of C/EBPalpha, which is due to the formation of a GR–C/EBPalpha complex, is activating the C/EBPalpha-dependent p21(waf1/cip1) gene",
+      "citation": {
+        "db": "Other",
+        "db_id": "11818365"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "fibroblasts": true
+        }
+      },
+      "source": 7,
+      "target": 14,
+      "key": "32f7e47f672eae8eb54c560bcba0958e"
+    },
+    {
+      "line": 9,
+      "relation": "directlyIncreases",
+      "evidence": "In human-lung fibroblasts and pulmonary vascular and bronchial smooth-muscle cells from patients without asthma, glucocorticoid treatment rapidly induces the activation of glucocorticoid receptors and C/EBPalpha, and subsequently the expression of the p21(waf1/cip1)",
+      "citation": {
+        "db": "Other",
+        "db_id": "15295049"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "bronchial smooth-muscle cells": true
+        }
+      },
+      "source": 7,
+      "target": 14,
+      "key": "49d131f12dada8bd98ad55b1f5510b0d"
+    },
+    {
+      "line": 9,
+      "relation": "directlyIncreases",
+      "evidence": "While a GR-C/EBP-_ complex induces p21(Waf1/Cip1) expression, a complex of GR with C/EBP-_ activates p27(Kip)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17989362"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "primary lung fibroblast": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 7,
+      "target": 14,
+      "key": "eec6e00c7ad3eb80fbccfc234bc8d773"
+    },
+    {
+      "line": 3,
+      "relation": "directlyIncreases",
+      "evidence": "Consequently, the results in this study indicate the physiological function of AhR as a potent transcriptional coactivator of E2F1-dependent transcription and implicate the AhR-E2F1 interaction as a part of the mechanism by which AhR/Arnt promotes cell proliferation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20190398"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 19,
+      "key": "610371efc8405e8d5d276ee625af83e8"
+    },
+    {
+      "line": 4,
+      "relation": "decreases",
+      "evidence": "Off*Ahr_/_ cells, lacking AHR expression, secreted twice as much TGF-_1 as Off*Ahrb cells did, while no significant difference was detected for TGF-_2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17606626"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "fibroblasts": true
+        }
+      },
+      "source": 9,
+      "target": 28,
+      "key": "8dc7ca7ce77671a4ca06a24786b90456"
+    },
+    {
+      "line": 4,
+      "relation": "decreases",
+      "evidence": "Ahr-/- fibroblasts secreted significantly more TGF-beta1 into the culture medium than Ahr+/+ fibroblasts did, and Ahr-/- showed increased levels of activated Smad4 and TGF-beta1 mRNA.",
+      "citation": {
+        "db": "Other",
+        "db_id": "17606626"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "fibroblasts": true
+        }
+      },
+      "source": 9,
+      "target": 28,
+      "key": "84d3f594bf3179b5fabfc700c8d2990e"
+    },
+    {
+      "line": 4,
+      "relation": "decreases",
+      "evidence": "Ahr-/- fibroblasts secreted significantly more TGF-beta1 into the culture medium than Ahr+/+ fibroblasts did, and Ahr-/- showed increased levels of activated Smad4 and TGF-beta1 mRNA.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17606626"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "fibroblasts": true
+        }
+      },
+      "source": 9,
+      "target": 28,
+      "key": "ecd57716dad3ebd9a35260535584a04b"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 25,
+      "target": 26,
+      "key": "1a25733b15dcacdce89205b8ed5d7ffe"
+    },
+    {
+      "line": 30,
+      "relation": "increases",
+      "evidence": "Expression of both TR3 (transcriptionally defective) mutants failed to increase BrdU incorporation, while cells transfected with GFP-TR3 displayed strong BrdU incorporation (Fig. 5C). Thus, DNA binding and transactivation by TR3 are required for its mitogenic effect in lung cancer cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14612408"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 3,
+      "key": "ae568e9b1c168bd43c81c518eb31be62"
+    },
+    {
+      "line": 31,
+      "relation": "directlyDecreases",
+      "evidence": "Both GR and Nur77 titrated each\nother’s activity on its cognate reporter. Thus, increasing concentrations\nof GR blunted the Nur77 activation at the NurRE\nonly in the presence of Dex (Fig. 5A), and Dex had no effect in\nthe absence of GR (ratio, 1:0). Conversely, the Dex-dependent\ntransactivation by GR was reversed in a dose-dependent manner\nby Nur77.",
+      "citation": {
+        "db": "Other",
+        "db_id": "9315653"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "645fe70593b2e5eba731dc03edb17d75"
+    },
+    {
+      "line": 31,
+      "relation": "directlyDecreases",
+      "evidence": "TR3 is known to inhibit transactivation of GR through their heterodimerization (50).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14612408"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 24,
+      "key": "9c7c65cb178883b4c5c06aab0b3e9ac9"
+    },
+    {
+      "line": 32,
+      "relation": "decreases",
+      "evidence": "TR3 interfered with progression of the cell cycle by upregulating p27Kip1 and downregulating cyclin A protein expression in HUVECs",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12842839"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 10,
+      "key": "175c2f78e53dbe0e7ba1dc41a59ea165"
+    },
+    {
+      "line": 33,
+      "relation": "increases",
+      "evidence": "Adenovirus-mediated expression of a dominant-negative variant of TR3, which suppresses the transcriptional activity of each subfamily member, increases DNA synthesis and decreases p27(Kip1) protein expression in cultured SMCs.",
+      "citation": {
+        "db": "Other",
+        "db_id": "12234960"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "smooth muscle cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 15,
+      "key": "d3839007051b3ae7a3413625b4a9b49b"
+    },
+    {
+      "line": 33,
+      "relation": "increases",
+      "evidence": "TR3 interfered with progression of the cell cycle by upregulating p27Kip1 and downregulating cyclin A protein expression in HUVECs",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12842839"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 25,
+      "target": 15,
+      "key": "665dc55d528fff4a33509d8317e9fd4b"
+    },
+    {
+      "line": 2,
+      "relation": "directlyDecreases",
+      "evidence": "We also identified the exact phosphorylation site of JNK to be serine 95 at the N terminus of TR3, around which a classical JNK phosphorylation motif exists. Furthermore, we demonstrated that TR3 phosphorylation by JNK coincided with its ubiquitination and degradation, resulting in the loss of its mitogenic activity",
+      "citation": {
+        "db": "Other",
+        "db_id": "17023523"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 26,
+      "target": 25,
+      "key": "15d5fe4341b29eaaab8f7e407761865a"
+    },
+    {
+      "line": 2,
+      "relation": "directlyDecreases",
+      "evidence": "The TR3 expression vector was trans-fected into HEK293T cells, which were then treated with anisomycin, a potent inducer of JNK (18). Immunoblotting analysis revealed that anisomycin treatment resulted in the slow migration of the expressed GFP-TR3 protein, compared to the GFP-TR3 protein expressed in untreated cells (Fig. 11B). The anisomycin-induced retarded migration of the TR3 protein was prevented when cells were pretreated with a JNK inhibitor. These results suggest that phosphorylation of TR3 by JNK was responsible for the slower migration of the TR3 protein. Similar to full-length TR3, the N-terminal mutant of TR3 (TR3-1-151), which contained the first 151 amino acid residues, was modified by the anisomycin treatment, which was also prevented by the JNK inhibitor (Fig. 11B). In contrast, the migration of TR3/122, which lacks the first 122 amino acid residues, was not affected by anisomycin treatment. These data strongly suggest that TR3 is mainly phosphorylated on the N terminus by JNK. To determine whether phosphorylation of TR3 by JNK affected its DNA binding, a gel retardation assay was conducted to determine the binding of TR3 protein to NurRE before and after its phosphorylation by JNK. As shown in Fig. 11C, bacterially expressed TR3 protein formed a strong complex with the NurRE. However, upon phosphorylation by JNK in vitro, binding of TR3 to the NurRE was largely impaired. In addition, the weak complex formed between TR3 and NurRE migrated slightly faster than that formed by unphosphorylated TR3, probably reflecting a change in TR3 conformation by phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14612408"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 26,
+      "target": 25,
+      "key": "e2064394750eb9e7fd555d4b56b7d400"
+    },
+    {
+      "line": 43,
+      "relation": "decreases",
+      "evidence": "hypoxia led to a dramatic decrease of PPAR-gamma protein expression in whole lung",
+      "citation": {
+        "db": "Other",
+        "db_id": "21926264"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 4,
+      "target": 27,
+      "key": "fe51104da4561af23decbab7bef088ca"
+    },
+    {
+      "line": 46,
+      "relation": "increases",
+      "evidence": "Morphological activation of endothelial cells by phorbol 12-myristate 13-acetate (PMA) resulted in membrane-type 1 matrix metalloproteinase (MT1-MMP) -mediated solubilization of latent TGF-beta complexes from the ECM by proteolytic processing of LTBP-1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18602101"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 23,
+      "target": 28,
+      "key": "3714e7b208af6571ebb3321a40516c83"
+    }
+  ]
+}

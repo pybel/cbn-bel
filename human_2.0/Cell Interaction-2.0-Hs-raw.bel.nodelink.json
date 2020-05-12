@@ -1,0 +1,3456 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Cell Interaction-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Cell Interaction network describes the causal mechanisms involved in the signal transduction pathways leading to cell proliferation that originate from the interactions between common cell adhesion molecules (including ITGB1 complexes with ITGA1-3 chains) and extracellular matrix components (specifically collagen, fibronectin, and laminin)."
+    },
+    "namespace_url": {
+      "HGNC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-human-genes/hgnc-human-genes-20150601.belns",
+      "GOBP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20150601.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20150601.belns",
+      "GOCC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170511.belns",
+      "MESHPP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20150601.belns",
+      "MGI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20150601.belns",
+      "RGD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20150601.belns",
+      "CHEBI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20150601.belns",
+      "SCHEM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-chemicals/selventa-legacy-chemicals-20150601.belns",
+      "EGID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/entrez-gene-ids/entrez-gene-ids-20150601.belns",
+      "MESHD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20150601.belns",
+      "SDIS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-diseases/selventa-legacy-diseases-20150601.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20150601.belns",
+      "MESHC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170511.belns",
+      "GOBPID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process-ids/go-biological-process-ids-20150601.belns",
+      "GOCCID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component-ids/go-cellular-component-ids-20150601.belns",
+      "MESHCS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20150601.belns"
+    },
+    "namespace_pattern": {},
+    "annotation_url": {
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20150601.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20150601.belanno",
+      "Species": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+      "Tissue": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20150601.belanno"
+    },
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "alpha-lactose"
+      },
+      "id": "479bba197c5e4916db11d24e0eb00d88",
+      "bel": "a(CHEBI:\"alpha-lactose\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "calcium(2+)"
+      },
+      "id": "94df77a2db8d9014b42535235da90e5d",
+      "bel": "a(CHEBI:\"calcium(2+)\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "MESHC",
+        "name": "peroxovanadate"
+      },
+      "id": "4e86a93be460042a95b93d0002a0ed62",
+      "bel": "a(MESHC:peroxovanadate)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "cell migration"
+      },
+      "id": "d8750a8a7465e27bf3d1eba68dbb7a87",
+      "bel": "bp(GOBP:\"cell migration\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "desmosome assembly"
+      },
+      "id": "5f32d75b2099369e5426e2f809b78ff8",
+      "bel": "bp(GOBP:\"desmosome assembly\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "epithelial cell-cell adhesion"
+      },
+      "id": "3a0a966a4f0a23e7f97c7bf55e37114b",
+      "bel": "bp(GOBP:\"epithelial cell-cell adhesion\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "SCOMP",
+        "name": "p85/p110 PI3Kinase Complex"
+      },
+      "id": "31d5253c8cb9a0f486e265bc6fddd28c",
+      "bel": "complex(SCOMP:\"p85/p110 PI3Kinase Complex\")"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CAV1"
+          },
+          "id": "a054a4eb93905c9156bae244ae6e3fd4",
+          "bel": "p(HGNC:CAV1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "TLR4"
+          },
+          "id": "4d3aa2ce51d0cd7f2aa9267a9c61f9f7",
+          "bel": "p(HGNC:TLR4)"
+        }
+      ],
+      "id": "16a13d404590c5be4be646d2411d2b45",
+      "bel": "complex(p(HGNC:CAV1), p(HGNC:TLR4))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CDH1"
+          },
+          "id": "c88a7d314850270f57a31aaecc04c44d",
+          "bel": "p(HGNC:CDH1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CTNNA1"
+          },
+          "id": "d0495b9f4fe59185c9fe62ba73c8706c",
+          "bel": "p(HGNC:CTNNA1)"
+        }
+      ],
+      "id": "07bbfb76f2832c2ae03b4fdff64279a4",
+      "bel": "complex(p(HGNC:CDH1), p(HGNC:CTNNA1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CDH1"
+          },
+          "id": "c88a7d314850270f57a31aaecc04c44d",
+          "bel": "p(HGNC:CDH1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CTNNB1"
+          },
+          "id": "4bd0b8cd92c762d4a8c78aec03f7c0b4",
+          "bel": "p(HGNC:CTNNB1)"
+        }
+      ],
+      "id": "322d748fea056466465c71a0a2b579f3",
+      "bel": "complex(p(HGNC:CDH1), p(HGNC:CTNNB1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CDH1"
+          },
+          "id": "c88a7d314850270f57a31aaecc04c44d",
+          "bel": "p(HGNC:CDH1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CTNND1"
+          },
+          "id": "4c3d6a170274ed0b9f151e50abcf7ddb",
+          "bel": "p(HGNC:CTNND1)"
+        }
+      ],
+      "id": "99b115f48ee46349b572007f5a38df0b",
+      "bel": "complex(p(HGNC:CDH1), p(HGNC:CTNND1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CDH1"
+          },
+          "id": "c88a7d314850270f57a31aaecc04c44d",
+          "bel": "p(HGNC:CDH1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "EGFR"
+          },
+          "id": "2d0e5630f4a3b7a0fee65dbf00da20a5",
+          "bel": "p(HGNC:EGFR)"
+        }
+      ],
+      "id": "2714ff74e259eb982893eaa4154a8c6a",
+      "bel": "complex(p(HGNC:CDH1), p(HGNC:EGFR))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CDH1"
+          },
+          "id": "c88a7d314850270f57a31aaecc04c44d",
+          "bel": "p(HGNC:CDH1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "JUP"
+          },
+          "id": "1a066d37eb067554a3262eb3fd0bd959",
+          "bel": "p(HGNC:JUP)"
+        }
+      ],
+      "id": "0b830cca1155e6eb4cd4a0ee12f0a8d8",
+      "bel": "complex(p(HGNC:CDH1), p(HGNC:JUP))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CTNNA1"
+          },
+          "id": "d0495b9f4fe59185c9fe62ba73c8706c",
+          "bel": "p(HGNC:CTNNA1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CTNNB1"
+          },
+          "id": "4bd0b8cd92c762d4a8c78aec03f7c0b4",
+          "bel": "p(HGNC:CTNNB1)"
+        }
+      ],
+      "id": "3a4da9c8976f49c8652cdf395343e7bc",
+      "bel": "complex(p(HGNC:CTNNA1), p(HGNC:CTNNB1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CTNNA1"
+          },
+          "id": "d0495b9f4fe59185c9fe62ba73c8706c",
+          "bel": "p(HGNC:CTNNA1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "JUP"
+          },
+          "id": "1a066d37eb067554a3262eb3fd0bd959",
+          "bel": "p(HGNC:JUP)"
+        }
+      ],
+      "id": "5499cfa91289b97c1c6a3c8942c81105",
+      "bel": "complex(p(HGNC:CTNNA1), p(HGNC:JUP))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "DSG2"
+          },
+          "id": "69d85faf6cb4103ed56b2aa148cf868d",
+          "bel": "p(HGNC:DSG2)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "LGALS3"
+          },
+          "id": "985b857790f25f73c68ed4b942a5aa07",
+          "bel": "p(HGNC:LGALS3)"
+        }
+      ],
+      "id": "c54664dd81d9afd4afcbae61b67ea4d6",
+      "bel": "complex(p(HGNC:DSG2), p(HGNC:LGALS3))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ILK"
+          },
+          "id": "b25c4f537c5cf07c6c63632217999f9b",
+          "bel": "p(HGNC:ILK)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGB1"
+          },
+          "id": "ce18e44c941c45852f1a4a546a08b5fd",
+          "bel": "p(HGNC:ITGB1)"
+        }
+      ],
+      "id": "602c50e4a380b9df0c0e8df913a101e4",
+      "bel": "complex(p(HGNC:ILK), p(HGNC:ITGB1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGA1"
+          },
+          "id": "b074bc4460eb112341387000d497f6bb",
+          "bel": "p(HGNC:ITGA1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGB1"
+          },
+          "id": "ce18e44c941c45852f1a4a546a08b5fd",
+          "bel": "p(HGNC:ITGB1)"
+        }
+      ],
+      "id": "af00fad2521a794295f9dc40fefb7f9c",
+      "bel": "complex(p(HGNC:ITGA1), p(HGNC:ITGB1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGA2"
+          },
+          "id": "d62907bd321469b363325efae52c5644",
+          "bel": "p(HGNC:ITGA2)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGB1"
+          },
+          "id": "ce18e44c941c45852f1a4a546a08b5fd",
+          "bel": "p(HGNC:ITGB1)"
+        }
+      ],
+      "id": "ab948bf457da30933b623dc9eeee59db",
+      "bel": "complex(p(HGNC:ITGA2), p(HGNC:ITGB1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGA3"
+          },
+          "id": "983f0b396d3dcd5ec4df32eee5c93f8a",
+          "bel": "p(HGNC:ITGA3)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGB1"
+          },
+          "id": "ce18e44c941c45852f1a4a546a08b5fd",
+          "bel": "p(HGNC:ITGB1)"
+        }
+      ],
+      "id": "f93f578fc67922de2a73a8f169a655d7",
+      "bel": "complex(p(HGNC:ITGA3), p(HGNC:ITGB1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGA5"
+          },
+          "id": "800209a9e5d63ef9a0a7d0e178e6b1a3",
+          "bel": "p(HGNC:ITGA5)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGB1"
+          },
+          "id": "ce18e44c941c45852f1a4a546a08b5fd",
+          "bel": "p(HGNC:ITGB1)"
+        }
+      ],
+      "id": "65f50fe52eaa9dc324c8c9f970f51c49",
+      "bel": "complex(p(HGNC:ITGA5), p(HGNC:ITGB1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGA5"
+          },
+          "id": "800209a9e5d63ef9a0a7d0e178e6b1a3",
+          "bel": "p(HGNC:ITGA5)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGB1"
+          },
+          "id": "ce18e44c941c45852f1a4a546a08b5fd",
+          "bel": "p(HGNC:ITGB1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "PRKCA"
+          },
+          "id": "aa52dffe56493ccefd5e310cdb61ab03",
+          "bel": "p(HGNC:PRKCA)"
+        }
+      ],
+      "id": "f8828b0504bc985cec271f5a23874ed6",
+      "bel": "complex(p(HGNC:ITGA5), p(HGNC:ITGB1), p(HGNC:PRKCA))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGA6"
+          },
+          "id": "05f7eb1d73537b90f58b88419a966824",
+          "bel": "p(HGNC:ITGA6)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGB1"
+          },
+          "id": "ce18e44c941c45852f1a4a546a08b5fd",
+          "bel": "p(HGNC:ITGB1)"
+        }
+      ],
+      "id": "640b26f1b70fb68821f8a759dfd826c8",
+      "bel": "complex(p(HGNC:ITGA6), p(HGNC:ITGB1))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGA6"
+          },
+          "id": "05f7eb1d73537b90f58b88419a966824",
+          "bel": "p(HGNC:ITGA6)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGB4"
+          },
+          "id": "632a8779cea13165e58f36039a7388f2",
+          "bel": "p(HGNC:ITGB4)"
+        }
+      ],
+      "id": "5c57ed45c2387dd4bfc5cec701414164",
+      "bel": "complex(p(HGNC:ITGA6), p(HGNC:ITGB4))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGAV"
+          },
+          "id": "5f8b9290c73e3d5ffa276ae41df4f791",
+          "bel": "p(HGNC:ITGAV)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGB3"
+          },
+          "id": "106f646b24bd0d85cd8de9161372fd0c",
+          "bel": "p(HGNC:ITGB3)"
+        }
+      ],
+      "id": "f8dab05c919dbcd373498d85486f772b",
+      "bel": "complex(p(HGNC:ITGAV), p(HGNC:ITGB3))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGAV"
+          },
+          "id": "5f8b9290c73e3d5ffa276ae41df4f791",
+          "bel": "p(HGNC:ITGAV)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGB6"
+          },
+          "id": "e30967bb1dcc5f82c808f23086d2af96",
+          "bel": "p(HGNC:ITGB6)"
+        }
+      ],
+      "id": "4761ef5a77f45d03d04502a73eff4f3c",
+      "bel": "complex(p(HGNC:ITGAV), p(HGNC:ITGB6))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGAV"
+          },
+          "id": "5f8b9290c73e3d5ffa276ae41df4f791",
+          "bel": "p(HGNC:ITGAV)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ITGB8"
+          },
+          "id": "ebf21bd33901df3b203f244d89f6d62f",
+          "bel": "p(HGNC:ITGB8)"
+        }
+      ],
+      "id": "5ec06d101281b85d87e90bfd0325a325",
+      "bel": "complex(p(HGNC:ITGAV), p(HGNC:ITGB8))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "PXN"
+          },
+          "id": "866592885fbd14a319816c6c196fbec9",
+          "bel": "p(HGNC:PXN)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "VCL"
+          },
+          "id": "483ca77c5bee9797fdfdb3859088eb04",
+          "bel": "p(HGNC:VCL)"
+        }
+      ],
+      "id": "767637e3e979f67c71a6f1a34a8a2103",
+      "bel": "complex(p(HGNC:PXN), p(HGNC:VCL))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "AHR"
+      },
+      "id": "0ca138d4bbe12c92b43f0e47bb4ab30c",
+      "bel": "p(HGNC:AHR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "BCAR1"
+      },
+      "id": "ef8babf85ad7386ca5045d7afbb10bf2",
+      "bel": "p(HGNC:BCAR1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CAV1"
+      },
+      "id": "a054a4eb93905c9156bae244ae6e3fd4",
+      "bel": "p(HGNC:CAV1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCBL1"
+      },
+      "id": "b1327365f6003e9b156936a1df400cc4",
+      "bel": "p(HGNC:CCBL1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CDH1"
+      },
+      "id": "c88a7d314850270f57a31aaecc04c44d",
+      "bel": "p(HGNC:CDH1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CDKN2C"
+      },
+      "id": "99da528be88811de3eeaeac434067383",
+      "bel": "p(HGNC:CDKN2C)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CTNNA1"
+      },
+      "id": "d0495b9f4fe59185c9fe62ba73c8706c",
+      "bel": "p(HGNC:CTNNA1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CTNNB1"
+      },
+      "id": "4bd0b8cd92c762d4a8c78aec03f7c0b4",
+      "bel": "p(HGNC:CTNNB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CTNND1"
+      },
+      "id": "4c3d6a170274ed0b9f151e50abcf7ddb",
+      "bel": "p(HGNC:CTNND1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "DSG1"
+      },
+      "id": "8602f9e114ec9f67ac21a67aa9aa0f04",
+      "bel": "p(HGNC:DSG1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "DSG2"
+      },
+      "id": "69d85faf6cb4103ed56b2aa148cf868d",
+      "bel": "p(HGNC:DSG2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "DSG3"
+      },
+      "id": "f6d7af92538f84963b8a2382e1a751c5",
+      "bel": "p(HGNC:DSG3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "E2F1"
+      },
+      "id": "5314a5235c40b2ce06fd3841a46b5f12",
+      "bel": "p(HGNC:E2F1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "EGFR"
+      },
+      "id": "2d0e5630f4a3b7a0fee65dbf00da20a5",
+      "bel": "p(HGNC:EGFR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "FN1"
+      },
+      "id": "f9e337d497d5b07f01b422fa2f1d6543",
+      "bel": "p(HGNC:FN1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ILK"
+      },
+      "id": "b25c4f537c5cf07c6c63632217999f9b",
+      "bel": "p(HGNC:ILK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ITGA1"
+      },
+      "id": "b074bc4460eb112341387000d497f6bb",
+      "bel": "p(HGNC:ITGA1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ITGA2"
+      },
+      "id": "d62907bd321469b363325efae52c5644",
+      "bel": "p(HGNC:ITGA2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ITGA3"
+      },
+      "id": "983f0b396d3dcd5ec4df32eee5c93f8a",
+      "bel": "p(HGNC:ITGA3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ITGA5"
+      },
+      "id": "800209a9e5d63ef9a0a7d0e178e6b1a3",
+      "bel": "p(HGNC:ITGA5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ITGA6"
+      },
+      "id": "05f7eb1d73537b90f58b88419a966824",
+      "bel": "p(HGNC:ITGA6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ITGAV"
+      },
+      "id": "5f8b9290c73e3d5ffa276ae41df4f791",
+      "bel": "p(HGNC:ITGAV)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ITGB1"
+      },
+      "id": "ce18e44c941c45852f1a4a546a08b5fd",
+      "bel": "p(HGNC:ITGB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ITGB3"
+      },
+      "id": "106f646b24bd0d85cd8de9161372fd0c",
+      "bel": "p(HGNC:ITGB3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ITGB4"
+      },
+      "id": "632a8779cea13165e58f36039a7388f2",
+      "bel": "p(HGNC:ITGB4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ITGB6"
+      },
+      "id": "e30967bb1dcc5f82c808f23086d2af96",
+      "bel": "p(HGNC:ITGB6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ITGB8"
+      },
+      "id": "ebf21bd33901df3b203f244d89f6d62f",
+      "bel": "p(HGNC:ITGB8)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "JUP"
+      },
+      "id": "1a066d37eb067554a3262eb3fd0bd959",
+      "bel": "p(HGNC:JUP)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "LAMB3"
+      },
+      "id": "076cc768e10267191e56a6f36752035e",
+      "bel": "p(HGNC:LAMB3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "LGALS3"
+      },
+      "id": "985b857790f25f73c68ed4b942a5aa07",
+      "bel": "p(HGNC:LGALS3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MAPK1"
+      },
+      "id": "c2f6ad92491bc72d5a91676150570d38",
+      "bel": "p(HGNC:MAPK1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MAPK14"
+      },
+      "id": "0c0476ae2f3918834fb6ae31829c9b8d",
+      "bel": "p(HGNC:MAPK14)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MAPK3"
+      },
+      "id": "3e8019d5b20d209d67726881082657b3",
+      "bel": "p(HGNC:MAPK3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "MMP14"
+      },
+      "id": "2c9850ba2327370f84ae3606d7bf0468",
+      "bel": "p(HGNC:MMP14)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PLAUR"
+      },
+      "id": "7c5aff470cc434413552192f847d73e8",
+      "bel": "p(HGNC:PLAUR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PRKCA"
+      },
+      "id": "aa52dffe56493ccefd5e310cdb61ab03",
+      "bel": "p(HGNC:PRKCA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PTEN"
+      },
+      "id": "3de01d7f33b3e8860a2847260137f939",
+      "bel": "p(HGNC:PTEN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PTK2"
+      },
+      "id": "3307f6aff82b2747dd0feefb8d67c0c4",
+      "bel": "p(HGNC:PTK2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PTK2"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Tyr",
+          "pos": 397
+        }
+      ],
+      "id": "aae0079f69d3629d4550dbd0b274c0a7",
+      "bel": "p(HGNC:PTK2, pmod(Ph, Tyr, 397))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PTPN1"
+      },
+      "id": "c0efaf5d37226fa08730addb4964fcc3",
+      "bel": "p(HGNC:PTPN1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PTPN12"
+      },
+      "id": "08ba7042b83cdd8991458cc812a51fde",
+      "bel": "p(HGNC:PTPN12)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PTPRA"
+      },
+      "id": "d571fcaa763640881bbea23c01f3af52",
+      "bel": "p(HGNC:PTPRA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PXN"
+      },
+      "id": "866592885fbd14a319816c6c196fbec9",
+      "bel": "p(HGNC:PXN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RPS6KB1"
+      },
+      "id": "20a64f114fe2d79733d442e84f1aa0de",
+      "bel": "p(HGNC:RPS6KB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "RPS6KB1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser"
+        }
+      ],
+      "id": "24161ab4da7eeb26ceee41fdf7a9d0a5",
+      "bel": "p(HGNC:RPS6KB1, pmod(Ph, Ser))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SHC1"
+      },
+      "id": "232de8c36d8f781f22da5f055192741e",
+      "bel": "p(HGNC:SHC1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TGFB1"
+      },
+      "id": "f1f493c4771241860fc73aaa3bfdad66",
+      "bel": "p(HGNC:TGFB1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TLR4"
+      },
+      "id": "4d3aa2ce51d0cd7f2aa9267a9c61f9f7",
+      "bel": "p(HGNC:TLR4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "VCL"
+      },
+      "id": "483ca77c5bee9797fdfdb3859088eb04",
+      "bel": "p(HGNC:VCL)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "YES1"
+      },
+      "id": "fa87ae86fc5516e2b12aaa268860e83c",
+      "bel": "p(HGNC:YES1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "AKT Family"
+      },
+      "id": "69ad76f4d839fef7fd396895e57fbbc7",
+      "bel": "p(SFAM:\"AKT Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "AKT Family"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser",
+          "pos": 473
+        }
+      ],
+      "id": "590b756d55c26b1b8be68e69a5f353a0",
+      "bel": "p(SFAM:\"AKT Family\", pmod(Ph, Ser, 473))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "COL1 Family"
+      },
+      "id": "b93bd944650301479cef1826a3170797",
+      "bel": "p(SFAM:\"COL1 Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "COL4 Family"
+      },
+      "id": "8599835c864afb7d80ee25657ecba58e",
+      "bel": "p(SFAM:\"COL4 Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "GSK3 Family"
+      },
+      "id": "73a17f05f06a60e06d5864202cbca1d0",
+      "bel": "p(SFAM:\"GSK3 Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "GSK3 Family"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Ser",
+          "pos": 9
+        }
+      ],
+      "id": "24159109ebcdb9a74d76a2630540dc5a",
+      "bel": "p(SFAM:\"GSK3 Family\", pmod(Ph, Ser, 9))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "PIK3C Class IA Family"
+      },
+      "id": "81e3e58d9656deaee4fcea6b2331946f",
+      "bel": "p(SFAM:\"PIK3C Class IA Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "RAC Family"
+      },
+      "id": "00ef7c1625aad056dcf804a1f4b7db8f",
+      "bel": "p(SFAM:\"RAC Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "RAS Family"
+      },
+      "id": "2bd7a3d03377a9c4cb65451e6f41e910",
+      "bel": "p(SFAM:\"RAS Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "SRC Family"
+      },
+      "id": "150a68482b6706051bbfa34b68c21f26",
+      "bel": "p(SFAM:\"SRC Family\")"
+    }
+  ],
+  "links": [
+    {
+      "line": 0,
+      "relation": "increases",
+      "evidence": "Cdkn2c expression is regulated by the E2F1 transcription factor, and the -1209 and -279 constructs contain two sites that loosely fit the consensus DNA sequence of E2F-binding sites. As a preliminary to a detailed analysis of the Cdkn2c promoter, we extended these experiments to determine whether the difference of expression between the Sle2c1 and B6 allele is maintained in the presence of E2F1. E2F1 increased the activity of the Cdkn2c promoter constructs −1209 and −279 by 190 and 225 folds, respectively.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21543644"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 40,
+      "target": 33,
+      "key": "0f9c588b7c42bdf7058f740fce11c2a2"
+    },
+    {
+      "line": 1,
+      "relation": "directlyIncreases",
+      "evidence": "Consequently, the results in this study indicate the physiological function of AhR as a potent transcriptional coactivator of E2F1-dependent transcription and implicate the AhR-E2F1 interaction as a part of the mechanism by which AhR/Arnt promotes cell proliferation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "20190398"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 28,
+      "target": 40,
+      "key": "c0567c3d5a29c4fee71c629e21b720a0"
+    },
+    {
+      "line": 2,
+      "relation": "decreases",
+      "evidence": "Ahr-/- fibroblasts secreted significantly more TGF-beta1 into the culture medium than Ahr+/+ fibroblasts did, and Ahr-/- showed increased levels of activated Smad4 and TGF-beta1 mRNA.",
+      "citation": {
+        "db": "Other",
+        "db_id": "17606626"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 28,
+      "target": 74,
+      "key": "84d3f594bf3179b5fabfc700c8d2990e"
+    },
+    {
+      "relation": "partOf",
+      "source": 38,
+      "target": 15,
+      "key": "ab6a796271831c0c986ad63602afeaa9"
+    },
+    {
+      "relation": "partOf",
+      "source": 57,
+      "target": 15,
+      "key": "ce70657fa3e39128309d5f02d86c71dc"
+    },
+    {
+      "line": 3,
+      "relation": "increases",
+      "evidence": "However, perfusion with the Gal3 antibody (M3/38) induced redistribution of Dsg2 into intracellular compartments.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24567334"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "colonic epithelial cells": true
+        }
+      },
+      "source": 57,
+      "target": 38,
+      "key": "14c737383e70411f971ade1e92bba0f4"
+    },
+    {
+      "line": 6,
+      "relation": "decreases",
+      "evidence": "Results: Galectin-3 was identified to associate with the ectodomain of desmoglein-2 and inhibit the degradation of desmoglein-2 and enhance intercellular adhesion.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24567334"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "colonic epithelial cells": true
+        }
+      },
+      "object": {
+        "modifier": "Degradation"
+      },
+      "source": 57,
+      "target": 38,
+      "key": "b3cd1b5195108d08cee0cfc211968510"
+    },
+    {
+      "line": 7,
+      "relation": "increases",
+      "evidence": "Results: Galectin-3 was identified to associate with the ectodomain of desmoglein-2 and inhibit the degradation of desmoglein-2 and enhance intercellular adhesion.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24567334"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "colonic epithelial cells": true
+        }
+      },
+      "source": 57,
+      "target": 5,
+      "key": "0c0d1218599b15b4fee8b22eb14b51d9"
+    },
+    {
+      "line": 4,
+      "relation": "decreases",
+      "evidence": "Down-regulation of Gal3 protein or incubation with lactose, a galactose-containing disaccharide that competitively inhibits galectin binding to Dsg2, decreased intercellular adhesion in intestinal epithelial cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24567334"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "colonic epithelial cells": true
+        }
+      },
+      "source": 0,
+      "target": 5,
+      "key": "9a48e801256d8189fe1c2570ea34f102"
+    },
+    {
+      "line": 5,
+      "relation": "decreases",
+      "evidence": "Down-regulation of Gal3 protein or incubation with lactose, a galactose-containing disaccharide that competitively inhibits galectin binding to Dsg2, decreased intercellular adhesion in intestinal epithelial cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24567334"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "colonic epithelial cells": true
+        }
+      },
+      "source": 0,
+      "target": 15,
+      "key": "b24434f4a917a01896bb47b1a80b3ac6"
+    },
+    {
+      "line": 8,
+      "relation": "increases",
+      "evidence": "Desmosomes  began to  reappear  as early as 5 min  after  the  addition  of  calcium",
+      "citation": {
+        "db": "Other",
+        "db_id": "6186504"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "Epidermis": true
+        },
+        "Cell": {
+          "Epidermal  cells": true
+        }
+      },
+      "source": 1,
+      "target": 4,
+      "key": "546bc28353ce6bffc9846595175b9463"
+    },
+    {
+      "line": 8,
+      "relation": "increases",
+      "evidence": "Cell-to-cell  contact occurs  rapidly  and  desmosomes  form  within  2  hr.",
+      "citation": {
+        "db": "Other",
+        "db_id": "6153576"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "primary mouse epidermal": true
+        }
+      },
+      "source": 1,
+      "target": 4,
+      "key": "da249a0aef9d32e4a9a61840ca87ab66"
+    },
+    {
+      "relation": "partOf",
+      "source": 34,
+      "target": 14,
+      "key": "95f6a75fb087300b477eef045b534d8e"
+    },
+    {
+      "relation": "partOf",
+      "source": 34,
+      "target": 13,
+      "key": "daba8647b4dce80097bc83c6297f3c6f"
+    },
+    {
+      "relation": "partOf",
+      "source": 34,
+      "target": 8,
+      "key": "8c1efb19630c98d8028e0ea2b909ef12"
+    },
+    {
+      "relation": "partOf",
+      "source": 55,
+      "target": 14,
+      "key": "efb5f3289667402ab75b26047b84ff5d"
+    },
+    {
+      "relation": "partOf",
+      "source": 55,
+      "target": 12,
+      "key": "775954d24260a01a96a814fd597a4eed"
+    },
+    {
+      "relation": "partOf",
+      "source": 35,
+      "target": 13,
+      "key": "c398e807702ecac4c57be3481c2bbbd3"
+    },
+    {
+      "relation": "partOf",
+      "source": 35,
+      "target": 9,
+      "key": "395034a8709ee555dd1226bcfa35834c"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 35,
+      "target": 9,
+      "key": "a4befeca39a58ade755b827212d622cc"
+    },
+    {
+      "relation": "partOf",
+      "source": 32,
+      "target": 12,
+      "key": "b09b389e0a28549e1f1b3f254e015985"
+    },
+    {
+      "relation": "partOf",
+      "source": 32,
+      "target": 9,
+      "key": "847db02ef31a0c38398578931979b58c"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 32,
+      "target": 9,
+      "key": "5399b20468513b20454eb05ea8d3db5e"
+    },
+    {
+      "relation": "partOf",
+      "source": 32,
+      "target": 8,
+      "key": "ce326637a5d08eacad1259c86b598a32"
+    },
+    {
+      "relation": "partOf",
+      "source": 32,
+      "target": 11,
+      "key": "280c964adabb3ca3e299be9de8c5a2ff"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 32,
+      "target": 11,
+      "key": "337be694e692b83e0225ac3dd7fccd69"
+    },
+    {
+      "relation": "partOf",
+      "source": 32,
+      "target": 10,
+      "key": "cac2749c29c7072fd646983ed611de38"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 32,
+      "target": 10,
+      "key": "bb2fdd71ff992178849e6769c0c39128"
+    },
+    {
+      "line": 112,
+      "relation": "directlyDecreases",
+      "evidence": "By expressing E-cadherin subdomains, we show that the growth-suppressive effect of E-cadherin required the presence of its cytoplasmic beta-catenin interaction domain and/or correlated strictly with the ability to negatively interfere with beta-catenin transcriptional activity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11564756"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 35,
+      "key": "7797082c0549884f7ca4ed1cd56d5187"
+    },
+    {
+      "line": 9,
+      "relation": "increases",
+      "evidence": "In contrast, in peroxovanadatetreated cells, the distribution of adherens junction proteins was significantly altered: (iii) there was decreased b-catenin staining at the cell membrane and increased cytoplasmic staining of b-catenin.",
+      "citation": {
+        "db": "Other",
+        "db_id": "11710913"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Primary human keratinocytes": true
+        }
+      },
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "GOCC",
+            "name": "membrane"
+          },
+          "toLoc": {
+            "namespace": "GOCC",
+            "name": "cytoplasm"
+          }
+        }
+      },
+      "source": 2,
+      "target": 35,
+      "key": "6fa450ce807b56838ed25f2f414010b1"
+    },
+    {
+      "line": 10,
+      "relation": "decreases",
+      "evidence": "Decreased association of E-cadherin with a-catenin, b-catenin, and plakoglobin is observed when E-cadherin is immunoprecipitated from peroxovanadate-treated keratinocytes",
+      "citation": {
+        "db": "Other",
+        "db_id": "11710913"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Primary human keratinocytes": true
+        }
+      },
+      "source": 2,
+      "target": 12,
+      "key": "f37bfc730560477fdb4564e9cb129e4b"
+    },
+    {
+      "line": 11,
+      "relation": "increases",
+      "evidence": "In contrast, in peroxovanadatetreated\ncells, the distribution of adherens junction proteins was significantly altered: (i) E-cadherin staining at the cell membrane decreased, whereas punctate cytoplasmic staining increased.",
+      "citation": {
+        "db": "Other",
+        "db_id": "11710913"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Primary human keratinocytes": true
+        }
+      },
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "GOCC",
+            "name": "membrane"
+          },
+          "toLoc": {
+            "namespace": "GOCC",
+            "name": "cytoplasm"
+          }
+        }
+      },
+      "source": 2,
+      "target": 32,
+      "key": "a4a0153d59fdfe855ef21f69867d2e1c"
+    },
+    {
+      "line": 12,
+      "relation": "decreases",
+      "evidence": "Decreased association of E-cadherin with a-catenin, b-catenin, and plakoglobin is observed when E-cadherin is immunoprecipitated from peroxovanadate-treated keratinocytes.",
+      "citation": {
+        "db": "Other",
+        "db_id": "11710913"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Primary human keratinocytes": true
+        }
+      },
+      "source": 2,
+      "target": 8,
+      "key": "daeb9f433f6d8d53a84cebb00bb8b0ab"
+    },
+    {
+      "line": 13,
+      "relation": "decreases",
+      "evidence": "In contrast, the cell membranes of peroxovanadate-treated\nkeratinocytes are retracted from one another consistent with decreased\ncell±cell adhesion. In peroxovanadate-treated cells, there is a reduction in\nmembrane staining for E-cadherin, a-catenin, b-catenin, and\nplakoglobin, with a compensatory increase in cytoplasmic staining for Ecadherin,\nb-catenin, and plakoglobin. In treated cells, the overall signal\nfor a-catenin is markedly reduced.",
+      "citation": {
+        "db": "Other",
+        "db_id": "11710913"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Primary human keratinocytes": true
+        }
+      },
+      "source": 2,
+      "target": 34,
+      "key": "272f0315f9cbff222ff7cdc7187754d3"
+    },
+    {
+      "line": 14,
+      "relation": "decreases",
+      "evidence": "Decreased association of E-cadherin with a-catenin, b-catenin, and plakoglobin is observed when E-cadherin is immunoprecipitated from peroxovanadate-treated keratinocytes",
+      "citation": {
+        "db": "Other",
+        "db_id": "11710913"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Primary human keratinocytes": true
+        }
+      },
+      "source": 2,
+      "target": 9,
+      "key": "0ffe8454f0ebc330341f42a4979774a7"
+    },
+    {
+      "line": 15,
+      "relation": "decreases",
+      "evidence": "When E-cadherin, a-catenin, b-catenin, or plakoglobin were immunoprecipitated from peroxovanadate-treated cells, b-catenin and plakoglobin were tyrosine phosphorylated; this correlated with a decrease in the association of (i) b-catenin with a-catenin and E-cadherin.",
+      "citation": {
+        "db": "Other",
+        "db_id": "11710913"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Primary human keratinocytes": true
+        }
+      },
+      "source": 2,
+      "target": 13,
+      "key": "8b29ce73ce148d4f40b6261335b5f8ff"
+    },
+    {
+      "line": 16,
+      "relation": "increases",
+      "evidence": "In contrast, in peroxovanadatetreated cells, the distribution of adherens junction proteins was significantly altered: (iv) there was decreased staining at the cell membrane and increased cytoplasmic and nuclear staining of plakoglobin.",
+      "citation": {
+        "db": "Other",
+        "db_id": "11710913"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Primary human keratinocytes": true
+        }
+      },
+      "object": {
+        "modifier": "Translocation",
+        "effect": {
+          "fromLoc": {
+            "namespace": "GOCC",
+            "name": "membrane"
+          },
+          "toLoc": {
+            "namespace": "GOCC",
+            "name": "cytoplasm"
+          }
+        }
+      },
+      "source": 2,
+      "target": 55,
+      "key": "8a923c9ebb17fb21e0daf917bc897adc"
+    },
+    {
+      "line": 17,
+      "relation": "decreases",
+      "evidence": "When E-cadherin, a-catenin, b-catenin, or plakoglobin were immunoprecipitated from peroxovanadate-treated cells, b-catenin and plakoglobin were tyrosine phosphorylated; this correlated with a decrease in the association of (ii) plakoglobin with a-catenin and E-cadherin.",
+      "citation": {
+        "db": "Other",
+        "db_id": "11710913"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Primary human keratinocytes": true
+        }
+      },
+      "source": 2,
+      "target": 14,
+      "key": "4181d9620308b4f6fd547f65d4b46109"
+    },
+    {
+      "line": 18,
+      "relation": "increases",
+      "evidence": "To identify the effectorsmediating intracellular signaling of PVIgG at the earliest stages of acantholysis, we studied the activities of Src, EGFRK, and p38MAPK. The time course studies demonstrated that the activity of Src peaked at 30 min, EGFRK at 60 min, and p38 MAPK at 240 min (Fig. 1, A–C).",
+      "citation": {
+        "db": "Other",
+        "db_id": "17344213"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Human keratinocyte cultures were started fromnormal neonatal foreskins": true
+        }
+      },
+      "source": 39,
+      "target": 59,
+      "key": "9e297e24ccf3de1e06541bc20caea2c8"
+    },
+    {
+      "line": 19,
+      "relation": "increases",
+      "evidence": "Transfection of KCs with small interfering RNAs that silenced expression of Dsg1 and/or Dsg3 proteins,blocked \u000150% of p38MAPK activity.",
+      "citation": {
+        "db": "Other",
+        "db_id": "17344213"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Human keratinocyte cultures were started fromnormal neonatal foreskins": true
+        }
+      },
+      "source": 37,
+      "target": 59,
+      "key": "b899598621ea01e0436e294c74627b4e"
+    },
+    {
+      "line": 20,
+      "relation": "increases",
+      "evidence": "Reintroduction of PTPα into PTPα−/− cells restores integrin-stimulated FAK Tyr-397 phosphorylation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "12515828"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblast": true
+        }
+      },
+      "source": 69,
+      "target": 66,
+      "key": "c640474ebdbd44f848274801d71b5d99"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "Both PTPalpha−/− lines of cells showed significantly impaired migration (67 and 49%) relative to the PTPalpha+/+ control cell line",
+      "citation": {
+        "db": "Other",
+        "db_id": "12515828"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblast": true
+        }
+      },
+      "source": 69,
+      "target": 3,
+      "key": "efad193c297460bdc8d83e9da0bb5755"
+    },
+    {
+      "line": 22,
+      "relation": "increases",
+      "evidence": "FAK phosphorylation at Tyr397 is an early event in the sequence of reactions leading to full activation and function of this kinase",
+      "citation": {
+        "db": "Other",
+        "db_id": "12515828"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblast": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 66,
+      "target": 65,
+      "key": "138b779a8830c4f98899cea169fc3096"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 65,
+      "target": 66,
+      "key": "3e15b5fc5d95eea677186dce15d06bec"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "Src-mediated tyrosine phosphorylation of FAK on Tyr(861), the recruitment of FAK(Tyr861) to the alphavbeta5 integrin, and increased formation of p130(CAS)/CrkII/Dock180 complex to activate Rac1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15673687"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 65,
+      "target": 29,
+      "key": "bed54cc669828bb9be63d98a2beb43af"
+    },
+    {
+      "relation": "partOf",
+      "source": 30,
+      "target": 7,
+      "key": "b4ebc191bb423ac2a24cc3d82aaeac9f"
+    },
+    {
+      "line": 83,
+      "relation": "increases",
+      "evidence": "A specific subset of integrins (including {alpha}1{beta}1, {alpha}5{beta}1, and {alpha}v{beta}3) can induce or enhance cell proliferation through interaction of the integrin  {alpha}-subunit cytoplasmic domain with caveolin-1, a membrane protein that plays a role in organizing membrane microdomains. In this pathway, caveolin-1 recruits the src family kinases, yes or fyn, which recruit the adaptor protein shc that in turn leads to recruitment and activation of the well-characterized Ras pathway (122).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12843406"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 30,
+      "target": 77,
+      "key": "77cf786e0f89f728187f955ca267affa"
+    },
+    {
+      "line": 84,
+      "relation": "increases",
+      "evidence": "A specific subset of integrins (including {alpha}1{beta}1, {alpha}5{beta}1, and {alpha}v{beta}3) can induce or enhance cell proliferation through interaction of the integrin  {alpha}-subunit cytoplasmic domain with caveolin-1, a membrane protein that plays a role in organizing membrane microdomains. In this pathway, caveolin-1 recruits the src family kinases, yes or fyn, which recruit the adaptor protein shc that in turn leads to recruitment and activation of the well-characterized Ras pathway (122).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12843406"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 30,
+      "target": 87,
+      "key": "b81ef3c59d1a82164514cc16f95fca99"
+    },
+    {
+      "line": 85,
+      "relation": "increases",
+      "evidence": "Caveolin mediates stretch-induced ERK activation through an association with beta1-integrins/Fyn/Shc. We suggest that stretch-induced translocation of caveolin to noncaveolar sites plays an important role in mediating stretch-induced ERK activation in VSMCs.",
+      "citation": {
+        "db": "Other",
+        "db_id": "15072971"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "vascular smooth muscle cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 30,
+      "target": 73,
+      "key": "2d78512f21d5c3ddd8225973232651fa"
+    },
+    {
+      "relation": "partOf",
+      "source": 75,
+      "target": 7,
+      "key": "839c4b32a00e910c11ceb8a8edcc0818"
+    },
+    {
+      "line": 28,
+      "relation": "increases",
+      "evidence": "In human HaCaT keratinocytes for instance, ERK1/2 phosphorylation increases in dependence of EGF-R recruitment to transadhering E-cadherin, and E-cadherin-mediated activation of MAPK was also reported in intestinal epithelial cells (Pece and Gutkind, 2000; Laprise et al., 2004).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18268536"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Epithelium": true
+        },
+        "Cell": {
+          "Keratinocytes": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 11,
+      "target": 60,
+      "key": "2501989e0e8c9612975efa2491647fde"
+    },
+    {
+      "line": 29,
+      "relation": "increases",
+      "evidence": "In human HaCaT keratinocytes for instance, ERK1/2 phosphorylation increases in dependence of EGF-R recruitment to transadhering E-cadherin, and E-cadherin-mediated activation of MAPK was also reported in intestinal epithelial cells (Pece and Gutkind, 2000; Laprise et al., 2004).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18268536"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "Epithelium": true
+        },
+        "Cell": {
+          "Keratinocytes": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 11,
+      "target": 58,
+      "key": "642aef99561502d84254b3a713b2d492"
+    },
+    {
+      "relation": "partOf",
+      "source": 41,
+      "target": 11,
+      "key": "d925967766394e9c75aa4a0b0e08052c"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 41,
+      "target": 11,
+      "key": "c86f2bf33b9c4db4f00725f83734d481"
+    },
+    {
+      "line": 33,
+      "relation": "increases",
+      "evidence": "from full text - Table 1 Laminin isoforms, their expression, and receptors",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19693542"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 56,
+      "target": 19,
+      "key": "d7e824d0738053386d0a436d8cd18281"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "from full text - Table 1 Laminin isoforms, their expression, and receptors",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19693542"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 56,
+      "target": 22,
+      "key": "062eff90cbd6ea643f13e131ba0996e3"
+    },
+    {
+      "line": 35,
+      "relation": "increases",
+      "evidence": "from full text - Table 1 Laminin isoforms, their expression, and receptors",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19693542"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 56,
+      "target": 23,
+      "key": "3c4a10cf2f9beaee17acd45eb655f5a8"
+    },
+    {
+      "line": 36,
+      "relation": "increases",
+      "evidence": "Under the stimulus of TGF beta 1, there a dose-dependent increase in the expression of integrin beta 3 chain in the surface of EC.",
+      "citation": {
+        "db": "Other",
+        "db_id": "12733346"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "endothelial cells": true
+        }
+      },
+      "source": 74,
+      "target": 51,
+      "key": "5b771288a1246b55bb2775c7f5dc6428"
+    },
+    {
+      "line": 37,
+      "relation": "increases",
+      "evidence": "after the cultured EC were treated with 5 ng/ml or 10 ng/ml TGF beta 1 for 6 or 24 hours, the FAK activity in EC increased significantly as compared with the control group (P < 0.05).",
+      "citation": {
+        "db": "Other",
+        "db_id": "12733346"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "endothelial cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 74,
+      "target": 65,
+      "key": "9ed093a1f19414a12e0298ee62cf7f3e"
+    },
+    {
+      "line": 38,
+      "relation": "increases",
+      "evidence": "Proliferation of ASM cells from asthmatic and nonasthmatic subjects was inhibited by blocking the fibronectin receptor subunit alpha(5)beta(1). TGF-beta-induced alpha(5)beta(1) was extracellular signal-regulated kinase dependent but not phosphoinositide-3 kinase or p38 dependent. Blockade of the alpha(5)beta(1) receptor inhibited TGF-beta-induced fibronectin matrix deposition",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18243286"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "source": 74,
+      "target": 20,
+      "key": "e31da573c4babd4e35cb40d169240a6c"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 71,
+      "target": 72,
+      "key": "26e0feb2b32c885ecea61288f132bb7d"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "A specific subset of integrins (including {alpha}1{beta}1, {alpha}5{beta}1, and {alpha}v{beta}3) can induce or enhance cell proliferation through interaction of the integrin  {alpha}-subunit cytoplasmic domain with caveolin-1, a membrane protein that plays a role in organizing membrane microdomains. In this pathway, caveolin-1 recruits the src family kinases, yes or fyn, which recruit the adaptor protein shc that in turn leads to recruitment and activation of the well-characterized Ras pathway (122).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12843406"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "source": 20,
+      "target": 30,
+      "key": "5dfff78e02ce607366b0055f22b5ca5a"
+    },
+    {
+      "line": 44,
+      "relation": "increases",
+      "evidence": "Thymidine phosphorylase and 2-deoxyribose-induced focal adhesion kinase phosphorylation was blocked by the antibodies to alpha 5 beta 1 and alpha v beta 3",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12639965"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 20,
+      "target": 65,
+      "key": "263368a1c5aaba480731fc566ec3d618"
+    },
+    {
+      "line": 44,
+      "relation": "increases",
+      "evidence": "Upon attachment to fibronectin, ECV 304 cells transfected with dn Cdc42 or dn Rac1 mutants exhibited the phosphorylated form of FAK. FAK phosphorylated at Tyr397 appeared within 60 minutes and was detected even in the presence of dn Cdc42 or dn Rac1, indicating that these integrin-induced signaling components are still activated by attachment when Cdc42 and Rac1 are blocked.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12052868"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 20,
+      "target": 65,
+      "key": "9d1e5db38a099258e2b573af1962b171"
+    },
+    {
+      "relation": "partOf",
+      "source": 47,
+      "target": 20,
+      "key": "c3ae4670dcb9565a8a31c49448d524ef"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 47,
+      "target": 20,
+      "key": "35aa97a003472b53217028a3d6328983"
+    },
+    {
+      "relation": "partOf",
+      "source": 47,
+      "target": 21,
+      "key": "0e286a5b8d851f9c98908d3ab4d776ed"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 47,
+      "target": 21,
+      "key": "d2ea388833fb16b92c10c196c0d5bd4b"
+    },
+    {
+      "relation": "partOf",
+      "source": 50,
+      "target": 20,
+      "key": "b492030690214db7a8c6e694cb70634b"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 50,
+      "target": 20,
+      "key": "74a9a33b0a8e774c634b9e17d9b07bed"
+    },
+    {
+      "relation": "partOf",
+      "source": 50,
+      "target": 16,
+      "key": "9a8c9656df8f7d841d19c483c00c6454"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 50,
+      "target": 16,
+      "key": "a9c21ff213bdcd76479e28f15ccea5f2"
+    },
+    {
+      "relation": "partOf",
+      "source": 50,
+      "target": 22,
+      "key": "c76976480ae04e36075fe8dffe442140"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 50,
+      "target": 22,
+      "key": "85e1181950a267a21c3ee2f0324d0d34"
+    },
+    {
+      "relation": "partOf",
+      "source": 50,
+      "target": 21,
+      "key": "bb40f8eccecd185bfb1928902a53dbac"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 50,
+      "target": 21,
+      "key": "a647e35368102214ee3ae73cb948f77c"
+    },
+    {
+      "relation": "partOf",
+      "source": 50,
+      "target": 18,
+      "key": "0283dced2d37a58407e3c311e311be72"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 50,
+      "target": 18,
+      "key": "0c9106634f79f7850e78ca8da95ea340"
+    },
+    {
+      "relation": "partOf",
+      "source": 50,
+      "target": 19,
+      "key": "492615328331587eff8a06a5dbb7dc6e"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 50,
+      "target": 19,
+      "key": "e83995ed2dc5bcc03775c75a88aa8763"
+    },
+    {
+      "relation": "partOf",
+      "source": 50,
+      "target": 17,
+      "key": "a3b8034be63c5752f13b2a733f1b4d69"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 50,
+      "target": 17,
+      "key": "379d04836a2a0e58b36aab2aa1d0f34c"
+    },
+    {
+      "relation": "partOf",
+      "source": 44,
+      "target": 17,
+      "key": "f13d7e1b3b279a21fd3a55ef9635d482"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 44,
+      "target": 17,
+      "key": "84b3eba0b85ac9d96441022bb901b7bd"
+    },
+    {
+      "line": 45,
+      "relation": "increases",
+      "evidence": "Collagen IV is involved in interactions with cells and possesses two specific recognition sites for the integrins alpha 1 beta 1 and alpha 2 beta 1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "7795882"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 81,
+      "target": 17,
+      "key": "59f6109a2d9d0caad0b6a685957740b7"
+    },
+    {
+      "line": 46,
+      "relation": "increases",
+      "evidence": "Collagen IV is involved in interactions with cells and possesses two specific recognition sites for the integrins alpha 1 beta 1 and alpha 2 beta 1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "7795882"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 81,
+      "target": 18,
+      "key": "781f5f23a6e8f7930ab51155b8d7b749"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "A specific subset of integrins (including {alpha}1{beta}1, {alpha}5{beta}1, and {alpha}v{beta}3) can induce or enhance cell proliferation through interaction of the integrin  {alpha}-subunit cytoplasmic domain with caveolin-1, a membrane protein that plays a role in organizing membrane microdomains. In this pathway, caveolin-1 recruits the src family kinases, yes or fyn, which recruit the adaptor protein shc that in turn leads to recruitment and activation of the well-characterized Ras pathway (122).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12843406"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 87,
+      "target": 86,
+      "key": "3c206f6266797b689cce1985a7a2822e"
+    },
+    {
+      "line": 49,
+      "relation": "increases",
+      "evidence": "Using chemical and genetic inhibitors, we show that Fyn activity is required for SAPK2/p38 but not for FAK activation in response to VEGF. In contrast, c-Src permits activation of FAK, but not that of SAPK2/p38. In addition, Fyn is required for stress fiber formation and endothelial cell migration.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16966330"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 87,
+      "target": 65,
+      "key": "a22ba69a8c8665b30d34cba48bc52468"
+    },
+    {
+      "line": 54,
+      "relation": "directlyIncreases",
+      "evidence": "Integrin-linked kinase (ILK) is an integrin ?1-cytoplasmic domain-binding protein that mediates structural connections between integrin proteins and the actin cytoskeleton through several of its binding partners (3, 10, 16, 26, 40). ILK is positioned to transduce integrin-mediated signals from the extracellular matrix to a variety of intracellular signaling cascades that regulate cytoskeletal organization and gene expression (3, 7, 16, 35, 38).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18805960"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 16,
+      "target": 43,
+      "key": "e22f82feea635e8f80e3872d76618e8a"
+    },
+    {
+      "relation": "partOf",
+      "source": 43,
+      "target": 16,
+      "key": "5e39bc3cd58d3327a0d3397eeaf83b1e"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 43,
+      "target": 16,
+      "key": "f31096539a848d29a7c7e2fd8fe3c66b"
+    },
+    {
+      "line": 77,
+      "relation": "increases",
+      "evidence": "ILK depletion and overexpression respectively decreased and increased the activation of its downstream substrate, PKB/Akt. The pharmacologic inhibition of Akt activity also increased SRF binding to the promoters of smooth muscle specific genes and increased expression of smooth muscle proteins, suggesting that ILK may exert its effects by regulating the activity of Akt.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18805960"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Myocytes, Smooth Muscle": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 43,
+      "target": 78,
+      "key": "82460d37df460cf592ba229dcf0c9aa4"
+    },
+    {
+      "line": 80,
+      "relation": "increases",
+      "evidence": "Furthermore, CH-ILKBP stimulated GSK-3 beta phosphorylation on Ser 9, and phosphorylation of PKB/Akt on Ser 473, both of which have been shown previously to be regulated by ILK (Delcommenne et al., 1998 ).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12960424"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 43,
+      "target": 83,
+      "key": "ba22f212250478b92f220776b8c89f8a"
+    },
+    {
+      "line": 81,
+      "relation": "increases",
+      "evidence": "PC-3 cells transfected with Dominant negative forms of ILK inhibited AKT phosphorylation as compared to cells transfected with wild type ILK. These results show that ILK phosphorylates AKT at Ser473. In addition to this inhibition of ILK by KP-SD1 inhibits AKT-Ser473 phosphorylation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15467757"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 43,
+      "target": 79,
+      "key": "70b879493e1312e09c0388f1f6d49135"
+    },
+    {
+      "relation": "partOf",
+      "source": 53,
+      "target": 25,
+      "key": "0d1364bcb3dfe2cd19ae611d4dea34a9"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 53,
+      "target": 25,
+      "key": "4bceac257de2d9a2e5a85b88d4558eab"
+    },
+    {
+      "line": 59,
+      "relation": "increases",
+      "evidence": "For example, integrin a5b1 binding to fibronectin suppresses cell migration [48], while aVb6-mediated fibronectin binding promotes it [49].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14984767"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 42,
+      "target": 25,
+      "key": "59b0d7e5459e0d40d3314eed95da02f2"
+    },
+    {
+      "line": 60,
+      "relation": "increases",
+      "evidence": "For example, integrin a5b1 binding to fibronectin suppresses cell migration [48], while aVb6-mediated fibronectin binding promotes it [49].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14984767"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 42,
+      "target": 20,
+      "key": "ec2ad9eef9f5e6f4b42dafabf243958c"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 78,
+      "target": 79,
+      "key": "bf5b1483dab8a0903ae874eaa42864d8"
+    },
+    {
+      "line": 125,
+      "relation": "increases",
+      "evidence": "Our previous work strongly links fibroblast responses to ?2?1 integrin–collagen interaction with PI3K–Akt signal pathway function (20–22). We examined activation of the PI3K–Akt pathway in response to interaction with collagen in both short-term adhesion and long-term proliferation assays. When serum-starved control fibroblasts attach to monomeric collagen, the level of Akt phosphorylation increases in a time- and PI3K-dependent fashion, along with phosphorylation of the downstream kinase S6K1 (Fig. 2 A).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18541712"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 78,
+      "target": 72,
+      "key": "764cc98d2cfe6156da911a934a313da4"
+    },
+    {
+      "line": 125,
+      "relation": "increases",
+      "evidence": "Once activated by nicotine, Akt increased phosphorylation of multiple downstream components that control cellular cell cycle and protein translation, such as glycogen synthase kinase-3 (GSK- 3), binding protein for eukaryotic translation initiation factor 4E (4EBP-1), and ribosomal kinase p70S6K (Fig. 4) [50].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18495523"
+      },
+      "annotations": {
+        "Disease": {
+          "Neoplasm": true
+        },
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 78,
+      "target": 72,
+      "key": "5e9daa8426ff4ab13f8df09a28e2b6c1"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 82,
+      "target": 83,
+      "key": "4261f76531d0afb10c9c82db91f2595d"
+    },
+    {
+      "line": 65,
+      "relation": "directlyIncreases",
+      "evidence": "The association between Src and Cas enhances Src kinase activity",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12740391"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 29,
+      "target": 87,
+      "key": "31fba7ba0d3092595db42fa232237686"
+    },
+    {
+      "line": 66,
+      "relation": "increases",
+      "evidence": "Src-mediated tyrosine phosphorylation of FAK on Tyr(861), the recruitment of FAK(Tyr861) to the alphavbeta5 integrin, and increased formation of p130(CAS)/CrkII/Dock180 complex to activate Rac1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15673687"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "gtp"
+        }
+      },
+      "source": 29,
+      "target": 85,
+      "key": "113eefce76b586622f89ed6ca88a5440"
+    },
+    {
+      "relation": "partOf",
+      "source": 52,
+      "target": 23,
+      "key": "ef1364dcf21d101096e007c8446d657c"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 52,
+      "target": 23,
+      "key": "955e1dc289ca512e3c634b79e073edc2"
+    },
+    {
+      "line": 67,
+      "relation": "increases",
+      "evidence": "from full text - The avb6 integrin mediates activation of TGF-b through a mechanism involving the conformational alteration of TGF-b; the avb8 integrin mediates activation of TGF-b through the transmembrane matrix-metalloprotease- 1 (MT1-MMP)-dependent cleavage",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16877343"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 26,
+      "target": 61,
+      "key": "7b7f2dee0c77ca5eb35d666d3e098492"
+    },
+    {
+      "relation": "partOf",
+      "source": 49,
+      "target": 26,
+      "key": "d8d9a7e7a22a27ac8ddd040614bf75af"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 49,
+      "target": 26,
+      "key": "5f7c42814105e5cd533fd459e6391f41"
+    },
+    {
+      "relation": "partOf",
+      "source": 49,
+      "target": 25,
+      "key": "aebd5c8e809407cd969832a7d363e68c"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 49,
+      "target": 25,
+      "key": "660ccafa494e8f9de35c32fdd81c4438"
+    },
+    {
+      "relation": "partOf",
+      "source": 49,
+      "target": 24,
+      "key": "2a9fd1f773daac18fb441297ff63cd4c"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 49,
+      "target": 24,
+      "key": "c341d4dd72f6992a1f15f5922bf40117"
+    },
+    {
+      "relation": "partOf",
+      "source": 54,
+      "target": 26,
+      "key": "e39bd9f0f853799257b0fff0778607c3"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 54,
+      "target": 26,
+      "key": "2e6864c16eb4a3667900eab37aa1c06f"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "Morphological activation of endothelial cells by phorbol 12-myristate 13-acetate (PMA) resulted in membrane-type 1 matrix metalloproteinase (MT1-MMP) -mediated solubilization of latent TGF-beta complexes from the ECM by proteolytic processing of LTBP-1.",
+      "citation": {
+        "db": "Other",
+        "db_id": "18602101"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "endothelial cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 61,
+      "target": 74,
+      "key": "3714e7b208af6571ebb3321a40516c83"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "fetal tracheal epithelial alpha(v)beta(8)-mediated TGF-beta activation can be enhanced by phorbol esters, likely because of the increased activity of MT1-MMP, an essential co-factor in alpha(v)beta(8)-mediated activation of TGF-beta",
+      "citation": {
+        "db": "Other",
+        "db_id": "16877343"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "tracheal epithelial cells and fibroblasts": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 61,
+      "target": 74,
+      "key": "5ab0f958dd89312f7330682e1ee62b65"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "from full text - The avb6 integrin mediates activation of TGF-b through a mechanism involving the conformational alteration of TGF-b; the avb8 integrin mediates activation of TGF-b through the transmembrane matrix-metalloprotease- 1 (MT1-MMP)-dependent cleavage",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16877343"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 61,
+      "target": 74,
+      "key": "944cf178576dae7d92313f86985367de"
+    },
+    {
+      "line": 79,
+      "relation": "directlyDecreases",
+      "evidence": "Two cytoplasmic protein tyrosine phosphatases, PTP-PEST and PTP-1B, target p130CAS and may specifically inhibit some of the signals downstream of FAK (20).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10446041"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "phos"
+        }
+      },
+      "source": 68,
+      "target": 29,
+      "key": "8f6de398acf299b15a3cda848d478f02"
+    },
+    {
+      "line": 72,
+      "relation": "directlyDecreases",
+      "evidence": "In mammals GSK3 is present in two isoforms, alpha and beta regulated by phosphorylation: phosphorylation of Ser9 in GSK3beta or Ser21 in GSK3alpha leads to inactivation while phosphorylation of Tyr216 in GSK3beta or Tyr279 in GSK3alpha leads to activation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15265592"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 83,
+      "target": 82,
+      "key": "16c1888965b1955e0cb6d4a93535bacb"
+    },
+    {
+      "line": 72,
+      "relation": "directlyDecreases",
+      "evidence": "AKT activation resulted in the phosphorylation-dependent inactivation of glycogen synthase kinase (GSK-3) (serine 21/9).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11254732"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 83,
+      "target": 82,
+      "key": "0ac02fab7540ad14fc86b675db700aba"
+    },
+    {
+      "relation": "partOf",
+      "source": 46,
+      "target": 19,
+      "key": "fa94366829c4b65f01e55c649fc1feb7"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 46,
+      "target": 19,
+      "key": "eb64dd065158a39b85cd7850cec86e99"
+    },
+    {
+      "relation": "partOf",
+      "source": 70,
+      "target": 27,
+      "key": "f4bfd7a6a15518b4cb31cab1bbd660b4"
+    },
+    {
+      "relation": "partOf",
+      "source": 76,
+      "target": 27,
+      "key": "d2aed59243604b61994ae0c37f9d3083"
+    },
+    {
+      "relation": "partOf",
+      "source": 48,
+      "target": 22,
+      "key": "24c8ce369cb41efc4aab70012fee5105"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 48,
+      "target": 22,
+      "key": "15cdeb008ae0e4c76ace6bde1595f7f8"
+    },
+    {
+      "relation": "partOf",
+      "source": 48,
+      "target": 23,
+      "key": "1a6acbfb4ca78c7e92ff73ecbe8122a0"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 48,
+      "target": 23,
+      "key": "e1781285cb4f37e40ab7e8ddc276adfa"
+    },
+    {
+      "line": 76,
+      "relation": "directlyDecreases",
+      "evidence": "Hakai, a c-Cbl-like protein, ubiquitinates and induces endocytosis of the E-cadherin complex… Expression of Hakai in epithelial cells disrupts cell--cell contacts and enhances endocytosis of E-cadherin and cell motility.",
+      "citation": {
+        "db": "Other",
+        "db_id": "11836526"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "epithelial cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 31,
+      "target": 32,
+      "key": "2c38c7a62c65486e5c1db8ab5f471e56"
+    },
+    {
+      "line": 76,
+      "relation": "directlyDecreases",
+      "evidence": "receptor tyrosine kinases (RTKs; which are frequently activated in cancer cells), such as epidermal growth factor receptor (EGFR), hepatocyte growth factor receptor (c-MET) and fibroblast growth-factor receptor (FGFR), and the non-RTK SRC, phosphorylate E-cadherin, neuronal (N)-cadherin, beta-catenin, gamma-catenin and p120-catenin, resulting in the disassembly of the CCC and, with it, the disruption of cadherin-mediated cell-cell adhesion Walter Birchmeier's group identified a novel c-CBL-related E3 ligase, known as Hakai (Japanese for destruction), that specifically binds and ubiquitylates tyrosine-phosphorylated E-cadherin (but not N-cadherin) and so earmarks it for endocytosis and proteasome-mediated degradation23. Conversely, ?-catenin interacts with the low-molecular-weight protein tyrosine phosphatase (LMW-PTP), which counteracts tyrosine phosphorylation and promotes the stability of E-cadherin-mediated AJs",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14964308"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 31,
+      "target": 32,
+      "key": "de22fe8cd3ecd7ded015f87f75d8c42e"
+    },
+    {
+      "line": 89,
+      "relation": "increases",
+      "evidence": "erbB2, the ligand-less member of the epidermal growth factor receptor family, was shown to form a complex with the hemidesmosomal integrin alpha6beta4. These results indicate that stimulation of alpha6beta4 increases E-cadherin-mediated cell-cell adhesion and that this mechanism depends on erbB2 activation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15579904"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 23,
+      "target": 32,
+      "key": "68969f27597dd27af8f35610b8a69e77"
+    },
+    {
+      "relation": "partOf",
+      "source": 63,
+      "target": 21,
+      "key": "4ecc9fcb809dd2c98b279f6b90899271"
+    },
+    {
+      "relation": "partOf",
+      "source": 45,
+      "target": 18,
+      "key": "8bac96c3fbc32ef9e7b5733910a60ec6"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 45,
+      "target": 18,
+      "key": "2a3f5326c134081e3a26b9f240e56dc1"
+    },
+    {
+      "line": 113,
+      "relation": "directlyDecreases",
+      "evidence": "Two cytoplasmic protein tyrosine phosphatases, PTP-PEST and PTP-1B, target p130CAS and may specifically inhibit some of the signals downstream of FAK (20).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10446041"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "phos"
+        }
+      },
+      "source": 67,
+      "target": 29,
+      "key": "7fcf6105a0681923247ed743536d464a"
+    },
+    {
+      "line": 102,
+      "relation": "increases",
+      "evidence": "A specific subset of integrins (including {alpha}1{beta}1, {alpha}5{beta}1, and {alpha}v{beta}3) can induce or enhance cell proliferation through interaction of the integrin  {alpha}-subunit cytoplasmic domain with caveolin-1, a membrane protein that plays a role in organizing membrane microdomains. In this pathway, caveolin-1 recruits the src family kinases, yes or fyn, which recruit the adaptor protein shc that in turn leads to recruitment and activation of the well-characterized Ras pathway (122).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12843406"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "source": 17,
+      "target": 30,
+      "key": "574bc253e92555700a1ebaf9eb7eb5d0"
+    },
+    {
+      "line": 105,
+      "relation": "increases",
+      "evidence": "To assess the importance of ?2?1 in mediating activation of Akt in response to fibroblast attachment to monomeric collagen, we used integrin blocking antibodies. Preincubation of control fibroblasts with ?2 or ?1 blocking antibodies attenuated the increase in Akt phosphorylation in response to attachment to monomeric collagen (Fig. 2 B)......Seven normal primary control adult human lung fibroblast lines were used (From Methods).........To prepare two-dimensional monomeric collagen matrices, tissue culture dishes were coated with 100 ?g/ml type I collagen solution (Methods)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18541712"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 80,
+      "target": 18,
+      "key": "ff8eeba4a6a0827e02283efab85683c1"
+    },
+    {
+      "line": 105,
+      "relation": "increases",
+      "evidence": "Crucial to its angiogenic activity appears to be ligation and possibly clustering of endothelial cell (EC) surface alpha 1 beta 1/alpha 2 beta 1 integrin receptors by the GFPGER(502-507) sequence of the collagen fibril.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18220798"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 80,
+      "target": 18,
+      "key": "76ce59207ab68e3918c290f87723485c"
+    },
+    {
+      "line": 106,
+      "relation": "increases",
+      "evidence": "Crucial to its angiogenic activity appears to be ligation and possibly clustering of endothelial cell (EC) surface alpha 1 beta 1/alpha 2 beta 1 integrin receptors by the GFPGER(502-507) sequence of the collagen fibril.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18220798"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 80,
+      "target": 17,
+      "key": "54955f419b6c77cc6215286642e0080f"
+    },
+    {
+      "line": 109,
+      "relation": "increases",
+      "evidence": "In wounded monolayers, both anti-alphavbeta6 and anti-alphavbeta8 significantly inhibited reporter cell activity, suggesting that both integrins contribute to the activation of TGF-beta1 in response to wounding (Figure 3C)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16574941"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "bronchial epithelial cell": true
+        }
+      },
+      "source": 25,
+      "target": 74,
+      "key": "3da4d5697b60f0f3009ec9d85c2d86fc"
+    },
+    {
+      "line": 109,
+      "relation": "increases",
+      "evidence": "... binding to alpha(v)beta(6) and alpha(v)beta(8) leading to TGFbeta(1) activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12358597"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 25,
+      "target": 74,
+      "key": "c29cd70eb744681038ed67fbf4f87497"
+    },
+    {
+      "line": 109,
+      "relation": "increases",
+      "evidence": "LTBP-1 is required for alphaVbeta6-mediated latent TGF-beta activation",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15184403"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 25,
+      "target": 74,
+      "key": "1f39f68b788b27798075e3cf3ee3f8d6"
+    },
+    {
+      "line": 109,
+      "relation": "increases",
+      "evidence": "alpha v beta 6-expressing cells induce spatially restricted activation of TGF beta 1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10025398"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 25,
+      "target": 74,
+      "key": "0dbbd898c9859291647abfd9767d3cf2"
+    },
+    {
+      "line": 109,
+      "relation": "increases",
+      "evidence": "from full text - The avb6 integrin mediates activation of TGF-b through a mechanism involving the conformational alteration of TGF-b; the avb8 integrin mediates activation of TGF-b through the transmembrane matrix-metalloprotease- 1 (MT1-MMP)-dependent cleavage",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16877343"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "source": 25,
+      "target": 74,
+      "key": "eddf6c977ad867ccd2d96be7c3d2b108"
+    },
+    {
+      "line": 114,
+      "relation": "increases",
+      "evidence": "Like E- and P-cadherin, Ca(2+) treatment of normal and tumor-derived human keratinocytes resulted in c-Yes (and c-Src and Fyn), as well as their putative substrate p120(CTN), being recruited to cell-cell contacts. A tyrosine kinase inhibitor with selectivity against the Src family kinases, PD162531, and a dominant-inhibitory c-Src protein that interferes with the catalytic function of the endogenous Src kinases induced cell-cell contact and E-cadherin redistribution",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10637290"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Keratinocytes": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 10,
+      "target": 87,
+      "key": "2e68dacaa2e5a706f0a6ba1f752ff8e1"
+    },
+    {
+      "relation": "partOf",
+      "source": 36,
+      "target": 10,
+      "key": "69609a980410d96b90365b55ac27f406"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 36,
+      "target": 10,
+      "key": "048d51a9b90b55d7fad5e06f6fb47935"
+    },
+    {
+      "line": 117,
+      "relation": "increases",
+      "evidence": "Our most recent study [53] provided more convincing evidence to support the role of uPAR in mediating the effect of HKa. We showed that the apoptotic effect of HKa was blocked by three different anti-uPAR antibodies in cells grown on vitronectin. Further results revealed that uPAR formed a signaling complex containing integrins avb3 or a5b1, caveolin, and Src kinase Yes in endothelial cells. HKa physically disrupted the formation of this complex in a manner that paralleled its apoptotic effect.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15733059"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "source": 62,
+      "target": 24,
+      "key": "1ab0c8d87d325a4fa4313164a7f0aaaf"
+    },
+    {
+      "line": 118,
+      "relation": "increases",
+      "evidence": "Our most recent study [53] provided more convincing evidence to support the role of uPAR in mediating the effect of HKa. We showed that the apoptotic effect of HKa was blocked by three different anti-uPAR antibodies in cells grown on vitronectin. Further results revealed that uPAR formed a signaling complex containing integrins avb3 or a5b1, caveolin, and Src kinase Yes in endothelial cells. HKa physically disrupted the formation of this complex in a manner that paralleled its apoptotic effect.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15733059"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Endothelial Cells": true
+        }
+      },
+      "source": 62,
+      "target": 20,
+      "key": "1743e985c45c9549f611fac0e1ccee2d"
+    },
+    {
+      "line": 121,
+      "relation": "increases",
+      "evidence": "A specific subset of integrins (including {alpha}1{beta}1, {alpha}5{beta}1, and {alpha}v{beta}3) can induce or enhance cell proliferation through interaction of the integrin  {alpha}-subunit cytoplasmic domain with caveolin-1, a membrane protein that plays a role in organizing membrane microdomains. In this pathway, caveolin-1 recruits the src family kinases, yes or fyn, which recruit the adaptor protein shc that in turn leads to recruitment and activation of the well-characterized Ras pathway (122).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12843406"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "source": 24,
+      "target": 30,
+      "key": "90a07ac89a66bbe265339fc26d9eb858"
+    },
+    {
+      "relation": "partOf",
+      "source": 51,
+      "target": 24,
+      "key": "d7204e7d4e4ff12b64ba2b626e82b335"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 51,
+      "target": 24,
+      "key": "acfdff3ce0110cf38f0869d684874643"
+    }
+  ]
+}

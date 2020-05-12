@@ -1,0 +1,5466 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Xenobiotic Metabolism Response-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Xenobiotic Metabolism Response depicts the causal mechanisms that are involved in xenobiotic metabolism response, including the various environmental stressors and signaling components that regulate AHR and cytochrome p450 enzymes.\\u003c/p\\u003e\\n\\u003ch2\\u003eJamboree Review Focus\\u003c/h2\\u003e\\n\\u003cp\\u003eIdentify additional lung-relevant phase II (GST) and phase III (SLC) mechanisms that study protein/activity relationships as opposed to gene expression. Expand phase I regulation beyond AHR to include other transcription factors relevant for airway epithelia such as CAR, LXR and PXR. Reviewed during Jamboree2014"
+    },
+    "namespace_url": {
+      "HGNC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-human-genes/hgnc-human-genes-20150601.belns",
+      "GOBP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20150601.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20150601.belns",
+      "GOCC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170511.belns",
+      "MESHPP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20150601.belns",
+      "MGI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20150601.belns",
+      "RGD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20150601.belns",
+      "CHEBI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20150601.belns",
+      "SCHEM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-chemicals/selventa-legacy-chemicals-20150601.belns",
+      "EGID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/entrez-gene-ids/entrez-gene-ids-20150601.belns",
+      "MESHD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20150601.belns",
+      "SDIS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-diseases/selventa-legacy-diseases-20150601.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20150601.belns",
+      "MESHC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170511.belns",
+      "GOBPID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process-ids/go-biological-process-ids-20150601.belns",
+      "GOCCID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component-ids/go-cellular-component-ids-20150601.belns",
+      "MESHCS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20150601.belns"
+    },
+    "namespace_pattern": {},
+    "annotation_url": {
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20150601.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20150601.belanno",
+      "Species": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+      "Tissue": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20150601.belanno"
+    },
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "(-)-cotinine"
+      },
+      "id": "f5fc7e0e2379ca3e6216c182d24ece00",
+      "bel": "a(CHEBI:\"(-)-cotinine\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "2,3,7,8-tetrachlorodibenzodioxine"
+      },
+      "id": "5f4e8d791d2cf866daedb59964c0c175",
+      "bel": "a(CHEBI:\"2,3,7,8-tetrachlorodibenzodioxine\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "3,3',4,4',5-pentachlorobiphenyl"
+      },
+      "id": "95ce3e6be7ad05555b34bbd597a8c674",
+      "bel": "a(CHEBI:\"3,3',4,4',5-pentachlorobiphenyl\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "3-methylcholanthrene"
+      },
+      "id": "bdcbac68d9b9abce6d559e7fdebc4b68",
+      "bel": "a(CHEBI:\"3-methylcholanthrene\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "4-(N-nitrosomethylamino)-1-(3-pyridyl)butan-1-one"
+      },
+      "id": "3cfa1663fb4d1e93327fb0bda7f274e9",
+      "bel": "a(CHEBI:\"4-(N-nitrosomethylamino)-1-(3-pyridyl)butan-1-one\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "4-hydroxynon-2-enal"
+      },
+      "id": "5214ee51eb5785e43a57c9aad6887b27",
+      "bel": "a(CHEBI:\"4-hydroxynon-2-enal\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "Aflatoxin G1"
+      },
+      "id": "b3b44c56468fcc4da03f5d3318408f99",
+      "bel": "a(CHEBI:\"Aflatoxin G1\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "allyl isothiocyanate"
+      },
+      "id": "755721d95fa5cd3c242e62e3e3271107",
+      "bel": "a(CHEBI:\"allyl isothiocyanate\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "benzo[a]pyrene"
+      },
+      "id": "664260b8955875fcc35090c4359fb717",
+      "bel": "a(CHEBI:\"benzo[a]pyrene\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "beta-naphthoflavone"
+      },
+      "id": "176efbb98ae1c08531e32d09df3f7e97",
+      "bel": "a(CHEBI:\"beta-naphthoflavone\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "calcium(2+)"
+      },
+      "id": "94df77a2db8d9014b42535235da90e5d",
+      "bel": "a(CHEBI:\"calcium(2+)\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "glutathione disulfide"
+      },
+      "id": "febce849ef7d2c0f4ec0cba48f41784d",
+      "bel": "a(CHEBI:\"glutathione disulfide\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "hydrogen peroxide"
+      },
+      "id": "2a33dd72d09a3b66f80326bcf6e3bfd6",
+      "bel": "a(CHEBI:\"hydrogen peroxide\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "polycyclic arene"
+      },
+      "id": "5d919fd668a7fb95ebb3be65e9ebce86",
+      "bel": "a(CHEBI:\"polycyclic arene\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "reactive oxygen species"
+      },
+      "id": "39a67bec2ea8cb7a2bec39cf66e565ba",
+      "bel": "a(CHEBI:\"reactive oxygen species\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "curcumin"
+      },
+      "id": "7af57558091f98bed6718820d043f953",
+      "bel": "a(CHEBI:curcumin)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "dexamethasone"
+      },
+      "id": "3ddf398e461b290df7489c8ea8c59eef",
+      "bel": "a(CHEBI:dexamethasone)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "epoxide"
+      },
+      "id": "062d4a755d9ed7648d83a3682f4c41c7",
+      "bel": "a(CHEBI:epoxide)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "ethanol"
+      },
+      "id": "c449af3e95969092b5c4bdceb077f95f",
+      "bel": "a(CHEBI:ethanol)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "glutathione"
+      },
+      "id": "61c5446d1e6637cc42f9ac2109f37eeb",
+      "bel": "a(CHEBI:glutathione)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "nicotine"
+      },
+      "id": "44ed555f78bacda2933ddef1d4280ce9",
+      "bel": "a(CHEBI:nicotine)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "phenobarbital"
+      },
+      "id": "c12cf8a5d6e0d4b534c471f7e973891d",
+      "bel": "a(CHEBI:phenobarbital)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "pyridine"
+      },
+      "id": "f20d1e1c20cf78075f1c024c44014213",
+      "bel": "a(CHEBI:pyridine)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "MESHC",
+        "name": "2-(1'H-indole-3'-carbonyl)-thiazole-4-carboxylic acid methyl ester"
+      },
+      "id": "4d0bd3b19a77cd92822861ed7a34214e",
+      "bel": "a(MESHC:\"2-(1'H-indole-3'-carbonyl)-thiazole-4-carboxylic acid methyl ester\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "MESHC",
+        "name": "benzo(a)pyrene 7,8-dihydrodiol"
+      },
+      "id": "84e4fdcedf6d77d1aecb717f2680e31c",
+      "bel": "a(MESHC:\"benzo(a)pyrene 7,8-dihydrodiol\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "MESHC",
+        "name": "flavokawain A"
+      },
+      "id": "8e99462d314d8305d3e825170b828ddd",
+      "bel": "a(MESHC:\"flavokawain A\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "MESHC",
+        "name": "Soot"
+      },
+      "id": "20e3da7cbf53b3a1706126341ef06562",
+      "bel": "a(MESHC:Soot)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "8-Methyl-IQX"
+      },
+      "id": "b0631e6e39ac5ca449fd1a472865bcc2",
+      "bel": "a(SCHEM:\"8-Methyl-IQX\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Diesel exhaust particles"
+      },
+      "id": "bcbe337d72e8ce0186323441da4bccd8",
+      "bel": "a(SCHEM:\"Diesel exhaust particles\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Particulate Matter"
+      },
+      "id": "d0538e16e25d89d8cf0272b9eb04827b",
+      "bel": "a(SCHEM:\"Particulate Matter\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Smoke condensate, cigarette"
+      },
+      "id": "f2e4f4ca1033abe1bce04c004cad02d3",
+      "bel": "a(SCHEM:\"Smoke condensate, cigarette\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Smoke, cigarette"
+      },
+      "id": "2ef524381f7680ce6cfba5fa9781b085",
+      "bel": "a(SCHEM:\"Smoke, cigarette\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "nano-sized particulate matter (nPM)"
+      },
+      "id": "38bece58793f2f14416559a1c0f26946",
+      "bel": "a(SCHEM:\"nano-sized particulate matter (nPM)\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "ultrafine premixed flame particle (PFP)"
+      },
+      "id": "2617c2c6ff758e254f67eec72374f1e0",
+      "bel": "a(SCHEM:\"ultrafine premixed flame particle (PFP)\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "wood smoke"
+      },
+      "id": "edfbce27a5962a830be27bd479436e6e",
+      "bel": "a(SCHEM:\"wood smoke\")"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Indirubin"
+      },
+      "id": "31a7f483b33f518b326450fcd603c749",
+      "bel": "a(SCHEM:Indirubin)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "circadian rhythm"
+      },
+      "id": "ebddce7d18b36c53b472a30a9237674b",
+      "bel": "bp(GOBP:\"circadian rhythm\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "xenobiotic metabolic process"
+      },
+      "id": "2d9c7d1c78d1ecb354626ba71ac8a011",
+      "bel": "bp(GOBP:\"xenobiotic metabolic process\")"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Gene",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CYP1A1"
+          },
+          "id": "f114c5f1cd633c230f17871ead099460",
+          "bel": "g(HGNC:CYP1A1)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ARNT"
+          },
+          "id": "56ea0628bda070becb2f1f805e31ff2f",
+          "bel": "p(HGNC:ARNT)"
+        }
+      ],
+      "id": "ecead7df74fdf78a4ec66ebabf3eb391",
+      "bel": "complex(g(HGNC:CYP1A1), p(HGNC:ARNT))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "AHR"
+          },
+          "id": "0ca138d4bbe12c92b43f0e47bb4ab30c",
+          "bel": "p(HGNC:AHR)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "ARNT"
+          },
+          "id": "56ea0628bda070becb2f1f805e31ff2f",
+          "bel": "p(HGNC:ARNT)"
+        }
+      ],
+      "id": "9f6747c17aa8c35a749b04fe70ba059b",
+      "bel": "complex(p(HGNC:AHR), p(HGNC:ARNT))"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "AHR"
+          },
+          "id": "0ca138d4bbe12c92b43f0e47bb4ab30c",
+          "bel": "p(HGNC:AHR)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "HSP90AA1"
+          },
+          "id": "34386a4bda09cb3e679636bd188eb3b2",
+          "bel": "p(HGNC:HSP90AA1)"
+        }
+      ],
+      "id": "9dac93431e97aab2455d4b78960d8cf4",
+      "bel": "complex(p(HGNC:AHR), p(HGNC:HSP90AA1))"
+    },
+    {
+      "function": "Gene",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CYP1A1"
+      },
+      "id": "f114c5f1cd633c230f17871ead099460",
+      "bel": "g(HGNC:CYP1A1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ABCC1"
+      },
+      "id": "71c2a0f7d606e1ef2a9624ae207e1ec8",
+      "bel": "p(HGNC:ABCC1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ABCG2"
+      },
+      "id": "56a1284404c58bb2bbd16c1464ac9e76",
+      "bel": "p(HGNC:ABCG2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "AHR"
+      },
+      "id": "0ca138d4bbe12c92b43f0e47bb4ab30c",
+      "bel": "p(HGNC:AHR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "AHRR"
+      },
+      "id": "bf0eda1af0dd4e258b8f046cb3adec1c",
+      "bel": "p(HGNC:AHRR)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "AKT1"
+      },
+      "id": "2fe8184c6afa461574b1e1fba8b00dab",
+      "bel": "p(HGNC:AKT1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "AKT1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          }
+        }
+      ],
+      "id": "602a8cf373fd2c38ea78c1d941675a8c",
+      "bel": "p(HGNC:AKT1, pmod(Ph))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ALDH3A1"
+      },
+      "id": "3a0202f938a4ee76ba9d996cd36f1944",
+      "bel": "p(HGNC:ALDH3A1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ARNT"
+      },
+      "id": "56ea0628bda070becb2f1f805e31ff2f",
+      "bel": "p(HGNC:ARNT)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "BRCA1"
+      },
+      "id": "f025445bc19b464cbab3a344f7b6df2a",
+      "bel": "p(HGNC:BRCA1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CBR1"
+      },
+      "id": "99119a8d57537e8b72fd81d060d11db2",
+      "bel": "p(HGNC:CBR1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CLOCK"
+      },
+      "id": "de57a1405707722d8454f0adc0e42b94",
+      "bel": "p(HGNC:CLOCK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CYP1A1"
+      },
+      "id": "8910590fddd6a4ba8f805d18bd0bc074",
+      "bel": "p(HGNC:CYP1A1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CYP1A2"
+      },
+      "id": "0a545daf62cbe83d45f702677e96de1d",
+      "bel": "p(HGNC:CYP1A2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CYP1B1"
+      },
+      "id": "f6636bb059751fe38b925668bed76fe3",
+      "bel": "p(HGNC:CYP1B1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CYP2A13"
+      },
+      "id": "3d7fb3c022156372b259eb86b2d9c27d",
+      "bel": "p(HGNC:CYP2A13)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CYP2B6"
+      },
+      "id": "d8e3bff6d7c55650c93bdbb77f7f476c",
+      "bel": "p(HGNC:CYP2B6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CYP2E1"
+      },
+      "id": "af2303e8d693ad4d7cb1248d5bf79050",
+      "bel": "p(HGNC:CYP2E1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CYP2F1"
+      },
+      "id": "0baaf3f4957773166a47c15f6a1786f1",
+      "bel": "p(HGNC:CYP2F1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CYP3A5"
+      },
+      "id": "51cd34fe583ac370f0b6ccb40a1c6c9b",
+      "bel": "p(HGNC:CYP3A5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "EPHX1"
+      },
+      "id": "3fe4e5e9ad89b5f78ecf4b73269a11f6",
+      "bel": "p(HGNC:EPHX1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ESR1"
+      },
+      "id": "30158ec4eafb0c91727802594c6c9228",
+      "bel": "p(HGNC:ESR1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GCLC"
+      },
+      "id": "dca25a39b6939e40a82f3c999a7175c0",
+      "bel": "p(HGNC:GCLC)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GCLM"
+      },
+      "id": "601bdee9e0a4ec4baf440b51b5a51482",
+      "bel": "p(HGNC:GCLM)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GPX1"
+      },
+      "id": "13a39ef4e3e184a885ee200f4797e4cf",
+      "bel": "p(HGNC:GPX1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GSTA1"
+      },
+      "id": "1ca817b1a0ca4833368ff8cf496e62b1",
+      "bel": "p(HGNC:GSTA1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GSTA2"
+      },
+      "id": "63210607673918cea91cc236098c6a0f",
+      "bel": "p(HGNC:GSTA2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GSTM1"
+      },
+      "id": "dd8f694d726950cee9d0f902283e9d13",
+      "bel": "p(HGNC:GSTM1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GSTM3"
+      },
+      "id": "a8410582a5cc8f8cdbdda13fa19bcfe2",
+      "bel": "p(HGNC:GSTM3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GSTP1"
+      },
+      "id": "fbd9e367c154af8c0856cad959ffdbab",
+      "bel": "p(HGNC:GSTP1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "HSP90AA1"
+      },
+      "id": "34386a4bda09cb3e679636bd188eb3b2",
+      "bel": "p(HGNC:HSP90AA1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NAT2"
+      },
+      "id": "47c79f97c1ed8bdc5b58b88a0caeea0c",
+      "bel": "p(HGNC:NAT2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NFE2L2"
+      },
+      "id": "7e8941fff5d3be67079854e55d40d075",
+      "bel": "p(HGNC:NFE2L2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NQO1"
+      },
+      "id": "94e2999a00b060c444ee1ae49eb794fb",
+      "bel": "p(HGNC:NQO1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NR1H2"
+      },
+      "id": "416f2fc81f962c8d092f81d3db0d694c",
+      "bel": "p(HGNC:NR1H2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NR1H3"
+      },
+      "id": "6be40547ba727094fd74d0a418407c94",
+      "bel": "p(HGNC:NR1H3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NR1I2"
+      },
+      "id": "34070a3ac5c871ffdbf70383c758504b",
+      "bel": "p(HGNC:NR1I2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NR1I3"
+      },
+      "id": "565aa56a1e6b1c19b35255647ac802f3",
+      "bel": "p(HGNC:NR1I3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "NR3C1"
+      },
+      "id": "06820afe2bb1d23782b55583f42e2218",
+      "bel": "p(HGNC:NR3C1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "SULT1A1"
+      },
+      "id": "e8d3f6b98392e4d87a373389466e09f3",
+      "bel": "p(HGNC:SULT1A1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "UGT1A1"
+      },
+      "id": "a128c4a14bd1298e740884b141134565",
+      "bel": "p(HGNC:UGT1A1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "UGT1A10"
+      },
+      "id": "e5e47a7ec6e8d2864d9c3c61ed816b42",
+      "bel": "p(HGNC:UGT1A10)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "UGT1A3"
+      },
+      "id": "e4b22de6679465ec7f95e296d04996d7",
+      "bel": "p(HGNC:UGT1A3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "UGT1A6"
+      },
+      "id": "5da0b7cda4e19b3fa72d88c4aa920f5f",
+      "bel": "p(HGNC:UGT1A6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "UGT2B7"
+      },
+      "id": "80db0d1ff22a773915b4ae0b25c7433f",
+      "bel": "p(HGNC:UGT2B7)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "ADH family"
+      },
+      "id": "2bde788c8da508b02a5707d106648036",
+      "bel": "p(SFAM:\"ADH family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "CAMK2 Family"
+      },
+      "id": "fcb91fb80220a4a4695d8175bd67f35e",
+      "bel": "p(SFAM:\"CAMK2 Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "GST Family"
+      },
+      "id": "0fe4dacc88de6eb18dc921f7023430df",
+      "bel": "p(SFAM:\"GST Family\")"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "p-nitrophenol hydroxylase"
+      },
+      "id": "0ef068cf96a6a7d2352d495d2e59677b",
+      "bel": "p(SFAM:\"p-nitrophenol hydroxylase\")"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "MESHD",
+        "name": "Pulmonary Disease, Chronic Obstructive"
+      },
+      "id": "7c231d4db4388a89f9bcabb26d912509",
+      "bel": "path(MESHD:\"Pulmonary Disease, Chronic Obstructive\")"
+    },
+    {
+      "function": "RNA",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GSTP1"
+      },
+      "id": "220c641e9c6effd5e3b76dfbaf56d2b0",
+      "bel": "r(HGNC:GSTP1)"
+    }
+  ],
+  "links": [
+    {
+      "line": 26,
+      "relation": "directlyDecreases",
+      "evidence": "...we suggest that the major UGT isoforms in A549 cells that can intercept B[a]P-7,8-catechol are UGT1A3 and 2B7.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24047243"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "A549": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 85,
+      "target": 8,
+      "key": "2a7039a4ad027987e36a69eaeb4150b7"
+    },
+    {
+      "line": 30,
+      "relation": "decreases",
+      "evidence": "UDP-glucuronosyltransferase 1A10 (UGT1A10) is an extrahepatic enzyme expressed in aerodigestive tract tissues......UGT1A10 as an important detoxifier of polycyclic aromatic hydrocarbons in humans",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16510539"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "HEK293": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 82,
+      "target": 13,
+      "key": "1e8fc194f5abee58ee981099ae7dc805"
+    },
+    {
+      "line": 27,
+      "relation": "directlyDecreases",
+      "evidence": "..we suggest that the major UGT isoforms in A549 cells that can intercept B[a]P-7,8-catechol are UGT1A3 and 2B7",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24047243"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "A549 cell line": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 83,
+      "target": 8,
+      "key": "13b6adc80bb1f51d21832a269b67c276"
+    },
+    {
+      "line": 9,
+      "relation": "increases",
+      "evidence": "...AhR agonists increased the expression and activity of MMP-1 via a noncanonical AhR pathway and increased the activity of MMP-2 and MMP-9 in an MMP-1-dependent manner. ...AhR agonists increased the expression of MMP-1 via the activation of mitogen-activated protein kinase (MAPK) pathways by increased cytosolic calcium level and activated calcium/calmodulin-dependent protein kinase II (CaMKII).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24469321"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "HBE135-E6E7": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 10,
+      "target": 87,
+      "key": "fe61fea0c20d7eb675ff50030a58ae2b"
+    },
+    {
+      "line": 10,
+      "relation": "negativeCorrelation",
+      "evidence": "GSTM1 (null genotype) appeared to be a risk factor for lower lung function in smokers living in the vicinity of coal mines.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24809844"
+      },
+      "annotations": {
+        "Disease": {
+          "COPD": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 68,
+      "target": 90,
+      "key": "ee92583b6c1cf8f921b9591b8ef2859b"
+    },
+    {
+      "line": 13,
+      "relation": "decreases",
+      "evidence": "Significant decreases in..........glutathione-S-transferase (GST) activity in both liver and lung were found in rats treated acutely with ethanol.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "2009084"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 18,
+      "target": 88,
+      "key": "9dc0bcd5bb831f6be6f97bdf787c6414"
+    },
+    {
+      "line": 55,
+      "relation": "increases",
+      "evidence": "Glutathione transferases (GST) are phase II enzymes catalyzing the detoxification of endogenous noxious compounds and xenobiotics.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25590808"
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 88,
+      "target": 37,
+      "key": "07c0329fda672bb54353c0473b9dda0d"
+    },
+    {
+      "line": 20,
+      "relation": "increases",
+      "evidence": "Pyridine treatment upregulated CYP1A1 mRNA and its protein in the lung, kidney and liver in female rats...",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10463385"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "female lung": true
+        }
+      },
+      "source": 22,
+      "target": 53,
+      "key": "bd3b117cf8da036c05b350a086433f86"
+    },
+    {
+      "line": 21,
+      "relation": "increases",
+      "evidence": "Aryl hydrocarbon receptor-mediated Cyp1a1 expression is modulated in a CLOCK-dependent circadian manner.........Clock mutant (Clk/Clk) mice, producing CLOCK protein deficient in transcriptional activity, failed to show significant oscillation in the expression of AhR.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21978865"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 52,
+      "target": 36,
+      "key": "b0ea1f5ada17574e9037c455678cbb5a"
+    },
+    {
+      "line": 22,
+      "relation": "association",
+      "evidence": "Aryl hydrocarbon receptor-mediated Cyp1a1 expression is modulated in a CLOCK-dependent circadian manner.........Clock mutant (Clk/Clk) mice, producing CLOCK protein deficient in transcriptional activity, failed to show significant oscillation in the expression of AhR.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21978865"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 52,
+      "target": 44,
+      "key": "f0f93f9869a43d673e832f5e9de61c24"
+    },
+    {
+      "line": 69,
+      "relation": "positiveCorrelation",
+      "evidence": "protein levels of Cyp1a1 and its enzymatic activity in the microsomal fraction of the lungs of wild-type mice also showed significant 24-h oscillation (Fig. 2B and C)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21978865"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 36,
+      "target": 53,
+      "key": "c46da894ab6cd7d345d9a204afe6d371"
+    },
+    {
+      "line": 76,
+      "relation": "positiveCorrelation",
+      "evidence": "Aryl hydrocarbon receptor-mediated Cyp1a1 expression is modulated in a CLOCK-dependent circadian manner......The expression of AhR and its DNA binding ability in the lungs of wild-type mice showed significant 24-h oscillation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21978865"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 36,
+      "target": 44,
+      "key": "65121220a59d734c1ae4c4755f6f9404"
+    },
+    {
+      "line": 23,
+      "relation": "increases",
+      "evidence": "Following nPM exposure, nuclear Nrf2 was increased all tissues of younger mice. Fig 7",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22401859"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "young 6 mo lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 32,
+      "target": 73,
+      "key": "11a258867f341fc410fe868942c4b865"
+    },
+    {
+      "line": 24,
+      "relation": "increases",
+      "evidence": "Young adult mice exposed to nPM for 10 weeks showed vigorous induction (+50 to 150%) of GCLC and GCLM mRNA and protein in.........and lung (Fig. 1 C, F).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22401859"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "young 6 mo lung": true
+        }
+      },
+      "source": 32,
+      "target": 64,
+      "key": "526fdd2338dee3571f4c7af8c3a5c191"
+    },
+    {
+      "line": 25,
+      "relation": "increases",
+      "evidence": "Young adult mice exposed to nPM for 10 weeks showed vigorous induction (+50 to 150%) of GCLC and GCLM mRNA and protein in.........and lung (Fig. 1 C, F).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22401859"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "young 6 mo lung": true
+        }
+      },
+      "source": 32,
+      "target": 63,
+      "key": "3ab975a7d8419c60032b3d0716f60599"
+    },
+    {
+      "line": 35,
+      "relation": "positiveCorrelation",
+      "evidence": "In line, cigarette smoking status also significantly impacted CBR1 protein levels (CBR1 proteinsmokers = 2.87 ± 1.12 ng/µg versus CBR1 proteinnever-smokers = 1.95± 1.04 ng/µg; p < 0.05; Figure 1B).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22531821"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 51,
+      "target": 31,
+      "key": "924037c78835c545ed45217dc7234d51"
+    },
+    {
+      "line": 28,
+      "relation": "positiveCorrelation",
+      "evidence": "our findings first demonstrate that CYP2A13 might be an efficient enzyme in metabolic activation of AFG1 and helps provide a new insight into adverse effects of AFG1 in human respiratory system.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23907605"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "bronchial epithelial cells": true
+        }
+      },
+      "source": 6,
+      "target": 56,
+      "key": "8f406f326244da37ad2341950b547e47"
+    },
+    {
+      "line": 28,
+      "relation": "positiveCorrelation",
+      "evidence": "Cytochrome P450 2A13 enhances the sensitivity of human bronchial epithelial cells to aflatoxin B1-induced DNA damage.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23602888"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "bronchial epithelial cells": true
+        },
+        "Cell": {
+          "beas-2b cell line": true
+        }
+      },
+      "source": 6,
+      "target": 56,
+      "key": "6daa0122c452c422c3b3a5d354caf282"
+    },
+    {
+      "line": 28,
+      "relation": "positiveCorrelation",
+      "evidence": "our findings first demonstrate that CYP2A13 might be an efficient enzyme in metabolic activation of AFG1 and helps provide a new insight into adverse effects of AFG1 in human respiratory system.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23907605"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "bronchial epithelial cells": true
+        }
+      },
+      "source": 56,
+      "target": 6,
+      "key": "31e1fabe6b652656d326fe6133c6960d"
+    },
+    {
+      "line": 28,
+      "relation": "positiveCorrelation",
+      "evidence": "Cytochrome P450 2A13 enhances the sensitivity of human bronchial epithelial cells to aflatoxin B1-induced DNA damage.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23602888"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "bronchial epithelial cells": true
+        },
+        "Cell": {
+          "beas-2b cell line": true
+        }
+      },
+      "source": 56,
+      "target": 6,
+      "key": "30649e8be56cb553137c3df936a9f5e1"
+    },
+    {
+      "line": 29,
+      "relation": "positiveCorrelation",
+      "evidence": "in both liver and lung microsomes, the loss of CYP2A5 resulted in significant increases in Michaelis constant (K m) values for the formation of 4-oxo-4-(3-pyridyl)-butanal, representing the reactive intermediate that can lead to the formation of O(6)-methylguanine (O(6)-mG) DNA adducts; however, the gain of CYP2A13 at a fraction of the level of mouse lung CYP2A5 led to recovery of the activity in the lung, but not in the liver.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23917075"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 56,
+      "target": 4,
+      "key": "2470855495e4603f8cd0100284eb416d"
+    },
+    {
+      "line": 32,
+      "relation": "increases",
+      "evidence": "Wood Smoke Enhances Cigarette Smoke-Induced Inflammation by Inducing the Aryl Hydrocarbon Receptor Repressor in Airway Epithelial Cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25137396"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "airway epithelial cells": true
+        },
+        "Cell": {
+          "primary cells": true
+        }
+      },
+      "source": 34,
+      "target": 45,
+      "key": "14bbfbb7af6e90a8227885446730c73a"
+    },
+    {
+      "line": 34,
+      "relation": "increases",
+      "evidence": "Allyl isothiocyanate increases MRP1 function and expression in a human bronchial epithelial cell line. AITC treatment at concentrations of 5-40 μM significantly increased MRP1-dependent efflux in 16HBE14o- cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24672635"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "bronchial epithelial cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tport"
+        }
+      },
+      "source": 7,
+      "target": 42,
+      "key": "c8f3f9758042292c5cfeb88e8cdc4146"
+    },
+    {
+      "line": 10,
+      "relation": "negativeCorrelation",
+      "evidence": "GSTM1 (null genotype) appeared to be a risk factor for lower lung function in smokers living in the vicinity of coal mines.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24809844"
+      },
+      "annotations": {
+        "Disease": {
+          "COPD": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 90,
+      "target": 68,
+      "key": "cdfba91a7e8f911bf2891c9b9cec2546"
+    },
+    {
+      "line": 46,
+      "relation": "association",
+      "evidence": "The number of cells expressing LXRβ was significantly increased in the small airways epithelium of COPD patients compared to NS (p=0.01).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24118845"
+      },
+      "annotations": {
+        "Disease": {
+          "copd": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "small airways epithelium": true
+        }
+      },
+      "source": 90,
+      "target": 75,
+      "key": "84bc07148ecdfc2799dd766f867f7931"
+    },
+    {
+      "line": 47,
+      "relation": "association",
+      "evidence": "The number of LXRα immunoreactive alveolar epithelial cells was significantly increased in COPD patients compared to both NS and S (p=0.01 and p<0.0001 respectively) (Figures 4 and ​and3).3).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24118845"
+      },
+      "annotations": {
+        "Disease": {
+          "copd": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "alveolar epithelial cells": true
+        }
+      },
+      "source": 90,
+      "target": 76,
+      "key": "152f3bfd232a6220735f30dfd7e43b5a"
+    },
+    {
+      "line": 47,
+      "relation": "association",
+      "evidence": "The number of LXRα immunoreactive cells was significantly increased in the small airways epithelium of COPD patients compared to NS (p=0.03) and S (p=0.007) (Figures 2 and ​and3).3).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24118845"
+      },
+      "annotations": {
+        "Disease": {
+          "copd": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "small airways epithelium": true
+        }
+      },
+      "source": 90,
+      "target": 76,
+      "key": "3ebd4dfee9c84cad1cd0ef905e5941d4"
+    },
+    {
+      "line": 49,
+      "relation": "negativeCorrelation",
+      "evidence": "the expressions of mRNA for ...., glutathion S-transferase P1 (GSTP1),.......were significantly decreased in COPD lung tissues compared with those in non-COPD tissues, and most of these decreases were significantly correlated with the degree of airflow limitation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16919984"
+      },
+      "annotations": {
+        "Disease": {
+          "COPD": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 90,
+      "target": 91,
+      "key": "9234fc55219d7073f7e28cd5ea648f24"
+    },
+    {
+      "line": 126,
+      "relation": "negativeCorrelation",
+      "evidence": "The overall results showed that the EPHX1 113 mutant homozygote was significantly associated with an increased risk of COPD (OR, 1.33; 95% CI, 1.06-1.69).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23426996"
+      },
+      "annotations": {
+        "Disease": {
+          "COPD": true
+        },
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 90,
+      "target": 61,
+      "key": "b4591fc41a2ad83fed94c74460355f01"
+    },
+    {
+      "line": 35,
+      "relation": "positiveCorrelation",
+      "evidence": "In line, cigarette smoking status also significantly impacted CBR1 protein levels (CBR1 proteinsmokers = 2.87 ± 1.12 ng/µg versus CBR1 proteinnever-smokers = 1.95± 1.04 ng/µg; p < 0.05; Figure 1B).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22531821"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 31,
+      "target": 51,
+      "key": "7390c95ff64b5c00f508dfb791162182"
+    },
+    {
+      "line": 36,
+      "relation": "decreases",
+      "evidence": "Cigarette smoking markedly represses CYP3A5 content in alveolar macrophages",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15698577"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "alveolar macrophages": true
+        }
+      },
+      "source": 31,
+      "target": 60,
+      "key": "e91668a31569cc14b3cbc5d2e5abc8b3"
+    },
+    {
+      "line": 38,
+      "relation": "increases",
+      "evidence": "Pretreatment of rats with beta-naphthoflavone resulted in a 2- to 3-fold increase in BP diol-epoxide I formation.......in both enriched Clara cells and alveolar type II cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "6303564"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "clara cells": true
+        }
+      },
+      "source": 9,
+      "target": 24,
+      "key": "6235f80dbd93e2f7f3a501e5005fb0fc"
+    },
+    {
+      "line": 40,
+      "relation": "decreases",
+      "evidence": "Subcellular levels of different isoenzymes of glutathione S-transferases (GSTs) and their catalytic activities in rat liver, lung and brain tissues were compared following treatment with phenobarbital (PB), -naphthoflavone (BNF) ............4 days of PB and 10 days of BNF treatments, respectively. The longer duration of treatments had a suppressive effect on the GST activity, particularly in the mitochondrial and microsomal fractions.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9664123"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 9,
+      "target": 88,
+      "key": "942308a2023698c18cbaa8b3c2591a73"
+    },
+    {
+      "line": 41,
+      "relation": "increases",
+      "evidence": "Subcellular levels of different isoenzymes of glutathione S-transferases (GSTs) and their catalytic activities in rat liver, lung and brain tissues were compared following treatment with phenobarbital (PB), -naphthoflavone (BNF) and dexamethasone (DEX).............PB and BNF treatments markedly induced the amount of GST proteins in all the tissues studied with the maximum induction in the cytosol after 4 days of PB and 10 days of BNF treatments, respectively.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9664123"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 9,
+      "target": 88,
+      "key": "67809979a97926ed389f24462fc40e1d"
+    },
+    {
+      "line": 42,
+      "relation": "decreases",
+      "evidence": "betaNF treatment caused significant decreases of lung microsomal PNP (72% and 27% of corn oil control, respectively) and 7-pentoxyresorufin O-deethylation (48% and 17% of corn oil control, respectively) activities, indicating that PNP activity may be catalyzed by P450 isoforms other than CYP2E1 in rat lung",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9890445"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 9,
+      "target": 89,
+      "key": "700e55b2e26f5f68228b307ebb3343d8"
+    },
+    {
+      "line": 43,
+      "relation": "increases",
+      "evidence": "Treatment of the rats with (3-NF greatly increased the AHH activity in all cell fractions, but the trend toward greater activity with increasing Clara cell purity was maintained.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "6601704"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Cell": {
+          "Alveolar type II": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 9,
+      "target": 53,
+      "key": "7993c3789a8a2aecb73908e22f224b54"
+    },
+    {
+      "line": 43,
+      "relation": "increases",
+      "evidence": "Benzo(a)pyrene hydroxylase activity in enriched populations of Clara cells and alveolar type II cells from control and beta-naphthoflavone-pretreated rats...........Following pretreatment of rats with beta-naphthoflavone, aryl hydrocarbon hydroxylase activity increased both in Clara cells and particularly, in alveolar type II cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "7127302"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "alveolar type II cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 9,
+      "target": 53,
+      "key": "d3b2e2e8950ce4a3e431e4608abb17ed"
+    },
+    {
+      "line": 43,
+      "relation": "increases",
+      "evidence": "Large increases of CYP1Al-dependent 7-ethoxyresorufin O-deethylation (EROD) activity occurred with microsomes prepared from the tissues of betaNF-treated animals.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9890445"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 9,
+      "target": 53,
+      "key": "8f80910c8d02b17f836ab1f5fa7b3855"
+    },
+    {
+      "line": 44,
+      "relation": "directlyIncreases",
+      "evidence": "......classic CYP-inducers β-naphthoflavone (β-NF, AhR activator).....",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21970748"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 9,
+      "target": 44,
+      "key": "15abf6cf15a40006a4cb7dc9b3ecf21d"
+    },
+    {
+      "line": 45,
+      "relation": "directlyIncreases",
+      "evidence": "PCB126 (3,3',4,4',5-pentachlorobiphenyl), the most potent AhR agonist among the PCBs.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21970748"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 2,
+      "target": 44,
+      "key": "7a6da5f542b644c5d04542dd026e6337"
+    },
+    {
+      "line": 46,
+      "relation": "association",
+      "evidence": "The number of cells expressing LXRβ was significantly increased in the small airways epithelium of COPD patients compared to NS (p=0.01).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24118845"
+      },
+      "annotations": {
+        "Disease": {
+          "copd": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "small airways epithelium": true
+        }
+      },
+      "source": 75,
+      "target": 90,
+      "key": "6ee770f4d54539621abff8788c5b3b7b"
+    },
+    {
+      "line": 47,
+      "relation": "association",
+      "evidence": "The number of LXRα immunoreactive alveolar epithelial cells was significantly increased in COPD patients compared to both NS and S (p=0.01 and p<0.0001 respectively) (Figures 4 and ​and3).3).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24118845"
+      },
+      "annotations": {
+        "Disease": {
+          "copd": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "alveolar epithelial cells": true
+        }
+      },
+      "source": 76,
+      "target": 90,
+      "key": "b2f7c62480cd41cfdff762d519b101be"
+    },
+    {
+      "line": 47,
+      "relation": "association",
+      "evidence": "The number of LXRα immunoreactive cells was significantly increased in the small airways epithelium of COPD patients compared to NS (p=0.03) and S (p=0.007) (Figures 2 and ​and3).3).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24118845"
+      },
+      "annotations": {
+        "Disease": {
+          "copd": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "small airways epithelium": true
+        }
+      },
+      "source": 76,
+      "target": 90,
+      "key": "89da3ca12de21f584dba5f24bd22a1a9"
+    },
+    {
+      "line": 48,
+      "relation": "directlyIncreases",
+      "evidence": "...AhR agonists increased the expression and activity of MMP-1 via a noncanonical AhR pathway and increased the activity of MMP-2 and MMP-9 in an MMP-1-dependent manner. ...AhR agonists increased the expression of MMP-1 via the activation of mitogen-activated protein kinase (MAPK) pathways by increased cytosolic calcium level and activated calcium/calmodulin-dependent protein kinase II (CaMKII).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24469321"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "HBE135-E6E7": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 23,
+      "target": 44,
+      "key": "57a573e6deb60104ecf3906f87eb5f2c"
+    },
+    {
+      "line": 49,
+      "relation": "negativeCorrelation",
+      "evidence": "the expressions of mRNA for ...., glutathion S-transferase P1 (GSTP1),.......were significantly decreased in COPD lung tissues compared with those in non-COPD tissues, and most of these decreases were significantly correlated with the degree of airflow limitation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16919984"
+      },
+      "annotations": {
+        "Disease": {
+          "COPD": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 91,
+      "target": 90,
+      "key": "ced486fd3d642fa41294d7eace2008c3"
+    },
+    {
+      "line": 51,
+      "relation": "increases",
+      "evidence": "Adult rats showed an opposite response; we observed a time-dependent increase of GSH concentration in the parenchyma that reached significance in PFP24 (P = 0.036)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23065132"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "adult lung parenchyma": true
+        }
+      },
+      "source": 33,
+      "target": 19,
+      "key": "7bbd77a372c05bca9cecfc866cec53c1"
+    },
+    {
+      "line": 52,
+      "relation": "increases",
+      "evidence": "In adult rats, PFP induced GPX1 throughout the lung tissue.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23065132"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 33,
+      "target": 65,
+      "key": "2c4e15b6395ef1883a70eb2427dbb007"
+    },
+    {
+      "line": 53,
+      "relation": "increases",
+      "evidence": "Adult parenchymal GSSG showed a time-dependent increase in response to PFP exposure.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23065132"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "adult lung parenchyma": true
+        }
+      },
+      "source": 33,
+      "target": 11,
+      "key": "37e22e688e5a1d537b3d39f3b47f05ab"
+    },
+    {
+      "line": 56,
+      "relation": "increases",
+      "evidence": "..oral feeding of FKA increased activities of both glutathione S-transferase and quinone reductase in the liver, lung...",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25379458"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 25,
+      "target": 88,
+      "key": "a0e133f90f202b760e69da6bc328e1af"
+    },
+    {
+      "line": 57,
+      "relation": "increases",
+      "evidence": "...oral feeding of FKA increased activities of both glutathione S-transferase and quinone reductase in the liver, lung,...",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25379458"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 25,
+      "target": 74,
+      "key": "841cbcef904030c93a813ebc4a03bf6a"
+    },
+    {
+      "line": 178,
+      "relation": "positiveCorrelation",
+      "evidence": "Microsomal epoxide hydrolase (EPHX1) is an enzyme that\nplays an important role in the metabolism of highly reactive\nepoxide intermediates formed in cigarette smoke. EPHX1 is\nexpressed in several different cell types including hepatocytes\nand bronchial epithelial cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12149538"
+      },
+      "annotations": {
+        "Disease": {
+          "COPD": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "hepatocytes and bronchial epithelial cells.": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 17,
+      "target": 61,
+      "key": "4cca2a4f31b2cb4869e728bdb64175f0"
+    },
+    {
+      "line": 58,
+      "relation": "increases",
+      "evidence": "CYP1A1 induction in lung tissue and CYP1B1 induction in alveolar macrophages are probably mediated by the AHR/ARNT pathway, and these inductions are seen at the mRNA, protein, and catalytic activity levels",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12389869"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "alveolar macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 39,
+      "target": 53,
+      "key": "adfde1483570f860b66e1f2a3ec1d9e2"
+    },
+    {
+      "line": 61,
+      "relation": "increases",
+      "evidence": "CYP1A1 induction in lung tissue and CYP1B1 induction in alveolar macrophages are probably mediated by the AHR/ARNT pathway, and these inductions are seen at the mRNA, protein, and catalytic activity levels",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12389869"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "alveolar macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 39,
+      "target": 53,
+      "key": "c480d4fc54a1f22582250f57ccd6d47a"
+    },
+    {
+      "line": 59,
+      "relation": "increases",
+      "evidence": "CYP1A1 induction in lung tissue and CYP1B1 induction in alveolar macrophages are probably mediated by the AHR/ARNT pathway, and these inductions are seen at the mRNA, protein, and catalytic activity levels",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12389869"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "alveolar macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 39,
+      "target": 55,
+      "key": "464cb3369bbb4d187a4357e2d5ad3d8d"
+    },
+    {
+      "line": 60,
+      "relation": "increases",
+      "evidence": "CYP1A1 induction in lung tissue and CYP1B1 induction in alveolar macrophages are probably mediated by the AHR/ARNT pathway, and these inductions are seen at the mRNA, protein, and catalytic activity levels",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12389869"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "alveolar macrophages": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 39,
+      "target": 55,
+      "key": "a0370ab5166f9ae2e855739003b914fd"
+    },
+    {
+      "line": 74,
+      "relation": "directlyIncreases",
+      "evidence": "Coordination occurs by AhR/Arnt-binding to xenobiotic response elements (XREs, also termed dioxin response elements [DREs]), identified in the 50 upstream region of AhR target genes. The AhR gene battery is arguably one of the best-characterized examples of coordinately regulated genes in eukaryotes",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "7598497"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 39,
+      "target": 44,
+      "key": "db8a4ff42ff3ce87f6bfe49ea9f291ab"
+    },
+    {
+      "relation": "partOf",
+      "source": 44,
+      "target": 39,
+      "key": "64952cb9b626013c1d068b47af27fd36"
+    },
+    {
+      "relation": "partOf",
+      "source": 44,
+      "target": 40,
+      "key": "95db81fcd4a5b69e05225745114a6a23"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 44,
+      "target": 40,
+      "key": "a51e196a01551dee9a0b2deb10214429"
+    },
+    {
+      "line": 22,
+      "relation": "association",
+      "evidence": "Aryl hydrocarbon receptor-mediated Cyp1a1 expression is modulated in a CLOCK-dependent circadian manner.........Clock mutant (Clk/Clk) mice, producing CLOCK protein deficient in transcriptional activity, failed to show significant oscillation in the expression of AhR.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21978865"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 44,
+      "target": 52,
+      "key": "3b6d3ece62d86cba0e7fe60d60943620"
+    },
+    {
+      "line": 76,
+      "relation": "positiveCorrelation",
+      "evidence": "Aryl hydrocarbon receptor-mediated Cyp1a1 expression is modulated in a CLOCK-dependent circadian manner......The expression of AhR and its DNA binding ability in the lungs of wild-type mice showed significant 24-h oscillation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21978865"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 44,
+      "target": 36,
+      "key": "f1389ed3f582d69f0166fb2b949127c6"
+    },
+    {
+      "line": 78,
+      "relation": "increases",
+      "evidence": "...AhR agonists increased the expression and activity of MMP-1 via a noncanonical AhR pathway and increased the activity of MMP-2 and MMP-9 in an MMP-1-dependent manner. ...AhR agonists increased the expression of MMP-1 via the activation of mitogen-activated protein kinase (MAPK) pathways by increased cytosolic calcium level and activated calcium/calmodulin-dependent protein kinase II (CaMKII).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24469321"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "HBE135-E6E7": true
+        }
+      },
+      "source": 44,
+      "target": 48,
+      "key": "ab57d36f8ccf17492a9cef4ba215ac62"
+    },
+    {
+      "line": 101,
+      "relation": "increases",
+      "evidence": "We believe that oxidative stress is associated with the activation of both the Ah receptors and subsequent binding to xenobiotic response elements (XRE), as well as activation of antioxidant response elements (ARE) and Nrf-2 signaling pathways (Kong et al., 2001; Risom et al., 2005; Li and Nel, 2006). Both pathways are important in the gene regulation of the most highly induced marker genes observed in this study ALDH3A1, NQO1, and AKR1C1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19410595"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "bronchial epithelial": true
+        },
+        "Cell": {
+          "cell line": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 44,
+      "target": 48,
+      "key": "5ec5520388ae79d0285b6962d34fe352"
+    },
+    {
+      "line": 96,
+      "relation": "increases",
+      "evidence": "...AhR agonists increased the expression and activity of MMP-1 via a noncanonical AhR pathway and increased the activity of MMP-2 and MMP-9 in an MMP-1-dependent manner. ...AhR agonists increased the expression of MMP-1 via the activation of mitogen-activated protein kinase (MAPK) pathways by increased cytosolic calcium level and activated calcium/calmodulin-dependent protein kinase II (CaMKII).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24469321"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "HBE135-E6E7": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 44,
+      "target": 10,
+      "key": "00e0c73d44030a757df9e4f0ac7f5fc9"
+    },
+    {
+      "line": 97,
+      "relation": "increases",
+      "evidence": "Many, if not all, of these effects are due to alterations in gene expression mediated via the activation of the aryl hydrocarbon receptor (AhR), a member of the basic-helix-loop-helix-PAS (bHLH-PAS) family. Ligand binding to the cytoplasmic AhR complex triggers the dissociation of interacting proteins and results in the subsequent translocation of the l igand-bound AhR to the nucleus, where it heterodimerizes with the aryl hydrocarbon receptor nuclear translocator (ARNT), another member of the bHLH-PAS family. This heterodimer then binds specific DNA elements, termed dioxin response elements (DREs), in the regulatory regions of target genes leading to changes in gene expression that ultimately result in the observed toxic and biochemical responses",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15800033"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "liver": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 44,
+      "target": 49,
+      "key": "1fe3bfc47bfae422a5594d215e6dd52d"
+    },
+    {
+      "line": 98,
+      "relation": "directlyIncreases",
+      "evidence": "The AhR battery of controlled genes includes phase I xenobiotic metabolizing enzymes (CYP1A1, 1A2 and 1B1) and phase II enzymes (NQO1, GSTA2, UGT1A1 and UGT1A6)[11, 16]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18288955"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 44,
+      "target": 81,
+      "key": "f41112b90d804a4496c714451f09817b"
+    },
+    {
+      "line": 99,
+      "relation": "directlyIncreases",
+      "evidence": "The AhR battery of controlled genes includes phase I xenobiotic metabolizing enzymes (CYP1A1, 1A2 and 1B1) and phase II enzymes (NQO1, GSTA2, UGT1A1 and UGT1A6)[11, 16]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18288955"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 44,
+      "target": 84,
+      "key": "01e7da7d6e067886c24c2a9fe34829a7"
+    },
+    {
+      "line": 100,
+      "relation": "directlyIncreases",
+      "evidence": "The AhR battery of controlled genes includes phase I xenobiotic metabolizing enzymes (CYP1A1, 1A2 and 1B1) and phase II enzymes (NQO1, GSTA2, UGT1A1 and UGT1A6)[11, 16]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18288955"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 44,
+      "target": 67,
+      "key": "550d8a1ca415645e3fae0621e0d91420"
+    },
+    {
+      "line": 103,
+      "relation": "directlyIncreases",
+      "evidence": "Effects of tetrahydroxystilbene glucoside on mouse liver cytochrome P450 enzyme expressions",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25350237"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 44,
+      "target": 54,
+      "key": "33500f35e265b66d2e91aab4c94cc3b2"
+    },
+    {
+      "line": 103,
+      "relation": "directlyIncreases",
+      "evidence": "To investigate the effects of tetrahydroxystilbene glucoside (TSG), the main active component of Polygonum multiflorum, on mouse liver cytochrome P450 (Cyp) enzyme protein expressions.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25350237"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 44,
+      "target": 54,
+      "key": "3ed4c270af7bd942efbf9b1e2b976ea3"
+    },
+    {
+      "line": 105,
+      "relation": "increases",
+      "evidence": "There may be bidirectional regulation; recent studies suggest that Nrf2 is an AhR target gene, and the Nrf2 expression is directly modulated by AhR activation [19]�and�[20]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19185948"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 44,
+      "target": 73,
+      "key": "64785394ea04848a865f9eac579381c1"
+    },
+    {
+      "line": 106,
+      "relation": "increases",
+      "evidence": "Interactive effects of inflammatory cytokine and abundant low-molecular-weight PAHs on inhibition of gap junctional intercellular communication, disruption of cell proliferation control, and the AhR-dependent transcription.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25268939"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 44,
+      "target": 45,
+      "key": "b213a8fbe3e08b6e6d97d0600b0ffb2b"
+    },
+    {
+      "line": 107,
+      "relation": "increases",
+      "evidence": "Fingolimod treatment increased mRNA levels of CD39, AHR and CYP1B1 but decreased mRNA expression of IL-17, IL-22 and FOXP3 mRNA in PBMCs.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25411844"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 44,
+      "target": 55,
+      "key": "4304fefe1eca0983a29d775b064ddbf9"
+    },
+    {
+      "relation": "partOf",
+      "source": 49,
+      "target": 39,
+      "key": "cf5c184d629cd0da0f607f3fd6bf7abc"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 49,
+      "target": 39,
+      "key": "716bff8a807e266aaf996da3571badc2"
+    },
+    {
+      "relation": "partOf",
+      "source": 49,
+      "target": 38,
+      "key": "372f7b09218904fa529853a67c8e3be2"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 49,
+      "target": 38,
+      "key": "646100f5ea67d477284076654ffa6400"
+    },
+    {
+      "line": 147,
+      "relation": "increases",
+      "evidence": "Taken together, these results demonstrate that induction of NQO1 by TCDD requires AhR, Arnt and Nrf2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14510636"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "hepatoma cells": true
+        }
+      },
+      "source": 49,
+      "target": 74,
+      "key": "8bc49fe0ca0efa49055ef0554ad9ae51"
+    },
+    {
+      "line": 149,
+      "relation": "directlyIncreases",
+      "evidence": "Recruitment of the ERs and ARNT on the GREB-1 promoter is shown in Fig. 5A. MCF-7 wild type or ER cells were incubated for 45 min with 10 nM E2 or DPN, respectively, alone or in combination with 10 nM TCDD. Subsequently, cells were subjected to ChIP analysis with the indicated antibodies. ARNT is more potent on ER than on ER transcriptional activity",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17991765"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "MCF-7 cell line": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 49,
+      "target": 62,
+      "key": "6432a4c1696408471156bc29fb6a0bb3"
+    },
+    {
+      "line": 150,
+      "relation": "increases",
+      "evidence": "Small heterodimer partner (SHP; NR0B2), an exceptional member of the mammalian nuclear receptor family, directly modulates the activities of conventional nuclear receptors by acting as an inducible and tissue-specific corepressor. Recent progress in dissecting underlying molecular mechanisms, identifying target factors and target genes, and uncovering physiological functions points to the regulatory involvement of SHP in diverse metabolic and intracellular pathways that awaits future clarification. In this review, we carry out a comprehensive survey of all published data and discuss our current understanding of molecular mechanisms and physiological consequences governing SHP action.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16275121"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 49,
+      "target": 44,
+      "key": "71a979ef8339a9b4ca5b376819403f51"
+    },
+    {
+      "line": 62,
+      "relation": "decreases",
+      "evidence": "All of these findings suggest a more direct role for NQO1 in protection against oxidative stress than considered previously. In this work, we demonstrate that NQO1 has the ability to directly scavenge superoxide.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15102952"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 74,
+      "target": 14,
+      "key": "c85dba7cb5ac75617369411a1a93e92f"
+    },
+    {
+      "line": 62,
+      "relation": "decreases",
+      "evidence": "# Ariadne: NQO1 protects cells from oxidative damage by preventing the generation of reactive oxygen species and reducing certain environmental carcinogens, such as nitroaromatic compounds, heterocyclic amines, and possible cigarette smoke condensate. [MolSynthesis]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12694753"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 74,
+      "target": 14,
+      "key": "fe3370440451088e195fd63beee0f844"
+    },
+    {
+      "line": 62,
+      "relation": "decreases",
+      "evidence": "However the cardioprotective properties of NQO1 and GSTA1 are mainly attributed to the antioxidant effect by decreasing ROS and increasing the levels of endogenous antioxidants.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16877260"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 74,
+      "target": 14,
+      "key": "f11a843917dfa185dda4ef31465ef8b7"
+    },
+    {
+      "line": 62,
+      "relation": "decreases",
+      "evidence": "Ariadne: A role of cytosolic NQO1 in protection of cells from oxidative stress, cytotoxicity, and mutagenicity of quinones was established. [Regulation]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10683249"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 74,
+      "target": 14,
+      "key": "cf7ad2e01f9d9d7aa3d475b0930668c3"
+    },
+    {
+      "line": 65,
+      "relation": "increases",
+      "evidence": "Effect of 3-(3'-tert-butyl-4'-hydroxyphenyl)propyl thiosulfonate sodium on expression of GSTP1 and NQO1 genes and protein transcription factors in BALB/c mouse liver.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25110086"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 74,
+      "target": 70,
+      "key": "606448768960f64c037dff329ea44b35"
+    },
+    {
+      "line": 68,
+      "relation": "increases",
+      "evidence": "Generally, induction of CYP1A1, CYP1A2, and CYP1B1 is considered cardiotoxic through generating reactive oxygen species (ROS)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16877260"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 53,
+      "target": 14,
+      "key": "5038e80eb2378e2604cd7f2d262513af"
+    },
+    {
+      "line": 69,
+      "relation": "positiveCorrelation",
+      "evidence": "protein levels of Cyp1a1 and its enzymatic activity in the microsomal fraction of the lungs of wild-type mice also showed significant 24-h oscillation (Fig. 2B and C)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21978865"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 53,
+      "target": 36,
+      "key": "9987d5fe5e244530c73d006f6c1b5518"
+    },
+    {
+      "line": 79,
+      "relation": "increases",
+      "evidence": "We previously described the physicochemical characteristics (particle size, adsorbed polynuclear aromatic hydrocarbons [PAHs], oxygen, and metal content) of butadiene soot (BDS) ....Microarray and qRT-PCR analyses revealed up-regulation of (1) aryl hydrocarbon receptor (AhR)-responsive genes: AhR repressor (Ahrr) and cytochrome P450 IA1 and IB1(Cyp1a1, Cyp1b1);(2) oxidative stress response genes: heme oxygenase 1 (Hmox1), nuclear factor erythroid-derived 2-like 2 (Nfe2l2), NADPH dehydrogenase quinone 1 (Nqo1), and glutathione peroxidase 2 (Gpx2); and (3) pro-inflammatory genes: interleukin-6 (IL-6), C-X-C motif ligand 2 (Cxcl2; analog to human IL-8) and ligand 3 (Cxcl3), and granulocyte chemotactic protein (Cxcl6)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18367723"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 26,
+      "target": 44,
+      "key": "473da0407748c6900d8e447b59e9d559"
+    },
+    {
+      "line": 81,
+      "relation": "increases",
+      "evidence": "Generally, induction of CYP1A1, CYP1A2, and CYP1B1 is considered cardiotoxic through generating reactive oxygen species (ROS)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16877260"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 54,
+      "target": 14,
+      "key": "427cb7bc6c2b9736aa1acb662b4791b7"
+    },
+    {
+      "line": 83,
+      "relation": "increases",
+      "evidence": "Clopidogrel pharmacokinetics and pharmacodynamics vary widely despite exclusion or control of polymorphisms (CYP2C19, ABCB1, PON1), noncompliance, diet, smoking, co-medications (including proton pump inhibitors), and pre-existent variability in platelet function.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23333143"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 20,
+      "target": 60,
+      "key": "58ddbdab7995c4660003c0f0747cba7e"
+    },
+    {
+      "line": 84,
+      "relation": "increases",
+      "evidence": "Short-term effects of nose-only cigarette smoke exposure on glutathione redox homeostasis, cytochrome P450 1A1/2 and respiratory enzyme activities in mice tissues.\nRaza H1, John A, Nemmar A.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23711494"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 20,
+      "target": 53,
+      "key": "cbfd64b59c8e04fb78a58b0ba0785451"
+    },
+    {
+      "line": 84,
+      "relation": "increases",
+      "evidence": "The findings show that nicotine is a potent, rapid but transient inducer of CYP1A1 in the rat lung and suggest that the alkaloid is a likely contributor to CYP1A1 induction by cigarette smoke.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9764926"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        }
+      },
+      "source": 20,
+      "target": 53,
+      "key": "c4ddf97bb082e0911f3bb4bbaca8bf68"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 46,
+      "target": 47,
+      "key": "ae00a4548107fc4e26057263764cfa5c"
+    },
+    {
+      "line": 86,
+      "relation": "increases",
+      "evidence": "Diesel exhaust particles (DEPs) contain polycyclic aromatic hydrocarbons (PAH) that bind to aryl hydrocarbon receptors (AhRs) and decrease sperm production. These data suggest that DEP toxicity may affect the male reproductive system in an AhR-dependent manner.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17827877"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 28,
+      "target": 44,
+      "key": "3e0f102168a8a6b40b60f20d414da8f1"
+    },
+    {
+      "line": 86,
+      "relation": "increases",
+      "evidence": "Diesel exhaust contains numerous toxic substances that show different modes of action such as triggering aryl hydrocarbon receptor (AhR)-mediated pathways",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18497156"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 28,
+      "target": 44,
+      "key": "e67dfbe01371834440a8dffb0ea853fb"
+    },
+    {
+      "line": 87,
+      "relation": "increases",
+      "evidence": "Catalytic activities of CYP1A1, CYP1A2 and CYP1B1, and inducibility of the activities were studied in intact human lung samples (from 23 human subjects) ex vivo. The activities [as measured by ethoxyresorufin O-deethylase (EROD), methoxyresorufin O-demethylase (MROD), and 3-cyano-7-ethoxycoumarin O-deethylase (CECOD)] were present in the lungs and were induced by benzo[a]pyrene (B[a]P) and diesel exhaust particle extract (DEE) but with extensive inter-subject variability.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20435083"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 54,
+      "key": "d09fd929156a2689f81a1c721b845861"
+    },
+    {
+      "line": 88,
+      "relation": "increases",
+      "evidence": "Catalytic activities of CYP1A1, CYP1A2 and CYP1B1, and inducibility of the activities were studied in intact human lung samples (from 23 human subjects) ex vivo. The activities [as measured by ethoxyresorufin O-deethylase (EROD), methoxyresorufin O-demethylase (MROD), and 3-cyano-7-ethoxycoumarin O-deethylase (CECOD)] were present in the lungs and were induced by benzo[a]pyrene (B[a]P) and diesel exhaust particle extract (DEE) but with extensive inter-subject variability.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20435083"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 55,
+      "key": "df85cbb443b12a9e27a5532a05133463"
+    },
+    {
+      "line": 89,
+      "relation": "increases",
+      "evidence": "Nrf2(-/-) mice exposed to low-dose DEP showed significantly increased airway hyperresponsiveness and counts of lymphocytes and eosinophils, together with increased concentrations of IL-12 and IL-13, and thymus and activation-regulated chemokine (TARC), in BAL fluid than wild-type mice. In contrast, expression of antioxidant enzyme genes was significantly higher in wild-type mice than in Nrf2(-/-) mice.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18614404"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 28,
+      "target": 73,
+      "key": "365c5efaeb9e4baff62f3237afbbb946"
+    },
+    {
+      "line": 89,
+      "relation": "increases",
+      "evidence": "Indeed, DEP induced the translocation of Nrf2 to the nucleus and increased protein nuclear binding to the antioxidant responsive element.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12730081"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 28,
+      "target": 73,
+      "key": "19487933a047f647acd8910be23658e3"
+    },
+    {
+      "line": 90,
+      "relation": "increases",
+      "evidence": "Using fluorescent probes, we detected ROS production in bronchial and nasal epithelial cells exposed to native DEP",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12730081"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "source": 28,
+      "target": 14,
+      "key": "1c09c2c6b40bd8334208c9afe52d1a1f"
+    },
+    {
+      "line": 90,
+      "relation": "increases",
+      "evidence": "We found that DEP could produce O2.- and hydrsuperoxide oxyl radical (.OH) in vitro without any biological activating systems. From these results, it was suggested that most parts of DEP toxicity in lungs are due to active oxygen radicals such as O2.- and .OH.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8384149"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 28,
+      "target": 14,
+      "key": "0e994631024023c504fdaa43c5844cc7"
+    },
+    {
+      "line": 91,
+      "relation": "increases",
+      "evidence": "Catalytic activities of CYP1A1, CYP1A2 and CYP1B1, and inducibility of the activities were studied in intact human lung samples (from 23 human subjects) ex vivo. The activities [as measured by ethoxyresorufin O-deethylase (EROD), methoxyresorufin O-demethylase (MROD), and 3-cyano-7-ethoxycoumarin O-deethylase (CECOD)] were present in the lungs and were induced by benzo[a]pyrene (B[a]P) and diesel exhaust particle extract (DEE) but with extensive inter-subject variability.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20435083"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 53,
+      "key": "8b4576bcbc7f6f1ecc2b76b394cb24dc"
+    },
+    {
+      "line": 92,
+      "relation": "increases",
+      "evidence": "Although curcumin alone did not alter the basal levels of aryl hydrocarbon receptor (AhR), it significantly decreased the B[a]P-induced AhR protein levels, its phosphorylation, nuclear translocation and subsequent binding to DNA, thereby decreasing the transactivation of CYP1A.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18321868"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 13,
+      "target": 44,
+      "key": "869e7fed32ac853345cec9a960e744c8"
+    },
+    {
+      "line": 92,
+      "relation": "increases",
+      "evidence": "Polycyclic aromatic hydrocarbon components contribute to the mitochondria-antiapoptotic effect of fine particulate matter on human bronchial epithelial cells via the aryl hydrocarbon receptor",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20663163"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "bronchial epithelial cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 13,
+      "target": 44,
+      "key": "7ff2451ea8fc2ecfdcf503ccb750938a"
+    },
+    {
+      "line": 93,
+      "relation": "increases",
+      "evidence": "Benzo(a)pyrene consistently induced the highest level of aryl hydrocarbon hydroxylase activity in H1355 cells (Fig. 2B).....The aryl hydrocarbon hydroxylase activity assay was used to measure CYP1A1 and CYP1B1 enzyme activity (24)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17200336"
+      },
+      "annotations": {
+        "Disease": {
+          "lung adenocarcinoma": true
+        },
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 13,
+      "target": 55,
+      "key": "d865f5e92de697e40048b7cee64be960"
+    },
+    {
+      "line": 93,
+      "relation": "increases",
+      "evidence": "We have shown that BP and DMBA can comparably induce CYP1B1 in the bone marrow and lung of AhRb mice while this form is not detected in the liver. #BP and DMBA are Polycyclic Aromatic Hydrocarbons #",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15667830"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 13,
+      "target": 55,
+      "key": "50a658700092ff11ac58dbceec753a44"
+    },
+    {
+      "line": 94,
+      "relation": "increases",
+      "evidence": "When mice were treated intraperitoneally with 3, 10 and 30 mg/kg of individual PAHs for 3 consecutive days, the activities of ethoxyresorufin- and methoxyresorufin-O-dealkylases were significantly and differentially induced in both liver and lung. Moreover, other CYP isozyme-associated monooxygenase activities were also induced significantly in liver and lung with characteristic induction profiles. It was found that the activities of CYP 1A-selective EROD and MROD were significantly induced in both liver and lung tissues of treated mice (Figs. 2 to 5).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12785736"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 13,
+      "target": 53,
+      "key": "920354d2d80d7fb4091368c44e2e2f5d"
+    },
+    {
+      "line": 94,
+      "relation": "increases",
+      "evidence": "Benzo(a)pyrene consistently induced the highest level of aryl hydrocarbon hydroxylase activity in H1355 cells (Fig. 2B).....The aryl hydrocarbon hydroxylase activity assay was used to measure CYP1A1 and CYP1B1 enzyme activity (24)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17200336"
+      },
+      "annotations": {
+        "Disease": {
+          "lung adenocarcinoma": true
+        },
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 13,
+      "target": 53,
+      "key": "3c67c07d5bf932c4840148f53cedf870"
+    },
+    {
+      "line": 121,
+      "relation": "decreases",
+      "evidence": "ALDH3A1 and ALDH1A1 protect the corneal epithelium from UV-induced oxidative damage is the detoxification of highly reactive products of LPO, such as 4-hydroxy-2-nonenal (4-HNE) and malondialdehyde (MDA). ALDH3A1 metabolizes 4-HNE (23), whereas ALDH1A1 metabolizes both 4-HNE and MDA (24).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17567582"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Epithelial Cells": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 48,
+      "target": 5,
+      "key": "f1d853de3717e42b5ee9e6e9d1a6d685"
+    },
+    {
+      "line": 121,
+      "relation": "decreases",
+      "evidence": "We found that human lung tumor (A549) cells, which express high levels of ALDH3A1 protein, were significantly less susceptible to the antiproliferative effects of 4-hydroxynonenal compared to human hepatoma HepG2 or SK-HEP-1 cells that lack ALDH3A1 expression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16716894"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 48,
+      "target": 5,
+      "key": "41e585d803076907ff7246f755e2157b"
+    },
+    {
+      "line": 108,
+      "relation": "directlyIncreases",
+      "evidence": "...AhR agonists increased the expression and activity of MMP-1 via a noncanonical AhR pathway and increased the activity of MMP-2 and MMP-9 in an MMP-1-dependent manner. ...AhR agonists increased the expression of MMP-1 via the activation of mitogen-activated protein kinase (MAPK) pathways by increased cytosolic calcium level and activated calcium/calmodulin-dependent protein kinase II (CaMKII).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24469321"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "HBE135-E6E7": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 1,
+      "target": 44,
+      "key": "463deae3f70f5bd63546067103405b97"
+    },
+    {
+      "line": 109,
+      "relation": "increases",
+      "evidence": "As seen in Fig. 4, at 3 hr post-exposure, induction of EROD activity by indirubin and by TCDD was similar: 3.8- and 4.1-fold over the initial level, respectively.....we modified the EROD assay [29], which measures predominantly CYP1A1 enzyme activity [35],",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14637189"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 1,
+      "target": 53,
+      "key": "3a79c56da9d6fad43b782e60ab830a71"
+    },
+    {
+      "line": 112,
+      "relation": "increases",
+      "evidence": "Activation of the AHR signaling pathway by either TCDD or CSC is indicated by the increase in CYP1A1 protein expression relative to the DMSO control at all time points examined. Treatment with either TCDD or CSC resulted in a decrease in protein expression of p15INK4b, p16INK4a and p53 that was most clearly evident at the day 6 time point.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17070097"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "Keratinocytes": true
+        }
+      },
+      "source": 1,
+      "target": 53,
+      "key": "7c644aa9c27b328e9e96d54d2fa88426"
+    },
+    {
+      "line": 110,
+      "relation": "increases",
+      "evidence": "Mitochondrial targeting of cytochrome P450 (CYP) 1B1 and its role in polycyclic aromatic hydrocarbon-induced mitochondrial dysfunction.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24497629"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 1,
+      "target": 55,
+      "key": "1a548d1279048f115510c665d03198c1"
+    },
+    {
+      "line": 111,
+      "relation": "increases",
+      "evidence": "In each set of cells, suspension-mediated expression of CYP1B1 protein peaked within 6?9 h and then gradually declined. By contrast, CYP1B1 protein induced by TCDD in monolayer culture did not decline, but remained at a steady-state level (Fig. 1A).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15364539"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "source": 1,
+      "target": 55,
+      "key": "3115683e4a596eb779a117966e2ce79f"
+    },
+    {
+      "line": 113,
+      "relation": "increases",
+      "evidence": "The order of AHH inducing ability was TCDD greater than PCDFs much greater than PCBs in kidney, lung, and liver.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "6412664"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity"
+      },
+      "source": 1,
+      "target": 45,
+      "key": "2fa3c34014eebe346a154cfc3d451da5"
+    },
+    {
+      "line": 113,
+      "relation": "increases",
+      "evidence": "2,3,7,8-Tetrachlorodibenzo-p-dioxin (TCDD) administration to control animals increased AHH activity by 2-, 15-, and 66.5-fold in liver, lungs and intestinal microsomes, respectively.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "7205629"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity"
+      },
+      "source": 1,
+      "target": 45,
+      "key": "6665fda96cdbb9b20a09ba77a7fb8273"
+    },
+    {
+      "relation": "partOf",
+      "source": 41,
+      "target": 38,
+      "key": "fed303b54f48a65aa5c5d36a7179b954"
+    },
+    {
+      "line": 115,
+      "relation": "decreases",
+      "evidence": "In vitro incubation of rat liver microsomes with each of the compounds--C[curcumin], dmC, bdmC, PITC and PEITC-...Significantly lower concentrations of curcumin(s) than isothiocyanates achieved 50% inhibition of activity of CYP 1A1 and 1A2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11346483"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 15,
+      "target": 54,
+      "key": "e2b7570afa7d42ea6689dae97bf50a0e"
+    },
+    {
+      "line": 116,
+      "relation": "decreases",
+      "evidence": "Curcumin showed a competitive type of inhibition towards CYP1A2, CYP3A4 and CYP2B6. Curcumin inhibited CYP1A2 (IC(50), 40.0 microM), CYP3A4 (IC(50), 16.3 microM), CYP2D6 (IC(50), 50.3 microM), CYP2C9 (IC(50), 4.3 microM) and CYP2B6 (IC(50), 24.5 microM).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17433521"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 15,
+      "target": 57,
+      "key": "7deb89f2803adb45aa3ba9ac5323f414"
+    },
+    {
+      "line": 117,
+      "relation": "decreases",
+      "evidence": "In vitro incubation of rat liver microsomes with each of the compounds--C[curcumin], dmC, bdmC, PITC and PEITC-...Significantly lower concentrations of curcumin(s) than isothiocyanates achieved 50% inhibition of activity of CYP 1A1 and 1A2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11346483"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 15,
+      "target": 53,
+      "key": "32ba5229003e2058e4f1e827dc976412"
+    },
+    {
+      "line": 118,
+      "relation": "directlyDecreases",
+      "evidence": "Detoxication of benzo[a]pyrene-7,8-dione by sulfotransferases (SULTs) in human lung cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22782890"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "human bronchial epithelial cells immortalized": true
+        },
+        "Cell": {
+          "HBEC-KT": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 80,
+      "target": 8,
+      "key": "f30e846e43a3f4a5e57f29ddab5a380c"
+    },
+    {
+      "relation": "partOf",
+      "source": 71,
+      "target": 40,
+      "key": "cd3839a0da03e53ff33af4647cfdee3f"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 71,
+      "target": 40,
+      "key": "eabb8524554bdc3827b3e577c1b4e2c8"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "Behavioral and molecular alterations in mice resulting from chronic treatment with dexamethasone: Relevance to depression.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25433240"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 79,
+      "key": "5007ee45c9e26fe4c0174b261b6c5c72"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "The capacity of GR to transactivate the native angiotensinogen glucocorticoid-responsive element (GRE) using chromatin-IP was not impaired.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12414793"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 79,
+      "key": "a3545ead1a159f634fc14a68fb7bd7b9"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "Lysyl oxidase transcription was stimulated by dexamethasone treatment of cells, but this effect could not be assigned within the approximately 3 kb region tested in reporter gene constructs.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10391127"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 79,
+      "key": "4783134d0891861ba9ab1c4b4c9d3362"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "modulated by the synthetic glucocorticoid dexamethasone Northern blot hybridization and nuclear Run-on transcription assays demonstrated that the increase of t-PA and PAI-1 and the decrease of u-PA were associated with equivalent changes of gene template activity. Modulation of u-PA, t-PA and PAI-1 gene expression by Dex was completely blocked by the glucocorticoid antagonist RU 38486, suggesting that all effects were mediated through the glucocorticoid receptor.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "3126194"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 79,
+      "key": "f092a0f05d44f941aaa5c86626b537a0"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "Treatment of the cells with the beta2-AR agonists, salbutamol or salmeterol, resulted in translocation of GR into the nucleus beginning at 30 min activation of GR induced by the corticosteroids dexamethasone and fluticasone occurred at the same time after treatment (30 min)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9873044"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 79,
+      "key": "a0b3fc69023e2df0e69c5a705d11b90d"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "The following results were observed: (1) dexamethasone induced the expression of SIP24/24p3 in both Balb/c 3T3 and BNL cells, the induction was more significant in BNL cells;",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14566398"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 79,
+      "key": "16bead11d680208e5df01faeddd87a5f"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "Dexamethasone time-dependently increased the levels of HSP27, while having no effect on the levels of HSP70 or HSP90.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12112005"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "osteoblast": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 79,
+      "key": "33b686fbe52a2402f03967913f14ab04"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "We conclude that glucocorticoid receptor rapidly suppresses activity of the AhR/AhR nuclear translocator complex in the CYP1B1 enhancer region, even though lacking glucocorticoid responsive element(s).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9804617"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Cell": {
+          "Fibroblasts": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 79,
+      "key": "91759dbd37c7252747067a98c9d28be9"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "Using bioinformatics and chromatin immunoprecipitation, we identified a GR binding site within the rat Angptl4 sequence. A reporter plasmid containing this site was markedly activated by dexamethasone, indicative of a functional glucocorticoid response element. Dexamethasone treatment also increased histone H4 acetylation and DNase I accessibility in genomic regions near this site, further supporting that it is a glucocorticoid response element.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19628874"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 79,
+      "key": "848720bf947db39e097f1068bdde157c"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "Consequently, CYP3A5 is inducible by dexamethasone and other glucocorticoidsthrough a GR-mediated mechanism, in A549 cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16092727"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 16,
+      "target": 79,
+      "key": "b08e1977ab628eea0b3e3a073a973d8e"
+    },
+    {
+      "line": 125,
+      "relation": "increases",
+      "evidence": "Cytochrome P450 genetic polymorphism in neonatal drug metabolism: role and practical consequences towards a new drug culture in neonatology.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24674673"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 16,
+      "target": 60,
+      "key": "377e5a50f64177dd4102644ec68f5033"
+    },
+    {
+      "line": 126,
+      "relation": "negativeCorrelation",
+      "evidence": "The overall results showed that the EPHX1 113 mutant homozygote was significantly associated with an increased risk of COPD (OR, 1.33; 95% CI, 1.06-1.69).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23426996"
+      },
+      "annotations": {
+        "Disease": {
+          "COPD": true
+        },
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 61,
+      "target": 90,
+      "key": "f865b4d7cc0680e4841dc5c742aa36c2"
+    },
+    {
+      "line": 178,
+      "relation": "positiveCorrelation",
+      "evidence": "Microsomal epoxide hydrolase (EPHX1) is an enzyme that\nplays an important role in the metabolism of highly reactive\nepoxide intermediates formed in cigarette smoke. EPHX1 is\nexpressed in several different cell types including hepatocytes\nand bronchial epithelial cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12149538"
+      },
+      "annotations": {
+        "Disease": {
+          "COPD": true
+        },
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "hepatocytes and bronchial epithelial cells.": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 61,
+      "target": 17,
+      "key": "40c55f64a01ac1a2b422a563fa84e252"
+    },
+    {
+      "line": 128,
+      "relation": "increases",
+      "evidence": "Reactive oxygen species (ROS), either directly or via the formation of lipid peroxidation products, such as 4-hydroxy-2-nonenal, acrolein",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15313424"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 14,
+      "target": 5,
+      "key": "705b069895ea3b764b9e9ee1403a0652"
+    },
+    {
+      "line": 129,
+      "relation": "increases",
+      "evidence": "In human hepatocytes, activation of PXR by\nrifampicin results in a modest induction of AhR and a\nmarked induction of its target genes CYP1A1 and CYP1A2",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12181440"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "hepatocyte": true
+        },
+        "Cell": {
+          "cell line": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 77,
+      "target": 53,
+      "key": "0950ace5370abcb54d2d99f87845ed5d"
+    },
+    {
+      "line": 130,
+      "relation": "increases",
+      "evidence": "Genetic variation in the 3'-UTR of CYP1A2, CYP2B6, CYP2D6, CYP3A4, NR1I2, and UGT2B7: potential effects on regulation by microRNA and pharmacogenomics relevance.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24926315"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 77,
+      "target": 54,
+      "key": "015339f74b5dd6d8e67ba00940690d8f"
+    },
+    {
+      "line": 131,
+      "relation": "increases",
+      "evidence": "PI3-kinase/AKT may serve as a survival pathway against CYP2E1-dependent toxicity.E47 cells (HepG2 cells transfected with human CYP2E1 cDNA) exposed to 25 microM iron-nitrilotriacetate+5 microM arachidonic acid (AA+Fe) developed higher toxicity than C34 cells (HepG2 cells transfected with empty plasmid). Toxicity was associated with increased oxidative stress and activation of calcium-dependent hydrolases calpain and phospholipase A2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16624972"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 58,
+      "target": 14,
+      "key": "e44a89e6bd0c144b98f4a9b22ebbadba"
+    },
+    {
+      "line": 131,
+      "relation": "increases",
+      "evidence": "he expression of pulmonary CYP2E1 mRNA and protein have been established in several studies 17, 19, 21, 29, 37, 42, 43. CYP2E1 is an interesting CYP form because it is the most active CYP enzyme in forming oxygen radicals, causing tissue injury 44",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11816819"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 58,
+      "target": 14,
+      "key": "638d2c6b8cadffcafbd6945013ad99aa"
+    },
+    {
+      "line": 132,
+      "relation": "increases",
+      "evidence": "these results identify the AhR gene battery as the preferential target of PhIP and MeIQx in HepaRG cells",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20816883"
+      },
+      "annotations": {
+        "Disease": {
+          "hepatocellular carcinoma": true
+        },
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 27,
+      "target": 44,
+      "key": "068de27a48d302f0115cc13b65546e10"
+    },
+    {
+      "line": 133,
+      "relation": "increases",
+      "evidence": "PM may exert oxidative stress on cells in the lung by presenting or by stimulating the cells to produce reactive oxygen (ROS)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12899936"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 29,
+      "target": 14,
+      "key": "30087fc271b8baab129143aff5c66f0f"
+    },
+    {
+      "line": 134,
+      "relation": "increases",
+      "evidence": "levels of the UPR-related chaperone Hsp90 were significantly upregulated and increased with concentration with both PM size fractions",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19675143"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "BEC (bronchoepithelial) cells": true
+        }
+      },
+      "source": 29,
+      "target": 71,
+      "key": "516a56f9fb913e9aaaf2ee83f51df00c"
+    },
+    {
+      "line": 136,
+      "relation": "increases",
+      "evidence": "Air pollution particulate matter (PM2.5)-induced gene expression of volatile organic compound and/or polycyclic aromatic hydrocarbon-metabolizing enzymes in an in vitro coculture lung model.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18952161"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 29,
+      "target": 59,
+      "key": "cd16ef0a6c47097d8ab87c8c195da497"
+    },
+    {
+      "line": 138,
+      "relation": "increases",
+      "evidence": "Health Risk Assessment for Air Pollutants: Alterations in Lung and Cardiac Gene Expression in Mice Exposed to Milano Winter Fine Particulate Matter (PM2.5)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25296036"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 29,
+      "target": 53,
+      "key": "9a97c1799b70aacf09d60f4cffeef512"
+    },
+    {
+      "line": 139,
+      "relation": "increases",
+      "evidence": "Polycyclic aromatic hydrocarbon components contribute to the mitochondria-antiapoptotic effect of fine particulate matter on human bronchial epithelial cells via the aryl hydrocarbon receptor",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "20663163"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "bronchial epithelial cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 29,
+      "target": 44,
+      "key": "9da605127325ace1d15948ab61d303e1"
+    },
+    {
+      "line": 141,
+      "relation": "increases",
+      "evidence": "Environmentally persistent free radicals inhibit cytochrome P450 activity in rat liver microsomes.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24713513"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 29,
+      "target": 58,
+      "key": "3d894e631e60445827b927be84a73991"
+    },
+    {
+      "line": 142,
+      "relation": "decreases",
+      "evidence": "Exposure of Clara cells to 5 _M H2O2/min led to the inactivation of endogenous Nat2 activity",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19248797"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "clara cells": true
+        }
+      },
+      "source": 12,
+      "target": 72,
+      "key": "fd4e957f40c78df946375e8a2e1dd8d9"
+    },
+    {
+      "line": 143,
+      "relation": "increases",
+      "evidence": "Oxidants such as H2O2 can induce gene transcription of DT-diaphorase provide especially intriguing reasons to examine the possibility that lung DT-diaphorase could have an important antioxidant enzyme role versus pulmonary O2 toxicity during exposure to hyperoxia",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8461317"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 12,
+      "target": 74,
+      "key": "fc6a8059d42f9df90f7cf314beac2913"
+    },
+    {
+      "line": 146,
+      "relation": "decreases",
+      "evidence": "We determined the expression of GSTP1 protein (enzyme-linked immunosorbent assay), the major GST in HT29, GSTP1 mRNA (Northern blotting), GST activity, intracellular glutathione, and total protein. Our results show that GSTP1 mRNA, GSTP1 protein, GST activity, and total protein were increased (1.2- to 2.5-fold) and glutathione levels were maintained after 24-72 h of incubation with 4 mM butyrate. Moreover, a marked reduction of HNE-induced genotoxicity was caused by preincubation with butyrate.  In conclusion, butyrate enhances expression of GST and other proteins in both cell lines, which leads to an enhanced chemoprotection, reducing the impact of HNE genotoxicity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12094619"
+      },
+      "annotations": {
+        "Disease": {
+          "colorectal adenoma": true
+        },
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 70,
+      "target": 5,
+      "key": "b5338a4769669f4cce358b965bed7e86"
+    },
+    {
+      "line": 153,
+      "relation": "increases",
+      "evidence": "Persistent induction of hepatic and pulmonary phase II enzymes by 3-methylcholanthrene in rats. Figure1 Effect of MC on CYP1B1 apoprotein. MC did not elicit sustained induction of CYP1B1 beyond day 1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18203689"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "lung microsome": true
+        }
+      },
+      "source": 3,
+      "target": 55,
+      "key": "de346c49c2e114b2507795834df77edf"
+    },
+    {
+      "line": 154,
+      "relation": "increases",
+      "evidence": "Persistent induction of hepatic and pulmonary phase II enzymes by 3-methylcholanthrene in rats. The major finding was that MC persistently induced (3- to 10-fold) the expression of several phase II enzymes, including GST-alpha, NQO1, UGT1A1, ALDH, and epoxide hydrolase in both tissues for up to 28 days.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18203689"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "lung microsome": true
+        }
+      },
+      "source": 3,
+      "target": 61,
+      "key": "336a76bc74718142172255a2f3f31e29"
+    },
+    {
+      "line": 155,
+      "relation": "increases",
+      "evidence": "Persistent induction of hepatic and pulmonary phase II enzymes by 3-methylcholanthrene in rats.\nTABLE 2\nEFFECT OF 3-METHYLCHOLANTHRENE ON PULMONARY PHASE II ENZYME EXPRESSION",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18203689"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "lung microsome": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 3,
+      "target": 81,
+      "key": "f4650929d77efc0ce6e62d6fe46d7674"
+    },
+    {
+      "line": 156,
+      "relation": "increases",
+      "evidence": "Persistent induction of hepatic and pulmonary phase II enzymes by 3-methylcholanthrene in rats. \nTABLE 2\nEFFECT OF 3-METHYLCHOLANTHRENE ON PULMONARY PHASE II ENZYME EXPRESSION",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18203689"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "lung microsome": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 3,
+      "target": 66,
+      "key": "379092177a83f4b60aaa3547e266c806"
+    },
+    {
+      "line": 157,
+      "relation": "increases",
+      "evidence": "Persistent induction of hepatic and pulmonary phase II enzymes by 3-methylcholanthrene in rats.\n\nTABLE 2\nEFFECT OF 3-METHYLCHOLANTHRENE ON PULMONARY PHASE II ENZYME EXPRESSION",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18203689"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "lung microsome": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 3,
+      "target": 86,
+      "key": "cec9ef2533ef3eff8a1185ed7df5e5c5"
+    },
+    {
+      "line": 158,
+      "relation": "increases",
+      "evidence": "Persistent induction of hepatic and pulmonary phase II enzymes by 3-methylcholanthrene in rats.\n\nTable 2 EFFECT OF 3-METHYLCHOLANTHRENE ON PULMONARY PHASE II ENZYME EXPRESSION",
+      "citation": {
+        "db": "PubMed",
+        "db_id": ""
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "lung microsome": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 3,
+      "target": 74,
+      "key": "f4725e3b7de33d96d61ad3be9307bfdb"
+    },
+    {
+      "line": 159,
+      "relation": "increases",
+      "evidence": "Persistent induction of hepatic and pulmonary phase II enzymes by 3-methylcholanthrene in rats.\nTABLE 2\nEFFECT OF 3-METHYLCHOLANTHRENE ON PULMONARY PHASE II ENZYME EXPRESSION",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18203689"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "lung microsome": true
+        }
+      },
+      "source": 3,
+      "target": 74,
+      "key": "e97211eb523928fa0d1d51200e5035c0"
+    },
+    {
+      "line": 162,
+      "relation": "increases",
+      "evidence": "These studies suggest that the Nrf2 pathway maybe involved in the increases in MRP1 expression that were observed in the present study. More studies are necessary to evaluate the role of Nrf2 and putative AREs in the induction of MRP1 by AITC",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24672635"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "bronchial epithelial cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 73,
+      "target": 42,
+      "key": "36db77bfdd8fa6c364f9b69775f40808"
+    },
+    {
+      "line": 163,
+      "relation": "increases",
+      "evidence": "The Transcriptional Response to Oxidative Stress during Vertebrate Development: Effects of tert-Butylhydroquinone and 2,3,7,8-Tetrachlorodibenzo-p-Dioxin.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25402455"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 73,
+      "target": 74,
+      "key": "603d91eeb882ce517f9db5c66bdc855d"
+    },
+    {
+      "line": 164,
+      "relation": "increases",
+      "evidence": "TCDD dysregulation of 13 AHR-target genes in rat liver.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24355419"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 73,
+      "target": 48,
+      "key": "141e9c3d8f3b0765f3c350ca36f3846f"
+    },
+    {
+      "line": 165,
+      "relation": "increases",
+      "evidence": "Even subjects with the lowest levels of nicotine and cotinine had enhanced activity of biological pathways involved in the metabolism of xenobiotics by cytochrome P450 and arachidonic acid",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21465741"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 0,
+      "target": 37,
+      "key": "2cb780044adfaf16004ac00b4f8394f9"
+    },
+    {
+      "line": 166,
+      "relation": "increases",
+      "evidence": "The ubiquitous nature of protein phosphorylation makes it challenging to map kinase-substrate relationships, which is a necessary step toward defining signaling network architecture",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "17486086"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 0,
+      "target": 47,
+      "key": "6e2f85283fb062f999c15d36685ec71f"
+    },
+    {
+      "line": 171,
+      "relation": "directlyDecreases",
+      "evidence": "Aryl hydrocarbon receptor repressor (AhRR) suppressed, in a ligand independent manner, the ability of estrogen receptor alpha (ERalpha) to enhance the transcription of heterologous estrogen-responsive reporter plasmids in transient transfection assays",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18565642"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 45,
+      "target": 62,
+      "key": "a102aae767c7a9e6bfa62dbbd167d8d6"
+    },
+    {
+      "line": 172,
+      "relation": "decreases",
+      "evidence": "Although the 3-MC-induced AhR-mediated induction of luciferase activity was observed in all cell lines, a decreased response was observed with variant cells compared to MCF-7 cells (Fig. 1B). The higher the expression level of AhRR, the lower the luciferase activity, among the 3 employed cell lines.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16755028"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 45,
+      "target": 44,
+      "key": "1a70056f0386871394661dd65b1e10a7"
+    },
+    {
+      "line": 172,
+      "relation": "decreases",
+      "evidence": "Transfection of AhRR expression vector into HeLa cells, together with the expression vectors of AhR and Arnt and the reporter gene pX4TK–Luc, repressed luciferase expression originally induced by AhR and Arnt plasmids in a dose-dependent fashion (Fig. 3A, lanes 3–5). This repression was reversed by further addition of AhR expression vector (data not shown). These results indicate that AhRR functions as a competitive repressor of AhR.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9887096"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 45,
+      "target": 44,
+      "key": "210d06d5c0327cbf6c04098b15bd3ee5"
+    },
+    {
+      "line": 174,
+      "relation": "increases",
+      "evidence": "The results suggest that BRCA1 stabilizesARNTwhen cells are under TCDD stress (Fig. 8C). Relatively unstable ARNT was detected in cells transfected with pKD-BRCA1 (Fig. 8D)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16567799"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "T47D cell line": true
+        }
+      },
+      "source": 50,
+      "target": 49,
+      "key": "1e8197ece8c68eb2c2fda0570a9e2eff"
+    },
+    {
+      "line": 175,
+      "relation": "increases",
+      "evidence": "Finally, BRCA1 stimulated antioxidant response element-driven transcriptional activity and enhanced the activity of the antioxidant response transcription factor nuclear factor erythroid-derived 2 like 2 [also called NRF2 (NFE2L2)].",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15520196"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 50,
+      "target": 73,
+      "key": "4de0122c43119ae6ed9c3922e8d481a0"
+    },
+    {
+      "line": 176,
+      "relation": "directlyDecreases",
+      "evidence": "The BRCA1 gene was previously found to inhibit the transcriptional activity of the estrogen receptor [ER-alpha] in human breast and prostate cancer cell lines. The BRCA1 protein was found to associate with ER-alpha in vivo and to bind to ER-alpha in vitro, by an estrogen-independent interaction that mapped to the amino-terminal region of BRCA1 (ca. amino acid 1-300) and the conserved carboxyl-terminal activation function [AF-2] domain of ER-alpha.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11244506"
+      },
+      "annotations": {
+        "Disease": {
+          "Neoplasms": true
+        },
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 50,
+      "target": 62,
+      "key": "4ee0eca34bbca24ebbb81a1b7faa20c9"
+    },
+    {
+      "line": 176,
+      "relation": "directlyDecreases",
+      "evidence": "that BRCA1 mediates ligand-independent transcriptional repression of the estrogen receptor alpha (ERalpha), a principal determinant of the growth, differentiation, and normal functional status of breasts and ovaries. Ectopic expression in Brca1-deficient cells of wild-type BRCA1, but not clinically validated BRCA1 missense mutants, restored ligand-independent repression of ERalpha in a manner dependent upon apparent histone deacetylase activity. In estrogen-dependent human breast cancer cells, chromatin immunoprecipitation analysis revealed the association of BRCA1 with ERalpha at endogenous estrogen-response elements before, but not after estrogen stimulation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11493692"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 50,
+      "target": 62,
+      "key": "eb03edd74fad6f05b97542834eb7c9fa"
+    },
+    {
+      "line": 176,
+      "relation": "directlyDecreases",
+      "evidence": "The BRCA1 protein was found to associate with ER-alpha in vivo and to bind to ER-alpha in vitro, by an estrogen-independent interaction that mapped to the amino-terminal region of BRCA1 (ca. amino acid 1-300) and the conserved carboxyl-terminal activation function [AF-2] domain of ER-alpha",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11244506"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 50,
+      "target": 62,
+      "key": "00bc89644808fe8c95760694c0aaacd3"
+    },
+    {
+      "line": 181,
+      "relation": "increases",
+      "evidence": "Generally, induction of CYP1A1, CYP1A2, and CYP1B1 is considered cardiotoxic through generating reactive oxygen species (ROS)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16877260"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 55,
+      "target": 14,
+      "key": "7257352d35d6c963a7f282585f6f25aa"
+    },
+    {
+      "line": 180,
+      "relation": "increases",
+      "evidence": "Pharmacogenetic analysis of pediatric patients with acute lymphoblastic leukemia: a possible association between survival rate and ITPA polymorphism.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23029095"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 79,
+      "target": 60,
+      "key": "4ffcca0efad747dfd21238e957a82a1b"
+    },
+    {
+      "line": 180,
+      "relation": "increases",
+      "evidence": "Overexpression of CYP3A5 attenuates inducibility and activity of CYP3A4 in HepG2 cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25434721"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 79,
+      "target": 60,
+      "key": "c195f4918293d0c35ae488dc7eff9261"
+    },
+    {
+      "line": 183,
+      "relation": "increases",
+      "evidence": "Suppression of AHR expression using siRNA (Figure 3A) reduced CSE-induced ALDH3A1 expression by 78% (Figure 3B). These data suggest that AHR mediates upregulation of ALDH3A1 in response to CSE exposure.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24316006"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "bronchial epithelial": true
+        },
+        "Cell": {
+          "HBEC2": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 30,
+      "target": 44,
+      "key": "49c79a7970534632a4937596031d8e7c"
+    },
+    {
+      "line": 184,
+      "relation": "increases",
+      "evidence": "In HBEC2 cells, siRNA targeting ALDH3A1 prevented the CSE-induced increase in ALDH enzymatic activity (Figure 5C)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24316006"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "bronchial epithelial cells": true
+        },
+        "Cell": {
+          "primary cell lines": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 48,
+      "key": "ed17fca8d83571813698458055141a48"
+    },
+    {
+      "line": 184,
+      "relation": "increases",
+      "evidence": "Cigarette smoke extract-induced ALDH3A1 protein accumulation is accompanied by increased ALDH activity. Fig2.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24316006"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "bronchial epithelial cells": true
+        },
+        "Cell": {
+          "primary cell lines": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 48,
+      "key": "aff31ff158f1431c9b3582ca83aa5736"
+    },
+    {
+      "line": 185,
+      "relation": "increases",
+      "evidence": "Primary human bronchial epithelial cells exposed to cigarette smoke extract exhibit a robust increase in ALDH3A1. Fig1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "24316006"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "bronchial epithelial cells": true
+        },
+        "Cell": {
+          "primary cell lines": true
+        }
+      },
+      "source": 30,
+      "target": 48,
+      "key": "5fee7dc660d5772f5b0ba92c88db26aa"
+    },
+    {
+      "line": 186,
+      "relation": "increases",
+      "evidence": "Melatonin attenuates neutrophil inflammation and mucus secretion in cigarette smoke-induced chronic obstructive pulmonary diseases via the suppression of Erk-Sp1 signaling.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25388990"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tport"
+        }
+      },
+      "source": 30,
+      "target": 43,
+      "key": "eee193604c936d7a3c0e1933a2fa51d0"
+    },
+    {
+      "line": 186,
+      "relation": "increases",
+      "evidence": "CSC promotes chemoresistance via Akt-mediated regulation of ABCG2 activity",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23144836"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung cancer and head and neck cancer cell lines": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tport"
+        }
+      },
+      "source": 30,
+      "target": 43,
+      "key": "bdcf1db8abfbd61909dcbaf473a4226d"
+    },
+    {
+      "line": 187,
+      "relation": "increases",
+      "evidence": "CYP1A1/1B1 activity was recorded in NHTBE (D1 ? 0.36 ± 0.15; D2 ? 0.27 ± 0.08; D3 ? 1.65 ± 0.24; RLU/mg protein/min)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21376804"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "bronchial epithelial cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 53,
+      "key": "0186e7e73fe007ac1a3cb649394f415f"
+    },
+    {
+      "line": 188,
+      "relation": "increases",
+      "evidence": "CYP1A1/1B1 activity was recorded in NHTBE (D1 ? 0.36 ± 0.15; D2 ? 0.27 ± 0.08; D3 ? 1.65 ± 0.24; RLU/mg protein/min)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21376804"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "bronchial epithelial cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 30,
+      "target": 55,
+      "key": "fcff0271280af311b2ac168208a70c72"
+    },
+    {
+      "line": 190,
+      "relation": "decreases",
+      "evidence": "CSE induced a time- and dose-dependent increase in expression of HO-1, ...., in two different primary human lung fibroblast strains, ..... This induction of HO-1 paralleled a decrease in intracellular GSH, and a sustained reduction in GSH resulted in a dramatic increase in HO-1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18689604"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "fetal lung fibroblast": true
+        },
+        "Cell": {
+          "HFL-1": true
+        }
+      },
+      "source": 30,
+      "target": 19,
+      "key": "b163abee7f7dff49eefe453e83a1a872"
+    },
+    {
+      "line": 190,
+      "relation": "decreases",
+      "evidence": "CSE induced a time- and dose-dependent increase in expression of HO-1, ...... in two different primary human lung fibroblast strains, ....... This induction of HO-1 paralleled a decrease in intracellular GSH, and a sustained reduction in GSH resulted in a dramatic increase in HO-1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18689604"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung fibroblast": true
+        },
+        "Cell": {
+          "l828": true
+        }
+      },
+      "source": 30,
+      "target": 19,
+      "key": "83852ea30ba29aeb5e567eff329dca6f"
+    },
+    {
+      "line": 190,
+      "relation": "decreases",
+      "evidence": "CSE induced a dose-dependent decrease in GSH",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18689604"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung fibroblast": true
+        },
+        "Cell": {
+          "l828": true
+        }
+      },
+      "source": 30,
+      "target": 19,
+      "key": "f2fae202c69ea3978c3b36911aa73ebb"
+    },
+    {
+      "line": 192,
+      "relation": "increases",
+      "evidence": "Aryl hydrocarbon receptor-mediated Cyp1a1 expression is modulated in a CLOCK-dependent circadian manner........ A single intraperitoneal injection of benzo[Î±]pyrene, a ligand of AhR, induced the expression of Cyp1a1 in the lungs of wild-type mice, but the induction varied depending on the benzo[Î±]pyrene injection time.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21978865"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 8,
+      "target": 53,
+      "key": "835ae131c70eb098d4dd6f429e33bd01"
+    },
+    {
+      "line": 193,
+      "relation": "increases",
+      "evidence": "...we detected 3.0-fold (p<0.0001) induction of CBR1 mRNA and 1.5-fold (p<0.01) induction of CBR1 protein levels in cells of the human lung cancer cell line A549 incubated with 2.5 μM B[a]P for 24h.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22531821"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        },
+        "Cell": {
+          "A549": true
+        }
+      },
+      "source": 8,
+      "target": 51,
+      "key": "d7574c55968f26c14e441cbf5fe22669"
+    },
+    {
+      "line": 195,
+      "relation": "increases",
+      "evidence": "Based on expression levels, catalytic efficiency, and the fact that the lung cells only produce M1, it is concluded that the major isoform that can intercept benzo[a]pyrene-7,8-catechol is SULT1A1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22782890"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 8,
+      "target": 80,
+      "key": "6ca55a83363519d5840f8efee62df4d3"
+    },
+    {
+      "line": 196,
+      "relation": "directlyIncreases",
+      "evidence": "AHR2-mediated transcriptomic responses underlying the synergistic cardiac developmental toxicity of PAHs",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25412620"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 8,
+      "target": 44,
+      "key": "2ed39d123e75450c869ee44818000687"
+    },
+    {
+      "line": 196,
+      "relation": "directlyIncreases",
+      "evidence": "that in human hepatoma HepG2 cells the UGT1A1 gene is also inducible with aryl hydrocarbon receptor (Ah receptor) ligands such as 2,3,7,8-tetrachlodibenzo-p-dioxin (TCDD), beta-naphthoflavone, and benzo[a]pyrene metabolites.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12566446"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "tscript"
+        }
+      },
+      "source": 8,
+      "target": 44,
+      "key": "93223af54c960123f05d32ff5ec452af"
+    },
+    {
+      "line": 197,
+      "relation": "increases",
+      "evidence": "Antioxidant soybean tar Glyteer rescues T-helper-mediated downregulation of filaggrin expression via aryl hydrocarbon receptor.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25482884"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 8,
+      "target": 74,
+      "key": "8dd2078844f19183fffe91657bbd2911"
+    },
+    {
+      "line": 197,
+      "relation": "increases",
+      "evidence": "Correlation between CYP1A1 transcript, protein level, enzyme activity and DNA adduct formation in normal human mammary epithelial cell strains exposed to benzo[a]pyrene.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25245543"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 8,
+      "target": 74,
+      "key": "4cc00831846688b8a30211ef2b012bf7"
+    },
+    {
+      "line": 198,
+      "relation": "increases",
+      "evidence": "Characterization of CYP2B6 in A CYP2B6-Humanized Mouse Model: Inducibility in the Liver by Phenobarbital and Dexamethasone and Role in Nicotine Metabolism in vivo.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "25409894"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 21,
+      "target": 57,
+      "key": "556b16d13554c87927210536c62ad817"
+    },
+    {
+      "line": 201,
+      "relation": "increases",
+      "evidence": "Phenobarbital also produced a very weak induction of CYP2B6 both at mRNA and activity level (Fig. 6).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16092727"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 21,
+      "target": 57,
+      "key": "796eb4c43a8b0bde94f42a3d549b62cb"
+    },
+    {
+      "line": 199,
+      "relation": "decreases",
+      "evidence": "Subcellular levels of different isoenzymes of glutathione S-transferases (GSTs) and their catalytic activities in rat liver, lung and brain tissues were compared following treatment with phenobarbital (PB), -naphthoflavone (BNF) ............4 days of PB and 10 days of BNF treatments, respectively. The longer duration of treatments had a suppressive effect on the GST activity, particularly in the mitochondrial and microsomal fractions.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9664123"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 21,
+      "target": 88,
+      "key": "c2401c264af56d85c4e73099777f46af"
+    },
+    {
+      "line": 200,
+      "relation": "increases",
+      "evidence": "Subcellular levels of different isoenzymes of glutathione S-transferases (GSTs) and their catalytic activities in rat liver, lung and brain tissues were compared following treatment with phenobarbital (PB), -naphthoflavone (BNF) and dexamethasone (DEX)........PB and BNF treatments markedly induced the amount of GST proteins in all the tissues studied with the maximum induction in the cytosol after 4 days of PB and 10 days of BNF treatments, respectively",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "9664123"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 21,
+      "target": 88,
+      "key": "1917ade827a7d4e19f5d598a66ceac7f"
+    },
+    {
+      "line": 29,
+      "relation": "positiveCorrelation",
+      "evidence": "in both liver and lung microsomes, the loss of CYP2A5 resulted in significant increases in Michaelis constant (K m) values for the formation of 4-oxo-4-(3-pyridyl)-butanal, representing the reactive intermediate that can lead to the formation of O(6)-methylguanine (O(6)-mG) DNA adducts; however, the gain of CYP2A13 at a fraction of the level of mouse lung CYP2A5 led to recovery of the activity in the lung, but not in the liver.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23917075"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 4,
+      "target": 56,
+      "key": "5ba076d787659563b5e353be75e4cc26"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 4,
+      "target": 31,
+      "key": "5d79514ae9022339e71eb7a2378b53d1"
+    }
+  ]
+}

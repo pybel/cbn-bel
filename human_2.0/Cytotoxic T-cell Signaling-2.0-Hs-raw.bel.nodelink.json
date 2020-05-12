@@ -1,0 +1,1675 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.14.10-dev",
+    "document_metadata": {
+      "name": "Cytotoxic T-cell Signaling-2.0-Hs",
+      "authors": "Causal Biological Networks Database",
+      "licenses": "\t        Please cite:\t\t        - www.causalbionet.com\t        - https://bionet.sbvimprover.com\t\t        as well as any relevant publications.\t\t        The sbv IMPROVER project, the website and the Symposia are part of a collaborative project\t        designed to enable scientists to learn about and contribute to the development of a new crowd\t        sourcing method for verification of scientific data and results. The current challenges, website\t        and biological network models were developed and are maintained as part of a collaboration among\t        Selventa, OrangeBus and ADS. The project is led and funded by Philip Morris International. For more\t        information on the focus of Philip Morris International’s research, please visit www.pmi.com.\t        ",
+      "version": "2.0",
+      "contact": "CausalBiologicalNetworks.RD@pmi.com",
+      "description": "The Cytotoxic T-cell Signaling network depicts the causal mechanisms that are activated in CD8+ cytotoxic T-cells following T-cell receptor (TCR) ligation. Expanding on these processes, the network highlights the chemokines secreted by macrophages and dendritic cells, as well as the cognate T-cell receptors, involved in mediating T-cell recruitment to compromised lung tissue during COPD development."
+    },
+    "namespace_url": {
+      "HGNC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hgnc-human-genes/hgnc-human-genes-20150601.belns",
+      "GOBP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process/go-biological-process-20150601.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20150601.belns",
+      "GOCC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component/go-cellular-component-20170511.belns",
+      "MESHPP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-processes/mesh-processes-20150601.belns",
+      "MGI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mgi-mouse-genes/mgi-mouse-genes-20150601.belns",
+      "RGD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/rgd-rat-genes/rgd-rat-genes-20150601.belns",
+      "CHEBI": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20150601.belns",
+      "SCHEM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-chemicals/selventa-legacy-chemicals-20150601.belns",
+      "EGID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/entrez-gene-ids/entrez-gene-ids-20150601.belns",
+      "MESHD": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-diseases/mesh-diseases-20150601.belns",
+      "SDIS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-legacy-diseases/selventa-legacy-diseases-20150601.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20150601.belns",
+      "MESHC": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-chemicals/mesh-chemicals-20170511.belns",
+      "GOBPID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-biological-process-ids/go-biological-process-ids-20150601.belns",
+      "GOCCID": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go-cellular-component-ids/go-cellular-component-ids-20150601.belns",
+      "MESHCS": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh-cell-structures/mesh-cell-structures-20150601.belns"
+    },
+    "namespace_pattern": {},
+    "annotation_url": {
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20150601.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20150601.belanno",
+      "Species": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/species-taxonomy-id/species-taxonomy-id-20170511.belanno",
+      "Tissue": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20150601.belanno"
+    },
+    "annotation_pattern": {},
+    "annotation_list": {}
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "CHEBI",
+        "name": "acrolein"
+      },
+      "id": "7bc12257f749d5fd14db42e1f42a897a",
+      "bel": "a(CHEBI:acrolein)"
+    },
+    {
+      "function": "Abundance",
+      "concept": {
+        "namespace": "SCHEM",
+        "name": "Calcium"
+      },
+      "id": "7ef86a69594b2c5229123219d90a9d60",
+      "bel": "a(SCHEM:Calcium)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "CD8-positive, alpha-beta T cell proliferation"
+      },
+      "id": "8362813e89f375e6fbf0a69bdb9d3c91",
+      "bel": "bp(GOBP:\"CD8-positive, alpha-beta T cell proliferation\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "T cell activation"
+      },
+      "id": "7e473ed4268222ee2653bc4a5cf05f0b",
+      "bel": "bp(GOBP:\"T cell activation\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "concept": {
+        "namespace": "GOBP",
+        "name": "lymphocyte chemotaxis"
+      },
+      "id": "8269c163af9a75e4d77cdd195a56ee46",
+      "bel": "bp(GOBP:\"lymphocyte chemotaxis\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "SCOMP",
+        "name": "Calcineurin Complex"
+      },
+      "id": "bf1e1ca7cb8d51a800924e79524f6998",
+      "bel": "complex(SCOMP:\"Calcineurin Complex\")"
+    },
+    {
+      "function": "Complex",
+      "concept": {
+        "namespace": "SCOMP",
+        "name": "T Cell Receptor Complex"
+      },
+      "id": "ec7d9cfb6e6f5062319b6a9a43eaa890",
+      "bel": "complex(SCOMP:\"T Cell Receptor Complex\")"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CD8A"
+          },
+          "id": "0c1d0b9490a59ce7f64432b43508173b",
+          "bel": "p(HGNC:CD8A)"
+        },
+        {
+          "function": "Protein",
+          "concept": {
+            "namespace": "HGNC",
+            "name": "CD8B"
+          },
+          "id": "5ab154553e5675acc5612d618d3c75d4",
+          "bel": "p(HGNC:CD8B)"
+        }
+      ],
+      "id": "9714668f9d90c72968e9627aa9f6b28d",
+      "bel": "complex(p(HGNC:CD8A), p(HGNC:CD8B))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "EGID",
+        "name": "21577"
+      },
+      "id": "47d02b1a6c29d1cd52130b050a96dd47",
+      "bel": "p(EGID:21577)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "BCL2"
+      },
+      "id": "fc778e9de9f9cebd455edd38ebaf2874",
+      "bel": "p(HGNC:BCL2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCL3"
+      },
+      "id": "5cf35694ebdc37f754621a1d29763a9c",
+      "bel": "p(HGNC:CCL3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCR3"
+      },
+      "id": "6e2f8d5c3aa966ae3d0cce72b37c02ff",
+      "bel": "p(HGNC:CCR3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CCR5"
+      },
+      "id": "2e4b13732bf9dbd6951295cd4f9b6443",
+      "bel": "p(HGNC:CCR5)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CD28"
+      },
+      "id": "1bc9ea1fe1d63f088d8acfb0cc8f3f82",
+      "bel": "p(HGNC:CD28)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CD8A"
+      },
+      "id": "0c1d0b9490a59ce7f64432b43508173b",
+      "bel": "p(HGNC:CD8A)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CD8B"
+      },
+      "id": "5ab154553e5675acc5612d618d3c75d4",
+      "bel": "p(HGNC:CD8B)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CTLA4"
+      },
+      "id": "aaf25db57f576942305c22a7dad63574",
+      "bel": "p(HGNC:CTLA4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CXCL16"
+      },
+      "id": "22e5d6eb07be2832840cb270c8b139c1",
+      "bel": "p(HGNC:CXCL16)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CXCL9"
+      },
+      "id": "c05f89a6141199866dc090939b690365",
+      "bel": "p(HGNC:CXCL9)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CXCR3"
+      },
+      "id": "df3a8eec30741c6b0442f7e7f0c75d51",
+      "bel": "p(HGNC:CXCR3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "CXCR6"
+      },
+      "id": "408f47a63ab1a89db497cf1aa7112b17",
+      "bel": "p(HGNC:CXCR6)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "FASLG"
+      },
+      "id": "ec3bf523b9fdcef692bb9ac99f3eb376",
+      "bel": "p(HGNC:FASLG)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "FOXO3"
+      },
+      "id": "9e226f0660a7dda64bfb997091734ca4",
+      "bel": "p(HGNC:FOXO3)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "FYN"
+      },
+      "id": "9aaa70667f9bfd5fd59c45422ea4c02c",
+      "bel": "p(HGNC:FYN)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "GZMA"
+      },
+      "id": "59bfb4798a3dfef7aa8c3080abebf445",
+      "bel": "p(HGNC:GZMA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IDO1"
+      },
+      "id": "83934e8f663f2c6bee13fcbaa40be34a",
+      "bel": "p(HGNC:IDO1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IDO2"
+      },
+      "id": "3bd524ec5ea5a83773f2d3db092f534d",
+      "bel": "p(HGNC:IDO2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IFNG"
+      },
+      "id": "20367a6ea54ae1032be4f48276f3c524",
+      "bel": "p(HGNC:IFNG)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL15"
+      },
+      "id": "f1bf9928e542b06fa2a923bb4cc705ac",
+      "bel": "p(HGNC:IL15)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL15RA"
+      },
+      "id": "e552b44a73dd32cd8abca5a478ce8e7e",
+      "bel": "p(HGNC:IL15RA)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL2"
+      },
+      "id": "99fcd5fe54813ead0bd02d8a06f42173",
+      "bel": "p(HGNC:IL2)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL2RB"
+      },
+      "id": "f8d6a6233b42b01462695ac7fd7e243e",
+      "bel": "p(HGNC:IL2RB)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "IL2RG"
+      },
+      "id": "818bffc142798faeeb5b3c847d64293a",
+      "bel": "p(HGNC:IL2RG)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "LCK"
+      },
+      "id": "b12ffdabce4924617b183ab3df9c996f",
+      "bel": "p(HGNC:LCK)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PLCG1"
+      },
+      "id": "41296d7c819e63f9765f532f34f02d17",
+      "bel": "p(HGNC:PLCG1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PLCG1"
+      },
+      "variants": [
+        {
+          "kind": "pmod",
+          "concept": {
+            "namespace": "bel",
+            "name": "Ph"
+          },
+          "code": "Tyr"
+        }
+      ],
+      "id": "36bdb6887c88cf270ec1936bbbc52988",
+      "bel": "p(HGNC:PLCG1, pmod(Ph, Tyr))"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "PRF1"
+      },
+      "id": "bc1b85258241cfef60d62d56a2cf6306",
+      "bel": "p(HGNC:PRF1)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TNF"
+      },
+      "id": "fdc1c1f5a73c3c992b6eb71ce9b6908e",
+      "bel": "p(HGNC:TNF)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "TNFRSF4"
+      },
+      "id": "e54bc58a4311ed9b84fe98343478d489",
+      "bel": "p(HGNC:TNFRSF4)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "HGNC",
+        "name": "ZAP70"
+      },
+      "id": "569c06c92d141011ba04f5ea025a0fb4",
+      "bel": "p(HGNC:ZAP70)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "MGI",
+        "name": "Il2rg"
+      },
+      "id": "44227b55384b23e22135fb1957854843",
+      "bel": "p(MGI:Il2rg)"
+    },
+    {
+      "function": "Protein",
+      "concept": {
+        "namespace": "SFAM",
+        "name": "Chemokine Receptor Family"
+      },
+      "id": "fc8f85f883e1205345e007273a47cb6a",
+      "bel": "p(SFAM:\"Chemokine Receptor Family\")"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "MESHD",
+        "name": "Pulmonary Disease, Chronic Obstructive"
+      },
+      "id": "7c231d4db4388a89f9bcabb26d912509",
+      "bel": "path(MESHD:\"Pulmonary Disease, Chronic Obstructive\")"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "SDIS",
+        "name": "Cytotoxic T-cell activation"
+      },
+      "id": "c53ccef1ebfd5f2e68a4a1496fb06868",
+      "bel": "path(SDIS:\"Cytotoxic T-cell activation\")"
+    },
+    {
+      "function": "Pathology",
+      "concept": {
+        "namespace": "SDIS",
+        "name": "T-cell migration"
+      },
+      "id": "e20bfd72d63d95adea57bc4823d990e1",
+      "bel": "path(SDIS:\"T-cell migration\")"
+    }
+  ],
+  "links": [
+    {
+      "relation": "partOf",
+      "source": 14,
+      "target": 7,
+      "key": "1041ef9ade86ab84d84c48168db8768c"
+    },
+    {
+      "relation": "partOf",
+      "source": 15,
+      "target": 7,
+      "key": "1c1591542dbba79e3eda9c87a5449a28"
+    },
+    {
+      "line": 48,
+      "relation": "increases",
+      "evidence": "Thus, sγc expression is a naturally occurring immunomodulator that regulates γc cytokine signaling and controls T cell activation and differentiation.",
+      "citation": {
+        "db": "Other",
+        "db_id": "24909888"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        }
+      },
+      "source": 32,
+      "target": 3,
+      "key": "c799e387e2e9368a374eecbc52646d65"
+    },
+    {
+      "line": 1,
+      "relation": "directlyIncreases",
+      "evidence": "dual phosphorylation by ZAP70 and Itk triggers the activation of PLCg1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12044776"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 39,
+      "target": 35,
+      "key": "357cd01fcf4bbad951e43e87779aa0cd"
+    },
+    {
+      "line": 0,
+      "relation": "increases",
+      "evidence": "Fyn plays an essential role by positive regulation of Lck activity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15465914"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "naive T-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 23,
+      "target": 33,
+      "key": "60243d1741431384a0da4dcd9cee326d"
+    },
+    {
+      "line": 3,
+      "relation": "directlyIncreases",
+      "evidence": "NMDA-mediated influx of calcium led to activated of the calcium-dependent phosphatase calcineurin and the subsequent dephosphorylation and activation of the protein-tyrosine phosphatase STEP",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12483215"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Cell": {
+          "neuron": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "phos"
+        }
+      },
+      "source": 1,
+      "target": 5,
+      "key": "d14819467502422014e869783a310f1d"
+    },
+    {
+      "line": 13,
+      "relation": "increases",
+      "evidence": "We show that Crry increases early TCR-dependent activation signals, including p56lck-, zeta-associated protein-70 (ZAP-70), Vav-1, Akt, and extracellular signal-regulated kinase (ERK) phosphorylation but also costimulation-dependent mitogen-activated protein kinases (MAPK), such as the stress-activated c-Jun N-terminal kinase (JNK). It is intriguing that Crry costimulus enhanced p38 MAPK activation in T helper cell type 1 (Th1) but not in Th2 cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16301324"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "T-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 6,
+      "target": 39,
+      "key": "b65dd82008c404c234c385fee6e8f985"
+    },
+    {
+      "line": 13,
+      "relation": "increases",
+      "evidence": "HIP-55 interacted with ZAP-70, a critical protein-tyrosine kinase in TCR signaling, and this interaction was induced by TCR signaling.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14557276"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 6,
+      "target": 39,
+      "key": "4d76301cae0d627fdd1b55d44d9e9ca5"
+    },
+    {
+      "line": 13,
+      "relation": "increases",
+      "evidence": "This redistribution brings VHR into the vicinity of the triggered TCRs, where VHR is phosphorylated at Tyr138 by ZAP-70. We found that this phosphorylation is required for the function of VHR as an inhibitor of the Erk2 and Jnk MAPKs",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12447358"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "kin"
+        }
+      },
+      "source": 6,
+      "target": 39,
+      "key": "766d0d47da9d7c5346d08faf6e3b32c6"
+    },
+    {
+      "line": 45,
+      "relation": "directlyIncreases",
+      "evidence": "Numerous studies have shown that immature human and mouse blood- and bone marrow-derived DC subsets express a panel of inflammatory chemokine receptors (CCR1-6,8,9, CXCR3,4, CX3CR1) [Table 1 and reviewed in (1-5)]. [Table 1 Chemokine receptors expressed by DC and the functional outcome of receptor ligation}]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19028258"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "dendritic cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 10,
+      "target": 12,
+      "key": "ab0773f090a61505da962493eaea086a"
+    },
+    {
+      "line": 45,
+      "relation": "directlyIncreases",
+      "evidence": "CL3 (previously known as MIP-1α) is a ligand for the chemokine receptors CCR1 and CCR5, and we previously showed that expression of CCR5 by lung CD8+ T cells increases with spirometrically-defined COPD severity",
+      "citation": {
+        "db": "Other",
+        "db_id": "23374856"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "copd": true
+        },
+        "Tissue": {
+          "cd8+ t cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 10,
+      "target": 12,
+      "key": "d5e4f7194ac2ff77929eb7ab55d3df0a"
+    },
+    {
+      "line": 45,
+      "relation": "directlyIncreases",
+      "evidence": "The CCR5 ligands CCL3 and CCL4 are produced by Th cells and DCs after their antigen-specific interaction, thereby creating a chemokine micromilieu which recruits naïve CCR5-expressing CTLs.",
+      "citation": {
+        "db": "Other",
+        "db_id": "22566821"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "cytotoxic t cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 10,
+      "target": 12,
+      "key": "d49bf858a3d098dfbeaaba84fdbf6fc8"
+    },
+    {
+      "line": 32,
+      "relation": "directlyIncreases",
+      "evidence": "CD38 dimerization induced tyrosine phosphorylation of the protein kinase syk and increased syk kinase activity. CD38 dimerization also induced tyrosine phosphorylation of phospholipase C-gamma and of the p85 subunit of phosphatidylinositol 3-kinase (PI 3-K)",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "8598449"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 35,
+      "target": 34,
+      "key": "d30da20ee5e332333f3ce27bd047896d"
+    },
+    {
+      "line": 32,
+      "relation": "directlyIncreases",
+      "evidence": "SLP-76 is an adapter protein required for T-cell receptor (TCR) signaling. In particular, TCR-induced tyrosine phosphorylation and activation of phospholipase C-gamma1 (PLC-gamma1), and the resultant TCR-inducible gene expression, depend on SLP-76.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11390650"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 35,
+      "target": 34,
+      "key": "5afdc5dd03712c6a16079b506a59b0e7"
+    },
+    {
+      "line": 32,
+      "relation": "directlyIncreases",
+      "evidence": "dual phosphorylation by ZAP70 and Itk triggers the activation of PLCg1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "12044776"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 35,
+      "target": 34,
+      "key": "894b2593abb3d2b7c6f4b488b8384279"
+    },
+    {
+      "line": 32,
+      "relation": "directlyIncreases",
+      "evidence": "Based on these results, we propose that CD148 negatively regulates TCR signaling by interfering with the phosphorylation and function of PLCgamma1 and LAT.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11259588"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 35,
+      "target": 34,
+      "key": "224c727df6d5ada61bc226ba5e6b5e42"
+    },
+    {
+      "relation": "hasVariant",
+      "source": 34,
+      "target": 35,
+      "key": "c810ccf7daa5e46cbe08c9427f81417f"
+    },
+    {
+      "line": 25,
+      "relation": "increases",
+      "evidence": "In this study we demonstrate that acute addition of monomeric IgE elicits a wide spectrum of responses in the rat basophilic leukemia-2H3 mast cell line, including activation of phospholipases Cgamma and D, a rise in cytosol Ca(2+), NFAT translocation, degranulation, and membrane ruffling within minutes. Calcium transients persist for hours as long as IgE is present resulting in the maintained translocation of the transcription factor NFAT to the nucleus",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15034016"
+      },
+      "annotations": {
+        "Species": {
+          "10116": true
+        },
+        "Cell": {
+          "mast cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 34,
+      "target": 1,
+      "key": "45dc069735cc4d056c3f3531efa1b24b"
+    },
+    {
+      "line": 25,
+      "relation": "increases",
+      "evidence": "Interestingly, the depletion of Grb2 from HEK-293 cells by RNA interference significantly enhanced increased EGF-induced PLC-gamma1 enzymatic activity and mobilization of the intracellular Ca2+, while it did not affect EGF-induced tyrosine phosphorylation of PLC-gamma1.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "16038803"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 34,
+      "target": 1,
+      "key": "61eaf328f17ac19402ce88915cc2f590"
+    },
+    {
+      "line": 25,
+      "relation": "increases",
+      "evidence": "Reconstitution of deficient mast cells with Vav1 restored normal tyrosine phosphorylation of PLCgamma1 and PLCgamma2 and calcium responses. Thus, Vav1 is essential to FcepsilonRI-mediated activation of PLCgamma and calcium mobilization in mast cells.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11340169"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "mast cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 34,
+      "target": 1,
+      "key": "08f4225fa5829d97500840394aaec0d4"
+    },
+    {
+      "line": 25,
+      "relation": "increases",
+      "evidence": "activation of c-src was reported to mediate VEGF signaling through PLC-gamma, leading to inositol 1,4,5-trisphosphate formation and calcium mobilization",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11350732"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 34,
+      "target": 1,
+      "key": "ff5a9b4984defb91ee7145091ad65e5b"
+    },
+    {
+      "line": 25,
+      "relation": "increases",
+      "evidence": "Fig.1",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15567848"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 34,
+      "target": 1,
+      "key": "7aa96a84d64a95de9b5233e877f57354"
+    },
+    {
+      "line": 43,
+      "relation": "negativeCorrelation",
+      "evidence": "Heme-binding-mediated negative regulation of the tryptophan metabolic enzyme indoleamine 2,3-dioxygenase 1 (IDO1) by IDO2 .// hIDO2 plays a novel role as a negative regulator of hIDO1 by competing for heme-binding with hIDO1",
+      "citation": {
+        "db": "Other",
+        "db_id": "25394548"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "cancer and immunological disorders": true
+        }
+      },
+      "source": 25,
+      "target": 26,
+      "key": "452bc7debc4846741621a88498bf4451"
+    },
+    {
+      "line": 43,
+      "relation": "negativeCorrelation",
+      "evidence": "These results demonstrate that hIDO2 plays a novel role as a negative regulator of hIDO1 by competing for heme-binding with hIDO1, and provide information useful for development of therapeutic strategies to control cancer and immunological disorders that target IDO molecules.",
+      "citation": {
+        "db": "Other",
+        "db_id": "25394548"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 25,
+      "target": 26,
+      "key": "821a47aade76c16cad4513a12b5235fd"
+    },
+    {
+      "line": 44,
+      "relation": "increases",
+      "evidence": "Most importantly, CCR5 deficiency resulted in decreased recruitment of memory T cells expressing key effector molecules and impaired control of virus replication during the initial stages of a secondary response.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "18617426"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "source": 12,
+      "target": 44,
+      "key": "00942fc009127761051b303beeda0aaf"
+    },
+    {
+      "line": 8,
+      "relation": "increases",
+      "evidence": "While production of IL-2 is confined to periods of lymphocyte activation, the constitutive expression of IL-15 maintains the homeostatic proliferation of lymphocytes, most notably memory CD8 T cells, in the steady-state through the sustained expression of bcl-2 (10–13).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21098221"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "CD8+ T-cell": true
+        }
+      },
+      "source": 9,
+      "target": 43,
+      "key": "1dca55836a8cc2fe0f9a3eefae8db62e"
+    },
+    {
+      "line": 9,
+      "relation": "increases",
+      "evidence": "In this paper, we show that localized increases in the homeostatic cytokine IL-15 induced by influenza infection is responsible for the migration of CD8 effector T cells to the site of infection",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21098221"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "CD8+ T-cell": true
+        }
+      },
+      "source": 28,
+      "target": 44,
+      "key": "7ec7a935f8fe09e1ba0dc886de6a5d72"
+    },
+    {
+      "line": 17,
+      "relation": "directlyIncreases",
+      "evidence": "IL-15 is a common gamma chain cytokine sharing overlapping signaling and biological properties with IL-2 as a result of their mutual usage of the IL-2/15b and common gamma chain (gc) receptor subunits (7,8).",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "21098221"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "CD8+ T-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 29,
+      "key": "9a88a156a172ab1e78727cc79cfd8285"
+    },
+    {
+      "line": 21,
+      "relation": "directlyIncreases",
+      "evidence": "Considering these points in the context of IL-2- and IL-15-dependent signaling under physiological conditions, the lack of a cytoplasmic domain for IL-2R alpha and trans-presentation of IL-15 by IL-15Ralpha  to CD122 and gamma C results in a qualitative identical utilization of signaling pathways associated with CD122 and gamma C. High levels of IL-2Ralpha provide a mean for continual capture of IL-2 to sustain signaling whereas limiting IL-15Ralpha tempers engagement of CD122 and gamma C, limiting signal transduction. Thus, varied levels of IL-2Ralpha and IL-15Ralpha provide a simple, yet powerful, mechanism to quantify and tune signaling through common intermediates leading to distinctive biological responses.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "22447977"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 31,
+      "key": "ebaf44801fbffa76187f05f8586b1aa6"
+    },
+    {
+      "line": 21,
+      "relation": "directlyIncreases",
+      "evidence": "Interleukin 15 (IL-15) is a 14-15 kDa polypeptide that belongs to the 4 alpha-helix-bundle family of cytokines and was originally discovered due to its T cell proliferative activity. It utilizes the signal-transducing beta/gamma polypeptides of the IL-2 receptor complex, thus sharing many biological activities with IL-2,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "11197599"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 31,
+      "key": "47d28e4372a68535b3f873de5d34ecb2"
+    },
+    {
+      "line": 42,
+      "relation": "directlyIncreases",
+      "evidence": "IL-7 and IL-15 were identified as the cytokines responsible for CD8+ cytotoxic T cell lineage specification in vivo. Additionally, we found that small numbers of aberrant CD8+ T cells expressing Runx3d could arise without γc signaling, but these cells were developmentally arrested before expressing cytotoxic lineage genes. Thus, γc-transduced cytokine signals are required for cytotoxic lineage specification",
+      "citation": {
+        "db": "Other",
+        "db_id": "23109710"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "cd8+ t cells": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 40,
+      "key": "5b2f169e7df29e203a45b81045b040ba"
+    },
+    {
+      "line": 42,
+      "relation": "directlyIncreases",
+      "evidence": "IL-15 utilizes ... the common cytokine receptor γ-chain (CD132) for signal transduction in lymphocytes",
+      "citation": {
+        "db": "Other",
+        "db_id": "20335267"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 28,
+      "target": 40,
+      "key": "b9c820efdc5fc39b30a2be64b0a6ad09"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "neutralization of CXCR3 reduced MIG/CXCL9-induced T lymphocyte proliferation and the number of IFN-gamma-positive spots",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15187119"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 19,
+      "target": 4,
+      "key": "ff3cf9999dbc8077c210c81ec9bd419b"
+    },
+    {
+      "line": 26,
+      "relation": "increases",
+      "evidence": "supernatants harvested from stimulated PMN induced migration and rapid integrin-dependent adhesion of CXCR3-expressing lymphocytes; these activities were significantly reduced by neutralizing anti-MIG and anti-IP-10 Abs,",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "10202039"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "t-cell": true
+        }
+      },
+      "subject": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 19,
+      "target": 4,
+      "key": "61e5950e5ddf279581954dd2fbda6a04"
+    },
+    {
+      "line": 49,
+      "relation": "directlyIncreases",
+      "evidence": "Interleukin-22 (IL-22) plays a critical role in mucosal defense, although the molecular mechanisms that ensure IL-22 tissue distribution remain poorly understood. We show that the CXCL16-CXCR6 chemokine-chemokine receptor axis regulated group 3 innate lymphoid cell (ILC3) diversity and function. CXCL16 was constitutively expressed by CX3CR1(+) intestinal dendritic cells (DCs) and coexpressed with IL-23 after Citrobacter rodentium infection. Intestinal ILC3s expressed CXCR6 and its ablation generated a selective loss of the NKp46(+) ILC3 subset, a depletion of intestinal IL-22, and the inability to control C. rodentium infection. CD4(+) ILC3s were unaffected by CXCR6 deficiency and remained clustered within lymphoid follicles. In contrast, the lamina propria of Cxcr6(-/-) mice was devoid of ILC3s. The loss of ILC3-dependent IL-22 epithelial stimulation reduced antimicrobial peptide expression that explained the sensitivity of Cxcr6(-/-) mice to C. rodentium. Our results delineate a critical CXCL16-CXCR6 crosstalk that coordinates the intestinal topography of IL-22 secretion required for mucosal defense.",
+      "citation": {
+        "db": "Other",
+        "db_id": "25456160"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 17,
+      "target": 20,
+      "key": "88c35db276c3a2752c030349ba304474"
+    },
+    {
+      "line": 49,
+      "relation": "directlyIncreases",
+      "evidence": "CXCR6, the receptor for CXCL16",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "14625285"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 17,
+      "target": 20,
+      "key": "d1b4e5bbeb3d4a8e6d8c42c59154c83b"
+    },
+    {
+      "line": 49,
+      "relation": "directlyIncreases",
+      "evidence": "We have found that expression of CXCR6 is greatly increased on BAL T cells compared with blood T cells and that there are very high levels of CXCL16 in both the normal and inflamed lung which is predominantly located in AM.",
+      "citation": {
+        "db": "Other",
+        "db_id": "16393323"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 17,
+      "target": 20,
+      "key": "786ddb4aee314d284f84c32c452a02ff"
+    },
+    {
+      "line": 34,
+      "relation": "directlyIncreases",
+      "evidence": "By using a CXCR3 ligand reporter mouse, we found that stromal cells predominately expressed the chemokine ligand CXCL9 whereas hematopoietic cells expressed CXCL10 in lymph nodes (LNs). Dendritic cell (DC)-derived CXCL10 facilitated T cell-DC interactions in LNs during T cell priming while both chemokines guided intranodal positioning of CD4(+) T cells to interfollicular and medullary zones. Thus, different chemokines acting on the same receptor can function locally to facilitate DC-T cell interactions and globally to influence intranodal positioning, and both functions contribute to Th1 cell differentiation.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "23123063"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Cell": {
+          "dendritic cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 18,
+      "target": 19,
+      "key": "dca323ec3584e21c3908ca57616e3d92"
+    },
+    {
+      "line": 34,
+      "relation": "directlyIncreases",
+      "evidence": "T cells in peripheral airways of COPD patients show increased expression of CXCR3, a receptor activated by interferon-{gamma} inducible protein of 10 kDa (IP-10; CXCL10), monokine induced by interferon-{gamma} (Mig; CXCL9), and interferon-inducible T cell-{alpha} chemoattractant (I-TAC; CXCL11). All three cytokines activate CXCR3, although CXCL11 has the highest affinity.",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "15602009"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 18,
+      "target": 19,
+      "key": "34efd3b41923c31aea1a3101072dc05a"
+    },
+    {
+      "line": 34,
+      "relation": "directlyIncreases",
+      "evidence": "Numerous studies have shown that immature human and mouse blood- and bone marrow-derived DC subsets express a panel of inflammatory chemokine receptors (CCR1-6,8,9, CXCR3,4, CX3CR1) [Table 1 and reviewed in (1-5)]. [Table 1 Chemokine receptors expressed by DC and the functional outcome of receptor ligation}]",
+      "citation": {
+        "db": "PubMed",
+        "db_id": "19028258"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Cell": {
+          "dendritic cell": true
+        }
+      },
+      "object": {
+        "modifier": "Activity",
+        "effect": {
+          "namespace": "bel",
+          "name": "cat"
+        }
+      },
+      "source": 18,
+      "target": 19,
+      "key": "036f60e7491ac932e934477568fe35a0"
+    },
+    {
+      "line": 41,
+      "relation": "decreases",
+      "evidence": "\"These data suggested that FOXO3 downregulates the accumulation of CD8 T cells in tissue specific fashion during an acute LCMV [lymphocytic choriomeningitis virus] infection.\" (p. 3)",
+      "citation": {
+        "db": "Other",
+        "db_id": "22359505"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Disease": {
+          "Viral infection": true
+        }
+      },
+      "source": 22,
+      "target": 2,
+      "key": "0199d8d3036c7bf1801b7b692003967a"
+    },
+    {
+      "line": 47,
+      "relation": "increases",
+      "evidence": "\"Acrolein exposure induces a time-dependent increase in the number of CD8+ cells in the lungs of wild-type mice.\"",
+      "citation": {
+        "db": "Other",
+        "db_id": "17950725"
+      },
+      "annotations": {
+        "Species": {
+          "10090": true
+        },
+        "Tissue": {
+          "Lung": true
+        }
+      },
+      "source": 0,
+      "target": 2,
+      "key": "1cb4fa7fc0e9b15cabd98b8030c05030"
+    },
+    {
+      "line": 43,
+      "relation": "negativeCorrelation",
+      "evidence": "Heme-binding-mediated negative regulation of the tryptophan metabolic enzyme indoleamine 2,3-dioxygenase 1 (IDO1) by IDO2 .// hIDO2 plays a novel role as a negative regulator of hIDO1 by competing for heme-binding with hIDO1",
+      "citation": {
+        "db": "Other",
+        "db_id": "25394548"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "cancer and immunological disorders": true
+        }
+      },
+      "source": 26,
+      "target": 25,
+      "key": "f3ac5924b0f10f00972a44cf92bda4d1"
+    },
+    {
+      "line": 43,
+      "relation": "negativeCorrelation",
+      "evidence": "These results demonstrate that hIDO2 plays a novel role as a negative regulator of hIDO1 by competing for heme-binding with hIDO1, and provide information useful for development of therapeutic strategies to control cancer and immunological disorders that target IDO molecules.",
+      "citation": {
+        "db": "Other",
+        "db_id": "25394548"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        }
+      },
+      "source": 26,
+      "target": 25,
+      "key": "172cdc422c9a7588db5a298ef05b323f"
+    },
+    {
+      "line": 50,
+      "relation": "increases",
+      "evidence": "CD8/CD28(null) cells were increased in both current- and ex-smoker COPD groups; these cells expressed significantly more interferon (IFN)-γ, OX40, 4-1BB, CTLA4, granzyme and perforin when stimulated than CD8/CD28(+) T cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21910726"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "COPD": true
+        },
+        "Cell": {
+          "CD8/CD28(null) T cells": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 42,
+      "target": 27,
+      "key": "07eb40579bcba90690bdbd4f48651b76"
+    },
+    {
+      "line": 51,
+      "relation": "increases",
+      "evidence": "CD8/CD28(null) cells were increased in both current- and ex-smoker COPD groups; these cells expressed significantly more interferon (IFN)-γ, OX40, 4-1BB, CTLA4, granzyme and perforin when stimulated than CD8/CD28(+) T cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21910726"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "COPD": true
+        },
+        "Cell": {
+          "CD8/CD28(null) cells": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 42,
+      "target": 38,
+      "key": "b9c079d825229de63f5abfb5dc66525b"
+    },
+    {
+      "line": 52,
+      "relation": "increases",
+      "evidence": "CD8/CD28(null) cells were increased in both current- and ex-smoker COPD groups; these cells expressed significantly more interferon (IFN)-γ, OX40, 4-1BB, CTLA4, granzyme and perforin when stimulated than CD8/CD28(+) T cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21910726"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "COPD": true
+        },
+        "Cell": {
+          "CD8/CD28(null) cells": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 42,
+      "target": 16,
+      "key": "7298a788bd0226deaebf6b07fe717d1e"
+    },
+    {
+      "line": 53,
+      "relation": "increases",
+      "evidence": "CD8/CD28(null) cells were increased in both current- and ex-smoker COPD groups; these cells expressed significantly more interferon (IFN)-γ, OX40, 4-1BB, CTLA4, granzyme and perforin when stimulated than CD8/CD28(+) T cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21910726"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "COPD": true
+        },
+        "Cell": {
+          "CD8/CD28(null) cells": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 42,
+      "target": 24,
+      "key": "2bdbe73c977e9127ec17f064f292259c"
+    },
+    {
+      "line": 54,
+      "relation": "increases",
+      "evidence": "There was an increase in intracellular CD8(+) T cell Th1 proinflammatory cytokines in some COPD groups in the peripheral blood and in CD8(+) T cell tumour necrosis factor (TNF)-alpha in some COPD groups and smoker controls in BAL and BB.",
+      "citation": {
+        "db": "Other",
+        "db_id": "17614970"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "COPD": true
+        },
+        "Cell": {
+          "CD8(+) T cell": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 42,
+      "target": 37,
+      "key": "6cbb411b1f66a33c97eba326a73d9aca"
+    },
+    {
+      "line": 55,
+      "relation": "increases",
+      "evidence": "CD8/CD28(null) cells were increased in both current- and ex-smoker COPD groups; these cells expressed significantly more interferon (IFN)-γ, OX40, 4-1BB, CTLA4, granzyme and perforin when stimulated than CD8/CD28(+) T cells.",
+      "citation": {
+        "db": "Other",
+        "db_id": "21910726"
+      },
+      "annotations": {
+        "Species": {
+          "9606": true
+        },
+        "Disease": {
+          "COPD": true
+        },
+        "Cell": {
+          "CD8/CD28(null) cells": true
+        },
+        "Tissue": {
+          "lung": true
+        }
+      },
+      "source": 42,
+      "target": 36,
+      "key": "dc5c2e6947bfd82f9312ab59c250b879"
+    }
+  ]
+}
