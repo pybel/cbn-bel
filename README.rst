@@ -14,10 +14,15 @@ software ecosystem.
 
 Download CBN as BEL
 -------------------
-The network is available in two BEL formats:
+The network is available in two BEL formats in the `/bel <https://github.com/pybel/cbn-bel/tree/master/bel>`_
+directory:
 
-- **BEL Script** - see description `below <https://github.com/pybel/hetionet-bel#bel-script>`_
-- **Nodelink JSON** - see description `below <https://github.com/pybel/hetionet-bel#nodelink-json>`_
+- **BEL Script** - see description `below <https://github.com/pybel/cbn-bel#bel-script>`_
+- **Nodelink JSON** - see description `below <https://github.com/pybel/cbn-bel#nodelink-json>`_
+
+In the `human_2.0 <https://github.com/pybel/cbn-bel/tree/master/human_2.0>`_, you can also find the
+networks in both the raw and grounded formats. These are ultimately combine to make the full exports
+in the ``bel/`` directory. All edges maintain tags as to their provenance from which network they came.
 
 License
 -------
